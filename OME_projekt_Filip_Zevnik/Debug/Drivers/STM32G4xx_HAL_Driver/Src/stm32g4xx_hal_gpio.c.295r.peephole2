@@ -1,0 +1,2576 @@
+
+;; Function HAL_GPIO_Init (HAL_GPIO_Init, funcdef_no=329, decl_uid=7510, cgraph_uid=333, symbol_order=332)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Splitting with gen_peephole2_39 (thumb2.md:1504)
+scanning new insn with uid = 553.
+scanning new insn with uid = 554.
+deleting insn with uid = 347.
+deleting insn with uid = 346.
+verify found no changes in insn with uid = 554.
+verify found no changes in insn with uid = 553.
+Splitting with gen_peephole2_39 (thumb2.md:1504)
+scanning new insn with uid = 555.
+scanning new insn with uid = 556.
+deleting insn with uid = 322.
+deleting insn with uid = 321.
+verify found no changes in insn with uid = 556.
+verify found no changes in insn with uid = 555.
+Splitting with gen_peephole2_39 (thumb2.md:1504)
+scanning new insn with uid = 557.
+scanning new insn with uid = 558.
+deleting insn with uid = 297.
+deleting insn with uid = 296.
+verify found no changes in insn with uid = 558.
+verify found no changes in insn with uid = 557.
+Splitting with gen_peephole2_39 (thumb2.md:1504)
+scanning new insn with uid = 559.
+scanning new insn with uid = 560.
+deleting insn with uid = 272.
+deleting insn with uid = 271.
+verify found no changes in insn with uid = 560.
+verify found no changes in insn with uid = 559.
+Splitting with gen_peephole2_13 (ldrdstrd.md:31)
+Splitting with gen_peephole2_29 (ldmstm.md:1088)
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+HAL_GPIO_Init
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 5 [r5] 6 [r6] 7 [r7] 8 [r8] 9 [r9] 10 [r10] 11 [fp] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 4 [r4] 5 [r5] 6 [r6] 7 [r7] 8 [r8] 9 [r9] 10 [r10] 11 [fp] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 5 [r5] 6 [r6] 7 [r7] 8 [r8] 9 [r9] 10 [r10] 11 [fp] 12 [ip] 13 [sp] 14 [lr] 15 [pc] 100 [cc]
+;;  ref usage 	r0={1d,15u,5e} r1={27d,38u} r2={27d,43u} r3={3d,10u,1e} r4={3d,7u} r5={25d,47u,2e} r6={16d,14u} r7={3d,9u} r8={3d,7u} r9={3d,6u,2e} r10={3d,5u} r11={3d,4u} r12={2d,8u,2e} r13={5d,65u} r14={16d,23u,1e} r15={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={17d,16u} 
+;;    total ref usage 504{174d,317u,13e} in 284{284 regular + 0 call} insns.
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 540 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 540 7 541 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -36 [0xffffffffffffffdc]))) [8  A8])
+                (unspec:BLK [
+                        (reg:SI 4 r4)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 5 r5))
+            (use (reg:SI 6 r6))
+            (use (reg:SI 7 r7))
+            (use (reg:SI 8 r8))
+            (use (reg:SI 9 r9))
+            (use (reg:SI 10 r10))
+            (use (reg:SI 11 fp))
+            (use (reg:SI 14 lr))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":163:1 -1
+     (expr_list:REG_DEAD (reg:SI 11 fp)
+        (expr_list:REG_DEAD (reg:SI 10 r10)
+            (expr_list:REG_DEAD (reg:SI 9 r9)
+                (expr_list:REG_DEAD (reg:SI 8 r8)
+                    (expr_list:REG_DEAD (reg:SI 7 r7)
+                        (expr_list:REG_DEAD (reg:SI 6 r6)
+                            (expr_list:REG_DEAD (reg:SI 5 r5)
+                                (expr_list:REG_DEAD (reg:SI 4 r4)
+                                    (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                                                (set/f (reg/f:SI 13 sp)
+                                                    (plus:SI (reg/f:SI 13 sp)
+                                                        (const_int -36 [0xffffffffffffffdc])))
+                                                (set/f (mem/c:SI (reg/f:SI 13 sp) [8  S4 A32])
+                                                    (reg:SI 4 r4))
+                                                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                                            (const_int 4 [0x4])) [8  S4 A32])
+                                                    (reg:SI 5 r5))
+                                                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                                            (const_int 8 [0x8])) [8  S4 A32])
+                                                    (reg:SI 6 r6))
+                                                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                                            (const_int 12 [0xc])) [8  S4 A32])
+                                                    (reg:SI 7 r7))
+                                                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                                            (const_int 16 [0x10])) [8  S4 A32])
+                                                    (reg:SI 8 r8))
+                                                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                                            (const_int 20 [0x14])) [8  S4 A32])
+                                                    (reg:SI 9 r9))
+                                                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                                            (const_int 24 [0x18])) [8  S4 A32])
+                                                    (reg:SI 10 r10))
+                                                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                                            (const_int 28 [0x1c])) [8  S4 A32])
+                                                    (reg:SI 11 fp))
+                                                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                                            (const_int 32 [0x20])) [8  S4 A32])
+                                                    (reg:SI 14 lr))
+                                            ])
+                                        (nil)))))))))))
+(insn/f 541 540 542 2 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int -20 [0xffffffffffffffec]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":163:1 -1
+     (nil))
+(note 542 541 4 2 NOTE_INSN_PROLOGUE_END)
+(note 4 542 20 2 NOTE_INSN_FUNCTION_BEG)
+(note 20 4 9 2 NOTE_INSN_DELETED)
+(debug_insn 9 20 10 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":164:3 -1
+     (nil))
+(debug_insn 10 9 11 2 (var_location:SI position (const_int 0 [0])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":164:12 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":165:3 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":166:3 -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":169:3 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":170:3 -1
+     (nil))
+(debug_insn 15 14 16 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":171:3 -1
+     (nil))
+(debug_insn 16 15 17 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":174:3 -1
+     (nil))
+(debug_insn 17 16 18 2 (var_location:SI position (const_int 0 [0])) -1
+     (nil))
+(debug_insn 18 17 19 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":174:9 -1
+     (nil))
+(insn 19 18 21 2 (set (reg:SI 4 r4 [orig:190 _139 ] [190])
+        (mem:SI (reg/v/f:SI 1 r1 [orig:194 GPIO_Init ] [194]) [1 GPIO_Init_60(D)->Pin+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":174:21 728 {*thumb2_movsi_vfp}
+     (nil))
+(jump_insn 21 19 379 2 (parallel [
+            (set (pc)
+                (if_then_else (eq (reg:SI 4 r4 [orig:190 _139 ] [190])
+                        (const_int 0 [0]))
+                    (label_ref:SI 377)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":174:9 1024 {*thumb2_cbz}
+     (expr_list:REG_UNUSED (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 118111604 (nil)))
+ -> 377)
+(note 379 21 5 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 5 379 6 3 (set (reg:SI 12 ip [orig:154 ivtmp.29 ] [154])
+        (const_int 0 [0])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":174:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(insn 6 5 167 3 (set (reg/v:SI 3 r3 [orig:178 position ] [178])
+        (reg:SI 12 ip [orig:154 ivtmp.29 ] [154])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":164:12 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(insn 167 6 263 3 (set (reg/f:SI 10 r10 [262])
+        (const_int 1073876992 [0x40021000])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":238:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073876992 [0x40021000])
+        (nil)))
+(note 263 167 199 3 NOTE_INSN_DELETED)
+(note 199 263 210 3 NOTE_INSN_DELETED)
+(note 210 199 221 3 NOTE_INSN_DELETED)
+(note 221 210 232 3 NOTE_INSN_DELETED)
+(note 232 221 243 3 NOTE_INSN_DELETED)
+(note 243 232 29 3 NOTE_INSN_DELETED)
+(insn 29 243 190 3 (set (reg:SI 11 fp [195])
+        (const_int 1 [0x1])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":177:41 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1 [0x1])
+        (nil)))
+(note 190 29 490 3 NOTE_INSN_DELETED)
+(insn 490 190 25 3 (set (reg/v/f:SI 9 r9 [orig:194 GPIO_Init ] [194])
+        (reg/v/f:SI 1 r1 [orig:194 GPIO_Init ] [194])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":241:26 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v/f:SI 1 r1 [orig:194 GPIO_Init ] [194])
+        (nil)))
+(code_label 25 490 26 4 2 (nil) [1 uses])
+(note 26 25 31 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 31 26 27 4 NOTE_INSN_DELETED)
+(debug_insn 27 31 28 4 (var_location:SI position (reg/v:SI 3 r3 [orig:178 position ] [178])) -1
+     (nil))
+(debug_insn 28 27 30 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":177:5 -1
+     (nil))
+(insn 30 28 450 4 (set (reg:SI 5 r5 [orig:113 _1 ] [113])
+        (ashift:SI (reg:SI 11 fp [195])
+            (reg/v:SI 3 r3 [orig:178 position ] [178]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":177:41 147 {*arm_shiftsi3}
+     (expr_list:REG_EQUAL (ashift:SI (const_int 1 [0x1])
+            (reg/v:SI 3 r3 [orig:178 position ] [178]))
+        (nil)))
+(debug_insn 450 30 32 4 (var_location:SI D#2 (and:SI (reg:SI 5 r5 [orig:113 _1 ] [113])
+        (reg:SI 4 r4 [orig:190 _139 ] [190]))) -1
+     (nil))
+(debug_insn 32 450 33 4 (var_location:SI iocurrent (debug_expr:SI D#2)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":177:15 -1
+     (nil))
+(debug_insn 33 32 34 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":179:5 -1
+     (nil))
+(insn 34 33 35 4 (parallel [
+            (set (reg:CC_NZ 100 cc)
+                (compare:CC_NZ (and:SI (reg:SI 5 r5 [orig:113 _1 ] [113])
+                        (reg:SI 4 r4 [orig:190 _139 ] [190]))
+                    (const_int 0 [0])))
+            (set (reg/v:SI 8 r8 [orig:155 iocurrent ] [155])
+                (and:SI (reg:SI 5 r5 [orig:113 _1 ] [113])
+                    (reg:SI 4 r4 [orig:190 _139 ] [190])))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":179:8 91 {*andsi3_compare0}
+     (nil))
+(jump_insn 35 34 40 4 (set (pc)
+        (if_then_else (eq (reg:CC_NZ 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 363)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":179:8 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC_NZ 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 363)
+(note 40 35 41 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 41 40 42 5 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":183:7 -1
+     (nil))
+(insn 42 41 43 5 (set (reg:SI 7 r7 [orig:114 _2 ] [114])
+        (mem:SI (plus:SI (reg/v/f:SI 9 r9 [orig:194 GPIO_Init ] [194])
+                (const_int 4 [0x4])) [1 GPIO_Init_60(D)->Mode+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":183:21 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 43 42 44 5 (set (reg:SI 2 r2 [orig:115 _3 ] [115])
+        (and:SI (reg:SI 7 r7 [orig:114 _2 ] [114])
+            (const_int 3 [0x3]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":183:28 90 {*arm_andsi3_insn}
+     (nil))
+(insn 44 43 47 5 (set (reg:SI 1 r1 [196])
+        (plus:SI (reg:SI 2 r2 [orig:115 _3 ] [115])
+            (const_int -1 [0xffffffffffffffff]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":183:57 7 {*arm_addsi3}
+     (nil))
+(insn 47 44 48 5 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 1 r1 [196])
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":183:9 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [196])
+        (nil)))
+(jump_insn 48 47 49 5 (set (pc)
+        (if_then_else (gtu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 85)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":183:9 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 633507684 (nil)))
+ -> 85)
+(note 49 48 71 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(note 71 49 75 6 NOTE_INSN_DELETED)
+(note 75 71 50 6 NOTE_INSN_DELETED)
+(debug_insn 50 75 51 6 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":187:9 -1
+     (nil))
+(debug_insn 51 50 52 6 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":189:9 -1
+     (nil))
+(insn 52 51 53 6 (set (reg/v:SI 1 r1 [orig:156 temp ] [156])
+        (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:193 GPIOx ] [193])
+                (const_int 8 [0x8])) [1 GPIOx_62(D)->OSPEEDR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":189:14 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 53 52 54 6 (var_location:SI temp (reg/v:SI 1 r1 [orig:156 temp ] [156])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":189:14 -1
+     (nil))
+(debug_insn 54 53 61 6 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":190:9 -1
+     (nil))
+(note 61 54 493 6 NOTE_INSN_DELETED)
+(insn 493 61 62 6 (set (reg:SI 6 r6 [281])
+        (mem:SI (plus:SI (reg/v/f:SI 9 r9 [orig:194 GPIO_Init ] [194])
+                (const_int 12 [0xc])) [1 GPIO_Init_60(D)->Speed+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":191:35 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 62 493 509 6 (set (reg:SI 6 r6 [199])
+        (ashift:SI (reg:SI 6 r6 [281])
+            (reg:SI 12 ip [orig:154 ivtmp.29 ] [154]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":191:35 147 {*arm_shiftsi3}
+     (nil))
+(note 509 62 55 6 NOTE_INSN_DELETED)
+(insn 55 509 56 6 (set (reg:SI 14 lr [198])
+        (const_int 3 [0x3])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":190:40 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 3 [0x3])
+        (nil)))
+(insn 56 55 58 6 (set (reg:SI 14 lr [197])
+        (ashift:SI (reg:SI 14 lr [198])
+            (reg:SI 12 ip [orig:154 ivtmp.29 ] [154]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":190:40 147 {*arm_shiftsi3}
+     (expr_list:REG_EQUAL (ashift:SI (const_int 3 [0x3])
+            (reg:SI 12 ip [orig:154 ivtmp.29 ] [154]))
+        (nil)))
+(insn 58 56 59 6 (set (reg/v:SI 1 r1 [orig:157 temp ] [157])
+        (and:SI (not:SI (reg:SI 14 lr [197]))
+            (reg/v:SI 1 r1 [orig:156 temp ] [156]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":190:14 100 {andsi_notsi_si}
+     (nil))
+(debug_insn 59 58 60 6 (var_location:SI temp (reg/v:SI 1 r1 [orig:157 temp ] [157])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":190:14 -1
+     (nil))
+(debug_insn 60 59 63 6 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":191:9 -1
+     (nil))
+(insn 63 60 64 6 (set (reg/v:SI 1 r1 [orig:158 temp ] [158])
+        (ior:SI (reg/v:SI 1 r1 [orig:157 temp ] [157])
+            (reg:SI 6 r6 [199]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":191:14 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 6 r6 [199])
+        (nil)))
+(debug_insn 64 63 65 6 (var_location:SI temp (reg/v:SI 1 r1 [orig:158 temp ] [158])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":191:14 -1
+     (nil))
+(debug_insn 65 64 66 6 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":192:9 -1
+     (nil))
+(insn 66 65 67 6 (set (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:193 GPIOx ] [193])
+                (const_int 8 [0x8])) [1 GPIOx_62(D)->OSPEEDR+0 S4 A32])
+        (reg/v:SI 1 r1 [orig:158 temp ] [158])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":192:24 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 1 r1 [orig:158 temp ] [158])
+        (nil)))
+(debug_insn 67 66 57 6 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":195:9 -1
+     (nil))
+(insn 57 67 68 6 (set (reg:SI 1 r1 [orig:181 prephitmp_112 ] [181])
+        (not:SI (reg:SI 14 lr [197]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":190:17 169 {*arm_one_cmplsi2}
+     (expr_list:REG_DEAD (reg:SI 14 lr [197])
+        (nil)))
+(insn 68 57 69 6 (set (reg/v:SI 14 lr [orig:159 temp ] [159])
+        (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:193 GPIOx ] [193])
+                (const_int 4 [0x4])) [1 GPIOx_62(D)->OTYPER+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":195:14 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 69 68 70 6 (var_location:SI temp (reg/v:SI 14 lr [orig:159 temp ] [159])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":195:14 -1
+     (nil))
+(debug_insn 70 69 72 6 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":196:9 -1
+     (nil))
+(insn 72 70 73 6 (set (reg/v:SI 14 lr [orig:160 temp ] [160])
+        (and:SI (not:SI (reg:SI 5 r5 [orig:113 _1 ] [113]))
+            (reg/v:SI 14 lr [orig:159 temp ] [159]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":196:14 100 {andsi_notsi_si}
+     (expr_list:REG_DEAD (reg:SI 5 r5 [orig:113 _1 ] [113])
+        (nil)))
+(debug_insn 73 72 74 6 (var_location:SI temp (reg/v:SI 14 lr [orig:160 temp ] [160])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":196:14 -1
+     (nil))
+(debug_insn 74 73 76 6 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":197:9 -1
+     (nil))
+(insn 76 74 77 6 (set (reg:SI 5 r5 [203])
+        (zero_extract:SI (reg:SI 7 r7 [orig:114 _2 ] [114])
+            (const_int 1 [0x1])
+            (const_int 4 [0x4]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":197:51 161 {extzv_t2}
+     (nil))
+(insn 77 76 78 6 (set (reg:SI 5 r5 [204])
+        (ashift:SI (reg:SI 5 r5 [203])
+            (reg/v:SI 3 r3 [orig:178 position ] [178]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":197:71 147 {*arm_shiftsi3}
+     (nil))
+(insn 78 77 79 6 (set (reg/v:SI 5 r5 [orig:161 temp ] [161])
+        (ior:SI (reg:SI 5 r5 [204])
+            (reg/v:SI 14 lr [orig:160 temp ] [160]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":197:14 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg/v:SI 14 lr [orig:160 temp ] [160])
+        (nil)))
+(debug_insn 79 78 80 6 (var_location:SI temp (reg/v:SI 5 r5 [orig:161 temp ] [161])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":197:14 -1
+     (nil))
+(debug_insn 80 79 81 6 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":198:9 -1
+     (nil))
+(insn 81 80 82 6 (set (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:193 GPIOx ] [193])
+                (const_int 4 [0x4])) [1 GPIOx_62(D)->OTYPER+0 S4 A32])
+        (reg/v:SI 5 r5 [orig:161 temp ] [161])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":198:23 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 5 r5 [orig:161 temp ] [161])
+        (nil)))
+(debug_insn 82 81 451 6 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":201:7 -1
+     (nil))
+(jump_insn 451 82 452 6 (set (pc)
+        (label_ref 101)) 284 {*arm_jump}
+     (nil)
+ -> 101)
+(barrier 452 451 85)
+(code_label 85 452 86 7 5 (nil) [1 uses])
+(note 86 85 87 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 87 86 88 7 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":201:7 -1
+     (nil))
+(insn 88 87 89 7 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 2 r2 [orig:115 _3 ] [115])
+            (const_int 3 [0x3]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":201:10 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 89 88 90 7 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 96)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":201:10 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 454975348 (nil)))
+ -> 96)
+(note 90 89 92 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 92 90 93 8 (set (reg:SI 2 r2 [261])
+        (ashift:SI (reg:SI 2 r2 [orig:115 _3 ] [115])
+            (reg:SI 12 ip [orig:154 ivtmp.29 ] [154]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":190:40 147 {*arm_shiftsi3}
+     (nil))
+(insn 93 92 453 8 (set (reg:SI 1 r1 [orig:181 prephitmp_112 ] [181])
+        (not:SI (reg:SI 2 r2 [261]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":190:17 169 {*arm_one_cmplsi2}
+     (nil))
+(jump_insn 453 93 454 8 (set (pc)
+        (label_ref 144)) 284 {*arm_jump}
+     (nil)
+ -> 144)
+(barrier 454 453 96)
+(code_label 96 454 97 9 7 (nil) [1 uses])
+(note 97 96 98 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 98 97 99 9 (set (reg:SI 1 r1 [208])
+        (const_int 3 [0x3])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":190:40 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 3 [0x3])
+        (nil)))
+(insn 99 98 100 9 (set (reg:SI 1 r1 [207])
+        (ashift:SI (reg:SI 1 r1 [208])
+            (reg:SI 12 ip [orig:154 ivtmp.29 ] [154]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":190:40 147 {*arm_shiftsi3}
+     (expr_list:REG_EQUAL (ashift:SI (const_int 3 [0x3])
+            (reg:SI 12 ip [orig:154 ivtmp.29 ] [154]))
+        (nil)))
+(insn 100 99 101 9 (set (reg:SI 1 r1 [orig:181 prephitmp_112 ] [181])
+        (not:SI (reg:SI 1 r1 [207]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":190:17 169 {*arm_one_cmplsi2}
+     (nil))
+(code_label 101 100 102 10 6 (nil) [1 uses])
+(note 102 101 103 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 103 102 104 10 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":204:9 -1
+     (nil))
+(debug_insn 104 103 105 10 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":207:9 -1
+     (nil))
+(insn 105 104 106 10 (set (reg/v:SI 5 r5 [orig:162 temp ] [162])
+        (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:193 GPIOx ] [193])
+                (const_int 12 [0xc])) [1 GPIOx_62(D)->PUPDR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":207:14 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 106 105 107 10 (var_location:SI temp (reg/v:SI 5 r5 [orig:162 temp ] [162])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":207:14 -1
+     (nil))
+(debug_insn 107 106 108 10 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":208:9 -1
+     (nil))
+(insn 108 107 109 10 (set (reg/v:SI 14 lr [orig:163 temp ] [163])
+        (and:SI (reg/v:SI 5 r5 [orig:162 temp ] [162])
+            (reg:SI 1 r1 [orig:181 prephitmp_112 ] [181]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":208:14 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg/v:SI 5 r5 [orig:162 temp ] [162])
+        (nil)))
+(debug_insn 109 108 110 10 (var_location:SI temp (reg/v:SI 14 lr [orig:163 temp ] [163])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":208:14 -1
+     (nil))
+(debug_insn 110 109 111 10 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":209:9 -1
+     (nil))
+(insn 111 110 112 10 (set (reg:SI 5 r5 [orig:210 GPIO_Init_60(D)->Pull ] [210])
+        (mem:SI (plus:SI (reg/v/f:SI 9 r9 [orig:194 GPIO_Init ] [194])
+                (const_int 8 [0x8])) [1 GPIO_Init_60(D)->Pull+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":209:36 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 9 r9 [orig:194 GPIO_Init ] [194])
+                (const_int 8 [0x8])) [1 GPIO_Init_60(D)->Pull+0 S4 A32])
+        (nil)))
+(insn 112 111 113 10 (set (reg:SI 5 r5 [209])
+        (ashift:SI (reg:SI 5 r5 [orig:210 GPIO_Init_60(D)->Pull ] [210])
+            (reg:SI 12 ip [orig:154 ivtmp.29 ] [154]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":209:36 147 {*arm_shiftsi3}
+     (nil))
+(insn 113 112 114 10 (set (reg/v:SI 5 r5 [orig:164 temp ] [164])
+        (ior:SI (reg:SI 5 r5 [209])
+            (reg/v:SI 14 lr [orig:163 temp ] [163]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":209:14 106 {*iorsi3_insn}
+     (nil))
+(debug_insn 114 113 115 10 (var_location:SI temp (reg/v:SI 5 r5 [orig:164 temp ] [164])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":209:14 -1
+     (nil))
+(debug_insn 115 114 116 10 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":210:9 -1
+     (nil))
+(insn 116 115 117 10 (set (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:193 GPIOx ] [193])
+                (const_int 12 [0xc])) [1 GPIOx_62(D)->PUPDR+0 S4 A32])
+        (reg/v:SI 5 r5 [orig:164 temp ] [164])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":210:22 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 5 r5 [orig:164 temp ] [164])
+        (nil)))
+(debug_insn 117 116 118 10 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":214:7 -1
+     (nil))
+(insn 118 117 414 10 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 2 r2 [orig:115 _3 ] [115])
+            (const_int 2 [0x2]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":214:10 268 {*arm_cmpsi_insn}
+     (nil))
+(insn 414 118 119 10 (set (reg:SI 2 r2 [261])
+        (ashift:SI (reg:SI 2 r2 [orig:115 _3 ] [115])
+            (reg:SI 12 ip [orig:154 ivtmp.29 ] [154]))) 147 {*arm_shiftsi3}
+     (nil))
+(jump_insn 119 414 416 10 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 455)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":214:10 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 553139740 (nil)))
+ -> 455)
+(note 416 119 456 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 456 416 457 11 (set (pc)
+        (label_ref 144)) 284 {*arm_jump}
+     (nil)
+ -> 144)
+(barrier 457 456 455)
+(code_label 455 457 120 12 34 (nil) [1 uses])
+(note 120 455 125 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(note 125 120 134 12 NOTE_INSN_DELETED)
+(note 134 125 121 12 NOTE_INSN_DELETED)
+(debug_insn 121 134 122 12 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":217:9 -1
+     (nil))
+(debug_insn 122 121 123 12 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":218:9 -1
+     (nil))
+(debug_insn 123 122 124 12 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":221:9 -1
+     (nil))
+(insn 124 123 126 12 (set (reg:SI 5 r5 [211])
+        (lshiftrt:SI (reg/v:SI 3 r3 [orig:178 position ] [178])
+            (const_int 3 [0x3]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":221:36 147 {*arm_shiftsi3}
+     (nil))
+(insn 126 124 512 12 (set (reg/f:SI 5 r5 [orig:191 _140 ] [191])
+        (plus:SI (ashift:SI (reg:SI 5 r5 [211])
+                (const_int 2 [0x2]))
+            (reg/v/f:SI 0 r0 [orig:193 GPIOx ] [193]))) 318 {*add_shiftsi}
+     (nil))
+(note 512 126 130 12 NOTE_INSN_DELETED)
+(insn 130 512 131 12 (set (reg:SI 14 lr [213])
+        (and:SI (reg/v:SI 3 r3 [orig:178 position ] [178])
+            (const_int 7 [0x7]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":222:38 90 {*arm_andsi3_insn}
+     (nil))
+(insn 131 130 511 12 (set (reg:SI 14 lr [orig:128 _21 ] [128])
+        (ashift:SI (reg:SI 14 lr [213])
+            (const_int 2 [0x2]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":222:47 147 {*arm_shiftsi3}
+     (nil))
+(insn 511 131 522 12 (set (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [7 %sfp+-12 S4 A32])
+        (reg/f:SI 5 r5 [orig:191 _140 ] [191])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":221:14 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 522 511 127 12 NOTE_INSN_DELETED)
+(insn 127 522 499 12 (set (reg/v:SI 6 r6 [orig:165 temp ] [165])
+        (mem/v:SI (plus:SI (reg/f:SI 5 r5 [orig:191 _140 ] [191])
+                (const_int 32 [0x20])) [2 MEM <volatile uint32_t> [(struct GPIO_TypeDef *)_140 + 32B]+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":221:14 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 5 r5 [orig:191 _140 ] [191])
+        (nil)))
+(insn 499 127 521 12 (set (mem/c:SI (reg/f:SI 13 sp) [7 %sfp+-16 S4 A32])
+        (reg/v:SI 6 r6 [orig:165 temp ] [165])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":221:14 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 6 r6 [orig:165 temp ] [165])
+        (nil)))
+(note 521 499 510 12 NOTE_INSN_DELETED)
+(note 510 521 128 12 NOTE_INSN_DELETED)
+(debug_insn 128 510 129 12 (var_location:SI temp (mem/c:SI (reg/f:SI 13 sp) [7 %sfp+-16 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":221:14 -1
+     (nil))
+(debug_insn 129 128 138 12 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":222:9 -1
+     (nil))
+(insn 138 129 139 12 (set (reg:SI 5 r5 [orig:218 GPIO_Init_60(D)->Alternate ] [218])
+        (mem:SI (plus:SI (reg/v/f:SI 9 r9 [orig:194 GPIO_Init ] [194])
+                (const_int 16 [0x10])) [1 GPIO_Init_60(D)->Alternate+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":223:41 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 9 r9 [orig:194 GPIO_Init ] [194])
+                (const_int 16 [0x10])) [1 GPIO_Init_60(D)->Alternate+0 S4 A32])
+        (nil)))
+(insn 139 138 500 12 (set (reg:SI 5 r5 [217])
+        (ashift:SI (reg:SI 5 r5 [orig:218 GPIO_Init_60(D)->Alternate ] [218])
+            (reg:SI 14 lr [orig:128 _21 ] [128]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":223:41 147 {*arm_shiftsi3}
+     (nil))
+(insn 500 139 133 12 (set (reg:SI 6 r6 [288])
+        (const_int 15 [0xf])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":222:24 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 133 500 501 12 (set (reg:SI 14 lr [214])
+        (ashift:SI (reg:SI 6 r6 [288])
+            (reg:SI 14 lr [orig:128 _21 ] [128]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":222:24 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 6 r6 [288])
+        (expr_list:REG_EQUAL (ashift:SI (const_int 15 [0xf])
+                (reg:SI 14 lr [orig:128 _21 ] [128]))
+            (nil))))
+(insn 501 133 135 12 (set (reg/v:SI 6 r6 [orig:165 temp ] [165])
+        (mem/c:SI (reg/f:SI 13 sp) [7 %sfp+-16 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":222:14 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 135 501 136 12 (set (reg/v:SI 14 lr [orig:166 temp ] [166])
+        (and:SI (not:SI (reg:SI 14 lr [214]))
+            (reg/v:SI 6 r6 [orig:165 temp ] [165]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":222:14 100 {andsi_notsi_si}
+     (expr_list:REG_DEAD (reg/v:SI 6 r6 [orig:165 temp ] [165])
+        (nil)))
+(debug_insn 136 135 137 12 (var_location:SI temp (reg/v:SI 14 lr [orig:166 temp ] [166])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":222:14 -1
+     (nil))
+(debug_insn 137 136 140 12 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":223:9 -1
+     (nil))
+(insn 140 137 141 12 (set (reg/v:SI 5 r5 [orig:167 temp ] [167])
+        (ior:SI (reg:SI 5 r5 [217])
+            (reg/v:SI 14 lr [orig:166 temp ] [166]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":223:14 106 {*iorsi3_insn}
+     (nil))
+(debug_insn 141 140 142 12 (var_location:SI temp (reg/v:SI 5 r5 [orig:167 temp ] [167])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":223:14 -1
+     (nil))
+(debug_insn 142 141 502 12 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":224:9 -1
+     (nil))
+(insn 502 142 143 12 (set (reg/f:SI 6 r6 [orig:191 _140 ] [191])
+        (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [7 %sfp+-12 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":224:36 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 143 502 144 12 (set (mem/v:SI (plus:SI (reg/f:SI 6 r6 [orig:191 _140 ] [191])
+                (const_int 32 [0x20])) [2 MEM <volatile uint32_t> [(struct GPIO_TypeDef *)_140 + 32B]+0 S4 A32])
+        (reg/v:SI 5 r5 [orig:167 temp ] [167])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":224:36 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 6 r6 [orig:191 _140 ] [191])
+        (expr_list:REG_DEAD (reg/v:SI 5 r5 [orig:167 temp ] [167])
+            (nil))))
+(code_label 144 143 145 13 8 (nil) [2 uses])
+(note 145 144 160 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(note 160 145 146 13 NOTE_INSN_DELETED)
+(debug_insn 146 160 147 13 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":228:7 -1
+     (nil))
+(insn 147 146 148 13 (set (reg/v:SI 5 r5 [orig:168 temp ] [168])
+        (mem/v:SI (reg/v/f:SI 0 r0 [orig:193 GPIOx ] [193]) [1 GPIOx_62(D)->MODER+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":228:12 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 148 147 149 13 (var_location:SI temp (reg/v:SI 5 r5 [orig:168 temp ] [168])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":228:12 -1
+     (nil))
+(debug_insn 149 148 150 13 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":229:7 -1
+     (nil))
+(insn 150 149 151 13 (set (reg/v:SI 1 r1 [orig:169 temp ] [169])
+        (and:SI (reg:SI 1 r1 [orig:181 prephitmp_112 ] [181])
+            (reg/v:SI 5 r5 [orig:168 temp ] [168]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":229:12 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg/v:SI 5 r5 [orig:168 temp ] [168])
+        (nil)))
+(debug_insn 151 150 152 13 (var_location:SI temp (reg/v:SI 1 r1 [orig:169 temp ] [169])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":229:12 -1
+     (nil))
+(debug_insn 152 151 154 13 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":230:7 -1
+     (nil))
+(insn 154 152 155 13 (set (reg/v:SI 2 r2 [orig:170 temp ] [170])
+        (ior:SI (reg:SI 2 r2 [261])
+            (reg/v:SI 1 r1 [orig:169 temp ] [169]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":230:12 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg/v:SI 1 r1 [orig:169 temp ] [169])
+        (nil)))
+(debug_insn 155 154 156 13 (var_location:SI temp (reg/v:SI 2 r2 [orig:170 temp ] [170])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":230:12 -1
+     (nil))
+(debug_insn 156 155 157 13 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":231:7 -1
+     (nil))
+(insn 157 156 158 13 (set (mem/v:SI (reg/v/f:SI 0 r0 [orig:193 GPIOx ] [193]) [1 GPIOx_62(D)->MODER+0 S4 A32])
+        (reg/v:SI 2 r2 [orig:170 temp ] [170])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":231:20 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 2 r2 [orig:170 temp ] [170])
+        (nil)))
+(debug_insn 158 157 161 13 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":235:7 -1
+     (nil))
+(insn 161 158 162 13 (parallel [
+            (set (reg:CC_NZ 100 cc)
+                (compare:CC_NZ (and:SI (reg:SI 7 r7 [orig:114 _2 ] [114])
+                        (const_int 196608 [0x30000]))
+                    (const_int 0 [0])))
+            (clobber (scratch:SI))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":235:10 92 {*andsi3_compare0_scratch}
+     (nil))
+(jump_insn 162 161 163 13 (set (pc)
+        (if_then_else (eq (reg:CC_NZ 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 363)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":235:10 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC_NZ 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 363)
+(note 163 162 181 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(note 181 163 183 14 NOTE_INSN_DELETED)
+(note 183 181 192 14 NOTE_INSN_DELETED)
+(note 192 183 164 14 NOTE_INSN_DELETED)
+(debug_insn 164 192 165 14 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":238:9 -1
+     (nil))
+(debug_insn 165 164 166 14 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":238:9 -1
+     (nil))
+(debug_insn 166 165 168 14 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":238:9 -1
+     (nil))
+(insn 168 166 169 14 (set (reg:SI 2 r2 [orig:135 _31 ] [135])
+        (mem/v:SI (plus:SI (reg/f:SI 10 r10 [262])
+                (const_int 96 [0x60])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB2ENR+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":238:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 169 168 171 14 (set (reg:SI 2 r2 [orig:136 _32 ] [136])
+        (ior:SI (reg:SI 2 r2 [orig:135 _31 ] [135])
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":238:9 106 {*iorsi3_insn}
+     (nil))
+(insn 171 169 172 14 (set (mem/v:SI (plus:SI (reg/f:SI 10 r10 [262])
+                (const_int 96 [0x60])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB2ENR+0 S4 A64])
+        (reg:SI 2 r2 [orig:136 _32 ] [136])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":238:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:136 _32 ] [136])
+        (nil)))
+(debug_insn 172 171 174 14 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":238:9 -1
+     (nil))
+(insn 174 172 175 14 (set (reg:SI 2 r2 [orig:137 _33 ] [137])
+        (mem/v:SI (plus:SI (reg/f:SI 10 r10 [262])
+                (const_int 96 [0x60])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB2ENR+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":238:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 175 174 176 14 (set (reg:SI 2 r2 [orig:138 _34 ] [138])
+        (and:SI (reg:SI 2 r2 [orig:137 _33 ] [137])
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":238:9 90 {*arm_andsi3_insn}
+     (nil))
+(insn 176 175 177 14 (set (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 12 [0xc])) [1 tmpreg+0 S4 A32])
+        (reg:SI 2 r2 [orig:138 _34 ] [138])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":238:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:138 _34 ] [138])
+        (nil)))
+(debug_insn 177 176 178 14 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":238:9 -1
+     (nil))
+(insn 178 177 179 14 (set (reg:SI 2 r2 [orig:171 vol.0_85 ] [171])
+        (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 12 [0xc])) [1 tmpreg+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":238:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_UNUSED (reg:SI 2 r2 [orig:171 vol.0_85 ] [171])
+        (nil)))
+(debug_insn 179 178 180 14 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":238:9 -1
+     (nil))
+(debug_insn 180 179 182 14 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":240:9 -1
+     (nil))
+(insn 182 180 476 14 (set (reg:SI 2 r2 [225])
+        (and:SI (reg/v:SI 3 r3 [orig:178 position ] [178])
+            (const_int -4 [0xfffffffffffffffc]))) 90 {*arm_andsi3_insn}
+     (nil))
+(insn 476 182 477 14 (set (reg/f:SI 2 r2 [orig:182 _113 ] [182])
+        (plus:SI (reg:SI 2 r2 [225])
+            (const_int 1073741824 [0x40000000]))) 7 {*arm_addsi3}
+     (nil))
+(insn 477 476 188 14 (set (reg/f:SI 2 r2 [orig:182 _113 ] [182])
+        (plus:SI (reg/f:SI 2 r2 [orig:182 _113 ] [182])
+            (const_int 65536 [0x10000]))) 7 {*arm_addsi3}
+     (nil))
+(insn 188 477 189 14 (set (reg:SI 5 r5 [227])
+        (and:SI (reg/v:SI 3 r3 [orig:178 position ] [178])
+            (const_int 3 [0x3]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":241:45 90 {*arm_andsi3_insn}
+     (nil))
+(insn 189 188 185 14 (set (reg:SI 5 r5 [orig:141 _37 ] [141])
+        (ashift:SI (reg:SI 5 r5 [227])
+            (const_int 2 [0x2]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":241:33 147 {*arm_shiftsi3}
+     (nil))
+(insn 185 189 186 14 (set (reg/v:SI 1 r1 [orig:172 temp ] [172])
+        (mem/v:SI (plus:SI (reg/f:SI 2 r2 [orig:182 _113 ] [182])
+                (const_int 8 [0x8])) [5 MEM <volatile uint32_t> [(struct SYSCFG_TypeDef *)_113 + 8B]+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":240:14 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 186 185 187 14 (var_location:SI temp (reg/v:SI 1 r1 [orig:172 temp ] [172])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":240:14 -1
+     (nil))
+(debug_insn 187 186 503 14 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":241:9 -1
+     (nil))
+(insn 503 187 191 14 (set (reg:SI 6 r6 [291])
+        (const_int 15 [0xf])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":241:26 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 191 503 193 14 (set (reg:SI 14 lr [228])
+        (ashift:SI (reg:SI 6 r6 [291])
+            (reg:SI 5 r5 [orig:141 _37 ] [141]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":241:26 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 6 r6 [291])
+        (expr_list:REG_EQUAL (ashift:SI (const_int 15 [0xf])
+                (reg:SI 5 r5 [orig:141 _37 ] [141]))
+            (nil))))
+(insn 193 191 194 14 (set (reg/v:SI 1 r1 [orig:173 temp ] [173])
+        (and:SI (not:SI (reg:SI 14 lr [228]))
+            (reg/v:SI 1 r1 [orig:172 temp ] [172]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":241:14 100 {andsi_notsi_si}
+     (nil))
+(debug_insn 194 193 195 14 (var_location:SI temp (reg/v:SI 1 r1 [orig:173 temp ] [173])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":241:14 -1
+     (nil))
+(debug_insn 195 194 196 14 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:9 -1
+     (nil))
+(insn 196 195 197 14 (set (reg:CC 100 cc)
+        (compare:CC (reg/v/f:SI 0 r0 [orig:193 GPIOx ] [193])
+            (const_int 1207959552 [0x48000000]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:18 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 197 196 198 14 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 257)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:18 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 322122548 (nil)))
+ -> 257)
+(note 198 197 504 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 504 198 200 15 (set (reg:SI 6 r6 [292])
+        (const_int 1207960576 [0x48000400])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:18 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 200 504 201 15 (set (reg:CC 100 cc)
+        (compare:CC (reg/v/f:SI 0 r0 [orig:193 GPIOx ] [193])
+            (reg:SI 6 r6 [292]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:18 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 6 r6 [292])
+        (expr_list:REG_EQUAL (compare:CC (reg/v/f:SI 0 r0 [orig:193 GPIOx ] [193])
+                (const_int 1207960576 [0x48000400]))
+            (nil))))
+(jump_insn 201 200 202 15 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 208)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:18 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 751619284 (nil)))
+ -> 208)
+(note 202 201 204 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 204 202 205 16 (set (reg:SI 5 r5 [232])
+        (ashift:SI (reg:SI 11 fp [195])
+            (reg:SI 5 r5 [orig:141 _37 ] [141]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:40 147 {*arm_shiftsi3}
+     (expr_list:REG_EQUAL (ashift:SI (const_int 1 [0x1])
+            (reg:SI 5 r5 [orig:141 _37 ] [141]))
+        (nil)))
+(insn 205 204 458 16 (set (reg/v:SI 1 r1 [orig:173 temp ] [173])
+        (ior:SI (reg/v:SI 1 r1 [orig:173 temp ] [173])
+            (reg:SI 5 r5 [232]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:14 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 5 r5 [232])
+        (nil)))
+(jump_insn 458 205 459 16 (set (pc)
+        (label_ref 257)) 284 {*arm_jump}
+     (nil)
+ -> 257)
+(barrier 459 458 208)
+(code_label 208 459 209 17 11 (nil) [1 uses])
+(note 209 208 505 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 505 209 211 17 (set (reg:SI 6 r6 [293])
+        (const_int 1207961600 [0x48000800])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:18 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 211 505 212 17 (set (reg:CC 100 cc)
+        (compare:CC (reg/v/f:SI 0 r0 [orig:193 GPIOx ] [193])
+            (reg:SI 6 r6 [293]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:18 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 6 r6 [293])
+        (expr_list:REG_EQUAL (compare:CC (reg/v/f:SI 0 r0 [orig:193 GPIOx ] [193])
+                (const_int 1207961600 [0x48000800]))
+            (nil))))
+(jump_insn 212 211 213 17 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 219)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:18 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 751619284 (nil)))
+ -> 219)
+(note 213 212 214 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 214 213 215 18 (set (reg:SI 14 lr [236])
+        (const_int 2 [0x2])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:40 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 2 [0x2])
+        (nil)))
+(insn 215 214 216 18 (set (reg:SI 5 r5 [235])
+        (ashift:SI (reg:SI 14 lr [236])
+            (reg:SI 5 r5 [orig:141 _37 ] [141]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:40 147 {*arm_shiftsi3}
+     (nil))
+(insn 216 215 460 18 (set (reg/v:SI 1 r1 [orig:173 temp ] [173])
+        (ior:SI (reg/v:SI 1 r1 [orig:173 temp ] [173])
+            (reg:SI 5 r5 [235]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:14 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 5 r5 [235])
+        (nil)))
+(jump_insn 460 216 461 18 (set (pc)
+        (label_ref 257)) 284 {*arm_jump}
+     (nil)
+ -> 257)
+(barrier 461 460 219)
+(code_label 219 461 220 19 12 (nil) [1 uses])
+(note 220 219 506 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 506 220 222 19 (set (reg:SI 6 r6 [294])
+        (const_int 1207962624 [0x48000c00])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:18 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 222 506 223 19 (set (reg:CC 100 cc)
+        (compare:CC (reg/v/f:SI 0 r0 [orig:193 GPIOx ] [193])
+            (reg:SI 6 r6 [294]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:18 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 6 r6 [294])
+        (expr_list:REG_EQUAL (compare:CC (reg/v/f:SI 0 r0 [orig:193 GPIOx ] [193])
+                (const_int 1207962624 [0x48000c00]))
+            (nil))))
+(jump_insn 223 222 224 19 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 230)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:18 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 751619284 (nil)))
+ -> 230)
+(note 224 223 225 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 225 224 226 20 (set (reg:SI 14 lr [239])
+        (const_int 3 [0x3])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:40 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 3 [0x3])
+        (nil)))
+(insn 226 225 227 20 (set (reg:SI 5 r5 [238])
+        (ashift:SI (reg:SI 14 lr [239])
+            (reg:SI 5 r5 [orig:141 _37 ] [141]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:40 147 {*arm_shiftsi3}
+     (nil))
+(insn 227 226 462 20 (set (reg/v:SI 1 r1 [orig:173 temp ] [173])
+        (ior:SI (reg/v:SI 1 r1 [orig:173 temp ] [173])
+            (reg:SI 5 r5 [238]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:14 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 5 r5 [238])
+        (nil)))
+(jump_insn 462 227 463 20 (set (pc)
+        (label_ref 257)) 284 {*arm_jump}
+     (nil)
+ -> 257)
+(barrier 463 462 230)
+(code_label 230 463 231 21 13 (nil) [1 uses])
+(note 231 230 507 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 507 231 233 21 (set (reg:SI 6 r6 [295])
+        (const_int 1207963648 [0x48001000])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:18 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 233 507 234 21 (set (reg:CC 100 cc)
+        (compare:CC (reg/v/f:SI 0 r0 [orig:193 GPIOx ] [193])
+            (reg:SI 6 r6 [295]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:18 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 6 r6 [295])
+        (expr_list:REG_EQUAL (compare:CC (reg/v/f:SI 0 r0 [orig:193 GPIOx ] [193])
+                (const_int 1207963648 [0x48001000]))
+            (nil))))
+(jump_insn 234 233 235 21 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 241)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:18 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 751619284 (nil)))
+ -> 241)
+(note 235 234 236 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 236 235 237 22 (set (reg:SI 14 lr [242])
+        (const_int 4 [0x4])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:40 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 4 [0x4])
+        (nil)))
+(insn 237 236 238 22 (set (reg:SI 5 r5 [241])
+        (ashift:SI (reg:SI 14 lr [242])
+            (reg:SI 5 r5 [orig:141 _37 ] [141]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:40 147 {*arm_shiftsi3}
+     (nil))
+(insn 238 237 464 22 (set (reg/v:SI 1 r1 [orig:173 temp ] [173])
+        (ior:SI (reg/v:SI 1 r1 [orig:173 temp ] [173])
+            (reg:SI 5 r5 [241]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:14 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 5 r5 [241])
+        (nil)))
+(jump_insn 464 238 465 22 (set (pc)
+        (label_ref 257)) 284 {*arm_jump}
+     (nil)
+ -> 257)
+(barrier 465 464 241)
+(code_label 241 465 242 23 14 (nil) [1 uses])
+(note 242 241 508 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(insn 508 242 244 23 (set (reg:SI 6 r6 [296])
+        (const_int 1207964672 [0x48001400])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:18 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 244 508 245 23 (set (reg:CC 100 cc)
+        (compare:CC (reg/v/f:SI 0 r0 [orig:193 GPIOx ] [193])
+            (reg:SI 6 r6 [296]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:18 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 6 r6 [296])
+        (expr_list:REG_EQUAL (compare:CC (reg/v/f:SI 0 r0 [orig:193 GPIOx ] [193])
+                (const_int 1207964672 [0x48001400]))
+            (nil))))
+(jump_insn 245 244 246 23 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 252)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:18 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 751619284 (nil)))
+ -> 252)
+(note 246 245 247 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(insn 247 246 248 24 (set (reg:SI 14 lr [245])
+        (const_int 5 [0x5])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:40 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 5 [0x5])
+        (nil)))
+(insn 248 247 249 24 (set (reg:SI 5 r5 [244])
+        (ashift:SI (reg:SI 14 lr [245])
+            (reg:SI 5 r5 [orig:141 _37 ] [141]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:40 147 {*arm_shiftsi3}
+     (nil))
+(insn 249 248 466 24 (set (reg/v:SI 1 r1 [orig:173 temp ] [173])
+        (ior:SI (reg/v:SI 1 r1 [orig:173 temp ] [173])
+            (reg:SI 5 r5 [244]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:14 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 5 r5 [244])
+        (nil)))
+(jump_insn 466 249 467 24 (set (pc)
+        (label_ref 257)) 284 {*arm_jump}
+     (nil)
+ -> 257)
+(barrier 467 466 252)
+(code_label 252 467 253 25 15 (nil) [1 uses])
+(note 253 252 254 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(insn 254 253 255 25 (set (reg:SI 14 lr [247])
+        (const_int 6 [0x6])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:40 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 6 [0x6])
+        (nil)))
+(insn 255 254 256 25 (set (reg:SI 5 r5 [246])
+        (ashift:SI (reg:SI 14 lr [247])
+            (reg:SI 5 r5 [orig:141 _37 ] [141]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:40 147 {*arm_shiftsi3}
+     (nil))
+(insn 256 255 257 25 (set (reg/v:SI 1 r1 [orig:173 temp ] [173])
+        (ior:SI (reg/v:SI 1 r1 [orig:173 temp ] [173])
+            (reg:SI 5 r5 [246]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:14 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 5 r5 [246])
+        (nil)))
+(code_label 257 256 258 26 10 (nil) [6 uses])
+(note 258 257 270 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(note 270 258 259 26 NOTE_INSN_DELETED)
+(debug_insn 259 270 260 26 (var_location:SI temp (ior:SI (debug_expr:SI D#1)
+        (reg/v:SI 1 r1 [orig:173 temp ] [173]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":242:14 -1
+     (nil))
+(debug_insn 260 259 261 26 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":243:9 -1
+     (nil))
+(insn 261 260 262 26 (set (mem/v:SI (plus:SI (reg/f:SI 2 r2 [orig:182 _113 ] [182])
+                (const_int 8 [0x8])) [5 MEM <volatile uint32_t> [(struct SYSCFG_TypeDef *)_113 + 8B]+0 S4 A32])
+        (reg/v:SI 1 r1 [orig:173 temp ] [173])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":243:40 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 2 r2 [orig:182 _113 ] [182])
+        (expr_list:REG_DEAD (reg/v:SI 1 r1 [orig:173 temp ] [173])
+            (nil))))
+(debug_insn 262 261 520 26 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":246:9 -1
+     (nil))
+(insn 520 262 264 26 (set (reg:SI 2 r2 [308])
+        (const_int 1073808384 [0x40010400])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":246:14 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 264 520 265 26 (set (reg/v:SI 2 r2 [orig:174 temp ] [174])
+        (mem/v:SI (plus:SI (reg:SI 2 r2 [308])
+                (const_int 8 [0x8])) [1 MEM[(struct EXTI_TypeDef *)1073808384B].RTSR1+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":246:14 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 265 264 266 26 (var_location:SI temp (reg/v:SI 2 r2 [orig:174 temp ] [174])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":246:14 -1
+     (nil))
+(debug_insn 266 265 267 26 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":247:9 -1
+     (nil))
+(insn 267 266 268 26 (set (reg:SI 5 r5 [orig:144 _41 ] [144])
+        (not:SI (reg/v:SI 8 r8 [orig:155 iocurrent ] [155]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":247:17 169 {*arm_one_cmplsi2}
+     (nil))
+(debug_insn 268 267 269 26 (var_location:SI temp (and:SI (reg:SI 5 r5 [orig:144 _41 ] [144])
+        (reg/v:SI 2 r2 [orig:174 temp ] [174]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":247:14 -1
+     (nil))
+(debug_insn 269 268 559 26 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":248:9 -1
+     (nil))
+(insn 559 269 560 26 (parallel [
+            (set (reg:CC_NZ 100 cc)
+                (compare:CC_NZ (ashift:SI (reg:SI 7 r7 [orig:114 _2 ] [114])
+                        (const_int 11 [0xb]))
+                    (const_int 0 [0])))
+            (clobber (reg:SI 6 r6))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":248:12 -1
+     (nil))
+(jump_insn 560 559 273 26 (set (pc)
+        (if_then_else (lt (reg:CC_NZ 100 cc)
+                (const_int 0 [0]))
+            (label_ref 277)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":248:12 -1
+     (nil)
+ -> 277)
+(note 273 560 274 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(insn 274 273 468 27 (set (reg/v:SI 2 r2 [orig:150 temp ] [150])
+        (and:SI (reg/v:SI 2 r2 [orig:174 temp ] [174])
+            (reg:SI 5 r5 [orig:144 _41 ] [144]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":247:14 90 {*arm_andsi3_insn}
+     (nil))
+(jump_insn 468 274 469 27 (set (pc)
+        (label_ref 282)) 284 {*arm_jump}
+     (nil)
+ -> 282)
+(barrier 469 468 277)
+(code_label 277 469 278 28 16 (nil) [1 uses])
+(note 278 277 279 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 279 278 280 28 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":250:11 -1
+     (nil))
+(insn 280 279 281 28 (set (reg/v:SI 2 r2 [orig:150 temp ] [150])
+        (ior:SI (reg/v:SI 8 r8 [orig:155 iocurrent ] [155])
+            (reg/v:SI 2 r2 [orig:174 temp ] [174]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":250:16 106 {*iorsi3_insn}
+     (nil))
+(debug_insn 281 280 282 28 (var_location:SI temp (reg/v:SI 2 r2 [orig:150 temp ] [150])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":250:16 -1
+     (nil))
+(code_label 282 281 283 29 17 (nil) [1 uses])
+(note 283 282 295 29 [bb 29] NOTE_INSN_BASIC_BLOCK)
+(note 295 283 284 29 NOTE_INSN_DELETED)
+(debug_insn 284 295 285 29 (var_location:SI temp (reg/v:SI 2 r2 [orig:150 temp ] [150])) -1
+     (nil))
+(debug_insn 285 284 519 29 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":252:9 -1
+     (nil))
+(insn 519 285 287 29 (set (reg:SI 1 r1 [307])
+        (const_int 1073808384 [0x40010400])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":252:21 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 287 519 288 29 (set (mem/v:SI (plus:SI (reg:SI 1 r1 [307])
+                (const_int 8 [0x8])) [1 MEM[(struct EXTI_TypeDef *)1073808384B].RTSR1+0 S4 A64])
+        (reg/v:SI 2 r2 [orig:150 temp ] [150])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":252:21 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 2 r2 [orig:150 temp ] [150])
+        (nil)))
+(debug_insn 288 287 518 29 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":254:9 -1
+     (nil))
+(note 518 288 524 29 NOTE_INSN_DELETED)
+(insn 524 518 290 29 (set (reg:SI 2 r2 [306])
+        (reg:SI 1 r1 [307])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":254:14 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [307])
+        (nil)))
+(insn 290 524 291 29 (set (reg/v:SI 2 r2 [orig:175 temp ] [175])
+        (mem/v:SI (plus:SI (reg:SI 2 r2 [306])
+                (const_int 12 [0xc])) [1 MEM[(struct EXTI_TypeDef *)1073808384B].FTSR1+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":254:14 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 291 290 292 29 (var_location:SI temp (reg/v:SI 2 r2 [orig:175 temp ] [175])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":254:14 -1
+     (nil))
+(debug_insn 292 291 293 29 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":255:9 -1
+     (nil))
+(debug_insn 293 292 294 29 (var_location:SI temp (and:SI (reg:SI 5 r5 [orig:144 _41 ] [144])
+        (reg/v:SI 2 r2 [orig:175 temp ] [175]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":255:14 -1
+     (nil))
+(debug_insn 294 293 557 29 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":256:9 -1
+     (nil))
+(insn 557 294 558 29 (parallel [
+            (set (reg:CC_NZ 100 cc)
+                (compare:CC_NZ (ashift:SI (reg:SI 7 r7 [orig:114 _2 ] [114])
+                        (const_int 10 [0xa]))
+                    (const_int 0 [0])))
+            (clobber (reg:SI 1 r1))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":256:12 -1
+     (nil))
+(jump_insn 558 557 298 29 (set (pc)
+        (if_then_else (lt (reg:CC_NZ 100 cc)
+                (const_int 0 [0]))
+            (label_ref 302)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":256:12 -1
+     (nil)
+ -> 302)
+(note 298 558 299 30 [bb 30] NOTE_INSN_BASIC_BLOCK)
+(insn 299 298 470 30 (set (reg/v:SI 2 r2 [orig:151 temp ] [151])
+        (and:SI (reg/v:SI 2 r2 [orig:175 temp ] [175])
+            (reg:SI 5 r5 [orig:144 _41 ] [144]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":255:14 90 {*arm_andsi3_insn}
+     (nil))
+(jump_insn 470 299 471 30 (set (pc)
+        (label_ref 307)) 284 {*arm_jump}
+     (nil)
+ -> 307)
+(barrier 471 470 302)
+(code_label 302 471 303 31 18 (nil) [1 uses])
+(note 303 302 304 31 [bb 31] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 304 303 305 31 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":258:11 -1
+     (nil))
+(insn 305 304 306 31 (set (reg/v:SI 2 r2 [orig:151 temp ] [151])
+        (ior:SI (reg/v:SI 8 r8 [orig:155 iocurrent ] [155])
+            (reg/v:SI 2 r2 [orig:175 temp ] [175]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":258:16 106 {*iorsi3_insn}
+     (nil))
+(debug_insn 306 305 307 31 (var_location:SI temp (reg/v:SI 2 r2 [orig:151 temp ] [151])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":258:16 -1
+     (nil))
+(code_label 307 306 308 32 19 (nil) [1 uses])
+(note 308 307 320 32 [bb 32] NOTE_INSN_BASIC_BLOCK)
+(note 320 308 309 32 NOTE_INSN_DELETED)
+(debug_insn 309 320 310 32 (var_location:SI temp (reg/v:SI 2 r2 [orig:151 temp ] [151])) -1
+     (nil))
+(debug_insn 310 309 517 32 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":260:9 -1
+     (nil))
+(insn 517 310 312 32 (set (reg:SI 1 r1 [305])
+        (const_int 1073808384 [0x40010400])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":260:21 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 312 517 313 32 (set (mem/v:SI (plus:SI (reg:SI 1 r1 [305])
+                (const_int 12 [0xc])) [1 MEM[(struct EXTI_TypeDef *)1073808384B].FTSR1+0 S4 A32])
+        (reg/v:SI 2 r2 [orig:151 temp ] [151])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":260:21 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 2 r2 [orig:151 temp ] [151])
+        (nil)))
+(debug_insn 313 312 516 32 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":262:9 -1
+     (nil))
+(note 516 313 526 32 NOTE_INSN_DELETED)
+(insn 526 516 315 32 (set (reg:SI 2 r2 [304])
+        (reg:SI 1 r1 [305])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":262:14 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [305])
+        (nil)))
+(insn 315 526 316 32 (set (reg/v:SI 1 r1 [orig:176 temp ] [176])
+        (mem/v:SI (plus:SI (reg:SI 2 r2 [304])
+                (const_int 4 [0x4])) [1 MEM[(struct EXTI_TypeDef *)1073808384B].EMR1+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":262:14 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [304])
+        (nil)))
+(debug_insn 316 315 317 32 (var_location:SI temp (reg/v:SI 1 r1 [orig:176 temp ] [176])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":262:14 -1
+     (nil))
+(debug_insn 317 316 318 32 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":263:9 -1
+     (nil))
+(debug_insn 318 317 319 32 (var_location:SI temp (and:SI (reg:SI 5 r5 [orig:144 _41 ] [144])
+        (reg/v:SI 1 r1 [orig:176 temp ] [176]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":263:14 -1
+     (nil))
+(debug_insn 319 318 555 32 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":264:9 -1
+     (nil))
+(insn 555 319 556 32 (parallel [
+            (set (reg:CC_NZ 100 cc)
+                (compare:CC_NZ (ashift:SI (reg:SI 7 r7 [orig:114 _2 ] [114])
+                        (const_int 14 [0xe]))
+                    (const_int 0 [0])))
+            (clobber (reg:SI 6 r6))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":264:12 -1
+     (nil))
+(jump_insn 556 555 323 32 (set (pc)
+        (if_then_else (lt (reg:CC_NZ 100 cc)
+                (const_int 0 [0]))
+            (label_ref 327)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":264:12 -1
+     (nil)
+ -> 327)
+(note 323 556 324 33 [bb 33] NOTE_INSN_BASIC_BLOCK)
+(insn 324 323 472 33 (set (reg/v:SI 1 r1 [orig:152 temp ] [152])
+        (and:SI (reg/v:SI 1 r1 [orig:176 temp ] [176])
+            (reg:SI 5 r5 [orig:144 _41 ] [144]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":263:14 90 {*arm_andsi3_insn}
+     (nil))
+(jump_insn 472 324 473 33 (set (pc)
+        (label_ref 332)) 284 {*arm_jump}
+     (nil)
+ -> 332)
+(barrier 473 472 327)
+(code_label 327 473 328 34 20 (nil) [1 uses])
+(note 328 327 329 34 [bb 34] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 329 328 330 34 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":266:11 -1
+     (nil))
+(insn 330 329 331 34 (set (reg/v:SI 1 r1 [orig:152 temp ] [152])
+        (ior:SI (reg/v:SI 8 r8 [orig:155 iocurrent ] [155])
+            (reg/v:SI 1 r1 [orig:176 temp ] [176]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":266:16 106 {*iorsi3_insn}
+     (nil))
+(debug_insn 331 330 332 34 (var_location:SI temp (reg/v:SI 1 r1 [orig:152 temp ] [152])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":266:16 -1
+     (nil))
+(code_label 332 331 333 35 21 (nil) [1 uses])
+(note 333 332 345 35 [bb 35] NOTE_INSN_BASIC_BLOCK)
+(note 345 333 334 35 NOTE_INSN_DELETED)
+(debug_insn 334 345 335 35 (var_location:SI temp (reg/v:SI 1 r1 [orig:152 temp ] [152])) -1
+     (nil))
+(debug_insn 335 334 515 35 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":268:9 -1
+     (nil))
+(insn 515 335 337 35 (set (reg:SI 2 r2 [303])
+        (const_int 1073808384 [0x40010400])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":268:20 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 337 515 338 35 (set (mem/v:SI (plus:SI (reg:SI 2 r2 [303])
+                (const_int 4 [0x4])) [1 MEM[(struct EXTI_TypeDef *)1073808384B].EMR1+0 S4 A32])
+        (reg/v:SI 1 r1 [orig:152 temp ] [152])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":268:20 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 1 r1 [orig:152 temp ] [152])
+        (nil)))
+(debug_insn 338 337 514 35 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":271:9 -1
+     (nil))
+(note 514 338 340 35 NOTE_INSN_DELETED)
+(insn 340 514 341 35 (set (reg/v:SI 2 r2 [orig:177 temp ] [177])
+        (mem/v:SI (reg:SI 2 r2 [302]) [1 MEM[(struct EXTI_TypeDef *)1073808384B].IMR1+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":271:14 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 341 340 342 35 (var_location:SI temp (reg/v:SI 2 r2 [orig:177 temp ] [177])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":271:14 -1
+     (nil))
+(debug_insn 342 341 343 35 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":272:9 -1
+     (nil))
+(debug_insn 343 342 344 35 (var_location:SI temp (and:SI (reg:SI 5 r5 [orig:144 _41 ] [144])
+        (reg/v:SI 2 r2 [orig:177 temp ] [177]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":272:14 -1
+     (nil))
+(debug_insn 344 343 553 35 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":273:9 -1
+     (nil))
+(insn 553 344 554 35 (parallel [
+            (set (reg:CC_NZ 100 cc)
+                (compare:CC_NZ (ashift:SI (reg:SI 7 r7 [orig:114 _2 ] [114])
+                        (const_int 15 [0xf]))
+                    (const_int 0 [0])))
+            (clobber (reg:SI 1 r1))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":273:12 -1
+     (nil))
+(jump_insn 554 553 348 35 (set (pc)
+        (if_then_else (lt (reg:CC_NZ 100 cc)
+                (const_int 0 [0]))
+            (label_ref 352)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":273:12 -1
+     (nil)
+ -> 352)
+(note 348 554 349 36 [bb 36] NOTE_INSN_BASIC_BLOCK)
+(insn 349 348 474 36 (set (reg/v:SI 2 r2 [orig:153 temp ] [153])
+        (and:SI (reg/v:SI 2 r2 [orig:177 temp ] [177])
+            (reg:SI 5 r5 [orig:144 _41 ] [144]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":272:14 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 5 r5 [orig:144 _41 ] [144])
+        (nil)))
+(jump_insn 474 349 475 36 (set (pc)
+        (label_ref 357)) 284 {*arm_jump}
+     (nil)
+ -> 357)
+(barrier 475 474 352)
+(code_label 352 475 353 37 22 (nil) [1 uses])
+(note 353 352 354 37 [bb 37] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 354 353 355 37 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":275:11 -1
+     (nil))
+(insn 355 354 356 37 (set (reg/v:SI 2 r2 [orig:153 temp ] [153])
+        (ior:SI (reg/v:SI 8 r8 [orig:155 iocurrent ] [155])
+            (reg/v:SI 2 r2 [orig:177 temp ] [177]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":275:16 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg/v:SI 8 r8 [orig:155 iocurrent ] [155])
+        (nil)))
+(debug_insn 356 355 357 37 (var_location:SI temp (reg/v:SI 2 r2 [orig:153 temp ] [153])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":275:16 -1
+     (nil))
+(code_label 357 356 358 38 23 (nil) [1 uses])
+(note 358 357 359 38 [bb 38] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 359 358 360 38 (var_location:SI temp (reg/v:SI 2 r2 [orig:153 temp ] [153])) -1
+     (nil))
+(debug_insn 360 359 513 38 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":277:9 -1
+     (nil))
+(insn 513 360 362 38 (set (reg:SI 1 r1 [301])
+        (const_int 1073808384 [0x40010400])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":277:20 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 362 513 363 38 (set (mem/v:SI (reg:SI 1 r1 [301]) [1 MEM[(struct EXTI_TypeDef *)1073808384B].IMR1+0 S4 A64])
+        (reg/v:SI 2 r2 [orig:153 temp ] [153])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":277:20 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 2 r2 [orig:153 temp ] [153])
+        (expr_list:REG_DEAD (reg:SI 1 r1 [301])
+            (nil))))
+(code_label 363 362 364 39 4 (nil) [2 uses])
+(note 364 363 370 39 [bb 39] NOTE_INSN_BASIC_BLOCK)
+(note 370 364 365 39 NOTE_INSN_DELETED)
+(debug_insn 365 370 366 39 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":281:5 -1
+     (nil))
+(insn 366 365 367 39 (set (reg/v:SI 3 r3 [orig:178 position ] [178])
+        (plus:SI (reg/v:SI 3 r3 [orig:178 position ] [178])
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":281:13 7 {*arm_addsi3}
+     (nil))
+(debug_insn 367 366 368 39 (var_location:SI position (reg/v:SI 3 r3 [orig:178 position ] [178])) -1
+     (nil))
+(debug_insn 368 367 369 39 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":174:9 -1
+     (nil))
+(insn 369 368 371 39 (set (reg:SI 12 ip [orig:154 ivtmp.29 ] [154])
+        (plus:SI (reg:SI 12 ip [orig:154 ivtmp.29 ] [154])
+            (const_int 2 [0x2]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":174:9 7 {*arm_addsi3}
+     (nil))
+(insn 371 369 372 39 (parallel [
+            (set (reg:CC_NZ 100 cc)
+                (compare:CC_NZ (lshiftrt:SI (reg:SI 4 r4 [orig:190 _139 ] [190])
+                        (reg/v:SI 3 r3 [orig:178 position ] [178]))
+                    (const_int 0 [0])))
+            (clobber (reg:SI 2 r2 [279]))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":174:9 149 {*shiftsi3_compare0_scratch}
+     (expr_list:REG_UNUSED (reg:SI 2 r2 [279])
+        (nil)))
+(jump_insn 372 371 377 39 (set (pc)
+        (if_then_else (ne (reg:CC_NZ 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 25)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":174:9 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC_NZ 100 cc)
+        (int_list:REG_BR_PROB 955630228 (nil)))
+ -> 25)
+(code_label 377 372 378 40 1 (nil) [1 uses])
+(note 378 377 543 40 [bb 40] NOTE_INSN_BASIC_BLOCK)
+(note 543 378 544 40 NOTE_INSN_EPILOGUE_BEG)
+(insn 544 543 545 40 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":283:1 -1
+     (nil))
+(insn/f 545 544 546 40 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 20 [0x14]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":283:1 -1
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 20 [0x14])))
+        (nil)))
+(insn 546 545 547 40 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":283:1 -1
+     (nil))
+(jump_insn 547 546 550 40 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 36 [0x24])))
+            (set/f (reg:SI 4 r4)
+                (mem/c:SI (reg/f:SI 13 sp) [8  S4 A32]))
+            (set/f (reg:SI 5 r5)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [8  S4 A32]))
+            (set/f (reg:SI 6 r6)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 8 [0x8])) [8  S4 A32]))
+            (set/f (reg:SI 7 r7)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 12 [0xc])) [8  S4 A32]))
+            (set/f (reg:SI 8 r8)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 16 [0x10])) [8  S4 A32]))
+            (set/f (reg:SI 9 r9)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 20 [0x14])) [8  S4 A32]))
+            (set/f (reg:SI 10 r10)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 24 [0x18])) [8  S4 A32]))
+            (set/f (reg:SI 11 fp)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 28 [0x1c])) [8  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 32 [0x20])) [8  S4 A32]))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":283:1 -1
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (expr_list:REG_CFA_RESTORE (reg:SI 11 fp)
+            (expr_list:REG_CFA_RESTORE (reg:SI 10 r10)
+                (expr_list:REG_CFA_RESTORE (reg:SI 9 r9)
+                    (expr_list:REG_CFA_RESTORE (reg:SI 8 r8)
+                        (expr_list:REG_CFA_RESTORE (reg:SI 7 r7)
+                            (expr_list:REG_CFA_RESTORE (reg:SI 6 r6)
+                                (expr_list:REG_CFA_RESTORE (reg:SI 5 r5)
+                                    (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+                                        (nil))))))))))
+ -> return)
+(barrier 550 547 485)
+(note 485 550 491 NOTE_INSN_DELETED)
+(note 491 485 0 NOTE_INSN_DELETED)
+
+;; Function HAL_GPIO_DeInit (HAL_GPIO_DeInit, funcdef_no=330, decl_uid=7513, cgraph_uid=334, symbol_order=333)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+HAL_GPIO_DeInit
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 5 [r5] 6 [r6] 7 [r7] 8 [r8] 9 [r9] 10 [r10] 11 [fp] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 4 [r4] 5 [r5] 6 [r6] 7 [r7] 8 [r8] 9 [r9] 10 [r10] 11 [fp] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 5 [r5] 6 [r6] 7 [r7] 8 [r8] 9 [r9] 10 [r10] 11 [fp] 12 [ip] 13 [sp] 14 [lr] 15 [pc] 100 [cc]
+;;  ref usage 	r0={1d,15u,5e} r1={1d,5u} r2={6d,7u} r3={3d,10u,1e} r4={24d,26u,3e} r5={14d,16u,1e} r6={3d,10u} r7={11d,11u} r8={3d,5u} r9={3d,4u} r10={3d,4u} r11={3d,3u} r12={4d,7u} r13={3d,36u} r14={3d,7u} r15={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={10d,9u} 
+;;    total ref usage 297{112d,175u,10e} in 131{131 regular + 0 call} insns.
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 3 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 3 7 4 2 NOTE_INSN_DELETED)
+(note 4 3 9 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 9 4 10 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":294:3 -1
+     (nil))
+(debug_insn 10 9 11 2 (var_location:SI position (const_int 0 [0])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":294:12 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":295:3 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":296:3 -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":299:3 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":300:3 -1
+     (nil))
+(debug_insn 15 14 16 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":303:3 -1
+     (nil))
+(debug_insn 16 15 17 2 (var_location:SI position (const_int 0 [0])) -1
+     (nil))
+(debug_insn 17 16 19 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":303:9 -1
+     (nil))
+(jump_insn 19 17 192 2 (parallel [
+            (set (pc)
+                (if_then_else (eq (reg/v:SI 1 r1 [orig:160 GPIO_Pin ] [160])
+                        (const_int 0 [0]))
+                    (label_ref:SI 274)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":303:9 1024 {*thumb2_cbz}
+     (expr_list:REG_UNUSED (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 118111604 (nil)))
+ -> 274)
+(note 192 19 266 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn/f 266 192 267 3 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -36 [0xffffffffffffffdc]))) [8  A8])
+                (unspec:BLK [
+                        (reg:SI 4 r4)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 5 r5))
+            (use (reg:SI 6 r6))
+            (use (reg:SI 7 r7))
+            (use (reg:SI 8 r8))
+            (use (reg:SI 9 r9))
+            (use (reg:SI 10 r10))
+            (use (reg:SI 11 fp))
+            (use (reg:SI 14 lr))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":293:1 -1
+     (expr_list:REG_DEAD (reg:SI 14 lr)
+        (expr_list:REG_DEAD (reg:SI 11 fp)
+            (expr_list:REG_DEAD (reg:SI 10 r10)
+                (expr_list:REG_DEAD (reg:SI 9 r9)
+                    (expr_list:REG_DEAD (reg:SI 8 r8)
+                        (expr_list:REG_DEAD (reg:SI 7 r7)
+                            (expr_list:REG_DEAD (reg:SI 6 r6)
+                                (expr_list:REG_DEAD (reg:SI 5 r5)
+                                    (expr_list:REG_DEAD (reg:SI 4 r4)
+                                        (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                                                    (set/f (reg/f:SI 13 sp)
+                                                        (plus:SI (reg/f:SI 13 sp)
+                                                            (const_int -36 [0xffffffffffffffdc])))
+                                                    (set/f (mem/c:SI (reg/f:SI 13 sp) [8  S4 A32])
+                                                        (reg:SI 4 r4))
+                                                    (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                                                (const_int 4 [0x4])) [8  S4 A32])
+                                                        (reg:SI 5 r5))
+                                                    (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                                                (const_int 8 [0x8])) [8  S4 A32])
+                                                        (reg:SI 6 r6))
+                                                    (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                                                (const_int 12 [0xc])) [8  S4 A32])
+                                                        (reg:SI 7 r7))
+                                                    (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                                                (const_int 16 [0x10])) [8  S4 A32])
+                                                        (reg:SI 8 r8))
+                                                    (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                                                (const_int 20 [0x14])) [8  S4 A32])
+                                                        (reg:SI 9 r9))
+                                                    (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                                                (const_int 24 [0x18])) [8  S4 A32])
+                                                        (reg:SI 10 r10))
+                                                    (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                                                (const_int 28 [0x1c])) [8  S4 A32])
+                                                        (reg:SI 11 fp))
+                                                    (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                                                (const_int 32 [0x20])) [8  S4 A32])
+                                                        (reg:SI 14 lr))
+                                                ])
+                                            (nil))))))))))))
+(note 267 266 5 3 NOTE_INSN_PROLOGUE_END)
+(insn 5 267 27 3 (set (reg/v:SI 3 r3 [orig:153 position ] [153])
+        (const_int 0 [0])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":294:12 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(note 27 5 45 3 NOTE_INSN_DELETED)
+(insn 45 27 111 3 (set (reg:SI 9 r9 [198])
+        (const_int 15 [0xf])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":314:22 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 15 [0xf])
+        (nil)))
+(insn 111 45 53 3 (set (reg/f:SI 6 r6 [200])
+        (const_int 1073808384 [0x40010400])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":318:20 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073808384 [0x40010400])
+        (nil)))
+(insn 53 111 63 3 (set (reg:SI 11 fp [201])
+        (const_int 1207960576 [0x48000400])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:19 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1207960576 [0x48000400])
+        (nil)))
+(note 63 53 73 3 NOTE_INSN_DELETED)
+(note 73 63 83 3 NOTE_INSN_DELETED)
+(note 83 73 93 3 NOTE_INSN_DELETED)
+(note 93 83 147 3 NOTE_INSN_DELETED)
+(insn 147 93 23 3 (set (reg:SI 10 r10 [199])
+        (const_int 3 [0x3])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":331:41 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 3 [0x3])
+        (nil)))
+(code_label 23 147 24 4 45 (nil) [1 uses])
+(note 24 23 29 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 29 24 25 4 NOTE_INSN_DELETED)
+(debug_insn 25 29 26 4 (var_location:SI position (reg/v:SI 3 r3 [orig:153 position ] [153])) -1
+     (nil))
+(debug_insn 26 25 259 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":306:5 -1
+     (nil))
+(insn 259 26 28 4 (set (reg:SI 2 r2 [222])
+        (const_int 1 [0x1])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":306:35 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 28 259 224 4 (set (reg:SI 2 r2 [orig:113 _1 ] [113])
+        (ashift:SI (reg:SI 2 r2 [222])
+            (reg/v:SI 3 r3 [orig:153 position ] [153]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":306:35 147 {*arm_shiftsi3}
+     (expr_list:REG_EQUAL (ashift:SI (const_int 1 [0x1])
+            (reg/v:SI 3 r3 [orig:153 position ] [153]))
+        (nil)))
+(debug_insn 224 28 30 4 (var_location:SI D#3 (and:SI (reg:SI 2 r2 [orig:113 _1 ] [113])
+        (reg/v:SI 1 r1 [orig:160 GPIO_Pin ] [160]))) -1
+     (nil))
+(debug_insn 30 224 31 4 (var_location:SI iocurrent (debug_expr:SI D#3)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":306:15 -1
+     (nil))
+(debug_insn 31 30 32 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":308:5 -1
+     (nil))
+(insn 32 31 33 4 (parallel [
+            (set (reg:CC_NZ 100 cc)
+                (compare:CC_NZ (and:SI (reg:SI 2 r2 [orig:113 _1 ] [113])
+                        (reg/v:SI 1 r1 [orig:160 GPIO_Pin ] [160]))
+                    (const_int 0 [0])))
+            (set (reg/v:SI 14 lr [orig:150 iocurrent ] [150])
+                (and:SI (reg:SI 2 r2 [orig:113 _1 ] [113])
+                    (reg/v:SI 1 r1 [orig:160 GPIO_Pin ] [160])))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":308:8 91 {*andsi3_compare0}
+     (nil))
+(jump_insn 33 32 34 4 (set (pc)
+        (if_then_else (eq (reg:CC_NZ 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 177)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":308:8 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC_NZ 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 177)
+(note 34 33 36 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(note 36 34 38 5 NOTE_INSN_DELETED)
+(note 38 36 35 5 NOTE_INSN_DELETED)
+(debug_insn 35 38 37 5 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":313:7 -1
+     (nil))
+(insn 37 35 237 5 (set (reg:SI 5 r5 [163])
+        (and:SI (reg/v:SI 3 r3 [orig:153 position ] [153])
+            (const_int -4 [0xfffffffffffffffc]))) 90 {*arm_andsi3_insn}
+     (nil))
+(insn 237 37 238 5 (set (reg/f:SI 5 r5 [orig:157 _74 ] [157])
+        (plus:SI (reg:SI 5 r5 [163])
+            (const_int 1073741824 [0x40000000]))) 7 {*arm_addsi3}
+     (nil))
+(insn 238 237 43 5 (set (reg/f:SI 5 r5 [orig:157 _74 ] [157])
+        (plus:SI (reg/f:SI 5 r5 [orig:157 _74 ] [157])
+            (const_int 65536 [0x10000]))) 7 {*arm_addsi3}
+     (nil))
+(insn 43 238 44 5 (set (reg:SI 4 r4 [165])
+        (and:SI (reg/v:SI 3 r3 [orig:153 position ] [153])
+            (const_int 3 [0x3]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":314:41 90 {*arm_andsi3_insn}
+     (nil))
+(insn 44 43 40 5 (set (reg:SI 4 r4 [orig:116 _4 ] [116])
+        (ashift:SI (reg:SI 4 r4 [165])
+            (const_int 2 [0x2]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":314:29 147 {*arm_shiftsi3}
+     (nil))
+(insn 40 44 41 5 (set (reg/v:SI 12 ip [orig:151 tmp ] [151])
+        (mem/v:SI (plus:SI (reg/f:SI 5 r5 [orig:157 _74 ] [157])
+                (const_int 8 [0x8])) [5 MEM <volatile uint32_t> [(struct SYSCFG_TypeDef *)_74 + 8B]+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":313:11 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 41 40 42 5 (var_location:SI tmp (reg/v:SI 12 ip [orig:151 tmp ] [151])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":313:11 -1
+     (nil))
+(debug_insn 42 41 46 5 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":314:7 -1
+     (nil))
+(insn 46 42 47 5 (set (reg:SI 8 r8 [orig:117 _5 ] [117])
+        (ashift:SI (reg:SI 9 r9 [198])
+            (reg:SI 4 r4 [orig:116 _4 ] [116]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":314:22 147 {*arm_shiftsi3}
+     (expr_list:REG_EQUAL (ashift:SI (const_int 15 [0xf])
+            (reg:SI 4 r4 [orig:116 _4 ] [116]))
+        (nil)))
+(insn 47 46 48 5 (set (reg/v:SI 12 ip [orig:152 tmp ] [152])
+        (and:SI (reg:SI 8 r8 [orig:117 _5 ] [117])
+            (reg/v:SI 12 ip [orig:151 tmp ] [151]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":314:11 90 {*arm_andsi3_insn}
+     (nil))
+(debug_insn 48 47 49 5 (var_location:SI tmp (reg/v:SI 12 ip [orig:152 tmp ] [152])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":314:11 -1
+     (nil))
+(debug_insn 49 48 50 5 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:7 -1
+     (nil))
+(insn 50 49 51 5 (set (reg:CC 100 cc)
+        (compare:CC (reg/v/f:SI 0 r0 [orig:159 GPIOx ] [159])
+            (const_int 1207959552 [0x48000000]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:19 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 51 50 52 5 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 197)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:19 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 322122548 (nil)))
+ -> 197)
+(note 52 51 54 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 54 52 55 6 (set (reg:CC 100 cc)
+        (compare:CC (reg/v/f:SI 0 r0 [orig:159 GPIOx ] [159])
+            (reg:SI 11 fp [201]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:19 268 {*arm_cmpsi_insn}
+     (expr_list:REG_EQUAL (compare:CC (reg/v/f:SI 0 r0 [orig:159 GPIOx ] [159])
+            (const_int 1207960576 [0x48000400]))
+        (nil)))
+(jump_insn 55 54 56 6 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 61)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:19 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 751619284 (nil)))
+ -> 61)
+(note 56 55 258 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 258 56 58 7 (set (reg:SI 7 r7 [221])
+        (const_int 1 [0x1])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:41 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 58 258 225 7 (set (reg:SI 4 r4 [orig:158 _77 ] [158])
+        (ashift:SI (reg:SI 7 r7 [221])
+            (reg:SI 4 r4 [orig:116 _4 ] [116]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:41 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 7 r7 [221])
+        (nil)))
+(jump_insn 225 58 226 7 (set (pc)
+        (label_ref 105)) 284 {*arm_jump}
+     (nil)
+ -> 105)
+(barrier 226 225 61)
+(code_label 61 226 62 8 48 (nil) [1 uses])
+(note 62 61 250 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 250 62 64 8 (set (reg:SI 7 r7 [213])
+        (const_int 1207961600 [0x48000800])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:19 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 64 250 65 8 (set (reg:CC 100 cc)
+        (compare:CC (reg/v/f:SI 0 r0 [orig:159 GPIOx ] [159])
+            (reg:SI 7 r7 [213]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:19 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 7 r7 [213])
+        (expr_list:REG_EQUAL (compare:CC (reg/v/f:SI 0 r0 [orig:159 GPIOx ] [159])
+                (const_int 1207961600 [0x48000800]))
+            (nil))))
+(jump_insn 65 64 66 8 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 71)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:19 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 751619284 (nil)))
+ -> 71)
+(note 66 65 67 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(note 67 66 251 9 NOTE_INSN_DELETED)
+(insn 251 67 68 9 (set (reg:SI 7 r7 [214])
+        (const_int 2 [0x2])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:41 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 68 251 227 9 (set (reg:SI 4 r4 [orig:158 _77 ] [158])
+        (ashift:SI (reg:SI 7 r7 [214])
+            (reg:SI 4 r4 [orig:116 _4 ] [116]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:41 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 7 r7 [214])
+        (nil)))
+(jump_insn 227 68 228 9 (set (pc)
+        (label_ref 105)) 284 {*arm_jump}
+     (nil)
+ -> 105)
+(barrier 228 227 71)
+(code_label 71 228 72 10 49 (nil) [1 uses])
+(note 72 71 252 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 252 72 74 10 (set (reg:SI 7 r7 [215])
+        (const_int 1207962624 [0x48000c00])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:19 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 74 252 75 10 (set (reg:CC 100 cc)
+        (compare:CC (reg/v/f:SI 0 r0 [orig:159 GPIOx ] [159])
+            (reg:SI 7 r7 [215]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:19 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 7 r7 [215])
+        (expr_list:REG_EQUAL (compare:CC (reg/v/f:SI 0 r0 [orig:159 GPIOx ] [159])
+                (const_int 1207962624 [0x48000c00]))
+            (nil))))
+(jump_insn 75 74 76 10 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 81)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:19 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 751619284 (nil)))
+ -> 81)
+(note 76 75 78 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 78 76 229 11 (set (reg:SI 4 r4 [orig:158 _77 ] [158])
+        (ashift:SI (reg:SI 10 r10 [199])
+            (reg:SI 4 r4 [orig:116 _4 ] [116]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:41 147 {*arm_shiftsi3}
+     (expr_list:REG_EQUAL (ashift:SI (const_int 3 [0x3])
+            (reg:SI 4 r4 [orig:116 _4 ] [116]))
+        (nil)))
+(jump_insn 229 78 230 11 (set (pc)
+        (label_ref 105)) 284 {*arm_jump}
+     (nil)
+ -> 105)
+(barrier 230 229 81)
+(code_label 81 230 82 12 50 (nil) [1 uses])
+(note 82 81 253 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 253 82 84 12 (set (reg:SI 7 r7 [216])
+        (const_int 1207963648 [0x48001000])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:19 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 84 253 85 12 (set (reg:CC 100 cc)
+        (compare:CC (reg/v/f:SI 0 r0 [orig:159 GPIOx ] [159])
+            (reg:SI 7 r7 [216]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:19 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 7 r7 [216])
+        (expr_list:REG_EQUAL (compare:CC (reg/v/f:SI 0 r0 [orig:159 GPIOx ] [159])
+                (const_int 1207963648 [0x48001000]))
+            (nil))))
+(jump_insn 85 84 86 12 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 91)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:19 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 751619284 (nil)))
+ -> 91)
+(note 86 85 87 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(note 87 86 254 13 NOTE_INSN_DELETED)
+(insn 254 87 88 13 (set (reg:SI 7 r7 [217])
+        (const_int 4 [0x4])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:41 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 88 254 231 13 (set (reg:SI 4 r4 [orig:158 _77 ] [158])
+        (ashift:SI (reg:SI 7 r7 [217])
+            (reg:SI 4 r4 [orig:116 _4 ] [116]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:41 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 7 r7 [217])
+        (nil)))
+(jump_insn 231 88 232 13 (set (pc)
+        (label_ref 105)) 284 {*arm_jump}
+     (nil)
+ -> 105)
+(barrier 232 231 91)
+(code_label 91 232 92 14 51 (nil) [1 uses])
+(note 92 91 255 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 255 92 94 14 (set (reg:SI 7 r7 [218])
+        (const_int 1207964672 [0x48001400])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:19 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 94 255 95 14 (set (reg:CC 100 cc)
+        (compare:CC (reg/v/f:SI 0 r0 [orig:159 GPIOx ] [159])
+            (reg:SI 7 r7 [218]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:19 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 7 r7 [218])
+        (expr_list:REG_EQUAL (compare:CC (reg/v/f:SI 0 r0 [orig:159 GPIOx ] [159])
+                (const_int 1207964672 [0x48001400]))
+            (nil))))
+(jump_insn 95 94 96 14 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 101)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:19 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 322122548 (nil)))
+ -> 101)
+(note 96 95 97 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(note 97 96 256 15 NOTE_INSN_DELETED)
+(insn 256 97 98 15 (set (reg:SI 7 r7 [219])
+        (const_int 6 [0x6])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:41 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 98 256 233 15 (set (reg:SI 4 r4 [orig:158 _77 ] [158])
+        (ashift:SI (reg:SI 7 r7 [219])
+            (reg:SI 4 r4 [orig:116 _4 ] [116]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:41 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 7 r7 [219])
+        (nil)))
+(jump_insn 233 98 234 15 (set (pc)
+        (label_ref 105)) 284 {*arm_jump}
+     (nil)
+ -> 105)
+(barrier 234 233 101)
+(code_label 101 234 102 16 52 (nil) [1 uses])
+(note 102 101 103 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(note 103 102 257 16 NOTE_INSN_DELETED)
+(insn 257 103 104 16 (set (reg:SI 7 r7 [220])
+        (const_int 5 [0x5])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:41 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 104 257 235 16 (set (reg:SI 4 r4 [orig:158 _77 ] [158])
+        (ashift:SI (reg:SI 7 r7 [220])
+            (reg:SI 4 r4 [orig:116 _4 ] [116]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:41 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 7 r7 [220])
+        (nil)))
+(jump_insn 235 104 236 16 (set (pc)
+        (label_ref 105)) 284 {*arm_jump}
+     (nil)
+ -> 105)
+(barrier 236 235 197)
+(code_label 197 236 196 17 56 (nil) [1 uses])
+(note 196 197 6 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 6 196 105 17 (set (reg:SI 4 r4 [orig:158 _77 ] [158])
+        (const_int 0 [0])) 728 {*thumb2_movsi_vfp}
+     (nil))
+(code_label 105 6 106 18 47 (nil) [6 uses])
+(note 106 105 107 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 107 106 108 18 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 12 ip [orig:152 tmp ] [152])
+            (reg:SI 4 r4 [orig:158 _77 ] [158]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:10 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg/v:SI 12 ip [orig:152 tmp ] [152])
+        (expr_list:REG_DEAD (reg:SI 4 r4 [orig:158 _77 ] [158])
+            (nil))))
+(jump_insn 108 107 109 18 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 142)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":315:10 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 708669604 (nil)))
+ -> 142)
+(note 109 108 113 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(note 113 109 139 19 NOTE_INSN_DELETED)
+(note 139 113 110 19 NOTE_INSN_DELETED)
+(debug_insn 110 139 112 19 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":318:9 -1
+     (nil))
+(insn 112 110 114 19 (set (reg:SI 4 r4 [orig:118 _7 ] [118])
+        (mem/v:SI (reg/f:SI 6 r6 [200]) [1 MEM[(struct EXTI_TypeDef *)1073808384B].IMR1+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":318:20 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 114 112 116 19 (set (reg:SI 4 r4 [orig:120 _9 ] [120])
+        (and:SI (not:SI (reg/v:SI 14 lr [orig:150 iocurrent ] [150]))
+            (reg:SI 4 r4 [orig:118 _7 ] [118]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":318:20 100 {andsi_notsi_si}
+     (nil))
+(insn 116 114 117 19 (set (mem/v:SI (reg/f:SI 6 r6 [200]) [1 MEM[(struct EXTI_TypeDef *)1073808384B].IMR1+0 S4 A64])
+        (reg:SI 4 r4 [orig:120 _9 ] [120])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":318:20 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 4 r4 [orig:120 _9 ] [120])
+        (nil)))
+(debug_insn 117 116 119 19 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":319:9 -1
+     (nil))
+(insn 119 117 120 19 (set (reg:SI 4 r4 [orig:121 _10 ] [121])
+        (mem/v:SI (plus:SI (reg/f:SI 6 r6 [200])
+                (const_int 4 [0x4])) [1 MEM[(struct EXTI_TypeDef *)1073808384B].EMR1+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":319:20 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 120 119 122 19 (set (reg:SI 4 r4 [orig:122 _11 ] [122])
+        (and:SI (not:SI (reg/v:SI 14 lr [orig:150 iocurrent ] [150]))
+            (reg:SI 4 r4 [orig:121 _10 ] [121]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":319:20 100 {andsi_notsi_si}
+     (nil))
+(insn 122 120 123 19 (set (mem/v:SI (plus:SI (reg/f:SI 6 r6 [200])
+                (const_int 4 [0x4])) [1 MEM[(struct EXTI_TypeDef *)1073808384B].EMR1+0 S4 A32])
+        (reg:SI 4 r4 [orig:122 _11 ] [122])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":319:20 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 4 r4 [orig:122 _11 ] [122])
+        (nil)))
+(debug_insn 123 122 125 19 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":322:9 -1
+     (nil))
+(insn 125 123 126 19 (set (reg:SI 4 r4 [orig:123 _12 ] [123])
+        (mem/v:SI (plus:SI (reg/f:SI 6 r6 [200])
+                (const_int 12 [0xc])) [1 MEM[(struct EXTI_TypeDef *)1073808384B].FTSR1+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":322:21 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 126 125 128 19 (set (reg:SI 4 r4 [orig:124 _13 ] [124])
+        (and:SI (not:SI (reg/v:SI 14 lr [orig:150 iocurrent ] [150]))
+            (reg:SI 4 r4 [orig:123 _12 ] [123]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":322:21 100 {andsi_notsi_si}
+     (nil))
+(insn 128 126 129 19 (set (mem/v:SI (plus:SI (reg/f:SI 6 r6 [200])
+                (const_int 12 [0xc])) [1 MEM[(struct EXTI_TypeDef *)1073808384B].FTSR1+0 S4 A32])
+        (reg:SI 4 r4 [orig:124 _13 ] [124])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":322:21 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 4 r4 [orig:124 _13 ] [124])
+        (nil)))
+(debug_insn 129 128 131 19 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":323:9 -1
+     (nil))
+(insn 131 129 132 19 (set (reg:SI 4 r4 [orig:125 _14 ] [125])
+        (mem/v:SI (plus:SI (reg/f:SI 6 r6 [200])
+                (const_int 8 [0x8])) [1 MEM[(struct EXTI_TypeDef *)1073808384B].RTSR1+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":323:21 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 132 131 134 19 (set (reg:SI 4 r4 [orig:126 _15 ] [126])
+        (and:SI (not:SI (reg/v:SI 14 lr [orig:150 iocurrent ] [150]))
+            (reg:SI 4 r4 [orig:125 _14 ] [125]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":323:21 100 {andsi_notsi_si}
+     (expr_list:REG_DEAD (reg/v:SI 14 lr [orig:150 iocurrent ] [150])
+        (nil)))
+(insn 134 132 135 19 (set (mem/v:SI (plus:SI (reg/f:SI 6 r6 [200])
+                (const_int 8 [0x8])) [1 MEM[(struct EXTI_TypeDef *)1073808384B].RTSR1+0 S4 A64])
+        (reg:SI 4 r4 [orig:126 _15 ] [126])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":323:21 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 4 r4 [orig:126 _15 ] [126])
+        (nil)))
+(debug_insn 135 134 136 19 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":325:9 -1
+     (nil))
+(debug_insn 136 135 137 19 (var_location:SI tmp (reg:SI 8 r8 [orig:117 _5 ] [117])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":325:13 -1
+     (nil))
+(debug_insn 137 136 138 19 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":326:9 -1
+     (nil))
+(insn 138 137 140 19 (set (reg:SI 4 r4 [orig:127 _16 ] [127])
+        (mem/v:SI (plus:SI (reg/f:SI 5 r5 [orig:157 _74 ] [157])
+                (const_int 8 [0x8])) [5 MEM <volatile uint32_t> [(struct SYSCFG_TypeDef *)_74 + 8B]+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":326:40 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 140 138 141 19 (set (reg:SI 4 r4 [orig:129 _18 ] [129])
+        (and:SI (not:SI (reg:SI 8 r8 [orig:117 _5 ] [117]))
+            (reg:SI 4 r4 [orig:127 _16 ] [127]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":326:40 100 {andsi_notsi_si}
+     (expr_list:REG_DEAD (reg:SI 8 r8 [orig:117 _5 ] [117])
+        (nil)))
+(insn 141 140 142 19 (set (mem/v:SI (plus:SI (reg/f:SI 5 r5 [orig:157 _74 ] [157])
+                (const_int 8 [0x8])) [5 MEM <volatile uint32_t> [(struct SYSCFG_TypeDef *)_74 + 8B]+0 S4 A32])
+        (reg:SI 4 r4 [orig:129 _18 ] [129])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":326:40 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 5 r5 [orig:157 _74 ] [157])
+        (expr_list:REG_DEAD (reg:SI 4 r4 [orig:129 _18 ] [129])
+            (nil))))
+(code_label 142 141 143 20 53 (nil) [1 uses])
+(note 143 142 153 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(note 153 143 160 20 NOTE_INSN_DELETED)
+(note 160 153 165 20 NOTE_INSN_DELETED)
+(note 165 160 170 20 NOTE_INSN_DELETED)
+(note 170 165 144 20 NOTE_INSN_DELETED)
+(debug_insn 144 170 145 20 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":331:7 -1
+     (nil))
+(insn 145 144 146 20 (set (reg:SI 5 r5 [orig:130 _19 ] [130])
+        (mem/v:SI (reg/v/f:SI 0 r0 [orig:159 GPIOx ] [159]) [1 GPIOx_49(D)->MODER+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":331:20 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 146 145 148 20 (set (reg:SI 4 r4 [187])
+        (ashift:SI (reg/v:SI 3 r3 [orig:153 position ] [153])
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":331:41 147 {*arm_shiftsi3}
+     (nil))
+(insn 148 146 149 20 (set (reg:SI 4 r4 [orig:131 _21 ] [131])
+        (ashift:SI (reg:SI 10 r10 [199])
+            (reg:SI 4 r4 [187]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":331:41 147 {*arm_shiftsi3}
+     (expr_list:REG_EQUAL (ashift:SI (const_int 3 [0x3])
+            (reg:SI 4 r4 [187]))
+        (nil)))
+(insn 149 148 150 20 (set (reg:SI 5 r5 [orig:132 _22 ] [132])
+        (ior:SI (reg:SI 5 r5 [orig:130 _19 ] [130])
+            (reg:SI 4 r4 [orig:131 _21 ] [131]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":331:20 106 {*iorsi3_insn}
+     (nil))
+(insn 150 149 151 20 (set (mem/v:SI (reg/v/f:SI 0 r0 [orig:159 GPIOx ] [159]) [1 GPIOx_49(D)->MODER+0 S4 A32])
+        (reg:SI 5 r5 [orig:132 _22 ] [132])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":331:20 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 5 r5 [orig:132 _22 ] [132])
+        (nil)))
+(debug_insn 151 150 152 20 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":334:7 -1
+     (nil))
+(insn 152 151 154 20 (set (reg:SI 12 ip [189])
+        (lshiftrt:SI (reg/v:SI 3 r3 [orig:153 position ] [153])
+            (const_int 3 [0x3]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":334:34 147 {*arm_shiftsi3}
+     (nil))
+(insn 154 152 156 20 (set (reg/f:SI 12 ip [orig:154 _64 ] [154])
+        (plus:SI (ashift:SI (reg:SI 12 ip [189])
+                (const_int 2 [0x2]))
+            (reg/v/f:SI 0 r0 [orig:159 GPIOx ] [159]))) 318 {*add_shiftsi}
+     (nil))
+(insn 156 154 157 20 (set (reg:SI 5 r5 [191])
+        (and:SI (reg/v:SI 3 r3 [orig:153 position ] [153])
+            (const_int 7 [0x7]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":334:58 90 {*arm_andsi3_insn}
+     (nil))
+(insn 157 156 159 20 (set (reg:SI 5 r5 [192])
+        (ashift:SI (reg:SI 5 r5 [191])
+            (const_int 2 [0x2]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":334:67 147 {*arm_shiftsi3}
+     (nil))
+(insn 159 157 155 20 (set (reg:SI 5 r5 [193])
+        (ashift:SI (reg:SI 9 r9 [198])
+            (reg:SI 5 r5 [192]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":334:44 147 {*arm_shiftsi3}
+     (expr_list:REG_EQUAL (ashift:SI (const_int 15 [0xf])
+            (reg:SI 5 r5 [192]))
+        (nil)))
+(insn 155 159 161 20 (set (reg:SI 14 lr [orig:134 _24 ] [134])
+        (mem/v:SI (plus:SI (reg/f:SI 12 ip [orig:154 _64 ] [154])
+                (const_int 32 [0x20])) [2 MEM <volatile uint32_t> [(struct GPIO_TypeDef *)_64 + 32B]+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":334:34 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 161 155 162 20 (set (reg:SI 5 r5 [orig:139 _29 ] [139])
+        (and:SI (not:SI (reg:SI 5 r5 [193]))
+            (reg:SI 14 lr [orig:134 _24 ] [134]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":334:34 100 {andsi_notsi_si}
+     (nil))
+(insn 162 161 163 20 (set (mem/v:SI (plus:SI (reg/f:SI 12 ip [orig:154 _64 ] [154])
+                (const_int 32 [0x20])) [2 MEM <volatile uint32_t> [(struct GPIO_TypeDef *)_64 + 32B]+0 S4 A32])
+        (reg:SI 5 r5 [orig:139 _29 ] [139])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":334:34 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 12 ip [orig:154 _64 ] [154])
+        (expr_list:REG_DEAD (reg:SI 5 r5 [orig:139 _29 ] [139])
+            (nil))))
+(debug_insn 163 162 164 20 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":337:7 -1
+     (nil))
+(insn 164 163 166 20 (set (reg:SI 5 r5 [orig:140 _30 ] [140])
+        (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:159 GPIOx ] [159])
+                (const_int 12 [0xc])) [1 GPIOx_49(D)->PUPDR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":337:20 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 166 164 167 20 (set (reg:SI 5 r5 [orig:142 _32 ] [142])
+        (and:SI (not:SI (reg:SI 4 r4 [orig:131 _21 ] [131]))
+            (reg:SI 5 r5 [orig:140 _30 ] [140]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":337:20 100 {andsi_notsi_si}
+     (nil))
+(insn 167 166 168 20 (set (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:159 GPIOx ] [159])
+                (const_int 12 [0xc])) [1 GPIOx_49(D)->PUPDR+0 S4 A32])
+        (reg:SI 5 r5 [orig:142 _32 ] [142])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":337:20 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 5 r5 [orig:142 _32 ] [142])
+        (nil)))
+(debug_insn 168 167 169 20 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":340:7 -1
+     (nil))
+(insn 169 168 171 20 (set (reg:SI 5 r5 [orig:143 _33 ] [143])
+        (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:159 GPIOx ] [159])
+                (const_int 4 [0x4])) [1 GPIOx_49(D)->OTYPER+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":340:22 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 171 169 172 20 (set (reg:SI 2 r2 [orig:145 _35 ] [145])
+        (and:SI (not:SI (reg:SI 2 r2 [orig:113 _1 ] [113]))
+            (reg:SI 5 r5 [orig:143 _33 ] [143]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":340:22 100 {andsi_notsi_si}
+     (expr_list:REG_DEAD (reg:SI 5 r5 [orig:143 _33 ] [143])
+        (nil)))
+(insn 172 171 173 20 (set (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:159 GPIOx ] [159])
+                (const_int 4 [0x4])) [1 GPIOx_49(D)->OTYPER+0 S4 A32])
+        (reg:SI 2 r2 [orig:145 _35 ] [145])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":340:22 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:145 _35 ] [145])
+        (nil)))
+(debug_insn 173 172 174 20 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":343:7 -1
+     (nil))
+(insn 174 173 175 20 (set (reg:SI 2 r2 [orig:146 _36 ] [146])
+        (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:159 GPIOx ] [159])
+                (const_int 8 [0x8])) [1 GPIOx_49(D)->OSPEEDR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":343:22 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 175 174 176 20 (set (reg:SI 4 r4 [orig:147 _37 ] [147])
+        (and:SI (not:SI (reg:SI 4 r4 [orig:131 _21 ] [131]))
+            (reg:SI 2 r2 [orig:146 _36 ] [146]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":343:22 100 {andsi_notsi_si}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:146 _36 ] [146])
+        (nil)))
+(insn 176 175 177 20 (set (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:159 GPIOx ] [159])
+                (const_int 8 [0x8])) [1 GPIOx_49(D)->OSPEEDR+0 S4 A32])
+        (reg:SI 4 r4 [orig:147 _37 ] [147])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":343:22 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 4 r4 [orig:147 _37 ] [147])
+        (nil)))
+(code_label 177 176 178 21 46 (nil) [1 uses])
+(note 178 177 183 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(note 183 178 179 21 NOTE_INSN_DELETED)
+(debug_insn 179 183 180 21 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":346:5 -1
+     (nil))
+(insn 180 179 181 21 (set (reg/v:SI 3 r3 [orig:153 position ] [153])
+        (plus:SI (reg/v:SI 3 r3 [orig:153 position ] [153])
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":346:13 7 {*arm_addsi3}
+     (nil))
+(debug_insn 181 180 182 21 (var_location:SI position (reg/v:SI 3 r3 [orig:153 position ] [153])) -1
+     (nil))
+(debug_insn 182 181 184 21 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":303:9 -1
+     (nil))
+(insn 184 182 185 21 (parallel [
+            (set (reg:CC_NZ 100 cc)
+                (compare:CC_NZ (lshiftrt:SI (reg/v:SI 1 r1 [orig:160 GPIO_Pin ] [160])
+                        (reg/v:SI 3 r3 [orig:153 position ] [153]))
+                    (const_int 0 [0])))
+            (clobber (reg:SI 2 r2 [212]))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":303:9 149 {*shiftsi3_compare0_scratch}
+     (expr_list:REG_UNUSED (reg:SI 2 r2 [212])
+        (nil)))
+(jump_insn 185 184 191 21 (set (pc)
+        (if_then_else (ne (reg:CC_NZ 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 23)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":303:9 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC_NZ 100 cc)
+        (int_list:REG_BR_PROB 955630228 (nil)))
+ -> 23)
+(note 191 185 268 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(note 268 191 269 22 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 269 268 285 22 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 36 [0x24])))
+            (set/f (reg:SI 4 r4)
+                (mem/c:SI (reg/f:SI 13 sp) [8  S4 A32]))
+            (set/f (reg:SI 5 r5)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [8  S4 A32]))
+            (set/f (reg:SI 6 r6)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 8 [0x8])) [8  S4 A32]))
+            (set/f (reg:SI 7 r7)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 12 [0xc])) [8  S4 A32]))
+            (set/f (reg:SI 8 r8)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 16 [0x10])) [8  S4 A32]))
+            (set/f (reg:SI 9 r9)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 20 [0x14])) [8  S4 A32]))
+            (set/f (reg:SI 10 r10)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 24 [0x18])) [8  S4 A32]))
+            (set/f (reg:SI 11 fp)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 28 [0x1c])) [8  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 32 [0x20])) [8  S4 A32]))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":348:1 -1
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (expr_list:REG_CFA_RESTORE (reg:SI 11 fp)
+            (expr_list:REG_CFA_RESTORE (reg:SI 10 r10)
+                (expr_list:REG_CFA_RESTORE (reg:SI 9 r9)
+                    (expr_list:REG_CFA_RESTORE (reg:SI 8 r8)
+                        (expr_list:REG_CFA_RESTORE (reg:SI 7 r7)
+                            (expr_list:REG_CFA_RESTORE (reg:SI 6 r6)
+                                (expr_list:REG_CFA_RESTORE (reg:SI 5 r5)
+                                    (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+                                        (nil))))))))))
+ -> return)
+(barrier 285 269 245)
+(note 245 285 249 NOTE_INSN_DELETED)
+(note 249 245 274 NOTE_INSN_DELETED)
+(code_label 274 249 273 23 62 (nil) [1 uses])
+(note 273 274 275 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 275 273 276 23 (simple_return) -1
+     (nil)
+ -> simple_return)
+(barrier 276 275 0)
+
+;; Function HAL_GPIO_ReadPin (HAL_GPIO_ReadPin, funcdef_no=331, decl_uid=7516, cgraph_uid=335, symbol_order=334)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+HAL_GPIO_ReadPin
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 3 [r3] 100 [cc]
+;;  ref usage 	r0={3d,5u} r1={1d,2u} r2={1d} r3={2d,2u} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={1d,2u} 
+;;    total ref usage 40{26d,14u,0e} in 11{11 regular + 0 call} insns.
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 32 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 32 5 3 2 NOTE_INSN_PROLOGUE_END)
+(note 3 32 4 2 NOTE_INSN_DELETED)
+(note 4 3 13 2 NOTE_INSN_FUNCTION_BEG)
+(note 13 4 15 2 NOTE_INSN_DELETED)
+(note 15 13 17 2 NOTE_INSN_DELETED)
+(note 17 15 7 2 NOTE_INSN_DELETED)
+(debug_insn 7 17 8 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":375:3 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":378:3 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":380:3 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 3 r3 [orig:113 _1 ] [113])
+        (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:118 GPIOx ] [118])
+                (const_int 16 [0x10])) [1 GPIOx_6(D)->IDR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":380:13 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 11 10 12 2 (var_location:QI bitstatus (ne:QI (and:SI (reg:SI 1 r1 [125])
+            (reg:SI 3 r3 [orig:113 _1 ] [113]))
+        (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 12 11 14 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":388:3 -1
+     (nil))
+(insn 14 12 30 2 (parallel [
+            (set (reg:CC_NZ 100 cc)
+                (compare:CC_NZ (and:SI (reg:SI 1 r1 [125])
+                        (reg:SI 3 r3 [orig:113 _1 ] [113]))
+                    (const_int 0 [0])))
+            (clobber (scratch:SI))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":380:6 92 {*andsi3_compare0_scratch}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:113 _1 ] [113])
+        (expr_list:REG_DEAD (reg:SI 1 r1 [125])
+            (nil))))
+(insn 30 14 31 2 (cond_exec (ne:SI (reg:CC_NZ 100 cc)
+            (const_int 0 [0]))
+        (set (reg/i:SI 0 r0)
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":389:1 6567 {*p *thumb2_movsi_vfp}
+     (nil))
+(insn 31 30 23 2 (cond_exec (eq (reg:CC_NZ 100 cc)
+            (const_int 0 [0]))
+        (set (reg/i:SI 0 r0)
+            (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":389:1 6567 {*p *thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:CC_NZ 100 cc)
+        (nil)))
+(insn 23 31 33 2 (use (reg/i:SI 0 r0)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":389:1 -1
+     (nil))
+(note 33 23 34 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 34 33 35 2 (simple_return) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":389:1 -1
+     (nil)
+ -> simple_return)
+(barrier 35 34 28)
+(note 28 35 29 NOTE_INSN_DELETED)
+(note 29 28 0 NOTE_INSN_DELETED)
+
+;; Function HAL_GPIO_WritePin (HAL_GPIO_WritePin, funcdef_no=332, decl_uid=7520, cgraph_uid=336, symbol_order=335)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+HAL_GPIO_WritePin
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 100 [cc]
+;;  ref usage 	r0={1d,2u} r1={1d,2u} r2={1d,1u} r3={1d} r13={1d,4u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={1d} 
+;;    total ref usage 33{23d,10u,0e} in 10{10 regular + 0 call} insns.
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 35 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 35 6 4 2 NOTE_INSN_PROLOGUE_END)
+(note 4 35 5 2 NOTE_INSN_DELETED)
+(note 5 4 11 2 NOTE_INSN_FUNCTION_BEG)
+(note 11 5 8 2 NOTE_INSN_DELETED)
+(debug_insn 8 11 9 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":410:3 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":411:3 -1
+     (nil))
+(debug_insn 10 9 12 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":413:3 -1
+     (nil))
+(jump_insn 12 10 13 2 (parallel [
+            (set (pc)
+                (if_then_else (eq (reg:SI 2 r2 [120])
+                        (const_int 0 [0]))
+                    (label_ref 19)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":413:6 1024 {*thumb2_cbz}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [120])
+        (expr_list:REG_UNUSED (reg:CC 100 cc)
+            (int_list:REG_BR_PROB 536870916 (nil))))
+ -> 19)
+(note 13 12 14 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 14 13 16 3 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":415:5 -1
+     (nil))
+(insn 16 14 31 3 (set (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:115 GPIOx ] [115])
+                (const_int 24 [0x18])) [1 GPIOx_7(D)->BSRR+0 S4 A32])
+        (reg/v:SI 1 r1 [orig:116 GPIO_Pin ] [116])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":415:17 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 1 r1 [orig:116 GPIO_Pin ] [116])
+        (expr_list:REG_DEAD (reg/v/f:SI 0 r0 [orig:115 GPIOx ] [115])
+            (nil))))
+(jump_insn 31 16 32 3 (simple_return) 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 32 31 19)
+(code_label 19 32 20 4 75 (nil) [1 uses])
+(note 20 19 21 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 21 20 23 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":419:5 -1
+     (nil))
+(insn 23 21 36 4 (set (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:115 GPIOx ] [115])
+                (const_int 40 [0x28])) [1 GPIOx_7(D)->BRR+0 S4 A32])
+        (reg/v:SI 1 r1 [orig:116 GPIO_Pin ] [116])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":419:16 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 1 r1 [orig:116 GPIO_Pin ] [116])
+        (expr_list:REG_DEAD (reg/v/f:SI 0 r0 [orig:115 GPIOx ] [115])
+            (nil))))
+(note 36 23 37 4 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 37 36 38 4 (simple_return) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":421:1 -1
+     (nil)
+ -> simple_return)
+(barrier 38 37 33)
+(note 33 38 34 NOTE_INSN_DELETED)
+(note 34 33 0 NOTE_INSN_DELETED)
+
+;; Function HAL_GPIO_TogglePin (HAL_GPIO_TogglePin, funcdef_no=333, decl_uid=7523, cgraph_uid=337, symbol_order=336)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+HAL_GPIO_TogglePin
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3]
+;;  ref usage 	r0={1d,2u} r1={3d,4u} r2={2d,1u} r3={2d,3u} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 39{26d,13u,0e} in 11{11 regular + 0 call} insns.
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 26 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 26 5 4 2 NOTE_INSN_PROLOGUE_END)
+(note 4 26 15 2 NOTE_INSN_FUNCTION_BEG)
+(note 15 4 16 2 NOTE_INSN_DELETED)
+(note 16 15 7 2 NOTE_INSN_DELETED)
+(debug_insn 7 16 8 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":432:3 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":435:3 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":438:3 -1
+     (nil))
+(insn 10 9 11 2 (set (reg/v:SI 3 r3 [orig:119 odr ] [119])
+        (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:120 GPIOx ] [120])
+                (const_int 20 [0x14])) [1 GPIOx_8(D)->ODR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":438:7 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 11 10 12 2 (var_location:SI odr (reg/v:SI 3 r3 [orig:119 odr ] [119])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":438:7 -1
+     (nil))
+(debug_insn 12 11 14 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":441:3 -1
+     (nil))
+(insn 14 12 17 2 (set (reg:SI 2 r2 [122])
+        (and:SI (reg/v:SI 1 r1 [orig:121 GPIO_Pin ] [121])
+            (reg/v:SI 3 r3 [orig:119 odr ] [119]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":441:23 90 {*arm_andsi3_insn}
+     (nil))
+(insn 17 14 18 2 (set (reg:SI 1 r1 [125])
+        (and:SI (not:SI (reg/v:SI 3 r3 [orig:119 odr ] [119]))
+            (reg/v:SI 1 r1 [orig:121 GPIO_Pin ] [121]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":441:59 100 {andsi_notsi_si}
+     (expr_list:REG_DEAD (reg/v:SI 3 r3 [orig:119 odr ] [119])
+        (nil)))
+(insn 18 17 19 2 (set (reg:SI 1 r1 [orig:118 _6 ] [118])
+        (ior:SI (ashift:SI (reg:SI 2 r2 [122])
+                (const_int 16 [0x10]))
+            (reg:SI 1 r1 [125]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":441:51 320 {*orr_shiftsi}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [122])
+        (nil)))
+(insn 19 18 27 2 (set (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:120 GPIOx ] [120])
+                (const_int 24 [0x18])) [1 GPIOx_8(D)->BSRR+0 S4 A32])
+        (reg:SI 1 r1 [orig:118 _6 ] [118])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":441:15 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [orig:118 _6 ] [118])
+        (expr_list:REG_DEAD (reg/v/f:SI 0 r0 [orig:120 GPIOx ] [120])
+            (nil))))
+(note 27 19 28 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 28 27 29 2 (simple_return) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":442:1 -1
+     (nil)
+ -> simple_return)
+(barrier 29 28 24)
+(note 24 29 25 NOTE_INSN_DELETED)
+(note 25 24 0 NOTE_INSN_DELETED)
+
+;; Function HAL_GPIO_LockPin (HAL_GPIO_LockPin, funcdef_no=334, decl_uid=7526, cgraph_uid=338, symbol_order=337)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Splitting with gen_peephole2_14 (ldrdstrd.md:44)
+Splitting with gen_peephole2_32 (ldmstm.md:1138)
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+HAL_GPIO_LockPin
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 3 [r3] 13 [sp]
+;;  ref usage 	r0={4d,9u} r1={1d,2u} r2={1d} r3={7d,6u} r13={3d,13u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 64{33d,31u,0e} in 30{30 regular + 0 call} insns.
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 46 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 46 5 47 2 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int -8 [0xfffffffffffffff8]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":456:1 -1
+     (nil))
+(note 47 46 4 2 NOTE_INSN_PROLOGUE_END)
+(note 4 47 30 2 NOTE_INSN_FUNCTION_BEG)
+(note 30 4 33 2 NOTE_INSN_DELETED)
+(note 33 30 34 2 NOTE_INSN_DELETED)
+(note 34 33 7 2 NOTE_INSN_DELETED)
+(debug_insn 7 34 8 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":457:3 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 3 r3 [125])
+        (const_int 65536 [0x10000])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":457:17 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 65536 [0x10000])
+        (nil)))
+(insn 9 8 10 2 (set (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [1 tmp+0 S4 A32])
+        (reg:SI 3 r3 [125])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":457:17 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [125])
+        (nil)))
+(debug_insn 10 9 11 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":460:3 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":461:3 -1
+     (nil))
+(debug_insn 12 11 14 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":464:3 -1
+     (nil))
+(insn 14 12 15 2 (set (reg:SI 3 r3 [orig:114 tmp.13_2 ] [114])
+        (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [1 tmp+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":464:7 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 3 r3 [orig:115 _3 ] [115])
+        (ior:SI (reg:SI 3 r3 [orig:114 tmp.13_2 ] [114])
+            (reg/v:SI 1 r1 [orig:124 GPIO_Pin ] [124]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":464:7 106 {*iorsi3_insn}
+     (nil))
+(insn 16 15 17 2 (set (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [1 tmp+0 S4 A32])
+        (reg:SI 3 r3 [orig:115 _3 ] [115])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":464:7 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:115 _3 ] [115])
+        (nil)))
+(debug_insn 17 16 18 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":466:3 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:SI 3 r3 [orig:116 tmp.14_4 ] [116])
+        (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [1 tmp+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":466:15 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 19 18 20 2 (set (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:123 GPIOx ] [123])
+                (const_int 28 [0x1c])) [1 GPIOx_14(D)->LCKR+0 S4 A32])
+        (reg:SI 3 r3 [orig:116 tmp.14_4 ] [116])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":466:15 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:116 tmp.14_4 ] [116])
+        (nil)))
+(debug_insn 20 19 21 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":468:3 -1
+     (nil))
+(insn 21 20 22 2 (set (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:123 GPIOx ] [123])
+                (const_int 28 [0x1c])) [1 GPIOx_14(D)->LCKR+0 S4 A32])
+        (reg/v:SI 1 r1 [orig:124 GPIO_Pin ] [124])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":468:15 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 1 r1 [orig:124 GPIO_Pin ] [124])
+        (nil)))
+(debug_insn 22 21 23 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":470:3 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:SI 3 r3 [orig:117 tmp.15_5 ] [117])
+        (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [1 tmp+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":470:15 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 24 23 25 2 (set (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:123 GPIOx ] [123])
+                (const_int 28 [0x1c])) [1 GPIOx_14(D)->LCKR+0 S4 A32])
+        (reg:SI 3 r3 [orig:117 tmp.15_5 ] [117])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":470:15 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:117 tmp.15_5 ] [117])
+        (nil)))
+(debug_insn 25 24 26 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":472:3 -1
+     (nil))
+(insn 26 25 27 2 (set (reg:SI 3 r3 [orig:118 _6 ] [118])
+        (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:123 GPIOx ] [123])
+                (const_int 28 [0x1c])) [1 GPIOx_14(D)->LCKR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":472:14 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 27 26 28 2 (set (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [1 tmp+0 S4 A32])
+        (reg:SI 3 r3 [orig:118 _6 ] [118])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":472:7 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:118 _6 ] [118])
+        (nil)))
+(debug_insn 28 27 29 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":475:3 -1
+     (nil))
+(insn 29 28 31 2 (set (reg:SI 0 r0 [orig:119 _7 ] [119])
+        (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:123 GPIOx ] [123])
+                (const_int 28 [0x1c])) [1 GPIOx_14(D)->LCKR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":475:13 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 31 29 39 2 (set (reg:SI 0 r0 [128])
+        (xor:SI (reg:SI 0 r0 [orig:119 _7 ] [119])
+            (const_int 65536 [0x10000]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":475:6 109 {*arm_xorsi3}
+     (nil))
+(insn 39 31 40 2 (set (reg/i:SI 0 r0)
+        (zero_extract:SI (reg:SI 0 r0 [128])
+            (const_int 1 [0x1])
+            (const_int 16 [0x10]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":483:1 161 {extzv_t2}
+     (nil))
+(insn 40 39 48 2 (use (reg/i:SI 0 r0)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":483:1 -1
+     (nil))
+(note 48 40 49 2 NOTE_INSN_EPILOGUE_BEG)
+(insn 49 48 50 2 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":483:1 -1
+     (nil))
+(insn/f 50 49 51 2 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 8 [0x8]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":483:1 -1
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 8 [0x8])))
+        (nil)))
+(insn 51 50 52 2 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":483:1 -1
+     (nil))
+(jump_insn 52 51 55 2 (simple_return) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":483:1 -1
+     (nil)
+ -> simple_return)
+(barrier 55 52 44)
+(note 44 55 45 NOTE_INSN_DELETED)
+(note 45 44 0 NOTE_INSN_DELETED)
+
+;; Function HAL_GPIO_EXTI_Callback (HAL_GPIO_EXTI_Callback, funcdef_no=336, decl_uid=7530, cgraph_uid=340, symbol_order=339)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+HAL_GPIO_EXTI_Callback
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 25{22d,3u,0e} in 2{2 regular + 0 call} insns.
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 11 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 11 4 3 2 NOTE_INSN_PROLOGUE_END)
+(note 3 11 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 12 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":508:3 -1
+     (nil))
+(note 12 6 13 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 13 12 14 2 (simple_return) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":513:1 -1
+     (nil)
+ -> simple_return)
+(barrier 14 13 9)
+(note 9 14 10 NOTE_INSN_DELETED)
+(note 10 9 0 NOTE_INSN_DELETED)
+
+;; Function HAL_GPIO_EXTI_IRQHandler (HAL_GPIO_EXTI_IRQHandler, funcdef_no=335, decl_uid=7528, cgraph_uid=339, symbol_order=338)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+HAL_GPIO_EXTI_IRQHandler
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 13 [sp] 14 [lr] 15 [pc] 100 [cc]
+;;  ref usage 	r0={2d,3u} r1={3d,1u} r2={3d,2u} r3={4d,2u} r12={2d} r13={3d,11u} r14={2d,2u} r15={2d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={2d,1u} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 133{111d,22u,0e} in 13{12 regular + 1 call} insns.
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 3 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 3 4 10 2 NOTE_INSN_FUNCTION_BEG)
+(note 10 3 6 2 NOTE_INSN_DELETED)
+(debug_insn 6 10 7 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":493:3 -1
+     (nil))
+(insn 7 6 8 2 (set (reg/f:SI 2 r2 [117])
+        (const_int 1073808384 [0x40010400])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":493:7 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073808384 [0x40010400])
+        (nil)))
+(insn 8 7 11 2 (set (reg:SI 1 r1 [orig:113 _1 ] [113])
+        (mem/v:SI (plus:SI (reg/f:SI 2 r2 [117])
+                (const_int 20 [0x14])) [1 MEM[(struct EXTI_TypeDef *)1073808384B].PR1+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":493:7 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 11 8 12 2 (parallel [
+            (set (reg:CC_NZ 100 cc)
+                (compare:CC_NZ (and:SI (reg:SI 1 r1 [orig:113 _1 ] [113])
+                        (reg:SI 0 r0 [orig:116 GPIO_Pin ] [116]))
+                    (const_int 0 [0])))
+            (clobber (scratch:SI))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":493:6 92 {*andsi3_compare0_scratch}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [orig:113 _1 ] [113])
+        (nil)))
+(jump_insn 12 11 13 2 (set (pc)
+        (if_then_else (eq (reg:CC_NZ 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 44)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":493:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC_NZ 100 cc)
+        (int_list:REG_BR_PROB 719407028 (nil)))
+ -> 44)
+(note 13 12 35 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn/f 35 13 36 3 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [8  A8])
+                (unspec:BLK [
+                        (reg:SI 3 r3)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 14 lr))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":491:1 -1
+     (expr_list:REG_DEAD (reg:SI 14 lr)
+        (expr_list:REG_DEAD (reg:SI 3 r3)
+            (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                        (set/f (reg/f:SI 13 sp)
+                            (plus:SI (reg/f:SI 13 sp)
+                                (const_int -8 [0xfffffffffffffff8])))
+                        (set/f (mem/c:SI (reg/f:SI 13 sp) [8  S4 A32])
+                            (reg:SI 3 r3))
+                        (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                    (const_int 4 [0x4])) [8  S4 A32])
+                            (reg:SI 14 lr))
+                    ])
+                (nil)))))
+(note 36 35 39 3 NOTE_INSN_PROLOGUE_END)
+(insn 39 36 14 3 (set (reg/v:SI 3 r3 [orig:116 GPIO_Pin ] [116])
+        (reg:SI 0 r0 [120])) 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 14 39 16 3 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":495:5 -1
+     (nil))
+(insn 16 14 17 3 (set (mem/v:SI (plus:SI (reg/f:SI 2 r2 [117])
+                (const_int 20 [0x14])) [1 MEM[(struct EXTI_TypeDef *)1073808384B].PR1+0 S4 A32])
+        (reg/v:SI 3 r3 [orig:116 GPIO_Pin ] [116])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":495:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 3 r3 [orig:116 GPIO_Pin ] [116])
+        (expr_list:REG_DEAD (reg/f:SI 2 r2 [117])
+            (nil))))
+(debug_insn 17 16 19 3 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":496:5 -1
+     (nil))
+(call_insn 19 17 37 3 (parallel [
+            (call (mem:SI (symbol_ref/i:SI ("HAL_GPIO_EXTI_Callback") [flags 0x3]  <function_decl 0000000006882c00 HAL_GPIO_EXTI_Callback>) [0 HAL_GPIO_EXTI_Callback S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":496:5 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref/i:SI ("HAL_GPIO_EXTI_Callback") [flags 0x3]  <function_decl 0000000006882c00 HAL_GPIO_EXTI_Callback>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:HI (use (reg:SI 0 r0))
+            (nil))))
+(note 37 19 38 3 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 38 37 55 3 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg:SI 3 r3)
+                (mem/c:SI (reg/f:SI 13 sp) [8  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [8  S4 A32]))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_gpio.c":498:1 -1
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (expr_list:REG_UNUSED (reg:SI 3 r3)
+            (expr_list:REG_CFA_RESTORE (reg:SI 3 r3)
+                (nil))))
+ -> return)
+(barrier 55 38 32)
+(note 32 55 33 NOTE_INSN_DELETED)
+(note 33 32 44 NOTE_INSN_DELETED)
+(code_label 44 33 43 4 87 (nil) [1 uses])
+(note 43 44 45 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 45 43 46 4 (simple_return) -1
+     (nil)
+ -> simple_return)
+(barrier 46 45 0)

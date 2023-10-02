@@ -1,0 +1,1036 @@
+
+;; Function TIMUT_stopwatch_set_time_mark (TIMUT_stopwatch_set_time_mark, funcdef_no=352, decl_uid=5687, cgraph_uid=356, symbol_order=355)
+
+
+
+TIMUT_stopwatch_set_time_mark
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 4 [r4] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 4 [r4] 12 [ip] 13 [sp] 14 [lr] 15 [pc]
+;;  ref usage 	r0={2d,2u} r1={2d} r2={2d} r3={2d} r4={3d,3u} r12={2d} r13={3d,9u} r14={2d,2u} r15={2d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 125{109d,16u,0e} in 5{4 regular + 1 call} insns.
+(note 1 0 50 NOTE_INSN_DELETED)
+(note 50 1 4 (var_location stopwatch (reg:SI 0 r0 [ stopwatch ])) NOTE_INSN_VAR_LOCATION)
+(note 4 50 3 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 3 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(note 8 3 49 2 NOTE_INSN_DELETED)
+(note 49 8 39 2 ../System/timing_utils.c:58 NOTE_INSN_BEGIN_STMT)
+(insn/f 39 49 40 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [3  A8])
+                (unspec:BLK [
+                        (reg:SI 4 r4)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":57:1 378 {*push_multi}
+     (expr_list:REG_DEAD (reg:SI 14 lr)
+        (expr_list:REG_DEAD (reg:SI 4 r4)
+            (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                        (set/f (reg/f:SI 13 sp)
+                            (plus:SI (reg/f:SI 13 sp)
+                                (const_int -8 [0xfffffffffffffff8])))
+                        (set/f (mem/c:SI (reg/f:SI 13 sp) [3  S4 A32])
+                            (reg:SI 4 r4))
+                        (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                    (const_int 4 [0x4])) [3  S4 A32])
+                            (reg:SI 14 lr))
+                    ])
+                (nil)))))
+(note 40 39 2 2 NOTE_INSN_PROLOGUE_END)
+(insn 2 40 7 2 (set (reg/v/f:SI 4 r4 [orig:114 stopwatch ] [114])
+        (reg:SI 0 r0 [115])) "../System/timing_utils.c":57:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [115])
+        (nil)))
+(call_insn 7 2 51 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":58:25 291 {*call_value_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (nil)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(note/c 51 7 9 2 (var_location stopwatch (reg/v/f:SI 4 r4 [orig:114 stopwatch ] [114])) NOTE_INSN_VAR_LOCATION)
+(insn 9 51 48 2 (set (mem:SI (reg/v/f:SI 4 r4 [orig:114 stopwatch ] [114]) [1 stopwatch_4(D)->time_mark+0 S4 A32])
+        (reg:SI 0 r0 [116])) "../System/timing_utils.c":58:23 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v/f:SI 4 r4 [orig:114 stopwatch ] [114])
+        (expr_list:REG_DEAD (reg:SI 0 r0 [116])
+            (nil))))
+(note 48 9 42 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 42 48 45 2 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg:SI 4 r4)
+                (mem/c:SI (reg/f:SI 13 sp) [3  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [3  S4 A32]))
+        ]) "../System/timing_utils.c":59:1 381 {*pop_multiple_with_writeback_and_return}
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+            (nil)))
+ -> return)
+(barrier 45 42 52)
+(note 52 45 14 (var_location stopwatch (entry_value:SI (reg:SI 0 r0 [ stopwatch ]))) NOTE_INSN_VAR_LOCATION)
+(note 14 52 15 NOTE_INSN_DELETED)
+(note 15 14 0 NOTE_INSN_DELETED)
+
+;; Function TIMUT_stopwatch_update (TIMUT_stopwatch_update, funcdef_no=353, decl_uid=5689, cgraph_uid=357, symbol_order=356)
+
+
+
+TIMUT_stopwatch_update
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 4 [r4] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr] 15 [pc]
+;;  ref usage 	r0={3d,3u} r1={2d} r2={2d} r3={3d,1u} r4={3d,4u,2e} r12={2d} r13={3d,9u} r14={2d,2u} r15={2d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 132{111d,19u,2e} in 7{6 regular + 1 call} insns.
+(note 1 0 27 NOTE_INSN_DELETED)
+(note 27 1 4 (var_location stopwatch (reg:SI 0 r0 [ stopwatch ])) NOTE_INSN_VAR_LOCATION)
+(note 4 27 3 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 3 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(note 8 3 26 2 NOTE_INSN_DELETED)
+(note 26 8 18 2 ../System/timing_utils.c:67 NOTE_INSN_BEGIN_STMT)
+(insn/f 18 26 19 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [3  A8])
+                (unspec:BLK [
+                        (reg:SI 4 r4)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":66:1 378 {*push_multi}
+     (expr_list:REG_DEAD (reg:SI 14 lr)
+        (expr_list:REG_DEAD (reg:SI 4 r4)
+            (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                        (set/f (reg/f:SI 13 sp)
+                            (plus:SI (reg/f:SI 13 sp)
+                                (const_int -8 [0xfffffffffffffff8])))
+                        (set/f (mem/c:SI (reg/f:SI 13 sp) [3  S4 A32])
+                            (reg:SI 4 r4))
+                        (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                    (const_int 4 [0x4])) [3  S4 A32])
+                            (reg:SI 14 lr))
+                    ])
+                (nil)))))
+(note 19 18 2 2 NOTE_INSN_PROLOGUE_END)
+(insn 2 19 7 2 (set (reg/v/f:SI 4 r4 [orig:116 stopwatch ] [116])
+        (reg:SI 0 r0 [119])) "../System/timing_utils.c":66:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [119])
+        (nil)))
+(call_insn 7 2 28 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":67:28 291 {*call_value_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (nil)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(note/c 28 7 9 2 (var_location stopwatch (reg/v/f:SI 4 r4 [orig:116 stopwatch ] [116])) NOTE_INSN_VAR_LOCATION)
+(insn 9 28 10 2 (set (reg:SI 3 r3 [orig:118 stopwatch_6(D)->time_mark ] [118])
+        (mem:SI (reg/v/f:SI 4 r4 [orig:116 stopwatch ] [116]) [1 stopwatch_6(D)->time_mark+0 S4 A32])) "../System/timing_utils.c":67:42 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (reg/v/f:SI 4 r4 [orig:116 stopwatch ] [116]) [1 stopwatch_6(D)->time_mark+0 S4 A32])
+        (nil)))
+(insn 10 9 11 2 (parallel [
+            (set (reg:SI 0 r0 [117])
+                (minus:SI (reg:SI 0 r0 [120])
+                    (reg:SI 3 r3 [orig:118 stopwatch_6(D)->time_mark ] [118])))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/timing_utils.c":67:42 1018 {*thumb2_subsi_short}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:118 stopwatch_6(D)->time_mark ] [118])
+        (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 4 r4 [orig:116 stopwatch ] [116])
+                    (const_int 4 [0x4])) [1 stopwatch_6(D)->elapsed_time+0 S4 A32])
+            (nil))))
+(insn 11 10 25 2 (set (mem:SI (plus:SI (reg/v/f:SI 4 r4 [orig:116 stopwatch ] [116])
+                (const_int 4 [0x4])) [1 stopwatch_6(D)->elapsed_time+0 S4 A32])
+        (reg:SI 0 r0 [117])) "../System/timing_utils.c":67:26 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v/f:SI 4 r4 [orig:116 stopwatch ] [116])
+        (expr_list:REG_DEAD (reg:SI 0 r0 [117])
+            (nil))))
+(note 25 11 21 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 21 25 24 2 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg:SI 4 r4)
+                (mem/c:SI (reg/f:SI 13 sp) [3  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [3  S4 A32]))
+        ]) "../System/timing_utils.c":68:1 381 {*pop_multiple_with_writeback_and_return}
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+            (nil)))
+ -> return)
+(barrier 24 21 29)
+(note 29 24 16 (var_location stopwatch (entry_value:SI (reg:SI 0 r0 [ stopwatch ]))) NOTE_INSN_VAR_LOCATION)
+(note 16 29 17 NOTE_INSN_DELETED)
+(note 17 16 0 NOTE_INSN_DELETED)
+
+;; Function TIMUT_stopwatch_has_X_ms_passed (TIMUT_stopwatch_has_X_ms_passed, funcdef_no=354, decl_uid=5692, cgraph_uid=358, symbol_order=357)
+
+
+
+TIMUT_stopwatch_has_X_ms_passed
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 5 [r5] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 4 [r4] 5 [r5] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 3 [r3] 4 [r4] 5 [r5] 12 [ip] 13 [sp] 14 [lr] 15 [pc] 100 [cc]
+;;  ref usage 	r0={5d,8u} r1={2d,1u} r2={2d} r3={4d,2u} r4={3d,4u,1e} r5={3d,3u} r12={2d} r13={3d,11u} r14={2d,2u} r15={2d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={2d,2u} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 152{118d,33u,1e} in 12{11 regular + 1 call} insns.
+(note 1 0 49 NOTE_INSN_DELETED)
+(note 49 1 50 (var_location stopwatch (reg:SI 0 r0 [ stopwatch ])) NOTE_INSN_VAR_LOCATION)
+(note 50 49 5 (var_location x (reg:SI 1 r1 [ x ])) NOTE_INSN_VAR_LOCATION)
+(note 5 50 4 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 4 5 12 2 NOTE_INSN_FUNCTION_BEG)
+(note 12 4 18 2 NOTE_INSN_DELETED)
+(note 18 12 19 2 NOTE_INSN_DELETED)
+(note 19 18 21 2 NOTE_INSN_DELETED)
+(note 21 19 45 2 NOTE_INSN_DELETED)
+(note 45 21 37 2 ../System/timing_utils.c:81 NOTE_INSN_BEGIN_STMT)
+(insn/f 37 45 38 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -16 [0xfffffffffffffff0]))) [3  A8])
+                (unspec:BLK [
+                        (reg:SI 3 r3)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 4 r4))
+            (use (reg:SI 5 r5))
+            (use (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":76:1 378 {*push_multi}
+     (expr_list:REG_DEAD (reg:SI 14 lr)
+        (expr_list:REG_DEAD (reg:SI 5 r5)
+            (expr_list:REG_DEAD (reg:SI 4 r4)
+                (expr_list:REG_DEAD (reg:SI 3 r3)
+                    (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                                (set/f (reg/f:SI 13 sp)
+                                    (plus:SI (reg/f:SI 13 sp)
+                                        (const_int -16 [0xfffffffffffffff0])))
+                                (set/f (mem/c:SI (reg/f:SI 13 sp) [3  S4 A32])
+                                    (reg:SI 3 r3))
+                                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                            (const_int 4 [0x4])) [3  S4 A32])
+                                    (reg:SI 4 r4))
+                                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                            (const_int 8 [0x8])) [3  S4 A32])
+                                    (reg:SI 5 r5))
+                                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                            (const_int 12 [0xc])) [3  S4 A32])
+                                    (reg:SI 14 lr))
+                            ])
+                        (nil)))))))
+(note 38 37 2 2 NOTE_INSN_PROLOGUE_END)
+(insn 2 38 51 2 (set (reg/v/f:SI 4 r4 [orig:118 stopwatch ] [118])
+        (reg:SI 0 r0 [124])) "../System/timing_utils.c":76:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [124])
+        (nil)))
+(note 51 2 46 2 (var_location stopwatch (reg:SI 0 r0 [ stopwatch ])) NOTE_INSN_VAR_LOCATION)
+(note 46 51 47 2 ../System/timing_utils.c:65 NOTE_INSN_INLINE_ENTRY)
+(note 47 46 3 2 ../System/timing_utils.c:67 NOTE_INSN_BEGIN_STMT)
+(insn 3 47 11 2 (set (reg/v:SI 5 r5 [orig:119 x ] [119])
+        (reg:SI 1 r1 [125])) "../System/timing_utils.c":76:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [125])
+        (nil)))
+(call_insn 11 3 54 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":67:28 291 {*call_value_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (nil)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(note/c 54 11 53 2 (var_location x (reg/v:SI 5 r5 [orig:119 x ] [119])) NOTE_INSN_VAR_LOCATION)
+(note/c 53 54 52 2 (var_location stopwatch (reg/v/f:SI 4 r4 [orig:118 stopwatch ] [118])) NOTE_INSN_VAR_LOCATION)
+(note/c 52 53 13 2 (var_location stopwatch (reg/v/f:SI 4 r4 [orig:118 stopwatch ] [118])) NOTE_INSN_VAR_LOCATION)
+(insn 13 52 14 2 (set (reg:SI 3 r3 [orig:120 stopwatch_3(D)->time_mark ] [120])
+        (mem:SI (reg/v/f:SI 4 r4 [orig:118 stopwatch ] [118]) [1 stopwatch_3(D)->time_mark+0 S4 A32])) "../System/timing_utils.c":67:42 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (reg/v/f:SI 4 r4 [orig:118 stopwatch ] [118]) [1 stopwatch_3(D)->time_mark+0 S4 A32])
+        (nil)))
+(insn 14 13 34 2 (parallel [
+            (set (reg:SI 0 r0 [orig:115 _7 ] [115])
+                (minus:SI (reg:SI 0 r0 [126])
+                    (reg:SI 3 r3 [orig:120 stopwatch_3(D)->time_mark ] [120])))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/timing_utils.c":67:42 1018 {*thumb2_subsi_short}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:120 stopwatch_3(D)->time_mark ] [120])
+        (nil)))
+(insn 34 14 15 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 5 r5 [orig:119 x ] [119])
+            (reg:SI 0 r0 [orig:115 _7 ] [115]))) "../System/timing_utils.c":93:1 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg/v:SI 5 r5 [orig:119 x ] [119])
+        (nil)))
+(insn 15 34 55 2 (set (mem:SI (plus:SI (reg/v/f:SI 4 r4 [orig:118 stopwatch ] [118])
+                (const_int 4 [0x4])) [1 stopwatch_3(D)->elapsed_time+0 S4 A32])
+        (reg:SI 0 r0 [orig:115 _7 ] [115])) "../System/timing_utils.c":67:26 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v/f:SI 4 r4 [orig:118 stopwatch ] [118])
+        (nil)))
+(note 55 15 48 2 (var_location stopwatch (nil)) NOTE_INSN_VAR_LOCATION)
+(note 48 55 35 2 ../System/timing_utils.c:84 NOTE_INSN_BEGIN_STMT)
+(insn 35 48 36 2 (cond_exec (geu (reg:CC 100 cc)
+            (const_int 0 [0]))
+        (set (reg/i:SI 0 r0)
+            (const_int 0 [0]))) "../System/timing_utils.c":93:1 6567 {*p *thumb2_movsi_vfp}
+     (nil))
+(insn 36 35 27 2 (cond_exec (ltu (reg:CC 100 cc)
+            (const_int 0 [0]))
+        (set (reg/i:SI 0 r0)
+            (const_int 1 [0x1]))) "../System/timing_utils.c":93:1 6567 {*p *thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (nil)))
+(insn 27 36 44 2 (use (reg/i:SI 0 r0)) "../System/timing_utils.c":93:1 -1
+     (nil))
+(note 44 27 40 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 40 44 43 2 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 16 [0x10])))
+            (set/f (reg:SI 3 r3)
+                (mem/c:SI (reg/f:SI 13 sp) [3  S4 A32]))
+            (set/f (reg:SI 4 r4)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [3  S4 A32]))
+            (set/f (reg:SI 5 r5)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 8 [0x8])) [3  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 12 [0xc])) [3  S4 A32]))
+        ]) "../System/timing_utils.c":93:1 381 {*pop_multiple_with_writeback_and_return}
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (expr_list:REG_UNUSED (reg:SI 3 r3)
+            (expr_list:REG_CFA_RESTORE (reg:SI 5 r5)
+                (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+                    (expr_list:REG_CFA_RESTORE (reg:SI 3 r3)
+                        (nil))))))
+ -> return)
+(barrier 43 40 56)
+(note 56 43 57 (var_location x (entry_value:SI (reg:SI 1 r1 [ x ]))) NOTE_INSN_VAR_LOCATION)
+(note 57 56 32 (var_location stopwatch (entry_value:SI (reg:SI 0 r0 [ stopwatch ]))) NOTE_INSN_VAR_LOCATION)
+(note 32 57 33 NOTE_INSN_DELETED)
+(note 33 32 0 NOTE_INSN_DELETED)
+
+;; Function TIMUT_stopwatch_has_another_X_ms_passed (TIMUT_stopwatch_has_another_X_ms_passed, funcdef_no=355, decl_uid=5695, cgraph_uid=359, symbol_order=358)
+
+
+
+TIMUT_stopwatch_has_another_X_ms_passed
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 5 [r5] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 4 [r4] 5 [r5] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 3 [r3] 4 [r4] 5 [r5] 12 [ip] 13 [sp] 14 [lr] 15 [pc] 100 [cc]
+;;  ref usage 	r0={7d,10u} r1={4d,3u} r2={3d} r3={6d,1u} r4={6d,6u} r5={5d,6u,1e} r12={4d} r13={5d,28u} r14={3d,2u} r15={5d} r16={3d} r17={3d} r18={3d} r19={3d} r20={3d} r21={3d} r22={3d} r23={3d} r24={3d} r25={3d} r26={3d} r27={3d} r28={3d} r29={3d} r30={3d} r31={3d} r48={2d} r49={2d} r50={2d} r51={2d} r52={2d} r53={2d} r54={2d} r55={2d} r56={2d} r57={2d} r58={2d} r59={2d} r60={2d} r61={2d} r62={2d} r63={2d} r64={2d} r65={2d} r66={2d} r67={2d} r68={2d} r69={2d} r70={2d} r71={2d} r72={2d} r73={2d} r74={2d} r75={2d} r76={2d} r77={2d} r78={2d} r79={2d} r80={2d} r81={2d} r82={2d} r83={2d} r84={2d} r85={2d} r86={2d} r87={2d} r88={2d} r89={2d} r90={2d} r91={2d} r92={2d} r93={2d} r94={2d} r95={2d} r96={2d} r97={2d} r98={2d} r99={2d} r100={4d,2u} r101={2d} r104={2d} r105={2d} r106={2d} 
+;;    total ref usage 271{212d,58u,1e} in 24{22 regular + 2 call} insns.
+(note 1 0 120 NOTE_INSN_DELETED)
+(note 120 1 121 (var_location stopwatch (reg:SI 0 r0 [ stopwatch ])) NOTE_INSN_VAR_LOCATION)
+(note 121 120 8 (var_location x (reg:SI 1 r1 [ x ])) NOTE_INSN_VAR_LOCATION)
+(note 8 121 4 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 4 8 19 2 NOTE_INSN_FUNCTION_BEG)
+(note 19 4 107 2 NOTE_INSN_DELETED)
+(note 107 19 78 2 ../System/timing_utils.c:116 NOTE_INSN_BEGIN_STMT)
+(insn/f 78 107 79 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -16 [0xfffffffffffffff0]))) [3  A8])
+                (unspec:BLK [
+                        (reg:SI 3 r3)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 4 r4))
+            (use (reg:SI 5 r5))
+            (use (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":113:1 378 {*push_multi}
+     (expr_list:REG_DEAD (reg:SI 14 lr)
+        (expr_list:REG_DEAD (reg:SI 5 r5)
+            (expr_list:REG_DEAD (reg:SI 4 r4)
+                (expr_list:REG_DEAD (reg:SI 3 r3)
+                    (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                                (set/f (reg/f:SI 13 sp)
+                                    (plus:SI (reg/f:SI 13 sp)
+                                        (const_int -16 [0xfffffffffffffff0])))
+                                (set/f (mem/c:SI (reg/f:SI 13 sp) [3  S4 A32])
+                                    (reg:SI 3 r3))
+                                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                            (const_int 4 [0x4])) [3  S4 A32])
+                                    (reg:SI 4 r4))
+                                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                            (const_int 8 [0x8])) [3  S4 A32])
+                                    (reg:SI 5 r5))
+                                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                            (const_int 12 [0xc])) [3  S4 A32])
+                                    (reg:SI 14 lr))
+                            ])
+                        (nil)))))))
+(note 79 78 2 2 NOTE_INSN_PROLOGUE_END)
+(insn 2 79 122 2 (set (reg/v/f:SI 5 r5 [orig:120 stopwatch ] [120])
+        (reg:SI 0 r0 [125])) "../System/timing_utils.c":113:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [125])
+        (nil)))
+(note 122 2 3 2 (var_location stopwatch (reg:SI 0 r0 [ stopwatch ])) NOTE_INSN_VAR_LOCATION)
+(insn 3 122 123 2 (set (reg/v:SI 4 r4 [orig:121 x ] [121])
+        (reg:SI 1 r1 [126])) "../System/timing_utils.c":113:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [126])
+        (nil)))
+(note 123 3 108 2 (var_location x (reg:SI 1 r1 [ x ])) NOTE_INSN_VAR_LOCATION)
+(note 108 123 109 2 ../System/timing_utils.c:75 NOTE_INSN_INLINE_ENTRY)
+(note 109 108 124 2 ../System/timing_utils.c:81 NOTE_INSN_BEGIN_STMT)
+(note 124 109 110 2 (var_location stopwatch (reg:SI 0 r0 [ stopwatch ])) NOTE_INSN_VAR_LOCATION)
+(note 110 124 111 2 ../System/timing_utils.c:65 NOTE_INSN_INLINE_ENTRY)
+(note 111 110 18 2 ../System/timing_utils.c:67 NOTE_INSN_BEGIN_STMT)
+(call_insn 18 111 129 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":67:28 291 {*call_value_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (nil)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(note/c 129 18 128 2 (var_location stopwatch (reg/v/f:SI 5 r5 [orig:120 stopwatch ] [120])) NOTE_INSN_VAR_LOCATION)
+(note/c 128 129 127 2 (var_location x (reg/v:SI 4 r4 [orig:121 x ] [121])) NOTE_INSN_VAR_LOCATION)
+(note/c 127 128 126 2 (var_location x (reg/v:SI 4 r4 [orig:121 x ] [121])) NOTE_INSN_VAR_LOCATION)
+(note/c 126 127 125 2 (var_location stopwatch (reg/v/f:SI 5 r5 [orig:120 stopwatch ] [120])) NOTE_INSN_VAR_LOCATION)
+(note/c 125 126 20 2 (var_location stopwatch (reg/v/f:SI 5 r5 [orig:120 stopwatch ] [120])) NOTE_INSN_VAR_LOCATION)
+(insn 20 125 21 2 (set (reg:SI 1 r1 [orig:116 _10 ] [116])
+        (mem:SI (reg/v/f:SI 5 r5 [orig:120 stopwatch ] [120]) [1 stopwatch_6(D)->time_mark+0 S4 A32])) "../System/timing_utils.c":67:53 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 21 20 25 2 (parallel [
+            (set (reg:SI 0 r0 [orig:117 _11 ] [117])
+                (minus:SI (reg:SI 0 r0 [127])
+                    (reg:SI 1 r1 [orig:116 _10 ] [116])))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/timing_utils.c":67:42 1018 {*thumb2_subsi_short}
+     (nil))
+(insn 25 21 22 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 4 r4 [orig:121 x ] [121])
+            (reg:SI 0 r0 [orig:117 _11 ] [117]))) "../System/timing_utils.c":84:5 268 {*arm_cmpsi_insn}
+     (nil))
+(insn 22 25 130 2 (set (mem:SI (plus:SI (reg/v/f:SI 5 r5 [orig:120 stopwatch ] [120])
+                (const_int 4 [0x4])) [1 stopwatch_6(D)->elapsed_time+0 S4 A32])
+        (reg:SI 0 r0 [orig:117 _11 ] [117])) "../System/timing_utils.c":67:26 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 130 22 112 2 (var_location stopwatch (nil)) NOTE_INSN_VAR_LOCATION)
+(note 112 130 26 2 ../System/timing_utils.c:84 NOTE_INSN_BEGIN_STMT)
+(jump_insn 26 112 27 2 (set (pc)
+        (if_then_else (geu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 66)
+            (pc))) "../System/timing_utils.c":84:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 66)
+(note 27 26 31 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 31 27 131 3 NOTE_INSN_DELETED)
+(note 131 31 132 3 (var_location stopwatch (nil)) NOTE_INSN_VAR_LOCATION)
+(note 132 131 113 3 (var_location x (nil)) NOTE_INSN_VAR_LOCATION)
+(note 113 132 32 3 ../System/timing_utils.c:128 NOTE_INSN_BEGIN_STMT)
+(insn 32 113 33 3 (set (reg:CC_SWP 100 cc)
+        (compare:CC_SWP (ashift:SI (reg/v:SI 4 r4 [orig:121 x ] [121])
+                (const_int 1 [0x1]))
+            (reg:SI 0 r0 [orig:117 _11 ] [117]))) "../System/timing_utils.c":128:6 270 {*cmpsi_shiftsi_swp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [orig:117 _11 ] [117])
+        (nil)))
+(jump_insn 33 32 47 3 (set (pc)
+        (if_then_else (ltu (reg:CC_SWP 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 103)
+            (pc))) "../System/timing_utils.c":128:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC_SWP 100 cc)
+        (int_list:REG_BR_PROB 354334804 (nil)))
+ -> 103)
+(note 47 33 114 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 114 47 49 4 ../System/timing_utils.c:147 NOTE_INSN_BEGIN_STMT)
+(insn 49 114 133 4 (set (reg:SI 4 r4 [123])
+        (plus:SI (reg/v:SI 4 r4 [orig:121 x ] [121])
+            (reg:SI 1 r1 [orig:116 _10 ] [116]))) "../System/timing_utils.c":147:25 7 {*arm_addsi3}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [orig:116 _10 ] [116])
+        (expr_list:REG_EQUIV (mem:SI (reg/v/f:SI 5 r5 [orig:120 stopwatch ] [120]) [1 stopwatch_6(D)->time_mark+0 S4 A32])
+            (nil))))
+(note 133 49 50 4 (var_location x (entry_value:SI (reg:SI 1 r1 [ x ]))) NOTE_INSN_VAR_LOCATION)
+(insn 50 133 115 4 (set (mem:SI (reg/v/f:SI 5 r5 [orig:120 stopwatch ] [120]) [1 stopwatch_6(D)->time_mark+0 S4 A32])
+        (reg:SI 4 r4 [123])) "../System/timing_utils.c":147:25 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v/f:SI 5 r5 [orig:120 stopwatch ] [120])
+        (expr_list:REG_DEAD (reg:SI 4 r4 [123])
+            (nil))))
+(note 115 50 6 4 ../System/timing_utils.c:150 NOTE_INSN_BEGIN_STMT)
+(insn 6 115 61 4 (parallel [
+            (set (reg:SI 0 r0 [orig:119 <retval> ] [119])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/timing_utils.c":150:11 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUAL (const_int 1 [0x1])
+        (nil)))
+(insn 61 6 104 4 (use (reg/i:SI 0 r0)) "../System/timing_utils.c":160:1 -1
+     (nil))
+(note 104 61 81 4 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 81 104 84 4 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 16 [0x10])))
+            (set/f (reg:SI 3 r3)
+                (mem/c:SI (reg/f:SI 13 sp) [3  S4 A32]))
+            (set/f (reg:SI 4 r4)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [3  S4 A32]))
+            (set/f (reg:SI 5 r5)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 8 [0x8])) [3  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 12 [0xc])) [3  S4 A32]))
+        ]) "../System/timing_utils.c":160:1 381 {*pop_multiple_with_writeback_and_return}
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (expr_list:REG_UNUSED (reg:SI 3 r3)
+            (expr_list:REG_CFA_RESTORE (reg:SI 5 r5)
+                (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+                    (expr_list:REG_CFA_RESTORE (reg:SI 3 r3)
+                        (nil))))))
+ -> return)
+(barrier 84 81 134)
+(note 134 84 135 (var_location stopwatch (entry_value:SI (reg:SI 0 r0 [ stopwatch ]))) NOTE_INSN_VAR_LOCATION)
+(note 135 134 136 (var_location stopwatch (reg/v/f:SI 5 r5 [orig:120 stopwatch ] [120])) NOTE_INSN_VAR_LOCATION)
+(note 136 135 137 (var_location x (reg/v:SI 4 r4 [orig:121 x ] [121])) NOTE_INSN_VAR_LOCATION)
+(note 137 136 138 (var_location stopwatch (reg/v/f:SI 5 r5 [orig:120 stopwatch ] [120])) NOTE_INSN_VAR_LOCATION)
+(note 138 137 66 (var_location x (reg/v:SI 4 r4 [orig:121 x ] [121])) NOTE_INSN_VAR_LOCATION)
+(code_label 66 138 65 5 11 (nil) [1 uses])
+(note 65 66 7 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 7 65 139 5 (parallel [
+            (set (reg:SI 0 r0 [orig:119 <retval> ] [119])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/timing_utils.c":157:10 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(note 139 7 140 5 (var_location stopwatch (nil)) NOTE_INSN_VAR_LOCATION)
+(note 140 139 88 5 (var_location x (nil)) NOTE_INSN_VAR_LOCATION)
+(insn 88 140 105 5 (use (reg/i:SI 0 r0)) "../System/timing_utils.c":160:1 -1
+     (nil))
+(note 105 88 90 5 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 90 105 93 5 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 16 [0x10])))
+            (set/f (reg:SI 3 r3)
+                (mem/c:SI (reg/f:SI 13 sp) [3  S4 A32]))
+            (set/f (reg:SI 4 r4)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [3  S4 A32]))
+            (set/f (reg:SI 5 r5)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 8 [0x8])) [3  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 12 [0xc])) [3  S4 A32]))
+        ]) "../System/timing_utils.c":160:1 381 {*pop_multiple_with_writeback_and_return}
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (expr_list:REG_UNUSED (reg:SI 3 r3)
+            (expr_list:REG_CFA_RESTORE (reg:SI 5 r5)
+                (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+                    (expr_list:REG_CFA_RESTORE (reg:SI 3 r3)
+                        (nil))))))
+ -> return)
+(barrier 93 90 141)
+(note 141 93 142 (var_location stopwatch (entry_value:SI (reg:SI 0 r0 [ stopwatch ]))) NOTE_INSN_VAR_LOCATION)
+(note 142 141 143 (var_location x (entry_value:SI (reg:SI 1 r1 [ x ]))) NOTE_INSN_VAR_LOCATION)
+(note 143 142 144 (var_location stopwatch (reg/v/f:SI 5 r5 [orig:120 stopwatch ] [120])) NOTE_INSN_VAR_LOCATION)
+(note 144 143 103 (var_location x (reg/v:SI 4 r4 [orig:121 x ] [121])) NOTE_INSN_VAR_LOCATION)
+(code_label 103 144 34 6 13 (nil) [1 uses])
+(note 34 103 40 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(note 40 34 116 6 NOTE_INSN_DELETED)
+(note 116 40 145 6 ../System/timing_utils.c:134 NOTE_INSN_BEGIN_STMT)
+(note 145 116 117 6 (var_location stopwatch (reg/v/f:SI 5 r5 [orig:120 stopwatch ] [120])) NOTE_INSN_VAR_LOCATION)
+(note 117 145 118 6 ../System/timing_utils.c:56 NOTE_INSN_INLINE_ENTRY)
+(note 118 117 39 6 ../System/timing_utils.c:58 NOTE_INSN_BEGIN_STMT)
+(call_insn 39 118 41 6 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":58:25 291 {*call_value_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (nil)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 41 39 146 6 (set (mem:SI (reg/v/f:SI 5 r5 [orig:120 stopwatch ] [120]) [1 stopwatch_6(D)->time_mark+0 S4 A32])
+        (reg:SI 0 r0 [128])) "../System/timing_utils.c":58:23 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v/f:SI 5 r5 [orig:120 stopwatch ] [120])
+        (expr_list:REG_DEAD (reg:SI 0 r0 [128])
+            (nil))))
+(note 146 41 119 6 (var_location stopwatch (nil)) NOTE_INSN_VAR_LOCATION)
+(note 119 146 5 6 ../System/timing_utils.c:137 NOTE_INSN_BEGIN_STMT)
+(insn 5 119 97 6 (parallel [
+            (set (reg:SI 0 r0 [orig:119 <retval> ] [119])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/timing_utils.c":137:11 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUAL (const_int 1 [0x1])
+        (nil)))
+(insn 97 5 106 6 (use (reg/i:SI 0 r0)) "../System/timing_utils.c":160:1 -1
+     (nil))
+(note 106 97 99 6 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 99 106 102 6 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 16 [0x10])))
+            (set/f (reg:SI 3 r3)
+                (mem/c:SI (reg/f:SI 13 sp) [3  S4 A32]))
+            (set/f (reg:SI 4 r4)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [3  S4 A32]))
+            (set/f (reg:SI 5 r5)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 8 [0x8])) [3  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 12 [0xc])) [3  S4 A32]))
+        ]) "../System/timing_utils.c":160:1 381 {*pop_multiple_with_writeback_and_return}
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (expr_list:REG_UNUSED (reg:SI 3 r3)
+            (expr_list:REG_CFA_RESTORE (reg:SI 5 r5)
+                (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+                    (expr_list:REG_CFA_RESTORE (reg:SI 3 r3)
+                        (nil))))))
+ -> return)
+(barrier 102 99 147)
+(note 147 102 148 (var_location stopwatch (entry_value:SI (reg:SI 0 r0 [ stopwatch ]))) NOTE_INSN_VAR_LOCATION)
+(note 148 147 76 (var_location x (entry_value:SI (reg:SI 1 r1 [ x ]))) NOTE_INSN_VAR_LOCATION)
+(note 76 148 77 NOTE_INSN_DELETED)
+(note 77 76 0 NOTE_INSN_DELETED)
+
+;; Function TIMUT_stopwatch_demo (TIMUT_stopwatch_demo, funcdef_no=356, decl_uid=5697, cgraph_uid=360, symbol_order=359) (executed once)
+
+
+
+TIMUT_stopwatch_demo
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 4 [r4] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={13d,9u} r1={10d} r2={10d} r3={13d,6u} r4={5d,5u} r12={18d} r13={2d,21u} r14={10d,2u} r15={9d} r16={10d} r17={10d} r18={10d} r19={10d} r20={10d} r21={10d} r22={10d} r23={10d} r24={10d} r25={10d} r26={10d} r27={10d} r28={10d} r29={10d} r30={10d} r31={10d} r48={9d} r49={9d} r50={9d} r51={9d} r52={9d} r53={9d} r54={9d} r55={9d} r56={9d} r57={9d} r58={9d} r59={9d} r60={9d} r61={9d} r62={9d} r63={9d} r64={9d} r65={9d} r66={9d} r67={9d} r68={9d} r69={9d} r70={9d} r71={9d} r72={9d} r73={9d} r74={9d} r75={9d} r76={9d} r77={9d} r78={9d} r79={9d} r80={9d} r81={9d} r82={9d} r83={9d} r84={9d} r85={9d} r86={9d} r87={9d} r88={9d} r89={9d} r90={9d} r91={9d} r92={9d} r93={9d} r94={9d} r95={9d} r96={9d} r97={9d} r98={9d} r99={9d} r100={14d,5u} r101={9d} r104={9d} r105={9d} r106={9d} 
+;;    total ref usage 816{768d,48u,0e} in 31{22 regular + 9 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 188 2 NOTE_INSN_FUNCTION_BEG)
+(note 188 2 189 2 ../System/timing_utils.c:174 NOTE_INSN_BEGIN_STMT)
+(note 189 188 144 2 ../System/timing_utils.c:184 NOTE_INSN_BEGIN_STMT)
+(insn/f 144 189 145 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [3  A8])
+                (unspec:BLK [
+                        (reg:SI 3 r3)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":170:1 378 {*push_multi}
+     (expr_list:REG_DEAD (reg:SI 14 lr)
+        (expr_list:REG_DEAD (reg:SI 3 r3)
+            (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                        (set/f (reg/f:SI 13 sp)
+                            (plus:SI (reg/f:SI 13 sp)
+                                (const_int -8 [0xfffffffffffffff8])))
+                        (set/f (mem/c:SI (reg/f:SI 13 sp) [3  S4 A32])
+                            (reg:SI 3 r3))
+                        (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                    (const_int 4 [0x4])) [3  S4 A32])
+                            (reg:SI 14 lr))
+                    ])
+                (nil)))))
+(note 145 144 7 2 NOTE_INSN_PROLOGUE_END)
+(insn 7 145 8 2 (parallel [
+            (set (reg:SI 0 r0)
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/timing_utils.c":184:2 1016 {*thumb2_movsi_shortim}
+     (nil))
+(call_insn 8 7 190 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("LED_on") [flags 0x41]  <function_decl 0000000006c2b600 LED_on>) [0 LED_on S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":184:2 290 {*call_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:QI (reg:QI 0 r0)
+                (const_int 0 [0]))
+            (nil))
+        (expr_list:REG_DEAD (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("LED_on") [flags 0x41]  <function_decl 0000000006c2b600 LED_on>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(note 190 8 233 2 ../System/timing_utils.c:185 NOTE_INSN_BEGIN_STMT)
+(note 233 190 191 2 (var_location stopwatch (debug_implicit_ptr:SI stopwatch)) NOTE_INSN_VAR_LOCATION)
+(note 191 233 192 2 ../System/timing_utils.c:56 NOTE_INSN_INLINE_ENTRY)
+(note 192 191 13 2 ../System/timing_utils.c:58 NOTE_INSN_BEGIN_STMT)
+(call_insn 13 192 14 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":58:25 291 {*call_value_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (nil)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 14 13 234 2 (set (reg:SI 4 r4 [orig:114 _10 ] [114])
+        (reg:SI 0 r0 [121])) "../System/timing_utils.c":58:25 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [121])
+        (nil)))
+(note 234 14 32 (var_location stopwatch (nil)) NOTE_INSN_VAR_LOCATION)
+(code_label 32 234 15 3 15 (nil) [1 uses])
+(note 15 32 29 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 29 15 193 3 NOTE_INSN_DELETED)
+(note 193 29 194 3 ../System/timing_utils.c:195 NOTE_INSN_BEGIN_STMT)
+(note 194 193 235 3 ../System/timing_utils.c:190 NOTE_INSN_BEGIN_STMT)
+(note 235 194 236 3 (var_location stopwatch (debug_implicit_ptr:SI stopwatch)) NOTE_INSN_VAR_LOCATION)
+(note 236 235 195 3 (var_location x (const_int 1000 [0x3e8])) NOTE_INSN_VAR_LOCATION)
+(note 195 236 196 3 ../System/timing_utils.c:75 NOTE_INSN_INLINE_ENTRY)
+(note 196 195 237 3 ../System/timing_utils.c:81 NOTE_INSN_BEGIN_STMT)
+(note 237 196 197 3 (var_location stopwatch (debug_implicit_ptr:SI stopwatch)) NOTE_INSN_VAR_LOCATION)
+(note 197 237 198 3 ../System/timing_utils.c:65 NOTE_INSN_INLINE_ENTRY)
+(note 198 197 28 3 ../System/timing_utils.c:67 NOTE_INSN_BEGIN_STMT)
+(call_insn 28 198 238 3 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":67:28 291 {*call_value_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (nil)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(note 238 28 199 3 (var_location stopwatch (nil)) NOTE_INSN_VAR_LOCATION)
+(note 199 238 33 3 ../System/timing_utils.c:84 NOTE_INSN_BEGIN_STMT)
+(insn 33 199 36 3 (parallel [
+            (set (reg:SI 3 r3 [119])
+                (minus:SI (reg:SI 0 r0 [122])
+                    (reg:SI 4 r4 [orig:114 _10 ] [114])))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/timing_utils.c":67:42 1018 {*thumb2_subsi_short}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [122])
+        (nil)))
+(insn 36 33 37 3 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [119])
+            (const_int 1000 [0x3e8]))) "../System/timing_utils.c":84:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [119])
+        (nil)))
+(jump_insn 37 36 38 3 (set (pc)
+        (if_then_else (gtu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 32)
+            (pc))) "../System/timing_utils.c":84:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 32)
+(note 38 37 200 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 200 38 239 4 ../System/timing_utils.c:90 NOTE_INSN_BEGIN_STMT)
+(note 239 200 240 4 (var_location stopwatch (nil)) NOTE_INSN_VAR_LOCATION)
+(note 240 239 201 4 (var_location x (nil)) NOTE_INSN_VAR_LOCATION)
+(note 201 240 43 4 ../System/timing_utils.c:201 NOTE_INSN_BEGIN_STMT)
+(insn 43 201 44 4 (parallel [
+            (set (reg:SI 0 r0)
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/timing_utils.c":201:2 1016 {*thumb2_movsi_shortim}
+     (nil))
+(call_insn 44 43 202 4 (parallel [
+            (call (mem:SI (symbol_ref:SI ("LED_off") [flags 0x41]  <function_decl 0000000006c2b700 LED_off>) [0 LED_off S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":201:2 290 {*call_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:QI (reg:QI 0 r0)
+                (const_int 0 [0]))
+            (nil))
+        (expr_list:REG_DEAD (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("LED_off") [flags 0x41]  <function_decl 0000000006c2b700 LED_off>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(note 202 44 241 4 ../System/timing_utils.c:216 NOTE_INSN_BEGIN_STMT)
+(note 241 202 203 4 (var_location stopwatch (debug_implicit_ptr:SI stopwatch)) NOTE_INSN_VAR_LOCATION)
+(note 203 241 204 4 ../System/timing_utils.c:56 NOTE_INSN_INLINE_ENTRY)
+(note 204 203 49 4 ../System/timing_utils.c:58 NOTE_INSN_BEGIN_STMT)
+(call_insn 49 204 50 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":58:25 291 {*call_value_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (nil)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 50 49 242 4 (set (reg:SI 4 r4 [orig:113 stopwatch$time_mark ] [113])
+        (reg:SI 0 r0 [123])) "../System/timing_utils.c":58:25 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [123])
+        (nil)))
+(note 242 50 243 (var_location stopwatch$time_mark (reg:SI 0 r0 [123])) NOTE_INSN_VAR_LOCATION)
+(note 243 242 244 (var_location stopwatch (nil)) NOTE_INSN_VAR_LOCATION)
+(note 244 243 79 (var_location stopwatch$time_mark (reg:SI 4 r4 [orig:113 stopwatch$time_mark ] [113])) NOTE_INSN_VAR_LOCATION)
+(code_label 79 244 54 5 16 (nil) [2 uses])
+(note 54 79 75 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(note 75 54 205 5 NOTE_INSN_DELETED)
+(note 205 75 206 5 ../System/timing_utils.c:221 NOTE_INSN_BEGIN_STMT)
+(note 206 205 245 5 ../System/timing_utils.c:223 NOTE_INSN_BEGIN_STMT)
+(note 245 206 207 5 (var_location stopwatch (debug_implicit_ptr:SI stopwatch)) NOTE_INSN_VAR_LOCATION)
+(note 207 245 246 5 ../System/timing_utils.c:112 NOTE_INSN_INLINE_ENTRY)
+(note 246 207 208 5 (var_location x (const_int 1000 [0x3e8])) NOTE_INSN_VAR_LOCATION)
+(note 208 246 247 5 ../System/timing_utils.c:116 NOTE_INSN_BEGIN_STMT)
+(note 247 208 248 5 (var_location stopwatch (debug_implicit_ptr:SI stopwatch)) NOTE_INSN_VAR_LOCATION)
+(note 248 247 209 5 (var_location x (const_int 1000 [0x3e8])) NOTE_INSN_VAR_LOCATION)
+(note 209 248 210 5 ../System/timing_utils.c:75 NOTE_INSN_INLINE_ENTRY)
+(note 210 209 249 5 ../System/timing_utils.c:81 NOTE_INSN_BEGIN_STMT)
+(note 249 210 211 5 (var_location stopwatch (debug_implicit_ptr:SI stopwatch)) NOTE_INSN_VAR_LOCATION)
+(note 211 249 212 5 ../System/timing_utils.c:65 NOTE_INSN_INLINE_ENTRY)
+(note 212 211 74 5 ../System/timing_utils.c:67 NOTE_INSN_BEGIN_STMT)
+(call_insn 74 212 250 5 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":67:28 291 {*call_value_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (nil)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(note 250 74 251 5 (var_location stopwatch (nil)) NOTE_INSN_VAR_LOCATION)
+(note 251 250 213 5 (var_location x (nil)) NOTE_INSN_VAR_LOCATION)
+(note 213 251 76 5 ../System/timing_utils.c:128 NOTE_INSN_BEGIN_STMT)
+(insn 76 213 252 5 (parallel [
+            (set (reg:SI 3 r3 [orig:118 _23 ] [118])
+                (minus:SI (reg:SI 0 r0 [124])
+                    (reg:SI 4 r4 [orig:113 stopwatch$time_mark ] [113])))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/timing_utils.c":67:42 1018 {*thumb2_subsi_short}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [124])
+        (nil)))
+(note 252 76 214 5 (var_location stopwatch (nil)) NOTE_INSN_VAR_LOCATION)
+(note 214 252 82 5 ../System/timing_utils.c:84 NOTE_INSN_BEGIN_STMT)
+(insn 82 214 83 5 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:118 _23 ] [118])
+            (const_int 1000 [0x3e8]))) "../System/timing_utils.c":84:5 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 83 82 253 5 (set (pc)
+        (if_then_else (leu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 79)
+            (pc))) "../System/timing_utils.c":84:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 79)
+(note 253 83 84 (var_location stopwatch$time_mark (reg:SI 4 r4 [orig:113 stopwatch$time_mark ] [113])) NOTE_INSN_VAR_LOCATION)
+(note 84 253 215 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(note 215 84 90 6 ../System/timing_utils.c:147 NOTE_INSN_BEGIN_STMT)
+(insn 90 215 91 6 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:118 _23 ] [118])
+            (const_int 2000 [0x7d0]))) "../System/timing_utils.c":128:6 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:118 _23 ] [118])
+        (nil)))
+(jump_insn 91 90 254 6 (set (pc)
+        (if_then_else (gtu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 185)
+            (pc))) "../System/timing_utils.c":128:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 354334804 (nil)))
+ -> 185)
+(note 254 91 108 (var_location stopwatch$time_mark (reg:SI 4 r4 [orig:113 stopwatch$time_mark ] [113])) NOTE_INSN_VAR_LOCATION)
+(code_label 108 254 109 7 17 (nil) [1 uses])
+(note 109 108 111 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 111 109 255 7 (set (reg:SI 4 r4 [orig:113 stopwatch$time_mark ] [113])
+        (plus:SI (reg:SI 4 r4 [orig:113 stopwatch$time_mark ] [113])
+            (const_int 1000 [0x3e8]))) "../System/timing_utils.c":147:25 7 {*arm_addsi3}
+     (nil))
+(note 255 111 256 7 (var_location stopwatch$time_mark (plus:SI (reg:SI 4 r4 [orig:113 stopwatch$time_mark ] [113])
+    (const_int -1000 [0xfffffffffffffc18]))) NOTE_INSN_VAR_LOCATION)
+(note 256 255 216 7 (var_location stopwatch$time_mark (reg:SI 4 r4 [orig:113 stopwatch$time_mark ] [113])) NOTE_INSN_VAR_LOCATION)
+(note 216 256 257 7 ../System/timing_utils.c:150 NOTE_INSN_BEGIN_STMT)
+(note 257 216 258 7 (var_location stopwatch (nil)) NOTE_INSN_VAR_LOCATION)
+(note 258 257 259 (var_location x (nil)) NOTE_INSN_VAR_LOCATION)
+(note 259 258 118 (var_location stopwatch$time_mark (reg:SI 4 r4 [orig:113 stopwatch$time_mark ] [113])) NOTE_INSN_VAR_LOCATION)
+(code_label 118 259 119 8 18 (nil) [1 uses])
+(note 119 118 260 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(note 260 119 217 8 (var_location stopwatch$time_mark (reg:SI 4 r4 [orig:113 stopwatch$time_mark ] [113])) NOTE_INSN_VAR_LOCATION)
+(note 217 260 133 8 ../System/timing_utils.c:227 NOTE_INSN_BEGIN_STMT)
+(insn 133 217 123 8 (parallel [
+            (set (reg:SI 0 r0)
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/timing_utils.c":227:4 1016 {*thumb2_movsi_shortim}
+     (nil))
+(call_insn 123 133 261 8 (parallel [
+            (call (mem:SI (symbol_ref:SI ("LED_toggle") [flags 0x41]  <function_decl 0000000006c2b800 LED_toggle>) [0 LED_toggle S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":227:4 290 {*call_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:QI (reg:QI 0 r0)
+                (const_int 1 [0x1]))
+            (nil))
+        (expr_list:REG_DEAD (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("LED_toggle") [flags 0x41]  <function_decl 0000000006c2b800 LED_toggle>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(note 261 123 218 8 (var_location stopwatch$time_mark (reg:SI 4 r4 [orig:113 stopwatch$time_mark ] [113])) NOTE_INSN_VAR_LOCATION)
+(note 218 261 219 8 ../System/timing_utils.c:221 NOTE_INSN_BEGIN_STMT)
+(note 219 218 262 8 ../System/timing_utils.c:223 NOTE_INSN_BEGIN_STMT)
+(note 262 219 220 8 (var_location stopwatch (debug_implicit_ptr:SI stopwatch)) NOTE_INSN_VAR_LOCATION)
+(note 220 262 263 8 ../System/timing_utils.c:112 NOTE_INSN_INLINE_ENTRY)
+(note 263 220 221 8 (var_location x (const_int 1000 [0x3e8])) NOTE_INSN_VAR_LOCATION)
+(note 221 263 264 8 ../System/timing_utils.c:116 NOTE_INSN_BEGIN_STMT)
+(note 264 221 265 8 (var_location stopwatch (debug_implicit_ptr:SI stopwatch)) NOTE_INSN_VAR_LOCATION)
+(note 265 264 222 8 (var_location x (const_int 1000 [0x3e8])) NOTE_INSN_VAR_LOCATION)
+(note 222 265 223 8 ../System/timing_utils.c:75 NOTE_INSN_INLINE_ENTRY)
+(note 223 222 266 8 ../System/timing_utils.c:81 NOTE_INSN_BEGIN_STMT)
+(note 266 223 224 8 (var_location stopwatch (debug_implicit_ptr:SI stopwatch)) NOTE_INSN_VAR_LOCATION)
+(note 224 266 225 8 ../System/timing_utils.c:65 NOTE_INSN_INLINE_ENTRY)
+(note 225 224 170 8 ../System/timing_utils.c:67 NOTE_INSN_BEGIN_STMT)
+(call_insn 170 225 267 8 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":67:28 291 {*call_value_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (nil)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(note 267 170 268 8 (var_location stopwatch (nil)) NOTE_INSN_VAR_LOCATION)
+(note 268 267 226 8 (var_location x (nil)) NOTE_INSN_VAR_LOCATION)
+(note 226 268 174 8 ../System/timing_utils.c:128 NOTE_INSN_BEGIN_STMT)
+(insn 174 226 269 8 (parallel [
+            (set (reg:SI 3 r3 [orig:118 _23 ] [118])
+                (minus:SI (reg:SI 0 r0 [124])
+                    (reg:SI 4 r4 [orig:113 stopwatch$time_mark ] [113])))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/timing_utils.c":67:42 1018 {*thumb2_subsi_short}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [124])
+        (nil)))
+(note 269 174 227 8 (var_location stopwatch (nil)) NOTE_INSN_VAR_LOCATION)
+(note 227 269 177 8 ../System/timing_utils.c:84 NOTE_INSN_BEGIN_STMT)
+(insn 177 227 178 8 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:118 _23 ] [118])
+            (const_int 1000 [0x3e8]))) "../System/timing_utils.c":84:5 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 178 177 270 8 (set (pc)
+        (if_then_else (leu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 79)
+            (pc))) "../System/timing_utils.c":84:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 79)
+(note 270 178 184 (var_location stopwatch$time_mark (reg:SI 4 r4 [orig:113 stopwatch$time_mark ] [113])) NOTE_INSN_VAR_LOCATION)
+(note 184 270 228 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(note 228 184 182 9 ../System/timing_utils.c:147 NOTE_INSN_BEGIN_STMT)
+(insn 182 228 183 9 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:118 _23 ] [118])
+            (const_int 2000 [0x7d0]))) "../System/timing_utils.c":128:6 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:118 _23 ] [118])
+        (nil)))
+(jump_insn 183 182 271 9 (set (pc)
+        (if_then_else (leu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 108)
+            (pc))) "../System/timing_utils.c":128:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 719407028 (nil)))
+ -> 108)
+(note 271 183 185 (var_location stopwatch$time_mark (reg:SI 4 r4 [orig:113 stopwatch$time_mark ] [113])) NOTE_INSN_VAR_LOCATION)
+(code_label 185 271 92 10 23 (nil) [1 uses])
+(note 92 185 229 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(note 229 92 272 10 ../System/timing_utils.c:134 NOTE_INSN_BEGIN_STMT)
+(note 272 229 230 10 (var_location stopwatch (debug_implicit_ptr:SI stopwatch)) NOTE_INSN_VAR_LOCATION)
+(note 230 272 231 10 ../System/timing_utils.c:56 NOTE_INSN_INLINE_ENTRY)
+(note 231 230 97 10 ../System/timing_utils.c:58 NOTE_INSN_BEGIN_STMT)
+(call_insn 97 231 98 10 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":58:25 291 {*call_value_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (nil)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 98 97 273 10 (set (reg:SI 4 r4 [orig:113 stopwatch$time_mark ] [113])
+        (reg:SI 0 r0 [125])) "../System/timing_utils.c":58:25 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [125])
+        (nil)))
+(note 273 98 274 10 (var_location stopwatch$time_mark (nil)) NOTE_INSN_VAR_LOCATION)
+(note 274 273 275 10 (var_location stopwatch$time_mark (reg:SI 0 r0 [125])) NOTE_INSN_VAR_LOCATION)
+(note 275 274 232 10 (var_location stopwatch (nil)) NOTE_INSN_VAR_LOCATION)
+(note 232 275 276 10 ../System/timing_utils.c:137 NOTE_INSN_BEGIN_STMT)
+(note 276 232 277 10 (var_location stopwatch (nil)) NOTE_INSN_VAR_LOCATION)
+(note 277 276 186 10 (var_location x (nil)) NOTE_INSN_VAR_LOCATION)
+(jump_insn 186 277 187 10 (set (pc)
+        (label_ref 118)) 284 {*arm_jump}
+     (nil)
+ -> 118)
+(barrier 187 186 143)
+(note 143 187 0 NOTE_INSN_DELETED)

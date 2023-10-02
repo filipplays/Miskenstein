@@ -1,0 +1,887 @@
+
+;; Function SystemInit (SystemInit, funcdef_no=329, decl_uid=6654, cgraph_uid=333, symbol_order=335)
+
+
+3 basic blocks, 2 edges.
+
+(note 3 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../Core/Src/system_stm32g4xx.c":183:5 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 115)
+        (const_int -536810240 [0xffffffffe000ed00])) "../Core/Src/system_stm32g4xx.c":183:16 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 113 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 115)
+                (const_int 136 [0x88])) [1 MEM[(struct SCB_Type *)3758157056B].CPACR+0 S4 A64])) "../Core/Src/system_stm32g4xx.c":183:16 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 114 [ _2 ])
+        (ior:SI (reg:SI 113 [ _1 ])
+            (const_int 15728640 [0xf00000]))) "../Core/Src/system_stm32g4xx.c":183:16 106 {*iorsi3_insn}
+     (nil))
+(insn 9 8 10 2 (set (reg/f:SI 116)
+        (const_int -536810240 [0xffffffffe000ed00])) "../Core/Src/system_stm32g4xx.c":183:16 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 10 9 0 2 (set (mem/v:SI (plus:SI (reg/f:SI 116)
+                (const_int 136 [0x88])) [1 MEM[(struct SCB_Type *)3758157056B].CPACR+0 S4 A64])
+        (reg:SI 114 [ _2 ])) "../Core/Src/system_stm32g4xx.c":183:16 728 {*thumb2_movsi_vfp}
+     (nil))
+
+
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 3 n_edges 2 count 3 (    1)
+
+
+SystemInit
+
+Dataflow summary:
+def_info->table_size = 0, use_info->table_size = 0
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r7={1d,2u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r102={1d,2u} r103={1d,1u} r113={1d,1u} r114={1d,1u} r115={1d,1u} r116={1d,1u} 
+;;    total ref usage 40{29d,11u,0e} in 6{6 regular + 0 call} insns.
+
+( )->[0]->( 2 )
+;; bb 0 artificial_defs: { d-1(0){ }d-1(1){ }d-1(2){ }d-1(3){ }d-1(7){ }d-1(13){ }d-1(14){ }d-1(16){ }d-1(17){ }d-1(18){ }d-1(19){ }d-1(20){ }d-1(21){ }d-1(22){ }d-1(23){ }d-1(24){ }d-1(25){ }d-1(26){ }d-1(27){ }d-1(28){ }d-1(29){ }d-1(30){ }d-1(31){ }d-1(102){ }d-1(103){ }}
+;; bb 0 artificial_uses: { }
+
+( 0 )->[2]->( 1 )
+;; bb 2 artificial_defs: { }
+;; bb 2 artificial_uses: { u-1(7){ }u-1(13){ }u-1(102){ }u-1(103){ }}
+
+( 2 )->[1]->( )
+;; bb 1 artificial_defs: { }
+;; bb 1 artificial_uses: { u-1(7){ }u-1(13){ }u-1(102){ }}
+
+Finding needed instructions:
+  Adding insn 10 to worklist
+  Adding insn 7 to worklist
+Finished finding needed instructions:
+processing block 2 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+  Adding insn 9 to worklist
+  Adding insn 8 to worklist
+  Adding insn 6 to worklist
+df_worklist_dataflow_doublequeue: n_basic_blocks 3 n_edges 2 count 3 (    1)
+;; Following path with 6 sets: 2 
+deferring rescan insn with uid = 9.
+deferring rescan insn with uid = 10.
+
+
+try_optimize_cfg iteration 1
+
+starting the processing of deferred insns
+rescanning insn with uid = 9.
+rescanning insn with uid = 10.
+ending the processing of deferred insns
+
+
+SystemInit
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r7={1d,2u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r102={1d,2u} r103={1d,1u} r113={1d,1u} r114={1d,1u} r115={1d,3u} r116={1d} 
+;;    total ref usage 41{29d,12u,0e} in 6{6 regular + 0 call} insns.
+(note 3 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../Core/Src/system_stm32g4xx.c":183:5 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 115)
+        (const_int -536810240 [0xffffffffe000ed00])) "../Core/Src/system_stm32g4xx.c":183:16 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 113 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 115)
+                (const_int 136 [0x88])) [1 MEM[(struct SCB_Type *)3758157056B].CPACR+0 S4 A64])) "../Core/Src/system_stm32g4xx.c":183:16 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 115)
+        (nil)))
+(insn 8 7 9 2 (set (reg:SI 114 [ _2 ])
+        (ior:SI (reg:SI 113 [ _1 ])
+            (const_int 15728640 [0xf00000]))) "../Core/Src/system_stm32g4xx.c":183:16 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 113 [ _1 ])
+        (nil)))
+(insn 9 8 10 2 (set (reg/f:SI 116)
+        (reg/f:SI 115)) "../Core/Src/system_stm32g4xx.c":183:16 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int -536810240 [0xffffffffe000ed00])
+        (nil)))
+(insn 10 9 0 2 (set (mem/v:SI (plus:SI (reg/f:SI 115)
+                (const_int 136 [0x88])) [1 MEM[(struct SCB_Type *)3758157056B].CPACR+0 S4 A64])
+        (reg:SI 114 [ _2 ])) "../Core/Src/system_stm32g4xx.c":183:16 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 116)
+        (expr_list:REG_DEAD (reg:SI 114 [ _2 ])
+            (nil))))
+
+;; Function SystemCoreClockUpdate (SystemCoreClockUpdate, funcdef_no=330, decl_uid=6656, cgraph_uid=334, symbol_order=336)
+
+
+13 basic blocks, 16 edges.
+
+(note 5 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 5 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 2 8 2 (debug_marker) "../Core/Src/system_stm32g4xx.c":230:3 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "../Core/Src/system_stm32g4xx.c":233:3 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/f:SI 138)
+        (const_int 1073876992 [0x40021000])) "../Core/Src/system_stm32g4xx.c":233:14 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 113 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 138)
+                (const_int 8 [0x8])) [1 MEM[(struct RCC_TypeDef *)1073876992B].CFGR+0 S4 A64])) "../Core/Src/system_stm32g4xx.c":233:14 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 114 [ _2 ])
+        (and:SI (reg:SI 113 [ _1 ])
+            (const_int 12 [0xc]))) "../Core/Src/system_stm32g4xx.c":233:21 90 {*arm_andsi3_insn}
+     (nil))
+(insn 12 11 13 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 114 [ _2 ])
+            (const_int 8 [0x8]))) "../Core/Src/system_stm32g4xx.c":233:3 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 13 12 14 2 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 101)
+            (pc))) "../Core/Src/system_stm32g4xx.c":233:3 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 268435462 (nil))
+ -> 101)
+
+(note 14 13 15 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 15 14 16 3 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 114 [ _2 ])
+            (const_int 12 [0xc]))) "../Core/Src/system_stm32g4xx.c":233:3 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 16 15 17 3 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 25)
+            (pc))) "../Core/Src/system_stm32g4xx.c":233:3 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 357913950 (nil))
+ -> 25)
+
+(note 17 16 18 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 4 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 114 [ _2 ])
+            (const_int 4 [0x4]))) "../Core/Src/system_stm32g4xx.c":233:3 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 19 18 20 4 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 105)
+            (pc))) "../Core/Src/system_stm32g4xx.c":233:3 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 357913950 (nil))
+ -> 105)
+
+(note 20 19 21 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 21 20 22 5 (set (reg/f:SI 139)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../Core/Src/system_stm32g4xx.c":269:19 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 22 21 25 5 (set (reg:SI 137 [ pretmp_36 ])
+        (mem/c:SI (reg/f:SI 139) [1 SystemCoreClock+0 S4 A32])) "../Core/Src/system_stm32g4xx.c":269:19 728 {*thumb2_movsi_vfp}
+     (nil))
+
+(code_label 25 22 26 6 7 (nil) [1 uses])
+(note 26 25 27 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 27 26 28 6 (debug_marker) "../Core/Src/system_stm32g4xx.c":247:7 -1
+     (nil))
+(insn 28 27 29 6 (set (reg/f:SI 140)
+        (const_int 1073876992 [0x40021000])) "../Core/Src/system_stm32g4xx.c":247:23 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 29 28 30 6 (set (reg:SI 115 [ _3 ])
+        (mem/v:SI (plus:SI (reg/f:SI 140)
+                (const_int 12 [0xc])) [1 MEM[(struct RCC_TypeDef *)1073876992B].PLLCFGR+0 S4 A32])) "../Core/Src/system_stm32g4xx.c":247:23 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 30 29 31 6 (var_location:SI pllsource (and:SI (reg:SI 115 [ _3 ])
+        (const_int 3 [0x3]))) "../Core/Src/system_stm32g4xx.c":247:17 -1
+     (nil))
+(debug_insn 31 30 32 6 (debug_marker) "../Core/Src/system_stm32g4xx.c":248:7 -1
+     (nil))
+(insn 32 31 33 6 (set (reg/f:SI 141)
+        (const_int 1073876992 [0x40021000])) "../Core/Src/system_stm32g4xx.c":248:19 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 33 32 34 6 (set (reg:SI 116 [ _4 ])
+        (mem/v:SI (plus:SI (reg/f:SI 141)
+                (const_int 12 [0xc])) [1 MEM[(struct RCC_TypeDef *)1073876992B].PLLCFGR+0 S4 A32])) "../Core/Src/system_stm32g4xx.c":248:19 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 34 33 35 6 (set (reg:SI 142)
+        (lshiftrt:SI (reg:SI 116 [ _4 ])
+            (const_int 4 [0x4]))) "../Core/Src/system_stm32g4xx.c":248:49 147 {*arm_shiftsi3}
+     (nil))
+(insn 35 34 36 6 (set (reg:SI 143)
+        (and:SI (reg:SI 142)
+            (const_int 15 [0xf]))) "../Core/Src/system_stm32g4xx.c":248:49 90 {*arm_andsi3_insn}
+     (nil))
+(insn 36 35 37 6 (set (reg/v:SI 133 [ pllm ])
+        (plus:SI (reg:SI 143)
+            (const_int 1 [0x1]))) "../Core/Src/system_stm32g4xx.c":248:12 7 {*arm_addsi3}
+     (nil))
+(debug_insn 37 36 38 6 (var_location:SI pllm (reg/v:SI 133 [ pllm ])) "../Core/Src/system_stm32g4xx.c":248:12 -1
+     (nil))
+(debug_insn 38 37 39 6 (debug_marker) "../Core/Src/system_stm32g4xx.c":249:7 -1
+     (nil))
+(insn 39 38 40 6 (set (reg:SI 144 [ pllsource ])
+        (and:SI (reg:SI 115 [ _3 ])
+            (const_int 3 [0x3]))) "../Core/Src/system_stm32g4xx.c":247:17 90 {*arm_andsi3_insn}
+     (nil))
+(insn 40 39 41 6 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 144 [ pllsource ])
+            (const_int 2 [0x2]))) "../Core/Src/system_stm32g4xx.c":249:10 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 41 40 42 6 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 51)
+            (pc))) "../Core/Src/system_stm32g4xx.c":249:10 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 708669604 (nil))
+ -> 51)
+
+(note 42 41 43 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 43 42 44 7 (debug_marker) "../Core/Src/system_stm32g4xx.c":251:9 -1
+     (nil))
+(insn 44 43 45 7 (set (reg:SI 145)
+        (const_int 16000000 [0xf42400])) "../Core/Src/system_stm32g4xx.c":251:16 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 45 44 48 7 (set (reg/v:SI 131 [ pllvco ])
+        (udiv:SI (reg:SI 145)
+            (reg/v:SI 133 [ pllm ]))) "../Core/Src/system_stm32g4xx.c":251:16 163 {udivsi3}
+     (nil))
+(debug_insn 48 45 51 7 (var_location:SI pllvco (reg/v:SI 131 [ pllvco ])) "../Core/Src/system_stm32g4xx.c":251:16 -1
+     (nil))
+
+(code_label 51 48 52 8 8 (nil) [1 uses])
+(note 52 51 53 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 53 52 54 8 (debug_marker) "../Core/Src/system_stm32g4xx.c":255:9 -1
+     (nil))
+(insn 54 53 55 8 (set (reg:SI 147)
+        (const_int 8000000 [0x7a1200])) "../Core/Src/system_stm32g4xx.c":255:16 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 55 54 58 8 (set (reg/v:SI 131 [ pllvco ])
+        (udiv:SI (reg:SI 147)
+            (reg/v:SI 133 [ pllm ]))) "../Core/Src/system_stm32g4xx.c":255:16 163 {udivsi3}
+     (nil))
+(debug_insn 58 55 59 8 (var_location:SI pllvco (reg/v:SI 131 [ pllvco ])) "../Core/Src/system_stm32g4xx.c":255:16 -1
+     (nil))
+
+(code_label 59 58 60 9 9 (nil) [0 uses])
+(note 60 59 61 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 61 60 62 9 (var_location:SI pllvco (reg/v:SI 131 [ pllvco ])) -1
+     (nil))
+(debug_insn 62 61 63 9 (debug_marker) "../Core/Src/system_stm32g4xx.c":257:7 -1
+     (nil))
+(insn 63 62 64 9 (set (reg/f:SI 149)
+        (const_int 1073876992 [0x40021000])) "../Core/Src/system_stm32g4xx.c":257:30 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 64 63 65 9 (set (reg:SI 119 [ _7 ])
+        (mem/v:SI (plus:SI (reg/f:SI 149)
+                (const_int 12 [0xc])) [1 MEM[(struct RCC_TypeDef *)1073876992B].PLLCFGR+0 S4 A32])) "../Core/Src/system_stm32g4xx.c":257:30 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 65 64 66 9 (var_location:SI pllvco (mult:SI (and:SI (lshiftrt:SI (reg:SI 119 [ _7 ])
+                (const_int 8 [0x8]))
+            (const_int 127 [0x7f]))
+        (reg/v:SI 131 [ pllvco ]))) "../Core/Src/system_stm32g4xx.c":257:14 -1
+     (nil))
+(debug_insn 66 65 67 9 (debug_marker) "../Core/Src/system_stm32g4xx.c":258:7 -1
+     (nil))
+(insn 67 66 68 9 (set (reg/f:SI 150)
+        (const_int 1073876992 [0x40021000])) "../Core/Src/system_stm32g4xx.c":258:20 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 68 67 69 9 (set (reg:SI 122 [ _10 ])
+        (mem/v:SI (plus:SI (reg/f:SI 150)
+                (const_int 12 [0xc])) [1 MEM[(struct RCC_TypeDef *)1073876992B].PLLCFGR+0 S4 A32])) "../Core/Src/system_stm32g4xx.c":258:20 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 69 68 70 9 (var_location:SI pllr (ashift:SI (plus:SI (and:SI (lshiftrt:SI (reg:SI 122 [ _10 ])
+                    (const_int 25 [0x19]))
+                (const_int 3 [0x3]))
+            (const_int 1 [0x1]))
+        (const_int 1 [0x1]))) "../Core/Src/system_stm32g4xx.c":258:12 -1
+     (nil))
+(debug_insn 70 69 71 9 (debug_marker) "../Core/Src/system_stm32g4xx.c":259:7 -1
+     (nil))
+(insn 71 70 72 9 (set (reg:SI 151)
+        (lshiftrt:SI (reg:SI 119 [ _7 ])
+            (const_int 8 [0x8]))) "../Core/Src/system_stm32g4xx.c":257:60 147 {*arm_shiftsi3}
+     (nil))
+(insn 72 71 73 9 (set (reg:SI 152)
+        (and:SI (reg:SI 151)
+            (const_int 127 [0x7f]))) "../Core/Src/system_stm32g4xx.c":257:60 90 {*arm_andsi3_insn}
+     (nil))
+(insn 73 72 74 9 (set (reg:SI 153 [ pllvco ])
+        (mult:SI (reg/v:SI 131 [ pllvco ])
+            (reg:SI 152))) "../Core/Src/system_stm32g4xx.c":257:14 56 {*mul}
+     (nil))
+(insn 74 73 75 9 (set (reg:SI 154)
+        (lshiftrt:SI (reg:SI 122 [ _10 ])
+            (const_int 25 [0x19]))) "../Core/Src/system_stm32g4xx.c":258:50 147 {*arm_shiftsi3}
+     (nil))
+(insn 75 74 76 9 (set (reg:SI 155)
+        (and:SI (reg:SI 154)
+            (const_int 3 [0x3]))) "../Core/Src/system_stm32g4xx.c":258:50 90 {*arm_andsi3_insn}
+     (nil))
+(insn 76 75 77 9 (set (reg:SI 156)
+        (plus:SI (reg:SI 155)
+            (const_int 1 [0x1]))) "../Core/Src/system_stm32g4xx.c":258:57 7 {*arm_addsi3}
+     (nil))
+(insn 77 76 78 9 (set (reg:SI 157 [ pllr ])
+        (ashift:SI (reg:SI 156)
+            (const_int 1 [0x1]))) "../Core/Src/system_stm32g4xx.c":258:12 147 {*arm_shiftsi3}
+     (nil))
+(insn 78 77 80 9 (set (reg:SI 137 [ pretmp_36 ])
+        (udiv:SI (reg:SI 153 [ pllvco ])
+            (reg:SI 157 [ pllr ]))) "../Core/Src/system_stm32g4xx.c":259:31 163 {udivsi3}
+     (nil))
+(debug_insn 80 78 101 9 (debug_marker) "../Core/Src/system_stm32g4xx.c":260:7 -1
+     (nil))
+
+(code_label 101 80 100 10 10 (nil) [1 uses])
+(note 100 101 3 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 3 100 105 10 (set (reg:SI 137 [ pretmp_36 ])
+        (const_int 8000000 [0x7a1200])) "../Core/Src/system_stm32g4xx.c":233:3 728 {*thumb2_movsi_vfp}
+     (nil))
+
+(code_label 105 3 104 11 11 (nil) [1 uses])
+(note 104 105 4 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 4 104 81 11 (set (reg:SI 137 [ pretmp_36 ])
+        (const_int 16000000 [0xf42400])) "../Core/Src/system_stm32g4xx.c":233:3 728 {*thumb2_movsi_vfp}
+     (nil))
+
+(code_label 81 4 82 12 6 (nil) [0 uses])
+(note 82 81 83 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 83 82 84 12 (debug_marker) "../Core/Src/system_stm32g4xx.c":267:3 -1
+     (nil))
+(insn 84 83 85 12 (set (reg/f:SI 158)
+        (const_int 1073876992 [0x40021000])) "../Core/Src/system_stm32g4xx.c":267:28 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 85 84 95 12 (set (reg:SI 126 [ _15 ])
+        (mem/v:SI (plus:SI (reg/f:SI 158)
+                (const_int 8 [0x8])) [1 MEM[(struct RCC_TypeDef *)1073876992B].CFGR+0 S4 A64])) "../Core/Src/system_stm32g4xx.c":267:28 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 95 85 86 12 (var_location:SI D#1 (lshiftrt:SI (reg:SI 126 [ _15 ])
+        (const_int 4 [0x4]))) "../Core/Src/system_stm32g4xx.c":270:1 -1
+     (nil))
+(debug_insn 86 95 87 12 (var_location:SI tmp (zero_extend:SI (mem/u:QI (plus:SI (and:SI (debug_expr:SI D#1)
+                    (const_int 15 [0xf]))
+                (symbol_ref:SI ("AHBPrescTable") [flags 0x82]  <var_decl 0000000005f27cf0 AHBPrescTable>)) [0 AHBPrescTable[_17]+0 S1 A8]))) "../Core/Src/system_stm32g4xx.c":267:7 -1
+     (nil))
+(debug_insn 87 86 88 12 (debug_marker) "../Core/Src/system_stm32g4xx.c":269:3 -1
+     (nil))
+(insn 88 87 89 12 (set (reg/f:SI 159)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../Core/Src/system_stm32g4xx.c":269:19 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 89 88 90 12 (set (reg/f:SI 160)
+        (symbol_ref:SI ("*.LANCHOR1") [flags 0x182])) "../Core/Src/system_stm32g4xx.c":267:22 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 90 89 91 12 (set (reg:SI 161)
+        (lshiftrt:SI (reg:SI 126 [ _15 ])
+            (const_int 4 [0x4]))) "../Core/Src/system_stm32g4xx.c":267:52 147 {*arm_shiftsi3}
+     (nil))
+(insn 91 90 92 12 (set (reg:SI 162)
+        (and:SI (reg:SI 161)
+            (const_int 15 [0xf]))) "../Core/Src/system_stm32g4xx.c":267:52 90 {*arm_andsi3_insn}
+     (nil))
+(insn 92 91 93 12 (set (reg:SI 163 [ tmp ])
+        (zero_extend:SI (mem/u:QI (plus:SI (reg/f:SI 160)
+                    (reg:SI 162)) [0 AHBPrescTable[_17]+0 S1 A8]))) "../Core/Src/system_stm32g4xx.c":267:7 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 93 92 94 12 (set (reg:SI 164)
+        (lshiftrt:SI (reg:SI 137 [ pretmp_36 ])
+            (reg:SI 163 [ tmp ]))) "../Core/Src/system_stm32g4xx.c":269:19 147 {*arm_shiftsi3}
+     (nil))
+(insn 94 93 0 12 (set (mem/c:SI (reg/f:SI 159) [1 SystemCoreClock+0 S4 A32])
+        (reg:SI 164)) "../Core/Src/system_stm32g4xx.c":269:19 728 {*thumb2_movsi_vfp}
+     (nil))
+
+
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 13 n_edges 16 count 13 (    1)
+
+
+SystemCoreClockUpdate
+
+Dataflow summary:
+def_info->table_size = 0, use_info->table_size = 0
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 100 [cc]
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r7={1d,12u} r13={1d,12u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={4d,4u} r102={1d,12u} r103={1d,11u} r113={1d,1u} r114={1d,3u} r115={1d,2u} r116={1d,1u} r119={1d,2u} r122={1d,2u} r126={1d,2u} r131={2d,5u} r133={1d,3u} r137={4d,1u} r138={1d,1u} r139={1d,1u} r140={1d,1u} r141={1d,1u} r142={1d,1u} r143={1d,1u} r144={1d,1u} r145={1d,1u} r147={1d,1u} r149={1d,1u} r150={1d,1u} r151={1d,1u} r152={1d,1u} r153={1d,1u} r154={1d,1u} r155={1d,1u} r156={1d,1u} r157={1d,1u} r158={1d,1u} r159={1d,1u} r160={1d,1u} r161={1d,1u} r162={1d,1u} r163={1d,1u} r164={1d,1u} 
+;;    total ref usage 166{68d,98u,0e} in 70{70 regular + 0 call} insns.
+
+( )->[0]->( 2 )
+;; bb 0 artificial_defs: { d-1(0){ }d-1(1){ }d-1(2){ }d-1(3){ }d-1(7){ }d-1(13){ }d-1(14){ }d-1(16){ }d-1(17){ }d-1(18){ }d-1(19){ }d-1(20){ }d-1(21){ }d-1(22){ }d-1(23){ }d-1(24){ }d-1(25){ }d-1(26){ }d-1(27){ }d-1(28){ }d-1(29){ }d-1(30){ }d-1(31){ }d-1(102){ }d-1(103){ }}
+;; bb 0 artificial_uses: { }
+
+( 0 )->[2]->( 3 10 )
+;; bb 2 artificial_defs: { }
+;; bb 2 artificial_uses: { u-1(7){ }u-1(13){ }u-1(102){ }u-1(103){ }}
+
+( 2 )->[3]->( 4 6 )
+;; bb 3 artificial_defs: { }
+;; bb 3 artificial_uses: { u-1(7){ }u-1(13){ }u-1(102){ }u-1(103){ }}
+
+( 3 )->[4]->( 5 11 )
+;; bb 4 artificial_defs: { }
+;; bb 4 artificial_uses: { u-1(7){ }u-1(13){ }u-1(102){ }u-1(103){ }}
+
+( 4 )->[5]->( 12 )
+;; bb 5 artificial_defs: { }
+;; bb 5 artificial_uses: { u-1(7){ }u-1(13){ }u-1(102){ }u-1(103){ }}
+
+( 3 )->[6]->( 7 8 )
+;; bb 6 artificial_defs: { }
+;; bb 6 artificial_uses: { u-1(7){ }u-1(13){ }u-1(102){ }u-1(103){ }}
+
+( 6 )->[7]->( 9 )
+;; bb 7 artificial_defs: { }
+;; bb 7 artificial_uses: { u-1(7){ }u-1(13){ }u-1(102){ }u-1(103){ }}
+
+( 6 )->[8]->( 9 )
+;; bb 8 artificial_defs: { }
+;; bb 8 artificial_uses: { u-1(7){ }u-1(13){ }u-1(102){ }u-1(103){ }}
+
+( 7 8 )->[9]->( 12 )
+;; bb 9 artificial_defs: { }
+;; bb 9 artificial_uses: { u-1(7){ }u-1(13){ }u-1(102){ }u-1(103){ }}
+
+( 2 )->[10]->( 12 )
+;; bb 10 artificial_defs: { }
+;; bb 10 artificial_uses: { u-1(7){ }u-1(13){ }u-1(102){ }u-1(103){ }}
+
+( 4 )->[11]->( 12 )
+;; bb 11 artificial_defs: { }
+;; bb 11 artificial_uses: { u-1(7){ }u-1(13){ }u-1(102){ }u-1(103){ }}
+
+( 9 5 11 10 )->[12]->( 1 )
+;; bb 12 artificial_defs: { }
+;; bb 12 artificial_uses: { u-1(7){ }u-1(13){ }u-1(102){ }u-1(103){ }}
+
+( 12 )->[1]->( )
+;; bb 1 artificial_defs: { }
+;; bb 1 artificial_uses: { u-1(7){ }u-1(13){ }u-1(102){ }}
+
+Finding needed instructions:
+  Adding insn 13 to worklist
+  Adding insn 10 to worklist
+  Adding insn 16 to worklist
+  Adding insn 19 to worklist
+  Adding insn 41 to worklist
+  Adding insn 33 to worklist
+  Adding insn 29 to worklist
+  Adding insn 68 to worklist
+  Adding insn 64 to worklist
+  Adding insn 94 to worklist
+  Adding insn 85 to worklist
+Finished finding needed instructions:
+processing block 12 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+  Adding insn 93 to worklist
+  Adding insn 92 to worklist
+  Adding insn 91 to worklist
+  Adding insn 90 to worklist
+  Adding insn 89 to worklist
+  Adding insn 88 to worklist
+  Adding insn 84 to worklist
+processing block 5 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp] 137
+  Adding insn 22 to worklist
+  Adding insn 21 to worklist
+processing block 11 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp] 137
+  Adding insn 4 to worklist
+processing block 4 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+  Adding insn 18 to worklist
+processing block 9 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp] 137
+  Adding insn 78 to worklist
+  Adding insn 77 to worklist
+  Adding insn 76 to worklist
+  Adding insn 75 to worklist
+  Adding insn 74 to worklist
+  Adding insn 73 to worklist
+  Adding insn 72 to worklist
+  Adding insn 71 to worklist
+  Adding insn 67 to worklist
+  Adding insn 63 to worklist
+processing block 7 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp] 131
+  Adding insn 45 to worklist
+  Adding insn 44 to worklist
+processing block 8 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp] 131
+  Adding insn 55 to worklist
+  Adding insn 54 to worklist
+processing block 6 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp] 133
+  Adding insn 40 to worklist
+  Adding insn 39 to worklist
+  Adding insn 36 to worklist
+  Adding insn 35 to worklist
+  Adding insn 34 to worklist
+  Adding insn 32 to worklist
+  Adding insn 28 to worklist
+processing block 3 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp] 114
+  Adding insn 15 to worklist
+processing block 10 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp] 137
+  Adding insn 3 to worklist
+processing block 2 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp] 114
+  Adding insn 12 to worklist
+  Adding insn 11 to worklist
+  Adding insn 9 to worklist
+df_worklist_dataflow_doublequeue: n_basic_blocks 13 n_edges 16 count 13 (    1)
+;; Following path with 8 sets: 2 10 
+;; Following path with 28 sets: 2 3 6 8 
+deferring rescan insn with uid = 28.
+deferring rescan insn with uid = 29.
+deferring rescan insn with uid = 32.
+deferring rescan insn with uid = 33.
+;; Following path with 28 sets: 2 3 6 7 
+;; Following path with 12 sets: 2 3 4 11 
+;; Following path with 13 sets: 2 3 4 5 
+;; Following path with 19 sets: 9 
+deferring rescan insn with uid = 67.
+deferring rescan insn with uid = 68.
+;; Following path with 13 sets: 12 
+
+
+try_optimize_cfg iteration 1
+
+starting the processing of deferred insns
+rescanning insn with uid = 28.
+rescanning insn with uid = 29.
+rescanning insn with uid = 32.
+rescanning insn with uid = 33.
+rescanning insn with uid = 67.
+rescanning insn with uid = 68.
+ending the processing of deferred insns
+
+
+SystemCoreClockUpdate
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 100 [cc]
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r7={1d,12u} r13={1d,12u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={4d,4u} r102={1d,12u} r103={1d,11u} r113={1d,1u} r114={1d,3u} r115={1d,2u} r116={1d,1u} r119={1d,2u} r122={1d,2u} r126={1d,2u} r131={2d,5u} r133={1d,3u} r137={4d,1u} r138={1d,5u} r139={1d,1u} r140={1d} r141={1d} r142={1d,1u} r143={1d,1u} r144={1d,1u} r145={1d,1u} r147={1d,1u} r149={1d,3u} r150={1d} r151={1d,1u} r152={1d,1u} r153={1d,1u} r154={1d,1u} r155={1d,1u} r156={1d,1u} r157={1d,1u} r158={1d,1u} r159={1d,1u} r160={1d,1u} r161={1d,1u} r162={1d,1u} r163={1d,1u} r164={1d,1u} 
+;;    total ref usage 169{68d,101u,0e} in 70{70 regular + 0 call} insns.
+(note 5 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 5 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 2 8 2 (debug_marker) "../Core/Src/system_stm32g4xx.c":230:3 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "../Core/Src/system_stm32g4xx.c":233:3 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/f:SI 138)
+        (const_int 1073876992 [0x40021000])) "../Core/Src/system_stm32g4xx.c":233:14 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 113 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 138)
+                (const_int 8 [0x8])) [1 MEM[(struct RCC_TypeDef *)1073876992B].CFGR+0 S4 A64])) "../Core/Src/system_stm32g4xx.c":233:14 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 138)
+        (nil)))
+(insn 11 10 12 2 (set (reg:SI 114 [ _2 ])
+        (and:SI (reg:SI 113 [ _1 ])
+            (const_int 12 [0xc]))) "../Core/Src/system_stm32g4xx.c":233:21 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 113 [ _1 ])
+        (nil)))
+(insn 12 11 13 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 114 [ _2 ])
+            (const_int 8 [0x8]))) "../Core/Src/system_stm32g4xx.c":233:3 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 13 12 14 2 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 101)
+            (pc))) "../Core/Src/system_stm32g4xx.c":233:3 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 268435462 (nil)))
+ -> 101)
+(note 14 13 15 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 15 14 16 3 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 114 [ _2 ])
+            (const_int 12 [0xc]))) "../Core/Src/system_stm32g4xx.c":233:3 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 16 15 17 3 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 25)
+            (pc))) "../Core/Src/system_stm32g4xx.c":233:3 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 357913950 (nil)))
+ -> 25)
+(note 17 16 18 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 4 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 114 [ _2 ])
+            (const_int 4 [0x4]))) "../Core/Src/system_stm32g4xx.c":233:3 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 114 [ _2 ])
+        (nil)))
+(jump_insn 19 18 20 4 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 105)
+            (pc))) "../Core/Src/system_stm32g4xx.c":233:3 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 357913950 (nil)))
+ -> 105)
+(note 20 19 21 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 21 20 22 5 (set (reg/f:SI 139)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../Core/Src/system_stm32g4xx.c":269:19 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 22 21 25 5 (set (reg:SI 137 [ pretmp_36 ])
+        (mem/c:SI (reg/f:SI 139) [1 SystemCoreClock+0 S4 A32])) "../Core/Src/system_stm32g4xx.c":269:19 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 139)
+        (nil)))
+      ; pc falls through to BB 12
+(code_label 25 22 26 6 7 (nil) [1 uses])
+(note 26 25 27 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 27 26 28 6 (debug_marker) "../Core/Src/system_stm32g4xx.c":247:7 -1
+     (nil))
+(insn 28 27 29 6 (set (reg/f:SI 140)
+        (reg/f:SI 138)) "../Core/Src/system_stm32g4xx.c":247:23 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 1073876992 [0x40021000])
+        (nil)))
+(insn 29 28 30 6 (set (reg:SI 115 [ _3 ])
+        (mem/v:SI (plus:SI (reg/f:SI 138)
+                (const_int 12 [0xc])) [1 MEM[(struct RCC_TypeDef *)1073876992B].PLLCFGR+0 S4 A32])) "../Core/Src/system_stm32g4xx.c":247:23 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 140)
+        (nil)))
+(debug_insn 30 29 31 6 (var_location:SI pllsource (and:SI (reg:SI 115 [ _3 ])
+        (const_int 3 [0x3]))) "../Core/Src/system_stm32g4xx.c":247:17 -1
+     (nil))
+(debug_insn 31 30 32 6 (debug_marker) "../Core/Src/system_stm32g4xx.c":248:7 -1
+     (nil))
+(insn 32 31 33 6 (set (reg/f:SI 141)
+        (reg/f:SI 138)) "../Core/Src/system_stm32g4xx.c":248:19 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 1073876992 [0x40021000])
+        (nil)))
+(insn 33 32 34 6 (set (reg:SI 116 [ _4 ])
+        (mem/v:SI (plus:SI (reg/f:SI 138)
+                (const_int 12 [0xc])) [1 MEM[(struct RCC_TypeDef *)1073876992B].PLLCFGR+0 S4 A32])) "../Core/Src/system_stm32g4xx.c":248:19 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 141)
+        (nil)))
+(insn 34 33 35 6 (set (reg:SI 142)
+        (lshiftrt:SI (reg:SI 116 [ _4 ])
+            (const_int 4 [0x4]))) "../Core/Src/system_stm32g4xx.c":248:49 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 116 [ _4 ])
+        (nil)))
+(insn 35 34 36 6 (set (reg:SI 143)
+        (and:SI (reg:SI 142)
+            (const_int 15 [0xf]))) "../Core/Src/system_stm32g4xx.c":248:49 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 142)
+        (nil)))
+(insn 36 35 37 6 (set (reg/v:SI 133 [ pllm ])
+        (plus:SI (reg:SI 143)
+            (const_int 1 [0x1]))) "../Core/Src/system_stm32g4xx.c":248:12 7 {*arm_addsi3}
+     (expr_list:REG_DEAD (reg:SI 143)
+        (nil)))
+(debug_insn 37 36 38 6 (var_location:SI pllm (reg/v:SI 133 [ pllm ])) "../Core/Src/system_stm32g4xx.c":248:12 -1
+     (nil))
+(debug_insn 38 37 39 6 (debug_marker) "../Core/Src/system_stm32g4xx.c":249:7 -1
+     (nil))
+(insn 39 38 40 6 (set (reg:SI 144 [ pllsource ])
+        (and:SI (reg:SI 115 [ _3 ])
+            (const_int 3 [0x3]))) "../Core/Src/system_stm32g4xx.c":247:17 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 115 [ _3 ])
+        (nil)))
+(insn 40 39 41 6 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 144 [ pllsource ])
+            (const_int 2 [0x2]))) "../Core/Src/system_stm32g4xx.c":249:10 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 144 [ pllsource ])
+        (nil)))
+(jump_insn 41 40 42 6 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 51)
+            (pc))) "../Core/Src/system_stm32g4xx.c":249:10 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 708669604 (nil)))
+ -> 51)
+(note 42 41 43 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 43 42 44 7 (debug_marker) "../Core/Src/system_stm32g4xx.c":251:9 -1
+     (nil))
+(insn 44 43 45 7 (set (reg:SI 145)
+        (const_int 16000000 [0xf42400])) "../Core/Src/system_stm32g4xx.c":251:16 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 45 44 48 7 (set (reg/v:SI 131 [ pllvco ])
+        (udiv:SI (reg:SI 145)
+            (reg/v:SI 133 [ pllm ]))) "../Core/Src/system_stm32g4xx.c":251:16 163 {udivsi3}
+     (expr_list:REG_DEAD (reg:SI 145)
+        (expr_list:REG_DEAD (reg/v:SI 133 [ pllm ])
+            (nil))))
+(debug_insn 48 45 51 7 (var_location:SI pllvco (reg/v:SI 131 [ pllvco ])) "../Core/Src/system_stm32g4xx.c":251:16 -1
+     (nil))
+      ; pc falls through to BB 9
+(code_label 51 48 52 8 8 (nil) [1 uses])
+(note 52 51 53 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 53 52 54 8 (debug_marker) "../Core/Src/system_stm32g4xx.c":255:9 -1
+     (nil))
+(insn 54 53 55 8 (set (reg:SI 147)
+        (const_int 8000000 [0x7a1200])) "../Core/Src/system_stm32g4xx.c":255:16 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 55 54 58 8 (set (reg/v:SI 131 [ pllvco ])
+        (udiv:SI (reg:SI 147)
+            (reg/v:SI 133 [ pllm ]))) "../Core/Src/system_stm32g4xx.c":255:16 163 {udivsi3}
+     (expr_list:REG_DEAD (reg:SI 147)
+        (expr_list:REG_DEAD (reg/v:SI 133 [ pllm ])
+            (nil))))
+(debug_insn 58 55 59 8 (var_location:SI pllvco (reg/v:SI 131 [ pllvco ])) "../Core/Src/system_stm32g4xx.c":255:16 -1
+     (nil))
+(code_label 59 58 60 9 9 (nil) [0 uses])
+(note 60 59 61 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 61 60 62 9 (var_location:SI pllvco (reg/v:SI 131 [ pllvco ])) -1
+     (nil))
+(debug_insn 62 61 63 9 (debug_marker) "../Core/Src/system_stm32g4xx.c":257:7 -1
+     (nil))
+(insn 63 62 64 9 (set (reg/f:SI 149)
+        (const_int 1073876992 [0x40021000])) "../Core/Src/system_stm32g4xx.c":257:30 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 64 63 65 9 (set (reg:SI 119 [ _7 ])
+        (mem/v:SI (plus:SI (reg/f:SI 149)
+                (const_int 12 [0xc])) [1 MEM[(struct RCC_TypeDef *)1073876992B].PLLCFGR+0 S4 A32])) "../Core/Src/system_stm32g4xx.c":257:30 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 149)
+        (nil)))
+(debug_insn 65 64 66 9 (var_location:SI pllvco (mult:SI (and:SI (lshiftrt:SI (reg:SI 119 [ _7 ])
+                (const_int 8 [0x8]))
+            (const_int 127 [0x7f]))
+        (reg/v:SI 131 [ pllvco ]))) "../Core/Src/system_stm32g4xx.c":257:14 -1
+     (nil))
+(debug_insn 66 65 67 9 (debug_marker) "../Core/Src/system_stm32g4xx.c":258:7 -1
+     (nil))
+(insn 67 66 68 9 (set (reg/f:SI 150)
+        (reg/f:SI 149)) "../Core/Src/system_stm32g4xx.c":258:20 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 1073876992 [0x40021000])
+        (nil)))
+(insn 68 67 69 9 (set (reg:SI 122 [ _10 ])
+        (mem/v:SI (plus:SI (reg/f:SI 149)
+                (const_int 12 [0xc])) [1 MEM[(struct RCC_TypeDef *)1073876992B].PLLCFGR+0 S4 A32])) "../Core/Src/system_stm32g4xx.c":258:20 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 150)
+        (nil)))
+(debug_insn 69 68 70 9 (var_location:SI pllr (ashift:SI (plus:SI (and:SI (lshiftrt:SI (reg:SI 122 [ _10 ])
+                    (const_int 25 [0x19]))
+                (const_int 3 [0x3]))
+            (const_int 1 [0x1]))
+        (const_int 1 [0x1]))) "../Core/Src/system_stm32g4xx.c":258:12 -1
+     (nil))
+(debug_insn 70 69 71 9 (debug_marker) "../Core/Src/system_stm32g4xx.c":259:7 -1
+     (nil))
+(insn 71 70 72 9 (set (reg:SI 151)
+        (lshiftrt:SI (reg:SI 119 [ _7 ])
+            (const_int 8 [0x8]))) "../Core/Src/system_stm32g4xx.c":257:60 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 119 [ _7 ])
+        (nil)))
+(insn 72 71 73 9 (set (reg:SI 152)
+        (and:SI (reg:SI 151)
+            (const_int 127 [0x7f]))) "../Core/Src/system_stm32g4xx.c":257:60 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 151)
+        (nil)))
+(insn 73 72 74 9 (set (reg:SI 153 [ pllvco ])
+        (mult:SI (reg/v:SI 131 [ pllvco ])
+            (reg:SI 152))) "../Core/Src/system_stm32g4xx.c":257:14 56 {*mul}
+     (expr_list:REG_DEAD (reg:SI 152)
+        (expr_list:REG_DEAD (reg/v:SI 131 [ pllvco ])
+            (nil))))
+(insn 74 73 75 9 (set (reg:SI 154)
+        (lshiftrt:SI (reg:SI 122 [ _10 ])
+            (const_int 25 [0x19]))) "../Core/Src/system_stm32g4xx.c":258:50 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 122 [ _10 ])
+        (nil)))
+(insn 75 74 76 9 (set (reg:SI 155)
+        (and:SI (reg:SI 154)
+            (const_int 3 [0x3]))) "../Core/Src/system_stm32g4xx.c":258:50 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 154)
+        (nil)))
+(insn 76 75 77 9 (set (reg:SI 156)
+        (plus:SI (reg:SI 155)
+            (const_int 1 [0x1]))) "../Core/Src/system_stm32g4xx.c":258:57 7 {*arm_addsi3}
+     (expr_list:REG_DEAD (reg:SI 155)
+        (nil)))
+(insn 77 76 78 9 (set (reg:SI 157 [ pllr ])
+        (ashift:SI (reg:SI 156)
+            (const_int 1 [0x1]))) "../Core/Src/system_stm32g4xx.c":258:12 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 156)
+        (nil)))
+(insn 78 77 80 9 (set (reg:SI 137 [ pretmp_36 ])
+        (udiv:SI (reg:SI 153 [ pllvco ])
+            (reg:SI 157 [ pllr ]))) "../Core/Src/system_stm32g4xx.c":259:31 163 {udivsi3}
+     (expr_list:REG_DEAD (reg:SI 157 [ pllr ])
+        (expr_list:REG_DEAD (reg:SI 153 [ pllvco ])
+            (nil))))
+(debug_insn 80 78 101 9 (debug_marker) "../Core/Src/system_stm32g4xx.c":260:7 -1
+     (nil))
+      ; pc falls through to BB 12
+(code_label 101 80 100 10 10 (nil) [1 uses])
+(note 100 101 3 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 3 100 105 10 (set (reg:SI 137 [ pretmp_36 ])
+        (const_int 8000000 [0x7a1200])) "../Core/Src/system_stm32g4xx.c":233:3 728 {*thumb2_movsi_vfp}
+     (nil))
+      ; pc falls through to BB 12
+(code_label 105 3 104 11 11 (nil) [1 uses])
+(note 104 105 4 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 4 104 81 11 (set (reg:SI 137 [ pretmp_36 ])
+        (const_int 16000000 [0xf42400])) "../Core/Src/system_stm32g4xx.c":233:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(code_label 81 4 82 12 6 (nil) [0 uses])
+(note 82 81 83 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 83 82 84 12 (debug_marker) "../Core/Src/system_stm32g4xx.c":267:3 -1
+     (nil))
+(insn 84 83 85 12 (set (reg/f:SI 158)
+        (const_int 1073876992 [0x40021000])) "../Core/Src/system_stm32g4xx.c":267:28 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 85 84 95 12 (set (reg:SI 126 [ _15 ])
+        (mem/v:SI (plus:SI (reg/f:SI 158)
+                (const_int 8 [0x8])) [1 MEM[(struct RCC_TypeDef *)1073876992B].CFGR+0 S4 A64])) "../Core/Src/system_stm32g4xx.c":267:28 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 158)
+        (nil)))
+(debug_insn 95 85 86 12 (var_location:SI D#1 (lshiftrt:SI (reg:SI 126 [ _15 ])
+        (const_int 4 [0x4]))) "../Core/Src/system_stm32g4xx.c":270:1 -1
+     (nil))
+(debug_insn 86 95 87 12 (var_location:SI tmp (zero_extend:SI (mem/u:QI (plus:SI (and:SI (debug_expr:SI D#1)
+                    (const_int 15 [0xf]))
+                (symbol_ref:SI ("AHBPrescTable") [flags 0x82]  <var_decl 0000000005f27cf0 AHBPrescTable>)) [0 AHBPrescTable[_17]+0 S1 A8]))) "../Core/Src/system_stm32g4xx.c":267:7 -1
+     (nil))
+(debug_insn 87 86 88 12 (debug_marker) "../Core/Src/system_stm32g4xx.c":269:3 -1
+     (nil))
+(insn 88 87 89 12 (set (reg/f:SI 159)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../Core/Src/system_stm32g4xx.c":269:19 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 89 88 90 12 (set (reg/f:SI 160)
+        (symbol_ref:SI ("*.LANCHOR1") [flags 0x182])) "../Core/Src/system_stm32g4xx.c":267:22 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 90 89 91 12 (set (reg:SI 161)
+        (lshiftrt:SI (reg:SI 126 [ _15 ])
+            (const_int 4 [0x4]))) "../Core/Src/system_stm32g4xx.c":267:52 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 126 [ _15 ])
+        (nil)))
+(insn 91 90 92 12 (set (reg:SI 162)
+        (and:SI (reg:SI 161)
+            (const_int 15 [0xf]))) "../Core/Src/system_stm32g4xx.c":267:52 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 161)
+        (nil)))
+(insn 92 91 93 12 (set (reg:SI 163 [ tmp ])
+        (zero_extend:SI (mem/u:QI (plus:SI (reg/f:SI 160)
+                    (reg:SI 162)) [0 AHBPrescTable[_17]+0 S1 A8]))) "../Core/Src/system_stm32g4xx.c":267:7 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_DEAD (reg:SI 162)
+        (expr_list:REG_DEAD (reg/f:SI 160)
+            (nil))))
+(insn 93 92 94 12 (set (reg:SI 164)
+        (lshiftrt:SI (reg:SI 137 [ pretmp_36 ])
+            (reg:SI 163 [ tmp ]))) "../Core/Src/system_stm32g4xx.c":269:19 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 163 [ tmp ])
+        (expr_list:REG_DEAD (reg:SI 137 [ pretmp_36 ])
+            (nil))))
+(insn 94 93 0 12 (set (mem/c:SI (reg/f:SI 159) [1 SystemCoreClock+0 S4 A32])
+        (reg:SI 164)) "../Core/Src/system_stm32g4xx.c":269:19 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 164)
+        (expr_list:REG_DEAD (reg/f:SI 159)
+            (nil))))

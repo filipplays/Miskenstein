@@ -1,0 +1,2421 @@
+
+;; Function JOY_init (JOY_init, funcdef_no=604, decl_uid=10115, cgraph_uid=608, symbol_order=611)
+
+Reordered sequence:
+ 2 bb 2
+
+
+JOY_init
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 12 [ip] 13 [sp] 14 [lr]
+;;  ref usage 	r0={11d,6u} r1={9d,4u} r2={8d,2u} r3={6d} r7={1d,2u} r12={10d} r13={1d,7u} r14={6d} r15={5d} r16={6d} r17={6d} r18={6d} r19={6d} r20={6d} r21={6d} r22={6d} r23={6d} r24={6d} r25={6d} r26={6d} r27={6d} r28={6d} r29={6d} r30={6d} r31={6d} r48={5d} r49={5d} r50={5d} r51={5d} r52={5d} r53={5d} r54={5d} r55={5d} r56={5d} r57={5d} r58={5d} r59={5d} r60={5d} r61={5d} r62={5d} r63={5d} r64={5d} r65={5d} r66={5d} r67={5d} r68={5d} r69={5d} r70={5d} r71={5d} r72={5d} r73={5d} r74={5d} r75={5d} r76={5d} r77={5d} r78={5d} r79={5d} r80={5d} r81={5d} r82={5d} r83={5d} r84={5d} r85={5d} r86={5d} r87={5d} r88={5d} r89={5d} r90={5d} r91={5d} r92={5d} r93={5d} r94={5d} r95={5d} r96={5d} r97={5d} r98={5d} r99={5d} r100={5d} r101={5d} r102={1d,2u} r103={1d,1u} r104={5d} r105={5d} r106={5d} r118={1d,11u} r119={1d,1u} r121={1d,1u} r124={1d,1u} r126={1d,1u} r128={1d,1u} r141={1d,1u} r142={1d,1u} 
+;;    total ref usage 490{448d,42u,0e} in 47{42 regular + 5 call} insns.
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 72 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 72 5 2 2 (set (reg:SI 141)
+        (reg:SI 0 r0 [ ADC_handle ])) "../System/joystick.c":166:1 -1
+     (expr_list:REG_DEAD (reg:SI 0 r0 [ ADC_handle ])
+        (nil)))
+(note 2 72 73 2 NOTE_INSN_DELETED)
+(insn 73 2 3 2 (set (reg:SI 142)
+        (reg:SI 1 r1 [ timer_handle ])) "../System/joystick.c":166:1 -1
+     (expr_list:REG_DEAD (reg:SI 1 r1 [ timer_handle ])
+        (nil)))
+(note 3 73 4 2 NOTE_INSN_DELETED)
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 4 8 2 (debug_marker) "../System/joystick.c":185:3 -1
+     (nil))
+(insn 8 7 9 2 (set (reg/f:SI 118)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/joystick.c":185:24 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 119)
+        (const_int 1207961600 [0x48000800])) "../System/joystick.c":185:24 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 10 9 11 2 (set (mem/f/c:SI (reg/f:SI 118) [2 joystick.button.port+0 S4 A64])
+        (reg:SI 119)) "../System/joystick.c":185:24 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 119)
+        (nil)))
+(debug_insn 11 10 13 2 (debug_marker) "../System/joystick.c":186:3 -1
+     (nil))
+(insn 13 11 14 2 (set (reg:SI 121)
+        (const_int 8192 [0x2000])) "../System/joystick.c":186:23 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 14 13 15 2 (set (mem/c:SI (plus:SI (reg/f:SI 118)
+                (const_int 4 [0x4])) [3 joystick.button.pin+0 S4 A32])
+        (reg:SI 121)) "../System/joystick.c":186:23 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 121)
+        (nil)))
+(debug_insn 15 14 16 2 (debug_marker) "../System/joystick.c":191:3 -1
+     (nil))
+(debug_insn 16 15 18 2 (debug_marker) "../System/joystick.c":192:3 -1
+     (nil))
+(insn 18 16 20 2 (set (reg:SI 124)
+        (const_int 0 [0])) "../System/joystick.c":192:29 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 20 18 21 2 (set (mem/c:HI (plus:SI (reg/f:SI 118)
+                (const_int 8 [0x8])) [0 MEM <vector(2) unsigned char> [(<unnamed type> *)&joystick + 8B]+0 S2 A64])
+        (subreg:HI (reg:SI 124) 0)) "../System/joystick.c":192:29 724 {*thumb2_movhi_vfp}
+     (expr_list:REG_DEAD (reg:SI 124)
+        (nil)))
+(debug_insn 21 20 22 2 (debug_marker) "../System/joystick.c":196:3 -1
+     (nil))
+(debug_insn 22 21 23 2 (debug_marker) "../System/joystick.c":197:3 -1
+     (nil))
+(debug_insn 23 22 24 2 (debug_marker) "../System/joystick.c":199:3 -1
+     (nil))
+(debug_insn 24 23 25 2 (debug_marker) "../System/joystick.c":200:3 -1
+     (nil))
+(debug_insn 25 24 26 2 (debug_marker) "../System/joystick.c":202:3 -1
+     (nil))
+(debug_insn 26 25 28 2 (debug_marker) "../System/joystick.c":203:3 -1
+     (nil))
+(insn 28 26 29 2 (set (reg:DI 126)
+        (const_int 931977950176936852 [0xcef0d0202cb0394])) "../System/joystick.c":196:32 729 {*movdi_vfp}
+     (nil))
+(insn 29 28 31 2 (set (mem/c:DI (plus:SI (reg/f:SI 118)
+                (const_int 16 [0x10])) [5 MEM <vector(4) short unsigned int> [(short unsigned int *)&joystick + 16B]+0 S8 A64])
+        (reg:DI 126)) "../System/joystick.c":196:32 729 {*movdi_vfp}
+     (expr_list:REG_DEAD (reg:DI 126)
+        (nil)))
+(insn 31 29 32 2 (set (reg:SI 128)
+        (const_int 170133870 [0xa24096e])) "../System/joystick.c":202:34 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 32 31 33 2 (set (mem/c:SI (plus:SI (reg/f:SI 118)
+                (const_int 24 [0x18])) [5 MEM <unsigned int> [(short unsigned int *)&joystick + 24B]+0 S4 A64])
+        (reg:SI 128)) "../System/joystick.c":202:34 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 128)
+        (nil)))
+(debug_insn 33 32 35 2 (debug_marker) "../System/joystick.c":208:3 -1
+     (nil))
+(insn 35 33 36 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 118)
+                (const_int 32 [0x20])) [7 joystick.ADC+0 S4 A64])
+        (reg:SI 141)) "../System/joystick.c":208:16 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 141)
+        (nil)))
+(debug_insn 36 35 38 2 (debug_marker) "../System/joystick.c":209:3 -1
+     (nil))
+(insn 38 36 39 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 118)
+                (const_int 28 [0x1c])) [6 joystick.timer+0 S4 A32])
+        (reg:SI 142)) "../System/joystick.c":209:18 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 142)
+        (nil)))
+(debug_insn 39 38 40 2 (debug_marker) "../System/joystick.c":217:3 -1
+     (nil))
+(note 40 39 41 2 NOTE_INSN_DELETED)
+(note 41 40 42 2 NOTE_INSN_DELETED)
+(insn 42 41 43 2 (set (reg:SI 2 r2)
+        (const_int 16 [0x10])) "../System/joystick.c":217:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 43 42 44 2 (set (reg:SI 1 r1)
+        (symbol_ref:SI ("*.LANCHOR1") [flags 0x182])) "../System/joystick.c":217:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR1") [flags 0x182])
+        (nil)))
+(insn 44 43 45 2 (set (reg:SI 0 r0)
+        (symbol_ref:SI ("*.LANCHOR2") [flags 0x182])) "../System/joystick.c":217:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR2") [flags 0x182])
+        (nil)))
+(call_insn 45 44 46 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("BUF_init") [flags 0x41]  <function_decl 0000000007b7c700 BUF_init>) [0 BUF_init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":217:3 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 2 r2)
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_DEAD (reg:SI 0 r0)
+                (expr_list:REG_CALL_DECL (symbol_ref:SI ("BUF_init") [flags 0x41]  <function_decl 0000000007b7c700 BUF_init>)
+                    (nil)))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (expr_list:SI (use (reg:SI 2 r2))
+                    (nil))))))
+(debug_insn 46 45 48 2 (debug_marker) "../System/joystick.c":229:3 -1
+     (nil))
+(note 48 46 49 2 NOTE_INSN_DELETED)
+(insn 49 48 50 2 (set (reg:SI 1 r1)
+        (const_int 127 [0x7f])) "../System/joystick.c":229:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 50 49 51 2 (set (reg:SI 0 r0)
+        (mem/f/c:SI (plus:SI (reg/f:SI 118)
+                (const_int 32 [0x20])) [7 joystick.ADC+0 S4 A64])) "../System/joystick.c":229:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 51 50 52 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_ADCEx_Calibration_Start") [flags 0x41]  <function_decl 000000000759d000 HAL_ADCEx_Calibration_Start>) [0 HAL_ADCEx_Calibration_Start S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":229:3 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_ADCEx_Calibration_Start") [flags 0x41]  <function_decl 000000000759d000 HAL_ADCEx_Calibration_Start>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 52 51 54 2 (debug_marker) "../System/joystick.c":238:3 -1
+     (nil))
+(note 54 52 56 2 NOTE_INSN_DELETED)
+(note 56 54 57 2 NOTE_INSN_DELETED)
+(insn 57 56 58 2 (set (reg:SI 2 r2)
+        (const_int 2 [0x2])) "../System/joystick.c":238:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 58 57 59 2 (set (reg:SI 1 r1)
+        (plus:SI (reg/f:SI 118)
+            (const_int 12 [0xc]))) "../System/joystick.c":238:3 7 {*arm_addsi3}
+     (expr_list:REG_EQUAL (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                (const_int 12 [0xc])))
+        (nil)))
+(insn 59 58 60 2 (set (reg:SI 0 r0)
+        (mem/f/c:SI (plus:SI (reg/f:SI 118)
+                (const_int 32 [0x20])) [7 joystick.ADC+0 S4 A64])) "../System/joystick.c":238:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 60 59 61 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_ADC_Start_DMA") [flags 0x41]  <function_decl 00000000075a5500 HAL_ADC_Start_DMA>) [0 HAL_ADC_Start_DMA S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":238:3 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 2 r2)
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_UNUSED (reg:SI 0 r0)
+                (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_ADC_Start_DMA") [flags 0x41]  <function_decl 00000000075a5500 HAL_ADC_Start_DMA>)
+                    (nil)))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (expr_list:SI (use (reg:SI 2 r2))
+                    (nil))))))
+(debug_insn 61 60 63 2 (debug_marker) "../System/joystick.c":243:3 -1
+     (nil))
+(note 63 61 64 2 NOTE_INSN_DELETED)
+(insn 64 63 65 2 (set (reg:SI 0 r0)
+        (mem/f/c:SI (plus:SI (reg/f:SI 118)
+                (const_int 28 [0x1c])) [6 joystick.timer+0 S4 A32])) "../System/joystick.c":243:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 118)
+        (nil)))
+(call_insn 65 64 66 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_TIM_Base_Start") [flags 0x41]  <function_decl 000000000789ff00 HAL_TIM_Base_Start>) [0 HAL_TIM_Base_Start S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":243:3 291 {*call_value_symbol}
+     (expr_list:REG_UNUSED (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_TIM_Base_Start") [flags 0x41]  <function_decl 000000000789ff00 HAL_TIM_Base_Start>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 66 65 67 2 (debug_marker) "../System/joystick.c":252:2 -1
+     (nil))
+(insn 67 66 68 2 (set (reg:SI 0 r0)
+        (const_int 11 [0xb])) "../System/joystick.c":252:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn/j 68 67 69 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 00000000078b0e00 HAL_Delay>) [0 HAL_Delay S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../System/joystick.c":252:2 292 {*sibcall_insn}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 00000000078b0e00 HAL_Delay>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(barrier 69 68 0)
+
+;; Function JOY_scan_button (JOY_scan_button, funcdef_no=605, decl_uid=10117, cgraph_uid=609, symbol_order=612)
+
+Reordered sequence:
+ 2 bb 2
+ 3 bb 3
+ 4 bb 4
+
+
+JOY_scan_button
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 12 [ip] 13 [sp] 100 [cc]
+;;  ref usage 	r0={3d,1u} r1={3d,1u} r2={2d} r3={2d} r7={1d,4u} r12={2d} r13={1d,5u} r14={2d} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={3d,2u} r101={1d} r102={1d,4u} r103={1d,3u} r104={1d} r105={1d} r106={1d} r114={1d,2u} r115={1d,2u} r119={1d,1u} r121={1d,6u} r123={1d,1u} r129={1d,1u} r132={1d,1u} 
+;;    total ref usage 151{117d,34u,0e} in 26{25 regular + 1 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../System/joystick.c":279:2 -1
+     (nil))
+(insn 6 5 8 2 (set (reg/f:SI 121)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/joystick.c":279:28 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 8 6 10 2 (set (reg:SI 123 [ joystick.button.state_new ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 121)
+                    (const_int 8 [0x8])) [0 joystick.button.state_new+0 S1 A64]))) "../System/joystick.c":279:28 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_EQUAL (zero_extend:SI (mem/c:QI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                        (const_int 8 [0x8]))) [0 joystick.button.state_new+0 S1 A64]))
+        (nil)))
+(insn 10 8 11 2 (set (mem/c:QI (plus:SI (reg/f:SI 121)
+                (const_int 9 [0x9])) [0 joystick.button.state_old+0 S1 A8])
+        (subreg:QI (reg:SI 123 [ joystick.button.state_new ]) 0)) "../System/joystick.c":279:28 263 {*arm_movqi_insn}
+     (expr_list:REG_DEAD (reg:SI 123 [ joystick.button.state_new ])
+        (nil)))
+(debug_insn 11 10 13 2 (debug_marker) "../System/joystick.c":282:2 -1
+     (nil))
+(insn 13 11 15 2 (set (reg/f:SI 114 [ _2 ])
+        (mem/f/c:SI (reg/f:SI 121) [2 joystick.button.port+0 S4 A64])) "../System/joystick.c":282:30 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (mem/f/c:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]) [2 joystick.button.port+0 S4 A64])
+        (nil)))
+(insn 15 13 16 2 (set (reg:SI 115 [ _3 ])
+        (mem/c:SI (plus:SI (reg/f:SI 121)
+                (const_int 4 [0x4])) [3 joystick.button.pin+0 S4 A32])) "../System/joystick.c":282:30 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (mem/c:SI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                    (const_int 4 [0x4]))) [3 joystick.button.pin+0 S4 A32])
+        (nil)))
+(debug_insn 16 15 17 2 (var_location:SI GPIOx (reg/f:SI 114 [ _2 ])) "../System/joystick.c":282:30 -1
+     (nil))
+(debug_insn 17 16 18 2 (var_location:SI PinMask (reg:SI 115 [ _3 ])) "../System/joystick.c":282:30 -1
+     (nil))
+(debug_insn 18 17 19 2 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h":813:26 -1
+     (nil))
+(debug_insn 19 18 20 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h":815:3 -1
+     (nil))
+(insn 20 19 21 2 (set (reg:SI 119 [ _10 ])
+        (mem/v:SI (plus:SI (reg/f:SI 114 [ _2 ])
+                (const_int 16 [0x10])) [3 _2->IDR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h":815:12 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 114 [ _2 ])
+        (nil)))
+(debug_insn 21 20 22 2 (var_location:SI GPIOx (clobber (const_int 0 [0]))) "../System/joystick.c":282:30 -1
+     (nil))
+(debug_insn 22 21 24 2 (var_location:SI PinMask (clobber (const_int 0 [0]))) "../System/joystick.c":282:30 -1
+     (nil))
+(note 24 22 25 2 NOTE_INSN_DELETED)
+(insn 25 24 26 2 (parallel [
+            (set (reg:CC_NZ 100 cc)
+                (compare:CC_NZ (and:SI (not:SI (reg:SI 119 [ _10 ]))
+                        (reg:SI 115 [ _3 ]))
+                    (const_int 0 [0])))
+            (clobber (scratch:SI))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h":815:62 105 {*andsi_notsi_si_compare0_scratch}
+     (expr_list:REG_DEAD (reg:SI 119 [ _10 ])
+        (expr_list:REG_DEAD (reg:SI 115 [ _3 ])
+            (nil))))
+(insn 26 25 28 2 (set (reg:SI 129)
+        (eq:SI (reg:CC_NZ 100 cc)
+            (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h":815:62 981 {*thumb2_mov_scc}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (nil)))
+(insn 28 26 29 2 (set (mem/c:QI (plus:SI (reg/f:SI 121)
+                (const_int 8 [0x8])) [0 joystick.button.state_new+0 S1 A64])
+        (subreg:QI (reg:SI 129) 0)) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h":815:62 263 {*arm_movqi_insn}
+     (expr_list:REG_DEAD (reg:SI 129)
+        (nil)))
+(debug_insn 29 28 31 2 (debug_marker) "../System/joystick.c":288:2 -1
+     (nil))
+(insn 31 29 32 2 (set (reg:SI 132 [ joystick+8 ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 121)
+                    (const_int 8 [0x8])) [4 joystick+8 S2 A64]))) "../System/joystick.c":288:5 1005 {*thumb2_zero_extendhisi2_v6}
+     (expr_list:REG_DEAD (reg/f:SI 121)
+        (expr_list:REG_EQUAL (zero_extend:SI (mem/c:HI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                            (const_int 8 [0x8]))) [4 joystick+8 S2 A64]))
+            (nil))))
+(insn 32 31 33 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 132 [ joystick+8 ])
+            (const_int 256 [0x100]))) "../System/joystick.c":288:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 132 [ joystick+8 ])
+        (nil)))
+(jump_insn 33 32 34 2 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 44)
+            (pc))) "../System/joystick.c":288:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 856416484 (nil)))
+ -> 44)
+(note 34 33 35 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 35 34 36 3 (debug_marker:BLK) "../System/joystick.c":274:6 -1
+     (nil))
+(debug_insn 36 35 38 3 (debug_marker) "../System/joystick.c":294:3 -1
+     (nil))
+(insn 38 36 39 3 (set (reg:SI 1 r1)
+        (const_int 0 [0])) "../System/joystick.c":294:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 39 38 40 3 (set (reg:SI 0 r0)
+        (symbol_ref:SI ("*.LANCHOR2") [flags 0x182])) "../System/joystick.c":294:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn/j 40 39 41 3 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("BUF_store_byte") [flags 0x41]  <function_decl 0000000007b7c900 BUF_store_byte>) [0 BUF_store_byte S4 A32])
+                    (const_int 0 [0])))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../System/joystick.c":294:3 293 {*sibcall_value_insn}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("BUF_store_byte") [flags 0x41]  <function_decl 0000000007b7c900 BUF_store_byte>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (nil)))))
+(barrier 41 40 44)
+(code_label 44 41 45 4 6 (nil) [1 uses])
+(note 45 44 0 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+
+;; Function JOY_get_pressed_key (JOY_get_pressed_key, funcdef_no=606, decl_uid=10119, cgraph_uid=610, symbol_order=613)
+
+scanning new insn with uid = 37.
+Reordered sequence:
+ 2 bb 2
+ 3 bb 3
+ 4 bb 4
+ 5 bb 5
+
+
+JOY_get_pressed_key
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={4d,4u} r1={3d,1u} r2={2d} r3={2d} r7={1d,5u} r12={2d} r13={1d,6u} r14={2d} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={2d} r101={1d} r102={1d,7u} r103={1d,4u} r104={1d} r105={1d} r106={1d} r114={2d,1u} r119={1d,2u} 
+;;    total ref usage 143{113d,30u,0e} in 16{15 regular + 1 call} insns.
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 4 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 2 7 2 (debug_marker) "../System/joystick.c":311:2 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "../System/joystick.c":312:2 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "../System/joystick.c":317:2 -1
+     (nil))
+(note 9 8 11 2 NOTE_INSN_DELETED)
+(insn 11 9 12 2 (set (reg:SI 1 r1)
+        (plus:SI (reg/f:SI 102 sfp)
+            (const_int -1 [0xffffffffffffffff]))) "../System/joystick.c":317:16 7 {*arm_addsi3}
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 0 r0)
+        (symbol_ref:SI ("*.LANCHOR2") [flags 0x182])) "../System/joystick.c":317:16 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 13 12 36 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("BUF_get_byte") [flags 0x41]  <function_decl 0000000007b7cb00 BUF_get_byte>) [0 BUF_get_byte S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":317:16 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("BUF_get_byte") [flags 0x41]  <function_decl 0000000007b7cb00 BUF_get_byte>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 36 13 14 2 (set (reg:SI 119)
+        (reg:SI 0 r0)) "../System/joystick.c":317:16 -1
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+(note 14 36 16 2 NOTE_INSN_DELETED)
+(debug_insn 16 14 17 2 (var_location:QI return_code (subreg:QI (reg:SI 119) 0)) "../System/joystick.c":317:16 -1
+     (nil))
+(debug_insn 17 16 18 2 (debug_marker) "../System/joystick.c":322:2 -1
+     (nil))
+(note 18 17 19 2 NOTE_INSN_DELETED)
+(jump_insn 19 18 20 2 (parallel [
+            (set (pc)
+                (if_then_else (ne (reg:SI 119)
+                        (const_int 0 [0]))
+                    (label_ref:SI 35)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/joystick.c":322:5 1025 {*thumb2_cbnz}
+     (expr_list:REG_UNUSED (reg:CC 100 cc)
+        (expr_list:REG_DEAD (reg:SI 119)
+            (int_list:REG_BR_PROB 375809644 (nil))))
+ -> 35)
+(note 20 19 21 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 21 20 22 3 (debug_marker) "../System/joystick.c":326:3 -1
+     (nil))
+(insn 22 21 37 3 (set (reg:SI 114 [ <retval> ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 102 sfp)
+                    (const_int -1 [0xffffffffffffffff])) [0 pressed_button+0 S1 A8]))) "../System/joystick.c":326:10 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(jump_insn 37 22 38 3 (set (pc)
+        (label_ref 23)) "../System/joystick.c":326:10 -1
+     (nil)
+ -> 23)
+(barrier 38 37 35)
+(code_label 35 38 34 4 13 (nil) [1 uses])
+(note 34 35 3 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 3 34 23 4 (set (reg:SI 114 [ <retval> ])
+        (const_int 2 [0x2])) "../System/joystick.c":334:10 728 {*thumb2_movsi_vfp}
+     (nil))
+(code_label 23 3 24 5 12 (nil) [1 uses])
+(note 24 23 29 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 29 24 30 5 (set (reg/i:SI 0 r0)
+        (reg:SI 114 [ <retval> ])) "../System/joystick.c":337:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 114 [ <retval> ])
+        (nil)))
+(insn 30 29 0 5 (use (reg/i:SI 0 r0)) "../System/joystick.c":337:1 -1
+     (nil))
+
+;; Function JOY_get_button_state (JOY_get_button_state, funcdef_no=607, decl_uid=10121, cgraph_uid=611, symbol_order=614)
+
+Reordered sequence:
+ 2 bb 2
+
+
+JOY_get_button_state
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0]
+;;  ref usage 	r0={2d,2u} r1={1d} r2={1d} r3={1d} r7={1d,2u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r102={1d,2u} r103={1d,1u} r115={1d,1u} 
+;;    total ref usage 37{27d,10u,0e} in 4{4 regular + 0 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../System/joystick.c":345:2 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 115)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/joystick.c":345:24 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 7 6 9 2 NOTE_INSN_DELETED)
+(note 9 7 14 2 NOTE_INSN_DELETED)
+(insn 14 9 15 2 (set (reg/i:SI 0 r0)
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 115)
+                    (const_int 8 [0x8])) [0 joystick.button.state_new+0 S1 A64]))) "../System/joystick.c":346:1 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_DEAD (reg/f:SI 115)
+        (nil)))
+(insn 15 14 0 2 (use (reg/i:SI 0 r0)) "../System/joystick.c":346:1 -1
+     (nil))
+
+;; Function JOY_get_axis_position (JOY_get_axis_position, funcdef_no=609, decl_uid=10125, cgraph_uid=613, symbol_order=616)
+
+scanning new insn with uid = 76.
+scanning new insn with uid = 78.
+Reordered sequence:
+ 2 bb 2
+ 3 bb 3
+ 4 bb 4
+ 5 bb 5
+ 6 bb 6
+ 7 bb 7
+
+
+JOY_get_axis_position
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 100 [cc]
+;;  ref usage 	r0={2d,3u} r1={1d} r2={1d} r3={1d} r7={1d,7u} r13={1d,7u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={2d,2u} r102={1d,7u} r103={1d,6u} r114={1d,4u} r116={1d,3u} r120={1d,1u} r126={3d,1u} r127={1d,4u} r128={1d,4u} r130={1d,1u} r133={1d,2u,1e} r135={1d,1u,1e} r138={1d,1u} r140={1d,1u} r141={1d,1u} r142={1d,1u} r143={1d,1u} r144={1d,1u,1e} r145={1d,1u} r146={1d,1u} r148={1d,1u} r150={1d,1u} 
+;;    total ref usage 115{49d,63u,3e} in 43{43 regular + 0 call} insns.
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 71 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 71 6 2 2 (set (reg:SI 150)
+        (reg:SI 0 r0 [ axis ])) "../System/joystick.c":461:1 -1
+     (expr_list:REG_DEAD (reg:SI 0 r0 [ axis ])
+        (nil)))
+(insn 2 71 3 2 (set (reg/v:SI 127 [ axis ])
+        (reg:SI 150)) "../System/joystick.c":461:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 150)
+        (nil)))
+(note 3 2 8 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 8 3 9 2 (debug_marker) "../System/joystick.c":466:2 -1
+     (nil))
+(debug_insn 9 8 11 2 (debug_marker) "../System/joystick.c":471:2 -1
+     (nil))
+(insn 11 9 12 2 (set (reg/f:SI 128)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/joystick.c":471:52 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 12 11 13 2 NOTE_INSN_DELETED)
+(note 13 12 14 2 NOTE_INSN_DELETED)
+(insn 14 13 15 2 (set (reg/f:SI 130)
+        (plus:SI (ashift:SI (reg/v:SI 127 [ axis ])
+                (const_int 1 [0x1]))
+            (reg/f:SI 128))) "../System/joystick.c":471:52 318 {*add_shiftsi}
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 114 [ _2 ])
+        (zero_extend:SI (mem:HI (plus:SI (reg/f:SI 130)
+                    (const_int 12 [0xc])) [5 joystick.position_raw[_1]+0 S2 A16]))) "../System/joystick.c":471:52 1005 {*thumb2_zero_extendhisi2_v6}
+     (expr_list:REG_DEAD (reg/f:SI 130)
+        (nil)))
+(debug_insn 16 15 18 2 (var_location:SI D#10 (zero_extend:SI (subreg:HI (reg:SI 114 [ _2 ]) 0))) "../System/joystick.c":471:52 -1
+     (nil))
+(insn 18 16 19 2 (set (reg:SI 133)
+        (plus:SI (reg/v:SI 127 [ axis ])
+            (const_int 8 [0x8]))) "../System/joystick.c":471:86 7 {*arm_addsi3}
+     (nil))
+(insn 19 18 20 2 (set (reg:SI 116 [ _4 ])
+        (zero_extend:SI (mem:HI (plus:SI (mult:SI (reg:SI 133)
+                        (const_int 2 [0x2]))
+                    (reg/f:SI 128)) [5 joystick.position_raw_min[_1]+0 S2 A16]))) "../System/joystick.c":471:86 1005 {*thumb2_zero_extendhisi2_v6}
+     (expr_list:REG_EQUAL (zero_extend:SI (mem:HI (plus:SI (mult:SI (reg:SI 133)
+                        (const_int 2 [0x2]))
+                    (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) [5 joystick.position_raw_min[_1]+0 S2 A16]))
+        (nil)))
+(debug_insn 20 19 21 2 (var_location:SI D#9 (zero_extend:SI (subreg:HI (reg:SI 116 [ _4 ]) 0))) "../System/joystick.c":471:86 -1
+     (nil))
+(debug_insn 21 20 22 2 (var_location:SI D#8 (minus:SI (debug_expr:SI D#10)
+        (debug_expr:SI D#9))) "../System/joystick.c":471:59 -1
+     (nil))
+(debug_insn 22 21 23 2 (var_location:SF D#7 (float:SF (debug_expr:SI D#8))) "../System/joystick.c":471:23 -1
+     (nil))
+(debug_insn 23 22 24 2 (var_location:HI D#6 (mem:HI (plus:SI (ashift:SI (plus:SI (reg/v:SI 127 [ axis ])
+                    (const_int 12 [0xc]))
+                (const_int 1 [0x1]))
+            (symbol_ref:SI ("joystick") [flags 0x82]  <var_decl 0000000007b6a1b0 joystick>)) [5 joystick.position_raw_range[_1]+0 S2 A16])) "../System/joystick.c":471:130 -1
+     (nil))
+(debug_insn 24 23 25 2 (var_location:SF D#5 (unsigned_float:SF (debug_expr:HI D#6))) "../System/joystick.c":471:96 -1
+     (nil))
+(debug_insn 25 24 26 2 (var_location:SF D#4 (div:SF (debug_expr:SF D#7)
+        (debug_expr:SF D#5))) "../System/joystick.c":471:94 -1
+     (nil))
+(debug_insn 26 25 27 2 (var_location:SF D#3 (mult:SF (debug_expr:SF D#4)
+        (const_double:SF 1.0e+2 [0x0.c8p+7]))) "../System/joystick.c":471:138 -1
+     (nil))
+(debug_insn 27 26 28 2 (var_location:HI relative_position (fix:HI (debug_expr:SF D#3))) "../System/joystick.c":471:20 -1
+     (nil))
+(debug_insn 28 27 29 2 (debug_marker) "../System/joystick.c":478:3 -1
+     (nil))
+(insn 29 28 30 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 114 [ _2 ])
+            (reg:SI 116 [ _4 ]))) "../System/joystick.c":478:6 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 30 29 31 2 (set (pc)
+        (if_then_else (ltu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 66)
+            (pc))) "../System/joystick.c":478:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 365072228 (nil)))
+ -> 66)
+(note 31 30 33 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 33 31 34 3 (set (reg:SI 135)
+        (plus:SI (reg/v:SI 127 [ axis ])
+            (const_int 12 [0xc]))) "../System/joystick.c":471:130 7 {*arm_addsi3}
+     (expr_list:REG_DEAD (reg/v:SI 127 [ axis ])
+        (nil)))
+(insn 34 33 35 3 (set (reg:SI 120 [ _8 ])
+        (zero_extend:SI (mem:HI (plus:SI (mult:SI (reg:SI 135)
+                        (const_int 2 [0x2]))
+                    (reg/f:SI 128)) [5 joystick.position_raw_range[_1]+0 S2 A16]))) "../System/joystick.c":471:130 1005 {*thumb2_zero_extendhisi2_v6}
+     (expr_list:REG_DEAD (reg:SI 135)
+        (expr_list:REG_EQUAL (zero_extend:SI (mem:HI (plus:SI (mult:SI (reg:SI 135)
+                            (const_int 2 [0x2]))
+                        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) [5 joystick.position_raw_range[_1]+0 S2 A16]))
+            (nil))))
+(debug_insn 35 34 38 3 (debug_marker) "../System/joystick.c":484:8 -1
+     (nil))
+(note 38 35 39 3 NOTE_INSN_DELETED)
+(insn 39 38 40 3 (set (reg/f:SI 138)
+        (plus:SI (ashift:SI (reg:SI 133)
+                (const_int 1 [0x1]))
+            (reg/f:SI 128))) "../System/joystick.c":484:68 318 {*add_shiftsi}
+     (expr_list:REG_DEAD (reg:SI 133)
+        (expr_list:REG_DEAD (reg/f:SI 128)
+            (nil))))
+(insn 40 39 41 3 (set (reg:SI 140 [ joystick.position_raw_max[_1] ])
+        (zero_extend:SI (mem:HI (plus:SI (reg/f:SI 138)
+                    (const_int 4 [0x4])) [5 joystick.position_raw_max[_1]+0 S2 A16]))) "../System/joystick.c":484:11 1005 {*thumb2_zero_extendhisi2_v6}
+     (expr_list:REG_DEAD (reg/f:SI 138)
+        (nil)))
+(insn 41 40 42 3 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 140 [ joystick.position_raw_max[_1] ])
+            (reg:SI 114 [ _2 ]))) "../System/joystick.c":484:11 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 140 [ joystick.position_raw_max[_1] ])
+        (nil)))
+(jump_insn 42 41 43 3 (set (pc)
+        (if_then_else (ltu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 70)
+            (pc))) "../System/joystick.c":484:11 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 375809644 (nil)))
+ -> 70)
+(note 43 42 44 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 44 43 45 4 (debug_marker) "../System/joystick.c":492:4 -1
+     (nil))
+(insn 45 44 46 4 (set (reg:SI 141)
+        (minus:SI (reg:SI 114 [ _2 ])
+            (reg:SI 116 [ _4 ]))) "../System/joystick.c":471:59 45 {*arm_subsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 116 [ _4 ])
+        (expr_list:REG_DEAD (reg:SI 114 [ _2 ])
+            (nil))))
+(insn 46 45 47 4 (set (reg:SF 142)
+        (float:SF (reg:SI 141))) "../System/joystick.c":471:23 809 {*floatsisf2_vfp}
+     (expr_list:REG_DEAD (reg:SI 141)
+        (nil)))
+(insn 47 46 48 4 (set (reg:SF 143)
+        (unsigned_float:SF (reg:SI 120 [ _8 ]))) "../System/joystick.c":471:96 811 {floatunssisf2}
+     (expr_list:REG_DEAD (reg:SI 120 [ _8 ])
+        (nil)))
+(insn 48 47 49 4 (set (reg:SF 144)
+        (div:SF (reg:SF 142)
+            (reg:SF 143))) "../System/joystick.c":471:94 764 {*divsf3_vfp}
+     (expr_list:REG_DEAD (reg:SF 143)
+        (expr_list:REG_DEAD (reg:SF 142)
+            (nil))))
+(insn 49 48 50 4 (set (reg:SF 146)
+        (const_double:SF 1.0e+2 [0x0.c8p+7])) "../System/joystick.c":471:138 737 {*thumb2_movsf_vfp}
+     (nil))
+(insn 50 49 51 4 (set (reg:SF 145)
+        (mult:SF (reg:SF 144)
+            (reg:SF 146))) "../System/joystick.c":471:138 767 {*mulsf3_vfp}
+     (expr_list:REG_DEAD (reg:SF 146)
+        (expr_list:REG_DEAD (reg:SF 144)
+            (expr_list:REG_EQUAL (mult:SF (reg:SF 144)
+                    (const_double:SF 1.0e+2 [0x0.c8p+7]))
+                (nil)))))
+(insn 51 50 53 4 (set (reg:SI 148)
+        (fix:SI (fix:SF (reg:SF 145)))) "../System/joystick.c":471:20 805 {*truncsisf2_vfp}
+     (expr_list:REG_DEAD (reg:SF 145)
+        (nil)))
+(insn 53 51 76 4 (set (reg:SI 126 [ <retval> ])
+        (zero_extend:SI (subreg:QI (reg:SI 148) 0))) "../System/joystick.c":492:11 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_DEAD (reg:SI 148)
+        (nil)))
+(jump_insn 76 53 77 4 (set (pc)
+        (label_ref 54)) "../System/joystick.c":492:11 -1
+     (nil)
+ -> 54)
+(barrier 77 76 66)
+(code_label 66 77 65 5 22 (nil) [1 uses])
+(note 65 66 4 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 4 65 78 5 (set (reg:SI 126 [ <retval> ])
+        (const_int 0 [0])) "../System/joystick.c":480:11 728 {*thumb2_movsi_vfp}
+     (nil))
+(jump_insn 78 4 79 5 (set (pc)
+        (label_ref 54)) -1
+     (nil)
+ -> 54)
+(barrier 79 78 70)
+(code_label 70 79 69 6 23 (nil) [1 uses])
+(note 69 70 5 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 5 69 54 6 (set (reg:SI 126 [ <retval> ])
+        (const_int 100 [0x64])) "../System/joystick.c":486:11 728 {*thumb2_movsi_vfp}
+     (nil))
+(code_label 54 5 55 7 21 (nil) [2 uses])
+(note 55 54 60 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 60 55 61 7 (set (reg/i:SI 0 r0)
+        (reg:SI 126 [ <retval> ])) "../System/joystick.c":495:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 126 [ <retval> ])
+        (nil)))
+(insn 61 60 0 7 (use (reg/i:SI 0 r0)) "../System/joystick.c":495:1 -1
+     (nil))
+
+;; Function JOY_SCI_send_status (JOY_SCI_send_status, funcdef_no=610, decl_uid=10131, cgraph_uid=614, symbol_order=617)
+
+scanning new insn with uid = 204.
+scanning new insn with uid = 206.
+scanning new insn with uid = 208.
+scanning new insn with uid = 210.
+Reordered sequence:
+ 2 bb 2
+ 3 bb 3
+ 4 bb 4
+ 5 bb 5
+ 6 bb 6
+ 7 bb 7
+ 8 bb 8
+ 9 bb 9
+ 10 bb 10
+ 11 bb 11
+ 12 bb 12
+
+
+JOY_SCI_send_status
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={29d,14u} r1={25d,10u} r2={15d} r3={15d} r7={1d,12u} r12={28d} r13={1d,26u} r14={15d} r15={14d} r16={15d} r17={15d} r18={15d} r19={15d} r20={15d} r21={15d} r22={15d} r23={15d} r24={15d} r25={15d} r26={15d} r27={15d} r28={15d} r29={15d} r30={15d} r31={15d} r48={14d} r49={14d} r50={14d} r51={14d} r52={14d} r53={14d} r54={14d} r55={14d} r56={14d} r57={14d} r58={14d} r59={14d} r60={14d} r61={14d} r62={14d} r63={14d} r64={14d} r65={14d} r66={14d} r67={14d} r68={14d} r69={14d} r70={14d} r71={14d} r72={14d} r73={14d} r74={14d} r75={14d} r76={14d} r77={14d} r78={14d} r79={14d} r80={14d} r81={14d} r82={14d} r83={14d} r84={14d} r85={14d} r86={14d} r87={14d} r88={14d} r89={14d} r90={14d} r91={14d} r92={14d} r93={14d} r94={14d} r95={14d} r96={14d} r97={14d} r98={14d} r99={14d} r100={18d,4u} r101={14d} r102={1d,12u} r103={1d,11u} r104={14d} r105={14d} r106={14d} r129={1d,4u} r131={1d,3u} r135={1d,1u} r142={1d,4u} r144={1d,3u} r148={1d,1u} r155={3d,1u} r156={3d,1u} r186={1d,1u} r187={1d,1u} r188={1d,1u} r189={1d,1u} r190={1d,1u,1e} r191={1d,1u} r192={1d,1u} r194={1d,1u} r200={1d,1u} r201={1d,1u} r202={1d,1u} r203={1d,1u} r204={1d,1u,1e} r205={1d,1u} r206={1d,1u} r208={1d,1u} r211={1d,16u} 
+;;    total ref usage 1357{1216d,139u,2e} in 129{115 regular + 14 call} insns.
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 7 9 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 9 2 10 2 (debug_marker) "../System/joystick.c":513:2 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 0 r0)
+        (const_int 0 [0])) "../System/joystick.c":513:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 11 10 12 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("LED_toggle") [flags 0x41]  <function_decl 00000000079f0200 LED_toggle>) [0 LED_toggle S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":513:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("LED_toggle") [flags 0x41]  <function_decl 00000000079f0200 LED_toggle>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 12 11 14 2 (debug_marker) "../System/joystick.c":514:2 -1
+     (nil))
+(insn 14 12 15 2 (set (reg:SI 0 r0)
+        (symbol_ref/v/f:SI ("*.LC0") [flags 0x82]  <var_decl 0000000007d1b7e0 *.LC0>)) "../System/joystick.c":514:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 15 14 16 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("puts") [flags 0x41]  <function_decl 000000000673b200 __builtin_puts>) [0 __builtin_puts S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":514:2 291 {*call_value_symbol}
+     (expr_list:REG_UNUSED (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("puts") [flags 0x41]  <function_decl 000000000673b200 __builtin_puts>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 16 15 17 2 (debug_marker) "../System/joystick.c":517:2 -1
+     (nil))
+(insn 17 16 18 2 (set (reg/f:SI 211)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/joystick.c":517:48 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 18 17 20 2 NOTE_INSN_DELETED)
+(insn 20 18 21 2 (set (reg:SI 1 r1)
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 211)
+                    (const_int 12 [0xc])) [5 joystick.position_raw[0]+0 S2 A32]))) "../System/joystick.c":517:2 1005 {*thumb2_zero_extendhisi2_v6}
+     (nil))
+(insn 21 20 22 2 (set (reg:SI 0 r0)
+        (symbol_ref/v/f:SI ("*.LC1") [flags 0x82]  <var_decl 0000000007d1b870 *.LC1>)) "../System/joystick.c":517:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 22 21 23 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000006739b00 printf>) [0 __builtin_printf S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":517:2 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000006739b00 printf>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 23 22 25 2 (debug_marker) "../System/joystick.c":518:2 -1
+     (nil))
+(note 25 23 27 2 NOTE_INSN_DELETED)
+(insn 27 25 28 2 (set (reg:SI 1 r1)
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 211)
+                    (const_int 14 [0xe])) [5 joystick.position_raw[1]+0 S2 A16]))) "../System/joystick.c":518:2 1005 {*thumb2_zero_extendhisi2_v6}
+     (nil))
+(insn 28 27 29 2 (set (reg:SI 0 r0)
+        (symbol_ref/v/f:SI ("*.LC2") [flags 0x82]  <var_decl 0000000007d1b900 *.LC2>)) "../System/joystick.c":518:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 29 28 30 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000006739b00 printf>) [0 __builtin_printf S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":518:2 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000006739b00 printf>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 30 29 32 2 (debug_marker) "../System/joystick.c":520:2 -1
+     (nil))
+(note 32 30 34 2 NOTE_INSN_DELETED)
+(insn 34 32 35 2 (set (reg:SI 1 r1)
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 211)
+                    (const_int 16 [0x10])) [5 joystick.position_raw_min[0]+0 S2 A64]))) "../System/joystick.c":520:2 1005 {*thumb2_zero_extendhisi2_v6}
+     (nil))
+(insn 35 34 36 2 (set (reg:SI 0 r0)
+        (symbol_ref/v/f:SI ("*.LC3") [flags 0x82]  <var_decl 0000000007d1b990 *.LC3>)) "../System/joystick.c":520:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 36 35 37 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000006739b00 printf>) [0 __builtin_printf S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":520:2 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000006739b00 printf>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 37 36 39 2 (debug_marker) "../System/joystick.c":521:2 -1
+     (nil))
+(note 39 37 41 2 NOTE_INSN_DELETED)
+(insn 41 39 42 2 (set (reg:SI 1 r1)
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 211)
+                    (const_int 20 [0x14])) [5 joystick.position_raw_max[0]+0 S2 A32]))) "../System/joystick.c":521:2 1005 {*thumb2_zero_extendhisi2_v6}
+     (nil))
+(insn 42 41 43 2 (set (reg:SI 0 r0)
+        (symbol_ref/v/f:SI ("*.LC4") [flags 0x82]  <var_decl 0000000007d1ba20 *.LC4>)) "../System/joystick.c":521:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 43 42 44 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000006739b00 printf>) [0 __builtin_printf S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":521:2 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000006739b00 printf>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 44 43 46 2 (debug_marker) "../System/joystick.c":523:2 -1
+     (nil))
+(note 46 44 48 2 NOTE_INSN_DELETED)
+(insn 48 46 49 2 (set (reg:SI 1 r1)
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 211)
+                    (const_int 18 [0x12])) [5 joystick.position_raw_min[1]+0 S2 A16]))) "../System/joystick.c":523:2 1005 {*thumb2_zero_extendhisi2_v6}
+     (nil))
+(insn 49 48 50 2 (set (reg:SI 0 r0)
+        (symbol_ref/v/f:SI ("*.LC5") [flags 0x82]  <var_decl 0000000007d1bab0 *.LC5>)) "../System/joystick.c":523:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 50 49 51 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000006739b00 printf>) [0 __builtin_printf S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":523:2 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000006739b00 printf>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 51 50 53 2 (debug_marker) "../System/joystick.c":524:2 -1
+     (nil))
+(note 53 51 55 2 NOTE_INSN_DELETED)
+(insn 55 53 56 2 (set (reg:SI 1 r1)
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 211)
+                    (const_int 22 [0x16])) [5 joystick.position_raw_max[1]+0 S2 A16]))) "../System/joystick.c":524:2 1005 {*thumb2_zero_extendhisi2_v6}
+     (nil))
+(insn 56 55 57 2 (set (reg:SI 0 r0)
+        (symbol_ref/v/f:SI ("*.LC6") [flags 0x82]  <var_decl 0000000007d1bb40 *.LC6>)) "../System/joystick.c":524:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 57 56 58 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000006739b00 printf>) [0 __builtin_printf S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":524:2 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000006739b00 printf>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 58 57 60 2 (debug_marker) "../System/joystick.c":526:2 -1
+     (nil))
+(note 60 58 62 2 NOTE_INSN_DELETED)
+(insn 62 60 63 2 (set (reg:SI 1 r1)
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 211)
+                    (const_int 24 [0x18])) [5 joystick.position_raw_range[0]+0 S2 A64]))) "../System/joystick.c":526:2 1005 {*thumb2_zero_extendhisi2_v6}
+     (nil))
+(insn 63 62 64 2 (set (reg:SI 0 r0)
+        (symbol_ref/v/f:SI ("*.LC7") [flags 0x82]  <var_decl 0000000007d1bbd0 *.LC7>)) "../System/joystick.c":526:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 64 63 65 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000006739b00 printf>) [0 __builtin_printf S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":526:2 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000006739b00 printf>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 65 64 67 2 (debug_marker) "../System/joystick.c":527:2 -1
+     (nil))
+(note 67 65 69 2 NOTE_INSN_DELETED)
+(insn 69 67 70 2 (set (reg:SI 1 r1)
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 211)
+                    (const_int 26 [0x1a])) [5 joystick.position_raw_range[1]+0 S2 A16]))) "../System/joystick.c":527:2 1005 {*thumb2_zero_extendhisi2_v6}
+     (nil))
+(insn 70 69 71 2 (set (reg:SI 0 r0)
+        (symbol_ref/v/f:SI ("*.LC8") [flags 0x82]  <var_decl 0000000007d1bc60 *.LC8>)) "../System/joystick.c":527:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 71 70 72 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000006739b00 printf>) [0 __builtin_printf S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":527:2 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000006739b00 printf>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 72 71 73 2 (debug_marker) "../System/joystick.c":531:2 -1
+     (nil))
+(debug_insn 73 72 74 2 (var_location:QI axis (const_int 0 [0])) "../System/joystick.c":531:2 -1
+     (nil))
+(debug_insn 74 73 75 2 (debug_marker:BLK) "../System/joystick.c":460:9 -1
+     (nil))
+(debug_insn 75 74 76 2 (debug_marker) "../System/joystick.c":466:2 -1
+     (nil))
+(debug_insn 76 75 78 2 (debug_marker) "../System/joystick.c":471:2 -1
+     (nil))
+(insn 78 76 79 2 (set (reg:SI 142 [ _48 ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 211)
+                    (const_int 12 [0xc])) [5 joystick.position_raw[0]+0 S2 A32]))) "../System/joystick.c":471:52 1005 {*thumb2_zero_extendhisi2_v6}
+     (expr_list:REG_EQUAL (zero_extend:SI (mem/c:HI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                        (const_int 12 [0xc]))) [5 joystick.position_raw[0]+0 S2 A32]))
+        (nil)))
+(debug_insn 79 78 81 2 (var_location:SI D#26 (zero_extend:SI (subreg:HI (reg:SI 142 [ _48 ]) 0))) "../System/joystick.c":471:52 -1
+     (nil))
+(insn 81 79 82 2 (set (reg:SI 144 [ _50 ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 211)
+                    (const_int 16 [0x10])) [5 joystick.position_raw_min[0]+0 S2 A64]))) "../System/joystick.c":471:86 1005 {*thumb2_zero_extendhisi2_v6}
+     (expr_list:REG_EQUAL (zero_extend:SI (mem/c:HI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                        (const_int 16 [0x10]))) [5 joystick.position_raw_min[0]+0 S2 A64]))
+        (nil)))
+(debug_insn 82 81 83 2 (var_location:SI D#25 (zero_extend:SI (subreg:HI (reg:SI 144 [ _50 ]) 0))) "../System/joystick.c":471:86 -1
+     (nil))
+(debug_insn 83 82 84 2 (var_location:SI D#24 (minus:SI (debug_expr:SI D#26)
+        (debug_expr:SI D#25))) "../System/joystick.c":471:59 -1
+     (nil))
+(debug_insn 84 83 85 2 (var_location:SF D#23 (float:SF (debug_expr:SI D#24))) "../System/joystick.c":471:23 -1
+     (nil))
+(debug_insn 85 84 86 2 (var_location:HI D#22 (mem/c:HI (const:SI (plus:SI (symbol_ref:SI ("joystick") [flags 0x82]  <var_decl 0000000007b6a1b0 joystick>)
+                (const_int 24 [0x18]))) [5 joystick.position_raw_range[0]+0 S2 A64])) "../System/joystick.c":471:130 -1
+     (nil))
+(debug_insn 86 85 87 2 (var_location:SF D#21 (unsigned_float:SF (debug_expr:HI D#22))) "../System/joystick.c":471:96 -1
+     (nil))
+(debug_insn 87 86 88 2 (var_location:SF D#20 (div:SF (debug_expr:SF D#23)
+        (debug_expr:SF D#21))) "../System/joystick.c":471:94 -1
+     (nil))
+(debug_insn 88 87 89 2 (var_location:SF D#19 (mult:SF (debug_expr:SF D#20)
+        (const_double:SF 1.0e+2 [0x0.c8p+7]))) "../System/joystick.c":471:138 -1
+     (nil))
+(debug_insn 89 88 90 2 (var_location:HI relative_position (fix:HI (debug_expr:SF D#19))) "../System/joystick.c":471:20 -1
+     (nil))
+(debug_insn 90 89 91 2 (debug_marker) "../System/joystick.c":478:3 -1
+     (nil))
+(insn 91 90 92 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 142 [ _48 ])
+            (reg:SI 144 [ _50 ]))) "../System/joystick.c":478:6 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 92 91 93 2 (set (pc)
+        (if_then_else (ltu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 181)
+            (pc))) "../System/joystick.c":478:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 365072228 (nil)))
+ -> 181)
+(note 93 92 95 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 95 93 96 3 (set (reg:SI 148 [ _54 ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 211)
+                    (const_int 24 [0x18])) [5 joystick.position_raw_range[0]+0 S2 A64]))) "../System/joystick.c":471:130 1005 {*thumb2_zero_extendhisi2_v6}
+     (expr_list:REG_EQUAL (zero_extend:SI (mem/c:HI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                        (const_int 24 [0x18]))) [5 joystick.position_raw_range[0]+0 S2 A64]))
+        (nil)))
+(debug_insn 96 95 98 3 (debug_marker) "../System/joystick.c":484:8 -1
+     (nil))
+(insn 98 96 99 3 (set (reg:SI 186 [ joystick.position_raw_max[0] ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 211)
+                    (const_int 20 [0x14])) [5 joystick.position_raw_max[0]+0 S2 A32]))) "../System/joystick.c":484:11 1005 {*thumb2_zero_extendhisi2_v6}
+     (expr_list:REG_EQUAL (zero_extend:SI (mem/c:HI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                        (const_int 20 [0x14]))) [5 joystick.position_raw_max[0]+0 S2 A32]))
+        (nil)))
+(insn 99 98 100 3 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 186 [ joystick.position_raw_max[0] ])
+            (reg:SI 142 [ _48 ]))) "../System/joystick.c":484:11 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 186 [ joystick.position_raw_max[0] ])
+        (nil)))
+(jump_insn 100 99 101 3 (set (pc)
+        (if_then_else (ltu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 185)
+            (pc))) "../System/joystick.c":484:11 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 375809644 (nil)))
+ -> 185)
+(note 101 100 102 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 102 101 103 4 (debug_marker) "../System/joystick.c":492:4 -1
+     (nil))
+(insn 103 102 104 4 (set (reg:SI 187)
+        (minus:SI (reg:SI 142 [ _48 ])
+            (reg:SI 144 [ _50 ]))) "../System/joystick.c":471:59 45 {*arm_subsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 144 [ _50 ])
+        (expr_list:REG_DEAD (reg:SI 142 [ _48 ])
+            (nil))))
+(insn 104 103 105 4 (set (reg:SF 188)
+        (float:SF (reg:SI 187))) "../System/joystick.c":471:23 809 {*floatsisf2_vfp}
+     (expr_list:REG_DEAD (reg:SI 187)
+        (nil)))
+(insn 105 104 106 4 (set (reg:SF 189)
+        (unsigned_float:SF (reg:SI 148 [ _54 ]))) "../System/joystick.c":471:96 811 {floatunssisf2}
+     (expr_list:REG_DEAD (reg:SI 148 [ _54 ])
+        (nil)))
+(insn 106 105 107 4 (set (reg:SF 190)
+        (div:SF (reg:SF 188)
+            (reg:SF 189))) "../System/joystick.c":471:94 764 {*divsf3_vfp}
+     (expr_list:REG_DEAD (reg:SF 189)
+        (expr_list:REG_DEAD (reg:SF 188)
+            (nil))))
+(insn 107 106 108 4 (set (reg:SF 192)
+        (const_double:SF 1.0e+2 [0x0.c8p+7])) "../System/joystick.c":471:138 737 {*thumb2_movsf_vfp}
+     (nil))
+(insn 108 107 109 4 (set (reg:SF 191)
+        (mult:SF (reg:SF 190)
+            (reg:SF 192))) "../System/joystick.c":471:138 767 {*mulsf3_vfp}
+     (expr_list:REG_DEAD (reg:SF 192)
+        (expr_list:REG_DEAD (reg:SF 190)
+            (expr_list:REG_EQUAL (mult:SF (reg:SF 190)
+                    (const_double:SF 1.0e+2 [0x0.c8p+7]))
+                (nil)))))
+(insn 109 108 111 4 (set (reg:SI 194)
+        (fix:SI (fix:SF (reg:SF 191)))) "../System/joystick.c":471:20 805 {*truncsisf2_vfp}
+     (expr_list:REG_DEAD (reg:SF 191)
+        (nil)))
+(insn 111 109 204 4 (set (reg:SI 155 [ _62 ])
+        (zero_extend:SI (subreg:QI (reg:SI 194) 0))) "../System/joystick.c":531:2 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_DEAD (reg:SI 194)
+        (nil)))
+(jump_insn 204 111 205 4 (set (pc)
+        (label_ref 112)) "../System/joystick.c":492:11 -1
+     (nil)
+ -> 112)
+(barrier 205 204 181)
+(code_label 181 205 180 5 33 (nil) [1 uses])
+(note 180 181 3 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 3 180 206 5 (set (reg:SI 155 [ _62 ])
+        (const_int 0 [0])) 728 {*thumb2_movsi_vfp}
+     (nil))
+(jump_insn 206 3 207 5 (set (pc)
+        (label_ref 112)) -1
+     (nil)
+ -> 112)
+(barrier 207 206 185)
+(code_label 185 207 184 6 34 (nil) [1 uses])
+(note 184 185 4 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 4 184 112 6 (set (reg:SI 155 [ _62 ])
+        (const_int 100 [0x64])) 728 {*thumb2_movsi_vfp}
+     (nil))
+(code_label 112 4 113 7 31 (nil) [2 uses])
+(note 113 112 114 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 114 113 115 7 (var_location:QI axis (clobber (const_int 0 [0]))) "../System/joystick.c":531:23 -1
+     (nil))
+(debug_insn 115 114 117 7 (var_location:HI relative_position (clobber (const_int 0 [0]))) "../System/joystick.c":531:23 -1
+     (nil))
+(insn 117 115 118 7 (set (reg:SI 1 r1)
+        (reg:SI 155 [ _62 ])) "../System/joystick.c":531:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 155 [ _62 ])
+        (nil)))
+(insn 118 117 119 7 (set (reg:SI 0 r0)
+        (symbol_ref/v/f:SI ("*.LC9") [flags 0x82]  <var_decl 0000000007d1bcf0 *.LC9>)) "../System/joystick.c":531:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 119 118 120 7 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000006739b00 printf>) [0 __builtin_printf S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":531:2 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000006739b00 printf>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 120 119 121 7 (debug_marker) "../System/joystick.c":532:2 -1
+     (nil))
+(debug_insn 121 120 122 7 (var_location:QI axis (const_int 1 [0x1])) "../System/joystick.c":532:2 -1
+     (nil))
+(debug_insn 122 121 123 7 (debug_marker:BLK) "../System/joystick.c":460:9 -1
+     (nil))
+(debug_insn 123 122 124 7 (debug_marker) "../System/joystick.c":466:2 -1
+     (nil))
+(debug_insn 124 123 126 7 (debug_marker) "../System/joystick.c":471:2 -1
+     (nil))
+(insn 126 124 127 7 (set (reg:SI 129 [ _30 ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 211)
+                    (const_int 14 [0xe])) [5 joystick.position_raw[1]+0 S2 A16]))) "../System/joystick.c":471:52 1005 {*thumb2_zero_extendhisi2_v6}
+     (expr_list:REG_EQUAL (zero_extend:SI (mem/c:HI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                        (const_int 14 [0xe]))) [5 joystick.position_raw[1]+0 S2 A16]))
+        (nil)))
+(debug_insn 127 126 129 7 (var_location:SI D#18 (zero_extend:SI (subreg:HI (reg:SI 129 [ _30 ]) 0))) "../System/joystick.c":471:52 -1
+     (nil))
+(insn 129 127 130 7 (set (reg:SI 131 [ _36 ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 211)
+                    (const_int 18 [0x12])) [5 joystick.position_raw_min[1]+0 S2 A16]))) "../System/joystick.c":471:86 1005 {*thumb2_zero_extendhisi2_v6}
+     (expr_list:REG_EQUAL (zero_extend:SI (mem/c:HI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                        (const_int 18 [0x12]))) [5 joystick.position_raw_min[1]+0 S2 A16]))
+        (nil)))
+(debug_insn 130 129 131 7 (var_location:SI D#17 (zero_extend:SI (subreg:HI (reg:SI 131 [ _36 ]) 0))) "../System/joystick.c":471:86 -1
+     (nil))
+(debug_insn 131 130 132 7 (var_location:SI D#16 (minus:SI (debug_expr:SI D#18)
+        (debug_expr:SI D#17))) "../System/joystick.c":471:59 -1
+     (nil))
+(debug_insn 132 131 133 7 (var_location:SF D#15 (float:SF (debug_expr:SI D#16))) "../System/joystick.c":471:23 -1
+     (nil))
+(debug_insn 133 132 134 7 (var_location:HI D#14 (mem/c:HI (const:SI (plus:SI (symbol_ref:SI ("joystick") [flags 0x82]  <var_decl 0000000007b6a1b0 joystick>)
+                (const_int 26 [0x1a]))) [5 joystick.position_raw_range[1]+0 S2 A16])) "../System/joystick.c":471:130 -1
+     (nil))
+(debug_insn 134 133 135 7 (var_location:SF D#13 (unsigned_float:SF (debug_expr:HI D#14))) "../System/joystick.c":471:96 -1
+     (nil))
+(debug_insn 135 134 136 7 (var_location:SF D#12 (div:SF (debug_expr:SF D#15)
+        (debug_expr:SF D#13))) "../System/joystick.c":471:94 -1
+     (nil))
+(debug_insn 136 135 137 7 (var_location:SF D#11 (mult:SF (debug_expr:SF D#12)
+        (const_double:SF 1.0e+2 [0x0.c8p+7]))) "../System/joystick.c":471:138 -1
+     (nil))
+(debug_insn 137 136 138 7 (var_location:HI relative_position (fix:HI (debug_expr:SF D#11))) "../System/joystick.c":471:20 -1
+     (nil))
+(debug_insn 138 137 139 7 (debug_marker) "../System/joystick.c":478:3 -1
+     (nil))
+(insn 139 138 140 7 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 129 [ _30 ])
+            (reg:SI 131 [ _36 ]))) "../System/joystick.c":478:6 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 140 139 141 7 (set (pc)
+        (if_then_else (ltu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 189)
+            (pc))) "../System/joystick.c":478:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 365072228 (nil)))
+ -> 189)
+(note 141 140 143 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 143 141 144 8 (set (reg:SI 135 [ _40 ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 211)
+                    (const_int 26 [0x1a])) [5 joystick.position_raw_range[1]+0 S2 A16]))) "../System/joystick.c":471:130 1005 {*thumb2_zero_extendhisi2_v6}
+     (expr_list:REG_EQUAL (zero_extend:SI (mem/c:HI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                        (const_int 26 [0x1a]))) [5 joystick.position_raw_range[1]+0 S2 A16]))
+        (nil)))
+(debug_insn 144 143 146 8 (debug_marker) "../System/joystick.c":484:8 -1
+     (nil))
+(insn 146 144 147 8 (set (reg:SI 200 [ joystick.position_raw_max[1] ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 211)
+                    (const_int 22 [0x16])) [5 joystick.position_raw_max[1]+0 S2 A16]))) "../System/joystick.c":484:11 1005 {*thumb2_zero_extendhisi2_v6}
+     (expr_list:REG_DEAD (reg/f:SI 211)
+        (expr_list:REG_EQUAL (zero_extend:SI (mem/c:HI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                            (const_int 22 [0x16]))) [5 joystick.position_raw_max[1]+0 S2 A16]))
+            (nil))))
+(insn 147 146 148 8 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 200 [ joystick.position_raw_max[1] ])
+            (reg:SI 129 [ _30 ]))) "../System/joystick.c":484:11 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 200 [ joystick.position_raw_max[1] ])
+        (nil)))
+(jump_insn 148 147 149 8 (set (pc)
+        (if_then_else (ltu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 193)
+            (pc))) "../System/joystick.c":484:11 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 375809644 (nil)))
+ -> 193)
+(note 149 148 150 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 150 149 151 9 (debug_marker) "../System/joystick.c":492:4 -1
+     (nil))
+(insn 151 150 152 9 (set (reg:SI 201)
+        (minus:SI (reg:SI 129 [ _30 ])
+            (reg:SI 131 [ _36 ]))) "../System/joystick.c":471:59 45 {*arm_subsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 131 [ _36 ])
+        (expr_list:REG_DEAD (reg:SI 129 [ _30 ])
+            (nil))))
+(insn 152 151 153 9 (set (reg:SF 202)
+        (float:SF (reg:SI 201))) "../System/joystick.c":471:23 809 {*floatsisf2_vfp}
+     (expr_list:REG_DEAD (reg:SI 201)
+        (nil)))
+(insn 153 152 154 9 (set (reg:SF 203)
+        (unsigned_float:SF (reg:SI 135 [ _40 ]))) "../System/joystick.c":471:96 811 {floatunssisf2}
+     (expr_list:REG_DEAD (reg:SI 135 [ _40 ])
+        (nil)))
+(insn 154 153 155 9 (set (reg:SF 204)
+        (div:SF (reg:SF 202)
+            (reg:SF 203))) "../System/joystick.c":471:94 764 {*divsf3_vfp}
+     (expr_list:REG_DEAD (reg:SF 203)
+        (expr_list:REG_DEAD (reg:SF 202)
+            (nil))))
+(insn 155 154 156 9 (set (reg:SF 206)
+        (const_double:SF 1.0e+2 [0x0.c8p+7])) "../System/joystick.c":471:138 737 {*thumb2_movsf_vfp}
+     (nil))
+(insn 156 155 157 9 (set (reg:SF 205)
+        (mult:SF (reg:SF 204)
+            (reg:SF 206))) "../System/joystick.c":471:138 767 {*mulsf3_vfp}
+     (expr_list:REG_DEAD (reg:SF 206)
+        (expr_list:REG_DEAD (reg:SF 204)
+            (expr_list:REG_EQUAL (mult:SF (reg:SF 204)
+                    (const_double:SF 1.0e+2 [0x0.c8p+7]))
+                (nil)))))
+(insn 157 156 159 9 (set (reg:SI 208)
+        (fix:SI (fix:SF (reg:SF 205)))) "../System/joystick.c":471:20 805 {*truncsisf2_vfp}
+     (expr_list:REG_DEAD (reg:SF 205)
+        (nil)))
+(insn 159 157 208 9 (set (reg:SI 156 [ _64 ])
+        (zero_extend:SI (subreg:QI (reg:SI 208) 0))) "../System/joystick.c":532:2 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_DEAD (reg:SI 208)
+        (nil)))
+(jump_insn 208 159 209 9 (set (pc)
+        (label_ref 160)) "../System/joystick.c":492:11 -1
+     (nil)
+ -> 160)
+(barrier 209 208 189)
+(code_label 189 209 188 10 35 (nil) [1 uses])
+(note 188 189 5 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 5 188 210 10 (set (reg:SI 156 [ _64 ])
+        (const_int 0 [0])) 728 {*thumb2_movsi_vfp}
+     (nil))
+(jump_insn 210 5 211 10 (set (pc)
+        (label_ref 160)) -1
+     (nil)
+ -> 160)
+(barrier 211 210 193)
+(code_label 193 211 192 11 36 (nil) [1 uses])
+(note 192 193 6 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 6 192 160 11 (set (reg:SI 156 [ _64 ])
+        (const_int 100 [0x64])) 728 {*thumb2_movsi_vfp}
+     (nil))
+(code_label 160 6 161 12 32 (nil) [2 uses])
+(note 161 160 162 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 162 161 163 12 (var_location:QI axis (clobber (const_int 0 [0]))) "../System/joystick.c":532:23 -1
+     (nil))
+(debug_insn 163 162 165 12 (var_location:HI relative_position (clobber (const_int 0 [0]))) "../System/joystick.c":532:23 -1
+     (nil))
+(insn 165 163 166 12 (set (reg:SI 1 r1)
+        (reg:SI 156 [ _64 ])) "../System/joystick.c":532:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 156 [ _64 ])
+        (nil)))
+(insn 166 165 167 12 (set (reg:SI 0 r0)
+        (symbol_ref/v/f:SI ("*.LC10") [flags 0x82]  <var_decl 0000000007d1bd80 *.LC10>)) "../System/joystick.c":532:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 167 166 168 12 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000006739b00 printf>) [0 __builtin_printf S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":532:2 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000006739b00 printf>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 168 167 170 12 (debug_marker) "../System/joystick.c":534:2 -1
+     (nil))
+(insn 170 168 171 12 (set (reg:SI 0 r0)
+        (symbol_ref/v/f:SI ("*.LC11") [flags 0x82]  <var_decl 0000000007d1be10 *.LC11>)) "../System/joystick.c":534:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 171 170 172 12 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("puts") [flags 0x41]  <function_decl 000000000673b200 __builtin_puts>) [0 __builtin_puts S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":534:2 291 {*call_value_symbol}
+     (expr_list:REG_UNUSED (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("puts") [flags 0x41]  <function_decl 000000000673b200 __builtin_puts>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 172 171 173 12 (debug_marker) "../System/joystick.c":536:2 -1
+     (nil))
+(insn 173 172 174 12 (set (reg:SI 0 r0)
+        (const_int 10 [0xa])) "../System/joystick.c":536:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn/j 174 173 175 12 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 00000000078b0e00 HAL_Delay>) [0 HAL_Delay S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../System/joystick.c":536:2 292 {*sibcall_insn}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 00000000078b0e00 HAL_Delay>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(barrier 175 174 0)
+
+;; Function JOY_calibrate (JOY_calibrate, funcdef_no=608, decl_uid=10123, cgraph_uid=612, symbol_order=615)
+
+scanning new insn with uid = 203.
+rescanning insn with uid = 176.
+Reordered sequence:
+ 2 bb 2
+ 3 bb 3
+ 4 bb 4
+ 5 bb 5
+ 6 bb 6
+ 7 bb 7
+ 8 bb 8
+ 9 bb 9
+ 10 bb 10
+ 11 bb 11
+ 12 bb 12
+ 13 bb 13
+ 14 bb 14
+ 15 bb 15
+ 16 compensation
+
+
+JOY_calibrate
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={19d,9u} r1={13d,2u} r2={11d} r3={11d} r7={1d,16u} r12={20d} r13={1d,26u} r14={11d} r15={10d} r16={11d} r17={11d} r18={11d} r19={11d} r20={11d} r21={11d} r22={11d} r23={11d} r24={11d} r25={11d} r26={11d} r27={11d} r28={11d} r29={11d} r30={11d} r31={11d} r48={10d} r49={10d} r50={10d} r51={10d} r52={10d} r53={10d} r54={10d} r55={10d} r56={10d} r57={10d} r58={10d} r59={10d} r60={10d} r61={10d} r62={10d} r63={10d} r64={10d} r65={10d} r66={10d} r67={10d} r68={10d} r69={10d} r70={10d} r71={10d} r72={10d} r73={10d} r74={10d} r75={10d} r76={10d} r77={10d} r78={10d} r79={10d} r80={10d} r81={10d} r82={10d} r83={10d} r84={10d} r85={10d} r86={10d} r87={10d} r88={10d} r89={10d} r90={10d} r91={10d} r92={10d} r93={10d} r94={10d} r95={10d} r96={10d} r97={10d} r98={10d} r99={10d} r100={18d,7u} r101={10d} r102={1d,18u,1e} r103={1d,15u} r104={10d} r105={10d} r106={10d} r113={1d,6u} r114={2d,2u} r115={1d,6u} r116={2d,2u} r117={2d,2u} r118={2d,2u} r123={1d,3u} r125={1d,2u} r126={1d,2u} r127={1d,1u} r146={1d,1u} r149={1d,1u} r153={1d,1u} r159={1d,1u} r162={1d,1u} r169={1d,18u} r170={1d,1u} r172={1d,2u} r173={1d,2u} r174={1d,2u} 
+;;    total ref usage 1029{877d,151u,1e} in 122{112 regular + 10 call} insns.
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 7 9 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 9 2 10 2 (debug_marker) "../System/joystick.c":371:2 -1
+     (nil))
+(debug_insn 10 9 11 2 (var_location:QI pressed_key (const_int 2 [0x2])) "../System/joystick.c":371:26 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "../System/joystick.c":375:2 -1
+     (nil))
+(debug_insn 12 11 13 2 (var_location:QI pressed_key (const_int 2 [0x2])) -1
+     (nil))
+(debug_insn 13 12 193 2 (debug_marker) "../System/joystick.c":375:8 -1
+     (nil))
+(insn 193 13 194 2 (set (reg/f:SI 169)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) -1
+     (nil))
+(insn 194 193 114 2 (set (reg/f:SI 170)
+        (plus:SI (reg/f:SI 102 sfp)
+            (const_int -1 [0xffffffffffffffff]))) 7 {*arm_addsi3}
+     (nil))
+(insn 114 194 163 2 (set (reg/f:SI 172)
+        (symbol_ref:SI ("*.LANCHOR2") [flags 0x182])) "../System/joystick.c":294:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 163 114 179 2 (set (reg/f:SI 173)
+        (symbol_ref/v/f:SI ("*.LC12") [flags 0x82]  <var_decl 0000000007e8b750 *.LC12>)) "../System/joystick.c":435:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(code_label 179 163 14 3 49 (nil) [2 uses])
+(note 14 179 15 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 15 14 16 3 (var_location:QI pressed_key (const_int 2 [0x2])) -1
+     (nil))
+(debug_insn 16 15 18 3 (debug_marker) "../System/joystick.c":382:4 -1
+     (nil))
+(insn 18 16 20 3 (set (reg:SI 113 [ _1 ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 169)
+                    (const_int 12 [0xc])) [5 joystick.position_raw[0]+0 S2 A32]))) "../System/joystick.c":382:30 1005 {*thumb2_zero_extendhisi2_v6}
+     (expr_list:REG_EQUAL (zero_extend:SI (mem/c:HI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                        (const_int 12 [0xc]))) [5 joystick.position_raw[0]+0 S2 A32]))
+        (nil)))
+(insn 20 18 21 3 (set (reg:SI 114 [ _2 ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 169)
+                    (const_int 16 [0x10])) [5 joystick.position_raw_min[0]+0 S2 A64]))) "../System/joystick.c":382:61 1005 {*thumb2_zero_extendhisi2_v6}
+     (expr_list:REG_EQUAL (zero_extend:SI (mem/c:HI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                        (const_int 16 [0x10]))) [5 joystick.position_raw_min[0]+0 S2 A64]))
+        (nil)))
+(insn 21 20 22 3 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 113 [ _1 ])
+            (reg:SI 114 [ _2 ]))) "../System/joystick.c":382:7 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 22 21 23 3 (set (pc)
+        (if_then_else (geu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 28)
+            (pc))) "../System/joystick.c":382:7 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 28)
+(note 23 22 24 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 24 23 27 4 (debug_marker) "../System/joystick.c":386:5 -1
+     (nil))
+(insn 27 24 3 4 (set (mem/c:HI (plus:SI (reg/f:SI 169)
+                (const_int 16 [0x10])) [5 joystick.position_raw_min[0]+0 S2 A64])
+        (subreg/s/v:HI (reg:SI 113 [ _1 ]) 0)) "../System/joystick.c":386:34 724 {*thumb2_movhi_vfp}
+     (nil))
+(insn 3 27 28 4 (set (reg:SI 114 [ _2 ])
+        (reg:SI 113 [ _1 ])) "../System/joystick.c":386:34 728 {*thumb2_movsi_vfp}
+     (nil))
+(code_label 28 3 29 5 41 (nil) [1 uses])
+(note 29 28 30 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 30 29 32 5 (debug_marker) "../System/joystick.c":391:4 -1
+     (nil))
+(insn 32 30 34 5 (set (reg:SI 115 [ _3 ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 169)
+                    (const_int 14 [0xe])) [5 joystick.position_raw[1]+0 S2 A16]))) "../System/joystick.c":391:30 1005 {*thumb2_zero_extendhisi2_v6}
+     (expr_list:REG_EQUAL (zero_extend:SI (mem/c:HI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                        (const_int 14 [0xe]))) [5 joystick.position_raw[1]+0 S2 A16]))
+        (nil)))
+(insn 34 32 35 5 (set (reg:SI 116 [ _4 ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 169)
+                    (const_int 18 [0x12])) [5 joystick.position_raw_min[1]+0 S2 A16]))) "../System/joystick.c":391:61 1005 {*thumb2_zero_extendhisi2_v6}
+     (expr_list:REG_EQUAL (zero_extend:SI (mem/c:HI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                        (const_int 18 [0x12]))) [5 joystick.position_raw_min[1]+0 S2 A16]))
+        (nil)))
+(insn 35 34 36 5 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 115 [ _3 ])
+            (reg:SI 116 [ _4 ]))) "../System/joystick.c":391:7 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 36 35 37 5 (set (pc)
+        (if_then_else (geu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 42)
+            (pc))) "../System/joystick.c":391:7 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 42)
+(note 37 36 38 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 38 37 41 6 (debug_marker) "../System/joystick.c":395:5 -1
+     (nil))
+(insn 41 38 4 6 (set (mem/c:HI (plus:SI (reg/f:SI 169)
+                (const_int 18 [0x12])) [5 joystick.position_raw_min[1]+0 S2 A16])
+        (subreg/s/v:HI (reg:SI 115 [ _3 ]) 0)) "../System/joystick.c":395:34 724 {*thumb2_movhi_vfp}
+     (nil))
+(insn 4 41 42 6 (set (reg:SI 116 [ _4 ])
+        (reg:SI 115 [ _3 ])) "../System/joystick.c":395:34 728 {*thumb2_movsi_vfp}
+     (nil))
+(code_label 42 4 43 7 42 (nil) [1 uses])
+(note 43 42 44 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 44 43 46 7 (debug_marker) "../System/joystick.c":403:4 -1
+     (nil))
+(insn 46 44 47 7 (set (reg:SI 117 [ _5 ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 169)
+                    (const_int 20 [0x14])) [5 joystick.position_raw_max[0]+0 S2 A32]))) "../System/joystick.c":403:61 1005 {*thumb2_zero_extendhisi2_v6}
+     (expr_list:REG_EQUAL (zero_extend:SI (mem/c:HI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                        (const_int 20 [0x14]))) [5 joystick.position_raw_max[0]+0 S2 A32]))
+        (nil)))
+(insn 47 46 48 7 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 113 [ _1 ])
+            (reg:SI 117 [ _5 ]))) "../System/joystick.c":403:7 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 48 47 49 7 (set (pc)
+        (if_then_else (leu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 54)
+            (pc))) "../System/joystick.c":403:7 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 54)
+(note 49 48 50 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 50 49 53 8 (debug_marker) "../System/joystick.c":407:5 -1
+     (nil))
+(insn 53 50 5 8 (set (mem/c:HI (plus:SI (reg/f:SI 169)
+                (const_int 20 [0x14])) [5 joystick.position_raw_max[0]+0 S2 A32])
+        (subreg/s/v:HI (reg:SI 113 [ _1 ]) 0)) "../System/joystick.c":407:34 724 {*thumb2_movhi_vfp}
+     (nil))
+(insn 5 53 54 8 (set (reg:SI 117 [ _5 ])
+        (reg:SI 113 [ _1 ])) "../System/joystick.c":407:34 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 113 [ _1 ])
+        (nil)))
+(code_label 54 5 55 9 43 (nil) [1 uses])
+(note 55 54 56 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 56 55 58 9 (debug_marker) "../System/joystick.c":412:4 -1
+     (nil))
+(insn 58 56 59 9 (set (reg:SI 118 [ _6 ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 169)
+                    (const_int 22 [0x16])) [5 joystick.position_raw_max[1]+0 S2 A16]))) "../System/joystick.c":412:61 1005 {*thumb2_zero_extendhisi2_v6}
+     (expr_list:REG_EQUAL (zero_extend:SI (mem/c:HI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                        (const_int 22 [0x16]))) [5 joystick.position_raw_max[1]+0 S2 A16]))
+        (nil)))
+(insn 59 58 60 9 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 115 [ _3 ])
+            (reg:SI 118 [ _6 ]))) "../System/joystick.c":412:7 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 60 59 61 9 (set (pc)
+        (if_then_else (leu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 66)
+            (pc))) "../System/joystick.c":412:7 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 66)
+(note 61 60 62 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 62 61 65 10 (debug_marker) "../System/joystick.c":416:5 -1
+     (nil))
+(insn 65 62 6 10 (set (mem/c:HI (plus:SI (reg/f:SI 169)
+                (const_int 22 [0x16])) [5 joystick.position_raw_max[1]+0 S2 A16])
+        (subreg/s/v:HI (reg:SI 115 [ _3 ]) 0)) "../System/joystick.c":416:34 724 {*thumb2_movhi_vfp}
+     (nil))
+(insn 6 65 66 10 (set (reg:SI 118 [ _6 ])
+        (reg:SI 115 [ _3 ])) "../System/joystick.c":416:34 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 115 [ _3 ])
+        (nil)))
+(code_label 66 6 67 11 44 (nil) [1 uses])
+(note 67 66 68 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 68 67 70 11 (debug_marker) "../System/joystick.c":422:3 -1
+     (nil))
+(insn 70 68 72 11 (set (reg:SI 146)
+        (minus:SI (reg:SI 117 [ _5 ])
+            (reg:SI 114 [ _2 ]))) "../System/joystick.c":422:65 45 {*arm_subsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 117 [ _5 ])
+        (expr_list:REG_DEAD (reg:SI 114 [ _2 ])
+            (nil))))
+(insn 72 70 73 11 (set (mem/c:HI (plus:SI (reg/f:SI 169)
+                (const_int 24 [0x18])) [5 joystick.position_raw_range[0]+0 S2 A64])
+        (subreg:HI (reg:SI 146) 0)) "../System/joystick.c":422:34 724 {*thumb2_movhi_vfp}
+     (expr_list:REG_DEAD (reg:SI 146)
+        (nil)))
+(debug_insn 73 72 75 11 (debug_marker) "../System/joystick.c":423:3 -1
+     (nil))
+(insn 75 73 77 11 (set (reg:SI 149)
+        (minus:SI (reg:SI 118 [ _6 ])
+            (reg:SI 116 [ _4 ]))) "../System/joystick.c":423:65 45 {*arm_subsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 118 [ _6 ])
+        (expr_list:REG_DEAD (reg:SI 116 [ _4 ])
+            (nil))))
+(insn 77 75 78 11 (set (mem/c:HI (plus:SI (reg/f:SI 169)
+                (const_int 26 [0x1a])) [5 joystick.position_raw_range[1]+0 S2 A16])
+        (subreg:HI (reg:SI 149) 0)) "../System/joystick.c":423:34 724 {*thumb2_movhi_vfp}
+     (expr_list:REG_DEAD (reg:SI 149)
+        (nil)))
+(debug_insn 78 77 79 11 (debug_marker) "../System/joystick.c":428:3 -1
+     (nil))
+(debug_insn 79 78 80 11 (debug_marker:BLK) "../System/joystick.c":274:6 -1
+     (nil))
+(debug_insn 80 79 83 11 (debug_marker) "../System/joystick.c":279:2 -1
+     (nil))
+(insn 83 80 85 11 (set (reg:SI 153 [ joystick.button.state_new ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 169)
+                    (const_int 8 [0x8])) [0 joystick.button.state_new+0 S1 A64]))) "../System/joystick.c":279:28 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_EQUAL (zero_extend:SI (mem/c:QI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                        (const_int 8 [0x8]))) [0 joystick.button.state_new+0 S1 A64]))
+        (nil)))
+(insn 85 83 86 11 (set (mem/c:QI (plus:SI (reg/f:SI 169)
+                (const_int 9 [0x9])) [0 joystick.button.state_old+0 S1 A8])
+        (subreg:QI (reg:SI 153 [ joystick.button.state_new ]) 0)) "../System/joystick.c":279:28 263 {*arm_movqi_insn}
+     (expr_list:REG_DEAD (reg:SI 153 [ joystick.button.state_new ])
+        (nil)))
+(debug_insn 86 85 88 11 (debug_marker) "../System/joystick.c":282:2 -1
+     (nil))
+(insn 88 86 90 11 (set (reg/f:SI 125 [ _37 ])
+        (mem/f/c:SI (reg/f:SI 169) [2 joystick.button.port+0 S4 A64])) "../System/joystick.c":282:30 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (mem/f/c:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]) [2 joystick.button.port+0 S4 A64])
+        (nil)))
+(insn 90 88 91 11 (set (reg:SI 126 [ _38 ])
+        (mem/c:SI (plus:SI (reg/f:SI 169)
+                (const_int 4 [0x4])) [3 joystick.button.pin+0 S4 A32])) "../System/joystick.c":282:30 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (mem/c:SI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                    (const_int 4 [0x4]))) [3 joystick.button.pin+0 S4 A32])
+        (nil)))
+(debug_insn 91 90 92 11 (var_location:SI GPIOx (reg/f:SI 125 [ _37 ])) "../System/joystick.c":282:30 -1
+     (nil))
+(debug_insn 92 91 93 11 (var_location:SI PinMask (reg:SI 126 [ _38 ])) "../System/joystick.c":282:30 -1
+     (nil))
+(debug_insn 93 92 94 11 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h":813:26 -1
+     (nil))
+(debug_insn 94 93 95 11 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h":815:3 -1
+     (nil))
+(insn 95 94 96 11 (set (reg:SI 127 [ _39 ])
+        (mem/v:SI (plus:SI (reg/f:SI 125 [ _37 ])
+                (const_int 16 [0x10])) [3 _37->IDR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h":815:12 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 125 [ _37 ])
+        (nil)))
+(debug_insn 96 95 97 11 (var_location:SI GPIOx (clobber (const_int 0 [0]))) "../System/joystick.c":282:30 -1
+     (nil))
+(debug_insn 97 96 99 11 (var_location:SI PinMask (clobber (const_int 0 [0]))) "../System/joystick.c":282:30 -1
+     (nil))
+(note 99 97 100 11 NOTE_INSN_DELETED)
+(insn 100 99 101 11 (parallel [
+            (set (reg:CC_NZ 100 cc)
+                (compare:CC_NZ (and:SI (not:SI (reg:SI 127 [ _39 ]))
+                        (reg:SI 126 [ _38 ]))
+                    (const_int 0 [0])))
+            (clobber (scratch:SI))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h":815:62 105 {*andsi_notsi_si_compare0_scratch}
+     (expr_list:REG_DEAD (reg:SI 127 [ _39 ])
+        (expr_list:REG_DEAD (reg:SI 126 [ _38 ])
+            (nil))))
+(insn 101 100 103 11 (set (reg:SI 159)
+        (eq:SI (reg:CC_NZ 100 cc)
+            (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h":815:62 981 {*thumb2_mov_scc}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (nil)))
+(insn 103 101 104 11 (set (mem/c:QI (plus:SI (reg/f:SI 169)
+                (const_int 8 [0x8])) [0 joystick.button.state_new+0 S1 A64])
+        (subreg:QI (reg:SI 159) 0)) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h":815:62 263 {*arm_movqi_insn}
+     (expr_list:REG_DEAD (reg:SI 159)
+        (nil)))
+(debug_insn 104 103 106 11 (debug_marker) "../System/joystick.c":288:2 -1
+     (nil))
+(insn 106 104 107 11 (set (reg:SI 162 [ joystick+8 ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 169)
+                    (const_int 8 [0x8])) [4 joystick+8 S2 A64]))) "../System/joystick.c":288:5 1005 {*thumb2_zero_extendhisi2_v6}
+     (expr_list:REG_EQUAL (zero_extend:SI (mem/c:HI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                        (const_int 8 [0x8]))) [4 joystick+8 S2 A64]))
+        (nil)))
+(insn 107 106 108 11 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 162 [ joystick+8 ])
+            (const_int 256 [0x100]))) "../System/joystick.c":288:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 162 [ joystick+8 ])
+        (nil)))
+(jump_insn 108 107 109 11 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 116)
+            (pc))) "../System/joystick.c":288:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 856416484 (nil)))
+ -> 116)
+(note 109 108 110 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 110 109 111 12 (debug_marker:BLK) "../System/joystick.c":274:6 -1
+     (nil))
+(debug_insn 111 110 196 12 (debug_marker) "../System/joystick.c":294:3 -1
+     (nil))
+(insn 196 111 197 12 (set (reg:SI 1 r1)
+        (const_int 0 [0])) "../System/joystick.c":294:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 197 196 115 12 (set (reg:SI 0 r0)
+        (reg/f:SI 172)) "../System/joystick.c":294:3 -1
+     (nil))
+(call_insn 115 197 116 12 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("BUF_store_byte") [flags 0x41]  <function_decl 0000000007b7c900 BUF_store_byte>) [0 BUF_store_byte S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":294:3 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("BUF_store_byte") [flags 0x41]  <function_decl 0000000007b7c900 BUF_store_byte>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (nil)))))
+(code_label 116 115 117 13 45 (nil) [1 uses])
+(note 117 116 118 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 118 117 119 13 (debug_marker) "../System/joystick.c":429:3 -1
+     (nil))
+(debug_insn 119 118 120 13 (debug_marker:BLK) "../System/joystick.c":305:25 -1
+     (nil))
+(debug_insn 120 119 121 13 (debug_marker) "../System/joystick.c":311:2 -1
+     (nil))
+(debug_insn 121 120 122 13 (debug_marker) "../System/joystick.c":312:2 -1
+     (nil))
+(debug_insn 122 121 125 13 (debug_marker) "../System/joystick.c":317:2 -1
+     (nil))
+(insn 125 122 198 13 (set (reg:SI 1 r1)
+        (reg/f:SI 170)) "../System/joystick.c":317:16 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (plus:SI (reg/f:SI 102 sfp)
+            (const_int -1 [0xffffffffffffffff]))
+        (nil)))
+(insn 198 125 127 13 (set (reg:SI 0 r0)
+        (reg/f:SI 172)) "../System/joystick.c":317:16 -1
+     (nil))
+(call_insn 127 198 202 13 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("BUF_get_byte") [flags 0x41]  <function_decl 0000000007b7cb00 BUF_get_byte>) [0 BUF_get_byte S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":317:16 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("BUF_get_byte") [flags 0x41]  <function_decl 0000000007b7cb00 BUF_get_byte>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 202 127 128 13 (set (reg:SI 174)
+        (reg:SI 0 r0)) "../System/joystick.c":317:16 -1
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+(note 128 202 130 13 NOTE_INSN_DELETED)
+(debug_insn 130 128 131 13 (var_location:QI return_code (subreg:QI (reg:SI 174) 0)) "../System/joystick.c":317:16 -1
+     (nil))
+(debug_insn 131 130 132 13 (debug_marker) "../System/joystick.c":322:2 -1
+     (nil))
+(note 132 131 133 13 NOTE_INSN_DELETED)
+(jump_insn 133 132 134 13 (parallel [
+            (set (pc)
+                (if_then_else (eq (reg:SI 174)
+                        (const_int 0 [0]))
+                    (label_ref 154)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/joystick.c":322:5 1024 {*thumb2_cbz}
+     (expr_list:REG_UNUSED (reg:CC 100 cc)
+        (expr_list:REG_DEAD (reg:SI 174)
+            (int_list:REG_BR_PROB 697932188 (nil))))
+ -> 154)
+(note 134 133 135 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 135 134 136 14 (var_location:QI return_code (clobber (const_int 0 [0]))) "../System/joystick.c":429:17 -1
+     (nil))
+(debug_insn 136 135 137 14 (var_location:QI pressed_button (clobber (const_int 0 [0]))) "../System/joystick.c":429:17 -1
+     (nil))
+(debug_insn 137 136 138 14 (var_location:QI pressed_key (const_int 2 [0x2])) "../System/joystick.c":429:17 -1
+     (nil))
+(debug_insn 138 137 200 14 (debug_marker) "../System/joystick.c":435:3 -1
+     (nil))
+(insn 200 138 141 14 (set (reg:SI 0 r0)
+        (reg/f:SI 173)) "../System/joystick.c":435:3 -1
+     (nil))
+(call_insn 141 200 142 14 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("puts") [flags 0x41]  <function_decl 000000000673b200 __builtin_puts>) [0 __builtin_puts S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":435:3 291 {*call_value_symbol}
+     (expr_list:REG_UNUSED (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("puts") [flags 0x41]  <function_decl 000000000673b200 __builtin_puts>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 142 141 143 14 (debug_marker) "../System/joystick.c":436:3 -1
+     (nil))
+(call_insn 143 142 144 14 (parallel [
+            (call (mem:SI (symbol_ref:SI ("JOY_SCI_send_status") [flags 0x3]  <function_decl 00000000078df800 JOY_SCI_send_status>) [0 JOY_SCI_send_status S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":436:3 290 {*call_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("JOY_SCI_send_status") [flags 0x3]  <function_decl 00000000078df800 JOY_SCI_send_status>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(debug_insn 144 143 145 14 (debug_marker) "../System/joystick.c":440:3 -1
+     (nil))
+(insn 145 144 146 14 (set (reg:SI 0 r0)
+        (const_int 100 [0x64])) "../System/joystick.c":440:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 146 145 147 14 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 00000000078b0e00 HAL_Delay>) [0 HAL_Delay S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":440:3 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 00000000078b0e00 HAL_Delay>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 147 146 148 14 (debug_marker) "../System/joystick.c":441:3 -1
+     (nil))
+(insn 148 147 149 14 (set (reg:SI 0 r0)
+        (const_int 1 [0x1])) "../System/joystick.c":441:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 149 148 150 14 (parallel [
+            (call (mem:SI (symbol_ref:SI ("LED_on") [flags 0x41]  <function_decl 00000000079f0000 LED_on>) [0 LED_on S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":441:3 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("LED_on") [flags 0x41]  <function_decl 00000000079f0000 LED_on>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 150 149 151 14 (var_location:QI pressed_key (const_int 2 [0x2])) -1
+     (nil))
+(debug_insn 151 150 203 14 (debug_marker) "../System/joystick.c":375:8 -1
+     (nil))
+(jump_insn 203 151 204 14 (set (pc)
+        (label_ref 179)) -1
+     (nil)
+ -> 179)
+(barrier 204 203 154)
+(code_label 154 204 155 15 46 (nil) [1 uses])
+(note 155 154 156 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 156 155 157 15 (debug_marker) "../System/joystick.c":326:3 -1
+     (nil))
+(insn 157 156 158 15 (set (reg:SI 123 [ _32 ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 102 sfp)
+                    (const_int -1 [0xffffffffffffffff])) [0 pressed_button+0 S1 A8]))) "../System/joystick.c":326:10 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(debug_insn 158 157 159 15 (var_location:QI return_code (clobber (const_int 0 [0]))) "../System/joystick.c":429:17 -1
+     (nil))
+(debug_insn 159 158 160 15 (var_location:QI pressed_button (clobber (const_int 0 [0]))) "../System/joystick.c":429:17 -1
+     (nil))
+(debug_insn 160 159 161 15 (var_location:QI pressed_key (subreg:QI (reg:SI 123 [ _32 ]) 0)) "../System/joystick.c":429:17 -1
+     (nil))
+(debug_insn 161 160 199 15 (debug_marker) "../System/joystick.c":435:3 -1
+     (nil))
+(insn 199 161 164 15 (set (reg:SI 0 r0)
+        (reg/f:SI 173)) "../System/joystick.c":435:3 -1
+     (nil))
+(call_insn 164 199 165 15 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("puts") [flags 0x41]  <function_decl 000000000673b200 __builtin_puts>) [0 __builtin_puts S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":435:3 291 {*call_value_symbol}
+     (expr_list:REG_UNUSED (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("puts") [flags 0x41]  <function_decl 000000000673b200 __builtin_puts>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 165 164 166 15 (debug_marker) "../System/joystick.c":436:3 -1
+     (nil))
+(call_insn 166 165 167 15 (parallel [
+            (call (mem:SI (symbol_ref:SI ("JOY_SCI_send_status") [flags 0x3]  <function_decl 00000000078df800 JOY_SCI_send_status>) [0 JOY_SCI_send_status S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":436:3 290 {*call_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("JOY_SCI_send_status") [flags 0x3]  <function_decl 00000000078df800 JOY_SCI_send_status>)
+        (expr_list:REG_EH_REGION (const_int 0 [0])
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(debug_insn 167 166 168 15 (debug_marker) "../System/joystick.c":440:3 -1
+     (nil))
+(insn 168 167 169 15 (set (reg:SI 0 r0)
+        (const_int 100 [0x64])) "../System/joystick.c":440:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 169 168 170 15 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 00000000078b0e00 HAL_Delay>) [0 HAL_Delay S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":440:3 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 00000000078b0e00 HAL_Delay>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 170 169 171 15 (debug_marker) "../System/joystick.c":441:3 -1
+     (nil))
+(insn 171 170 172 15 (set (reg:SI 0 r0)
+        (const_int 1 [0x1])) "../System/joystick.c":441:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 172 171 173 15 (parallel [
+            (call (mem:SI (symbol_ref:SI ("LED_on") [flags 0x41]  <function_decl 00000000079f0000 LED_on>) [0 LED_on S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":441:3 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("LED_on") [flags 0x41]  <function_decl 00000000079f0000 LED_on>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 173 172 174 15 (var_location:QI pressed_key (subreg:QI (reg:SI 123 [ _32 ]) 0)) -1
+     (nil))
+(debug_insn 174 173 175 15 (debug_marker) "../System/joystick.c":375:8 -1
+     (nil))
+(insn 175 174 176 15 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 123 [ _32 ])
+            (const_int 2 [0x2]))) "../System/joystick.c":375:8 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 123 [ _32 ])
+        (nil)))
+(jump_insn 176 175 185 15 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 179)
+            (pc))) "../System/joystick.c":375:8 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 786204220 (nil)))
+ -> 179)
+(note 185 176 0 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+
+;; Function JOY_button_demo (JOY_button_demo, funcdef_no=611, decl_uid=10127, cgraph_uid=615, symbol_order=618)
+
+rescanning insn with uid = 61.
+rescanning insn with uid = 110.
+Reordered sequence:
+ 2 bb 2
+ 3 bb 3
+ 4 bb 4
+ 5 bb 5
+ 6 bb 6
+ 7 bb 7
+ 8 bb 8
+ 9 bb 9
+ 10 bb 10
+ 11 bb 11
+
+
+JOY_button_demo
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={13d,8u} r1={11d,4u} r2={7d} r3={7d} r7={1d,11u} r12={12d} r13={1d,17u} r14={7d} r15={6d} r16={7d} r17={7d} r18={7d} r19={7d} r20={7d} r21={7d} r22={7d} r23={7d} r24={7d} r25={7d} r26={7d} r27={7d} r28={7d} r29={7d} r30={7d} r31={7d} r48={6d} r49={6d} r50={6d} r51={6d} r52={6d} r53={6d} r54={6d} r55={6d} r56={6d} r57={6d} r58={6d} r59={6d} r60={6d} r61={6d} r62={6d} r63={6d} r64={6d} r65={6d} r66={6d} r67={6d} r68={6d} r69={6d} r70={6d} r71={6d} r72={6d} r73={6d} r74={6d} r75={6d} r76={6d} r77={6d} r78={6d} r79={6d} r80={6d} r81={6d} r82={6d} r83={6d} r84={6d} r85={6d} r86={6d} r87={6d} r88={6d} r89={6d} r90={6d} r91={6d} r92={6d} r93={6d} r94={6d} r95={6d} r96={6d} r97={6d} r98={6d} r99={6d} r100={13d,4u} r101={6d} r102={1d,14u,2e} r103={1d,10u} r104={6d} r105={6d} r106={6d} r116={2d,8u} r119={1d,2u} r120={1d,2u} r121={1d,1u} r127={1d,1u} r133={1d,1u} r136={1d,1u} r146={1d,2u} r147={1d,7u} r149={1d,1u} r150={1d,2u} r151={1d,2u} 
+;;    total ref usage 641{541d,98u,2e} in 89{83 regular + 6 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../System/joystick.c":548:2 -1
+     (nil))
+(debug_insn 6 5 7 2 (debug_marker) "../System/joystick.c":552:2 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker:BLK) "../System/joystick.c":274:6 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "../System/joystick.c":279:2 -1
+     (nil))
+(insn 9 8 11 2 (set (reg/f:SI 147)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/joystick.c":279:28 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 11 9 13 2 (set (reg:SI 127 [ joystick.button.state_new ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 147)
+                    (const_int 8 [0x8])) [0 joystick.button.state_new+0 S1 A64]))) "../System/joystick.c":279:28 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_EQUAL (zero_extend:SI (mem/c:QI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                        (const_int 8 [0x8]))) [0 joystick.button.state_new+0 S1 A64]))
+        (nil)))
+(insn 13 11 14 2 (set (mem/c:QI (plus:SI (reg/f:SI 147)
+                (const_int 9 [0x9])) [0 joystick.button.state_old+0 S1 A8])
+        (subreg:QI (reg:SI 127 [ joystick.button.state_new ]) 0)) "../System/joystick.c":279:28 263 {*arm_movqi_insn}
+     (expr_list:REG_DEAD (reg:SI 127 [ joystick.button.state_new ])
+        (nil)))
+(debug_insn 14 13 16 2 (debug_marker) "../System/joystick.c":282:2 -1
+     (nil))
+(insn 16 14 18 2 (set (reg/f:SI 119 [ _22 ])
+        (mem/f/c:SI (reg/f:SI 147) [2 joystick.button.port+0 S4 A64])) "../System/joystick.c":282:30 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (mem/f/c:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]) [2 joystick.button.port+0 S4 A64])
+        (nil)))
+(insn 18 16 19 2 (set (reg:SI 120 [ _23 ])
+        (mem/c:SI (plus:SI (reg/f:SI 147)
+                (const_int 4 [0x4])) [3 joystick.button.pin+0 S4 A32])) "../System/joystick.c":282:30 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (mem/c:SI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                    (const_int 4 [0x4]))) [3 joystick.button.pin+0 S4 A32])
+        (nil)))
+(debug_insn 19 18 20 2 (var_location:SI GPIOx (reg/f:SI 119 [ _22 ])) "../System/joystick.c":282:30 -1
+     (nil))
+(debug_insn 20 19 21 2 (var_location:SI PinMask (reg:SI 120 [ _23 ])) "../System/joystick.c":282:30 -1
+     (nil))
+(debug_insn 21 20 22 2 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h":813:26 -1
+     (nil))
+(debug_insn 22 21 23 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h":815:3 -1
+     (nil))
+(insn 23 22 24 2 (set (reg:SI 121 [ _24 ])
+        (mem/v:SI (plus:SI (reg/f:SI 119 [ _22 ])
+                (const_int 16 [0x10])) [3 _22->IDR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h":815:12 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 119 [ _22 ])
+        (nil)))
+(debug_insn 24 23 25 2 (var_location:SI GPIOx (clobber (const_int 0 [0]))) "../System/joystick.c":282:30 -1
+     (nil))
+(debug_insn 25 24 27 2 (var_location:SI PinMask (clobber (const_int 0 [0]))) "../System/joystick.c":282:30 -1
+     (nil))
+(note 27 25 28 2 NOTE_INSN_DELETED)
+(insn 28 27 29 2 (parallel [
+            (set (reg:CC_NZ 100 cc)
+                (compare:CC_NZ (and:SI (not:SI (reg:SI 121 [ _24 ]))
+                        (reg:SI 120 [ _23 ]))
+                    (const_int 0 [0])))
+            (clobber (scratch:SI))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h":815:62 105 {*andsi_notsi_si_compare0_scratch}
+     (expr_list:REG_DEAD (reg:SI 121 [ _24 ])
+        (expr_list:REG_DEAD (reg:SI 120 [ _23 ])
+            (nil))))
+(insn 29 28 31 2 (set (reg:SI 133)
+        (eq:SI (reg:CC_NZ 100 cc)
+            (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h":815:62 981 {*thumb2_mov_scc}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (nil)))
+(insn 31 29 32 2 (set (mem/c:QI (plus:SI (reg/f:SI 147)
+                (const_int 8 [0x8])) [0 joystick.button.state_new+0 S1 A64])
+        (subreg:QI (reg:SI 133) 0)) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h":815:62 263 {*arm_movqi_insn}
+     (expr_list:REG_DEAD (reg:SI 133)
+        (nil)))
+(debug_insn 32 31 34 2 (debug_marker) "../System/joystick.c":288:2 -1
+     (nil))
+(insn 34 32 35 2 (set (reg:SI 136 [ joystick+8 ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 147)
+                    (const_int 8 [0x8])) [4 joystick+8 S2 A64]))) "../System/joystick.c":288:5 1005 {*thumb2_zero_extendhisi2_v6}
+     (expr_list:REG_EQUAL (zero_extend:SI (mem/c:HI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                        (const_int 8 [0x8]))) [4 joystick+8 S2 A64]))
+        (nil)))
+(insn 35 34 36 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 136 [ joystick+8 ])
+            (const_int 256 [0x100]))) "../System/joystick.c":288:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 136 [ joystick+8 ])
+        (nil)))
+(jump_insn 36 35 37 2 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 44)
+            (pc))) "../System/joystick.c":288:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 856416484 (nil)))
+ -> 44)
+(note 37 36 38 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 38 37 39 3 (debug_marker:BLK) "../System/joystick.c":274:6 -1
+     (nil))
+(debug_insn 39 38 41 3 (debug_marker) "../System/joystick.c":294:3 -1
+     (nil))
+(insn 41 39 42 3 (set (reg:SI 1 r1)
+        (const_int 0 [0])) "../System/joystick.c":294:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 42 41 43 3 (set (reg:SI 0 r0)
+        (symbol_ref:SI ("*.LANCHOR2") [flags 0x182])) "../System/joystick.c":294:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 43 42 44 3 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("BUF_store_byte") [flags 0x41]  <function_decl 0000000007b7c900 BUF_store_byte>) [0 BUF_store_byte S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":294:3 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("BUF_store_byte") [flags 0x41]  <function_decl 0000000007b7c900 BUF_store_byte>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (nil)))))
+(code_label 44 43 45 4 56 (nil) [1 uses])
+(note 45 44 46 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 46 45 47 4 (debug_marker) "../System/joystick.c":555:2 -1
+     (nil))
+(debug_insn 47 46 48 4 (debug_marker:BLK) "../System/joystick.c":305:25 -1
+     (nil))
+(debug_insn 48 47 49 4 (debug_marker) "../System/joystick.c":311:2 -1
+     (nil))
+(debug_insn 49 48 50 4 (debug_marker) "../System/joystick.c":312:2 -1
+     (nil))
+(debug_insn 50 49 51 4 (debug_marker) "../System/joystick.c":317:2 -1
+     (nil))
+(insn 51 50 53 4 (set (reg/f:SI 146)
+        (plus:SI (reg/f:SI 102 sfp)
+            (const_int -1 [0xffffffffffffffff]))) "../System/joystick.c":317:16 7 {*arm_addsi3}
+     (nil))
+(insn 53 51 54 4 (set (reg:SI 1 r1)
+        (reg/f:SI 146)) "../System/joystick.c":317:16 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (plus:SI (reg/f:SI 102 sfp)
+            (const_int -1 [0xffffffffffffffff]))
+        (nil)))
+(insn 54 53 55 4 (set (reg:SI 0 r0)
+        (symbol_ref:SI ("*.LANCHOR2") [flags 0x182])) "../System/joystick.c":317:16 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 55 54 165 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("BUF_get_byte") [flags 0x41]  <function_decl 0000000007b7cb00 BUF_get_byte>) [0 BUF_get_byte S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":317:16 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("BUF_get_byte") [flags 0x41]  <function_decl 0000000007b7cb00 BUF_get_byte>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 165 55 56 4 (set (reg:SI 150)
+        (reg:SI 0 r0)) "../System/joystick.c":317:16 -1
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+(note 56 165 58 4 NOTE_INSN_DELETED)
+(debug_insn 58 56 59 4 (var_location:QI return_code (subreg:QI (reg:SI 150) 0)) "../System/joystick.c":317:16 -1
+     (nil))
+(debug_insn 59 58 60 4 (debug_marker) "../System/joystick.c":322:2 -1
+     (nil))
+(note 60 59 61 4 NOTE_INSN_DELETED)
+(jump_insn 61 60 72 4 (parallel [
+            (set (pc)
+                (if_then_else (ne (reg:SI 150)
+                        (const_int 0 [0]))
+                    (label_ref:SI 131)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/joystick.c":322:5 1025 {*thumb2_cbnz}
+     (expr_list:REG_UNUSED (reg:CC 100 cc)
+        (expr_list:REG_DEAD (reg:SI 150)
+            (int_list:REG_BR_PROB 375809644 (nil))))
+ -> 131)
+(note 72 61 73 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 73 72 74 5 (debug_marker) "../System/joystick.c":326:3 -1
+     (nil))
+(insn 74 73 75 5 (set (reg/v:SI 116 [ pressed_key ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 102 sfp)
+                    (const_int -1 [0xffffffffffffffff])) [0 MEM[(<unnamed type> *)_12]+0 S1 A8]))) "../System/joystick.c":326:10 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(debug_insn 75 74 76 5 (var_location:QI return_code (clobber (const_int 0 [0]))) "../System/joystick.c":555:16 -1
+     (nil))
+(debug_insn 76 75 77 5 (var_location:QI pressed_button (clobber (const_int 0 [0]))) "../System/joystick.c":555:16 -1
+     (nil))
+(debug_insn 77 76 78 5 (var_location:QI pressed_key (subreg:QI (reg/v:SI 116 [ pressed_key ]) 0)) "../System/joystick.c":555:16 -1
+     (nil))
+(debug_insn 78 77 79 5 (debug_marker) "../System/joystick.c":559:2 -1
+     (nil))
+(debug_insn 79 78 80 5 (var_location:QI pressed_key (subreg:QI (reg/v:SI 116 [ pressed_key ]) 0)) -1
+     (nil))
+(debug_insn 80 79 81 5 (debug_marker) "../System/joystick.c":559:8 -1
+     (nil))
+(insn 81 80 82 5 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 116 [ pressed_key ])
+            (const_int 2 [0x2]))) "../System/joystick.c":559:8 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 82 81 157 5 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 131)
+            (pc))) "../System/joystick.c":559:8 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 15399172 (nil)))
+ -> 131)
+(note 157 82 103 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 103 157 126 6 (set (reg/f:SI 149)
+        (symbol_ref:SI ("*.LANCHOR2") [flags 0x182])) "../System/joystick.c":317:16 728 {*thumb2_movsi_vfp}
+     (nil))
+(code_label 126 103 83 7 62 (nil) [1 uses])
+(note 83 126 84 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 84 83 85 7 (var_location:QI pressed_key (subreg:QI (reg/v:SI 116 [ pressed_key ]) 0)) -1
+     (nil))
+(debug_insn 85 84 86 7 (debug_marker) "../System/joystick.c":562:3 -1
+     (nil))
+(note 86 85 87 7 NOTE_INSN_DELETED)
+(jump_insn 87 86 88 7 (parallel [
+            (set (pc)
+                (if_then_else (ne (reg/v:SI 116 [ pressed_key ])
+                        (const_int 0 [0]))
+                    (label_ref 93)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/joystick.c":562:3 1025 {*thumb2_cbnz}
+     (expr_list:REG_UNUSED (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 719407028 (nil)))
+ -> 93)
+(note 88 87 89 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 89 88 160 8 (debug_marker) "../System/joystick.c":565:6 -1
+     (nil))
+(insn 160 89 91 8 (set (reg:SI 0 r0)
+        (reg/v:SI 116 [ pressed_key ])) "../System/joystick.c":565:6 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 116 [ pressed_key ])
+        (expr_list:REG_EQUAL (const_int 0 [0])
+            (nil))))
+(call_insn 91 160 92 8 (parallel [
+            (call (mem:SI (symbol_ref:SI ("LED_toggle") [flags 0x41]  <function_decl 00000000079f0200 LED_toggle>) [0 LED_toggle S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":565:6 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("LED_toggle") [flags 0x41]  <function_decl 00000000079f0200 LED_toggle>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 92 91 93 8 (debug_marker) "../System/joystick.c":567:6 -1
+     (nil))
+(code_label 93 92 94 9 60 (nil) [1 uses])
+(note 94 93 95 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 95 94 96 9 (debug_marker) "../System/joystick.c":574:3 -1
+     (nil))
+(debug_insn 96 95 97 9 (debug_marker:BLK) "../System/joystick.c":305:25 -1
+     (nil))
+(debug_insn 97 96 98 9 (debug_marker) "../System/joystick.c":311:2 -1
+     (nil))
+(debug_insn 98 97 99 9 (debug_marker) "../System/joystick.c":312:2 -1
+     (nil))
+(debug_insn 99 98 102 9 (debug_marker) "../System/joystick.c":317:2 -1
+     (nil))
+(insn 102 99 161 9 (set (reg:SI 1 r1)
+        (reg/f:SI 146)) "../System/joystick.c":317:16 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (plus:SI (reg/f:SI 102 sfp)
+            (const_int -1 [0xffffffffffffffff]))
+        (nil)))
+(insn 161 102 104 9 (set (reg:SI 0 r0)
+        (reg/f:SI 149)) "../System/joystick.c":317:16 -1
+     (nil))
+(call_insn 104 161 166 9 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("BUF_get_byte") [flags 0x41]  <function_decl 0000000007b7cb00 BUF_get_byte>) [0 BUF_get_byte S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":317:16 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("BUF_get_byte") [flags 0x41]  <function_decl 0000000007b7cb00 BUF_get_byte>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 166 104 105 9 (set (reg:SI 151)
+        (reg:SI 0 r0)) "../System/joystick.c":317:16 -1
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+(note 105 166 107 9 NOTE_INSN_DELETED)
+(debug_insn 107 105 108 9 (var_location:QI return_code (subreg:QI (reg:SI 151) 0)) "../System/joystick.c":317:16 -1
+     (nil))
+(debug_insn 108 107 109 9 (debug_marker) "../System/joystick.c":322:2 -1
+     (nil))
+(note 109 108 110 9 NOTE_INSN_DELETED)
+(jump_insn 110 109 119 9 (parallel [
+            (set (pc)
+                (if_then_else (ne (reg:SI 151)
+                        (const_int 0 [0]))
+                    (label_ref:SI 131)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/joystick.c":322:5 1025 {*thumb2_cbnz}
+     (expr_list:REG_UNUSED (reg:CC 100 cc)
+        (expr_list:REG_DEAD (reg:SI 151)
+            (int_list:REG_BR_PROB 375809644 (nil))))
+ -> 131)
+(note 119 110 120 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 120 119 121 10 (debug_marker) "../System/joystick.c":326:3 -1
+     (nil))
+(insn 121 120 122 10 (set (reg/v:SI 116 [ pressed_key ])
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 102 sfp)
+                    (const_int -1 [0xffffffffffffffff])) [0 MEM[(<unnamed type> *)_12]+0 S1 A8]))) "../System/joystick.c":326:10 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(debug_insn 122 121 123 10 (var_location:QI return_code (clobber (const_int 0 [0]))) "../System/joystick.c":574:17 -1
+     (nil))
+(debug_insn 123 122 124 10 (var_location:QI pressed_button (clobber (const_int 0 [0]))) "../System/joystick.c":574:17 -1
+     (nil))
+(debug_insn 124 123 125 10 (var_location:QI pressed_key (subreg:QI (reg/v:SI 116 [ pressed_key ]) 0)) -1
+     (nil))
+(debug_insn 125 124 127 10 (debug_marker) "../System/joystick.c":559:8 -1
+     (nil))
+(insn 127 125 128 10 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 116 [ pressed_key ])
+            (const_int 2 [0x2]))) "../System/joystick.c":559:8 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 128 127 131 10 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 126)
+            (pc))) "../System/joystick.c":559:8 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 1014686028 (nil)))
+ -> 126)
+(code_label 131 128 132 11 58 (nil) [3 uses])
+(note 132 131 133 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 133 132 134 11 (debug_marker) "../System/joystick.c":579:2 -1
+     (nil))
+(debug_insn 134 133 135 11 (debug_marker:BLK) "../System/joystick.c":343:29 -1
+     (nil))
+(debug_insn 135 134 137 11 (debug_marker) "../System/joystick.c":345:2 -1
+     (nil))
+(note 137 135 138 11 NOTE_INSN_DELETED)
+(insn 138 137 139 11 (set (reg:SI 1 r1)
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 147)
+                    (const_int 8 [0x8])) [0 joystick.button.state_new+0 S1 A64]))) "../System/joystick.c":579:2 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_DEAD (reg/f:SI 147)
+        (nil)))
+(insn 139 138 140 11 (set (reg:SI 0 r0)
+        (const_int 7 [0x7])) "../System/joystick.c":579:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 140 139 141 11 (parallel [
+            (call (mem:SI (symbol_ref:SI ("LED_set") [flags 0x41]  <function_decl 00000000079f0300 LED_set>) [0 LED_set S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/joystick.c":579:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_DEAD (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("LED_set") [flags 0x41]  <function_decl 00000000079f0300 LED_set>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (expr_list:QI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 141 140 142 11 (debug_marker) "../System/joystick.c":583:2 -1
+     (nil))
+(insn 142 141 143 11 (set (reg:SI 0 r0)
+        (const_int 10 [0xa])) "../System/joystick.c":583:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn/j 143 142 144 11 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 00000000078b0e00 HAL_Delay>) [0 HAL_Delay S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../System/joystick.c":583:2 292 {*sibcall_insn}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 00000000078b0e00 HAL_Delay>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(barrier 144 143 0)
+
+;; Function JOY_LED_demo (JOY_LED_demo, funcdef_no=612, decl_uid=10129, cgraph_uid=616, symbol_order=619)
+
+Reordered sequence:
+ 2 compensation
+
+
+JOY_LED_demo
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r7={1d,2u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r102={1d,2u} r103={1d,1u} 
+;;    total ref usage 32{25d,7u,0e} in 1{1 regular + 0 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 0 2 (debug_marker) "../System/joystick.c":598:1 -1
+     (nil))

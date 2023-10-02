@@ -1,0 +1,455 @@
+
+;; Function HAL_NVIC_SetPriority (HAL_NVIC_SetPriority, funcdef_no=330, decl_uid=7660, cgraph_uid=334, symbol_order=333)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; Following path with 32 sets: 2 
+;; Following path with 2 sets: 4 
+deferring rescan insn with uid = 7.
+;; Following path with 5 sets: 3 
+;; Following path with 19 sets: 5 
+;; Following path with 11 sets: 7 
+;; Following path with 6 sets: 6 
+starting the processing of deferred insns
+rescanning insn with uid = 7.
+ending the processing of deferred insns
+
+
+HAL_NVIC_SetPriority
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 100 [cc]
+;;  ref usage 	r0={1d,1u} r1={1d,1u} r2={1d,1u} r3={1d} r7={1d,8u} r13={1d,8u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={3d,2u} r102={1d,8u} r103={1d,7u} r115={1d,1u} r120={1d,1u} r121={1d,1u} r123={2d,3u,1e} r125={2d,3u,1e} r130={1d,3u} r131={1d,1u} r133={1d,6u} r136={2d,2u} r137={1d,4u,1e} r138={1d,2u} r139={1d,2u} r140={1d,1u} r141={1d,1u} r142={1d,1u} r143={1d,1u} r144={1d,1u} r145={1d,1u} r146={1d,1u} r147={1d,1u} r148={1d,1u} r149={1d,1u} r150={1d,1u} r154={1d,1u} r155={1d,1u} r156={1d,1u} r159={1d,1u} r160={1d,1u,1e} r162={1d,1u} r163={1d,1u} r164={1d,1u} 
+;;    total ref usage 150{62d,84u,4e} in 74{74 regular + 0 call} insns.
+(note 8 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 8 3 2 (set (reg/v:SI 137 [ IRQn ])
+        (reg:SI 0 r0 [ IRQn ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":186:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [ IRQn ])
+        (nil)))
+(insn 3 2 4 2 (set (reg/v:SI 138 [ PreemptPriority ])
+        (reg:SI 1 r1 [ PreemptPriority ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":186:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [ PreemptPriority ])
+        (nil)))
+(insn 4 3 5 2 (set (reg/v:SI 139 [ SubPriority ])
+        (reg:SI 2 r2 [ SubPriority ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":186:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [ SubPriority ])
+        (nil)))
+(note 5 4 10 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 10 5 11 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":187:3 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":190:3 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":191:3 -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":193:3 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker:BLK) "../Drivers/CMSIS/Include/core_cm4.h":1667:26 -1
+     (nil))
+(debug_insn 15 14 16 2 (debug_marker) "../Drivers/CMSIS/Include/core_cm4.h":1669:3 -1
+     (nil))
+(insn 16 15 17 2 (set (reg/f:SI 140)
+        (const_int -536810240 [0xffffffffe000ed00])) "../Drivers/CMSIS/Include/core_cm4.h":1669:26 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 17 16 18 2 (set (reg:SI 131 [ _27 ])
+        (mem/v:SI (plus:SI (reg/f:SI 140)
+                (const_int 12 [0xc])) [1 MEM[(struct SCB_Type *)3758157056B].AIRCR+0 S4 A32])) "../Drivers/CMSIS/Include/core_cm4.h":1669:26 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 140)
+        (nil)))
+(insn 18 17 19 2 (set (reg:SI 141)
+        (lshiftrt:SI (reg:SI 131 [ _27 ])
+            (const_int 8 [0x8]))) "../Drivers/CMSIS/Include/core_cm4.h":1669:11 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 131 [ _27 ])
+        (nil)))
+(insn 19 18 20 2 (set (reg:SI 133 [ _29 ])
+        (and:SI (reg:SI 141)
+            (const_int 7 [0x7]))) "../Drivers/CMSIS/Include/core_cm4.h":1669:11 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 141)
+        (nil)))
+(debug_insn 20 19 21 2 (var_location:SI prioritygroup (reg:SI 133 [ _29 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":193:19 -1
+     (nil))
+(debug_insn 21 20 22 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":195:3 -1
+     (nil))
+(debug_insn 22 21 23 2 (var_location:SI PriorityGroup (reg:SI 133 [ _29 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":195:3 -1
+     (nil))
+(debug_insn 23 22 24 2 (var_location:SI PreemptPriority (reg/v:SI 138 [ PreemptPriority ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":195:3 -1
+     (nil))
+(debug_insn 24 23 25 2 (var_location:SI SubPriority (reg/v:SI 139 [ SubPriority ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":195:3 -1
+     (nil))
+(debug_insn 25 24 26 2 (debug_marker:BLK) "../Drivers/CMSIS/Include/core_cm4.h":1856:26 -1
+     (nil))
+(debug_insn 26 25 27 2 (debug_marker) "../Drivers/CMSIS/Include/core_cm4.h":1858:3 -1
+     (nil))
+(debug_insn 27 26 28 2 (var_location:SI PriorityGroupTmp (reg:SI 133 [ _29 ])) "../Drivers/CMSIS/Include/core_cm4.h":1858:12 -1
+     (nil))
+(debug_insn 28 27 29 2 (debug_marker) "../Drivers/CMSIS/Include/core_cm4.h":1859:3 -1
+     (nil))
+(debug_insn 29 28 30 2 (debug_marker) "../Drivers/CMSIS/Include/core_cm4.h":1860:3 -1
+     (nil))
+(debug_insn 30 29 31 2 (debug_marker) "../Drivers/CMSIS/Include/core_cm4.h":1862:3 -1
+     (nil))
+(insn 31 30 32 2 (set (reg/v:SI 123 [ PreemptPriorityBits ])
+        (minus:SI (const_int 7 [0x7])
+            (reg:SI 133 [ _29 ]))) "../Drivers/CMSIS/Include/core_cm4.h":1862:31 45 {*arm_subsi3_insn}
+     (nil))
+(insn 32 31 33 2 (parallel [
+            (set (reg/v:SI 123 [ PreemptPriorityBits ])
+                (umin:SI (reg/v:SI 123 [ PreemptPriorityBits ])
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1862:23 973 {*thumb2_uminsi3}
+     (expr_list:REG_UNUSED (reg:CC 100 cc)
+        (nil)))
+(debug_insn 33 32 34 2 (var_location:SI PreemptPriorityBits (reg/v:SI 123 [ PreemptPriorityBits ])) "../Drivers/CMSIS/Include/core_cm4.h":1862:23 -1
+     (nil))
+(debug_insn 34 33 35 2 (debug_marker) "../Drivers/CMSIS/Include/core_cm4.h":1863:3 -1
+     (nil))
+(insn 35 34 38 2 (set (reg:SI 142)
+        (plus:SI (reg:SI 133 [ _29 ])
+            (const_int 4 [0x4]))) "../Drivers/CMSIS/Include/core_cm4.h":1863:44 7 {*arm_addsi3}
+     (nil))
+(insn 38 35 39 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 142)
+            (const_int 6 [0x6]))) "../Drivers/CMSIS/Include/core_cm4.h":1863:109 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 142)
+        (nil)))
+(jump_insn 39 38 40 2 (set (pc)
+        (if_then_else (leu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 106)
+            (pc))) "../Drivers/CMSIS/Include/core_cm4.h":1863:109 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 106)
+(note 40 39 41 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 41 40 42 3 (set (reg:SI 125 [ iftmp.0_17 ])
+        (plus:SI (reg:SI 133 [ _29 ])
+            (const_int -3 [0xfffffffffffffffd]))) "../Drivers/CMSIS/Include/core_cm4.h":1863:109 7 {*arm_addsi3}
+     (expr_list:REG_DEAD (reg:SI 133 [ _29 ])
+        (nil)))
+(insn 42 41 43 3 (set (reg:SI 144)
+        (const_int -1 [0xffffffffffffffff])) "../Drivers/CMSIS/Include/core_cm4.h":1867:30 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 43 42 44 3 (set (reg:SI 143)
+        (ashift:SI (reg:SI 144)
+            (reg:SI 125 [ iftmp.0_17 ]))) "../Drivers/CMSIS/Include/core_cm4.h":1867:30 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 144)
+        (expr_list:REG_EQUAL (ashift:SI (const_int -1 [0xffffffffffffffff])
+                (reg:SI 125 [ iftmp.0_17 ]))
+            (nil))))
+(insn 44 43 45 3 (set (reg:SI 145)
+        (not:SI (reg:SI 143))) "../Drivers/CMSIS/Include/core_cm4.h":1867:30 169 {*arm_one_cmplsi2}
+     (expr_list:REG_DEAD (reg:SI 143)
+        (nil)))
+(insn 45 44 106 3 (set (reg:SI 136 [ _46 ])
+        (and:SI (reg:SI 145)
+            (reg/v:SI 139 [ SubPriority ]))) "../Drivers/CMSIS/Include/core_cm4.h":1867:30 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 145)
+        (expr_list:REG_DEAD (reg/v:SI 139 [ SubPriority ])
+            (nil))))
+      ; pc falls through to BB 5
+(code_label 106 45 105 4 9 (nil) [1 uses])
+(note 105 106 6 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 6 105 7 4 (set (reg:SI 136 [ _46 ])
+        (const_int 0 [0])) 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 7 6 46 4 (set (reg:SI 125 [ iftmp.0_17 ])
+        (reg:SI 136 [ _46 ])) "../Drivers/CMSIS/Include/core_cm4.h":1863:109 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(code_label 46 7 47 5 6 (nil) [0 uses])
+(note 47 46 48 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 48 47 49 5 (var_location:SI SubPriorityBits (reg:SI 125 [ iftmp.0_17 ])) "../Drivers/CMSIS/Include/core_cm4.h":1863:23 -1
+     (nil))
+(debug_insn 49 48 50 5 (debug_marker) "../Drivers/CMSIS/Include/core_cm4.h":1865:3 -1
+     (nil))
+(insn 50 49 51 5 (set (reg:SI 147)
+        (const_int -1 [0xffffffffffffffff])) "../Drivers/CMSIS/Include/core_cm4.h":1866:30 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 51 50 52 5 (set (reg:SI 146)
+        (ashift:SI (reg:SI 147)
+            (reg/v:SI 123 [ PreemptPriorityBits ]))) "../Drivers/CMSIS/Include/core_cm4.h":1866:30 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 147)
+        (expr_list:REG_DEAD (reg/v:SI 123 [ PreemptPriorityBits ])
+            (expr_list:REG_EQUAL (ashift:SI (const_int -1 [0xffffffffffffffff])
+                    (reg/v:SI 123 [ PreemptPriorityBits ]))
+                (nil)))))
+(insn 52 51 53 5 (set (reg:SI 148)
+        (not:SI (reg:SI 146))) "../Drivers/CMSIS/Include/core_cm4.h":1866:30 169 {*arm_one_cmplsi2}
+     (expr_list:REG_DEAD (reg:SI 146)
+        (nil)))
+(insn 53 52 54 5 (set (reg:SI 149)
+        (and:SI (reg:SI 148)
+            (reg/v:SI 138 [ PreemptPriority ]))) "../Drivers/CMSIS/Include/core_cm4.h":1866:30 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 148)
+        (expr_list:REG_DEAD (reg/v:SI 138 [ PreemptPriority ])
+            (nil))))
+(insn 54 53 55 5 (set (reg:SI 150)
+        (ashift:SI (reg:SI 149)
+            (reg:SI 125 [ iftmp.0_17 ]))) "../Drivers/CMSIS/Include/core_cm4.h":1866:82 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 149)
+        (expr_list:REG_DEAD (reg:SI 125 [ iftmp.0_17 ])
+            (nil))))
+(insn 55 54 56 5 (set (reg:SI 130 [ _26 ])
+        (ior:SI (reg:SI 150)
+            (reg:SI 136 [ _46 ]))) "../Drivers/CMSIS/Include/core_cm4.h":1866:102 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 150)
+        (expr_list:REG_DEAD (reg:SI 136 [ _46 ])
+            (nil))))
+(debug_insn 56 55 57 5 (var_location:SI PriorityGroup (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":195:3 -1
+     (nil))
+(debug_insn 57 56 58 5 (var_location:SI PreemptPriority (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":195:3 -1
+     (nil))
+(debug_insn 58 57 59 5 (var_location:SI SubPriority (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":195:3 -1
+     (nil))
+(debug_insn 59 58 60 5 (var_location:SI PreemptPriorityBits (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":195:3 -1
+     (nil))
+(debug_insn 60 59 61 5 (var_location:SI PriorityGroupTmp (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":195:3 -1
+     (nil))
+(debug_insn 61 60 62 5 (var_location:QI IRQn (subreg:QI (reg/v:SI 137 [ IRQn ]) 0)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":195:3 -1
+     (nil))
+(debug_insn 62 61 63 5 (var_location:SI priority (reg:SI 130 [ _26 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":195:3 -1
+     (nil))
+(debug_insn 63 62 64 5 (debug_marker:BLK) "../Drivers/CMSIS/Include/core_cm4.h":1809:22 -1
+     (nil))
+(debug_insn 64 63 69 5 (debug_marker) "../Drivers/CMSIS/Include/core_cm4.h":1811:3 -1
+     (nil))
+(insn 69 64 70 5 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 137 [ IRQn ])
+            (const_int 0 [0]))) "../Drivers/CMSIS/Include/core_cm4.h":1811:6 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 70 69 71 5 (set (pc)
+        (if_then_else (lt (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 83)
+            (pc))) "../Drivers/CMSIS/Include/core_cm4.h":1811:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 440234148 (nil)))
+ -> 83)
+(note 71 70 72 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 72 71 75 6 (debug_marker) "../Drivers/CMSIS/Include/core_cm4.h":1813:5 -1
+     (nil))
+(insn 75 72 76 6 (set (reg:SI 154)
+        (ashift:SI (reg:SI 130 [ _26 ])
+            (const_int 4 [0x4]))) "../Drivers/CMSIS/Include/core_cm4.h":1813:48 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 130 [ _26 ])
+        (nil)))
+(insn 76 75 77 6 (set (reg:SI 115 [ _7 ])
+        (zero_extend:SI (subreg:QI (reg:SI 154) 0))) "../Drivers/CMSIS/Include/core_cm4.h":1813:48 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_DEAD (reg:SI 154)
+        (nil)))
+(insn 77 76 78 6 (set (reg/f:SI 155)
+        (const_int -536813312 [0xffffffffe000e100])) "../Drivers/CMSIS/Include/core_cm4.h":1813:46 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 78 77 80 6 (set (reg/f:SI 156)
+        (plus:SI (reg/f:SI 155)
+            (reg/v:SI 137 [ IRQn ]))) "../Drivers/CMSIS/Include/core_cm4.h":1813:46 7 {*arm_addsi3}
+     (expr_list:REG_DEAD (reg/f:SI 155)
+        (expr_list:REG_DEAD (reg/v:SI 137 [ IRQn ])
+            (expr_list:REG_EQUAL (plus:SI (reg/v:SI 137 [ IRQn ])
+                    (const_int -536813312 [0xffffffffe000e100]))
+                (nil)))))
+(insn 80 78 83 6 (set (mem/v:QI (plus:SI (reg/f:SI 156)
+                (const_int 768 [0x300])) [0 MEM[(struct NVIC_Type *)3758153984B].IP[_6]+0 S1 A8])
+        (subreg/s/v:QI (reg:SI 115 [ _7 ]) 0)) "../Drivers/CMSIS/Include/core_cm4.h":1813:46 263 {*arm_movqi_insn}
+     (expr_list:REG_DEAD (reg/f:SI 156)
+        (expr_list:REG_DEAD (reg:SI 115 [ _7 ])
+            (nil))))
+      ; pc falls through to BB 8
+(code_label 83 80 84 7 7 (nil) [1 uses])
+(note 84 83 85 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 85 84 87 7 (debug_marker) "../Drivers/CMSIS/Include/core_cm4.h":1817:5 -1
+     (nil))
+(insn 87 85 88 7 (set (reg:SI 159)
+        (and:SI (reg/v:SI 137 [ IRQn ])
+            (const_int 15 [0xf]))) "../Drivers/CMSIS/Include/core_cm4.h":1817:32 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg/v:SI 137 [ IRQn ])
+        (nil)))
+(insn 88 87 89 7 (set (reg:SI 160)
+        (zero_extend:SI (subreg:QI (reg:SI 159) 0))) "../Drivers/CMSIS/Include/core_cm4.h":1817:32 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_DEAD (reg:SI 159)
+        (nil)))
+(insn 89 88 91 7 (set (reg:SI 120 [ _12 ])
+        (plus:SI (reg:SI 160)
+            (const_int -4 [0xfffffffffffffffc]))) "../Drivers/CMSIS/Include/core_cm4.h":1817:40 7 {*arm_addsi3}
+     (expr_list:REG_DEAD (reg:SI 160)
+        (nil)))
+(insn 91 89 92 7 (set (reg:SI 162)
+        (ashift:SI (reg:SI 130 [ _26 ])
+            (const_int 4 [0x4]))) "../Drivers/CMSIS/Include/core_cm4.h":1817:48 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 130 [ _26 ])
+        (nil)))
+(insn 92 91 93 7 (set (reg:SI 121 [ _13 ])
+        (zero_extend:SI (subreg:QI (reg:SI 162) 0))) "../Drivers/CMSIS/Include/core_cm4.h":1817:48 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_DEAD (reg:SI 162)
+        (nil)))
+(insn 93 92 94 7 (set (reg/f:SI 163)
+        (const_int -536810240 [0xffffffffe000ed00])) "../Drivers/CMSIS/Include/core_cm4.h":1817:46 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 94 93 96 7 (set (reg/f:SI 164)
+        (plus:SI (reg/f:SI 163)
+            (reg:SI 120 [ _12 ]))) "../Drivers/CMSIS/Include/core_cm4.h":1817:46 7 {*arm_addsi3}
+     (expr_list:REG_DEAD (reg/f:SI 163)
+        (expr_list:REG_DEAD (reg:SI 120 [ _12 ])
+            (expr_list:REG_EQUAL (plus:SI (reg:SI 160)
+                    (const_int -536810244 [0xffffffffe000ecfc]))
+                (nil)))))
+(insn 96 94 99 7 (set (mem/v:QI (plus:SI (reg/f:SI 164)
+                (const_int 24 [0x18])) [0 MEM[(struct SCB_Type *)3758157056B].SHP[_12]+0 S1 A8])
+        (subreg/s/v:QI (reg:SI 121 [ _13 ]) 0)) "../Drivers/CMSIS/Include/core_cm4.h":1817:46 263 {*arm_movqi_insn}
+     (expr_list:REG_DEAD (reg/f:SI 164)
+        (expr_list:REG_DEAD (reg:SI 121 [ _13 ])
+            (nil))))
+(debug_insn 99 96 100 7 (var_location:QI IRQn (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":195:3 -1
+     (nil))
+(debug_insn 100 99 101 7 (var_location:SI priority (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":195:3 -1
+     (nil))
+(code_label 101 100 102 8 5 (nil) [0 uses])
+(note 102 101 0 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+
+;; Function HAL_SYSTICK_Config (HAL_SYSTICK_Config, funcdef_no=334, decl_uid=7668, cgraph_uid=338, symbol_order=337)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; Following path with 8 sets: 2 
+;; Following path with 22 sets: 3 
+deferring rescan insn with uid = 4.
+;; Following path with 2 sets: 4 
+;; Following path with 2 sets: 5 
+starting the processing of deferred insns
+rescanning insn with uid = 4.
+ending the processing of deferred insns
+
+
+HAL_SYSTICK_Config
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 100 [cc]
+;;  ref usage 	r0={2d,3u} r1={1d} r2={1d} r3={1d} r7={1d,5u} r13={1d,5u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={1d,1u} r102={1d,5u} r103={1d,4u} r113={1d,2u} r114={2d,1u} r115={1d,2u} r116={1d,3u} r117={1d,1u} r118={1d,1u} r121={1d,2u} r123={1d,1u} 
+;;    total ref usage 72{36d,36u,0e} in 34{34 regular + 0 call} insns.
+(note 6 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (reg/v:SI 115 [ TicksNumb ])
+        (reg:SI 0 r0 [ TicksNumb ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":250:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [ TicksNumb ])
+        (nil)))
+(note 3 2 8 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 8 3 9 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":251:4 -1
+     (nil))
+(debug_insn 9 8 10 2 (var_location:SI ticks (reg/v:SI 115 [ TicksNumb ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":251:4 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker:BLK) "../Drivers/CMSIS/Include/core_cm4.h":2017:26 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "../Drivers/CMSIS/Include/core_cm4.h":2019:3 -1
+     (nil))
+(insn 12 11 15 2 (set (reg:SI 113 [ _3 ])
+        (plus:SI (reg/v:SI 115 [ TicksNumb ])
+            (const_int -1 [0xffffffffffffffff]))) "../Drivers/CMSIS/Include/core_cm4.h":2019:14 7 {*arm_addsi3}
+     (expr_list:REG_DEAD (reg/v:SI 115 [ TicksNumb ])
+        (nil)))
+(insn 15 12 16 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 113 [ _3 ])
+            (const_int 16777216 [0x1000000]))) "../Drivers/CMSIS/Include/core_cm4.h":2019:6 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 16 15 17 2 (set (pc)
+        (if_then_else (geu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 54)
+            (pc))) "../Drivers/CMSIS/Include/core_cm4.h":2019:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 365072228 (nil)))
+ -> 54)
+(note 17 16 18 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 18 17 19 3 (debug_marker) "../Drivers/CMSIS/Include/core_cm4.h":2024:3 -1
+     (nil))
+(insn 19 18 20 3 (set (reg/f:SI 116)
+        (const_int -536813568 [0xffffffffe000e000])) "../Drivers/CMSIS/Include/core_cm4.h":2024:18 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 20 19 21 3 (set (mem/v:SI (plus:SI (reg/f:SI 116)
+                (const_int 20 [0x14])) [1 MEM[(struct SysTick_Type *)3758153744B].LOAD+0 S4 A32])
+        (reg:SI 113 [ _3 ])) "../Drivers/CMSIS/Include/core_cm4.h":2024:18 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 113 [ _3 ])
+        (nil)))
+(debug_insn 21 20 22 3 (debug_marker) "../Drivers/CMSIS/Include/core_cm4.h":2025:3 -1
+     (nil))
+(debug_insn 22 21 23 3 (var_location:QI IRQn (const_int -1 [0xffffffffffffffff])) "../Drivers/CMSIS/Include/core_cm4.h":2025:3 -1
+     (nil))
+(debug_insn 23 22 24 3 (var_location:SI priority (const_int 15 [0xf])) "../Drivers/CMSIS/Include/core_cm4.h":2025:3 -1
+     (nil))
+(debug_insn 24 23 25 3 (debug_marker:BLK) "../Drivers/CMSIS/Include/core_cm4.h":1809:22 -1
+     (nil))
+(debug_insn 25 24 26 3 (debug_marker) "../Drivers/CMSIS/Include/core_cm4.h":1811:3 -1
+     (nil))
+(debug_insn 26 25 27 3 (debug_marker) "../Drivers/CMSIS/Include/core_cm4.h":1817:5 -1
+     (nil))
+(insn 27 26 28 3 (set (reg/f:SI 117)
+        (const_int -536810240 [0xffffffffe000ed00])) "../Drivers/CMSIS/Include/core_cm4.h":1817:46 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 28 27 30 3 (set (reg:SI 118)
+        (const_int 240 [0xf0])) "../Drivers/CMSIS/Include/core_cm4.h":1817:46 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 30 28 31 3 (set (mem/v:QI (plus:SI (reg/f:SI 117)
+                (const_int 35 [0x23])) [0 MEM[(struct SCB_Type *)3758157056B].SHP[11]+0 S1 A8])
+        (subreg:QI (reg:SI 118) 0)) "../Drivers/CMSIS/Include/core_cm4.h":1817:46 263 {*arm_movqi_insn}
+     (expr_list:REG_DEAD (reg:SI 118)
+        (expr_list:REG_DEAD (reg/f:SI 117)
+            (nil))))
+(debug_insn 31 30 32 3 (var_location:QI IRQn (clobber (const_int 0 [0]))) "../Drivers/CMSIS/Include/core_cm4.h":2025:3 -1
+     (nil))
+(debug_insn 32 31 33 3 (var_location:SI priority (clobber (const_int 0 [0]))) "../Drivers/CMSIS/Include/core_cm4.h":2025:3 -1
+     (nil))
+(debug_insn 33 32 35 3 (debug_marker) "../Drivers/CMSIS/Include/core_cm4.h":2026:3 -1
+     (nil))
+(insn 35 33 36 3 (set (reg:SI 121)
+        (const_int 0 [0])) "../Drivers/CMSIS/Include/core_cm4.h":2026:18 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 36 35 37 3 (set (mem/v:SI (plus:SI (reg/f:SI 116)
+                (const_int 24 [0x18])) [1 MEM[(struct SysTick_Type *)3758153744B].VAL+0 S4 A64])
+        (reg:SI 121)) "../Drivers/CMSIS/Include/core_cm4.h":2026:18 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 121)
+        (nil)))
+(debug_insn 37 36 39 3 (debug_marker) "../Drivers/CMSIS/Include/core_cm4.h":2027:3 -1
+     (nil))
+(insn 39 37 40 3 (set (reg:SI 123)
+        (const_int 7 [0x7])) "../Drivers/CMSIS/Include/core_cm4.h":2027:18 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 40 39 41 3 (set (mem/v:SI (plus:SI (reg/f:SI 116)
+                (const_int 16 [0x10])) [1 MEM[(struct SysTick_Type *)3758153744B].CTRL+0 S4 A64])
+        (reg:SI 123)) "../Drivers/CMSIS/Include/core_cm4.h":2027:18 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 123)
+        (expr_list:REG_DEAD (reg/f:SI 116)
+            (nil))))
+(debug_insn 41 40 4 3 (debug_marker) "../Drivers/CMSIS/Include/core_cm4.h":2030:3 -1
+     (nil))
+(insn 4 41 54 3 (set (reg:SI 114 [ <retval> ])
+        (reg:SI 121)) "../Drivers/CMSIS/Include/core_cm4.h":2030:10 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+      ; pc falls through to BB 5
+(code_label 54 4 53 4 27 (nil) [1 uses])
+(note 53 54 5 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 5 53 44 4 (set (reg:SI 114 [ <retval> ])
+        (const_int 1 [0x1])) "../Drivers/CMSIS/Include/core_cm4.h":2021:12 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 44 5 47 4 (var_location:SI ticks (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":251:11 -1
+     (nil))
+(code_label 47 44 50 5 25 (nil) [0 uses])
+(note 50 47 48 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 48 50 49 5 (set (reg/i:SI 0 r0)
+        (reg:SI 114 [ <retval> ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":252:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 114 [ <retval> ])
+        (nil)))
+(insn 49 48 0 5 (use (reg/i:SI 0 r0)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":252:1 -1
+     (nil))

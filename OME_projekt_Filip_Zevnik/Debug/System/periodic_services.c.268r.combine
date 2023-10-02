@@ -1,0 +1,253 @@
+
+;; Function PSERV_init (PSERV_init, funcdef_no=613, decl_uid=11010, cgraph_uid=617, symbol_order=622)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+insn_cost 8 for     5: debug begin stmt marker
+insn_cost 8 for     6: r115:SI=`*.LANCHOR0'
+insn_cost 8 for     7: r116:SI=0x40001000
+insn_cost 4 for     8: [r115:SI]=r116:SI
+      REG_DEAD r115:SI
+insn_cost 8 for     9: debug begin stmt marker
+insn_cost 8 for    10: debug TIMx => 0x40001000
+insn_cost 8 for    11: debug inline entry marker
+insn_cost 8 for    12: debug begin stmt marker
+insn_cost 12 for    14: r113:SI=[r116:SI]
+insn_cost 4 for    15: r114:SI=r113:SI|0x1
+      REG_DEAD r113:SI
+insn_cost 4 for    17: [r116:SI]=r114:SI
+      REG_DEAD r116:SI
+      REG_DEAD r114:SI
+insn_cost 8 for    18: debug TIMx => optimized away
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+PSERV_init
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r7={1d,2u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r102={1d,2u} r103={1d,1u} r113={1d,1u} r114={1d,1u} r115={1d,1u} r116={1d,3u} 
+;;    total ref usage 42{29d,13u,0e} in 12{12 regular + 0 call} insns.
+(note 3 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../System/periodic_services.c":14:2 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 115)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/periodic_services.c":14:24 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 116)
+        (const_int 1073745920 [0x40001000])) "../System/periodic_services.c":14:24 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 8 7 9 2 (set (mem/f/c:SI (reg/f:SI 115) [1 periodic_services.TIM+0 S4 A32])
+        (reg:SI 116)) "../System/periodic_services.c":14:24 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 115)
+        (nil)))
+(debug_insn 9 8 10 2 (debug_marker) "../System/periodic_services.c":15:2 -1
+     (nil))
+(debug_insn 10 9 11 2 (var_location:SI TIMx (const_int 1073745920 [0x40001000])) "../System/periodic_services.c":15:2 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2013:22 -1
+     (nil))
+(debug_insn 12 11 14 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2015:3 -1
+     (nil))
+(insn 14 12 15 2 (set (reg:SI 113 [ _3 ])
+        (mem/v:SI (reg:SI 116) [3 MEM[(struct TIM_TypeDef *)1073745920B].CR1+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2015:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 15 14 17 2 (set (reg:SI 114 [ _4 ])
+        (ior:SI (reg:SI 113 [ _3 ])
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2015:3 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 113 [ _3 ])
+        (nil)))
+(insn 17 15 18 2 (set (mem/v:SI (reg:SI 116) [3 MEM[(struct TIM_TypeDef *)1073745920B].CR1+0 S4 A64])
+        (reg:SI 114 [ _4 ])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2015:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 116)
+        (expr_list:REG_DEAD (reg:SI 114 [ _4 ])
+            (nil))))
+(debug_insn 18 17 0 2 (var_location:SI TIMx (clobber (const_int 0 [0]))) "../System/periodic_services.c":15:2 -1
+     (nil))
+
+;; Function PSERV_enable (PSERV_enable, funcdef_no=614, decl_uid=11012, cgraph_uid=618, symbol_order=623)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+insn_cost 8 for     5: debug begin stmt marker
+insn_cost 8 for     6: r116:SI=`*.LANCHOR0'
+insn_cost 12 for     7: r113:SI=[r116:SI]
+      REG_DEAD r116:SI
+insn_cost 8 for     8: debug TIMx => r113:SI
+insn_cost 8 for     9: debug inline entry marker
+insn_cost 8 for    10: debug begin stmt marker
+insn_cost 12 for    11: r114:SI=[r113:SI]
+insn_cost 4 for    12: r115:SI=r114:SI&0xfffffffffffffffd
+      REG_DEAD r114:SI
+insn_cost 4 for    13: [r113:SI]=r115:SI
+      REG_DEAD r115:SI
+      REG_DEAD r113:SI
+insn_cost 8 for    14: debug TIMx => optimized away
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+PSERV_enable
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r7={1d,2u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r102={1d,2u} r103={1d,1u} r113={1d,3u} r114={1d,1u} r115={1d,1u} r116={1d,1u} 
+;;    total ref usage 42{29d,13u,0e} in 10{10 regular + 0 call} insns.
+(note 3 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../System/periodic_services.c":20:2 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 116)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/periodic_services.c":20:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 7 6 8 2 (set (reg/f:SI 113 [ _1 ])
+        (mem/f/c:SI (reg/f:SI 116) [1 periodic_services.TIM+0 S4 A32])) "../System/periodic_services.c":20:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 116)
+        (nil)))
+(debug_insn 8 7 9 2 (var_location:SI TIMx (reg/f:SI 113 [ _1 ])) "../System/periodic_services.c":20:2 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2046:22 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2048:3 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 114 [ _3 ])
+        (mem/v:SI (reg/f:SI 113 [ _1 ]) [3 _1->CR1+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2048:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 115 [ _4 ])
+        (and:SI (reg:SI 114 [ _3 ])
+            (const_int -3 [0xfffffffffffffffd]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2048:3 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 114 [ _3 ])
+        (nil)))
+(insn 13 12 14 2 (set (mem/v:SI (reg/f:SI 113 [ _1 ]) [3 _1->CR1+0 S4 A32])
+        (reg:SI 115 [ _4 ])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2048:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 115 [ _4 ])
+        (expr_list:REG_DEAD (reg/f:SI 113 [ _1 ])
+            (nil))))
+(debug_insn 14 13 0 2 (var_location:SI TIMx (clobber (const_int 0 [0]))) "../System/periodic_services.c":20:2 -1
+     (nil))
+
+;; Function PSERV_disable (PSERV_disable, funcdef_no=615, decl_uid=11162, cgraph_uid=619, symbol_order=624)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+insn_cost 8 for     5: debug begin stmt marker
+insn_cost 8 for     6: r116:SI=`*.LANCHOR0'
+insn_cost 12 for     7: r113:SI=[r116:SI]
+      REG_DEAD r116:SI
+insn_cost 8 for     8: debug TIMx => r113:SI
+insn_cost 8 for     9: debug inline entry marker
+insn_cost 8 for    10: debug begin stmt marker
+insn_cost 12 for    11: r114:SI=[r113:SI]
+insn_cost 4 for    12: r115:SI=r114:SI|0x2
+      REG_DEAD r114:SI
+insn_cost 4 for    13: [r113:SI]=r115:SI
+      REG_DEAD r115:SI
+      REG_DEAD r113:SI
+insn_cost 8 for    14: debug TIMx => optimized away
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+PSERV_disable
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r7={1d,2u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r102={1d,2u} r103={1d,1u} r113={1d,3u} r114={1d,1u} r115={1d,1u} r116={1d,1u} 
+;;    total ref usage 42{29d,13u,0e} in 10{10 regular + 0 call} insns.
+(note 3 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../System/periodic_services.c":25:2 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 116)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/periodic_services.c":25:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 7 6 8 2 (set (reg/f:SI 113 [ _1 ])
+        (mem/f/c:SI (reg/f:SI 116) [1 periodic_services.TIM+0 S4 A32])) "../System/periodic_services.c":25:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 116)
+        (nil)))
+(debug_insn 8 7 9 2 (var_location:SI TIMx (reg/f:SI 113 [ _1 ])) "../System/periodic_services.c":25:2 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2057:22 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2059:3 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 114 [ _3 ])
+        (mem/v:SI (reg/f:SI 113 [ _1 ]) [3 _1->CR1+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2059:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 115 [ _4 ])
+        (ior:SI (reg:SI 114 [ _3 ])
+            (const_int 2 [0x2]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2059:3 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 114 [ _3 ])
+        (nil)))
+(insn 13 12 14 2 (set (mem/v:SI (reg/f:SI 113 [ _1 ]) [3 _1->CR1+0 S4 A32])
+        (reg:SI 115 [ _4 ])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2059:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 115 [ _4 ])
+        (expr_list:REG_DEAD (reg/f:SI 113 [ _1 ])
+            (nil))))
+(debug_insn 14 13 0 2 (var_location:SI TIMx (clobber (const_int 0 [0]))) "../System/periodic_services.c":25:2 -1
+     (nil))
+
+;; Function PSERV_run_services_Callback (PSERV_run_services_Callback, funcdef_no=616, decl_uid=11008, cgraph_uid=620, symbol_order=625)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+insn_cost 8 for     5: debug begin stmt marker
+insn_cost 8 for     6: call [`KBD_demo_toggle_LEDs_if_buttons_pressed'] argc:0
+      REG_CALL_DECL `KBD_demo_toggle_LEDs_if_buttons_pressed'
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+PSERV_run_services_Callback
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 12 [ip] 13 [sp]
+;;  ref usage 	r0={2d} r1={2d} r2={2d} r3={2d} r7={1d,2u} r12={2d} r13={1d,3u} r14={2d} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r102={1d,2u} r103={1d,1u} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 114{106d,8u,0e} in 2{1 regular + 1 call} insns.
+(note 3 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../System/periodic_services.c":30:2 -1
+     (nil))
+(call_insn/j 6 5 0 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("KBD_demo_toggle_LEDs_if_buttons_pressed") [flags 0x41]  <function_decl 0000000005dbcf00 KBD_demo_toggle_LEDs_if_buttons_pressed>) [0 KBD_demo_toggle_LEDs_if_buttons_pressed S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../System/periodic_services.c":30:2 292 {*sibcall_insn}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("KBD_demo_toggle_LEDs_if_buttons_pressed") [flags 0x41]  <function_decl 0000000005dbcf00 KBD_demo_toggle_LEDs_if_buttons_pressed>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+
+;; Combiner totals: 22 attempts, 22 substitutions (10 requiring new space),
+;; 0 successes.

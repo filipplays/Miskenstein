@@ -1,0 +1,674 @@
+
+;; Function HAL_SPIEx_FlushRxFifo (HAL_SPIEx_FlushRxFifo, funcdef_no=329, decl_uid=9048, cgraph_uid=333, symbol_order=332)
+
+Starting decreasing number of live ranges...
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9 10 11
+;; 2 succs { 3 7 }
+;; 3 succs { 4 8 }
+;; 4 succs { 5 9 }
+;; 5 succs { 6 10 }
+;; 6 succs { 11 }
+;; 7 succs { 11 }
+;; 8 succs { 11 }
+;; 9 succs { 11 }
+;; 10 succs { 11 }
+;; 11 succs { 1 }
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Reg 137 uninteresting
+Reg 114 uninteresting
+Reg 118 uninteresting
+Reg 120 uninteresting
+Reg 121 uninteresting (no unique first use)
+Reg 122 uninteresting
+Reg 124 uninteresting
+Reg 125 uninteresting (no unique first use)
+Reg 126 uninteresting
+Reg 128 uninteresting
+Reg 129 uninteresting (no unique first use)
+Reg 115 uninteresting
+Reg 113 uninteresting
+Reg 117 uninteresting (no unique first use)
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9 10 11
+;; 2 succs { 3 7 }
+;; 3 succs { 4 8 }
+;; 4 succs { 5 9 }
+;; 5 succs { 6 10 }
+;; 6 succs { 11 }
+;; 7 succs { 11 }
+;; 8 succs { 11 }
+;; 9 succs { 11 }
+;; 10 succs { 11 }
+;; 11 succs { 1 }
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+Pass 1 for finding pseudo/allocno costs
+
+    r137: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r135: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r134: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r133: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r132: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r130: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r129: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r128: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r126: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r125: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r124: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r122: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r121: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r120: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r118: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r117: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r115: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r114: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r113: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+
+  a0(r130,l0) costs: GENERAL_REGS:582,582 VFP_D0_D7_REGS:13080,13080 VFP_LO_REGS:13080,13080 ALL_REGS:8715,8715 MEM:8720,8720
+  a1(r135,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:3870,3870 VFP_LO_REGS:3870,3870 ALL_REGS:3870,3870 MEM:2580,2580
+  a2(r134,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:4110,4110 VFP_LO_REGS:4110,4110 ALL_REGS:4110,4110 MEM:2740,2740
+  a3(r133,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:4350,4350 VFP_LO_REGS:4350,4350 ALL_REGS:4350,4350 MEM:2900,2900
+  a4(r132,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:4605,4605 VFP_LO_REGS:4605,4605 ALL_REGS:4605,4605 MEM:3070,3070
+  a5(r117,l0) costs: LO_REGS:0,0 HI_REGS:464,464 CALLER_SAVE_REGS:464,464 EVEN_REG:464,464 GENERAL_REGS:464,464 VFP_D0_D7_REGS:3480,3480 VFP_LO_REGS:3480,3480 ALL_REGS:3480,3480 MEM:2320,2320
+  a6(r113,l0) costs: LO_REGS:0,0 HI_REGS:928,928 CALLER_SAVE_REGS:928,928 EVEN_REG:928,928 GENERAL_REGS:928,928 VFP_D0_D7_REGS:6960,6960 VFP_LO_REGS:6960,6960 ALL_REGS:6960,6960 MEM:4640,4640
+  a7(r114,l0) costs: LO_REGS:0,0 HI_REGS:582,582 CALLER_SAVE_REGS:582,582 EVEN_REG:582,582 GENERAL_REGS:582,582 VFP_D0_D7_REGS:35610,35610 VFP_LO_REGS:35610,35610 ALL_REGS:35610,35610 MEM:23740,23740
+  a8(r115,l0) costs: LO_REGS:0,0 HI_REGS:490,490 CALLER_SAVE_REGS:490,490 EVEN_REG:490,490 GENERAL_REGS:490,490 VFP_D0_D7_REGS:7350,7350 VFP_LO_REGS:7350,7350 ALL_REGS:7350,7350 MEM:4900,4900
+  a9(r129,l0) costs: LO_REGS:0,0 HI_REGS:490,490 CALLER_SAVE_REGS:490,490 EVEN_REG:490,490 GENERAL_REGS:490,490 VFP_D0_D7_REGS:3675,3675 VFP_LO_REGS:3675,3675 ALL_REGS:3675,3675 MEM:2450,2450
+  a10(r128,l0) costs: LO_REGS:0,0 HI_REGS:980,980 CALLER_SAVE_REGS:980,980 EVEN_REG:980,980 GENERAL_REGS:980,980 VFP_D0_D7_REGS:7350,7350 VFP_LO_REGS:7350,7350 ALL_REGS:7350,7350 MEM:4900,4900
+  a11(r126,l0) costs: LO_REGS:0,0 HI_REGS:520,520 CALLER_SAVE_REGS:520,520 EVEN_REG:520,520 GENERAL_REGS:520,520 VFP_D0_D7_REGS:7800,7800 VFP_LO_REGS:7800,7800 ALL_REGS:7800,7800 MEM:5200,5200
+  a12(r125,l0) costs: LO_REGS:0,0 HI_REGS:520,520 CALLER_SAVE_REGS:520,520 EVEN_REG:520,520 GENERAL_REGS:520,520 VFP_D0_D7_REGS:3900,3900 VFP_LO_REGS:3900,3900 ALL_REGS:3900,3900 MEM:2600,2600
+  a13(r124,l0) costs: LO_REGS:0,0 HI_REGS:1040,1040 CALLER_SAVE_REGS:1040,1040 EVEN_REG:1040,1040 GENERAL_REGS:1040,1040 VFP_D0_D7_REGS:7800,7800 VFP_LO_REGS:7800,7800 ALL_REGS:7800,7800 MEM:5200,5200
+  a14(r122,l0) costs: LO_REGS:0,0 HI_REGS:550,550 CALLER_SAVE_REGS:550,550 EVEN_REG:550,550 GENERAL_REGS:550,550 VFP_D0_D7_REGS:8250,8250 VFP_LO_REGS:8250,8250 ALL_REGS:8250,8250 MEM:5500,5500
+  a15(r121,l0) costs: LO_REGS:0,0 HI_REGS:550,550 CALLER_SAVE_REGS:550,550 EVEN_REG:550,550 GENERAL_REGS:550,550 VFP_D0_D7_REGS:4125,4125 VFP_LO_REGS:4125,4125 ALL_REGS:4125,4125 MEM:2750,2750
+  a16(r120,l0) costs: LO_REGS:0,0 HI_REGS:1100,1100 CALLER_SAVE_REGS:1100,1100 EVEN_REG:1100,1100 GENERAL_REGS:1100,1100 VFP_D0_D7_REGS:8250,8250 VFP_LO_REGS:8250,8250 ALL_REGS:8250,8250 MEM:5500,5500
+  a17(r118,l0) costs: LO_REGS:0,0 HI_REGS:582,582 CALLER_SAVE_REGS:582,582 EVEN_REG:582,582 GENERAL_REGS:582,582 VFP_D0_D7_REGS:8730,8730 VFP_LO_REGS:8730,8730 ALL_REGS:8730,8730 MEM:5820,5820
+  a18(r137,l0) costs: GENERAL_REGS:582,582 VFP_D0_D7_REGS:13095,13095 VFP_LO_REGS:13095,13095 ALL_REGS:8730,8730 MEM:8730,8730
+
+   Insn 83(l0): point = 0
+   Insn 82(l0): point = 2
+   Insn 8(l0): point = 5
+   Insn 132(l0): point = 8
+   Insn 5(l0): point = 10
+   Insn 130(l0): point = 13
+   Insn 7(l0): point = 15
+   Insn 128(l0): point = 18
+   Insn 6(l0): point = 20
+   Insn 126(l0): point = 23
+   Insn 4(l0): point = 25
+   Insn 74(l0): point = 27
+   Insn 72(l0): point = 29
+   Insn 71(l0): point = 31
+   Insn 66(l0): point = 34
+   Insn 65(l0): point = 36
+   Insn 63(l0): point = 38
+   Insn 59(l0): point = 40
+   Insn 57(l0): point = 42
+   Insn 56(l0): point = 44
+   Insn 51(l0): point = 47
+   Insn 50(l0): point = 49
+   Insn 48(l0): point = 51
+   Insn 44(l0): point = 53
+   Insn 42(l0): point = 55
+   Insn 41(l0): point = 57
+   Insn 36(l0): point = 60
+   Insn 35(l0): point = 62
+   Insn 33(l0): point = 64
+   Insn 29(l0): point = 66
+   Insn 27(l0): point = 68
+   Insn 26(l0): point = 70
+   Insn 21(l0): point = 73
+   Insn 20(l0): point = 75
+   Insn 18(l0): point = 77
+   Insn 15(l0): point = 79
+   Insn 125(l0): point = 81
+ a0(r130): [23..25] [18..20] [13..15] [8..10] [3..5]
+ a1(r135): [34..36] [6..7]
+ a2(r134): [47..49] [11..12]
+ a3(r133): [60..62] [16..17]
+ a4(r132): [73..75] [21..22]
+ a5(r117): [27..27]
+ a6(r113): [30..31]
+ a7(r114): [32..79]
+ a8(r115): [37..38]
+ a9(r129): [40..40]
+ a10(r128): [43..44]
+ a11(r126): [50..51]
+ a12(r125): [53..53]
+ a13(r124): [56..57]
+ a14(r122): [63..64]
+ a15(r121): [66..66]
+ a16(r120): [69..70]
+ a17(r118): [76..77]
+ a18(r137): [80..81]
+Compressing live ranges: from 84 to 48 - 57%
+Ranges after the compression:
+ a0(r130): [16..17] [12..13] [8..9] [4..5] [0..1]
+ a1(r135): [21..22] [2..3]
+ a2(r134): [28..29] [6..7]
+ a3(r133): [35..36] [10..11]
+ a4(r132): [42..43] [14..15]
+ a5(r117): [18..18]
+ a6(r113): [19..20]
+ a7(r114): [21..45]
+ a8(r115): [23..24]
+ a9(r129): [25..25]
+ a10(r128): [26..27]
+ a11(r126): [30..31]
+ a12(r125): [32..32]
+ a13(r124): [33..34]
+ a14(r122): [37..38]
+ a15(r121): [39..39]
+ a16(r120): [40..41]
+ a17(r118): [44..45]
+ a18(r137): [46..47]
++++Allocating 144 bytes for conflict table (uncompressed size 152)
+;; a0(r130,l0) conflicts:
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a1(r135,l0) conflicts: a7(r114,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a2(r134,l0) conflicts: a7(r114,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a3(r133,l0) conflicts: a7(r114,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a4(r132,l0) conflicts: a7(r114,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a5(r117,l0) conflicts:
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a6(r113,l0) conflicts:
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a7(r114,l0) conflicts: a1(r135,l0) a2(r134,l0) a3(r133,l0) a4(r132,l0) a8(r115,l0) a9(r129,l0) a10(r128,l0) a11(r126,l0) a12(r125,l0) a13(r124,l0) a14(r122,l0) a15(r121,l0) a16(r120,l0) a17(r118,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a8(r115,l0) conflicts: a7(r114,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a9(r129,l0) conflicts: a7(r114,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a10(r128,l0) conflicts: a7(r114,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a11(r126,l0) conflicts: a7(r114,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a12(r125,l0) conflicts: a7(r114,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a13(r124,l0) conflicts: a7(r114,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a14(r122,l0) conflicts: a7(r114,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a15(r121,l0) conflicts: a7(r114,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a16(r120,l0) conflicts: a7(r114,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a17(r118,l0) conflicts: a7(r114,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a18(r137,l0) conflicts:
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+
+  cp0:a0(r130)<->a1(r135)@13:move
+  cp1:a0(r130)<->a2(r134)@14:move
+  cp2:a0(r130)<->a3(r133)@15:move
+  cp3:a0(r130)<->a4(r132)@16:move
+  cp4:a1(r135)<->a8(r115)@30:shuffle
+  cp5:a2(r134)<->a11(r126)@32:shuffle
+  cp6:a3(r133)<->a14(r122)@34:shuffle
+  cp7:a4(r132)<->a17(r118)@36:shuffle
+  pref0:a0(r130)<-hr0@582
+  pref1:a18(r137)<-hr0@582
+  regions=1, blocks=12, points=48
+    allocnos=19 (big 0), copies=8, conflicts=0, ranges=27
+
+**** Allocnos coloring:
+
+
+  Loop 0 (parent -1, header bb2, depth 0)
+    bbs: 11 10 9 8 7 6 5 4 3 2
+    all: 0r130 1r135 2r134 3r133 4r132 5r117 6r113 7r114 8r115 9r129 10r128 11r126 12r125 13r124 14r122 15r121 16r120 17r118 18r137
+    modified regnos: 113 114 115 117 118 120 121 122 124 125 126 128 129 130 132 133 134 135 137
+    border:
+    Pressure: GENERAL_REGS=2
+    Hard reg set forest:
+      0:( 0-12 14 16-47)@0
+        1:( 0-12 14)@241112
+      Allocno a0r130 of ALL_REGS(46) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15 48-106)
+      Allocno a1r135 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a2r134 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a3r133 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a4r132 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a5r117 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a6r113 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a7r114 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a8r115 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a9r129 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a10r128 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a11r126 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a12r125 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a13r124 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a14r122 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a15r121 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a16r120 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a17r118 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a18r137 of ALL_REGS(46) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15 48-106)
+      Forming thread by copy 7:a4r132-a17r118 (freq=36):
+        Result (freq=1180): a4r132(307) a17r118(873)
+      Forming thread by copy 6:a3r133-a14r122 (freq=34):
+        Result (freq=1115): a3r133(290) a14r122(825)
+      Forming thread by copy 5:a2r134-a11r126 (freq=32):
+        Result (freq=1054): a2r134(274) a11r126(780)
+      Forming thread by copy 4:a1r135-a8r115 (freq=30):
+        Result (freq=993): a1r135(258) a8r115(735)
+      Forming thread by copy 3:a0r130-a4r132 (freq=16):
+        Result (freq=1761): a0r130(581) a4r132(307) a17r118(873)
+      Forming thread by copy 2:a0r130-a3r133 (freq=15):
+        Result (freq=2876): a0r130(581) a3r133(290) a14r122(825) a4r132(307) a17r118(873)
+      Forming thread by copy 1:a0r130-a2r134 (freq=14):
+        Result (freq=3930): a0r130(581) a2r134(274) a11r126(780) a3r133(290) a14r122(825) a4r132(307) a17r118(873)
+      Forming thread by copy 0:a0r130-a1r135 (freq=13):
+        Result (freq=4923): a0r130(581) a1r135(258) a8r115(735) a2r134(274) a11r126(780) a3r133(290) a14r122(825) a4r132(307) a17r118(873)
+      Pushing a5(r117,l0)(cost 0)
+      Pushing a9(r129,l0)(cost 0)
+        Making a7(r114,l0) colorable
+      Pushing a12(r125,l0)(cost 0)
+      Pushing a15(r121,l0)(cost 0)
+      Pushing a6(r113,l0)(cost 0)
+      Pushing a10(r128,l0)(cost 0)
+      Pushing a13(r124,l0)(cost 0)
+      Pushing a16(r120,l0)(cost 0)
+      Pushing a18(r137,l0)(cost 0)
+      Pushing a7(r114,l0)(cost 23740)
+      Pushing a1(r135,l0)(cost 0)
+      Pushing a2(r134,l0)(cost 0)
+      Pushing a3(r133,l0)(cost 0)
+      Pushing a4(r132,l0)(cost 0)
+      Pushing a0(r130,l0)(cost 0)
+      Pushing a8(r115,l0)(cost 0)
+      Pushing a11(r126,l0)(cost 0)
+      Pushing a14(r122,l0)(cost 0)
+      Pushing a17(r118,l0)(cost 0)
+      Popping a17(r118,l0)  -- assign reg 0
+      Popping a14(r122,l0)  -- assign reg 0
+      Popping a11(r126,l0)  -- assign reg 0
+      Popping a8(r115,l0)  -- assign reg 0
+      Popping a0(r130,l0)  -- assign reg 0
+      Popping a4(r132,l0)  -- assign reg 0
+      Popping a3(r133,l0)  -- assign reg 0
+      Popping a2(r134,l0)  -- assign reg 0
+      Popping a1(r135,l0)  -- assign reg 0
+      Popping a7(r114,l0)  -- assign reg 3
+      Popping a18(r137,l0)  -- assign reg 0
+      Popping a16(r120,l0)  -- assign reg 2
+      Popping a13(r124,l0)  -- assign reg 2
+      Popping a10(r128,l0)  -- assign reg 2
+      Popping a6(r113,l0)  -- assign reg 3
+      Popping a15(r121,l0)  -- assign reg 2
+      Popping a12(r125,l0)  -- assign reg 2
+      Popping a9(r129,l0)  -- assign reg 2
+      Popping a5(r117,l0)  -- assign reg 3
+Disposition:
+    6:r113 l0     3    7:r114 l0     3    8:r115 l0     0    5:r117 l0     3
+   17:r118 l0     0   16:r120 l0     2   15:r121 l0     2   14:r122 l0     0
+   13:r124 l0     2   12:r125 l0     2   11:r126 l0     0   10:r128 l0     2
+    9:r129 l0     2    0:r130 l0     0    4:r132 l0     0    3:r133 l0     0
+    2:r134 l0     0    1:r135 l0     0   18:r137 l0     0
+New iteration of spill/restore move
++++Costs: overall -16296, reg -16296, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+HAL_SPIEx_FlushRxFifo
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 100 [cc]
+;;  ref usage 	r0={2d,3u} r1={1d} r2={1d} r3={1d} r7={1d,11u} r13={1d,11u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={4d,4u} r102={1d,19u} r103={1d,10u} r113={1d,1u} r114={1d,8u} r115={1d,2u} r117={1d} r118={1d,2u} r120={1d,1u} r121={1d} r122={1d,2u} r124={1d,1u} r125={1d} r126={1d,2u} r128={1d,1u} r129={1d} r130={5d,1u} r132={1d,1u} r133={1d,1u} r134={1d,1u} r135={1d,1u} r137={1d,1u} 
+;;    total ref usage 137{53d,84u,0e} in 69{69 regular + 0 call} insns.
+(note 1 0 9 NOTE_INSN_DELETED)
+(note 9 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 9 3 2 NOTE_INSN_DELETED)
+(note 3 2 19 2 NOTE_INSN_FUNCTION_BEG)
+(note 19 3 11 2 NOTE_INSN_DELETED)
+(debug_insn 11 19 12 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":81:3 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":82:3 -1
+     (nil))
+(debug_insn 13 12 14 2 (var_location:QI count (const_int 0 [0])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":82:12 -1
+     (nil))
+(debug_insn 14 13 125 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:3 -1
+     (nil))
+(insn 125 14 15 2 (set (reg:SI 137)
+        (reg:SI 0 r0 [ hspi ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":80:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [ hspi ])
+        (nil)))
+(insn 15 125 16 2 (set (reg/f:SI 114 [ _2 ])
+        (mem/f:SI (reg:SI 137) [1 hspi_10(D)->Instance+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:15 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 137)
+        (nil)))
+(debug_insn 16 15 17 2 (var_location:QI count (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 17 16 18 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:9 -1
+     (nil))
+(insn 18 17 20 2 (set (reg:SI 118 [ _16 ])
+        (mem/v:SI (plus:SI (reg/f:SI 114 [ _2 ])
+                (const_int 8 [0x8])) [2 _2->SR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:25 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 20 18 21 2 (parallel [
+            (set (reg:CC_NZ 100 cc)
+                (compare:CC_NZ (and:SI (reg:SI 118 [ _16 ])
+                        (const_int 1536 [0x600]))
+                    (const_int 0 [0])))
+            (set (reg:SI 132)
+                (and:SI (reg:SI 118 [ _16 ])
+                    (const_int 1536 [0x600])))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:9 91 {*andsi3_compare0}
+     (expr_list:REG_DEAD (reg:SI 118 [ _16 ])
+        (nil)))
+(jump_insn 21 20 22 2 (set (pc)
+        (if_then_else (eq (reg:CC_NZ 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 88)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:9 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC_NZ 100 cc)
+        (int_list:REG_BR_PROB 59055804 (nil)))
+ -> 88)
+(note 22 21 34 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 34 22 23 3 NOTE_INSN_DELETED)
+(debug_insn 23 34 24 3 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":85:5 -1
+     (nil))
+(debug_insn 24 23 25 3 (var_location:QI count (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":85:10 -1
+     (nil))
+(debug_insn 25 24 26 3 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":86:5 -1
+     (nil))
+(insn 26 25 27 3 (set (reg:SI 120 [ _18 ])
+        (mem/v:SI (plus:SI (reg/f:SI 114 [ _2 ])
+                (const_int 12 [0xc])) [2 _2->DR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":86:28 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 27 26 28 3 (set (mem/v/c:SI (plus:SI (reg/f:SI 102 sfp)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])
+        (reg:SI 120 [ _18 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":86:12 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 120 [ _18 ])
+        (nil)))
+(debug_insn 28 27 29 3 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":87:5 -1
+     (nil))
+(insn 29 28 30 3 (set (reg:SI 121 [ vol.1_20 ])
+        (mem/v/c:SI (plus:SI (reg/f:SI 102 sfp)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":87:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_UNUSED (reg:SI 121 [ vol.1_20 ])
+        (nil)))
+(debug_insn 30 29 31 3 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":88:5 -1
+     (nil))
+(debug_insn 31 30 32 3 (var_location:QI count (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 32 31 33 3 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:9 -1
+     (nil))
+(insn 33 32 35 3 (set (reg:SI 122 [ _24 ])
+        (mem/v:SI (plus:SI (reg/f:SI 114 [ _2 ])
+                (const_int 8 [0x8])) [2 _2->SR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:25 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 35 33 36 3 (parallel [
+            (set (reg:CC_NZ 100 cc)
+                (compare:CC_NZ (and:SI (reg:SI 122 [ _24 ])
+                        (const_int 1536 [0x600]))
+                    (const_int 0 [0])))
+            (set (reg:SI 133)
+                (and:SI (reg:SI 122 [ _24 ])
+                    (const_int 1536 [0x600])))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:9 91 {*andsi3_compare0}
+     (expr_list:REG_DEAD (reg:SI 122 [ _24 ])
+        (nil)))
+(jump_insn 36 35 37 3 (set (pc)
+        (if_then_else (eq (reg:CC_NZ 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 92)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:9 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC_NZ 100 cc)
+        (int_list:REG_BR_PROB 59055804 (nil)))
+ -> 92)
+(note 37 36 49 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 49 37 38 4 NOTE_INSN_DELETED)
+(debug_insn 38 49 39 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":85:5 -1
+     (nil))
+(debug_insn 39 38 40 4 (var_location:QI count (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":85:10 -1
+     (nil))
+(debug_insn 40 39 41 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":86:5 -1
+     (nil))
+(insn 41 40 42 4 (set (reg:SI 124 [ _26 ])
+        (mem/v:SI (plus:SI (reg/f:SI 114 [ _2 ])
+                (const_int 12 [0xc])) [2 _2->DR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":86:28 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 42 41 43 4 (set (mem/v/c:SI (plus:SI (reg/f:SI 102 sfp)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])
+        (reg:SI 124 [ _26 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":86:12 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 124 [ _26 ])
+        (nil)))
+(debug_insn 43 42 44 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":87:5 -1
+     (nil))
+(insn 44 43 45 4 (set (reg:SI 125 [ vol.1_28 ])
+        (mem/v/c:SI (plus:SI (reg/f:SI 102 sfp)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":87:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_UNUSED (reg:SI 125 [ vol.1_28 ])
+        (nil)))
+(debug_insn 45 44 46 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":88:5 -1
+     (nil))
+(debug_insn 46 45 47 4 (var_location:QI count (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 47 46 48 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:9 -1
+     (nil))
+(insn 48 47 50 4 (set (reg:SI 126 [ _32 ])
+        (mem/v:SI (plus:SI (reg/f:SI 114 [ _2 ])
+                (const_int 8 [0x8])) [2 _2->SR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:25 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 50 48 51 4 (parallel [
+            (set (reg:CC_NZ 100 cc)
+                (compare:CC_NZ (and:SI (reg:SI 126 [ _32 ])
+                        (const_int 1536 [0x600]))
+                    (const_int 0 [0])))
+            (set (reg:SI 134)
+                (and:SI (reg:SI 126 [ _32 ])
+                    (const_int 1536 [0x600])))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:9 91 {*andsi3_compare0}
+     (expr_list:REG_DEAD (reg:SI 126 [ _32 ])
+        (nil)))
+(jump_insn 51 50 52 4 (set (pc)
+        (if_then_else (eq (reg:CC_NZ 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 96)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:9 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC_NZ 100 cc)
+        (int_list:REG_BR_PROB 59055804 (nil)))
+ -> 96)
+(note 52 51 64 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(note 64 52 53 5 NOTE_INSN_DELETED)
+(debug_insn 53 64 54 5 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":85:5 -1
+     (nil))
+(debug_insn 54 53 55 5 (var_location:QI count (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":85:10 -1
+     (nil))
+(debug_insn 55 54 56 5 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":86:5 -1
+     (nil))
+(insn 56 55 57 5 (set (reg:SI 128 [ _34 ])
+        (mem/v:SI (plus:SI (reg/f:SI 114 [ _2 ])
+                (const_int 12 [0xc])) [2 _2->DR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":86:28 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 57 56 58 5 (set (mem/v/c:SI (plus:SI (reg/f:SI 102 sfp)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])
+        (reg:SI 128 [ _34 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":86:12 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 128 [ _34 ])
+        (nil)))
+(debug_insn 58 57 59 5 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":87:5 -1
+     (nil))
+(insn 59 58 60 5 (set (reg:SI 129 [ vol.1_36 ])
+        (mem/v/c:SI (plus:SI (reg/f:SI 102 sfp)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":87:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_UNUSED (reg:SI 129 [ vol.1_36 ])
+        (nil)))
+(debug_insn 60 59 61 5 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":88:5 -1
+     (nil))
+(debug_insn 61 60 62 5 (var_location:QI count (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 62 61 63 5 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:9 -1
+     (nil))
+(insn 63 62 65 5 (set (reg:SI 115 [ _3 ])
+        (mem/v:SI (plus:SI (reg/f:SI 114 [ _2 ])
+                (const_int 8 [0x8])) [2 _2->SR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:25 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 65 63 66 5 (parallel [
+            (set (reg:CC_NZ 100 cc)
+                (compare:CC_NZ (and:SI (reg:SI 115 [ _3 ])
+                        (const_int 1536 [0x600]))
+                    (const_int 0 [0])))
+            (set (reg:SI 135)
+                (and:SI (reg:SI 115 [ _3 ])
+                    (const_int 1536 [0x600])))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:9 91 {*andsi3_compare0}
+     (expr_list:REG_DEAD (reg:SI 115 [ _3 ])
+        (nil)))
+(jump_insn 66 65 67 5 (set (pc)
+        (if_then_else (eq (reg:CC_NZ 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 100)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:9 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC_NZ 100 cc)
+        (int_list:REG_BR_PROB 59055804 (nil)))
+ -> 100)
+(note 67 66 68 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 68 67 69 6 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":85:5 -1
+     (nil))
+(debug_insn 69 68 70 6 (var_location:QI count (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":85:10 -1
+     (nil))
+(debug_insn 70 69 71 6 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":86:5 -1
+     (nil))
+(insn 71 70 72 6 (set (reg:SI 113 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 114 [ _2 ])
+                (const_int 12 [0xc])) [2 _2->DR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":86:28 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 114 [ _2 ])
+        (nil)))
+(insn 72 71 73 6 (set (mem/v/c:SI (plus:SI (reg/f:SI 102 sfp)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])
+        (reg:SI 113 [ _1 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":86:12 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 113 [ _1 ])
+        (nil)))
+(debug_insn 73 72 74 6 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":87:5 -1
+     (nil))
+(insn 74 73 75 6 (set (reg:SI 117 [ vol.1_13 ])
+        (mem/v/c:SI (plus:SI (reg/f:SI 102 sfp)
+                (const_int -4 [0xfffffffffffffffc])) [2 tmpreg+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":87:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_UNUSED (reg:SI 117 [ vol.1_13 ])
+        (nil)))
+(debug_insn 75 74 4 6 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":88:5 -1
+     (nil))
+(insn 4 75 126 6 (set (reg:SI 130 [ <retval> ])
+        (const_int 3 [0x3])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":90:14 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 3 [0x3])
+        (nil)))
+(jump_insn 126 4 127 6 (set (pc)
+        (label_ref 76)) 284 {*arm_jump}
+     (nil)
+ -> 76)
+(barrier 127 126 88)
+(code_label 88 127 87 7 3 (nil) [1 uses])
+(note 87 88 6 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 6 87 128 7 (set (reg:SI 130 [ <retval> ])
+        (reg:SI 132)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":93:10 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 132)
+        (expr_list:REG_EQUAL (const_int 0 [0])
+            (nil))))
+(jump_insn 128 6 129 7 (set (pc)
+        (label_ref 76)) 284 {*arm_jump}
+     (nil)
+ -> 76)
+(barrier 129 128 92)
+(code_label 92 129 91 8 4 (nil) [1 uses])
+(note 91 92 7 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 7 91 130 8 (set (reg:SI 130 [ <retval> ])
+        (reg:SI 133)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":93:10 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 133)
+        (expr_list:REG_EQUAL (const_int 0 [0])
+            (nil))))
+(jump_insn 130 7 131 8 (set (pc)
+        (label_ref 76)) 284 {*arm_jump}
+     (nil)
+ -> 76)
+(barrier 131 130 96)
+(code_label 96 131 95 9 5 (nil) [1 uses])
+(note 95 96 5 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 5 95 132 9 (set (reg:SI 130 [ <retval> ])
+        (reg:SI 134)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":93:10 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 134)
+        (expr_list:REG_EQUAL (const_int 0 [0])
+            (nil))))
+(jump_insn 132 5 133 9 (set (pc)
+        (label_ref 76)) 284 {*arm_jump}
+     (nil)
+ -> 76)
+(barrier 133 132 100)
+(code_label 100 133 99 10 6 (nil) [1 uses])
+(note 99 100 8 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 8 99 76 10 (set (reg:SI 130 [ <retval> ])
+        (reg:SI 135)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":93:10 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 135)
+        (expr_list:REG_EQUAL (const_int 0 [0])
+            (nil))))
+(code_label 76 8 77 11 2 (nil) [4 uses])
+(note 77 76 82 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 82 77 83 11 (set (reg/i:SI 0 r0)
+        (reg:SI 130 [ <retval> ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":94:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 130 [ <retval> ])
+        (nil)))
+(insn 83 82 134 11 (use (reg/i:SI 0 r0)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":94:1 -1
+     (nil))
+(note 134 83 0 NOTE_INSN_DELETED)

@@ -1,0 +1,983 @@
+
+;; Function HAL_FLASHEx_EnableRunPowerDown (HAL_FLASHEx_EnableRunPowerDown, funcdef_no=329, decl_uid=8848, cgraph_uid=330, symbol_order=329)
+
+
+
+try_optimize_cfg iteration 1
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+scanning new insn with uid = 62.
+
+
+try_optimize_cfg iteration 1
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+HAL_FLASHEx_EnableRunPowerDown
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3]
+;;  ref usage 	r0={2d,2u} r1={2d,1u} r2={4d,3u} r3={2d,4u} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 41{28d,13u,0e} in 17{17 regular + 0 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 60 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 60 3 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 60 22 2 NOTE_INSN_FUNCTION_BEG)
+(note 22 2 5 2 NOTE_INSN_DELETED)
+(debug_insn 5 22 6 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":95:3 -1
+     (nil))
+(debug_insn 6 5 7 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":95:3 -1
+     (nil))
+(insn 7 6 8 2 (set (reg/f:SI 3 r3 [116])
+        (const_int 1073881088 [0x40022000])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":95:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073881088 [0x40022000])
+        (nil)))
+(insn 8 7 12 2 (set (reg:SI 1 r1 [117])
+        (const_int 68494903 [0x4152637])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":95:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 68494903 [0x4152637])
+        (nil)))
+(insn 12 8 9 2 (set (reg:SI 2 r2 [119])
+        (const_int -84148995 [0xfffffffffafbfcfd])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":95:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int -84148995 [0xfffffffffafbfcfd])
+        (nil)))
+(insn 9 12 10 2 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [116])
+                (const_int 4 [0x4])) [1 MEM[(struct FLASH_TypeDef *)1073881088B].PDKEYR+0 S4 A32])
+        (reg:SI 1 r1 [117])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":95:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 10 9 13 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":95:3 -1
+     (nil))
+(insn 13 10 14 2 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [116])
+                (const_int 4 [0x4])) [1 MEM[(struct FLASH_TypeDef *)1073881088B].PDKEYR+0 S4 A32])
+        (reg:SI 2 r2 [119])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":95:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 14 13 16 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":95:3 -1
+     (nil))
+(insn 16 14 26 2 (set (reg:SI 2 r2 [orig:113 _1 ] [113])
+        (mem/v:SI (reg/f:SI 3 r3 [116]) [1 MEM[(struct FLASH_TypeDef *)1073881088B].ACR+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":95:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 26 16 17 2 (set (reg/i:SI 0 r0)
+        (const_int 0 [0])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":99:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(insn 17 26 19 2 (set (reg:SI 2 r2 [orig:114 _2 ] [114])
+        (ior:SI (reg:SI 2 r2 [orig:113 _1 ] [113])
+            (const_int 8192 [0x2000]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":95:3 106 {*iorsi3_insn}
+     (nil))
+(insn 19 17 20 2 (set (mem/v:SI (reg/f:SI 3 r3 [116]) [1 MEM[(struct FLASH_TypeDef *)1073881088B].ACR+0 S4 A64])
+        (reg:SI 2 r2 [orig:114 _2 ] [114])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":95:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 20 19 21 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":95:3 -1
+     (nil))
+(debug_insn 21 20 27 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":97:3 -1
+     (nil))
+(insn 27 21 61 2 (use (reg/i:SI 0 r0)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":99:1 -1
+     (nil))
+(note 61 27 62 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 62 61 63 2 (simple_return) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":99:1 -1
+     (nil)
+ -> simple_return)
+(barrier 63 62 32)
+(note 32 63 33 NOTE_INSN_DELETED)
+(note 33 32 0 NOTE_INSN_DELETED)
+
+;; Function HAL_FLASHEx_DisableRunPowerDown (HAL_FLASHEx_DisableRunPowerDown, funcdef_no=330, decl_uid=8850, cgraph_uid=331, symbol_order=330)
+
+
+
+try_optimize_cfg iteration 1
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+scanning new insn with uid = 39.
+
+
+try_optimize_cfg iteration 1
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+HAL_FLASHEx_DisableRunPowerDown
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3]
+;;  ref usage 	r0={2d,2u} r1={2d,1u} r2={4d,3u} r3={2d,4u} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 41{28d,13u,0e} in 17{17 regular + 0 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 37 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 37 3 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 37 22 2 NOTE_INSN_FUNCTION_BEG)
+(note 22 2 5 2 NOTE_INSN_DELETED)
+(debug_insn 5 22 6 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":109:3 -1
+     (nil))
+(debug_insn 6 5 7 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":109:3 -1
+     (nil))
+(insn 7 6 8 2 (set (reg/f:SI 3 r3 [116])
+        (const_int 1073881088 [0x40022000])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":109:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073881088 [0x40022000])
+        (nil)))
+(insn 8 7 12 2 (set (reg:SI 1 r1 [117])
+        (const_int 68494903 [0x4152637])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":109:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 68494903 [0x4152637])
+        (nil)))
+(insn 12 8 9 2 (set (reg:SI 2 r2 [119])
+        (const_int -84148995 [0xfffffffffafbfcfd])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":109:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int -84148995 [0xfffffffffafbfcfd])
+        (nil)))
+(insn 9 12 10 2 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [116])
+                (const_int 4 [0x4])) [1 MEM[(struct FLASH_TypeDef *)1073881088B].PDKEYR+0 S4 A32])
+        (reg:SI 1 r1 [117])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":109:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 10 9 13 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":109:3 -1
+     (nil))
+(insn 13 10 14 2 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [116])
+                (const_int 4 [0x4])) [1 MEM[(struct FLASH_TypeDef *)1073881088B].PDKEYR+0 S4 A32])
+        (reg:SI 2 r2 [119])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":109:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 14 13 16 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":109:3 -1
+     (nil))
+(insn 16 14 26 2 (set (reg:SI 2 r2 [orig:113 _1 ] [113])
+        (mem/v:SI (reg/f:SI 3 r3 [116]) [1 MEM[(struct FLASH_TypeDef *)1073881088B].ACR+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":109:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 26 16 17 2 (set (reg/i:SI 0 r0)
+        (const_int 0 [0])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":112:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(insn 17 26 19 2 (set (reg:SI 2 r2 [orig:114 _2 ] [114])
+        (and:SI (reg:SI 2 r2 [orig:113 _1 ] [113])
+            (const_int -8193 [0xffffffffffffdfff]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":109:3 90 {*arm_andsi3_insn}
+     (nil))
+(insn 19 17 20 2 (set (mem/v:SI (reg/f:SI 3 r3 [116]) [1 MEM[(struct FLASH_TypeDef *)1073881088B].ACR+0 S4 A64])
+        (reg:SI 2 r2 [orig:114 _2 ] [114])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":109:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 20 19 21 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":109:3 -1
+     (nil))
+(debug_insn 21 20 27 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":111:3 -1
+     (nil))
+(insn 27 21 38 2 (use (reg/i:SI 0 r0)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":112:1 -1
+     (nil))
+(note 38 27 39 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 39 38 40 2 (simple_return) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":112:1 -1
+     (nil)
+ -> simple_return)
+(barrier 40 39 32)
+(note 32 40 33 NOTE_INSN_DELETED)
+(note 33 32 0 NOTE_INSN_DELETED)
+
+;; Function HAL_FLASHEx_OB_DBankConfig (HAL_FLASHEx_OB_DBankConfig, funcdef_no=331, decl_uid=8852, cgraph_uid=332, symbol_order=331)
+
+
+
+try_optimize_cfg iteration 1
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Attempting shrink-wrapping optimization.
+Block 3 needs the prologue.
+Block 4 needs the prologue.
+Block 9 needs the prologue.
+Block 11 needs the prologue.
+Block 13 needs the prologue.
+Block 15 needs the prologue.
+Block 17 needs the prologue.
+After wrapping required blocks, PRO is now 3
+Avoiding non-duplicatable blocks, PRO is now 3
+Bumping back to anticipatable blocks, PRO is now 3
+Performing shrink-wrapping.
+changing bb of uid 324
+  unscanned insn
+changing bb of uid 323
+  unscanned insn
+scanning new insn with uid = 323.
+Duplicated 23 to 24
+Redirecting edge 22->23 to 24
+scanning new insn with uid = 326.
+scanning new insn with uid = 328.
+Made simple_return with UID 328 in bb 24
+changing bb of uid 330
+  unscanned insn
+Made prologue block 25
+changing bb of uid 331
+  unscanned insn
+scanning new insn with uid = 333.
+Redirected edge from 26
+scanning new insn with uid = 336.
+scanning new insn with uid = 318.
+scanning new insn with uid = 319.
+scanning new insn with uid = 315.
+
+
+try_optimize_cfg iteration 1
+
+Forwarding edge 2->3 to 4 failed.
+Removing jump 333.
+deleting insn with uid = 333.
+Deleting fallthru block 3.
+deleting block 3
+Moved block 24 after 22 and merged.
+Merging block 24 into block 22...
+deleting insn with uid = 293.
+changing bb of uid 258
+  from 24 to 22
+changing bb of uid 317
+  unscanned insn
+changing bb of uid 318
+  from 24 to 22
+changing bb of uid 319
+  from 24 to 22
+Merged blocks 22 and 24.
+Moved block 25 after 23 and merged.
+Merging block 25 into block 23...
+deleting insn with uid = 326.
+changing bb of uid 323
+  from 25 to 23
+changing bb of uid 328
+  from 25 to 23
+Merged blocks 23 and 25.
+deleting insn with uid = 336.
+deleting block 26
+
+
+try_optimize_cfg iteration 2
+
+Deleted label in block 4.
+
+
+try_optimize_cfg iteration 1
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+HAL_FLASHEx_OB_DBankConfig
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 5 [r5] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 4 [r4] 5 [r5] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 5 [r5] 100 [cc]
+;;  ref usage 	r0={5d,6u} r1={2d,3u} r2={33d,41u} r3={33d,64u,2e} r4={9d,13u} r5={3d,3u} r13={3d,28u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={11d,10u} 
+;;    total ref usage 287{116d,169u,2e} in 178{178 regular + 0 call} insns.
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 3 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 3 6 8 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 8 3 9 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":132:3 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":133:3 -1
+     (nil))
+(debug_insn 10 9 11 2 (var_location:QI status (const_int 1 [0x1])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":133:21 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":136:3 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":136:3 -1
+     (nil))
+(insn 13 12 14 2 (set (reg/f:SI 1 r1 [256])
+        (symbol_ref:SI ("pFlash") [flags 0xc0]  <var_decl 0000000006b41000 pFlash>)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":136:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (symbol_ref:SI ("pFlash") [flags 0xc0]  <var_decl 0000000006b41000 pFlash>)
+        (nil)))
+(insn 14 13 15 2 (set (reg:SI 3 r3 [orig:181 pFlash.Lock ] [181])
+        (zero_extend:SI (mem/c:QI (reg/f:SI 1 r1 [256]) [0 pFlash.Lock+0 S1 A32]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":136:3 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_EQUAL (zero_extend:SI (mem/c:QI (symbol_ref:SI ("pFlash") [flags 0xc0]  <var_decl 0000000006b41000 pFlash>) [0 pFlash.Lock+0 S1 A32]))
+        (nil)))
+(insn 15 14 16 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:181 pFlash.Lock ] [181])
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":136:3 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 16 15 17 2 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 263)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":136:3 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 134217732 (nil))
+ -> 263)
+(note 17 16 315 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn/f 315 17 316 4 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [4  A8])
+                (unspec:BLK [
+                        (reg:SI 4 r4)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 5 r5))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":131:1 -1
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -8 [0xfffffffffffffff8])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32])
+                    (reg:SI 4 r4))
+                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                            (const_int 4 [0x4])) [4  S4 A32])
+                    (reg:SI 5 r5))
+            ])
+        (nil)))
+(note 316 315 18 4 NOTE_INSN_PROLOGUE_END)
+(debug_insn 18 316 25 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":136:3 -1
+     (nil))
+(insn 25 18 20 4 (set (reg/f:SI 3 r3 [185])
+        (const_int 1073881088 [0x40022000])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":139:7 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073881088 [0x40022000])
+        (nil)))
+(insn 20 25 22 4 (set (reg:SI 2 r2 [183])
+        (const_int 1 [0x1])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":136:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1 [0x1])
+        (nil)))
+(insn 22 20 23 4 (set (mem/c:QI (reg/f:SI 1 r1 [256]) [0 pFlash.Lock+0 S1 A32])
+        (reg:QI 2 r2 [183])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":136:3 263 {*arm_movqi_insn}
+     (nil))
+(debug_insn 23 22 24 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":136:3 -1
+     (nil))
+(debug_insn 24 23 26 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":139:3 -1
+     (nil))
+(insn 26 24 27 4 (set (reg/v:SI 2 r2 [orig:172 reg ] [172])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [185])
+                (const_int 36 [0x24])) [1 MEM[(struct FLASH_TypeDef *)1073881088B].PCROP1SR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":139:7 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 27 26 28 4 (var_location:SI reg (reg/v:SI 2 r2 [orig:172 reg ] [172])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":139:7 -1
+     (nil))
+(debug_insn 28 27 30 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":140:3 -1
+     (nil))
+(insn 30 28 31 4 (set (reg:SI 4 r4 [orig:114 _2 ] [114])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [185])
+                (const_int 40 [0x28])) [1 MEM[(struct FLASH_TypeDef *)1073881088B].PCROP1ER+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":140:18 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 31 30 32 4 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 4 r4 [orig:114 _2 ] [114])
+            (reg/v:SI 2 r2 [orig:172 reg ] [172]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":140:6 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 32 31 33 4 (set (pc)
+        (if_then_else (geu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 241)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":140:6 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 241)
+(note 33 32 34 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 34 33 36 5 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":142:5 -1
+     (nil))
+(insn 36 34 37 5 (set (reg/v:SI 2 r2 [orig:173 reg ] [173])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [185])
+                (const_int 68 [0x44])) [1 MEM[(struct FLASH_TypeDef *)1073881088B].PCROP2SR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":142:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 37 36 38 5 (var_location:SI reg (reg/v:SI 2 r2 [orig:173 reg ] [173])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":142:9 -1
+     (nil))
+(debug_insn 38 37 40 5 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":143:5 -1
+     (nil))
+(insn 40 38 41 5 (set (reg:SI 4 r4 [orig:115 _3 ] [115])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [185])
+                (const_int 72 [0x48])) [1 MEM[(struct FLASH_TypeDef *)1073881088B].PCROP2ER+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":143:20 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 41 40 42 5 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 4 r4 [orig:115 _3 ] [115])
+            (reg/v:SI 2 r2 [orig:173 reg ] [173]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":143:8 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 42 41 43 5 (set (pc)
+        (if_then_else (geu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 241)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":143:8 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 241)
+(note 43 42 53 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(note 53 43 44 6 NOTE_INSN_DELETED)
+(debug_insn 44 53 46 6 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":146:7 -1
+     (nil))
+(insn 46 44 47 6 (set (reg:SI 2 r2 [orig:116 _4 ] [116])
+        (mem/v:SI (reg/f:SI 3 r3 [185]) [1 MEM[(struct FLASH_TypeDef *)1073881088B].ACR+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":146:7 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 47 46 49 6 (set (reg:SI 2 r2 [orig:117 _5 ] [117])
+        (and:SI (reg:SI 2 r2 [orig:116 _4 ] [116])
+            (const_int -257 [0xfffffffffffffeff]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":146:7 90 {*arm_andsi3_insn}
+     (nil))
+(insn 49 47 50 6 (set (mem/v:SI (reg/f:SI 3 r3 [185]) [1 MEM[(struct FLASH_TypeDef *)1073881088B].ACR+0 S4 A64])
+        (reg:SI 2 r2 [orig:117 _5 ] [117])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":146:7 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 50 49 52 6 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":148:7 -1
+     (nil))
+(insn 52 50 54 6 (set (reg:SI 2 r2 [orig:118 _6 ] [118])
+        (mem/v:SI (reg/f:SI 3 r3 [185]) [1 MEM[(struct FLASH_TypeDef *)1073881088B].ACR+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":148:11 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 54 52 55 6 (set (reg:CC_NZ 100 cc)
+        (compare:CC_NZ (zero_extract:SI (reg:SI 2 r2 [orig:118 _6 ] [118])
+                (const_int 1 [0x1])
+                (const_int 9 [0x9]))
+            (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":148:10 93 {*zeroextractsi_compare0_scratch}
+     (nil))
+(jump_insn 55 54 56 6 (set (pc)
+        (if_then_else (eq (reg:CC_NZ 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 76)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":148:10 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 76)
+(note 56 55 57 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 57 56 59 7 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":151:9 -1
+     (nil))
+(insn 59 57 60 7 (set (reg:SI 2 r2 [orig:120 _8 ] [120])
+        (mem/v:SI (reg/f:SI 3 r3 [185]) [1 MEM[(struct FLASH_TypeDef *)1073881088B].ACR+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":151:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 60 59 62 7 (set (reg:SI 2 r2 [orig:121 _9 ] [121])
+        (and:SI (reg:SI 2 r2 [orig:120 _8 ] [120])
+            (const_int -513 [0xfffffffffffffdff]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":151:9 90 {*arm_andsi3_insn}
+     (nil))
+(insn 62 60 63 7 (set (mem/v:SI (reg/f:SI 3 r3 [185]) [1 MEM[(struct FLASH_TypeDef *)1073881088B].ACR+0 S4 A64])
+        (reg:SI 2 r2 [orig:121 _9 ] [121])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":151:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 63 62 64 7 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":154:9 -1
+     (nil))
+(debug_insn 64 63 66 7 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":154:9 -1
+     (nil))
+(insn 66 64 67 7 (set (reg:SI 2 r2 [orig:122 _10 ] [122])
+        (mem/v:SI (reg/f:SI 3 r3 [185]) [1 MEM[(struct FLASH_TypeDef *)1073881088B].ACR+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":154:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 67 66 69 7 (set (reg:SI 2 r2 [orig:123 _11 ] [123])
+        (ior:SI (reg:SI 2 r2 [orig:122 _10 ] [122])
+            (const_int 2048 [0x800]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":154:9 106 {*iorsi3_insn}
+     (nil))
+(insn 69 67 70 7 (set (mem/v:SI (reg/f:SI 3 r3 [185]) [1 MEM[(struct FLASH_TypeDef *)1073881088B].ACR+0 S4 A64])
+        (reg:SI 2 r2 [orig:123 _11 ] [123])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":154:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 70 69 72 7 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":154:9 -1
+     (nil))
+(insn 72 70 73 7 (set (reg:SI 2 r2 [orig:124 _12 ] [124])
+        (mem/v:SI (reg/f:SI 3 r3 [185]) [1 MEM[(struct FLASH_TypeDef *)1073881088B].ACR+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":154:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 73 72 75 7 (set (reg:SI 2 r2 [orig:125 _13 ] [125])
+        (and:SI (reg:SI 2 r2 [orig:124 _12 ] [124])
+            (const_int -2049 [0xfffffffffffff7ff]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":154:9 90 {*arm_andsi3_insn}
+     (nil))
+(insn 75 73 76 7 (set (mem/v:SI (reg/f:SI 3 r3 [185]) [1 MEM[(struct FLASH_TypeDef *)1073881088B].ACR+0 S4 A64])
+        (reg:SI 2 r2 [orig:125 _13 ] [125])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":154:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(code_label 76 75 77 8 11 (nil) [1 uses])
+(note 77 76 82 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(note 82 77 78 8 NOTE_INSN_DELETED)
+(debug_insn 78 82 79 8 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":154:9 -1
+     (nil))
+(debug_insn 79 78 80 8 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":157:7 -1
+     (nil))
+(insn 80 79 81 8 (set (reg/f:SI 3 r3 [199])
+        (const_int 1073881088 [0x40022000])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":157:11 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073881088 [0x40022000])
+        (nil)))
+(insn 81 80 83 8 (set (reg:SI 2 r2 [orig:126 _14 ] [126])
+        (mem/v:SI (reg/f:SI 3 r3 [199]) [1 MEM[(struct FLASH_TypeDef *)1073881088B].ACR+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":157:11 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 83 81 84 8 (set (reg:CC_NZ 100 cc)
+        (compare:CC_NZ (zero_extract:SI (reg:SI 2 r2 [orig:126 _14 ] [126])
+                (const_int 1 [0x1])
+                (const_int 10 [0xa]))
+            (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":157:10 93 {*zeroextractsi_compare0_scratch}
+     (nil))
+(jump_insn 84 83 85 8 (set (pc)
+        (if_then_else (eq (reg:CC_NZ 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 105)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":157:10 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 105)
+(note 85 84 86 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 86 85 88 9 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":160:9 -1
+     (nil))
+(insn 88 86 89 9 (set (reg:SI 2 r2 [orig:128 _16 ] [128])
+        (mem/v:SI (reg/f:SI 3 r3 [199]) [1 MEM[(struct FLASH_TypeDef *)1073881088B].ACR+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":160:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 89 88 91 9 (set (reg:SI 2 r2 [orig:129 _17 ] [129])
+        (and:SI (reg:SI 2 r2 [orig:128 _16 ] [128])
+            (const_int -1025 [0xfffffffffffffbff]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":160:9 90 {*arm_andsi3_insn}
+     (nil))
+(insn 91 89 92 9 (set (mem/v:SI (reg/f:SI 3 r3 [199]) [1 MEM[(struct FLASH_TypeDef *)1073881088B].ACR+0 S4 A64])
+        (reg:SI 2 r2 [orig:129 _17 ] [129])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":160:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 92 91 93 9 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":163:9 -1
+     (nil))
+(debug_insn 93 92 95 9 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":163:9 -1
+     (nil))
+(insn 95 93 96 9 (set (reg:SI 2 r2 [orig:130 _18 ] [130])
+        (mem/v:SI (reg/f:SI 3 r3 [199]) [1 MEM[(struct FLASH_TypeDef *)1073881088B].ACR+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":163:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 96 95 98 9 (set (reg:SI 2 r2 [orig:131 _19 ] [131])
+        (ior:SI (reg:SI 2 r2 [orig:130 _18 ] [130])
+            (const_int 4096 [0x1000]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":163:9 106 {*iorsi3_insn}
+     (nil))
+(insn 98 96 99 9 (set (mem/v:SI (reg/f:SI 3 r3 [199]) [1 MEM[(struct FLASH_TypeDef *)1073881088B].ACR+0 S4 A64])
+        (reg:SI 2 r2 [orig:131 _19 ] [131])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":163:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 99 98 101 9 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":163:9 -1
+     (nil))
+(insn 101 99 102 9 (set (reg:SI 2 r2 [orig:132 _20 ] [132])
+        (mem/v:SI (reg/f:SI 3 r3 [199]) [1 MEM[(struct FLASH_TypeDef *)1073881088B].ACR+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":163:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 102 101 104 9 (set (reg:SI 2 r2 [orig:133 _21 ] [133])
+        (and:SI (reg:SI 2 r2 [orig:132 _20 ] [132])
+            (const_int -4097 [0xffffffffffffefff]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":163:9 90 {*arm_andsi3_insn}
+     (nil))
+(insn 104 102 105 9 (set (mem/v:SI (reg/f:SI 3 r3 [199]) [1 MEM[(struct FLASH_TypeDef *)1073881088B].ACR+0 S4 A64])
+        (reg:SI 2 r2 [orig:133 _21 ] [133])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":163:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(code_label 105 104 106 10 12 (nil) [1 uses])
+(note 106 105 114 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(note 114 106 107 10 NOTE_INSN_DELETED)
+(debug_insn 107 114 108 10 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":163:9 -1
+     (nil))
+(debug_insn 108 107 109 10 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":167:7 -1
+     (nil))
+(insn 109 108 110 10 (set (reg/f:SI 2 r2 [207])
+        (const_int 1073881088 [0x40022000])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":167:11 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073881088 [0x40022000])
+        (nil)))
+(insn 110 109 111 10 (set (reg/v:SI 3 r3 [orig:174 reg ] [174])
+        (mem/v:SI (plus:SI (reg/f:SI 2 r2 [207])
+                (const_int 44 [0x2c])) [1 MEM[(struct FLASH_TypeDef *)1073881088B].WRP1AR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":167:11 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 111 110 112 10 (var_location:SI reg (reg/v:SI 3 r3 [orig:174 reg ] [174])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":167:11 -1
+     (nil))
+(debug_insn 112 111 113 10 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":168:7 -1
+     (nil))
+(insn 113 112 115 10 (set (reg:SI 4 r4 [208])
+        (and:SI (reg/v:SI 3 r3 [orig:174 reg ] [174])
+            (const_int 127 [0x7f]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":168:44 90 {*arm_andsi3_insn}
+     (nil))
+(insn 115 113 116 10 (set (reg:SI 3 r3 [210])
+        (zero_extract:SI (reg/v:SI 3 r3 [orig:174 reg ] [174])
+            (const_int 7 [0x7])
+            (const_int 16 [0x10]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":169:43 161 {extzv_t2}
+     (nil))
+(insn 116 115 117 10 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 4 r4 [208])
+            (reg:SI 3 r3 [210]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":168:10 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 117 116 118 10 (set (pc)
+        (if_then_else (gtu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 126)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":168:10 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 126)
+(note 118 117 119 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 119 118 121 11 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":171:9 -1
+     (nil))
+(insn 121 119 122 11 (set (reg:SI 3 r3 [orig:137 _25 ] [137])
+        (mem/v:SI (plus:SI (reg/f:SI 2 r2 [207])
+                (const_int 44 [0x2c])) [1 MEM[(struct FLASH_TypeDef *)1073881088B].WRP1AR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":171:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 122 121 123 11 (set (reg:SI 3 r3 [212])
+        (and:SI (reg:SI 3 r3 [orig:137 _25 ] [137])
+            (const_int -8323200 [0xffffffffff80ff80]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":171:9 90 {*arm_andsi3_insn}
+     (nil))
+(insn 123 122 125 11 (set (reg:SI 3 r3 [orig:139 _27 ] [139])
+        (ior:SI (reg:SI 3 r3 [212])
+            (const_int 127 [0x7f]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":171:9 106 {*iorsi3_insn}
+     (nil))
+(insn 125 123 126 11 (set (mem/v:SI (plus:SI (reg/f:SI 2 r2 [207])
+                (const_int 44 [0x2c])) [1 MEM[(struct FLASH_TypeDef *)1073881088B].WRP1AR+0 S4 A32])
+        (reg:SI 3 r3 [orig:139 _27 ] [139])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":171:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(code_label 126 125 127 12 13 (nil) [1 uses])
+(note 127 126 134 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(note 134 127 128 12 NOTE_INSN_DELETED)
+(debug_insn 128 134 129 12 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":175:7 -1
+     (nil))
+(insn 129 128 130 12 (set (reg/f:SI 2 r2 [214])
+        (const_int 1073881088 [0x40022000])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":175:11 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073881088 [0x40022000])
+        (nil)))
+(insn 130 129 131 12 (set (reg/v:SI 3 r3 [orig:175 reg ] [175])
+        (mem/v:SI (plus:SI (reg/f:SI 2 r2 [214])
+                (const_int 48 [0x30])) [1 MEM[(struct FLASH_TypeDef *)1073881088B].WRP1BR+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":175:11 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 131 130 132 12 (var_location:SI reg (reg/v:SI 3 r3 [orig:175 reg ] [175])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":175:11 -1
+     (nil))
+(debug_insn 132 131 133 12 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":176:7 -1
+     (nil))
+(insn 133 132 135 12 (set (reg:SI 4 r4 [215])
+        (and:SI (reg/v:SI 3 r3 [orig:175 reg ] [175])
+            (const_int 127 [0x7f]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":176:44 90 {*arm_andsi3_insn}
+     (nil))
+(insn 135 133 136 12 (set (reg:SI 3 r3 [217])
+        (zero_extract:SI (reg/v:SI 3 r3 [orig:175 reg ] [175])
+            (const_int 7 [0x7])
+            (const_int 16 [0x10]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":177:43 161 {extzv_t2}
+     (nil))
+(insn 136 135 137 12 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 4 r4 [215])
+            (reg:SI 3 r3 [217]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":176:10 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 137 136 138 12 (set (pc)
+        (if_then_else (gtu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 146)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":176:10 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 146)
+(note 138 137 139 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 139 138 141 13 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":179:9 -1
+     (nil))
+(insn 141 139 142 13 (set (reg:SI 3 r3 [orig:143 _31 ] [143])
+        (mem/v:SI (plus:SI (reg/f:SI 2 r2 [214])
+                (const_int 48 [0x30])) [1 MEM[(struct FLASH_TypeDef *)1073881088B].WRP1BR+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":179:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 142 141 143 13 (set (reg:SI 3 r3 [219])
+        (and:SI (reg:SI 3 r3 [orig:143 _31 ] [143])
+            (const_int -8323200 [0xffffffffff80ff80]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":179:9 90 {*arm_andsi3_insn}
+     (nil))
+(insn 143 142 145 13 (set (reg:SI 3 r3 [orig:145 _33 ] [145])
+        (ior:SI (reg:SI 3 r3 [219])
+            (const_int 127 [0x7f]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":179:9 106 {*iorsi3_insn}
+     (nil))
+(insn 145 143 146 13 (set (mem/v:SI (plus:SI (reg/f:SI 2 r2 [214])
+                (const_int 48 [0x30])) [1 MEM[(struct FLASH_TypeDef *)1073881088B].WRP1BR+0 S4 A64])
+        (reg:SI 3 r3 [orig:145 _33 ] [145])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":179:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(code_label 146 145 147 14 14 (nil) [1 uses])
+(note 147 146 154 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(note 154 147 148 14 NOTE_INSN_DELETED)
+(debug_insn 148 154 149 14 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":183:7 -1
+     (nil))
+(insn 149 148 150 14 (set (reg/f:SI 2 r2 [221])
+        (const_int 1073881088 [0x40022000])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":183:11 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073881088 [0x40022000])
+        (nil)))
+(insn 150 149 151 14 (set (reg/v:SI 3 r3 [orig:176 reg ] [176])
+        (mem/v:SI (plus:SI (reg/f:SI 2 r2 [221])
+                (const_int 76 [0x4c])) [1 MEM[(struct FLASH_TypeDef *)1073881088B].WRP2AR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":183:11 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 151 150 152 14 (var_location:SI reg (reg/v:SI 3 r3 [orig:176 reg ] [176])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":183:11 -1
+     (nil))
+(debug_insn 152 151 153 14 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":184:7 -1
+     (nil))
+(insn 153 152 155 14 (set (reg:SI 4 r4 [222])
+        (and:SI (reg/v:SI 3 r3 [orig:176 reg ] [176])
+            (const_int 127 [0x7f]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":184:44 90 {*arm_andsi3_insn}
+     (nil))
+(insn 155 153 156 14 (set (reg:SI 3 r3 [224])
+        (zero_extract:SI (reg/v:SI 3 r3 [orig:176 reg ] [176])
+            (const_int 7 [0x7])
+            (const_int 16 [0x10]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":185:43 161 {extzv_t2}
+     (nil))
+(insn 156 155 157 14 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 4 r4 [222])
+            (reg:SI 3 r3 [224]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":184:10 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 157 156 158 14 (set (pc)
+        (if_then_else (gtu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 166)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":184:10 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 166)
+(note 158 157 159 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 159 158 161 15 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":187:9 -1
+     (nil))
+(insn 161 159 162 15 (set (reg:SI 3 r3 [orig:149 _37 ] [149])
+        (mem/v:SI (plus:SI (reg/f:SI 2 r2 [221])
+                (const_int 76 [0x4c])) [1 MEM[(struct FLASH_TypeDef *)1073881088B].WRP2AR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":187:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 162 161 163 15 (set (reg:SI 3 r3 [226])
+        (and:SI (reg:SI 3 r3 [orig:149 _37 ] [149])
+            (const_int -8323200 [0xffffffffff80ff80]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":187:9 90 {*arm_andsi3_insn}
+     (nil))
+(insn 163 162 165 15 (set (reg:SI 3 r3 [orig:151 _39 ] [151])
+        (ior:SI (reg:SI 3 r3 [226])
+            (const_int 127 [0x7f]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":187:9 106 {*iorsi3_insn}
+     (nil))
+(insn 165 163 166 15 (set (mem/v:SI (plus:SI (reg/f:SI 2 r2 [221])
+                (const_int 76 [0x4c])) [1 MEM[(struct FLASH_TypeDef *)1073881088B].WRP2AR+0 S4 A32])
+        (reg:SI 3 r3 [orig:151 _39 ] [151])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":187:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(code_label 166 165 167 16 15 (nil) [1 uses])
+(note 167 166 174 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(note 174 167 168 16 NOTE_INSN_DELETED)
+(debug_insn 168 174 169 16 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":191:7 -1
+     (nil))
+(insn 169 168 170 16 (set (reg/f:SI 2 r2 [228])
+        (const_int 1073881088 [0x40022000])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":191:11 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073881088 [0x40022000])
+        (nil)))
+(insn 170 169 171 16 (set (reg/v:SI 3 r3 [orig:177 reg ] [177])
+        (mem/v:SI (plus:SI (reg/f:SI 2 r2 [228])
+                (const_int 80 [0x50])) [1 MEM[(struct FLASH_TypeDef *)1073881088B].WRP2BR+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":191:11 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 171 170 172 16 (var_location:SI reg (reg/v:SI 3 r3 [orig:177 reg ] [177])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":191:11 -1
+     (nil))
+(debug_insn 172 171 173 16 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":192:7 -1
+     (nil))
+(insn 173 172 175 16 (set (reg:SI 4 r4 [229])
+        (and:SI (reg/v:SI 3 r3 [orig:177 reg ] [177])
+            (const_int 127 [0x7f]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":192:44 90 {*arm_andsi3_insn}
+     (nil))
+(insn 175 173 176 16 (set (reg:SI 3 r3 [231])
+        (zero_extract:SI (reg/v:SI 3 r3 [orig:177 reg ] [177])
+            (const_int 7 [0x7])
+            (const_int 16 [0x10]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":193:43 161 {extzv_t2}
+     (nil))
+(insn 176 175 177 16 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 4 r4 [229])
+            (reg:SI 3 r3 [231]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":192:10 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 177 176 178 16 (set (pc)
+        (if_then_else (gtu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 186)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":192:10 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 186)
+(note 178 177 179 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 179 178 181 17 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":195:9 -1
+     (nil))
+(insn 181 179 182 17 (set (reg:SI 3 r3 [orig:155 _43 ] [155])
+        (mem/v:SI (plus:SI (reg/f:SI 2 r2 [228])
+                (const_int 80 [0x50])) [1 MEM[(struct FLASH_TypeDef *)1073881088B].WRP2BR+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":195:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 182 181 183 17 (set (reg:SI 3 r3 [233])
+        (and:SI (reg:SI 3 r3 [orig:155 _43 ] [155])
+            (const_int -8323200 [0xffffffffff80ff80]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":195:9 90 {*arm_andsi3_insn}
+     (nil))
+(insn 183 182 185 17 (set (reg:SI 3 r3 [orig:157 _45 ] [157])
+        (ior:SI (reg:SI 3 r3 [233])
+            (const_int 127 [0x7f]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":195:9 106 {*iorsi3_insn}
+     (nil))
+(insn 185 183 186 17 (set (mem/v:SI (plus:SI (reg/f:SI 2 r2 [228])
+                (const_int 80 [0x50])) [1 MEM[(struct FLASH_TypeDef *)1073881088B].WRP2BR+0 S4 A64])
+        (reg:SI 3 r3 [orig:157 _45 ] [157])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":195:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(code_label 186 185 187 18 16 (nil) [1 uses])
+(note 187 186 188 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 188 187 189 18 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":199:7 -1
+     (nil))
+(insn 189 188 202 18 (set (reg/f:SI 4 r4 [235])
+        (const_int 1073881088 [0x40022000])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":199:7 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073881088 [0x40022000])
+        (nil)))
+(insn 202 189 190 18 (set (reg/f:SI 5 r5 [240])
+        (symbol_ref:SI ("SystemCoreClock") [flags 0xc0]  <var_decl 0000000005f9bc60 SystemCoreClock>)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":206:59 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (symbol_ref:SI ("SystemCoreClock") [flags 0xc0]  <var_decl 0000000005f9bc60 SystemCoreClock>)
+        (nil)))
+(insn 190 202 191 18 (set (reg:SI 3 r3 [orig:158 _46 ] [158])
+        (mem/v:SI (plus:SI (reg/f:SI 4 r4 [235])
+                (const_int 32 [0x20])) [1 MEM[(struct FLASH_TypeDef *)1073881088B].OPTR+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":199:7 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 191 190 192 18 (set (reg:SI 3 r3 [236])
+        (and:SI (reg:SI 3 r3 [orig:158 _46 ] [158])
+            (const_int -4194305 [0xffffffffffbfffff]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":199:7 90 {*arm_andsi3_insn}
+     (nil))
+(insn 192 191 194 18 (set (reg:SI 0 r0 [orig:160 _48 ] [160])
+        (ior:SI (reg/v:SI 0 r0 [orig:179 DBankConfig ] [179])
+            (reg:SI 3 r3 [236]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":199:7 106 {*iorsi3_insn}
+     (nil))
+(insn 194 192 195 18 (set (mem/v:SI (plus:SI (reg/f:SI 4 r4 [235])
+                (const_int 32 [0x20])) [1 MEM[(struct FLASH_TypeDef *)1073881088B].OPTR+0 S4 A64])
+        (reg:SI 0 r0 [orig:160 _48 ] [160])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":199:7 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 195 194 197 18 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":202:7 -1
+     (nil))
+(insn 197 195 204 18 (set (reg:SI 2 r2 [orig:161 _49 ] [161])
+        (mem/v:SI (plus:SI (reg/f:SI 4 r4 [235])
+                (const_int 20 [0x14])) [1 MEM[(struct FLASH_TypeDef *)1073881088B].CR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":202:7 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 204 197 198 18 (set (reg:SI 0 r0 [244])
+        (const_int 274877907 [0x10624dd3])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":206:59 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 274877907 [0x10624dd3])
+        (nil)))
+(insn 198 204 200 18 (set (reg:SI 2 r2 [orig:162 _50 ] [162])
+        (ior:SI (reg:SI 2 r2 [orig:161 _49 ] [161])
+            (const_int 131072 [0x20000]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":202:7 106 {*iorsi3_insn}
+     (nil))
+(insn 200 198 201 18 (set (mem/v:SI (plus:SI (reg/f:SI 4 r4 [235])
+                (const_int 20 [0x14])) [1 MEM[(struct FLASH_TypeDef *)1073881088B].CR+0 S4 A32])
+        (reg:SI 2 r2 [orig:162 _50 ] [162])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":202:7 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 201 200 203 18 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":206:7 -1
+     (nil))
+(insn 203 201 205 18 (set (reg:SI 3 r3 [orig:242 SystemCoreClock ] [242])
+        (mem/c:SI (reg/f:SI 5 r5 [240]) [1 SystemCoreClock+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":206:59 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (mem/c:SI (symbol_ref:SI ("SystemCoreClock") [flags 0xc0]  <var_decl 0000000005f9bc60 SystemCoreClock>) [1 SystemCoreClock+0 S4 A32])
+        (nil)))
+(insn 205 203 206 18 (parallel [
+            (set (reg:SI 3 r3 [243])
+                (truncate:SI (lshiftrt:DI (mult:DI (zero_extend:DI (reg:SI 3 r3 [orig:242 SystemCoreClock ] [242]))
+                            (zero_extend:DI (reg:SI 0 r0 [244])))
+                        (const_int 32 [0x20]))))
+            (clobber (reg:SI 2 r2 [261]))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":206:59 72 {*umull_high}
+     (expr_list:REG_EQUAL (truncate:SI (lshiftrt:DI (mult:DI (zero_extend:DI (reg:SI 3 r3 [orig:242 SystemCoreClock ] [242]))
+                    (const_int 274877907 [0x10624dd3]))
+                (const_int 32 [0x20])))
+        (nil)))
+(insn 206 205 207 18 (set (reg:SI 3 r3 [241])
+        (lshiftrt:SI (reg:SI 3 r3 [243])
+            (const_int 9 [0x9]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":206:59 147 {*arm_shiftsi3}
+     (nil))
+(insn 207 206 208 18 (set (reg:SI 2 r2 [245])
+        (const_int 1000 [0x3e8])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":206:13 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1000 [0x3e8])
+        (nil)))
+(insn 208 207 209 18 (set (reg/v:SI 3 r3 [orig:171 count ] [171])
+        (mult:SI (reg:SI 2 r2 [245])
+            (reg:SI 3 r3 [241]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":206:13 56 {*mul}
+     (expr_list:REG_EQUAL (mult:SI (reg:SI 3 r3 [241])
+            (const_int 1000 [0x3e8]))
+        (nil)))
+(debug_insn 209 208 223 18 (var_location:SI count (reg/v:SI 3 r3 [orig:171 count ] [171])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":206:13 -1
+     (nil))
+(code_label 223 209 210 19 18 (nil) [1 uses])
+(note 210 223 214 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(note 214 210 211 19 NOTE_INSN_DELETED)
+(debug_insn 211 214 212 19 (var_location:SI count (reg/v:SI 3 r3 [orig:171 count ] [171])) -1
+     (nil))
+(debug_insn 212 211 213 19 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":207:7 -1
+     (nil))
+(debug_insn 213 212 217 19 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":209:9 -1
+     (nil))
+(debug_insn 217 213 215 19 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":213:9 -1
+     (nil))
+(jump_insn 215 217 216 19 (parallel [
+            (set (pc)
+                (if_then_else (eq (reg/v:SI 3 r3 [orig:171 count ] [171])
+                        (const_int 0 [0]))
+                    (label_ref:SI 227)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":209:12 1024 {*thumb2_cbz}
+     (int_list:REG_BR_PROB 59055804 (nil))
+ -> 227)
+(note 216 215 224 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(note 224 216 222 20 NOTE_INSN_DELETED)
+(insn 222 224 218 20 (set (reg:SI 2 r2 [orig:165 _53 ] [165])
+        (mem/v:SI (plus:SI (reg/f:SI 4 r4 [235])
+                (const_int 16 [0x10])) [1 MEM[(struct FLASH_TypeDef *)1073881088B].SR+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":215:14 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 218 222 219 20 (set (reg/v:SI 3 r3 [orig:171 count ] [171])
+        (plus:SI (reg/v:SI 3 r3 [orig:171 count ] [171])
+            (const_int -1 [0xffffffffffffffff]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":213:14 7 {*arm_addsi3}
+     (nil))
+(debug_insn 219 218 220 20 (var_location:SI count (reg/v:SI 3 r3 [orig:171 count ] [171])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":213:14 -1
+     (nil))
+(debug_insn 220 219 225 20 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":215:13 -1
+     (nil))
+(insn 225 220 226 20 (set (reg:CC_NZ 100 cc)
+        (compare:CC_NZ (zero_extract:SI (reg:SI 2 r2 [orig:165 _53 ] [165])
+                (const_int 1 [0x1])
+                (const_int 16 [0x10]))
+            (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":215:7 93 {*zeroextractsi_compare0_scratch}
+     (nil))
+(jump_insn 226 225 227 20 (set (pc)
+        (if_then_else (ne (reg:CC_NZ 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 223)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":215:7 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 1014686028 (nil))
+ -> 223)
+(code_label 227 226 228 21 17 (nil) [1 uses])
+(note 228 227 229 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 229 228 230 21 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":218:7 -1
+     (nil))
+(insn 230 229 231 21 (set (reg/f:SI 3 r3 [248])
+        (const_int 1073881088 [0x40022000])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":218:7 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073881088 [0x40022000])
+        (nil)))
+(insn 231 230 232 21 (set (reg:SI 2 r2 [orig:167 _55 ] [167])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [248])
+                (const_int 20 [0x14])) [1 MEM[(struct FLASH_TypeDef *)1073881088B].CR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":218:7 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 232 231 234 21 (set (reg:SI 2 r2 [orig:168 _56 ] [168])
+        (and:SI (reg:SI 2 r2 [orig:167 _55 ] [167])
+            (const_int -131073 [0xfffffffffffdffff]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":218:7 90 {*arm_andsi3_insn}
+     (nil))
+(insn 234 232 235 21 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [248])
+                (const_int 20 [0x14])) [1 MEM[(struct FLASH_TypeDef *)1073881088B].CR+0 S4 A32])
+        (reg:SI 2 r2 [orig:168 _56 ] [168])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":218:7 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 235 234 237 21 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":221:7 -1
+     (nil))
+(insn 237 235 238 21 (set (reg:SI 2 r2 [orig:169 _57 ] [169])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [248])
+                (const_int 20 [0x14])) [1 MEM[(struct FLASH_TypeDef *)1073881088B].CR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":221:7 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 238 237 240 21 (set (reg:SI 2 r2 [orig:170 _58 ] [170])
+        (ior:SI (reg:SI 2 r2 [orig:169 _57 ] [169])
+            (const_int 134217728 [0x8000000]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":221:7 106 {*iorsi3_insn}
+     (nil))
+(insn 240 238 241 21 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [248])
+                (const_int 20 [0x14])) [1 MEM[(struct FLASH_TypeDef *)1073881088B].CR+0 S4 A32])
+        (reg:SI 2 r2 [orig:170 _58 ] [170])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":221:7 728 {*thumb2_movsi_vfp}
+     (nil))
+(code_label 241 240 242 22 10 (nil) [2 uses])
+(note 242 241 243 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 243 242 244 22 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":226:3 -1
+     (nil))
+(debug_insn 244 243 246 22 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":226:3 -1
+     (nil))
+(insn 246 244 248 22 (set (reg:SI 3 r3 [253])
+        (const_int 0 [0])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":226:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 0 [0])
+        (nil)))
+(insn 248 246 249 22 (set (mem/c:QI (reg/f:SI 1 r1 [256]) [0 pFlash.Lock+0 S1 A32])
+        (reg:QI 3 r3 [253])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":226:3 263 {*arm_movqi_insn}
+     (nil))
+(debug_insn 249 248 250 22 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":226:3 -1
+     (nil))
+(debug_insn 250 249 4 22 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":228:3 -1
+     (nil))
+(insn 4 250 258 22 (set (reg:SI 0 r0 [orig:178 <retval> ] [178])
+        (const_int 1 [0x1])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":228:10 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 1 [0x1])
+        (nil)))
+(insn 258 4 317 22 (use (reg/i:SI 0 r0)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":229:1 -1
+     (nil))
+(note 317 258 318 22 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 318 317 319 22 (parallel [
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg:SI 4 r4)
+                (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32]))
+            (set/f (reg:SI 5 r5)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [4  S4 A32]))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":229:1 -1
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 8 [0x8])))
+        (expr_list:REG_CFA_RESTORE (reg:SI 5 r5)
+            (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+                (nil)))))
+(jump_insn 319 318 294 22 (simple_return) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":229:1 -1
+     (nil)
+ -> simple_return)
+(barrier 294 319 263)
+(code_label 263 294 262 23 19 (nil) [1 uses])
+(note 262 263 5 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(insn 5 262 323 23 (set (reg:SI 0 r0 [orig:178 <retval> ] [178])
+        (const_int 2 [0x2])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":136:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 2 [0x2])
+        (nil)))
+(insn 323 5 328 23 (use (reg/i:SI 0 r0)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":229:1 -1
+     (nil))
+(jump_insn 328 323 327 23 (simple_return) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_flash_ramfunc.c":229:1 -1
+     (nil)
+ -> simple_return)
+(barrier 327 328 304)
+(note 304 327 305 NOTE_INSN_DELETED)
+(note 305 304 0 NOTE_INSN_DELETED)

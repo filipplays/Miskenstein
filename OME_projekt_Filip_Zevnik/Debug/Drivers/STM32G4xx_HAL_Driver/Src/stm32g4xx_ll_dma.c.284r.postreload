@@ -1,0 +1,1535 @@
+
+;; Function LL_DMA_DeInit (LL_DMA_DeInit, funcdef_no=544, decl_uid=10659, cgraph_uid=548, symbol_order=548)
+
+rescanning insn with uid = 54.
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+LL_DMA_DeInit
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 100 [cc]
+;;  ref usage 	r0={12d,25u,4e} r1={1d,27u} r2={29d,19u} r3={23d,30u} r4={3d,13u} r13={1d,55u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={28d,23u} 
+;;    total ref usage 310{114d,192u,4e} in 253{253 regular + 0 call} insns.
+(note 1 0 34 NOTE_INSN_DELETED)
+(note 34 1 4 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 4 34 36 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 36 4 37 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":147:3 -1
+     (nil))
+(debug_insn 37 36 38 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":148:3 -1
+     (nil))
+(debug_insn 38 37 39 2 (var_location:QI status (const_int 0 [0])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":148:15 -1
+     (nil))
+(debug_insn 39 38 40 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":151:3 -1
+     (nil))
+(debug_insn 40 39 42 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":153:3 -1
+     (nil))
+(insn 42 40 43 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 1 r1 [orig:135 Channel ] [135])
+            (const_int -65536 [0xffffffffffff0000]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":153:6 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 43 42 44 2 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 103)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":153:6 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 708669604 (nil))
+ -> 103)
+(note 44 43 45 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 45 44 46 3 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":155:5 -1
+     (nil))
+(insn 46 45 47 3 (set (reg:SI 3 r3 [137])
+        (const_int 1073872896 [0x40020000])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":155:8 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073872896 [0x40020000])
+        (nil)))
+(insn 47 46 48 3 (set (reg:CC 100 cc)
+        (compare:CC (reg/v/f:SI 0 r0 [orig:134 DMAx ] [134])
+            (reg:SI 3 r3 [137]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":155:8 268 {*arm_cmpsi_insn}
+     (expr_list:REG_EQUAL (compare:CC (reg/v/f:SI 0 r0 [orig:134 DMAx ] [134])
+            (const_int 1073872896 [0x40020000]))
+        (nil)))
+(jump_insn 48 47 49 3 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 71)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":155:8 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 751619284 (nil))
+ -> 71)
+(note 49 48 50 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 50 49 51 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":158:7 -1
+     (nil))
+(debug_insn 51 50 52 4 (var_location:SI Periphs (const_int 1 [0x1])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":158:7 -1
+     (nil))
+(debug_insn 52 51 53 4 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h":320:22 -1
+     (nil))
+(debug_insn 53 52 54 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h":322:3 -1
+     (nil))
+(insn 54 53 33 4 (set (reg/f:SI 3 r3 [138])
+        (plus:SI (reg/f:SI 3 r3 [138])
+            (const_int 4096 [0x1000]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h":322:3 7 {*arm_addsi3}
+     (expr_list:REG_EQUIV (const_int 1073876992 [0x40021000])
+        (nil)))
+(insn 33 54 55 4 (set (reg:SI 0 r0 [orig:133 <retval> ] [133])
+        (const_int 0 [0])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h":348:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(insn 55 33 56 4 (set (reg:SI 2 r2 [orig:118 _17 ] [118])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [138])
+                (const_int 40 [0x28])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB1RSTR+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h":322:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 56 55 58 4 (set (reg:SI 2 r2 [orig:119 _18 ] [119])
+        (ior:SI (reg:SI 2 r2 [orig:118 _17 ] [118])
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h":322:3 106 {*iorsi3_insn}
+     (nil))
+(insn 58 56 59 4 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [138])
+                (const_int 40 [0x28])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB1RSTR+0 S4 A64])
+        (reg:SI 2 r2 [orig:119 _18 ] [119])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h":322:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 59 58 60 4 (var_location:SI Periphs (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":158:7 -1
+     (nil))
+(debug_insn 60 59 61 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":161:7 -1
+     (nil))
+(debug_insn 61 60 62 4 (var_location:SI Periphs (const_int 1 [0x1])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":161:7 -1
+     (nil))
+(debug_insn 62 61 63 4 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h":345:22 -1
+     (nil))
+(debug_insn 63 62 65 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h":347:3 -1
+     (nil))
+(insn 65 63 66 4 (set (reg:SI 2 r2 [orig:116 _15 ] [116])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [138])
+                (const_int 40 [0x28])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB1RSTR+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h":347:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 66 65 68 4 (set (reg:SI 2 r2 [orig:117 _16 ] [117])
+        (and:SI (reg:SI 2 r2 [orig:116 _15 ] [116])
+            (const_int -2 [0xfffffffffffffffe]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h":347:3 90 {*arm_andsi3_insn}
+     (nil))
+(insn 68 66 445 4 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [138])
+                (const_int 40 [0x28])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB1RSTR+0 S4 A64])
+        (reg:SI 2 r2 [orig:117 _16 ] [117])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h":347:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(jump_insn 445 68 446 4 (set (pc)
+        (label_ref 382)) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h":348:1 284 {*arm_jump}
+     (nil)
+ -> 382)
+(barrier 446 445 71)
+(code_label 71 446 72 5 3 (nil) [1 uses])
+(note 72 71 73 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 73 72 74 5 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":163:10 -1
+     (nil))
+(insn 74 73 75 5 (set (reg:SI 3 r3 [142])
+        (const_int 1073873920 [0x40020400])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":163:13 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073873920 [0x40020400])
+        (nil)))
+(insn 75 74 76 5 (set (reg:CC 100 cc)
+        (compare:CC (reg/v/f:SI 0 r0 [orig:134 DMAx ] [134])
+            (reg:SI 3 r3 [142]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":163:13 268 {*arm_cmpsi_insn}
+     (expr_list:REG_EQUAL (compare:CC (reg/v/f:SI 0 r0 [orig:134 DMAx ] [134])
+            (const_int 1073873920 [0x40020400]))
+        (nil)))
+(jump_insn 76 75 356 5 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 80)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":163:13 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 322122548 (nil))
+ -> 80)
+(code_label 356 76 77 6 28 (nil) [1 uses])
+(note 77 356 32 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 32 77 447 6 (set (reg:SI 0 r0 [orig:133 <retval> ] [133])
+        (const_int 1 [0x1])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":2054:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 1 [0x1])
+        (nil)))
+(jump_insn 447 32 448 6 (set (pc)
+        (label_ref 382)) 284 {*arm_jump}
+     (nil)
+ -> 382)
+(barrier 448 447 80)
+(code_label 80 448 81 7 5 (nil) [1 uses])
+(note 81 80 82 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 82 81 83 7 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":166:7 -1
+     (nil))
+(debug_insn 83 82 84 7 (var_location:SI Periphs (const_int 2 [0x2])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":166:7 -1
+     (nil))
+(debug_insn 84 83 85 7 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h":320:22 -1
+     (nil))
+(debug_insn 85 84 86 7 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h":322:3 -1
+     (nil))
+(insn 86 85 23 7 (set (reg/f:SI 3 r3 [143])
+        (const_int 1073876992 [0x40021000])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h":322:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073876992 [0x40021000])
+        (nil)))
+(insn 23 86 87 7 (set (reg:SI 0 r0 [orig:133 <retval> ] [133])
+        (const_int 0 [0])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h":348:1 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 87 23 88 7 (set (reg:SI 2 r2 [orig:122 _21 ] [122])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [143])
+                (const_int 40 [0x28])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB1RSTR+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h":322:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 88 87 90 7 (set (reg:SI 2 r2 [orig:123 _22 ] [123])
+        (ior:SI (reg:SI 2 r2 [orig:122 _21 ] [122])
+            (const_int 2 [0x2]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h":322:3 106 {*iorsi3_insn}
+     (nil))
+(insn 90 88 91 7 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [143])
+                (const_int 40 [0x28])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB1RSTR+0 S4 A64])
+        (reg:SI 2 r2 [orig:123 _22 ] [123])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h":322:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 91 90 92 7 (var_location:SI Periphs (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":166:7 -1
+     (nil))
+(debug_insn 92 91 93 7 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":169:7 -1
+     (nil))
+(debug_insn 93 92 94 7 (var_location:SI Periphs (const_int 2 [0x2])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":169:7 -1
+     (nil))
+(debug_insn 94 93 95 7 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h":345:22 -1
+     (nil))
+(debug_insn 95 94 97 7 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h":347:3 -1
+     (nil))
+(insn 97 95 98 7 (set (reg:SI 2 r2 [orig:120 _19 ] [120])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [143])
+                (const_int 40 [0x28])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB1RSTR+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h":347:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 98 97 100 7 (set (reg:SI 2 r2 [orig:121 _20 ] [121])
+        (and:SI (reg:SI 2 r2 [orig:120 _19 ] [120])
+            (const_int -3 [0xfffffffffffffffd]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h":347:3 90 {*arm_andsi3_insn}
+     (nil))
+(insn 100 98 449 7 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [143])
+                (const_int 40 [0x28])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB1RSTR+0 S4 A64])
+        (reg:SI 2 r2 [orig:121 _20 ] [121])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h":347:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(jump_insn 449 100 450 7 (set (pc)
+        (label_ref 382)) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h":348:1 284 {*arm_jump}
+     (nil)
+ -> 382)
+(barrier 450 449 103)
+(code_label 103 450 104 8 2 (nil) [1 uses])
+(note 104 103 105 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 105 104 106 8 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:5 -1
+     (nil))
+(insn 106 105 107 8 (set (reg:SI 3 r3 [147])
+        (const_int 1073872896 [0x40020000])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:11 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073872896 [0x40020000])
+        (nil)))
+(insn 107 106 108 8 (set (reg:CC 100 cc)
+        (compare:CC (reg/v/f:SI 0 r0 [orig:134 DMAx ] [134])
+            (reg:SI 3 r3 [147]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:11 268 {*arm_cmpsi_insn}
+     (expr_list:REG_EQUAL (compare:CC (reg/v/f:SI 0 r0 [orig:134 DMAx ] [134])
+            (const_int 1073872896 [0x40020000]))
+        (nil)))
+(jump_insn 108 107 109 8 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 115)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:11 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 751619284 (nil))
+ -> 115)
+(note 109 108 110 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(note 110 109 111 9 NOTE_INSN_DELETED)
+(jump_insn 111 110 114 9 (parallel [
+            (set (pc)
+                (if_then_else (ne (reg/v:SI 1 r1 [orig:135 Channel ] [135])
+                        (const_int 0 [0]))
+                    (label_ref 126)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 1025 {*thumb2_cbnz}
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 126)
+(note 114 111 10 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 10 114 451 10 (set (reg/f:SI 2 r2 [orig:115 iftmp.0_4 ] [115])
+        (const_int 1073872904 [0x40020008])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:11 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 1073872904 [0x40020008])
+        (nil)))
+(jump_insn 451 10 452 10 (set (pc)
+        (label_ref 215)) 284 {*arm_jump}
+     (nil)
+ -> 215)
+(barrier 452 451 115)
+(code_label 115 452 116 11 6 (nil) [1 uses])
+(note 116 115 117 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 117 116 118 11 (set (reg:SI 3 r3 [148])
+        (const_int 1073873920 [0x40020400])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073873920 [0x40020400])
+        (nil)))
+(insn 118 117 119 11 (set (reg:CC 100 cc)
+        (compare:CC (reg/v/f:SI 0 r0 [orig:134 DMAx ] [134])
+            (reg:SI 3 r3 [148]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 268 {*arm_cmpsi_insn}
+     (expr_list:REG_EQUAL (compare:CC (reg/v/f:SI 0 r0 [orig:134 DMAx ] [134])
+            (const_int 1073873920 [0x40020400]))
+        (nil)))
+(jump_insn 119 118 120 11 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 389)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 682593028 (nil))
+ -> 389)
+(note 120 119 121 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(note 121 120 122 12 NOTE_INSN_DELETED)
+(jump_insn 122 121 125 12 (parallel [
+            (set (pc)
+                (if_then_else (ne (reg/v:SI 1 r1 [orig:135 Channel ] [135])
+                        (const_int 0 [0]))
+                    (label_ref 133)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 1025 {*thumb2_cbnz}
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 133)
+(note 125 122 12 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 12 125 453 13 (set (reg/f:SI 2 r2 [orig:115 iftmp.0_4 ] [115])
+        (const_int 1073873928 [0x40020408])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 1073873928 [0x40020408])
+        (nil)))
+(jump_insn 453 12 454 13 (set (pc)
+        (label_ref 215)) 284 {*arm_jump}
+     (nil)
+ -> 215)
+(barrier 454 453 126)
+(code_label 126 454 127 14 7 (nil) [1 uses])
+(note 127 126 128 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(insn 128 127 129 14 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 1 r1 [orig:135 Channel ] [135])
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 129 128 132 14 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 140)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 708669604 (nil))
+ -> 140)
+(note 132 129 13 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 13 132 455 15 (set (reg/f:SI 2 r2 [orig:115 iftmp.0_4 ] [115])
+        (const_int 1073872924 [0x4002001c])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 728 {*thumb2_movsi_vfp}
+     (nil))
+(jump_insn 455 13 456 15 (set (pc)
+        (label_ref 215)) 284 {*arm_jump}
+     (nil)
+ -> 215)
+(barrier 456 455 133)
+(code_label 133 456 134 16 9 (nil) [1 uses])
+(note 134 133 135 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 135 134 136 16 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 1 r1 [orig:135 Channel ] [135])
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 136 135 139 16 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 147)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 708669604 (nil))
+ -> 147)
+(note 139 136 14 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(insn 14 139 457 17 (set (reg/f:SI 2 r2 [orig:115 iftmp.0_4 ] [115])
+        (const_int 1073873948 [0x4002041c])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 728 {*thumb2_movsi_vfp}
+     (nil))
+(jump_insn 457 14 458 17 (set (pc)
+        (label_ref 215)) 284 {*arm_jump}
+     (nil)
+ -> 215)
+(barrier 458 457 140)
+(code_label 140 458 141 18 10 (nil) [1 uses])
+(note 141 140 142 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 142 141 143 18 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 1 r1 [orig:135 Channel ] [135])
+            (const_int 2 [0x2]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 143 142 146 18 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 154)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 708669604 (nil))
+ -> 154)
+(note 146 143 15 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(insn 15 146 459 19 (set (reg/f:SI 2 r2 [orig:115 iftmp.0_4 ] [115])
+        (const_int 1073872944 [0x40020030])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 728 {*thumb2_movsi_vfp}
+     (nil))
+(jump_insn 459 15 460 19 (set (pc)
+        (label_ref 215)) 284 {*arm_jump}
+     (nil)
+ -> 215)
+(barrier 460 459 147)
+(code_label 147 460 148 20 11 (nil) [1 uses])
+(note 148 147 149 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 149 148 150 20 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 1 r1 [orig:135 Channel ] [135])
+            (const_int 2 [0x2]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 150 149 153 20 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 161)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 708669604 (nil))
+ -> 161)
+(note 153 150 16 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 16 153 461 21 (set (reg/f:SI 2 r2 [orig:115 iftmp.0_4 ] [115])
+        (const_int 1073873968 [0x40020430])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 728 {*thumb2_movsi_vfp}
+     (nil))
+(jump_insn 461 16 462 21 (set (pc)
+        (label_ref 215)) 284 {*arm_jump}
+     (nil)
+ -> 215)
+(barrier 462 461 154)
+(code_label 154 462 155 22 12 (nil) [1 uses])
+(note 155 154 156 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(insn 156 155 157 22 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 1 r1 [orig:135 Channel ] [135])
+            (const_int 3 [0x3]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 157 156 160 22 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 168)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 708669604 (nil))
+ -> 168)
+(note 160 157 17 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(insn 17 160 463 23 (set (reg/f:SI 2 r2 [orig:115 iftmp.0_4 ] [115])
+        (const_int 1073872964 [0x40020044])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 728 {*thumb2_movsi_vfp}
+     (nil))
+(jump_insn 463 17 464 23 (set (pc)
+        (label_ref 215)) 284 {*arm_jump}
+     (nil)
+ -> 215)
+(barrier 464 463 161)
+(code_label 161 464 162 24 13 (nil) [1 uses])
+(note 162 161 163 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(insn 163 162 164 24 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 1 r1 [orig:135 Channel ] [135])
+            (const_int 3 [0x3]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 164 163 167 24 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 175)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 708669604 (nil))
+ -> 175)
+(note 167 164 18 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(insn 18 167 465 25 (set (reg/f:SI 2 r2 [orig:115 iftmp.0_4 ] [115])
+        (const_int 1073873988 [0x40020444])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 728 {*thumb2_movsi_vfp}
+     (nil))
+(jump_insn 465 18 466 25 (set (pc)
+        (label_ref 215)) 284 {*arm_jump}
+     (nil)
+ -> 215)
+(barrier 466 465 168)
+(code_label 168 466 169 26 14 (nil) [1 uses])
+(note 169 168 170 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(insn 170 169 171 26 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 1 r1 [orig:135 Channel ] [135])
+            (const_int 4 [0x4]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 171 170 174 26 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 182)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 708669604 (nil))
+ -> 182)
+(note 174 171 6 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(insn 6 174 467 27 (set (reg/f:SI 2 r2 [orig:115 iftmp.0_4 ] [115])
+        (const_int 1073872984 [0x40020058])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 728 {*thumb2_movsi_vfp}
+     (nil))
+(jump_insn 467 6 468 27 (set (pc)
+        (label_ref 215)) 284 {*arm_jump}
+     (nil)
+ -> 215)
+(barrier 468 467 175)
+(code_label 175 468 176 28 15 (nil) [1 uses])
+(note 176 175 177 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(insn 177 176 178 28 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 1 r1 [orig:135 Channel ] [135])
+            (const_int 4 [0x4]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 178 177 181 28 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 189)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 708669604 (nil))
+ -> 189)
+(note 181 178 7 29 [bb 29] NOTE_INSN_BASIC_BLOCK)
+(insn 7 181 469 29 (set (reg/f:SI 2 r2 [orig:115 iftmp.0_4 ] [115])
+        (const_int 1073874008 [0x40020458])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 728 {*thumb2_movsi_vfp}
+     (nil))
+(jump_insn 469 7 470 29 (set (pc)
+        (label_ref 215)) 284 {*arm_jump}
+     (nil)
+ -> 215)
+(barrier 470 469 182)
+(code_label 182 470 183 30 16 (nil) [1 uses])
+(note 183 182 184 30 [bb 30] NOTE_INSN_BASIC_BLOCK)
+(insn 184 183 185 30 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 1 r1 [orig:135 Channel ] [135])
+            (const_int 5 [0x5]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 185 184 188 30 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 196)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 708669604 (nil))
+ -> 196)
+(note 188 185 20 31 [bb 31] NOTE_INSN_BASIC_BLOCK)
+(insn 20 188 471 31 (set (reg/f:SI 2 r2 [orig:115 iftmp.0_4 ] [115])
+        (const_int 1073873004 [0x4002006c])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 728 {*thumb2_movsi_vfp}
+     (nil))
+(jump_insn 471 20 472 31 (set (pc)
+        (label_ref 215)) 284 {*arm_jump}
+     (nil)
+ -> 215)
+(barrier 472 471 189)
+(code_label 189 472 190 32 17 (nil) [1 uses])
+(note 190 189 191 32 [bb 32] NOTE_INSN_BASIC_BLOCK)
+(insn 191 190 192 32 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 1 r1 [orig:135 Channel ] [135])
+            (const_int 5 [0x5]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 192 191 195 32 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 203)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 708669604 (nil))
+ -> 203)
+(note 195 192 8 33 [bb 33] NOTE_INSN_BASIC_BLOCK)
+(insn 8 195 473 33 (set (reg/f:SI 2 r2 [orig:115 iftmp.0_4 ] [115])
+        (const_int 1073874028 [0x4002046c])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 728 {*thumb2_movsi_vfp}
+     (nil))
+(jump_insn 473 8 474 33 (set (pc)
+        (label_ref 215)) 284 {*arm_jump}
+     (nil)
+ -> 215)
+(barrier 474 473 196)
+(code_label 196 474 197 34 18 (nil) [1 uses])
+(note 197 196 198 34 [bb 34] NOTE_INSN_BASIC_BLOCK)
+(insn 198 197 199 34 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 1 r1 [orig:135 Channel ] [135])
+            (const_int 6 [0x6]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 199 198 202 34 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 210)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 708669604 (nil))
+ -> 210)
+(note 202 199 5 35 [bb 35] NOTE_INSN_BASIC_BLOCK)
+(insn 5 202 475 35 (set (reg/f:SI 2 r2 [orig:115 iftmp.0_4 ] [115])
+        (const_int 1073873024 [0x40020080])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 728 {*thumb2_movsi_vfp}
+     (nil))
+(jump_insn 475 5 476 35 (set (pc)
+        (label_ref 215)) 284 {*arm_jump}
+     (nil)
+ -> 215)
+(barrier 476 475 203)
+(code_label 203 476 204 36 19 (nil) [1 uses])
+(note 204 203 428 36 [bb 36] NOTE_INSN_BASIC_BLOCK)
+(note 428 204 426 36 NOTE_INSN_DELETED)
+(insn 426 428 427 36 (set (reg:SI 2 r2 [171])
+        (const_int 1073874068 [0x40020494])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073874068 [0x40020494])
+        (nil)))
+(insn 427 426 429 36 (set (reg:SI 3 r3 [172])
+        (const_int 1073874048 [0x40020480])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073874048 [0x40020480])
+        (nil)))
+(insn 429 427 477 36 (parallel [
+            (set (reg/f:SI 2 r2 [orig:115 iftmp.0_4 ] [115])
+                (if_then_else:SI (ne (reg/v:SI 1 r1 [orig:135 Channel ] [135])
+                        (const_int 6 [0x6]))
+                    (reg:SI 2 r2 [171])
+                    (reg:SI 3 r3 [172])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 1003 {*thumb2_movcond}
+     (nil))
+(jump_insn 477 429 478 36 (set (pc)
+        (label_ref 215)) 284 {*arm_jump}
+     (nil)
+ -> 215)
+(barrier 478 477 210)
+(code_label 210 478 211 37 20 (nil) [1 uses])
+(note 211 210 436 37 [bb 37] NOTE_INSN_BASIC_BLOCK)
+(note 436 211 434 37 NOTE_INSN_DELETED)
+(insn 434 436 435 37 (set (reg:SI 2 r2 [175])
+        (const_int 1073873044 [0x40020094])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073873044 [0x40020094])
+        (nil)))
+(insn 435 434 437 37 (set (reg:SI 3 r3 [176])
+        (const_int 1073874068 [0x40020494])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073874068 [0x40020494])
+        (nil)))
+(insn 437 435 479 37 (parallel [
+            (set (reg/f:SI 2 r2 [orig:115 iftmp.0_4 ] [115])
+                (if_then_else:SI (eq (reg/v:SI 1 r1 [orig:135 Channel ] [135])
+                        (const_int 7 [0x7]))
+                    (reg:SI 2 r2 [175])
+                    (reg:SI 3 r3 [176])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 1003 {*thumb2_movcond}
+     (nil))
+(jump_insn 479 437 480 37 (set (pc)
+        (label_ref 215)) 284 {*arm_jump}
+     (nil)
+ -> 215)
+(barrier 480 479 389)
+(code_label 389 480 388 38 29 (nil) [1 uses])
+(note 388 389 11 38 [bb 38] NOTE_INSN_BASIC_BLOCK)
+(insn 11 388 215 38 (set (reg/f:SI 2 r2 [orig:115 iftmp.0_4 ] [115])
+        (const_int 1073874068 [0x40020494])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:35 728 {*thumb2_movsi_vfp}
+     (nil))
+(code_label 215 11 216 39 8 (nil) [15 uses])
+(note 216 215 242 39 [bb 39] NOTE_INSN_BASIC_BLOCK)
+(note 242 216 245 39 NOTE_INSN_DELETED)
+(note 245 242 248 39 NOTE_INSN_DELETED)
+(note 248 245 258 39 NOTE_INSN_DELETED)
+(note 258 248 217 39 NOTE_INSN_DELETED)
+(debug_insn 217 258 218 39 (var_location:SI tmp (reg/f:SI 2 r2 [orig:115 iftmp.0_4 ] [115])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":178:9 -1
+     (nil))
+(debug_insn 218 217 243 39 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":181:5 -1
+     (nil))
+(insn 243 218 219 39 (set (reg:SI 3 r3 [155])
+        (const_int 1048704 [0x100080])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1408:68 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1048704 [0x100080])
+        (nil)))
+(insn 219 243 244 39 (set (reg:SI 4 r4 [orig:113 _1 ] [113])
+        (mem/v:SI (reg/f:SI 2 r2 [orig:115 iftmp.0_4 ] [115]) [1 iftmp.0_4->CCR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":181:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 244 219 246 39 (set (reg:SI 3 r3 [154])
+        (xor:SI (lshiftrt:SI (reg/v/f:SI 0 r0 [orig:134 DMAx ] [134])
+                (const_int 10 [0xa]))
+            (reg:SI 3 r3 [155]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1408:68 321 {*eor_shiftsi}
+     (nil))
+(insn 246 244 247 39 (set (reg:SI 3 r3 [157])
+        (plus:SI (ashift:SI (reg:SI 3 r3 [154])
+                (const_int 3 [0x3]))
+            (reg/v:SI 1 r1 [orig:135 Channel ] [135]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1409:3 318 {*add_shiftsi}
+     (nil))
+(insn 247 246 496 39 (set (reg:SI 3 r3 [158])
+        (ashift:SI (reg:SI 3 r3 [157])
+            (const_int 2 [0x2]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1409:3 147 {*arm_shiftsi3}
+     (nil))
+(insn 496 247 497 39 (set (reg/f:SI 3 r3 [orig:130 _29 ] [130])
+        (plus:SI (reg:SI 3 r3 [158])
+            (const_int 1073741824 [0x40000000]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1409:3 7 {*arm_addsi3}
+     (nil))
+(insn 497 496 220 39 (set (reg/f:SI 3 r3 [orig:130 _29 ] [130])
+        (plus:SI (reg/f:SI 3 r3 [orig:130 _29 ] [130])
+            (const_int 133120 [0x20800]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1409:3 7 {*arm_addsi3}
+     (nil))
+(insn 220 497 221 39 (set (reg:SI 4 r4 [orig:114 _2 ] [114])
+        (and:SI (reg:SI 4 r4 [orig:113 _1 ] [113])
+            (const_int -2 [0xfffffffffffffffe]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":181:5 90 {*arm_andsi3_insn}
+     (nil))
+(insn 221 220 222 39 (set (mem/v:SI (reg/f:SI 2 r2 [orig:115 iftmp.0_4 ] [115]) [1 iftmp.0_4->CCR+0 S4 A32])
+        (reg:SI 4 r4 [orig:114 _2 ] [114])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":181:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 222 221 223 39 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":184:5 -1
+     (nil))
+(insn 223 222 224 39 (set (reg:SI 4 r4 [149])
+        (const_int 0 [0])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":184:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 0 [0])
+        (nil)))
+(insn 224 223 225 39 (set (mem/v:SI (reg/f:SI 2 r2 [orig:115 iftmp.0_4 ] [115]) [1 iftmp.0_4->CCR+0 S4 A32])
+        (reg:SI 4 r4 [149])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":184:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 225 224 227 39 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":187:5 -1
+     (nil))
+(insn 227 225 228 39 (set (mem/v:SI (plus:SI (reg/f:SI 2 r2 [orig:115 iftmp.0_4 ] [115])
+                (const_int 4 [0x4])) [1 iftmp.0_4->CNDTR+0 S4 A32])
+        (reg:SI 4 r4 [149])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":187:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 228 227 230 39 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":190:5 -1
+     (nil))
+(insn 230 228 231 39 (set (mem/v:SI (plus:SI (reg/f:SI 2 r2 [orig:115 iftmp.0_4 ] [115])
+                (const_int 8 [0x8])) [1 iftmp.0_4->CPAR+0 S4 A32])
+        (reg:SI 4 r4 [149])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":190:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 231 230 233 39 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":193:5 -1
+     (nil))
+(insn 233 231 234 39 (set (mem/v:SI (plus:SI (reg/f:SI 2 r2 [orig:115 iftmp.0_4 ] [115])
+                (const_int 12 [0xc])) [1 iftmp.0_4->CMAR+0 S4 A32])
+        (reg:SI 4 r4 [149])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":193:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 234 233 235 39 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":196:5 -1
+     (nil))
+(debug_insn 235 234 236 39 (var_location:SI DMAx (reg/v/f:SI 0 r0 [orig:134 DMAx ] [134])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":196:5 -1
+     (nil))
+(debug_insn 236 235 237 39 (var_location:SI Channel (reg/v:SI 1 r1 [orig:135 Channel ] [135])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":196:5 -1
+     (nil))
+(debug_insn 237 236 238 39 (var_location:SI PeriphRequest (const_int 0 [0])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":196:5 -1
+     (nil))
+(debug_insn 238 237 239 39 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1406:22 -1
+     (nil))
+(debug_insn 239 238 240 39 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1408:3 -1
+     (nil))
+(debug_insn 240 239 241 39 (var_location:SI dmamux_ccr_offset (ashift:SI (xor:SI (lshiftrt:SI (reg/v/f:SI 0 r0 [orig:134 DMAx ] [134])
+                (const_int 10 [0xa]))
+            (const_int 1048704 [0x100080]))
+        (const_int 3 [0x3]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1408:12 -1
+     (nil))
+(debug_insn 241 240 250 39 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1409:3 -1
+     (nil))
+(insn 250 241 251 39 (set (reg:SI 2 r2 [orig:131 _30 ] [131])
+        (mem/v:SI (reg/f:SI 3 r3 [orig:130 _29 ] [130]) [1 _29->CCR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1409:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 251 250 252 39 (set (reg:SI 2 r2 [orig:132 _31 ] [132])
+        (and:SI (reg:SI 2 r2 [orig:131 _30 ] [131])
+            (const_int -256 [0xffffffffffffff00]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1409:3 90 {*arm_andsi3_insn}
+     (nil))
+(insn 252 251 253 39 (set (mem/v:SI (reg/f:SI 3 r3 [orig:130 _29 ] [130]) [1 _29->CCR+0 S4 A32])
+        (reg:SI 2 r2 [orig:132 _31 ] [132])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1409:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 253 252 254 39 (var_location:SI DMAx (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":196:5 -1
+     (nil))
+(debug_insn 254 253 255 39 (var_location:SI Channel (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":196:5 -1
+     (nil))
+(debug_insn 255 254 256 39 (var_location:SI PeriphRequest (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":196:5 -1
+     (nil))
+(debug_insn 256 255 257 39 (var_location:SI dmamux_ccr_offset (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":196:5 -1
+     (nil))
+(debug_insn 257 256 259 39 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":198:5 -1
+     (nil))
+(jump_insn 259 257 260 39 (parallel [
+            (set (pc)
+                (if_then_else (ne (reg/v:SI 1 r1 [orig:135 Channel ] [135])
+                        (const_int 0 [0]))
+                    (label_ref 269)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":198:8 1025 {*thumb2_cbnz}
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 269)
+(note 260 259 261 40 [bb 40] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 261 260 262 40 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":201:7 -1
+     (nil))
+(debug_insn 262 261 263 40 (var_location:SI DMAx (reg/v/f:SI 0 r0 [orig:134 DMAx ] [134])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":201:7 -1
+     (nil))
+(debug_insn 263 262 264 40 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1943:22 -1
+     (nil))
+(debug_insn 264 263 265 40 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1945:3 -1
+     (nil))
+(insn 265 264 266 40 (set (reg:SI 3 r3 [160])
+        (const_int 1 [0x1])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1945:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1 [0x1])
+        (nil)))
+(insn 266 265 24 40 (set (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:134 DMAx ] [134])
+                (const_int 4 [0x4])) [1 DMAx_7(D)->IFCR+0 S4 A32])
+        (reg:SI 3 r3 [160])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1945:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 24 266 481 40 (set (reg:SI 0 r0 [orig:133 <retval> ] [133])
+        (reg/v:SI 1 r1 [orig:135 Channel ] [135])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1946:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(jump_insn 481 24 482 40 (set (pc)
+        (label_ref 382)) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1946:1 284 {*arm_jump}
+     (nil)
+ -> 382)
+(barrier 482 481 269)
+(code_label 269 482 270 41 21 (nil) [1 uses])
+(note 270 269 271 41 [bb 41] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 271 270 272 41 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":203:10 -1
+     (nil))
+(insn 272 271 273 41 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 1 r1 [orig:135 Channel ] [135])
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":203:13 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 273 272 274 41 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 283)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":203:13 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 708669604 (nil))
+ -> 283)
+(note 274 273 275 42 [bb 42] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 275 274 276 42 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":206:7 -1
+     (nil))
+(debug_insn 276 275 277 42 (var_location:SI DMAx (reg/v/f:SI 0 r0 [orig:134 DMAx ] [134])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":206:7 -1
+     (nil))
+(debug_insn 277 276 278 42 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1958:22 -1
+     (nil))
+(debug_insn 278 277 279 42 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1960:3 -1
+     (nil))
+(insn 279 278 280 42 (set (reg:SI 3 r3 [161])
+        (const_int 16 [0x10])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1960:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 16 [0x10])
+        (nil)))
+(insn 280 279 25 42 (set (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:134 DMAx ] [134])
+                (const_int 4 [0x4])) [1 DMAx_7(D)->IFCR+0 S4 A32])
+        (reg:SI 3 r3 [161])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1960:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 25 280 483 42 (set (reg:SI 0 r0 [orig:133 <retval> ] [133])
+        (reg:SI 4 r4 [149])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1961:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(jump_insn 483 25 484 42 (set (pc)
+        (label_ref 382)) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1961:1 284 {*arm_jump}
+     (nil)
+ -> 382)
+(barrier 484 483 283)
+(code_label 283 484 284 43 22 (nil) [1 uses])
+(note 284 283 285 43 [bb 43] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 285 284 286 43 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":208:10 -1
+     (nil))
+(insn 286 285 287 43 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 1 r1 [orig:135 Channel ] [135])
+            (const_int 2 [0x2]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":208:13 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 287 286 288 43 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 297)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":208:13 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 708669604 (nil))
+ -> 297)
+(note 288 287 289 44 [bb 44] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 289 288 290 44 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":211:7 -1
+     (nil))
+(debug_insn 290 289 291 44 (var_location:SI DMAx (reg/v/f:SI 0 r0 [orig:134 DMAx ] [134])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":211:7 -1
+     (nil))
+(debug_insn 291 290 292 44 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1973:22 -1
+     (nil))
+(debug_insn 292 291 293 44 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1975:3 -1
+     (nil))
+(insn 293 292 294 44 (set (reg:SI 3 r3 [162])
+        (const_int 256 [0x100])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1975:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 256 [0x100])
+        (nil)))
+(insn 294 293 26 44 (set (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:134 DMAx ] [134])
+                (const_int 4 [0x4])) [1 DMAx_7(D)->IFCR+0 S4 A32])
+        (reg:SI 3 r3 [162])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1975:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 26 294 485 44 (set (reg:SI 0 r0 [orig:133 <retval> ] [133])
+        (reg:SI 4 r4 [149])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1976:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(jump_insn 485 26 486 44 (set (pc)
+        (label_ref 382)) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1976:1 284 {*arm_jump}
+     (nil)
+ -> 382)
+(barrier 486 485 297)
+(code_label 297 486 298 45 23 (nil) [1 uses])
+(note 298 297 299 45 [bb 45] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 299 298 300 45 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":213:10 -1
+     (nil))
+(insn 300 299 301 45 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 1 r1 [orig:135 Channel ] [135])
+            (const_int 3 [0x3]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":213:13 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 301 300 302 45 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 311)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":213:13 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 708669604 (nil))
+ -> 311)
+(note 302 301 303 46 [bb 46] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 303 302 304 46 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":216:7 -1
+     (nil))
+(debug_insn 304 303 305 46 (var_location:SI DMAx (reg/v/f:SI 0 r0 [orig:134 DMAx ] [134])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":216:7 -1
+     (nil))
+(debug_insn 305 304 306 46 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1988:22 -1
+     (nil))
+(debug_insn 306 305 307 46 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1990:3 -1
+     (nil))
+(insn 307 306 308 46 (set (reg:SI 3 r3 [163])
+        (const_int 4096 [0x1000])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1990:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 4096 [0x1000])
+        (nil)))
+(insn 308 307 27 46 (set (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:134 DMAx ] [134])
+                (const_int 4 [0x4])) [1 DMAx_7(D)->IFCR+0 S4 A32])
+        (reg:SI 3 r3 [163])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1990:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 27 308 487 46 (set (reg:SI 0 r0 [orig:133 <retval> ] [133])
+        (reg:SI 4 r4 [149])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1991:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(jump_insn 487 27 488 46 (set (pc)
+        (label_ref 382)) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1991:1 284 {*arm_jump}
+     (nil)
+ -> 382)
+(barrier 488 487 311)
+(code_label 311 488 312 47 24 (nil) [1 uses])
+(note 312 311 313 47 [bb 47] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 313 312 314 47 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":218:10 -1
+     (nil))
+(insn 314 313 315 47 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 1 r1 [orig:135 Channel ] [135])
+            (const_int 4 [0x4]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":218:13 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 315 314 316 47 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 325)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":218:13 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 708669604 (nil))
+ -> 325)
+(note 316 315 317 48 [bb 48] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 317 316 318 48 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":221:7 -1
+     (nil))
+(debug_insn 318 317 319 48 (var_location:SI DMAx (reg/v/f:SI 0 r0 [orig:134 DMAx ] [134])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":221:7 -1
+     (nil))
+(debug_insn 319 318 320 48 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":2003:22 -1
+     (nil))
+(debug_insn 320 319 321 48 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":2005:3 -1
+     (nil))
+(insn 321 320 322 48 (set (reg:SI 3 r3 [164])
+        (const_int 65536 [0x10000])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":2005:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 65536 [0x10000])
+        (nil)))
+(insn 322 321 28 48 (set (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:134 DMAx ] [134])
+                (const_int 4 [0x4])) [1 DMAx_7(D)->IFCR+0 S4 A32])
+        (reg:SI 3 r3 [164])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":2005:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 28 322 489 48 (set (reg:SI 0 r0 [orig:133 <retval> ] [133])
+        (reg:SI 4 r4 [149])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":2006:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(jump_insn 489 28 490 48 (set (pc)
+        (label_ref 382)) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":2006:1 284 {*arm_jump}
+     (nil)
+ -> 382)
+(barrier 490 489 325)
+(code_label 325 490 326 49 25 (nil) [1 uses])
+(note 326 325 327 49 [bb 49] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 327 326 328 49 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":224:10 -1
+     (nil))
+(insn 328 327 329 49 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 1 r1 [orig:135 Channel ] [135])
+            (const_int 5 [0x5]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":224:13 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 329 328 330 49 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 339)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":224:13 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 708669604 (nil))
+ -> 339)
+(note 330 329 331 50 [bb 50] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 331 330 332 50 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":227:7 -1
+     (nil))
+(debug_insn 332 331 333 50 (var_location:SI DMAx (reg/v/f:SI 0 r0 [orig:134 DMAx ] [134])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":227:7 -1
+     (nil))
+(debug_insn 333 332 334 50 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":2018:22 -1
+     (nil))
+(debug_insn 334 333 335 50 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":2020:3 -1
+     (nil))
+(insn 335 334 336 50 (set (reg:SI 3 r3 [165])
+        (const_int 1048576 [0x100000])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":2020:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1048576 [0x100000])
+        (nil)))
+(insn 336 335 29 50 (set (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:134 DMAx ] [134])
+                (const_int 4 [0x4])) [1 DMAx_7(D)->IFCR+0 S4 A32])
+        (reg:SI 3 r3 [165])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":2020:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 29 336 491 50 (set (reg:SI 0 r0 [orig:133 <retval> ] [133])
+        (reg:SI 4 r4 [149])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":2021:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(jump_insn 491 29 492 50 (set (pc)
+        (label_ref 382)) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":2021:1 284 {*arm_jump}
+     (nil)
+ -> 382)
+(barrier 492 491 339)
+(code_label 339 492 340 51 26 (nil) [1 uses])
+(note 340 339 341 51 [bb 51] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 341 340 342 51 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":230:10 -1
+     (nil))
+(insn 342 341 343 51 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 1 r1 [orig:135 Channel ] [135])
+            (const_int 6 [0x6]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":230:13 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 343 342 344 51 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 353)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":230:13 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 708669604 (nil))
+ -> 353)
+(note 344 343 345 52 [bb 52] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 345 344 346 52 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":233:7 -1
+     (nil))
+(debug_insn 346 345 347 52 (var_location:SI DMAx (reg/v/f:SI 0 r0 [orig:134 DMAx ] [134])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":233:7 -1
+     (nil))
+(debug_insn 347 346 348 52 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":2034:22 -1
+     (nil))
+(debug_insn 348 347 349 52 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":2036:3 -1
+     (nil))
+(insn 349 348 350 52 (set (reg:SI 3 r3 [166])
+        (const_int 16777216 [0x1000000])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":2036:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 16777216 [0x1000000])
+        (nil)))
+(insn 350 349 30 52 (set (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:134 DMAx ] [134])
+                (const_int 4 [0x4])) [1 DMAx_7(D)->IFCR+0 S4 A32])
+        (reg:SI 3 r3 [166])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":2036:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 30 350 493 52 (set (reg:SI 0 r0 [orig:133 <retval> ] [133])
+        (reg:SI 4 r4 [149])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":2037:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(jump_insn 493 30 494 52 (set (pc)
+        (label_ref 382)) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":2037:1 284 {*arm_jump}
+     (nil)
+ -> 382)
+(barrier 494 493 353)
+(code_label 353 494 354 53 27 (nil) [1 uses])
+(note 354 353 355 53 [bb 53] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 355 354 357 53 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":237:10 -1
+     (nil))
+(insn 357 355 358 53 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 1 r1 [orig:135 Channel ] [135])
+            (const_int 7 [0x7]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":237:13 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 358 357 359 53 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 356)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":237:13 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 708669604 (nil))
+ -> 356)
+(note 359 358 360 54 [bb 54] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 360 359 361 54 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":240:7 -1
+     (nil))
+(debug_insn 361 360 362 54 (var_location:SI DMAx (reg/v/f:SI 0 r0 [orig:134 DMAx ] [134])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":240:7 -1
+     (nil))
+(debug_insn 362 361 363 54 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":2051:22 -1
+     (nil))
+(debug_insn 363 362 364 54 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":2053:3 -1
+     (nil))
+(insn 364 363 365 54 (set (reg:SI 3 r3 [167])
+        (const_int 268435456 [0x10000000])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":2053:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 268435456 [0x10000000])
+        (nil)))
+(insn 365 364 31 54 (set (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:134 DMAx ] [134])
+                (const_int 4 [0x4])) [1 DMAx_7(D)->IFCR+0 S4 A32])
+        (reg:SI 3 r3 [167])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":2053:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 31 365 368 54 (set (reg:SI 0 r0 [orig:133 <retval> ] [133])
+        (reg:SI 4 r4 [149])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":2054:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(debug_insn 368 31 369 54 (var_location:SI DMAx (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":240:7 -1
+     (nil))
+(debug_insn 369 368 370 54 (var_location:SI DMAx (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":233:7 -1
+     (nil))
+(debug_insn 370 369 371 54 (var_location:SI DMAx (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":227:7 -1
+     (nil))
+(debug_insn 371 370 372 54 (var_location:SI DMAx (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":221:7 -1
+     (nil))
+(debug_insn 372 371 373 54 (var_location:SI DMAx (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":216:7 -1
+     (nil))
+(debug_insn 373 372 374 54 (var_location:SI DMAx (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":211:7 -1
+     (nil))
+(debug_insn 374 373 375 54 (var_location:SI DMAx (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":206:7 -1
+     (nil))
+(debug_insn 375 374 376 54 (var_location:SI DMAx (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":201:7 -1
+     (nil))
+(debug_insn 376 375 377 54 (var_location:SI Periphs (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":169:7 -1
+     (nil))
+(debug_insn 377 376 378 54 (var_location:SI Periphs (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":161:7 -1
+     (nil))
+(debug_insn 378 377 379 54 (var_location:QI status (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 379 378 382 54 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":249:3 -1
+     (nil))
+(code_label 382 379 385 55 1 (nil) [10 uses])
+(note 385 382 384 55 [bb 55] NOTE_INSN_BASIC_BLOCK)
+(insn 384 385 522 55 (use (reg/i:SI 0 r0)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":250:1 -1
+     (nil))
+(note 522 384 523 NOTE_INSN_DELETED)
+(note 523 522 0 NOTE_INSN_DELETED)
+
+;; Function LL_DMA_Init (LL_DMA_Init, funcdef_no=545, decl_uid=10656, cgraph_uid=549, symbol_order=549)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+LL_DMA_Init
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 5 [r5] 12 [ip] 14 [lr]
+;;  ref usage 	r0={4d,15u} r1={2d,8u} r2={4d,23u,7e} r3={17d,19u} r4={9d,9u} r5={2d,2u} r12={1d,4u} r13={1d,2u} r14={4d,5u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 154{60d,87u,7e} in 122{122 regular + 0 call} insns.
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 5 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 5 6 44 2 NOTE_INSN_FUNCTION_BEG)
+(note 44 5 89 2 NOTE_INSN_DELETED)
+(note 89 44 106 2 NOTE_INSN_DELETED)
+(note 106 89 109 2 NOTE_INSN_DELETED)
+(note 109 106 112 2 NOTE_INSN_DELETED)
+(note 112 109 124 2 NOTE_INSN_DELETED)
+(note 124 112 27 2 NOTE_INSN_DELETED)
+(insn 27 124 134 2 (set (reg/f:SI 4 r4 [154])
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":602:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(debug_insn 134 27 8 2 (var_location:SI D#4 (reg/v/f:SI 0 r0 [orig:151 DMAx ] [151])) -1
+     (nil))
+(debug_insn 8 134 9 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":276:3 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":279:3 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":280:3 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":281:3 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":282:3 -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":283:3 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":284:3 -1
+     (nil))
+(debug_insn 15 14 16 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":285:3 -1
+     (nil))
+(debug_insn 16 15 17 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":286:3 -1
+     (nil))
+(debug_insn 17 16 18 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":287:3 -1
+     (nil))
+(debug_insn 18 17 19 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":301:3 -1
+     (nil))
+(debug_insn 19 18 20 2 (var_location:SI DMAx (reg/v/f:SI 0 r0 [orig:151 DMAx ] [151])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":301:3 -1
+     (nil))
+(debug_insn 20 19 127 2 (var_location:SI Channel (reg/v:SI 1 r1 [orig:152 Channel ] [152])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":301:3 -1
+     (nil))
+(debug_insn 127 20 128 2 (var_location:SI D#1 (ior:SI (ior:SI (mem:SI (plus:SI (reg/v/f:SI 2 r2 [orig:153 DMA_InitStruct ] [153])
+                    (const_int 8 [0x8])) [1 DMA_InitStruct_19(D)->Direction+0 S4 A32])
+            (mem:SI (plus:SI (reg/v/f:SI 2 r2 [orig:153 DMA_InitStruct ] [153])
+                    (const_int 12 [0xc])) [1 DMA_InitStruct_19(D)->Mode+0 S4 A32]))
+        (mem:SI (plus:SI (reg/v/f:SI 2 r2 [orig:153 DMA_InitStruct ] [153])
+                (const_int 16 [0x10])) [1 DMA_InitStruct_19(D)->PeriphOrM2MSrcIncMode+0 S4 A32]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":333:10 -1
+     (nil))
+(debug_insn 128 127 129 2 (var_location:SI D#2 (mem:SI (plus:SI (reg/v/f:SI 2 r2 [orig:153 DMA_InitStruct ] [153])
+            (const_int 20 [0x14])) [1 DMA_InitStruct_19(D)->MemoryOrM2MDstIncMode+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":333:10 -1
+     (nil))
+(debug_insn 129 128 21 2 (var_location:SI D#3 (plus:SI (reg/v/f:SI 2 r2 [orig:153 DMA_InitStruct ] [153])
+        (const_int 24 [0x18]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":333:10 -1
+     (nil))
+(debug_insn 21 129 22 2 (var_location:SI Configuration (ior:SI (ior:SI (ior:SI (ior:SI (debug_expr:SI D#1)
+                    (debug_expr:SI D#2))
+                (mem:SI (debug_expr:SI D#3) [1 DMA_InitStruct_19(D)->PeriphOrM2MSrcDataSize+0 S4 A32]))
+            (mem:SI (plus:SI (reg/v/f:SI 2 r2 [orig:153 DMA_InitStruct ] [153])
+                    (const_int 28 [0x1c])) [1 DMA_InitStruct_19(D)->MemoryOrM2MDstDataSize+0 S4 A32]))
+        (mem:SI (plus:SI (reg/v/f:SI 2 r2 [orig:153 DMA_InitStruct ] [153])
+                (const_int 40 [0x28])) [1 DMA_InitStruct_19(D)->Priority+0 S4 A32]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":301:3 -1
+     (nil))
+(debug_insn 22 21 23 2 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":599:22 -1
+     (nil))
+(debug_insn 23 22 25 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":601:3 -1
+     (nil))
+(debug_insn 25 23 26 2 (var_location:SI dma_base_addr (reg/v/f:SI 0 r0 [orig:151 DMAx ] [151])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":601:12 -1
+     (nil))
+(debug_insn 26 25 28 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":602:3 -1
+     (nil))
+(insn 28 26 29 2 (set (reg:SI 14 lr [orig:155 CHANNEL_OFFSET_TAB[Channel_21(D)] ] [155])
+        (zero_extend:SI (mem/u:QI (plus:SI (reg/f:SI 4 r4 [154])
+                    (reg/v:SI 1 r1 [orig:152 Channel ] [152])) [0 CHANNEL_OFFSET_TAB[Channel_21(D)]+0 S1 A8]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":602:3 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 29 28 31 2 (set (reg/f:SI 12 ip [orig:146 _38 ] [146])
+        (plus:SI (reg:SI 14 lr [orig:155 CHANNEL_OFFSET_TAB[Channel_21(D)] ] [155])
+            (reg/v/f:SI 0 r0 [orig:151 DMAx ] [151]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":602:3 7 {*arm_addsi3}
+     (nil))
+(insn 31 29 32 2 (set (reg:SI 3 r3 [orig:157 DMA_InitStruct_19(D)->Direction ] [157])
+        (mem:SI (plus:SI (reg/v/f:SI 2 r2 [orig:153 DMA_InitStruct ] [153])
+                (const_int 8 [0x8])) [1 DMA_InitStruct_19(D)->Direction+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":301:79 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 2 r2 [orig:153 DMA_InitStruct ] [153])
+                (const_int 8 [0x8])) [1 DMA_InitStruct_19(D)->Direction+0 S4 A32])
+        (nil)))
+(insn 32 31 33 2 (set (reg:SI 4 r4 [orig:158 DMA_InitStruct_19(D)->Mode ] [158])
+        (mem:SI (plus:SI (reg/v/f:SI 2 r2 [orig:153 DMA_InitStruct ] [153])
+                (const_int 12 [0xc])) [1 DMA_InitStruct_19(D)->Mode+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":301:79 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 2 r2 [orig:153 DMA_InitStruct ] [153])
+                (const_int 12 [0xc])) [1 DMA_InitStruct_19(D)->Mode+0 S4 A32])
+        (nil)))
+(insn 33 32 34 2 (set (reg:SI 3 r3 [156])
+        (ior:SI (reg:SI 3 r3 [orig:157 DMA_InitStruct_19(D)->Direction ] [157])
+            (reg:SI 4 r4 [orig:158 DMA_InitStruct_19(D)->Mode ] [158]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":301:79 106 {*iorsi3_insn}
+     (nil))
+(insn 34 33 35 2 (set (reg:SI 4 r4 [orig:160 DMA_InitStruct_19(D)->PeriphOrM2MSrcIncMode ] [160])
+        (mem:SI (plus:SI (reg/v/f:SI 2 r2 [orig:153 DMA_InitStruct ] [153])
+                (const_int 16 [0x10])) [1 DMA_InitStruct_19(D)->PeriphOrM2MSrcIncMode+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":302:64 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 2 r2 [orig:153 DMA_InitStruct ] [153])
+                (const_int 16 [0x10])) [1 DMA_InitStruct_19(D)->PeriphOrM2MSrcIncMode+0 S4 A32])
+        (nil)))
+(insn 35 34 36 2 (set (reg:SI 3 r3 [159])
+        (ior:SI (reg:SI 3 r3 [156])
+            (reg:SI 4 r4 [orig:160 DMA_InitStruct_19(D)->PeriphOrM2MSrcIncMode ] [160]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":302:64 106 {*iorsi3_insn}
+     (nil))
+(insn 36 35 37 2 (set (reg:SI 4 r4 [orig:162 DMA_InitStruct_19(D)->MemoryOrM2MDstIncMode ] [162])
+        (mem:SI (plus:SI (reg/v/f:SI 2 r2 [orig:153 DMA_InitStruct ] [153])
+                (const_int 20 [0x14])) [1 DMA_InitStruct_19(D)->MemoryOrM2MDstIncMode+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":303:64 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 2 r2 [orig:153 DMA_InitStruct ] [153])
+                (const_int 20 [0x14])) [1 DMA_InitStruct_19(D)->MemoryOrM2MDstIncMode+0 S4 A32])
+        (nil)))
+(insn 37 36 38 2 (set (reg:SI 3 r3 [161])
+        (ior:SI (reg:SI 3 r3 [159])
+            (reg:SI 4 r4 [orig:162 DMA_InitStruct_19(D)->MemoryOrM2MDstIncMode ] [162]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":303:64 106 {*iorsi3_insn}
+     (nil))
+(insn 38 37 39 2 (set (reg:SI 4 r4 [orig:164 DMA_InitStruct_19(D)->PeriphOrM2MSrcDataSize ] [164])
+        (mem:SI (plus:SI (reg/v/f:SI 2 r2 [orig:153 DMA_InitStruct ] [153])
+                (const_int 24 [0x18])) [1 DMA_InitStruct_19(D)->PeriphOrM2MSrcDataSize+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":304:64 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 2 r2 [orig:153 DMA_InitStruct ] [153])
+                (const_int 24 [0x18])) [1 DMA_InitStruct_19(D)->PeriphOrM2MSrcDataSize+0 S4 A32])
+        (nil)))
+(insn 39 38 30 2 (set (reg:SI 3 r3 [163])
+        (ior:SI (reg:SI 3 r3 [161])
+            (reg:SI 4 r4 [orig:164 DMA_InitStruct_19(D)->PeriphOrM2MSrcDataSize ] [164]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":304:64 106 {*iorsi3_insn}
+     (nil))
+(insn 30 39 139 2 (set (reg:SI 4 r4 [orig:147 _39 ] [147])
+        (mem/v:SI (plus:SI (reg:SI 14 lr [orig:155 CHANNEL_OFFSET_TAB[Channel_21(D)] ] [155])
+                (reg/v/f:SI 0 r0 [orig:151 DMAx ] [151])) [1 _38->CCR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":602:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 139 30 140 2 (set (reg:SI 4 r4 [169])
+        (and:SI (reg:SI 4 r4 [orig:147 _39 ] [147])
+            (const_int -32641 [0xffffffffffff807f]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":602:3 90 {*arm_andsi3_insn}
+     (nil))
+(insn 140 139 40 2 (set (reg:SI 4 r4 [169])
+        (and:SI (reg:SI 4 r4 [169])
+            (const_int -113 [0xffffffffffffff8f]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":602:3 90 {*arm_andsi3_insn}
+     (nil))
+(note 40 140 151 2 NOTE_INSN_DELETED)
+(insn 151 40 41 2 (set (reg:SI 5 r5 [188])
+        (mem:SI (plus:SI (reg/v/f:SI 2 r2 [orig:153 DMA_InitStruct ] [153])
+                (const_int 28 [0x1c])) [1 DMA_InitStruct_19(D)->MemoryOrM2MDstDataSize+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":305:64 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 41 151 42 2 (set (reg:SI 3 r3 [165])
+        (ior:SI (reg:SI 3 r3 [163])
+            (reg:SI 5 r5 [188]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":305:64 106 {*iorsi3_insn}
+     (nil))
+(note 42 41 152 2 NOTE_INSN_DELETED)
+(insn 152 42 43 2 (set (reg:SI 5 r5 [189])
+        (mem:SI (plus:SI (reg/v/f:SI 2 r2 [orig:153 DMA_InitStruct ] [153])
+                (const_int 40 [0x28])) [1 DMA_InitStruct_19(D)->Priority+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":301:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 43 152 46 2 (set (reg:SI 3 r3 [167])
+        (ior:SI (reg:SI 3 r3 [165])
+            (reg:SI 5 r5 [189]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":301:3 106 {*iorsi3_insn}
+     (nil))
+(insn 46 43 47 2 (set (reg:SI 3 r3 [orig:149 _41 ] [149])
+        (ior:SI (reg:SI 3 r3 [167])
+            (reg:SI 4 r4 [169]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":602:3 106 {*iorsi3_insn}
+     (nil))
+(insn 47 46 48 2 (set (mem/v:SI (plus:SI (reg:SI 14 lr [orig:155 CHANNEL_OFFSET_TAB[Channel_21(D)] ] [155])
+                (reg/v/f:SI 0 r0 [orig:151 DMAx ] [151])) [1 _38->CCR+0 S4 A32])
+        (reg:SI 3 r3 [orig:149 _41 ] [149])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":602:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 48 47 49 2 (var_location:SI DMAx (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":301:3 -1
+     (nil))
+(debug_insn 49 48 50 2 (var_location:SI Channel (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":301:3 -1
+     (nil))
+(debug_insn 50 49 51 2 (var_location:SI Configuration (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":301:3 -1
+     (nil))
+(debug_insn 51 50 52 2 (var_location:SI dma_base_addr (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":301:3 -1
+     (nil))
+(debug_insn 52 51 53 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":313:3 -1
+     (nil))
+(insn 53 52 54 2 (set (reg:SI 3 r3 [orig:126 _14 ] [126])
+        (mem:SI (plus:SI (reg/v/f:SI 2 r2 [orig:153 DMA_InitStruct ] [153])
+                (const_int 4 [0x4])) [1 DMA_InitStruct_19(D)->MemoryOrM2MDstAddress+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":313:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 2 r2 [orig:153 DMA_InitStruct ] [153])
+                (const_int 4 [0x4])) [1 DMA_InitStruct_19(D)->MemoryOrM2MDstAddress+0 S4 A32])
+        (nil)))
+(debug_insn 54 53 55 2 (var_location:SI DMAx (debug_expr:SI D#4)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":313:3 -1
+     (nil))
+(debug_insn 55 54 56 2 (var_location:SI Channel (reg/v:SI 1 r1 [orig:152 Channel ] [152])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":313:3 -1
+     (nil))
+(debug_insn 56 55 57 2 (var_location:SI MemoryAddress (reg:SI 3 r3 [orig:126 _14 ] [126])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":313:3 -1
+     (nil))
+(debug_insn 57 56 58 2 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1092:22 -1
+     (nil))
+(debug_insn 58 57 59 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1094:3 -1
+     (nil))
+(debug_insn 59 58 60 2 (var_location:SI dma_base_addr (reg/v/f:SI 0 r0 [orig:151 DMAx ] [151])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1094:12 -1
+     (nil))
+(debug_insn 60 59 61 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1095:3 -1
+     (nil))
+(insn 61 60 62 2 (set (mem/v:SI (plus:SI (reg/f:SI 12 ip [orig:146 _38 ] [146])
+                (const_int 12 [0xc])) [1 _38->CMAR+0 S4 A32])
+        (reg:SI 3 r3 [orig:126 _14 ] [126])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1095:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 62 61 63 2 (var_location:SI DMAx (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":313:3 -1
+     (nil))
+(debug_insn 63 62 64 2 (var_location:SI Channel (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":313:3 -1
+     (nil))
+(debug_insn 64 63 65 2 (var_location:SI MemoryAddress (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":313:3 -1
+     (nil))
+(debug_insn 65 64 66 2 (var_location:SI dma_base_addr (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":313:3 -1
+     (nil))
+(debug_insn 66 65 67 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":319:3 -1
+     (nil))
+(insn 67 66 68 2 (set (reg:SI 3 r3 [orig:127 _15 ] [127])
+        (mem:SI (reg/v/f:SI 2 r2 [orig:153 DMA_InitStruct ] [153]) [1 DMA_InitStruct_19(D)->PeriphOrM2MSrcAddress+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":319:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (reg/v/f:SI 2 r2 [orig:153 DMA_InitStruct ] [153]) [1 DMA_InitStruct_19(D)->PeriphOrM2MSrcAddress+0 S4 A32])
+        (nil)))
+(debug_insn 68 67 69 2 (var_location:SI DMAx (debug_expr:SI D#4)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":319:3 -1
+     (nil))
+(debug_insn 69 68 70 2 (var_location:SI Channel (reg/v:SI 1 r1 [orig:152 Channel ] [152])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":319:3 -1
+     (nil))
+(debug_insn 70 69 71 2 (var_location:SI PeriphAddress (reg:SI 3 r3 [orig:127 _15 ] [127])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":319:3 -1
+     (nil))
+(debug_insn 71 70 72 2 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1117:22 -1
+     (nil))
+(debug_insn 72 71 73 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1119:3 -1
+     (nil))
+(debug_insn 73 72 74 2 (var_location:SI dma_base_addr (reg/v/f:SI 0 r0 [orig:151 DMAx ] [151])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1119:12 -1
+     (nil))
+(debug_insn 74 73 75 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1120:3 -1
+     (nil))
+(insn 75 74 76 2 (set (mem/v:SI (plus:SI (reg/f:SI 12 ip [orig:146 _38 ] [146])
+                (const_int 8 [0x8])) [1 _38->CPAR+0 S4 A32])
+        (reg:SI 3 r3 [orig:127 _15 ] [127])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1120:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 76 75 77 2 (var_location:SI DMAx (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":319:3 -1
+     (nil))
+(debug_insn 77 76 78 2 (var_location:SI Channel (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":319:3 -1
+     (nil))
+(debug_insn 78 77 79 2 (var_location:SI PeriphAddress (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":319:3 -1
+     (nil))
+(debug_insn 79 78 80 2 (var_location:SI dma_base_addr (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":319:3 -1
+     (nil))
+(debug_insn 80 79 81 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":325:3 -1
+     (nil))
+(debug_insn 81 80 82 2 (var_location:SI DMAx (debug_expr:SI D#4)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":325:3 -1
+     (nil))
+(debug_insn 82 81 83 2 (var_location:SI Channel (reg/v:SI 1 r1 [orig:152 Channel ] [152])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":325:3 -1
+     (nil))
+(debug_insn 83 82 84 2 (var_location:SI NbData (mem:SI (plus:SI (reg/v/f:SI 2 r2 [orig:153 DMA_InitStruct ] [153])
+            (const_int 32 [0x20])) [1 DMA_InitStruct_19(D)->NbData+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":325:3 -1
+     (nil))
+(debug_insn 84 83 85 2 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":997:22 -1
+     (nil))
+(debug_insn 85 84 86 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":999:3 -1
+     (nil))
+(debug_insn 86 85 87 2 (var_location:SI dma_base_addr (reg/v/f:SI 0 r0 [orig:151 DMAx ] [151])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":999:12 -1
+     (nil))
+(debug_insn 87 86 88 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1000:3 -1
+     (nil))
+(insn 88 87 141 2 (set (reg:SI 4 r4 [orig:139 _31 ] [139])
+        (mem/v:SI (plus:SI (reg/f:SI 12 ip [orig:146 _38 ] [146])
+                (const_int 4 [0x4])) [1 _38->CNDTR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1000:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 141 88 142 2 (set (reg:SI 14 lr [171])
+        (lshiftrt:SI (reg:SI 4 r4 [orig:139 _31 ] [139])
+            (const_int 16 [0x10]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1000:3 147 {*arm_shiftsi3}
+     (nil))
+(insn 142 141 107 2 (set (reg:SI 14 lr [171])
+        (ashift:SI (reg:SI 14 lr [171])
+            (const_int 16 [0x10]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1000:3 147 {*arm_shiftsi3}
+     (nil))
+(insn 107 142 149 2 (set (reg:SI 3 r3 [176])
+        (const_int 1048704 [0x100080])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1408:68 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1048704 [0x100080])
+        (nil)))
+(debug_insn 149 107 108 2 (var_location:SI D#7 (reg/v/f:SI 0 r0 [orig:151 DMAx ] [151])) -1
+     (nil))
+(insn 108 149 148 2 (set (reg:SI 3 r3 [175])
+        (xor:SI (lshiftrt:SI (reg/v/f:SI 0 r0 [orig:151 DMAx ] [151])
+                (const_int 10 [0xa]))
+            (reg:SI 3 r3 [176]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1408:68 321 {*eor_shiftsi}
+     (nil))
+(debug_insn 148 108 110 2 (var_location:SI D#6 (reg/v:SI 1 r1 [orig:152 Channel ] [152])) -1
+     (nil))
+(insn 110 148 111 2 (set (reg:SI 3 r3 [178])
+        (plus:SI (ashift:SI (reg:SI 3 r3 [175])
+                (const_int 3 [0x3]))
+            (reg/v:SI 1 r1 [orig:152 Channel ] [152]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1409:3 318 {*add_shiftsi}
+     (nil))
+(insn 111 110 144 2 (set (reg:SI 3 r3 [179])
+        (ashift:SI (reg:SI 3 r3 [178])
+            (const_int 2 [0x2]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1409:3 147 {*arm_shiftsi3}
+     (nil))
+(insn 144 111 145 2 (set (reg/f:SI 3 r3 [orig:135 _27 ] [135])
+        (plus:SI (reg:SI 3 r3 [179])
+            (const_int 1073741824 [0x40000000]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1409:3 7 {*arm_addsi3}
+     (nil))
+(insn 145 144 91 2 (set (reg/f:SI 3 r3 [orig:135 _27 ] [135])
+        (plus:SI (reg/f:SI 3 r3 [orig:135 _27 ] [135])
+            (const_int 133120 [0x20800]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1409:3 7 {*arm_addsi3}
+     (nil))
+(insn 91 145 147 2 (set (reg:SI 0 r0 [orig:173 DMA_InitStruct_19(D)->NbData ] [173])
+        (mem:SI (plus:SI (reg/v/f:SI 2 r2 [orig:153 DMA_InitStruct ] [153])
+                (const_int 32 [0x20])) [1 DMA_InitStruct_19(D)->NbData+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1000:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 147 91 116 2 (var_location:SI D#5 (reg/v/f:SI 2 r2 [orig:153 DMA_InitStruct ] [153])) -1
+     (nil))
+(insn 116 147 92 2 (set (reg:SI 1 r1 [orig:182 DMA_InitStruct_19(D)->PeriphRequest ] [182])
+        (mem:SI (plus:SI (reg/v/f:SI 2 r2 [orig:153 DMA_InitStruct ] [153])
+                (const_int 36 [0x24])) [1 DMA_InitStruct_19(D)->PeriphRequest+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1409:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 92 116 93 2 (set (reg:SI 0 r0 [orig:141 _33 ] [141])
+        (ior:SI (reg:SI 14 lr [171])
+            (reg:SI 0 r0 [orig:173 DMA_InitStruct_19(D)->NbData ] [173]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1000:3 106 {*iorsi3_insn}
+     (nil))
+(insn 93 92 94 2 (set (mem/v:SI (plus:SI (reg/f:SI 12 ip [orig:146 _38 ] [146])
+                (const_int 4 [0x4])) [1 _38->CNDTR+0 S4 A32])
+        (reg:SI 0 r0 [orig:141 _33 ] [141])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1000:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 94 93 95 2 (var_location:SI DMAx (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":325:3 -1
+     (nil))
+(debug_insn 95 94 96 2 (var_location:SI Channel (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":325:3 -1
+     (nil))
+(debug_insn 96 95 97 2 (var_location:SI NbData (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":325:3 -1
+     (nil))
+(debug_insn 97 96 98 2 (var_location:SI dma_base_addr (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":325:3 -1
+     (nil))
+(debug_insn 98 97 99 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":331:3 -1
+     (nil))
+(debug_insn 99 98 100 2 (var_location:SI DMAx (debug_expr:SI D#4)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":331:3 -1
+     (nil))
+(debug_insn 100 99 101 2 (var_location:SI Channel (debug_expr:SI D#6)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":331:3 -1
+     (nil))
+(debug_insn 101 100 102 2 (var_location:SI PeriphRequest (mem:SI (plus:SI (debug_expr:SI D#5)
+            (const_int 36 [0x24])) [1 DMA_InitStruct_19(D)->PeriphRequest+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":331:3 -1
+     (nil))
+(debug_insn 102 101 103 2 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1406:22 -1
+     (nil))
+(debug_insn 103 102 104 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1408:3 -1
+     (nil))
+(debug_insn 104 103 105 2 (var_location:SI dmamux_ccr_offset (ashift:SI (xor:SI (lshiftrt:SI (debug_expr:SI D#7)
+                (const_int 10 [0xa]))
+            (const_int 1048704 [0x100080]))
+        (const_int 3 [0x3]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1408:12 -1
+     (nil))
+(debug_insn 105 104 114 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1409:3 -1
+     (nil))
+(insn 114 105 131 2 (set (reg:SI 2 r2 [orig:136 _28 ] [136])
+        (mem/v:SI (reg/f:SI 3 r3 [orig:135 _27 ] [135]) [1 _27->CCR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1409:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 131 114 115 2 (set (reg/i:SI 0 r0)
+        (const_int 0 [0])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":334:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(insn 115 131 117 2 (set (reg:SI 2 r2 [181])
+        (and:SI (reg:SI 2 r2 [orig:136 _28 ] [136])
+            (const_int -256 [0xffffffffffffff00]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1409:3 90 {*arm_andsi3_insn}
+     (nil))
+(insn 117 115 118 2 (set (reg:SI 2 r2 [orig:138 _30 ] [138])
+        (ior:SI (reg:SI 2 r2 [181])
+            (reg:SI 1 r1 [orig:182 DMA_InitStruct_19(D)->PeriphRequest ] [182]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1409:3 106 {*iorsi3_insn}
+     (nil))
+(insn 118 117 119 2 (set (mem/v:SI (reg/f:SI 3 r3 [orig:135 _27 ] [135]) [1 _27->CCR+0 S4 A32])
+        (reg:SI 2 r2 [orig:138 _30 ] [138])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h":1409:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 119 118 120 2 (var_location:SI DMAx (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":331:3 -1
+     (nil))
+(debug_insn 120 119 121 2 (var_location:SI Channel (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":331:3 -1
+     (nil))
+(debug_insn 121 120 122 2 (var_location:SI PeriphRequest (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":331:3 -1
+     (nil))
+(debug_insn 122 121 123 2 (var_location:SI dmamux_ccr_offset (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":331:3 -1
+     (nil))
+(debug_insn 123 122 132 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":333:3 -1
+     (nil))
+(insn 132 123 146 2 (use (reg/i:SI 0 r0)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":334:1 -1
+     (nil))
+(note 146 132 150 NOTE_INSN_DELETED)
+(note 150 146 0 NOTE_INSN_DELETED)
+
+;; Function LL_DMA_StructInit (LL_DMA_StructInit, funcdef_no=546, decl_uid=10661, cgraph_uid=550, symbol_order=550)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+LL_DMA_StructInit
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp]
+;;  regs ever live 	 0 [r0] 3 [r3]
+;;  ref usage 	r0={1d,11u} r1={1d} r2={1d} r3={2d,11u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 47{23d,24u,0e} in 23{23 regular + 0 call} insns.
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 3 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 3 4 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":344:3 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 3 r3 [114])
+        (const_int 0 [0])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":344:42 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 0 [0])
+        (nil)))
+(insn 8 7 9 2 (set (mem:SI (reg/v/f:SI 0 r0 [orig:113 DMA_InitStruct ] [113]) [1 DMA_InitStruct_2(D)->PeriphOrM2MSrcAddress+0 S4 A32])
+        (reg:SI 3 r3 [114])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":344:42 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 9 8 11 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":345:3 -1
+     (nil))
+(insn 11 9 12 2 (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:113 DMA_InitStruct ] [113])
+                (const_int 4 [0x4])) [1 DMA_InitStruct_2(D)->MemoryOrM2MDstAddress+0 S4 A32])
+        (reg:SI 3 r3 [114])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":345:42 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 12 11 14 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":346:3 -1
+     (nil))
+(insn 14 12 15 2 (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:113 DMA_InitStruct ] [113])
+                (const_int 8 [0x8])) [1 DMA_InitStruct_2(D)->Direction+0 S4 A32])
+        (reg:SI 3 r3 [114])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":346:42 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 15 14 17 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":347:3 -1
+     (nil))
+(insn 17 15 18 2 (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:113 DMA_InitStruct ] [113])
+                (const_int 12 [0xc])) [1 DMA_InitStruct_2(D)->Mode+0 S4 A32])
+        (reg:SI 3 r3 [114])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":347:42 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 18 17 20 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":348:3 -1
+     (nil))
+(insn 20 18 21 2 (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:113 DMA_InitStruct ] [113])
+                (const_int 16 [0x10])) [1 DMA_InitStruct_2(D)->PeriphOrM2MSrcIncMode+0 S4 A32])
+        (reg:SI 3 r3 [114])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":348:42 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 21 20 23 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":349:3 -1
+     (nil))
+(insn 23 21 24 2 (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:113 DMA_InitStruct ] [113])
+                (const_int 20 [0x14])) [1 DMA_InitStruct_2(D)->MemoryOrM2MDstIncMode+0 S4 A32])
+        (reg:SI 3 r3 [114])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":349:42 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 24 23 26 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":350:3 -1
+     (nil))
+(insn 26 24 27 2 (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:113 DMA_InitStruct ] [113])
+                (const_int 24 [0x18])) [1 DMA_InitStruct_2(D)->PeriphOrM2MSrcDataSize+0 S4 A32])
+        (reg:SI 3 r3 [114])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":350:42 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 27 26 29 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":351:3 -1
+     (nil))
+(insn 29 27 30 2 (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:113 DMA_InitStruct ] [113])
+                (const_int 28 [0x1c])) [1 DMA_InitStruct_2(D)->MemoryOrM2MDstDataSize+0 S4 A32])
+        (reg:SI 3 r3 [114])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":351:42 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 30 29 32 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":352:3 -1
+     (nil))
+(insn 32 30 33 2 (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:113 DMA_InitStruct ] [113])
+                (const_int 32 [0x20])) [1 DMA_InitStruct_2(D)->NbData+0 S4 A32])
+        (reg:SI 3 r3 [114])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":352:42 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 33 32 35 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":353:3 -1
+     (nil))
+(insn 35 33 36 2 (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:113 DMA_InitStruct ] [113])
+                (const_int 36 [0x24])) [1 DMA_InitStruct_2(D)->PeriphRequest+0 S4 A32])
+        (reg:SI 3 r3 [114])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":353:42 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 36 35 38 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":354:3 -1
+     (nil))
+(insn 38 36 42 2 (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:113 DMA_InitStruct ] [113])
+                (const_int 40 [0x28])) [1 DMA_InitStruct_2(D)->Priority+0 S4 A32])
+        (reg:SI 3 r3 [114])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_dma.c":354:42 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 42 38 43 NOTE_INSN_DELETED)
+(note 43 42 0 NOTE_INSN_DELETED)

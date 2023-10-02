@@ -1,0 +1,1503 @@
+
+;; Function LL_EXTI_DeInit (LL_EXTI_DeInit, funcdef_no=361, decl_uid=10093, cgraph_uid=365, symbol_order=364)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 3 n_edges 2 count 3 (    1)
+df_worklist_dataflow_doublequeue: n_basic_blocks 3 n_edges 2 count 3 (    1)
+;; SImode fixup for i6; addr 0, range (0,1018): 0x40010400
+;; SImode fixup for i27; addr 4, range (0,1018): 0x7dffff
+;; SImode fixup for i7; addr 12, range (0,1018): 0x1f840000
+;; Emitting minipool after insn 101; address 78; align 4 (bytes)
+;;  Offset 0, min -65536, max 1018 0x40010400
+;;  Offset 4, min -65536, max 1022 0x7dffff
+;;  Offset 8, min -65536, max 1030 0x1f840000
+
+
+LL_EXTI_DeInit
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 4 [r4] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 13 [sp]
+;;  ref usage 	r0={2d,10u} r1={2d,1u} r2={3d,2u} r3={2d,12u} r4={3d,3u} r13={3d,5u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 66{32d,34u,0e} in 22{22 regular + 0 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 109 2 NOTE_INSN_FUNCTION_BEG)
+(note 109 2 6 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:82 NOTE_INSN_BEGIN_STMT)
+(insn 6 109 27 2 (set (reg/f:SI 3 r3 [114])
+        (mem:SI (label_ref 124) [0  S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":82:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073808384 [0x40010400])
+        (nil)))
+(insn 27 6 94 2 (set (reg:SI 2 r2 [125])
+        (mem:SI (const:SI (plus:SI (label_ref 124)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":92:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 8257535 [0x7dffff])
+        (nil)))
+(insn/f 94 27 95 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -4 [0xfffffffffffffffc]))) [4  A8])
+                (unspec:BLK [
+                        (reg:SI 4 r4)
+                    ] UNSPEC_PUSH_MULT))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":80:1 378 {*push_multi}
+     (expr_list:REG_DEAD (reg:SI 4 r4)
+        (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                    (set/f (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -4 [0xfffffffffffffffc])))
+                    (set/f (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32])
+                        (reg:SI 4 r4))
+                ])
+            (nil))))
+(note 95 94 11 2 NOTE_INSN_PROLOGUE_END)
+(insn 11 95 7 2 (parallel [
+            (set (reg:SI 0 r0 [117])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":84:3 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUIV (const_int 0 [0])
+        (nil)))
+(insn 7 11 8 2 (set (reg:SI 4 r4 [115])
+        (mem:SI (const:SI (plus:SI (label_ref 124)
+                    (const_int 8 [0x8]))) [0  S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":82:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 528744448 [0x1f840000])
+        (nil)))
+(insn 8 7 110 2 (set (mem/v:SI (reg/f:SI 3 r3 [114]) [2 MEM[(struct EXTI_TypeDef *)1073808384B].IMR1+0 S4 A64])
+        (reg:SI 4 r4 [115])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":82:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 4 r4 [115])
+        (nil)))
+(note 110 8 31 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:84 NOTE_INSN_BEGIN_STMT)
+(insn 31 110 12 2 (set (reg:SI 1 r1 [127])
+        (const_int 1084 [0x43c])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":96:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1084 [0x43c])
+        (nil)))
+(insn 12 31 111 2 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [114])
+                (const_int 4 [0x4])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].EMR1+0 S4 A32])
+        (reg:SI 0 r0 [117])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":84:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 111 12 16 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:86 NOTE_INSN_BEGIN_STMT)
+(insn 16 111 112 2 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [114])
+                (const_int 8 [0x8])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].RTSR1+0 S4 A64])
+        (reg:SI 0 r0 [117])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":86:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 112 16 20 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:88 NOTE_INSN_BEGIN_STMT)
+(insn 20 112 113 2 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [114])
+                (const_int 12 [0xc])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].FTSR1+0 S4 A32])
+        (reg:SI 0 r0 [117])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":88:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 113 20 24 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:90 NOTE_INSN_BEGIN_STMT)
+(insn 24 113 114 2 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [114])
+                (const_int 16 [0x10])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].SWIER1+0 S4 A64])
+        (reg:SI 0 r0 [117])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":90:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 114 24 28 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:92 NOTE_INSN_BEGIN_STMT)
+(insn 28 114 115 2 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [114])
+                (const_int 20 [0x14])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].PR1+0 S4 A32])
+        (reg:SI 2 r2 [125])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":92:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [125])
+        (nil)))
+(note 115 28 51 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:96 NOTE_INSN_BEGIN_STMT)
+(insn 51 115 32 2 (parallel [
+            (set (reg:SI 2 r2 [137])
+                (const_int 120 [0x78]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":109:3 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUIV (const_int 120 [0x78])
+        (nil)))
+(insn 32 51 116 2 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [114])
+                (const_int 32 [0x20])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].IMR2+0 S4 A64])
+        (reg:SI 1 r1 [127])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":96:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [127])
+        (nil)))
+(note 116 32 108 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:101 NOTE_INSN_BEGIN_STMT)
+(note 108 116 97 2 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 97 108 36 2 (set (reg:SI 4 r4)
+        (mem:SI (post_inc:SI (reg/f:SI 13 sp)) [4  S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":112:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])))
+        (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+            (nil))))
+(insn 36 97 117 2 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [114])
+                (const_int 36 [0x24])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].EMR2+0 S4 A32])
+        (reg:SI 0 r0 [117])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":101:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 117 36 59 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:103 NOTE_INSN_BEGIN_STMT)
+(insn 59 117 40 2 (use (reg/i:SI 0 r0)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":112:1 -1
+     (nil))
+(insn 40 59 118 2 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [114])
+                (const_int 40 [0x28])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].RTSR2+0 S4 A64])
+        (reg:SI 0 r0 [117])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":103:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 118 40 44 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:105 NOTE_INSN_BEGIN_STMT)
+(insn 44 118 119 2 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [114])
+                (const_int 44 [0x2c])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].FTSR2+0 S4 A32])
+        (reg:SI 0 r0 [117])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":105:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 119 44 48 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:107 NOTE_INSN_BEGIN_STMT)
+(insn 48 119 120 2 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [114])
+                (const_int 48 [0x30])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].SWIER2+0 S4 A64])
+        (reg:SI 0 r0 [117])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":107:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 120 48 52 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:109 NOTE_INSN_BEGIN_STMT)
+(insn 52 120 121 2 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [114])
+                (const_int 52 [0x34])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].PR2+0 S4 A32])
+        (reg:SI 2 r2 [137])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":109:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 3 r3 [114])
+        (expr_list:REG_DEAD (reg:SI 2 r2 [137])
+            (nil))))
+(note 121 52 98 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:111 NOTE_INSN_BEGIN_STMT)
+(jump_insn 98 121 101 2 (simple_return) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":112:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 101 98 122)
+(code_label 122 101 123 5 (nil) [0 uses])
+(insn 123 122 124 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) -1
+     (nil))
+(code_label 124 123 125 4 (nil) [0 uses])
+(insn 125 124 126 (unspec_volatile [
+            (const_int 1073808384 [0x40010400])
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 126 125 127 (unspec_volatile [
+            (const_int 8257535 [0x7dffff])
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 127 126 128 (unspec_volatile [
+            (const_int 528744448 [0x1f840000])
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 128 127 129 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) -1
+     (nil))
+(barrier 129 128 65)
+(note 65 129 66 NOTE_INSN_DELETED)
+(note 66 65 0 NOTE_INSN_DELETED)
+
+;; Function LL_EXTI_Init (LL_EXTI_Init, funcdef_no=362, decl_uid=10091, cgraph_uid=366, symbol_order=365)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 40 n_edges 57 count 40 (    1)
+df_worklist_dataflow_doublequeue: n_basic_blocks 40 n_edges 57 count 40 (    1)
+;; SImode fixup for i404; addr 188, range (0,1018): 0x40010400
+;; SImode fixup for i277; addr 290, range (0,1018): 0x40010400
+;; SImode fixup for i100; addr 318, range (0,1018): 0x40010400
+;; SImode fixup for i52; addr 350, range (0,1018): 0x40010400
+;; SImode fixup for i253; addr 382, range (0,1018): 0x40010400
+;; SImode fixup for i76; addr 412, range (0,1018): 0x40010400
+;; SImode fixup for i164; addr 446, range (0,1018): 0x40010400
+;; SImode fixup for i325; addr 490, range (0,1018): 0x40010400
+;; SImode fixup for i373; addr 520, range (0,1018): 0x40010400
+;; SImode fixup for i349; addr 548, range (0,1018): 0x40010400
+;; SImode fixup for i140; addr 578, range (0,1018): 0x40010400
+;; SImode fixup for i188; addr 610, range (0,1018): 0x40010400
+;; Emitting minipool after insn 614; address 624; align 4 (bytes)
+;;  Offset 0, min -65536, max 1206 0x40010400
+
+
+LL_EXTI_Init
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 5 [r5] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 4 [r4] 5 [r5] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 5 [r5] 13 [sp] 100 [cc]
+;;  ref usage 	r0={13d,24u} r1={24d,62u} r2={10d,19u} r3={16d,39u} r4={35d,30u} r5={4d,4u} r13={4d,49u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={18d,10u} 
+;;    total ref usage 379{141d,238u,0e} in 165{165 regular + 0 call} insns.
+(note 1 0 731 NOTE_INSN_DELETED)
+(note 731 1 18 (var_location EXTI_InitStruct (reg:SI 0 r0 [ EXTI_InitStruct ])) NOTE_INSN_VAR_LOCATION)
+(note 18 731 3 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 3 18 28 2 NOTE_INSN_FUNCTION_BEG)
+(note 28 3 629 2 NOTE_INSN_DELETED)
+(note 629 28 732 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:123 NOTE_INSN_BEGIN_STMT)
+(note 732 629 630 2 (var_location status (const_int 0 [0])) NOTE_INSN_VAR_LOCATION)
+(note 630 732 631 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:126 NOTE_INSN_BEGIN_STMT)
+(note 631 630 632 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:127 NOTE_INSN_BEGIN_STMT)
+(note 632 631 633 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:128 NOTE_INSN_BEGIN_STMT)
+(note 633 632 634 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:129 NOTE_INSN_BEGIN_STMT)
+(note 634 633 549 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:132 NOTE_INSN_BEGIN_STMT)
+(insn/f 549 634 550 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [4  A8])
+                (unspec:BLK [
+                        (reg:SI 4 r4)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 5 r5))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":122:1 378 {*push_multi}
+     (expr_list:REG_DEAD (reg:SI 5 r5)
+        (expr_list:REG_DEAD (reg:SI 4 r4)
+            (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                        (set/f (reg/f:SI 13 sp)
+                            (plus:SI (reg/f:SI 13 sp)
+                                (const_int -8 [0xfffffffffffffff8])))
+                        (set/f (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32])
+                            (reg:SI 4 r4))
+                        (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                    (const_int 4 [0x4])) [4  S4 A32])
+                            (reg:SI 5 r5))
+                    ])
+                (nil)))))
+(note 550 549 27 2 NOTE_INSN_PROLOGUE_END)
+(insn 27 550 29 2 (set (reg:SI 2 r2 [orig:191 EXTI_InitStruct_19(D)->LineCommand ] [191])
+        (zero_extend:SI (mem:QI (plus:SI (reg/v/f:SI 0 r0 [orig:190 EXTI_InitStruct ] [190])
+                    (const_int 8 [0x8])) [0 EXTI_InitStruct_19(D)->LineCommand+0 S1 A32]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":132:6 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(jump_insn 29 27 30 2 (parallel [
+            (set (pc)
+                (if_then_else (eq (reg:SI 2 r2 [orig:191 EXTI_InitStruct_19(D)->LineCommand ] [191])
+                        (const_int 0 [0]))
+                    (label_ref 398)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":132:6 1024 {*thumb2_cbz}
+     (expr_list:REG_UNUSED (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 398)
+(note 30 29 34 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 34 30 635 3 NOTE_INSN_DELETED)
+(note 635 34 636 3 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:134 NOTE_INSN_BEGIN_STMT)
+(note 636 635 33 3 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:137 NOTE_INSN_BEGIN_STMT)
+(insn 33 636 35 3 (set (reg/v:SI 2 r2 [orig:189 <retval> ] [189])
+        (mem:SI (reg/v/f:SI 0 r0 [orig:190 EXTI_InitStruct ] [190]) [2 EXTI_InitStruct_19(D)->Line_0_31+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":137:24 728 {*thumb2_movsi_vfp}
+     (nil))
+(jump_insn 35 33 36 3 (parallel [
+            (set (pc)
+                (if_then_else (eq (reg/v:SI 2 r2 [orig:189 <retval> ] [189])
+                        (const_int 0 [0]))
+                    (label_ref:SI 203)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":137:8 1024 {*thumb2_cbz}
+     (expr_list:REG_UNUSED (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 203)
+(note 36 35 637 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 637 36 38 4 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:139 NOTE_INSN_BEGIN_STMT)
+(insn 38 637 39 4 (set (reg:SI 3 r3 [orig:114 _3 ] [114])
+        (zero_extend:SI (mem:QI (plus:SI (reg/v/f:SI 0 r0 [orig:190 EXTI_InitStruct ] [190])
+                    (const_int 9 [0x9])) [0 EXTI_InitStruct_19(D)->Mode+0 S1 A8]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":139:30 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 39 38 40 4 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:114 _3 ] [114])
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":139:7 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 40 39 41 4 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 70)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":139:7 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 268435462 (nil)))
+ -> 70)
+(note 41 40 42 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 42 41 43 5 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:114 _3 ] [114])
+            (const_int 2 [0x2]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":139:7 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 43 42 44 5 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 94)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":139:7 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 357913950 (nil)))
+ -> 94)
+(note 44 43 45 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(note 45 44 46 6 NOTE_INSN_DELETED)
+(jump_insn 46 45 461 6 (parallel [
+            (set (pc)
+                (if_then_else (eq (reg:SI 3 r3 [orig:114 _3 ] [114])
+                        (const_int 0 [0]))
+                    (label_ref:SI 585)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":139:7 1024 {*thumb2_cbz}
+     (expr_list:REG_UNUSED (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 357913950 (nil)))
+ -> 585)
+(note 461 46 10 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 10 461 11 7 (parallel [
+            (set (reg:SI 4 r4 [orig:188 prephitmp_123 ] [188])
+                (const_int 3 [0x3]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":139:7 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUAL (const_int 3 [0x3])
+        (nil)))
+(insn 11 10 115 7 (parallel [
+            (set (reg/v:SI 3 r3 [orig:121 status ] [121])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":139:7 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUAL (const_int 1 [0x1])
+        (nil)))
+(code_label 115 11 116 8 11 (nil) [3 uses])
+(note 116 115 123 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(note 123 116 733 8 NOTE_INSN_DELETED)
+(note 733 123 638 8 (var_location status (reg/v:SI 3 r3 [orig:121 status ] [121])) NOTE_INSN_VAR_LOCATION)
+(note 638 733 122 8 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:163 NOTE_INSN_BEGIN_STMT)
+(insn 122 638 124 8 (set (reg:SI 1 r1 [orig:115 _4 ] [115])
+        (zero_extend:SI (mem:QI (plus:SI (reg/v/f:SI 0 r0 [orig:190 EXTI_InitStruct ] [190])
+                    (const_int 10 [0xa])) [0 EXTI_InitStruct_19(D)->Trigger+0 S1 A16]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":163:26 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(jump_insn 124 122 125 8 (parallel [
+            (set (pc)
+                (if_then_else (eq (reg:SI 1 r1 [orig:115 _4 ] [115])
+                        (const_int 0 [0]))
+                    (label_ref:SI 564)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":163:10 1024 {*thumb2_cbz}
+     (expr_list:REG_UNUSED (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 564)
+(note 125 124 639 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(note 639 125 127 9 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:165 NOTE_INSN_BEGIN_STMT)
+(insn 127 639 128 9 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 1 r1 [orig:115 _4 ] [115])
+            (const_int 2 [0x2]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":165:9 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 128 127 129 9 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 158)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":165:9 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 268435462 (nil)))
+ -> 158)
+(note 129 128 130 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 130 129 131 10 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 1 r1 [orig:115 _4 ] [115])
+            (const_int 3 [0x3]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":165:9 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 131 130 132 10 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 182)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":165:9 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 357913950 (nil)))
+ -> 182)
+(note 132 131 133 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 133 132 134 11 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 1 r1 [orig:115 _4 ] [115])
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":165:9 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [orig:115 _4 ] [115])
+        (nil)))
+(jump_insn 134 133 469 11 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 586)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":165:9 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 357913950 (nil)))
+ -> 586)
+(note 469 134 16 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 16 469 734 12 (set (reg/v:SI 2 r2 [orig:189 <retval> ] [189])
+        (reg:SI 4 r4 [orig:188 prephitmp_123 ] [188])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":165:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 4 r4 [orig:188 prephitmp_123 ] [188])
+        (nil)))
+(note 734 16 735 (var_location status (nil)) NOTE_INSN_VAR_LOCATION)
+(note 735 734 203 (var_location EXTI_InitStruct (reg:SI 0 r0 [ EXTI_InitStruct ])) NOTE_INSN_VAR_LOCATION)
+(code_label 203 735 204 13 8 (nil) [2 uses])
+(note 204 203 211 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(note 211 204 736 13 NOTE_INSN_DELETED)
+(note 736 211 640 13 (var_location status (reg/v:SI 2 r2 [orig:189 <retval> ] [189])) NOTE_INSN_VAR_LOCATION)
+(note 640 736 210 13 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:192 NOTE_INSN_BEGIN_STMT)
+(insn 210 640 212 13 (set (reg:SI 3 r3 [orig:116 _5 ] [116])
+        (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:190 EXTI_InitStruct ] [190])
+                (const_int 4 [0x4])) [2 EXTI_InitStruct_19(D)->Line_32_63+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":192:24 728 {*thumb2_movsi_vfp}
+     (nil))
+(jump_insn 212 210 737 13 (parallel [
+            (set (pc)
+                (if_then_else (eq (reg:SI 3 r3 [orig:116 _5 ] [116])
+                        (const_int 0 [0]))
+                    (label_ref:SI 455)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":192:8 1024 {*thumb2_cbz}
+     (expr_list:REG_UNUSED (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 455)
+(note 737 212 738 (var_location status (reg/v:SI 2 r2 [orig:189 <retval> ] [189])) NOTE_INSN_VAR_LOCATION)
+(note 738 737 602 (var_location EXTI_InitStruct (reg:SI 0 r0 [ EXTI_InitStruct ])) NOTE_INSN_VAR_LOCATION)
+(code_label 602 738 213 14 41 (nil) [1 uses])
+(note 213 602 641 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(note 641 213 215 14 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:194 NOTE_INSN_BEGIN_STMT)
+(insn 215 641 216 14 (set (reg:SI 1 r1 [orig:117 _6 ] [117])
+        (zero_extend:SI (mem:QI (plus:SI (reg/v/f:SI 0 r0 [orig:190 EXTI_InitStruct ] [190])
+                    (const_int 9 [0x9])) [0 EXTI_InitStruct_19(D)->Mode+0 S1 A8]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":194:30 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 216 215 217 14 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 1 r1 [orig:117 _6 ] [117])
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":194:7 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 217 216 218 14 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 247)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":194:7 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 268435462 (nil)))
+ -> 247)
+(note 218 217 219 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 219 218 220 15 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 1 r1 [orig:117 _6 ] [117])
+            (const_int 2 [0x2]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":194:7 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 220 219 221 15 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 271)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":194:7 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 357913950 (nil)))
+ -> 271)
+(note 221 220 222 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(note 222 221 223 16 NOTE_INSN_DELETED)
+(jump_insn 223 222 295 16 (parallel [
+            (set (pc)
+                (if_then_else (eq (reg:SI 1 r1 [orig:117 _6 ] [117])
+                        (const_int 0 [0]))
+                    (label_ref:SI 587)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":194:7 1024 {*thumb2_cbz}
+     (expr_list:REG_UNUSED (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 357913950 (nil)))
+ -> 587)
+(note 295 223 642 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(note 642 295 297 17 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:215 NOTE_INSN_BEGIN_STMT)
+(insn 297 642 739 17 (set (reg/v:SI 2 r2 [orig:189 <retval> ] [189])
+        (ior:SI (reg/v:SI 2 r2 [orig:189 <retval> ] [189])
+            (const_int 4 [0x4]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":215:18 106 {*iorsi3_insn}
+     (nil))
+(note 739 297 740 17 (var_location status (nil)) NOTE_INSN_VAR_LOCATION)
+(note 740 739 643 17 (var_location status (reg/v:SI 2 r2 [orig:189 <retval> ] [189])) NOTE_INSN_VAR_LOCATION)
+(note 643 740 741 17 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:216 NOTE_INSN_BEGIN_STMT)
+(note 741 643 300 (var_location status (reg/v:SI 2 r2 [orig:189 <retval> ] [189])) NOTE_INSN_VAR_LOCATION)
+(code_label 300 741 301 18 18 (nil) [3 uses])
+(note 301 300 308 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(note 308 301 742 18 NOTE_INSN_DELETED)
+(note 742 308 644 18 (var_location status (reg/v:SI 2 r2 [orig:189 <retval> ] [189])) NOTE_INSN_VAR_LOCATION)
+(note 644 742 307 18 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:218 NOTE_INSN_BEGIN_STMT)
+(insn 307 644 309 18 (set (reg:SI 1 r1 [orig:118 _7 ] [118])
+        (zero_extend:SI (mem:QI (plus:SI (reg/v/f:SI 0 r0 [orig:190 EXTI_InitStruct ] [190])
+                    (const_int 10 [0xa])) [0 EXTI_InitStruct_19(D)->Trigger+0 S1 A16]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":218:26 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_DEAD (reg/v/f:SI 0 r0 [orig:190 EXTI_InitStruct ] [190])
+        (nil)))
+(jump_insn 309 307 743 18 (parallel [
+            (set (pc)
+                (if_then_else (eq (reg:SI 1 r1 [orig:118 _7 ] [118])
+                        (const_int 0 [0]))
+                    (label_ref:SI 455)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":218:10 1024 {*thumb2_cbz}
+     (expr_list:REG_UNUSED (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 455)
+(note 743 309 310 (var_location status (reg/v:SI 2 r2 [orig:189 <retval> ] [189])) NOTE_INSN_VAR_LOCATION)
+(note 310 743 645 19 [bb 19] NOTE_INSN_BASIC_BLOCK)
+(note 645 310 312 19 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:220 NOTE_INSN_BEGIN_STMT)
+(insn 312 645 313 19 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 1 r1 [orig:118 _7 ] [118])
+            (const_int 2 [0x2]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":220:9 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 313 312 314 19 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 343)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":220:9 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 268435462 (nil)))
+ -> 343)
+(note 314 313 315 20 [bb 20] NOTE_INSN_BASIC_BLOCK)
+(insn 315 314 316 20 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 1 r1 [orig:118 _7 ] [118])
+            (const_int 3 [0x3]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":220:9 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 316 315 317 20 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 367)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":220:9 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 357913950 (nil)))
+ -> 367)
+(note 317 316 318 21 [bb 21] NOTE_INSN_BASIC_BLOCK)
+(insn 318 317 319 21 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 1 r1 [orig:118 _7 ] [118])
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":220:9 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [orig:118 _7 ] [118])
+        (nil)))
+(jump_insn 319 318 391 21 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 588)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":220:9 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 357913950 (nil)))
+ -> 588)
+(note 391 319 646 22 [bb 22] NOTE_INSN_BASIC_BLOCK)
+(note 646 391 393 22 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:241 NOTE_INSN_BEGIN_STMT)
+(insn 393 646 744 22 (set (reg/v:SI 2 r2 [orig:189 <retval> ] [189])
+        (ior:SI (reg/v:SI 2 r2 [orig:189 <retval> ] [189])
+            (const_int 5 [0x5]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":241:20 106 {*iorsi3_insn}
+     (nil))
+(note 744 393 745 22 (var_location status (nil)) NOTE_INSN_VAR_LOCATION)
+(note 745 744 647 22 (var_location status (reg/v:SI 2 r2 [orig:189 <retval> ] [189])) NOTE_INSN_VAR_LOCATION)
+(note 647 745 746 22 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:242 NOTE_INSN_BEGIN_STMT)
+(note 746 647 747 (var_location EXTI_InitStruct (entry_value:SI (reg:SI 0 r0 [ EXTI_InitStruct ]))) NOTE_INSN_VAR_LOCATION)
+(note 747 746 455 (var_location status (reg/v:SI 2 r2 [orig:189 <retval> ] [189])) NOTE_INSN_VAR_LOCATION)
+(code_label 455 747 458 23 6 (nil) [6 uses])
+(note 458 455 456 23 [bb 23] NOTE_INSN_BASIC_BLOCK)
+(insn 456 458 627 23 (set (reg/i:SI 0 r0)
+        (reg/v:SI 2 r2 [orig:189 <retval> ] [189])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":261:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 2 r2 [orig:189 <retval> ] [189])
+        (nil)))
+(note 627 456 552 23 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 552 627 457 23 (parallel [
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg:SI 4 r4)
+                (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32]))
+            (set/f (reg:SI 5 r5)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [4  S4 A32]))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":261:1 380 {*load_multiple_with_writeback}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 8 [0x8])))
+        (expr_list:REG_CFA_RESTORE (reg:SI 5 r5)
+            (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+                (nil)))))
+(insn 457 552 553 23 (use (reg/i:SI 0 r0)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":261:1 -1
+     (nil))
+(jump_insn 553 457 556 23 (simple_return) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":261:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 556 553 748)
+(note 748 556 749 (var_location EXTI_InitStruct (reg:SI 0 r0 [ EXTI_InitStruct ])) NOTE_INSN_VAR_LOCATION)
+(note 749 748 398 (var_location status (const_int 0 [0])) NOTE_INSN_VAR_LOCATION)
+(code_label 398 749 399 24 7 (nil) [1 uses])
+(note 399 398 408 24 [bb 24] NOTE_INSN_BASIC_BLOCK)
+(note 408 399 431 24 NOTE_INSN_DELETED)
+(note 431 408 648 24 NOTE_INSN_DELETED)
+(note 648 431 750 24 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:251 NOTE_INSN_BEGIN_STMT)
+(note 750 648 649 24 (var_location ExtiLine (mem:SI (reg:SI 0 r0 [ EXTI_InitStruct ]) [2 EXTI_InitStruct_19(D)->Line_0_31+0 S4 A32])) NOTE_INSN_VAR_LOCATION)
+(note 649 750 650 24 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:387 NOTE_INSN_INLINE_ENTRY)
+(note 650 649 404 24 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:389 NOTE_INSN_BEGIN_STMT)
+(insn 404 650 407 24 (set (reg/f:SI 3 r3 [248])
+        (mem:SI (label_ref 836) [0  S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":389:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073808384 [0x40010400])
+        (nil)))
+(insn 407 404 405 24 (set (reg:SI 5 r5 [orig:249 EXTI_InitStruct_19(D)->Line_0_31 ] [249])
+        (mem:SI (reg/v/f:SI 0 r0 [orig:190 EXTI_InitStruct ] [190]) [2 EXTI_InitStruct_19(D)->Line_0_31+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":389:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 405 407 409 24 (set (reg:SI 4 r4 [orig:185 _86 ] [185])
+        (mem/v:SI (reg/f:SI 3 r3 [248]) [2 MEM[(struct EXTI_TypeDef *)1073808384B].IMR1+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":389:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 409 405 411 24 (set (reg:SI 4 r4 [orig:187 _88 ] [187])
+        (and:SI (not:SI (reg:SI 5 r5 [orig:249 EXTI_InitStruct_19(D)->Line_0_31 ] [249]))
+            (reg:SI 4 r4 [orig:185 _86 ] [185]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":389:3 100 {andsi_notsi_si}
+     (nil))
+(insn 411 409 751 24 (set (mem/v:SI (reg/f:SI 3 r3 [248]) [2 MEM[(struct EXTI_TypeDef *)1073808384B].IMR1+0 S4 A64])
+        (reg:SI 4 r4 [orig:187 _88 ] [187])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":389:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 4 r4 [orig:187 _88 ] [187])
+        (nil)))
+(note 751 411 752 24 (var_location ExtiLine (reg:SI 5 r5 [orig:249 EXTI_InitStruct_19(D)->Line_0_31 ] [249])) NOTE_INSN_VAR_LOCATION)
+(note 752 751 651 24 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(note 651 752 753 24 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:253 NOTE_INSN_BEGIN_STMT)
+(note 753 651 652 24 (var_location ExtiLine (reg:SI 5 r5 [orig:249 EXTI_InitStruct_19(D)->Line_0_31 ] [249])) NOTE_INSN_VAR_LOCATION)
+(note 652 753 653 24 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:615 NOTE_INSN_INLINE_ENTRY)
+(note 653 652 418 24 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:617 NOTE_INSN_BEGIN_STMT)
+(insn 418 653 419 24 (set (reg:SI 1 r1 [orig:183 _84 ] [183])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [248])
+                (const_int 4 [0x4])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].EMR1+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":617:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 419 418 421 24 (set (reg:SI 1 r1 [orig:184 _85 ] [184])
+        (and:SI (not:SI (reg:SI 5 r5 [orig:249 EXTI_InitStruct_19(D)->Line_0_31 ] [249]))
+            (reg:SI 1 r1 [orig:183 _84 ] [183]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":617:3 100 {andsi_notsi_si}
+     (expr_list:REG_DEAD (reg:SI 5 r5 [orig:249 EXTI_InitStruct_19(D)->Line_0_31 ] [249])
+        (nil)))
+(insn 421 419 754 24 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [248])
+                (const_int 4 [0x4])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].EMR1+0 S4 A32])
+        (reg:SI 1 r1 [orig:184 _85 ] [184])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":617:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [orig:184 _85 ] [184])
+        (nil)))
+(note 754 421 654 24 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(note 654 754 755 24 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:255 NOTE_INSN_BEGIN_STMT)
+(note 755 654 655 24 (var_location ExtiLine (mem:SI (plus:SI (reg:SI 0 r0 [ EXTI_InitStruct ])
+        (const_int 4 [0x4])) [2 EXTI_InitStruct_19(D)->Line_32_63+0 S4 A32])) NOTE_INSN_VAR_LOCATION)
+(note 655 755 656 24 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:414 NOTE_INSN_INLINE_ENTRY)
+(note 656 655 430 24 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:416 NOTE_INSN_BEGIN_STMT)
+(insn 430 656 756 24 (set (reg:SI 0 r0 [orig:254 EXTI_InitStruct_19(D)->Line_32_63 ] [254])
+        (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:190 EXTI_InitStruct ] [190])
+                (const_int 4 [0x4])) [2 EXTI_InitStruct_19(D)->Line_32_63+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":416:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 756 430 757 24 (var_location ExtiLine (reg:SI 0 r0 [orig:254 EXTI_InitStruct_19(D)->Line_32_63 ] [254])) NOTE_INSN_VAR_LOCATION)
+(note 757 756 428 24 (var_location EXTI_InitStruct (entry_value:SI (reg:SI 0 r0 [ EXTI_InitStruct ]))) NOTE_INSN_VAR_LOCATION)
+(insn 428 757 432 24 (set (reg:SI 4 r4 [orig:180 _81 ] [180])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [248])
+                (const_int 32 [0x20])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].IMR2+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":416:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 432 428 434 24 (set (reg:SI 4 r4 [orig:182 _83 ] [182])
+        (and:SI (not:SI (reg:SI 0 r0 [orig:254 EXTI_InitStruct_19(D)->Line_32_63 ] [254]))
+            (reg:SI 4 r4 [orig:180 _81 ] [180]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":416:3 100 {andsi_notsi_si}
+     (nil))
+(insn 434 432 758 24 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [248])
+                (const_int 32 [0x20])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].IMR2+0 S4 A64])
+        (reg:SI 4 r4 [orig:182 _83 ] [182])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":416:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 4 r4 [orig:182 _83 ] [182])
+        (nil)))
+(note 758 434 657 24 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(note 657 758 759 24 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:257 NOTE_INSN_BEGIN_STMT)
+(note 759 657 658 24 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(note 658 759 659 24 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:639 NOTE_INSN_INLINE_ENTRY)
+(note 659 658 760 24 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:641 NOTE_INSN_BEGIN_STMT)
+(note 760 659 761 24 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(note 761 760 660 24 (var_location status (nil)) NOTE_INSN_VAR_LOCATION)
+(note 660 761 441 24 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:260 NOTE_INSN_BEGIN_STMT)
+(insn 441 660 442 24 (set (reg:SI 1 r1 [orig:178 _79 ] [178])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [248])
+                (const_int 36 [0x24])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].EMR2+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":641:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 442 441 628 24 (set (reg:SI 1 r1 [orig:179 _80 ] [179])
+        (and:SI (not:SI (reg:SI 0 r0 [orig:254 EXTI_InitStruct_19(D)->Line_32_63 ] [254]))
+            (reg:SI 1 r1 [orig:178 _79 ] [178]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":641:3 100 {andsi_notsi_si}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [orig:254 EXTI_InitStruct_19(D)->Line_32_63 ] [254])
+        (nil)))
+(note 628 442 571 24 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 571 628 568 24 (parallel [
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg:SI 4 r4)
+                (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32]))
+            (set/f (reg:SI 5 r5)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [4  S4 A32]))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":261:1 380 {*load_multiple_with_writeback}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 8 [0x8])))
+        (expr_list:REG_CFA_RESTORE (reg:SI 5 r5)
+            (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+                (nil)))))
+(insn 568 571 444 24 (set (reg/i:SI 0 r0)
+        (reg/v:SI 2 r2 [orig:189 <retval> ] [189])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":261:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 2 r2 [orig:189 <retval> ] [189])
+        (nil)))
+(insn 444 568 569 24 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [248])
+                (const_int 36 [0x24])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].EMR2+0 S4 A32])
+        (reg:SI 1 r1 [orig:179 _80 ] [179])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":641:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 3 r3 [248])
+        (expr_list:REG_DEAD (reg:SI 1 r1 [orig:179 _80 ] [179])
+            (nil))))
+(insn 569 444 572 24 (use (reg/i:SI 0 r0)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":261:1 -1
+     (nil))
+(jump_insn 572 569 575 24 (simple_return) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":261:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 575 572 762)
+(note 762 575 763 (var_location EXTI_InitStruct (reg:SI 0 r0 [ EXTI_InitStruct ])) NOTE_INSN_VAR_LOCATION)
+(note 763 762 587 (var_location status (reg/v:SI 2 r2 [orig:189 <retval> ] [189])) NOTE_INSN_VAR_LOCATION)
+(code_label 587 763 224 25 39 (nil) [1 uses])
+(note 224 587 231 25 [bb 25] NOTE_INSN_BASIC_BLOCK)
+(note 231 224 661 25 NOTE_INSN_DELETED)
+(note 661 231 764 25 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:198 NOTE_INSN_BEGIN_STMT)
+(note 764 661 662 25 (var_location ExtiLine (reg:SI 3 r3 [orig:116 _5 ] [116])) NOTE_INSN_VAR_LOCATION)
+(note 662 764 663 25 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:639 NOTE_INSN_INLINE_ENTRY)
+(note 663 662 541 25 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:641 NOTE_INSN_BEGIN_STMT)
+(insn 541 663 542 25 (set (reg/f:SI 1 r1 [220])
+        (plus:SI (reg/f:SI 1 r1 [220])
+            (const_int 1073741824 [0x40000000]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":641:3 7 {*arm_addsi3}
+     (nil))
+(insn 542 541 230 25 (set (reg/f:SI 1 r1 [220])
+        (plus:SI (reg/f:SI 1 r1 [220])
+            (const_int 66560 [0x10400]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":641:3 7 {*arm_addsi3}
+     (expr_list:REG_EQUAL (const_int 1073808384 [0x40010400])
+        (nil)))
+(insn 230 542 232 25 (set (reg:SI 4 r4 [orig:152 _53 ] [152])
+        (mem/v:SI (plus:SI (reg/f:SI 1 r1 [220])
+                (const_int 36 [0x24])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].EMR2+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":641:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 232 230 234 25 (set (reg:SI 4 r4 [orig:154 _55 ] [154])
+        (and:SI (not:SI (reg:SI 3 r3 [orig:116 _5 ] [116]))
+            (reg:SI 4 r4 [orig:152 _53 ] [152]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":641:3 100 {andsi_notsi_si}
+     (nil))
+(insn 234 232 765 25 (set (mem/v:SI (plus:SI (reg/f:SI 1 r1 [220])
+                (const_int 36 [0x24])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].EMR2+0 S4 A32])
+        (reg:SI 4 r4 [orig:154 _55 ] [154])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":641:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 4 r4 [orig:154 _55 ] [154])
+        (nil)))
+(note 765 234 664 25 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(note 664 765 766 25 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:200 NOTE_INSN_BEGIN_STMT)
+(note 766 664 665 25 (var_location ExtiLine (reg:SI 3 r3 [orig:116 _5 ] [116])) NOTE_INSN_VAR_LOCATION)
+(note 665 766 666 25 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:338 NOTE_INSN_INLINE_ENTRY)
+(note 666 665 241 25 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:340 NOTE_INSN_BEGIN_STMT)
+(insn 241 666 242 25 (set (reg:SI 4 r4 [orig:150 _51 ] [150])
+        (mem/v:SI (plus:SI (reg/f:SI 1 r1 [220])
+                (const_int 32 [0x20])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].IMR2+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":340:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 242 241 244 25 (parallel [
+            (set (reg:SI 4 r4 [orig:151 _52 ] [151])
+                (ior:SI (reg:SI 4 r4 [orig:150 _51 ] [150])
+                    (reg:SI 3 r3 [orig:116 _5 ] [116])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":340:3 1012 {*thumb2_alusi3_short}
+     (nil))
+(insn 244 242 589 25 (set (mem/v:SI (plus:SI (reg/f:SI 1 r1 [220])
+                (const_int 32 [0x20])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].IMR2+0 S4 A64])
+        (reg:SI 4 r4 [orig:151 _52 ] [151])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":340:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 4 r4 [orig:151 _52 ] [151])
+        (expr_list:REG_DEAD (reg/f:SI 1 r1 [220])
+            (nil))))
+(jump_insn 589 244 590 25 (set (pc)
+        (label_ref 300)) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":341:1 284 {*arm_jump}
+     (nil)
+ -> 300)
+(barrier 590 589 767)
+(note 767 590 271 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(code_label 271 767 272 26 16 (nil) [1 uses])
+(note 272 271 667 26 [bb 26] NOTE_INSN_BASIC_BLOCK)
+(note 667 272 768 26 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:210 NOTE_INSN_BEGIN_STMT)
+(note 768 667 668 26 (var_location ExtiLine (reg:SI 3 r3 [orig:116 _5 ] [116])) NOTE_INSN_VAR_LOCATION)
+(note 668 768 669 26 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:338 NOTE_INSN_INLINE_ENTRY)
+(note 669 668 277 26 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:340 NOTE_INSN_BEGIN_STMT)
+(insn 277 669 278 26 (set (reg/f:SI 1 r1 [230])
+        (mem:SI (label_ref 836) [0  S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":340:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073808384 [0x40010400])
+        (nil)))
+(insn 278 277 279 26 (set (reg:SI 4 r4 [orig:162 _63 ] [162])
+        (mem/v:SI (plus:SI (reg/f:SI 1 r1 [230])
+                (const_int 32 [0x20])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].IMR2+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":340:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 279 278 281 26 (parallel [
+            (set (reg:SI 4 r4 [orig:163 _64 ] [163])
+                (ior:SI (reg:SI 4 r4 [orig:162 _63 ] [162])
+                    (reg:SI 3 r3 [orig:116 _5 ] [116])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":340:3 1012 {*thumb2_alusi3_short}
+     (nil))
+(insn 281 279 769 26 (set (mem/v:SI (plus:SI (reg/f:SI 1 r1 [230])
+                (const_int 32 [0x20])) [2  S4 A64])
+        (reg:SI 4 r4 [orig:163 _64 ] [163])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":340:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 4 r4 [orig:163 _64 ] [163])
+        (nil)))
+(note 769 281 670 26 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(note 670 769 770 26 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:212 NOTE_INSN_BEGIN_STMT)
+(note 770 670 671 26 (var_location ExtiLine (reg:SI 3 r3 [orig:116 _5 ] [116])) NOTE_INSN_VAR_LOCATION)
+(note 671 770 672 26 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:569 NOTE_INSN_INLINE_ENTRY)
+(note 672 671 288 26 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:571 NOTE_INSN_BEGIN_STMT)
+(insn 288 672 289 26 (set (reg:SI 4 r4 [orig:160 _61 ] [160])
+        (mem/v:SI (plus:SI (reg/f:SI 1 r1 [230])
+                (const_int 36 [0x24])) [2  S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":571:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 289 288 291 26 (parallel [
+            (set (reg:SI 4 r4 [orig:161 _62 ] [161])
+                (ior:SI (reg:SI 4 r4 [orig:160 _61 ] [160])
+                    (reg:SI 3 r3 [orig:116 _5 ] [116])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":571:3 1012 {*thumb2_alusi3_short}
+     (nil))
+(insn 291 289 591 26 (set (mem/v:SI (plus:SI (reg/f:SI 1 r1 [230])
+                (const_int 36 [0x24])) [2  S4 A32])
+        (reg:SI 4 r4 [orig:161 _62 ] [161])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":571:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 4 r4 [orig:161 _62 ] [161])
+        (expr_list:REG_DEAD (reg/f:SI 1 r1 [230])
+            (nil))))
+(jump_insn 591 291 592 26 (set (pc)
+        (label_ref 300)) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":572:1 284 {*arm_jump}
+     (nil)
+ -> 300)
+(barrier 592 591 771)
+(note 771 592 772 (var_location EXTI_InitStruct (reg:SI 0 r0 [ EXTI_InitStruct ])) NOTE_INSN_VAR_LOCATION)
+(note 772 771 773 (var_location status (const_int 0 [0])) NOTE_INSN_VAR_LOCATION)
+(note 773 772 94 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(code_label 94 773 95 27 10 (nil) [1 uses])
+(note 95 94 673 27 [bb 27] NOTE_INSN_BASIC_BLOCK)
+(note 673 95 774 27 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:155 NOTE_INSN_BEGIN_STMT)
+(note 774 673 674 27 (var_location ExtiLine (reg/v:SI 2 r2 [orig:189 <retval> ] [189])) NOTE_INSN_VAR_LOCATION)
+(note 674 774 675 27 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:312 NOTE_INSN_INLINE_ENTRY)
+(note 675 674 100 27 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:314 NOTE_INSN_BEGIN_STMT)
+(insn 100 675 8 27 (set (reg/f:SI 1 r1 [202])
+        (mem:SI (label_ref 836) [0  S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":314:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073808384 [0x40010400])
+        (nil)))
+(insn 8 100 101 27 (set (reg:SI 4 r4 [orig:188 prephitmp_123 ] [188])
+        (reg:SI 3 r3 [orig:114 _3 ] [114])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":548:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:114 _3 ] [114])
+        (expr_list:REG_EQUAL (const_int 2 [0x2])
+            (nil))))
+(insn 101 8 102 27 (set (reg:SI 3 r3 [orig:134 _35 ] [134])
+        (mem/v:SI (reg/f:SI 1 r1 [202]) [2 MEM[(struct EXTI_TypeDef *)1073808384B].IMR1+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":314:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 102 101 104 27 (parallel [
+            (set (reg:SI 3 r3 [orig:135 _36 ] [135])
+                (ior:SI (reg:SI 3 r3 [orig:134 _35 ] [134])
+                    (reg/v:SI 2 r2 [orig:189 <retval> ] [189])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":314:3 1012 {*thumb2_alusi3_short}
+     (nil))
+(insn 104 102 775 27 (set (mem/v:SI (reg/f:SI 1 r1 [202]) [2 MEM[(struct EXTI_TypeDef *)1073808384B].IMR1+0 S4 A64])
+        (reg:SI 3 r3 [orig:135 _36 ] [135])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":314:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:135 _36 ] [135])
+        (nil)))
+(note 775 104 676 27 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(note 676 775 776 27 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:157 NOTE_INSN_BEGIN_STMT)
+(note 776 676 677 27 (var_location ExtiLine (reg/v:SI 2 r2 [orig:189 <retval> ] [189])) NOTE_INSN_VAR_LOCATION)
+(note 677 776 678 27 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:544 NOTE_INSN_INLINE_ENTRY)
+(note 678 677 111 27 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:546 NOTE_INSN_BEGIN_STMT)
+(insn 111 678 112 27 (set (reg:SI 3 r3 [orig:132 _33 ] [132])
+        (mem/v:SI (plus:SI (reg/f:SI 1 r1 [202])
+                (const_int 4 [0x4])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].EMR1+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":546:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 112 111 114 27 (parallel [
+            (set (reg:SI 3 r3 [orig:133 _34 ] [133])
+                (ior:SI (reg:SI 3 r3 [orig:132 _33 ] [132])
+                    (reg/v:SI 2 r2 [orig:189 <retval> ] [189])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":546:3 1012 {*thumb2_alusi3_short}
+     (nil))
+(insn 114 112 9 27 (set (mem/v:SI (plus:SI (reg/f:SI 1 r1 [202])
+                (const_int 4 [0x4])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].EMR1+0 S4 A32])
+        (reg:SI 3 r3 [orig:133 _34 ] [133])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":546:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:133 _34 ] [133])
+        (expr_list:REG_DEAD (reg/f:SI 1 r1 [202])
+            (nil))))
+(insn 9 114 593 27 (parallel [
+            (set (reg/v:SI 3 r3 [orig:121 status ] [121])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":123:12 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(jump_insn 593 9 594 27 (set (pc)
+        (label_ref 115)) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":548:1 284 {*arm_jump}
+     (nil)
+ -> 115)
+(barrier 594 593 777)
+(note 777 594 585 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(code_label 585 777 47 28 37 (nil) [1 uses])
+(note 47 585 54 28 [bb 28] NOTE_INSN_BASIC_BLOCK)
+(note 54 47 679 28 NOTE_INSN_DELETED)
+(note 679 54 778 28 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:143 NOTE_INSN_BEGIN_STMT)
+(note 778 679 680 28 (var_location ExtiLine (reg/v:SI 2 r2 [orig:189 <retval> ] [189])) NOTE_INSN_VAR_LOCATION)
+(note 680 778 681 28 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:615 NOTE_INSN_INLINE_ENTRY)
+(note 681 680 52 28 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:617 NOTE_INSN_BEGIN_STMT)
+(insn 52 681 53 28 (set (reg/f:SI 1 r1 [192])
+        (mem:SI (label_ref 836) [0  S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":617:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073808384 [0x40010400])
+        (nil)))
+(insn 53 52 55 28 (set (reg:SI 4 r4 [orig:124 _25 ] [124])
+        (mem/v:SI (plus:SI (reg/f:SI 1 r1 [192])
+                (const_int 4 [0x4])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].EMR1+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":617:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 55 53 57 28 (set (reg:SI 4 r4 [orig:126 _27 ] [126])
+        (and:SI (not:SI (reg/v:SI 2 r2 [orig:189 <retval> ] [189]))
+            (reg:SI 4 r4 [orig:124 _25 ] [124]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":617:3 100 {andsi_notsi_si}
+     (nil))
+(insn 57 55 779 28 (set (mem/v:SI (plus:SI (reg/f:SI 1 r1 [192])
+                (const_int 4 [0x4])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].EMR1+0 S4 A32])
+        (reg:SI 4 r4 [orig:126 _27 ] [126])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":617:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 4 r4 [orig:126 _27 ] [126])
+        (nil)))
+(note 779 57 682 28 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(note 682 779 780 28 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:145 NOTE_INSN_BEGIN_STMT)
+(note 780 682 683 28 (var_location ExtiLine (reg/v:SI 2 r2 [orig:189 <retval> ] [189])) NOTE_INSN_VAR_LOCATION)
+(note 683 780 684 28 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:312 NOTE_INSN_INLINE_ENTRY)
+(note 684 683 64 28 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:314 NOTE_INSN_BEGIN_STMT)
+(insn 64 684 65 28 (set (reg:SI 4 r4 [orig:122 _23 ] [122])
+        (mem/v:SI (reg/f:SI 1 r1 [192]) [2 MEM[(struct EXTI_TypeDef *)1073808384B].IMR1+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":314:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 65 64 67 28 (parallel [
+            (set (reg:SI 4 r4 [orig:123 _24 ] [123])
+                (ior:SI (reg:SI 4 r4 [orig:122 _23 ] [122])
+                    (reg/v:SI 2 r2 [orig:189 <retval> ] [189])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":314:3 1012 {*thumb2_alusi3_short}
+     (nil))
+(insn 67 65 4 28 (set (mem/v:SI (reg/f:SI 1 r1 [192]) [2 MEM[(struct EXTI_TypeDef *)1073808384B].IMR1+0 S4 A64])
+        (reg:SI 4 r4 [orig:123 _24 ] [123])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":314:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 4 r4 [orig:123 _24 ] [123])
+        (expr_list:REG_DEAD (reg/f:SI 1 r1 [192])
+            (nil))))
+(insn 4 67 595 28 (parallel [
+            (set (reg:SI 4 r4 [orig:188 prephitmp_123 ] [188])
+                (const_int 2 [0x2]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":315:1 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUAL (const_int 2 [0x2])
+        (nil)))
+(jump_insn 595 4 596 28 (set (pc)
+        (label_ref 115)) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":315:1 284 {*arm_jump}
+     (nil)
+ -> 115)
+(barrier 596 595 781)
+(note 781 596 782 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(note 782 781 783 (var_location EXTI_InitStruct (reg:SI 0 r0 [ EXTI_InitStruct ])) NOTE_INSN_VAR_LOCATION)
+(note 783 782 247 (var_location status (reg/v:SI 2 r2 [orig:189 <retval> ] [189])) NOTE_INSN_VAR_LOCATION)
+(code_label 247 783 248 29 15 (nil) [1 uses])
+(note 248 247 255 29 [bb 29] NOTE_INSN_BASIC_BLOCK)
+(note 255 248 685 29 NOTE_INSN_DELETED)
+(note 685 255 784 29 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:204 NOTE_INSN_BEGIN_STMT)
+(note 784 685 686 29 (var_location ExtiLine (reg:SI 3 r3 [orig:116 _5 ] [116])) NOTE_INSN_VAR_LOCATION)
+(note 686 784 687 29 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:414 NOTE_INSN_INLINE_ENTRY)
+(note 687 686 253 29 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:416 NOTE_INSN_BEGIN_STMT)
+(insn 253 687 254 29 (set (reg/f:SI 1 r1 [225])
+        (mem:SI (label_ref 836) [0  S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":416:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073808384 [0x40010400])
+        (nil)))
+(insn 254 253 256 29 (set (reg:SI 4 r4 [orig:157 _58 ] [157])
+        (mem/v:SI (plus:SI (reg/f:SI 1 r1 [225])
+                (const_int 32 [0x20])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].IMR2+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":416:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 256 254 258 29 (set (reg:SI 4 r4 [orig:159 _60 ] [159])
+        (and:SI (not:SI (reg:SI 3 r3 [orig:116 _5 ] [116]))
+            (reg:SI 4 r4 [orig:157 _58 ] [157]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":416:3 100 {andsi_notsi_si}
+     (nil))
+(insn 258 256 785 29 (set (mem/v:SI (plus:SI (reg/f:SI 1 r1 [225])
+                (const_int 32 [0x20])) [2  S4 A64])
+        (reg:SI 4 r4 [orig:159 _60 ] [159])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":416:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 4 r4 [orig:159 _60 ] [159])
+        (nil)))
+(note 785 258 688 29 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(note 688 785 786 29 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:206 NOTE_INSN_BEGIN_STMT)
+(note 786 688 689 29 (var_location ExtiLine (reg:SI 3 r3 [orig:116 _5 ] [116])) NOTE_INSN_VAR_LOCATION)
+(note 689 786 690 29 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:569 NOTE_INSN_INLINE_ENTRY)
+(note 690 689 265 29 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:571 NOTE_INSN_BEGIN_STMT)
+(insn 265 690 266 29 (set (reg:SI 4 r4 [orig:155 _56 ] [155])
+        (mem/v:SI (plus:SI (reg/f:SI 1 r1 [225])
+                (const_int 36 [0x24])) [2  S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":571:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 266 265 268 29 (parallel [
+            (set (reg:SI 4 r4 [orig:156 _57 ] [156])
+                (ior:SI (reg:SI 4 r4 [orig:155 _56 ] [155])
+                    (reg:SI 3 r3 [orig:116 _5 ] [116])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":571:3 1012 {*thumb2_alusi3_short}
+     (nil))
+(insn 268 266 597 29 (set (mem/v:SI (plus:SI (reg/f:SI 1 r1 [225])
+                (const_int 36 [0x24])) [2  S4 A32])
+        (reg:SI 4 r4 [orig:156 _57 ] [156])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":571:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 4 r4 [orig:156 _57 ] [156])
+        (expr_list:REG_DEAD (reg/f:SI 1 r1 [225])
+            (nil))))
+(jump_insn 597 268 598 29 (set (pc)
+        (label_ref 300)) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":572:1 284 {*arm_jump}
+     (nil)
+ -> 300)
+(barrier 598 597 787)
+(note 787 598 788 (var_location EXTI_InitStruct (reg:SI 0 r0 [ EXTI_InitStruct ])) NOTE_INSN_VAR_LOCATION)
+(note 788 787 789 (var_location status (const_int 0 [0])) NOTE_INSN_VAR_LOCATION)
+(note 789 788 70 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(code_label 70 789 71 30 9 (nil) [1 uses])
+(note 71 70 78 30 [bb 30] NOTE_INSN_BASIC_BLOCK)
+(note 78 71 691 30 NOTE_INSN_DELETED)
+(note 691 78 790 30 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:149 NOTE_INSN_BEGIN_STMT)
+(note 790 691 692 30 (var_location ExtiLine (reg/v:SI 2 r2 [orig:189 <retval> ] [189])) NOTE_INSN_VAR_LOCATION)
+(note 692 790 693 30 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:387 NOTE_INSN_INLINE_ENTRY)
+(note 693 692 76 30 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:389 NOTE_INSN_BEGIN_STMT)
+(insn 76 693 77 30 (set (reg/f:SI 3 r3 [197])
+        (mem:SI (label_ref 836) [0  S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":389:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073808384 [0x40010400])
+        (nil)))
+(insn 77 76 79 30 (set (reg:SI 1 r1 [orig:129 _30 ] [129])
+        (mem/v:SI (reg/f:SI 3 r3 [197]) [2 MEM[(struct EXTI_TypeDef *)1073808384B].IMR1+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":389:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 79 77 81 30 (set (reg:SI 1 r1 [orig:131 _32 ] [131])
+        (and:SI (not:SI (reg/v:SI 2 r2 [orig:189 <retval> ] [189]))
+            (reg:SI 1 r1 [orig:129 _30 ] [129]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":389:3 100 {andsi_notsi_si}
+     (nil))
+(insn 81 79 791 30 (set (mem/v:SI (reg/f:SI 3 r3 [197]) [2 MEM[(struct EXTI_TypeDef *)1073808384B].IMR1+0 S4 A64])
+        (reg:SI 1 r1 [orig:131 _32 ] [131])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":389:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [orig:131 _32 ] [131])
+        (nil)))
+(note 791 81 694 30 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(note 694 791 792 30 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:151 NOTE_INSN_BEGIN_STMT)
+(note 792 694 695 30 (var_location ExtiLine (reg/v:SI 2 r2 [orig:189 <retval> ] [189])) NOTE_INSN_VAR_LOCATION)
+(note 695 792 696 30 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:544 NOTE_INSN_INLINE_ENTRY)
+(note 696 695 88 30 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:546 NOTE_INSN_BEGIN_STMT)
+(insn 88 696 89 30 (set (reg:SI 1 r1 [orig:127 _28 ] [127])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [197])
+                (const_int 4 [0x4])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].EMR1+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":546:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 89 88 91 30 (parallel [
+            (set (reg:SI 1 r1 [orig:128 _29 ] [128])
+                (ior:SI (reg:SI 1 r1 [orig:127 _28 ] [127])
+                    (reg/v:SI 2 r2 [orig:189 <retval> ] [189])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":546:3 1012 {*thumb2_alusi3_short}
+     (nil))
+(insn 91 89 6 30 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [197])
+                (const_int 4 [0x4])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].EMR1+0 S4 A32])
+        (reg:SI 1 r1 [orig:128 _29 ] [128])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":546:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 3 r3 [197])
+        (expr_list:REG_DEAD (reg:SI 1 r1 [orig:128 _29 ] [128])
+            (nil))))
+(insn 6 91 7 30 (parallel [
+            (set (reg:SI 4 r4 [orig:188 prephitmp_123 ] [188])
+                (const_int 2 [0x2]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":548:1 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUAL (const_int 2 [0x2])
+        (nil)))
+(insn 7 6 599 30 (parallel [
+            (set (reg/v:SI 3 r3 [orig:121 status ] [121])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":123:12 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(jump_insn 599 7 600 30 (set (pc)
+        (label_ref 115)) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":548:1 284 {*arm_jump}
+     (nil)
+ -> 115)
+(barrier 600 599 793)
+(note 793 600 794 (var_location EXTI_InitStruct (reg:SI 0 r0 [ EXTI_InitStruct ])) NOTE_INSN_VAR_LOCATION)
+(note 794 793 795 (var_location status (reg/v:SI 3 r3 [orig:121 status ] [121])) NOTE_INSN_VAR_LOCATION)
+(note 795 794 158 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(code_label 158 795 159 31 12 (nil) [1 uses])
+(note 159 158 166 31 [bb 31] NOTE_INSN_BASIC_BLOCK)
+(note 166 159 697 31 NOTE_INSN_DELETED)
+(note 697 166 796 31 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:175 NOTE_INSN_BEGIN_STMT)
+(note 796 697 698 31 (var_location ExtiLine (reg/v:SI 2 r2 [orig:189 <retval> ] [189])) NOTE_INSN_VAR_LOCATION)
+(note 698 796 699 31 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:833 NOTE_INSN_INLINE_ENTRY)
+(note 699 698 164 31 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:835 NOTE_INSN_BEGIN_STMT)
+(insn 164 699 165 31 (set (reg/f:SI 1 r1 [211])
+        (mem:SI (label_ref 836) [0  S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":835:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073808384 [0x40010400])
+        (nil)))
+(insn 165 164 167 31 (set (reg:SI 4 r4 [orig:143 _44 ] [143])
+        (mem/v:SI (plus:SI (reg/f:SI 1 r1 [211])
+                (const_int 8 [0x8])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].RTSR1+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":835:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 167 165 797 31 (set (reg:SI 4 r4 [orig:145 _46 ] [145])
+        (and:SI (not:SI (reg/v:SI 2 r2 [orig:189 <retval> ] [189]))
+            (reg:SI 4 r4 [orig:143 _44 ] [143]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":835:3 100 {andsi_notsi_si}
+     (nil))
+(note 797 167 559 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(code_label 559 797 557 32 35 (nil) [1 uses])
+(note 557 559 192 32 [bb 32] NOTE_INSN_BASIC_BLOCK)
+(insn 192 557 700 32 (set (mem/v:SI (plus:SI (reg/f:SI 1 r1 [216])
+                (const_int 8 [0x8])) [2  S4 A64])
+        (reg:SI 4 r4 [orig:149 _50 ] [149])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":765:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 4 r4 [orig:149 _50 ] [149])
+        (nil)))
+(note 700 192 798 32 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:183 NOTE_INSN_BEGIN_STMT)
+(note 798 700 701 32 (var_location ExtiLine (reg/v:SI 2 r2 [orig:189 <retval> ] [189])) NOTE_INSN_VAR_LOCATION)
+(note 701 798 702 32 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:968 NOTE_INSN_INLINE_ENTRY)
+(note 702 701 199 32 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:970 NOTE_INSN_BEGIN_STMT)
+(insn 199 702 200 32 (set (reg:SI 4 r4 [orig:146 _47 ] [146])
+        (mem/v:SI (plus:SI (reg/f:SI 1 r1 [216])
+                (const_int 12 [0xc])) [2  S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":970:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 200 199 799 32 (parallel [
+            (set (reg:SI 2 r2 [orig:147 _48 ] [147])
+                (ior:SI (reg/v:SI 2 r2 [orig:189 <retval> ] [189])
+                    (reg:SI 4 r4 [orig:146 _47 ] [146])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":970:3 1012 {*thumb2_alusi3_short}
+     (expr_list:REG_DEAD (reg:SI 4 r4 [orig:146 _47 ] [146])
+        (nil)))
+(note 799 200 202 32 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(insn 202 799 800 32 (set (mem/v:SI (plus:SI (reg/f:SI 1 r1 [216])
+                (const_int 12 [0xc])) [2  S4 A32])
+        (reg:SI 2 r2 [orig:147 _48 ] [147])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":970:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:147 _48 ] [147])
+        (expr_list:REG_DEAD (reg/f:SI 1 r1 [216])
+            (nil))))
+(note 800 202 564 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(code_label 564 800 562 33 36 (nil) [1 uses])
+(note 562 564 15 33 [bb 33] NOTE_INSN_BASIC_BLOCK)
+(insn 15 562 801 33 (set (reg/v:SI 2 r2 [orig:189 <retval> ] [189])
+        (reg/v:SI 3 r3 [orig:121 status ] [121])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":971:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 3 r3 [orig:121 status ] [121])
+        (nil)))
+(note 801 15 703 33 (var_location status (reg/v:SI 2 r2 [orig:189 <retval> ] [189])) NOTE_INSN_VAR_LOCATION)
+(note 703 801 582 33 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:192 NOTE_INSN_BEGIN_STMT)
+(insn 582 703 583 33 (set (reg:SI 3 r3 [orig:116 _5 ] [116])
+        (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:190 EXTI_InitStruct ] [190])
+                (const_int 4 [0x4])) [2 EXTI_InitStruct_19(D)->Line_32_63+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":192:24 728 {*thumb2_movsi_vfp}
+     (nil))
+(jump_insn 583 582 802 33 (parallel [
+            (set (pc)
+                (if_then_else (eq (reg:SI 3 r3 [orig:116 _5 ] [116])
+                        (const_int 0 [0]))
+                    (label_ref:SI 455)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":192:8 1024 {*thumb2_cbz}
+     (expr_list:REG_UNUSED (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 455)
+(note 802 583 601 (var_location status (reg/v:SI 2 r2 [orig:189 <retval> ] [189])) NOTE_INSN_VAR_LOCATION)
+(note 601 802 603 34 [bb 34] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 603 601 604 34 (set (pc)
+        (label_ref 602)) 284 {*arm_jump}
+     (nil)
+ -> 602)
+(barrier 604 603 803)
+(note 803 604 804 (var_location EXTI_InitStruct (reg:SI 0 r0 [ EXTI_InitStruct ])) NOTE_INSN_VAR_LOCATION)
+(note 804 803 588 (var_location status (reg/v:SI 2 r2 [orig:189 <retval> ] [189])) NOTE_INSN_VAR_LOCATION)
+(code_label 588 804 320 35 40 (nil) [1 uses])
+(note 320 588 327 35 [bb 35] NOTE_INSN_BASIC_BLOCK)
+(note 327 320 704 35 NOTE_INSN_DELETED)
+(note 704 327 805 35 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:224 NOTE_INSN_BEGIN_STMT)
+(note 805 704 705 35 (var_location ExtiLine (reg:SI 3 r3 [orig:116 _5 ] [116])) NOTE_INSN_VAR_LOCATION)
+(note 705 805 706 35 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:1061 NOTE_INSN_INLINE_ENTRY)
+(note 706 705 325 35 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:1063 NOTE_INSN_BEGIN_STMT)
+(insn 325 706 326 35 (set (reg/f:SI 1 r1 [234])
+        (mem:SI (label_ref 836) [0  S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":1063:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073808384 [0x40010400])
+        (nil)))
+(insn 326 325 806 35 (set (reg:SI 0 r0 [orig:166 _67 ] [166])
+        (mem/v:SI (plus:SI (reg/f:SI 1 r1 [234])
+                (const_int 44 [0x2c])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].FTSR2+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":1063:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 806 326 328 35 (var_location EXTI_InitStruct (entry_value:SI (reg:SI 0 r0 [ EXTI_InitStruct ]))) NOTE_INSN_VAR_LOCATION)
+(insn 328 806 330 35 (set (reg:SI 0 r0 [orig:168 _69 ] [168])
+        (and:SI (not:SI (reg:SI 3 r3 [orig:116 _5 ] [116]))
+            (reg:SI 0 r0 [orig:166 _67 ] [166]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":1063:3 100 {andsi_notsi_si}
+     (nil))
+(insn 330 328 807 35 (set (mem/v:SI (plus:SI (reg/f:SI 1 r1 [234])
+                (const_int 44 [0x2c])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].FTSR2+0 S4 A32])
+        (reg:SI 0 r0 [orig:168 _69 ] [168])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":1063:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [orig:168 _69 ] [168])
+        (nil)))
+(note 807 330 707 35 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(note 707 807 808 35 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:226 NOTE_INSN_BEGIN_STMT)
+(note 808 707 708 35 (var_location ExtiLine (reg:SI 3 r3 [orig:116 _5 ] [116])) NOTE_INSN_VAR_LOCATION)
+(note 708 808 709 35 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:788 NOTE_INSN_INLINE_ENTRY)
+(note 709 708 337 35 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:790 NOTE_INSN_BEGIN_STMT)
+(insn 337 709 338 35 (set (reg:SI 0 r0 [orig:164 _65 ] [164])
+        (mem/v:SI (plus:SI (reg/f:SI 1 r1 [234])
+                (const_int 40 [0x28])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].RTSR2+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":790:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 338 337 809 35 (parallel [
+            (set (reg:SI 3 r3 [orig:165 _66 ] [165])
+                (ior:SI (reg:SI 3 r3 [orig:116 _5 ] [116])
+                    (reg:SI 0 r0 [orig:164 _65 ] [164])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":790:3 1012 {*thumb2_alusi3_short}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [orig:164 _65 ] [164])
+        (nil)))
+(note 809 338 340 35 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(insn 340 809 605 35 (set (mem/v:SI (plus:SI (reg/f:SI 1 r1 [234])
+                (const_int 40 [0x28])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].RTSR2+0 S4 A64])
+        (reg:SI 3 r3 [orig:165 _66 ] [165])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":790:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:165 _66 ] [165])
+        (expr_list:REG_DEAD (reg/f:SI 1 r1 [234])
+            (nil))))
+(jump_insn 605 340 606 35 (set (pc)
+        (label_ref 455)) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":791:1 284 {*arm_jump}
+     (nil)
+ -> 455)
+(barrier 606 605 810)
+(note 810 606 811 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(note 811 810 367 (var_location EXTI_InitStruct (reg:SI 0 r0 [ EXTI_InitStruct ])) NOTE_INSN_VAR_LOCATION)
+(code_label 367 811 368 36 20 (nil) [1 uses])
+(note 368 367 710 36 [bb 36] NOTE_INSN_BASIC_BLOCK)
+(note 710 368 812 36 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:236 NOTE_INSN_BEGIN_STMT)
+(note 812 710 711 36 (var_location ExtiLine (reg:SI 3 r3 [orig:116 _5 ] [116])) NOTE_INSN_VAR_LOCATION)
+(note 711 812 712 36 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:788 NOTE_INSN_INLINE_ENTRY)
+(note 712 711 373 36 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:790 NOTE_INSN_BEGIN_STMT)
+(insn 373 712 374 36 (set (reg/f:SI 1 r1 [244])
+        (mem:SI (label_ref 836) [0  S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":790:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073808384 [0x40010400])
+        (nil)))
+(insn 374 373 813 36 (set (reg:SI 0 r0 [orig:176 _77 ] [176])
+        (mem/v:SI (plus:SI (reg/f:SI 1 r1 [244])
+                (const_int 40 [0x28])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].RTSR2+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":790:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 813 374 375 36 (var_location EXTI_InitStruct (entry_value:SI (reg:SI 0 r0 [ EXTI_InitStruct ]))) NOTE_INSN_VAR_LOCATION)
+(insn 375 813 377 36 (parallel [
+            (set (reg:SI 0 r0 [orig:177 _78 ] [177])
+                (ior:SI (reg:SI 0 r0 [orig:176 _77 ] [176])
+                    (reg:SI 3 r3 [orig:116 _5 ] [116])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":790:3 1012 {*thumb2_alusi3_short}
+     (nil))
+(insn 377 375 814 36 (set (mem/v:SI (plus:SI (reg/f:SI 1 r1 [244])
+                (const_int 40 [0x28])) [2  S4 A64])
+        (reg:SI 0 r0 [orig:177 _78 ] [177])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":790:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [orig:177 _78 ] [177])
+        (nil)))
+(note 814 377 713 36 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(note 713 814 815 36 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:238 NOTE_INSN_BEGIN_STMT)
+(note 815 713 714 36 (var_location ExtiLine (reg:SI 3 r3 [orig:116 _5 ] [116])) NOTE_INSN_VAR_LOCATION)
+(note 714 815 715 36 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:993 NOTE_INSN_INLINE_ENTRY)
+(note 715 714 384 36 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:995 NOTE_INSN_BEGIN_STMT)
+(insn 384 715 385 36 (set (reg:SI 0 r0 [orig:174 _75 ] [174])
+        (mem/v:SI (plus:SI (reg/f:SI 1 r1 [244])
+                (const_int 44 [0x2c])) [2  S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":995:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 385 384 816 36 (parallel [
+            (set (reg:SI 3 r3 [orig:175 _76 ] [175])
+                (ior:SI (reg:SI 3 r3 [orig:116 _5 ] [116])
+                    (reg:SI 0 r0 [orig:174 _75 ] [174])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":995:3 1012 {*thumb2_alusi3_short}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [orig:174 _75 ] [174])
+        (nil)))
+(note 816 385 387 36 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(insn 387 816 607 36 (set (mem/v:SI (plus:SI (reg/f:SI 1 r1 [244])
+                (const_int 44 [0x2c])) [2  S4 A32])
+        (reg:SI 3 r3 [orig:175 _76 ] [175])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":995:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:175 _76 ] [175])
+        (expr_list:REG_DEAD (reg/f:SI 1 r1 [244])
+            (nil))))
+(jump_insn 607 387 608 36 (set (pc)
+        (label_ref 455)) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":996:1 284 {*arm_jump}
+     (nil)
+ -> 455)
+(barrier 608 607 817)
+(note 817 608 818 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(note 818 817 343 (var_location EXTI_InitStruct (reg:SI 0 r0 [ EXTI_InitStruct ])) NOTE_INSN_VAR_LOCATION)
+(code_label 343 818 344 37 19 (nil) [1 uses])
+(note 344 343 351 37 [bb 37] NOTE_INSN_BASIC_BLOCK)
+(note 351 344 716 37 NOTE_INSN_DELETED)
+(note 716 351 819 37 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:230 NOTE_INSN_BEGIN_STMT)
+(note 819 716 717 37 (var_location ExtiLine (reg:SI 3 r3 [orig:116 _5 ] [116])) NOTE_INSN_VAR_LOCATION)
+(note 717 819 718 37 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:859 NOTE_INSN_INLINE_ENTRY)
+(note 718 717 349 37 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:861 NOTE_INSN_BEGIN_STMT)
+(insn 349 718 350 37 (set (reg/f:SI 1 r1 [239])
+        (mem:SI (label_ref 836) [0  S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":861:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073808384 [0x40010400])
+        (nil)))
+(insn 350 349 820 37 (set (reg:SI 0 r0 [orig:171 _72 ] [171])
+        (mem/v:SI (plus:SI (reg/f:SI 1 r1 [239])
+                (const_int 40 [0x28])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].RTSR2+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":861:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 820 350 352 37 (var_location EXTI_InitStruct (entry_value:SI (reg:SI 0 r0 [ EXTI_InitStruct ]))) NOTE_INSN_VAR_LOCATION)
+(insn 352 820 354 37 (set (reg:SI 0 r0 [orig:173 _74 ] [173])
+        (and:SI (not:SI (reg:SI 3 r3 [orig:116 _5 ] [116]))
+            (reg:SI 0 r0 [orig:171 _72 ] [171]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":861:3 100 {andsi_notsi_si}
+     (nil))
+(insn 354 352 821 37 (set (mem/v:SI (plus:SI (reg/f:SI 1 r1 [239])
+                (const_int 40 [0x28])) [2  S4 A64])
+        (reg:SI 0 r0 [orig:173 _74 ] [173])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":861:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [orig:173 _74 ] [173])
+        (nil)))
+(note 821 354 719 37 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(note 719 821 822 37 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:232 NOTE_INSN_BEGIN_STMT)
+(note 822 719 720 37 (var_location ExtiLine (reg:SI 3 r3 [orig:116 _5 ] [116])) NOTE_INSN_VAR_LOCATION)
+(note 720 822 721 37 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:993 NOTE_INSN_INLINE_ENTRY)
+(note 721 720 361 37 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:995 NOTE_INSN_BEGIN_STMT)
+(insn 361 721 362 37 (set (reg:SI 0 r0 [orig:169 _70 ] [169])
+        (mem/v:SI (plus:SI (reg/f:SI 1 r1 [239])
+                (const_int 44 [0x2c])) [2  S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":995:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 362 361 823 37 (parallel [
+            (set (reg:SI 3 r3 [orig:170 _71 ] [170])
+                (ior:SI (reg:SI 3 r3 [orig:116 _5 ] [116])
+                    (reg:SI 0 r0 [orig:169 _70 ] [169])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":995:3 1012 {*thumb2_alusi3_short}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [orig:169 _70 ] [169])
+        (nil)))
+(note 823 362 364 37 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(insn 364 823 609 37 (set (mem/v:SI (plus:SI (reg/f:SI 1 r1 [239])
+                (const_int 44 [0x2c])) [2  S4 A32])
+        (reg:SI 3 r3 [orig:170 _71 ] [170])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":995:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:170 _71 ] [170])
+        (expr_list:REG_DEAD (reg/f:SI 1 r1 [239])
+            (nil))))
+(jump_insn 609 364 610 37 (set (pc)
+        (label_ref 455)) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":996:1 284 {*arm_jump}
+     (nil)
+ -> 455)
+(barrier 610 609 824)
+(note 824 610 825 (var_location EXTI_InitStruct (reg:SI 0 r0 [ EXTI_InitStruct ])) NOTE_INSN_VAR_LOCATION)
+(note 825 824 826 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(note 826 825 586 (var_location status (reg/v:SI 3 r3 [orig:121 status ] [121])) NOTE_INSN_VAR_LOCATION)
+(code_label 586 826 135 38 38 (nil) [1 uses])
+(note 135 586 142 38 [bb 38] NOTE_INSN_BASIC_BLOCK)
+(note 142 135 722 38 NOTE_INSN_DELETED)
+(note 722 142 827 38 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:169 NOTE_INSN_BEGIN_STMT)
+(note 827 722 723 38 (var_location ExtiLine (reg/v:SI 2 r2 [orig:189 <retval> ] [189])) NOTE_INSN_VAR_LOCATION)
+(note 723 827 724 38 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:1037 NOTE_INSN_INLINE_ENTRY)
+(note 724 723 140 38 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:1039 NOTE_INSN_BEGIN_STMT)
+(insn 140 724 141 38 (set (reg/f:SI 1 r1 [206])
+        (mem:SI (label_ref 836) [0  S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":1039:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073808384 [0x40010400])
+        (nil)))
+(insn 141 140 143 38 (set (reg:SI 4 r4 [orig:138 _39 ] [138])
+        (mem/v:SI (plus:SI (reg/f:SI 1 r1 [206])
+                (const_int 12 [0xc])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].FTSR1+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":1039:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 143 141 145 38 (set (reg:SI 4 r4 [orig:140 _41 ] [140])
+        (and:SI (not:SI (reg/v:SI 2 r2 [orig:189 <retval> ] [189]))
+            (reg:SI 4 r4 [orig:138 _39 ] [138]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":1039:3 100 {andsi_notsi_si}
+     (nil))
+(insn 145 143 828 38 (set (mem/v:SI (plus:SI (reg/f:SI 1 r1 [206])
+                (const_int 12 [0xc])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].FTSR1+0 S4 A32])
+        (reg:SI 4 r4 [orig:140 _41 ] [140])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":1039:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 4 r4 [orig:140 _41 ] [140])
+        (nil)))
+(note 828 145 725 38 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(note 725 828 829 38 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:171 NOTE_INSN_BEGIN_STMT)
+(note 829 725 726 38 (var_location ExtiLine (reg/v:SI 2 r2 [orig:189 <retval> ] [189])) NOTE_INSN_VAR_LOCATION)
+(note 726 829 727 38 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:763 NOTE_INSN_INLINE_ENTRY)
+(note 727 726 152 38 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:765 NOTE_INSN_BEGIN_STMT)
+(insn 152 727 153 38 (set (reg:SI 4 r4 [orig:136 _37 ] [136])
+        (mem/v:SI (plus:SI (reg/f:SI 1 r1 [206])
+                (const_int 8 [0x8])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].RTSR1+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":765:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 153 152 830 38 (parallel [
+            (set (reg:SI 2 r2 [orig:137 _38 ] [137])
+                (ior:SI (reg/v:SI 2 r2 [orig:189 <retval> ] [189])
+                    (reg:SI 4 r4 [orig:136 _37 ] [136])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":765:3 1012 {*thumb2_alusi3_short}
+     (expr_list:REG_DEAD (reg:SI 4 r4 [orig:136 _37 ] [136])
+        (nil)))
+(note 830 153 155 38 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(insn 155 830 13 38 (set (mem/v:SI (plus:SI (reg/f:SI 1 r1 [206])
+                (const_int 8 [0x8])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].RTSR1+0 S4 A64])
+        (reg:SI 2 r2 [orig:137 _38 ] [137])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":765:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:137 _38 ] [137])
+        (expr_list:REG_DEAD (reg/f:SI 1 r1 [206])
+            (nil))))
+(insn 13 155 611 38 (set (reg/v:SI 2 r2 [orig:189 <retval> ] [189])
+        (reg/v:SI 3 r3 [orig:121 status ] [121])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":767:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 3 r3 [orig:121 status ] [121])
+        (nil)))
+(jump_insn 611 13 612 38 (set (pc)
+        (label_ref 203)) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":767:1 284 {*arm_jump}
+     (nil)
+ -> 203)
+(barrier 612 611 831)
+(note 831 612 832 (var_location ExtiLine (nil)) NOTE_INSN_VAR_LOCATION)
+(note 832 831 182 (var_location status (reg/v:SI 3 r3 [orig:121 status ] [121])) NOTE_INSN_VAR_LOCATION)
+(code_label 182 832 183 39 13 (nil) [1 uses])
+(note 183 182 728 39 [bb 39] NOTE_INSN_BASIC_BLOCK)
+(note 728 183 833 39 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:181 NOTE_INSN_BEGIN_STMT)
+(note 833 728 729 39 (var_location ExtiLine (reg/v:SI 2 r2 [orig:189 <retval> ] [189])) NOTE_INSN_VAR_LOCATION)
+(note 729 833 730 39 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:763 NOTE_INSN_INLINE_ENTRY)
+(note 730 729 188 39 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h:765 NOTE_INSN_BEGIN_STMT)
+(insn 188 730 189 39 (set (reg/f:SI 1 r1 [216])
+        (mem:SI (label_ref 836) [0  S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":765:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073808384 [0x40010400])
+        (nil)))
+(insn 189 188 190 39 (set (reg:SI 4 r4 [orig:148 _49 ] [148])
+        (mem/v:SI (plus:SI (reg/f:SI 1 r1 [216])
+                (const_int 8 [0x8])) [2 MEM[(struct EXTI_TypeDef *)1073808384B].RTSR1+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":765:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 190 189 613 39 (parallel [
+            (set (reg:SI 4 r4 [orig:149 _50 ] [149])
+                (ior:SI (reg:SI 4 r4 [orig:148 _49 ] [148])
+                    (reg/v:SI 2 r2 [orig:189 <retval> ] [189])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_exti.h":765:3 1012 {*thumb2_alusi3_short}
+     (nil))
+(jump_insn 613 190 614 39 (set (pc)
+        (label_ref 559)) 284 {*arm_jump}
+     (nil)
+ -> 559)
+(barrier 614 613 834)
+(code_label 834 614 835 43 (nil) [0 uses])
+(insn 835 834 836 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) -1
+     (nil))
+(code_label 836 835 837 42 (nil) [0 uses])
+(insn 837 836 838 (unspec_volatile [
+            (const_int 1073808384 [0x40010400])
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 838 837 839 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) -1
+     (nil))
+(barrier 839 838 533)
+(note 533 839 534 NOTE_INSN_DELETED)
+(note 534 533 0 NOTE_INSN_DELETED)
+
+;; Function LL_EXTI_StructInit (LL_EXTI_StructInit, funcdef_no=363, decl_uid=10095, cgraph_uid=367, symbol_order=366)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+
+LL_EXTI_StructInit
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 2 [r2] 3 [r3]
+;;  ref usage 	r0={1d,4u} r1={1d} r2={2d,1u} r3={2d,3u} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 35{24d,11u,0e} in 6{6 regular + 0 call} insns.
+(note 1 0 36 NOTE_INSN_DELETED)
+(note 36 1 4 (var_location EXTI_InitStruct (reg:SI 0 r0 [ EXTI_InitStruct ])) NOTE_INSN_VAR_LOCATION)
+(note 4 36 26 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 26 4 3 2 NOTE_INSN_PROLOGUE_END)
+(note 3 26 32 2 NOTE_INSN_FUNCTION_BEG)
+(note 32 3 7 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:270 NOTE_INSN_BEGIN_STMT)
+(insn 7 32 18 2 (parallel [
+            (set (reg:SI 3 r3 [114])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":270:35 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUIV (const_int 0 [0])
+        (nil)))
+(insn 18 7 30 2 (parallel [
+            (set (reg:SI 2 r2 [118])
+                (const_int 2 [0x2]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":274:35 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUIV (const_int 2 [0x2])
+        (nil)))
+(insn 30 18 33 2 (parallel [
+            (set (mem:SI (reg/v/f:SI 0 r0 [orig:113 EXTI_InitStruct ] [113]) [2 EXTI_InitStruct_2(D)->Line_0_31+0 S4 A32])
+                (reg:SI 3 r3 [114]))
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:113 EXTI_InitStruct ] [113])
+                        (const_int 4 [0x4])) [2 EXTI_InitStruct_2(D)->Line_32_63+0 S4 A32])
+                (reg:SI 3 r3 [114]))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":271:35 413 {*thumb2_strd_base}
+     (nil))
+(note 33 30 34 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:272 NOTE_INSN_BEGIN_STMT)
+(note 34 33 16 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:273 NOTE_INSN_BEGIN_STMT)
+(insn 16 34 35 2 (set (mem:HI (plus:SI (reg/v/f:SI 0 r0 [orig:113 EXTI_InitStruct ] [113])
+                (const_int 8 [0x8])) [0 MEM <vector(2) unsigned char> [(<unnamed type> *)EXTI_InitStruct_2(D) + 8B]+0 S2 A16])
+        (reg:HI 3 r3 [114])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":272:35 724 {*thumb2_movhi_vfp}
+     (expr_list:REG_DEAD (reg:HI 3 r3 [114])
+        (nil)))
+(note 35 16 20 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c:274 NOTE_INSN_BEGIN_STMT)
+(insn 20 35 31 2 (set (mem:QI (plus:SI (reg/v/f:SI 0 r0 [orig:113 EXTI_InitStruct ] [113])
+                (const_int 10 [0xa])) [0 EXTI_InitStruct_2(D)->Trigger+0 S1 A16])
+        (reg:QI 2 r2 [118])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":274:35 263 {*arm_movqi_insn}
+     (expr_list:REG_DEAD (reg:QI 2 r2 [118])
+        (expr_list:REG_DEAD (reg/v/f:SI 0 r0 [orig:113 EXTI_InitStruct ] [113])
+            (nil))))
+(note 31 20 28 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 28 31 29 2 (simple_return) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_ll_exti.c":275:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 29 28 24)
+(note 24 29 25 NOTE_INSN_DELETED)
+(note 25 24 0 NOTE_INSN_DELETED)

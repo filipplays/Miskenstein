@@ -1,0 +1,792 @@
+
+;; Function NMI_Handler (NMI_Handler, funcdef_no=1438, decl_uid=14120, cgraph_uid=1442, symbol_order=1448) (executed once)
+
+
+
+NMI_Handler
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 25{22d,3u,0e} in 4{4 regular + 0 call} insns.
+(note 1 0 2 NOTE_INSN_DELETED)
+(note 2 1 18 NOTE_INSN_FUNCTION_BEG)
+(note 18 2 9 NOTE_INSN_PROLOGUE_END)
+(code_label 9 18 5 2 2 (nil) [1 uses])
+(note 5 9 6 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 6 5 7 2 (debug_marker) "../Core/Src/stm32g4xx_it.c":80:3 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "../Core/Src/stm32g4xx_it.c":82:3 -1
+     (nil))
+(debug_insn 8 7 15 2 (debug_marker) "../Core/Src/stm32g4xx_it.c":80:9 -1
+     (nil))
+(jump_insn 15 8 16 2 (set (pc)
+        (label_ref 9)) 284 {*arm_jump}
+     (nil)
+ -> 9)
+(barrier 16 15 17)
+(note 17 16 0 NOTE_INSN_DELETED)
+
+;; Function HardFault_Handler (HardFault_Handler, funcdef_no=1439, decl_uid=14122, cgraph_uid=1443, symbol_order=1449) (executed once)
+
+
+
+HardFault_Handler
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 25{22d,3u,0e} in 4{4 regular + 0 call} insns.
+(note 1 0 2 NOTE_INSN_DELETED)
+(note 2 1 18 NOTE_INSN_FUNCTION_BEG)
+(note 18 2 9 NOTE_INSN_PROLOGUE_END)
+(code_label 9 18 5 2 5 (nil) [1 uses])
+(note 5 9 6 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 6 5 7 2 (debug_marker) "../Core/Src/stm32g4xx_it.c":94:3 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "../Core/Src/stm32g4xx_it.c":98:3 -1
+     (nil))
+(debug_insn 8 7 15 2 (debug_marker) "../Core/Src/stm32g4xx_it.c":94:9 -1
+     (nil))
+(jump_insn 15 8 16 2 (set (pc)
+        (label_ref 9)) 284 {*arm_jump}
+     (nil)
+ -> 9)
+(barrier 16 15 17)
+(note 17 16 0 NOTE_INSN_DELETED)
+
+;; Function MemManage_Handler (MemManage_Handler, funcdef_no=1440, decl_uid=14124, cgraph_uid=1444, symbol_order=1450) (executed once)
+
+
+
+MemManage_Handler
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 25{22d,3u,0e} in 4{4 regular + 0 call} insns.
+(note 1 0 2 NOTE_INSN_DELETED)
+(note 2 1 18 NOTE_INSN_FUNCTION_BEG)
+(note 18 2 9 NOTE_INSN_PROLOGUE_END)
+(code_label 9 18 5 2 7 (nil) [1 uses])
+(note 5 9 6 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 6 5 7 2 (debug_marker) "../Core/Src/stm32g4xx_it.c":109:3 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "../Core/Src/stm32g4xx_it.c":113:3 -1
+     (nil))
+(debug_insn 8 7 15 2 (debug_marker) "../Core/Src/stm32g4xx_it.c":109:9 -1
+     (nil))
+(jump_insn 15 8 16 2 (set (pc)
+        (label_ref 9)) 284 {*arm_jump}
+     (nil)
+ -> 9)
+(barrier 16 15 17)
+(note 17 16 0 NOTE_INSN_DELETED)
+
+;; Function BusFault_Handler (BusFault_Handler, funcdef_no=1441, decl_uid=14126, cgraph_uid=1445, symbol_order=1451) (executed once)
+
+
+
+BusFault_Handler
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 25{22d,3u,0e} in 4{4 regular + 0 call} insns.
+(note 1 0 2 NOTE_INSN_DELETED)
+(note 2 1 18 NOTE_INSN_FUNCTION_BEG)
+(note 18 2 9 NOTE_INSN_PROLOGUE_END)
+(code_label 9 18 5 2 9 (nil) [1 uses])
+(note 5 9 6 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 6 5 7 2 (debug_marker) "../Core/Src/stm32g4xx_it.c":124:3 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "../Core/Src/stm32g4xx_it.c":128:3 -1
+     (nil))
+(debug_insn 8 7 15 2 (debug_marker) "../Core/Src/stm32g4xx_it.c":124:9 -1
+     (nil))
+(jump_insn 15 8 16 2 (set (pc)
+        (label_ref 9)) 284 {*arm_jump}
+     (nil)
+ -> 9)
+(barrier 16 15 17)
+(note 17 16 0 NOTE_INSN_DELETED)
+
+;; Function UsageFault_Handler (UsageFault_Handler, funcdef_no=1442, decl_uid=14128, cgraph_uid=1446, symbol_order=1452) (executed once)
+
+
+
+UsageFault_Handler
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 25{22d,3u,0e} in 4{4 regular + 0 call} insns.
+(note 1 0 2 NOTE_INSN_DELETED)
+(note 2 1 18 NOTE_INSN_FUNCTION_BEG)
+(note 18 2 9 NOTE_INSN_PROLOGUE_END)
+(code_label 9 18 5 2 11 (nil) [1 uses])
+(note 5 9 6 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 6 5 7 2 (debug_marker) "../Core/Src/stm32g4xx_it.c":139:3 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "../Core/Src/stm32g4xx_it.c":143:3 -1
+     (nil))
+(debug_insn 8 7 15 2 (debug_marker) "../Core/Src/stm32g4xx_it.c":139:9 -1
+     (nil))
+(jump_insn 15 8 16 2 (set (pc)
+        (label_ref 9)) 284 {*arm_jump}
+     (nil)
+ -> 9)
+(barrier 16 15 17)
+(note 17 16 0 NOTE_INSN_DELETED)
+
+;; Function SVC_Handler (SVC_Handler, funcdef_no=1443, decl_uid=14130, cgraph_uid=1447, symbol_order=1453)
+
+
+
+SVC_Handler
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 25{22d,3u,0e} in 2{2 regular + 0 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 10 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 10 3 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 10 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 11 2 (debug_marker) "../Core/Src/stm32g4xx_it.c":157:1 -1
+     (nil))
+(note 11 5 12 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 12 11 13 2 (simple_return) "../Core/Src/stm32g4xx_it.c":157:1 -1
+     (nil)
+ -> simple_return)
+(barrier 13 12 8)
+(note 8 13 9 NOTE_INSN_DELETED)
+(note 9 8 0 NOTE_INSN_DELETED)
+
+;; Function DebugMon_Handler (DebugMon_Handler, funcdef_no=1453, decl_uid=14132, cgraph_uid=1448, symbol_order=1454)
+
+
+
+DebugMon_Handler
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 25{22d,3u,0e} in 2{2 regular + 0 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 10 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 10 3 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 10 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 11 2 (debug_marker) "../Core/Src/stm32g4xx_it.c":157:1 -1
+     (nil))
+(note 11 5 12 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 12 11 13 2 (simple_return) "../Core/Src/stm32g4xx_it.c":162:6 -1
+     (nil)
+ -> simple_return)
+(barrier 13 12 8)
+(note 8 13 9 NOTE_INSN_DELETED)
+(note 9 8 0 NOTE_INSN_DELETED)
+
+;; Function PendSV_Handler (PendSV_Handler, funcdef_no=1455, decl_uid=14134, cgraph_uid=1449, symbol_order=1455)
+
+
+
+PendSV_Handler
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 25{22d,3u,0e} in 2{2 regular + 0 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 10 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 10 3 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 10 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 11 2 (debug_marker) "../Core/Src/stm32g4xx_it.c":157:1 -1
+     (nil))
+(note 11 5 12 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 12 11 13 2 (simple_return) "../Core/Src/stm32g4xx_it.c":175:6 -1
+     (nil)
+ -> simple_return)
+(barrier 13 12 8)
+(note 8 13 9 NOTE_INSN_DELETED)
+(note 9 8 0 NOTE_INSN_DELETED)
+
+;; Function SysTick_Handler (SysTick_Handler, funcdef_no=1446, decl_uid=14136, cgraph_uid=1450, symbol_order=1456)
+
+
+
+SysTick_Handler
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 12 [ip] 13 [sp]
+;;  ref usage 	r0={2d} r1={2d} r2={2d} r3={2d} r12={2d} r13={1d,3u} r14={1d,1u} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 106{102d,4u,0e} in 2{1 regular + 1 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 11 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 11 3 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 11 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../Core/Src/stm32g4xx_it.c":193:3 -1
+     (nil))
+(call_insn/j 6 5 7 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_IncTick") [flags 0x41]  <function_decl 0000000006c10d00 HAL_IncTick>) [0 HAL_IncTick S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../Core/Src/stm32g4xx_it.c":193:3 292 {*sibcall_insn}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_IncTick") [flags 0x41]  <function_decl 0000000006c10d00 HAL_IncTick>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(barrier 7 6 10)
+(note 10 7 0 NOTE_INSN_DELETED)
+
+;; Function DMA1_Channel1_IRQHandler (DMA1_Channel1_IRQHandler, funcdef_no=1447, decl_uid=14138, cgraph_uid=1451, symbol_order=1457)
+
+
+
+DMA1_Channel1_IRQHandler
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 12 [ip] 13 [sp]
+;;  ref usage 	r0={3d,1u} r1={2d} r2={2d} r3={2d} r12={2d} r13={1d,3u} r14={1d,1u} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 108{103d,5u,0e} in 3{2 regular + 1 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 13 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 13 3 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 13 6 2 NOTE_INSN_FUNCTION_BEG)
+(note 6 2 5 2 NOTE_INSN_DELETED)
+(debug_insn 5 6 7 2 (debug_marker) "../Core/Src/stm32g4xx_it.c":214:3 -1
+     (nil))
+(insn 7 5 8 2 (set (reg:SI 0 r0)
+        (symbol_ref:SI ("hdma_adc4") [flags 0xc0]  <var_decl 000000000728a7e0 hdma_adc4>)) "../Core/Src/stm32g4xx_it.c":214:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (symbol_ref:SI ("hdma_adc4") [flags 0xc0]  <var_decl 000000000728a7e0 hdma_adc4>)
+        (nil)))
+(call_insn/j 8 7 9 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_DMA_IRQHandler") [flags 0x41]  <function_decl 000000000686cf00 HAL_DMA_IRQHandler>) [0 HAL_DMA_IRQHandler S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../Core/Src/stm32g4xx_it.c":214:3 292 {*sibcall_insn}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_DMA_IRQHandler") [flags 0x41]  <function_decl 000000000686cf00 HAL_DMA_IRQHandler>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(barrier 9 8 12)
+(note 12 9 0 NOTE_INSN_DELETED)
+
+;; Function DMA1_Channel2_IRQHandler (DMA1_Channel2_IRQHandler, funcdef_no=1448, decl_uid=14140, cgraph_uid=1452, symbol_order=1458)
+
+
+
+DMA1_Channel2_IRQHandler
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 12 [ip] 13 [sp]
+;;  ref usage 	r0={3d,1u} r1={2d} r2={2d} r3={2d} r12={2d} r13={1d,3u} r14={1d,1u} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 108{103d,5u,0e} in 3{2 regular + 1 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 13 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 13 3 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 13 6 2 NOTE_INSN_FUNCTION_BEG)
+(note 6 2 5 2 NOTE_INSN_DELETED)
+(debug_insn 5 6 7 2 (debug_marker) "../Core/Src/stm32g4xx_it.c":228:3 -1
+     (nil))
+(insn 7 5 8 2 (set (reg:SI 0 r0)
+        (symbol_ref:SI ("hdma_memtomem_dma1_channel2") [flags 0xc0]  <var_decl 000000000728a870 hdma_memtomem_dma1_channel2>)) "../Core/Src/stm32g4xx_it.c":228:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (symbol_ref:SI ("hdma_memtomem_dma1_channel2") [flags 0xc0]  <var_decl 000000000728a870 hdma_memtomem_dma1_channel2>)
+        (nil)))
+(call_insn/j 8 7 9 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_DMA_IRQHandler") [flags 0x41]  <function_decl 000000000686cf00 HAL_DMA_IRQHandler>) [0 HAL_DMA_IRQHandler S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../Core/Src/stm32g4xx_it.c":228:3 292 {*sibcall_insn}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_DMA_IRQHandler") [flags 0x41]  <function_decl 000000000686cf00 HAL_DMA_IRQHandler>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(barrier 9 8 12)
+(note 12 9 0 NOTE_INSN_DELETED)
+
+;; Function TIM2_IRQHandler (TIM2_IRQHandler, funcdef_no=1449, decl_uid=14142, cgraph_uid=1453, symbol_order=1459)
+
+
+
+TIM2_IRQHandler
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 12 [ip] 13 [sp]
+;;  ref usage 	r0={3d,1u} r1={2d} r2={2d} r3={2d} r12={2d} r13={1d,3u} r14={1d,1u} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 108{103d,5u,0e} in 3{2 regular + 1 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 13 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 13 3 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 13 6 2 NOTE_INSN_FUNCTION_BEG)
+(note 6 2 5 2 NOTE_INSN_DELETED)
+(debug_insn 5 6 7 2 (debug_marker) "../Core/Src/stm32g4xx_it.c":242:3 -1
+     (nil))
+(insn 7 5 8 2 (set (reg:SI 0 r0)
+        (symbol_ref:SI ("htim2") [flags 0xc0]  <var_decl 000000000728a900 htim2>)) "../Core/Src/stm32g4xx_it.c":242:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (symbol_ref:SI ("htim2") [flags 0xc0]  <var_decl 000000000728a900 htim2>)
+        (nil)))
+(call_insn/j 8 7 9 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_TIM_IRQHandler") [flags 0x41]  <function_decl 0000000006baf500 HAL_TIM_IRQHandler>) [0 HAL_TIM_IRQHandler S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../Core/Src/stm32g4xx_it.c":242:3 292 {*sibcall_insn}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_TIM_IRQHandler") [flags 0x41]  <function_decl 0000000006baf500 HAL_TIM_IRQHandler>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(barrier 9 8 12)
+(note 12 9 0 NOTE_INSN_DELETED)
+
+;; Function USART3_IRQHandler (USART3_IRQHandler, funcdef_no=1450, decl_uid=14144, cgraph_uid=1454, symbol_order=1460)
+
+
+
+USART3_IRQHandler
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 2 [r2] 3 [r3] 12 [ip] 13 [sp] 14 [lr] 15 [pc] 100 [cc]
+;;  ref usage 	r0={3d} r1={3d} r2={5d,2u} r3={9d,7u} r12={4d} r13={4d,20u} r14={3d,2u} r15={3d} r16={3d} r17={3d} r18={3d} r19={3d} r20={3d} r21={3d} r22={3d} r23={3d} r24={3d} r25={3d} r26={3d} r27={3d} r28={3d} r29={3d} r30={3d} r31={3d} r48={2d} r49={2d} r50={2d} r51={2d} r52={2d} r53={2d} r54={2d} r55={2d} r56={2d} r57={2d} r58={2d} r59={2d} r60={2d} r61={2d} r62={2d} r63={2d} r64={2d} r65={2d} r66={2d} r67={2d} r68={2d} r69={2d} r70={2d} r71={2d} r72={2d} r73={2d} r74={2d} r75={2d} r76={2d} r77={2d} r78={2d} r79={2d} r80={2d} r81={2d} r82={2d} r83={2d} r84={2d} r85={2d} r86={2d} r87={2d} r88={2d} r89={2d} r90={2d} r91={2d} r92={2d} r93={2d} r94={2d} r95={2d} r96={2d} r97={2d} r98={2d} r99={2d} r100={6d,4u} r101={2d} r104={2d} r105={2d} r106={2d} 
+;;    total ref usage 235{200d,35u,0e} in 43{41 regular + 2 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 118 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 118 3 119 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [17  A8])
+                (unspec:BLK [
+                        (reg:SI 3 r3)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 14 lr))
+        ]) "../Core/Src/stm32g4xx_it.c":252:1 -1
+     (expr_list:REG_DEAD (reg:SI 3 r3)
+        (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                    (set/f (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8])))
+                    (set/f (mem/c:SI (reg/f:SI 13 sp) [17  S4 A32])
+                        (reg:SI 3 r3))
+                    (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                (const_int 4 [0x4])) [17  S4 A32])
+                        (reg:SI 14 lr))
+                ])
+            (nil))))
+(note 119 118 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 119 11 2 NOTE_INSN_FUNCTION_BEG)
+(note 11 2 5 2 NOTE_INSN_DELETED)
+(debug_insn 5 11 6 2 (debug_marker) "../Core/Src/stm32g4xx_it.c":274:3 -1
+     (nil))
+(debug_insn 6 5 7 2 (var_location:SI USARTx (const_int 1073760256 [0x40004800])) "../Core/Src/stm32g4xx_it.c":274:3 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usart.h":3911:26 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usart.h":3913:3 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/f:SI 3 r3 [121])
+        (const_int 1073760256 [0x40004800])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usart.h":3913:12 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073760256 [0x40004800])
+        (nil)))
+(insn 10 9 12 2 (set (reg:SI 2 r2 [orig:113 _6 ] [113])
+        (mem/v:SI (reg/f:SI 3 r3 [121]) [4 MEM[(struct USART_TypeDef *)1073760256B].CR1+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usart.h":3913:12 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 12 10 13 2 (set (reg:CC_NZ 100 cc)
+        (compare:CC_NZ (zero_extract:SI (reg:SI 2 r2 [orig:113 _6 ] [113])
+                (const_int 1 [0x1])
+                (const_int 5 [0x5]))
+            (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usart.h":3913:97 93 {*zeroextractsi_compare0_scratch}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:113 _6 ] [113])
+        (nil)))
+(jump_insn 13 12 14 2 (set (pc)
+        (if_then_else (eq (reg:CC_NZ 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 29)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usart.h":3913:97 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC_NZ 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 29)
+(note 14 13 22 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 22 14 15 3 NOTE_INSN_DELETED)
+(debug_insn 15 22 16 3 (var_location:SI USARTx (clobber (const_int 0 [0]))) "../Core/Src/stm32g4xx_it.c":274:7 -1
+     (nil))
+(debug_insn 16 15 17 3 (debug_marker) "../Core/Src/stm32g4xx_it.c":277:4 -1
+     (nil))
+(debug_insn 17 16 18 3 (var_location:SI USARTx (const_int 1073760256 [0x40004800])) "../Core/Src/stm32g4xx_it.c":277:4 -1
+     (nil))
+(debug_insn 18 17 19 3 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usart.h":2992:26 -1
+     (nil))
+(debug_insn 19 18 21 3 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usart.h":2994:3 -1
+     (nil))
+(insn 21 19 23 3 (set (reg:SI 3 r3 [orig:115 _8 ] [115])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [121])
+                (const_int 28 [0x1c])) [4 MEM[(struct USART_TypeDef *)1073760256B].ISR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usart.h":2994:12 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 23 21 24 3 (set (reg:CC_NZ 100 cc)
+        (compare:CC_NZ (zero_extract:SI (reg:SI 3 r3 [orig:115 _8 ] [115])
+                (const_int 1 [0x1])
+                (const_int 5 [0x5]))
+            (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usart.h":2994:89 93 {*zeroextractsi_compare0_scratch}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:115 _8 ] [115])
+        (nil)))
+(jump_insn 24 23 25 3 (set (pc)
+        (if_then_else (eq (reg:CC_NZ 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 29)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usart.h":2994:89 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC_NZ 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 29)
+(note 25 24 26 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 26 25 27 4 (var_location:SI USARTx (clobber (const_int 0 [0]))) "../Core/Src/stm32g4xx_it.c":277:8 -1
+     (nil))
+(debug_insn 27 26 28 4 (debug_marker) "../Core/Src/stm32g4xx_it.c":282:5 -1
+     (nil))
+(call_insn 28 27 29 4 (parallel [
+            (call (mem:SI (symbol_ref:SI ("SCI_receive_char_Callback") [flags 0x41]  <function_decl 00000000072cab00 SCI_receive_char_Callback>) [0 SCI_receive_char_Callback S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/stm32g4xx_it.c":282:5 290 {*call_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("SCI_receive_char_Callback") [flags 0x41]  <function_decl 00000000072cab00 SCI_receive_char_Callback>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(code_label 29 28 30 5 26 (nil) [2 uses])
+(note 30 29 39 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(note 39 30 31 5 NOTE_INSN_DELETED)
+(debug_insn 31 39 32 5 (var_location:SI USARTx (clobber (const_int 0 [0]))) "../Core/Src/stm32g4xx_it.c":277:8 -1
+     (nil))
+(debug_insn 32 31 33 5 (var_location:SI USARTx (clobber (const_int 0 [0]))) "../Core/Src/stm32g4xx_it.c":274:7 -1
+     (nil))
+(debug_insn 33 32 34 5 (debug_marker) "../Core/Src/stm32g4xx_it.c":294:3 -1
+     (nil))
+(debug_insn 34 33 35 5 (var_location:SI USARTx (const_int 1073760256 [0x40004800])) "../Core/Src/stm32g4xx_it.c":294:3 -1
+     (nil))
+(debug_insn 35 34 36 5 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usart.h":3938:26 -1
+     (nil))
+(debug_insn 36 35 37 5 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usart.h":3940:3 -1
+     (nil))
+(insn 37 36 38 5 (set (reg/f:SI 3 r3 [125])
+        (const_int 1073760256 [0x40004800])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usart.h":3940:12 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073760256 [0x40004800])
+        (nil)))
+(insn 38 37 40 5 (set (reg:SI 2 r2 [orig:117 _10 ] [117])
+        (mem/v:SI (reg/f:SI 3 r3 [125]) [4 MEM[(struct USART_TypeDef *)1073760256B].CR1+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usart.h":3940:12 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 40 38 41 5 (set (reg:CC_NZ 100 cc)
+        (compare:CC_NZ (zero_extract:SI (reg:SI 2 r2 [orig:117 _10 ] [117])
+                (const_int 1 [0x1])
+                (const_int 7 [0x7]))
+            (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usart.h":3940:95 93 {*zeroextractsi_compare0_scratch}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:117 _10 ] [117])
+        (nil)))
+(jump_insn 41 40 42 5 (set (pc)
+        (if_then_else (eq (reg:CC_NZ 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 62)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usart.h":3940:95 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC_NZ 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 62)
+(note 42 41 50 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(note 50 42 43 6 NOTE_INSN_DELETED)
+(debug_insn 43 50 44 6 (var_location:SI USARTx (clobber (const_int 0 [0]))) "../Core/Src/stm32g4xx_it.c":294:7 -1
+     (nil))
+(debug_insn 44 43 45 6 (debug_marker) "../Core/Src/stm32g4xx_it.c":297:4 -1
+     (nil))
+(debug_insn 45 44 46 6 (var_location:SI USARTx (const_int 1073760256 [0x40004800])) "../Core/Src/stm32g4xx_it.c":297:4 -1
+     (nil))
+(debug_insn 46 45 47 6 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usart.h":3019:26 -1
+     (nil))
+(debug_insn 47 46 49 6 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usart.h":3021:3 -1
+     (nil))
+(insn 49 47 51 6 (set (reg:SI 3 r3 [orig:119 _12 ] [119])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [125])
+                (const_int 28 [0x1c])) [4 MEM[(struct USART_TypeDef *)1073760256B].ISR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usart.h":3021:12 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 51 49 52 6 (set (reg:CC_NZ 100 cc)
+        (compare:CC_NZ (zero_extract:SI (reg:SI 3 r3 [orig:119 _12 ] [119])
+                (const_int 1 [0x1])
+                (const_int 7 [0x7]))
+            (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usart.h":3021:87 93 {*zeroextractsi_compare0_scratch}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:119 _12 ] [119])
+        (nil)))
+(jump_insn 52 51 53 6 (set (pc)
+        (if_then_else (eq (reg:CC_NZ 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 62)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usart.h":3021:87 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC_NZ 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 62)
+(note 53 52 54 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 54 53 55 7 (var_location:SI USARTx (clobber (const_int 0 [0]))) "../Core/Src/stm32g4xx_it.c":297:8 -1
+     (nil))
+(debug_insn 55 54 126 7 (debug_marker) "../Core/Src/stm32g4xx_it.c":302:5 -1
+     (nil))
+(note 126 55 125 7 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 125 126 56 7 (parallel [
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg:SI 3 r3)
+                (mem/c:SI (reg/f:SI 13 sp) [17  S4 A32]))
+            (set/f (reg:SI 14 lr)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [17  S4 A32]))
+        ]) "../Core/Src/stm32g4xx_it.c":312:1 -1
+     (expr_list:REG_UNUSED (reg:SI 3 r3)
+        (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (expr_list:REG_CFA_RESTORE (reg:SI 14 lr)
+                (expr_list:REG_CFA_RESTORE (reg:SI 3 r3)
+                    (nil))))))
+(call_insn/j 56 125 57 7 (parallel [
+            (call (mem:SI (symbol_ref:SI ("SCI_transmit_char_Callback") [flags 0x41]  <function_decl 00000000072cac00 SCI_transmit_char_Callback>) [0 SCI_transmit_char_Callback S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../Core/Src/stm32g4xx_it.c":302:5 292 {*sibcall_insn}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("SCI_transmit_char_Callback") [flags 0x41]  <function_decl 00000000072cac00 SCI_transmit_char_Callback>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(barrier 57 56 62)
+(code_label 62 57 63 8 25 (nil) [2 uses])
+(note 63 62 120 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(note 120 63 121 8 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 121 120 124 8 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg:SI 3 r3)
+                (mem/c:SI (reg/f:SI 13 sp) [17  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [17  S4 A32]))
+        ]) "../Core/Src/stm32g4xx_it.c":312:1 -1
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (expr_list:REG_UNUSED (reg:SI 3 r3)
+            (expr_list:REG_CFA_RESTORE (reg:SI 3 r3)
+                (nil))))
+ -> return)
+(barrier 124 121 114)
+(note 114 124 115 NOTE_INSN_DELETED)
+(note 115 114 0 NOTE_INSN_DELETED)
+
+;; Function TIM6_DAC_IRQHandler (TIM6_DAC_IRQHandler, funcdef_no=1451, decl_uid=14146, cgraph_uid=1455, symbol_order=1461)
+
+
+
+TIM6_DAC_IRQHandler
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 2 [r2] 3 [r3] 12 [ip] 13 [sp] 100 [cc]
+;;  ref usage 	r0={2d} r1={2d} r2={5d,3u} r3={3d,3u} r12={2d} r13={1d,6u} r14={1d,1u} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={3d,2u} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 123{108d,15u,0e} in 27{26 regular + 1 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 53 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 53 3 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 53 11 2 NOTE_INSN_FUNCTION_BEG)
+(note 11 2 5 2 NOTE_INSN_DELETED)
+(debug_insn 5 11 6 2 (debug_marker) "../Core/Src/stm32g4xx_it.c":320:2 -1
+     (nil))
+(debug_insn 6 5 7 2 (var_location:SI TIMx (const_int 1073745920 [0x40001000])) "../Core/Src/stm32g4xx_it.c":320:2 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2068:26 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2070:3 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/f:SI 3 r3 [117])
+        (const_int 1073745920 [0x40001000])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2070:12 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073745920 [0x40001000])
+        (nil)))
+(insn 10 9 12 2 (set (reg:SI 2 r2 [orig:113 _4 ] [113])
+        (mem/v:SI (reg/f:SI 3 r3 [117]) [4 MEM[(struct TIM_TypeDef *)1073745920B].CR1+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2070:12 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 12 10 13 2 (set (reg:CC_NZ 100 cc)
+        (compare:CC_NZ (zero_extract:SI (reg:SI 2 r2 [orig:113 _4 ] [113])
+                (const_int 1 [0x1])
+                (const_int 1 [0x1]))
+            (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2070:72 93 {*zeroextractsi_compare0_scratch}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:113 _4 ] [113])
+        (nil)))
+(jump_insn 13 12 14 2 (set (pc)
+        (if_then_else (ne (reg:CC_NZ 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 41)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2070:72 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC_NZ 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 41)
+(note 14 13 23 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 23 14 15 3 NOTE_INSN_DELETED)
+(debug_insn 15 23 16 3 (var_location:SI TIMx (clobber (const_int 0 [0]))) "../Core/Src/stm32g4xx_it.c":320:5 -1
+     (nil))
+(debug_insn 16 15 17 3 (debug_marker) "../Core/Src/stm32g4xx_it.c":322:3 -1
+     (nil))
+(debug_insn 17 16 18 3 (var_location:SI TIMx (const_int 1073745920 [0x40001000])) "../Core/Src/stm32g4xx_it.c":322:3 -1
+     (nil))
+(debug_insn 18 17 19 3 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":5458:26 -1
+     (nil))
+(debug_insn 19 18 21 3 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":5460:3 -1
+     (nil))
+(insn 21 19 22 3 (set (reg:SI 2 r2 [orig:115 _6 ] [115])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [117])
+                (const_int 16 [0x10])) [4 MEM[(struct TIM_TypeDef *)1073745920B].SR+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":5460:12 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 22 21 24 3 (var_location:SI TIMx (clobber (const_int 0 [0]))) "../Core/Src/stm32g4xx_it.c":322:6 -1
+     (nil))
+(insn 24 22 25 3 (set (reg:CC_NZ 100 cc)
+        (compare:CC_NZ (zero_extract:SI (reg:SI 2 r2 [orig:115 _6 ] [115])
+                (const_int 1 [0x1])
+                (const_int 0 [0]))
+            (const_int 0 [0]))) "../Core/Src/stm32g4xx_it.c":322:5 93 {*zeroextractsi_compare0_scratch}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:115 _6 ] [115])
+        (nil)))
+(jump_insn 25 24 26 3 (set (pc)
+        (if_then_else (eq (reg:CC_NZ 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 41)
+            (pc))) "../Core/Src/stm32g4xx_it.c":322:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC_NZ 100 cc)
+        (int_list:REG_BR_PROB 719407028 (nil)))
+ -> 41)
+(note 26 25 27 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 27 26 28 4 (debug_marker) "../Core/Src/stm32g4xx_it.c":324:4 -1
+     (nil))
+(debug_insn 28 27 29 4 (var_location:SI TIMx (const_int 1073745920 [0x40001000])) "../Core/Src/stm32g4xx_it.c":324:4 -1
+     (nil))
+(debug_insn 29 28 30 4 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":5447:22 -1
+     (nil))
+(debug_insn 30 29 32 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":5449:3 -1
+     (nil))
+(insn 32 30 33 4 (set (reg:SI 2 r2 [122])
+        (const_int -2 [0xfffffffffffffffe])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":5449:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int -2 [0xfffffffffffffffe])
+        (nil)))
+(insn 33 32 34 4 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [117])
+                (const_int 16 [0x10])) [4 MEM[(struct TIM_TypeDef *)1073745920B].SR+0 S4 A64])
+        (reg:SI 2 r2 [122])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":5449:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 3 r3 [117])
+        (expr_list:REG_DEAD (reg:SI 2 r2 [122])
+            (nil))))
+(debug_insn 34 33 35 4 (var_location:SI TIMx (clobber (const_int 0 [0]))) "../Core/Src/stm32g4xx_it.c":324:4 -1
+     (nil))
+(debug_insn 35 34 36 4 (debug_marker) "../Core/Src/stm32g4xx_it.c":325:4 -1
+     (nil))
+(call_insn/j 36 35 37 4 (parallel [
+            (call (mem:SI (symbol_ref:SI ("PSERV_run_services_Callback") [flags 0x41]  <function_decl 00000000072cd000 PSERV_run_services_Callback>) [0 PSERV_run_services_Callback S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../Core/Src/stm32g4xx_it.c":325:4 292 {*sibcall_insn}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("PSERV_run_services_Callback") [flags 0x41]  <function_decl 00000000072cd000 PSERV_run_services_Callback>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(barrier 37 36 41)
+(code_label 41 37 42 5 44 (nil) [2 uses])
+(note 42 41 54 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(note 54 42 55 5 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 55 54 56 5 (simple_return) "../Core/Src/stm32g4xx_it.c":332:1 -1
+     (nil)
+ -> simple_return)
+(barrier 56 55 50)
+(note 50 56 51 NOTE_INSN_DELETED)
+(note 51 50 0 NOTE_INSN_DELETED)

@@ -1,0 +1,1055 @@
+
+;; Function initialise_monitor_handles (initialise_monitor_handles, funcdef_no=25, decl_uid=7480, cgraph_uid=26, symbol_order=27)
+
+
+
+expression hash table
+size 13, 0 elements, 0.000000 collision/search ratio
+
+
+
+initialise_monitor_handles
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 24{22d,2u,0e} in 1{1 regular + 0 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 8 2 (debug_marker) "../Core/Src/syscalls.c":46:1 -1
+     (nil))
+(note 8 5 9 NOTE_INSN_DELETED)
+(note 9 8 0 NOTE_INSN_DELETED)
+
+;; Function _getpid (_getpid, funcdef_no=26, decl_uid=7483, cgraph_uid=27, symbol_order=28)
+
+
+
+expression hash table
+size 13, 0 elements, 0.000000 collision/search ratio
+
+
+
+_getpid
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp]
+;;  regs ever live 	 0 [r0]
+;;  ref usage 	r0={2d,2u} r1={1d} r2={1d} r3={1d} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 27{23d,4u,0e} in 3{3 regular + 0 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 6 2 NOTE_INSN_FUNCTION_BEG)
+(note 6 2 5 2 NOTE_INSN_DELETED)
+(debug_insn 5 6 10 2 (debug_marker) "../Core/Src/syscalls.c":50:2 -1
+     (nil))
+(insn 10 5 11 2 (set (reg/i:SI 0 r0)
+        (const_int 1 [0x1])) "../Core/Src/syscalls.c":51:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 1 [0x1])
+        (nil)))
+(insn 11 10 13 2 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":51:1 -1
+     (nil))
+(note 13 11 14 NOTE_INSN_DELETED)
+(note 14 13 0 NOTE_INSN_DELETED)
+
+;; Function _kill (_kill, funcdef_no=27, decl_uid=7487, cgraph_uid=28, symbol_order=29)
+
+
+
+expression hash table
+size 13, 0 elements, 0.000000 collision/search ratio
+
+
+
+_kill
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp]
+;;  regs ever live 	 0 [r0] 3 [r3] 12 [ip] 13 [sp] 14 [lr]
+;;  ref usage 	r0={3d,3u} r1={2d} r2={2d} r3={3d,1u} r12={2d} r13={1d,3u} r14={2d} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 112{105d,7u,0e} in 7{6 regular + 1 call} insns.
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 4 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 4 5 9 2 NOTE_INSN_FUNCTION_BEG)
+(note 9 4 13 2 NOTE_INSN_DELETED)
+(note 13 9 7 2 NOTE_INSN_DELETED)
+(debug_insn 7 13 8 2 (debug_marker) "../Core/Src/syscalls.c":55:2 -1
+     (nil))
+(call_insn 8 7 10 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000006aa3000 __errno>) [0 __errno S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/syscalls.c":55:2 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000006aa3000 __errno>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 10 8 11 2 (set (reg:SI 3 r3 [117])
+        (const_int 22 [0x16])) "../Core/Src/syscalls.c":55:8 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 22 [0x16])
+        (nil)))
+(insn 11 10 12 2 (set (mem:SI (reg:SI 0 r0 [119]) [1 *_1+0 S4 A32])
+        (reg:SI 3 r3 [117])) "../Core/Src/syscalls.c":55:8 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 12 11 17 2 (debug_marker) "../Core/Src/syscalls.c":56:2 -1
+     (nil))
+(insn 17 12 18 2 (set (reg/i:SI 0 r0)
+        (const_int -1 [0xffffffffffffffff])) "../Core/Src/syscalls.c":57:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int -1 [0xffffffffffffffff])
+        (nil)))
+(insn 18 17 21 2 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":57:1 -1
+     (nil))
+(note 21 18 22 NOTE_INSN_DELETED)
+(note 22 21 0 NOTE_INSN_DELETED)
+
+;; Function _exit (_exit, funcdef_no=28, decl_uid=1156, cgraph_uid=29, symbol_order=30) (executed once)
+
+
+
+expression hash table
+size 13, 1 elements, 0.000000 collision/search ratio
+
+
+table entries:
+expr: (mem:SI (reg:SI 0 r0 [116]) [1 *_3+0 S4 A32])
+hashcode: 5424
+list of occurrences:
+(insn 14 13 15 2 (set (mem:SI (reg:SI 0 r0 [116]) [1 *_3+0 S4 A32])
+        (reg:SI 3 r3 [115])) "../Core/Src/syscalls.c":55:8 728 {*thumb2_movsi_vfp}
+     (nil))
+
+
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+GCSE AFTER RELOAD stats:
+copies inserted: 0
+moves inserted:  0
+insns deleted:   0
+
+
+
+
+_exit
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp]
+;;  regs ever live 	 0 [r0] 3 [r3] 12 [ip] 13 [sp] 14 [lr]
+;;  ref usage 	r0={2d,1u} r1={2d} r2={2d} r3={3d,1u} r12={2d} r13={1d,4u} r14={2d} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 110{104d,6u,0e} in 15{14 regular + 1 call} insns.
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 3 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 3 4 12 2 NOTE_INSN_FUNCTION_BEG)
+(note 12 3 6 2 NOTE_INSN_DELETED)
+(debug_insn 6 12 7 2 (debug_marker) "../Core/Src/syscalls.c":61:2 -1
+     (nil))
+(debug_insn 7 6 8 2 (var_location:SI pid (entry_value:SI (reg:SI 0 r0 [ status ]))) "../Core/Src/syscalls.c":61:2 -1
+     (nil))
+(debug_insn 8 7 9 2 (var_location:SI sig (const_int -1 [0xffffffffffffffff])) "../Core/Src/syscalls.c":61:2 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker:BLK) "../Core/Src/syscalls.c":53:5 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "../Core/Src/syscalls.c":55:2 -1
+     (nil))
+(call_insn 11 10 13 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000006aa3000 __errno>) [0 __errno S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/syscalls.c":55:2 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000006aa3000 __errno>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 13 11 14 2 (set (reg:SI 3 r3 [115])
+        (const_int 22 [0x16])) "../Core/Src/syscalls.c":55:8 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 22 [0x16])
+        (nil)))
+(insn 14 13 15 2 (set (mem:SI (reg:SI 0 r0 [116]) [1 *_3+0 S4 A32])
+        (reg:SI 3 r3 [115])) "../Core/Src/syscalls.c":55:8 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 15 14 22 2 (debug_marker) "../Core/Src/syscalls.c":56:2 -1
+     (nil))
+(code_label 22 15 16 3 7 (nil) [1 uses])
+(note 16 22 17 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 17 16 18 3 (var_location:SI pid (clobber (const_int 0 [0]))) "../Core/Src/syscalls.c":61:2 -1
+     (nil))
+(debug_insn 18 17 19 3 (var_location:SI sig (clobber (const_int 0 [0]))) "../Core/Src/syscalls.c":61:2 -1
+     (nil))
+(debug_insn 19 18 20 3 (debug_marker) "../Core/Src/syscalls.c":62:2 -1
+     (nil))
+(debug_insn 20 19 21 3 (debug_marker) "../Core/Src/syscalls.c":62:13 -1
+     (nil))
+(debug_insn 21 20 29 3 (debug_marker) "../Core/Src/syscalls.c":62:8 -1
+     (nil))
+(jump_insn 29 21 30 3 (set (pc)
+        (label_ref 22)) 284 {*arm_jump}
+     (nil)
+ -> 22)
+(barrier 30 29 31)
+(note 31 30 0 NOTE_INSN_DELETED)
+
+;; Function _read (_read, funcdef_no=29, decl_uid=7496, cgraph_uid=30, symbol_order=31)
+
+
+
+expression hash table
+size 13, 0 elements, 0.000000 collision/search ratio
+
+
+
+_read
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 4 [r4] 5 [r5] 6 [r6] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={3d,3u} r1={2d,1u} r2={2d,2u} r3={2d} r4={2d,7u} r5={1d,1u} r6={1d,2u} r12={2d} r13={1d,6u} r14={2d} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={3d,2u} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 134{110d,24u,0e} in 24{23 regular + 1 call} insns.
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 4 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 4 6 5 2 NOTE_INSN_DELETED)
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 8 5 9 2 (debug_marker) "../Core/Src/syscalls.c":67:2 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "../Core/Src/syscalls.c":69:2 -1
+     (nil))
+(debug_insn 10 9 3 2 (var_location:SI DataIdx (const_int 0 [0])) -1
+     (nil))
+(insn 3 10 11 2 (set (reg/v/f:SI 4 r4 [orig:119 ptr ] [119])
+        (reg:SI 1 r1 [123])) "../Core/Src/syscalls.c":66:1 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 11 3 12 2 (var_location:SI ptr (reg/v/f:SI 4 r4 [orig:119 ptr ] [119])) -1
+     (nil))
+(debug_insn 12 11 15 2 (debug_marker) "../Core/Src/syscalls.c":69:20 -1
+     (nil))
+(insn 15 12 16 2 (parallel [
+            (set (reg:CC 100 cc)
+                (compare:CC (reg:SI 2 r2 [124])
+                    (const_int 0 [0])))
+            (set (reg/v:SI 6 r6 [orig:120 len ] [120])
+                (reg:SI 2 r2 [124]))
+        ]) "../Core/Src/syscalls.c":69:2 260 {*movsi_compare0}
+     (nil))
+(jump_insn 16 15 17 2 (set (pc)
+        (if_then_else (le (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 36)
+            (pc))) "../Core/Src/syscalls.c":69:2 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 118111604 (nil))
+ -> 36)
+(note 17 16 18 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 33 3 (set (reg/f:SI 5 r5 [orig:115 _4 ] [115])
+        (plus:SI (reg/v/f:SI 4 r4 [orig:119 ptr ] [119])
+            (reg/v:SI 6 r6 [orig:120 len ] [120]))) 7 {*arm_addsi3}
+     (nil))
+(code_label 33 18 19 4 11 (nil) [1 uses])
+(note 19 33 24 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 24 19 20 4 NOTE_INSN_DELETED)
+(debug_insn 20 24 21 4 (var_location:SI DataIdx (const_int 0 [0])) -1
+     (nil))
+(debug_insn 21 20 22 4 (var_location:SI ptr (reg/v/f:SI 4 r4 [orig:119 ptr ] [119])) -1
+     (nil))
+(debug_insn 22 21 23 4 (debug_marker) "../Core/Src/syscalls.c":71:3 -1
+     (nil))
+(call_insn 23 22 26 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref/i:SI ("__io_getchar") [flags 0x41]  <function_decl 0000000006b8ee00 __io_getchar>) [0 __io_getchar S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/syscalls.c":71:12 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref/i:SI ("__io_getchar") [flags 0x41]  <function_decl 0000000006b8ee00 __io_getchar>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(debug_insn 26 23 28 4 (var_location:SI ptr (plus:SI (reg/v/f:SI 4 r4 [orig:119 ptr ] [119])
+        (const_int 1 [0x1]))) "../Core/Src/syscalls.c":71:7 -1
+     (nil))
+(insn 28 26 29 4 (set (mem:QI (post_inc:SI (reg/v/f:SI 4 r4 [orig:119 ptr ] [119])) [0 MEM[base: ptr_10, offset: 4294967295B]+0 S1 A8])
+        (reg:QI 0 r0 [125])) "../Core/Src/syscalls.c":71:10 263 {*arm_movqi_insn}
+     (expr_list:REG_INC (reg/v/f:SI 4 r4 [orig:119 ptr ] [119])
+        (nil)))
+(debug_insn 29 28 30 4 (debug_marker) "../Core/Src/syscalls.c":69:35 -1
+     (nil))
+(debug_insn 30 29 31 4 (var_location:SI DataIdx (const_int 0 [0])) -1
+     (nil))
+(debug_insn 31 30 32 4 (var_location:SI ptr (reg/v/f:SI 4 r4 [orig:119 ptr ] [119])) -1
+     (nil))
+(debug_insn 32 31 34 4 (debug_marker) "../Core/Src/syscalls.c":69:20 -1
+     (nil))
+(insn 34 32 35 4 (set (reg:CC 100 cc)
+        (compare:CC (reg/f:SI 5 r5 [orig:115 _4 ] [115])
+            (reg/v/f:SI 4 r4 [orig:119 ptr ] [119]))) "../Core/Src/syscalls.c":69:2 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 35 34 36 4 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 33)
+            (pc))) "../Core/Src/syscalls.c":69:2 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 955630228 (nil))
+ -> 33)
+(code_label 36 35 37 5 10 (nil) [1 uses])
+(note 37 36 38 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 38 37 43 5 (debug_marker) "../Core/Src/syscalls.c":74:1 -1
+     (nil))
+(insn 43 38 44 5 (set (reg/i:SI 0 r0)
+        (reg/v:SI 6 r6 [orig:120 len ] [120])) "../Core/Src/syscalls.c":75:1 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 44 43 52 5 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":75:1 -1
+     (nil))
+(note 52 44 53 NOTE_INSN_DELETED)
+(note 53 52 0 NOTE_INSN_DELETED)
+
+;; Function _write (_write, funcdef_no=30, decl_uid=7505, cgraph_uid=31, symbol_order=32)
+
+
+
+expression hash table
+size 13, 0 elements, 0.000000 collision/search ratio
+
+
+
+_write
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 4 [r4] 5 [r5] 6 [r6] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={4d,3u} r1={2d,1u} r2={2d,2u} r3={2d} r4={2d,7u} r5={1d,1u} r6={1d,2u} r12={2d} r13={1d,6u} r14={2d} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={3d,2u} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 135{111d,24u,0e} in 24{23 regular + 1 call} insns.
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 4 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 4 6 5 2 NOTE_INSN_DELETED)
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 8 5 9 2 (debug_marker) "../Core/Src/syscalls.c":79:2 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "../Core/Src/syscalls.c":81:2 -1
+     (nil))
+(debug_insn 10 9 3 2 (var_location:SI DataIdx (const_int 0 [0])) -1
+     (nil))
+(insn 3 10 11 2 (set (reg/v/f:SI 4 r4 [orig:119 ptr ] [119])
+        (reg:SI 1 r1 [123])) "../Core/Src/syscalls.c":78:1 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 11 3 12 2 (var_location:SI ptr (reg/v/f:SI 4 r4 [orig:119 ptr ] [119])) -1
+     (nil))
+(debug_insn 12 11 15 2 (debug_marker) "../Core/Src/syscalls.c":81:20 -1
+     (nil))
+(insn 15 12 16 2 (parallel [
+            (set (reg:CC 100 cc)
+                (compare:CC (reg:SI 2 r2 [124])
+                    (const_int 0 [0])))
+            (set (reg/v:SI 6 r6 [orig:120 len ] [120])
+                (reg:SI 2 r2 [124]))
+        ]) "../Core/Src/syscalls.c":81:2 260 {*movsi_compare0}
+     (nil))
+(jump_insn 16 15 17 2 (set (pc)
+        (if_then_else (le (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 35)
+            (pc))) "../Core/Src/syscalls.c":81:2 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 118111604 (nil))
+ -> 35)
+(note 17 16 18 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 32 3 (set (reg/f:SI 5 r5 [orig:115 _14 ] [115])
+        (plus:SI (reg/v/f:SI 4 r4 [orig:119 ptr ] [119])
+            (reg/v:SI 6 r6 [orig:120 len ] [120]))) 7 {*arm_addsi3}
+     (nil))
+(code_label 32 18 19 4 16 (nil) [1 uses])
+(note 19 32 25 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 25 19 20 4 NOTE_INSN_DELETED)
+(debug_insn 20 25 21 4 (var_location:SI DataIdx (const_int 0 [0])) -1
+     (nil))
+(debug_insn 21 20 22 4 (var_location:SI ptr (reg/v/f:SI 4 r4 [orig:119 ptr ] [119])) -1
+     (nil))
+(debug_insn 22 21 24 4 (debug_marker) "../Core/Src/syscalls.c":83:3 -1
+     (nil))
+(debug_insn 24 22 26 4 (var_location:SI ptr (plus:SI (reg/v/f:SI 4 r4 [orig:119 ptr ] [119])
+        (const_int 1 [0x1]))) "../Core/Src/syscalls.c":83:20 -1
+     (nil))
+(insn 26 24 27 4 (set (reg:SI 0 r0)
+        (zero_extend:SI (mem:QI (post_inc:SI (reg/v/f:SI 4 r4 [orig:119 ptr ] [119])) [0 MEM[base: ptr_9, offset: 4294967295B]+0 S1 A8]))) "../Core/Src/syscalls.c":83:3 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_INC (reg/v/f:SI 4 r4 [orig:119 ptr ] [119])
+        (nil)))
+(call_insn 27 26 28 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref/i:SI ("__io_putchar") [flags 0x41]  <function_decl 0000000006b8ed00 __io_putchar>) [0 __io_putchar S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/syscalls.c":83:3 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref/i:SI ("__io_putchar") [flags 0x41]  <function_decl 0000000006b8ed00 __io_putchar>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 28 27 29 4 (debug_marker) "../Core/Src/syscalls.c":81:35 -1
+     (nil))
+(debug_insn 29 28 30 4 (var_location:SI DataIdx (const_int 0 [0])) -1
+     (nil))
+(debug_insn 30 29 31 4 (var_location:SI ptr (reg/v/f:SI 4 r4 [orig:119 ptr ] [119])) -1
+     (nil))
+(debug_insn 31 30 33 4 (debug_marker) "../Core/Src/syscalls.c":81:20 -1
+     (nil))
+(insn 33 31 34 4 (set (reg:CC 100 cc)
+        (compare:CC (reg/v/f:SI 4 r4 [orig:119 ptr ] [119])
+            (reg/f:SI 5 r5 [orig:115 _14 ] [115]))) "../Core/Src/syscalls.c":81:2 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 34 33 35 4 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 32)
+            (pc))) "../Core/Src/syscalls.c":81:2 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 955630228 (nil))
+ -> 32)
+(code_label 35 34 36 5 15 (nil) [1 uses])
+(note 36 35 37 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 37 36 42 5 (debug_marker) "../Core/Src/syscalls.c":85:2 -1
+     (nil))
+(insn 42 37 43 5 (set (reg/i:SI 0 r0)
+        (reg/v:SI 6 r6 [orig:120 len ] [120])) "../Core/Src/syscalls.c":86:1 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 43 42 49 5 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":86:1 -1
+     (nil))
+(note 49 43 50 NOTE_INSN_DELETED)
+(note 50 49 0 NOTE_INSN_DELETED)
+
+;; Function _close (_close, funcdef_no=31, decl_uid=7512, cgraph_uid=32, symbol_order=33)
+
+
+
+expression hash table
+size 13, 0 elements, 0.000000 collision/search ratio
+
+
+
+_close
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp]
+;;  regs ever live 	 0 [r0]
+;;  ref usage 	r0={2d,2u} r1={1d} r2={1d} r3={1d} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 27{23d,4u,0e} in 3{3 regular + 0 call} insns.
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 3 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 3 4 7 2 NOTE_INSN_FUNCTION_BEG)
+(note 7 3 6 2 NOTE_INSN_DELETED)
+(debug_insn 6 7 11 2 (debug_marker) "../Core/Src/syscalls.c":90:2 -1
+     (nil))
+(insn 11 6 12 2 (set (reg/i:SI 0 r0)
+        (const_int -1 [0xffffffffffffffff])) "../Core/Src/syscalls.c":91:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int -1 [0xffffffffffffffff])
+        (nil)))
+(insn 12 11 14 2 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":91:1 -1
+     (nil))
+(note 14 12 15 NOTE_INSN_DELETED)
+(note 15 14 0 NOTE_INSN_DELETED)
+
+;; Function _fstat (_fstat, funcdef_no=32, decl_uid=7516, cgraph_uid=33, symbol_order=34)
+
+
+
+expression hash table
+size 13, 1 elements, 0.000000 collision/search ratio
+
+
+table entries:
+expr: (mem:SI (plus:SI (reg:SI 1 r1 [118])
+        (const_int 4 [0x4])) [2 st_2(D)->st_mode+0 S4 A32])
+hashcode: 9735
+list of occurrences:
+(insn 9 8 10 2 (set (mem:SI (plus:SI (reg:SI 1 r1 [118])
+                (const_int 4 [0x4])) [2 st_2(D)->st_mode+0 S4 A32])
+        (reg:SI 3 r3 [116])) "../Core/Src/syscalls.c":96:14 728 {*thumb2_movsi_vfp}
+     (nil))
+
+
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+GCSE AFTER RELOAD stats:
+copies inserted: 0
+moves inserted:  0
+insns deleted:   0
+
+
+
+
+_fstat
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp]
+;;  regs ever live 	 0 [r0] 1 [r1] 3 [r3]
+;;  ref usage 	r0={2d,2u} r1={1d,1u} r2={1d} r3={2d,1u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 30{24d,6u,0e} in 6{6 regular + 0 call} insns.
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 3 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 3 5 4 2 NOTE_INSN_DELETED)
+(note 4 3 11 2 NOTE_INSN_FUNCTION_BEG)
+(note 11 4 7 2 NOTE_INSN_DELETED)
+(debug_insn 7 11 8 2 (debug_marker) "../Core/Src/syscalls.c":96:2 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 3 r3 [116])
+        (const_int 8192 [0x2000])) "../Core/Src/syscalls.c":96:14 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 8192 [0x2000])
+        (nil)))
+(insn 9 8 10 2 (set (mem:SI (plus:SI (reg:SI 1 r1 [118])
+                (const_int 4 [0x4])) [2 st_2(D)->st_mode+0 S4 A32])
+        (reg:SI 3 r3 [116])) "../Core/Src/syscalls.c":96:14 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 10 9 15 2 (debug_marker) "../Core/Src/syscalls.c":97:2 -1
+     (nil))
+(insn 15 10 16 2 (set (reg/i:SI 0 r0)
+        (const_int 0 [0])) "../Core/Src/syscalls.c":98:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(insn 16 15 19 2 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":98:1 -1
+     (nil))
+(note 19 16 20 NOTE_INSN_DELETED)
+(note 20 19 0 NOTE_INSN_DELETED)
+
+;; Function _isatty (_isatty, funcdef_no=33, decl_uid=7519, cgraph_uid=34, symbol_order=35)
+
+
+
+expression hash table
+size 13, 0 elements, 0.000000 collision/search ratio
+
+
+
+_isatty
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp]
+;;  regs ever live 	 0 [r0]
+;;  ref usage 	r0={2d,2u} r1={1d} r2={1d} r3={1d} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 27{23d,4u,0e} in 3{3 regular + 0 call} insns.
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 3 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 3 4 7 2 NOTE_INSN_FUNCTION_BEG)
+(note 7 3 6 2 NOTE_INSN_DELETED)
+(debug_insn 6 7 11 2 (debug_marker) "../Core/Src/syscalls.c":102:2 -1
+     (nil))
+(insn 11 6 12 2 (set (reg/i:SI 0 r0)
+        (const_int 1 [0x1])) "../Core/Src/syscalls.c":103:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 1 [0x1])
+        (nil)))
+(insn 12 11 14 2 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":103:1 -1
+     (nil))
+(note 14 12 15 NOTE_INSN_DELETED)
+(note 15 14 0 NOTE_INSN_DELETED)
+
+;; Function _lseek (_lseek, funcdef_no=34, decl_uid=7524, cgraph_uid=35, symbol_order=36)
+
+
+
+expression hash table
+size 13, 0 elements, 0.000000 collision/search ratio
+
+
+
+_lseek
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp]
+;;  regs ever live 	 0 [r0]
+;;  ref usage 	r0={2d,2u} r1={1d} r2={1d} r3={1d} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 27{23d,4u,0e} in 3{3 regular + 0 call} insns.
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 5 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 5 6 9 2 NOTE_INSN_FUNCTION_BEG)
+(note 9 5 8 2 NOTE_INSN_DELETED)
+(debug_insn 8 9 13 2 (debug_marker) "../Core/Src/syscalls.c":107:2 -1
+     (nil))
+(insn 13 8 14 2 (set (reg/i:SI 0 r0)
+        (const_int 0 [0])) "../Core/Src/syscalls.c":108:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(insn 14 13 16 2 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":108:1 -1
+     (nil))
+(note 16 14 17 NOTE_INSN_DELETED)
+(note 17 16 0 NOTE_INSN_DELETED)
+
+;; Function _open (_open, funcdef_no=35, decl_uid=7528, cgraph_uid=36, symbol_order=37)
+
+
+
+expression hash table
+size 13, 0 elements, 0.000000 collision/search ratio
+
+
+
+_open
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp]
+;;  regs ever live 	 0 [r0]
+;;  ref usage 	r0={2d,2u} r1={1d} r2={1d} r3={1d} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 27{23d,4u,0e} in 3{3 regular + 0 call} insns.
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 4 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 4 5 8 2 NOTE_INSN_FUNCTION_BEG)
+(note 8 4 7 2 NOTE_INSN_DELETED)
+(debug_insn 7 8 12 2 (debug_marker) "../Core/Src/syscalls.c":113:2 -1
+     (nil))
+(insn 12 7 13 2 (set (reg/i:SI 0 r0)
+        (const_int -1 [0xffffffffffffffff])) "../Core/Src/syscalls.c":114:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int -1 [0xffffffffffffffff])
+        (nil)))
+(insn 13 12 15 2 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":114:1 -1
+     (nil))
+(note 15 13 16 NOTE_INSN_DELETED)
+(note 16 15 0 NOTE_INSN_DELETED)
+
+;; Function _wait (_wait, funcdef_no=36, decl_uid=7531, cgraph_uid=37, symbol_order=38)
+
+
+
+expression hash table
+size 13, 0 elements, 0.000000 collision/search ratio
+
+
+
+_wait
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp]
+;;  regs ever live 	 0 [r0] 3 [r3] 12 [ip] 13 [sp] 14 [lr]
+;;  ref usage 	r0={3d,3u} r1={2d} r2={2d} r3={3d,1u} r12={2d} r13={1d,3u} r14={2d} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 112{105d,7u,0e} in 7{6 regular + 1 call} insns.
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 3 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 3 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(note 8 3 12 2 NOTE_INSN_DELETED)
+(note 12 8 6 2 NOTE_INSN_DELETED)
+(debug_insn 6 12 7 2 (debug_marker) "../Core/Src/syscalls.c":118:2 -1
+     (nil))
+(call_insn 7 6 9 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000006aa3000 __errno>) [0 __errno S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/syscalls.c":118:2 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000006aa3000 __errno>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 9 7 10 2 (set (reg:SI 3 r3 [116])
+        (const_int 10 [0xa])) "../Core/Src/syscalls.c":118:8 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 10 [0xa])
+        (nil)))
+(insn 10 9 11 2 (set (mem:SI (reg:SI 0 r0 [118]) [1 *_1+0 S4 A32])
+        (reg:SI 3 r3 [116])) "../Core/Src/syscalls.c":118:8 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 11 10 16 2 (debug_marker) "../Core/Src/syscalls.c":119:2 -1
+     (nil))
+(insn 16 11 17 2 (set (reg/i:SI 0 r0)
+        (const_int -1 [0xffffffffffffffff])) "../Core/Src/syscalls.c":120:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int -1 [0xffffffffffffffff])
+        (nil)))
+(insn 17 16 20 2 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":120:1 -1
+     (nil))
+(note 20 17 21 NOTE_INSN_DELETED)
+(note 21 20 0 NOTE_INSN_DELETED)
+
+;; Function _unlink (_unlink, funcdef_no=37, decl_uid=7534, cgraph_uid=38, symbol_order=39)
+
+
+
+expression hash table
+size 13, 0 elements, 0.000000 collision/search ratio
+
+
+
+_unlink
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp]
+;;  regs ever live 	 0 [r0] 3 [r3] 12 [ip] 13 [sp] 14 [lr]
+;;  ref usage 	r0={3d,3u} r1={2d} r2={2d} r3={3d,1u} r12={2d} r13={1d,3u} r14={2d} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 112{105d,7u,0e} in 7{6 regular + 1 call} insns.
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 3 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 3 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(note 8 3 12 2 NOTE_INSN_DELETED)
+(note 12 8 6 2 NOTE_INSN_DELETED)
+(debug_insn 6 12 7 2 (debug_marker) "../Core/Src/syscalls.c":124:2 -1
+     (nil))
+(call_insn 7 6 9 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000006aa3000 __errno>) [0 __errno S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/syscalls.c":124:2 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000006aa3000 __errno>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 9 7 10 2 (set (reg:SI 3 r3 [116])
+        (const_int 2 [0x2])) "../Core/Src/syscalls.c":124:8 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 2 [0x2])
+        (nil)))
+(insn 10 9 11 2 (set (mem:SI (reg:SI 0 r0 [118]) [1 *_1+0 S4 A32])
+        (reg:SI 3 r3 [116])) "../Core/Src/syscalls.c":124:8 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 11 10 16 2 (debug_marker) "../Core/Src/syscalls.c":125:2 -1
+     (nil))
+(insn 16 11 17 2 (set (reg/i:SI 0 r0)
+        (const_int -1 [0xffffffffffffffff])) "../Core/Src/syscalls.c":126:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int -1 [0xffffffffffffffff])
+        (nil)))
+(insn 17 16 20 2 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":126:1 -1
+     (nil))
+(note 20 17 21 NOTE_INSN_DELETED)
+(note 21 20 0 NOTE_INSN_DELETED)
+
+;; Function _times (_times, funcdef_no=38, decl_uid=7537, cgraph_uid=39, symbol_order=40)
+
+
+
+expression hash table
+size 13, 0 elements, 0.000000 collision/search ratio
+
+
+
+_times
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp]
+;;  regs ever live 	 0 [r0]
+;;  ref usage 	r0={2d,2u} r1={1d} r2={1d} r3={1d} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 27{23d,4u,0e} in 3{3 regular + 0 call} insns.
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 3 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 3 4 7 2 NOTE_INSN_FUNCTION_BEG)
+(note 7 3 6 2 NOTE_INSN_DELETED)
+(debug_insn 6 7 11 2 (debug_marker) "../Core/Src/syscalls.c":130:2 -1
+     (nil))
+(insn 11 6 12 2 (set (reg/i:SI 0 r0)
+        (const_int -1 [0xffffffffffffffff])) "../Core/Src/syscalls.c":131:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int -1 [0xffffffffffffffff])
+        (nil)))
+(insn 12 11 14 2 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":131:1 -1
+     (nil))
+(note 14 12 15 NOTE_INSN_DELETED)
+(note 15 14 0 NOTE_INSN_DELETED)
+
+;; Function _stat (_stat, funcdef_no=39, decl_uid=7541, cgraph_uid=40, symbol_order=41)
+
+
+
+expression hash table
+size 13, 1 elements, 0.000000 collision/search ratio
+
+
+table entries:
+expr: (mem:SI (plus:SI (reg:SI 1 r1 [118])
+        (const_int 4 [0x4])) [2 st_2(D)->st_mode+0 S4 A32])
+hashcode: 9735
+list of occurrences:
+(insn 9 8 10 2 (set (mem:SI (plus:SI (reg:SI 1 r1 [118])
+                (const_int 4 [0x4])) [2 st_2(D)->st_mode+0 S4 A32])
+        (reg:SI 3 r3 [116])) "../Core/Src/syscalls.c":135:14 728 {*thumb2_movsi_vfp}
+     (nil))
+
+
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+GCSE AFTER RELOAD stats:
+copies inserted: 0
+moves inserted:  0
+insns deleted:   0
+
+
+
+
+_stat
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp]
+;;  regs ever live 	 0 [r0] 1 [r1] 3 [r3]
+;;  ref usage 	r0={2d,2u} r1={1d,1u} r2={1d} r3={2d,1u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 30{24d,6u,0e} in 6{6 regular + 0 call} insns.
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 3 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 3 5 4 2 NOTE_INSN_DELETED)
+(note 4 3 11 2 NOTE_INSN_FUNCTION_BEG)
+(note 11 4 7 2 NOTE_INSN_DELETED)
+(debug_insn 7 11 8 2 (debug_marker) "../Core/Src/syscalls.c":135:2 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 3 r3 [116])
+        (const_int 8192 [0x2000])) "../Core/Src/syscalls.c":135:14 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 8192 [0x2000])
+        (nil)))
+(insn 9 8 10 2 (set (mem:SI (plus:SI (reg:SI 1 r1 [118])
+                (const_int 4 [0x4])) [2 st_2(D)->st_mode+0 S4 A32])
+        (reg:SI 3 r3 [116])) "../Core/Src/syscalls.c":135:14 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 10 9 15 2 (debug_marker) "../Core/Src/syscalls.c":136:2 -1
+     (nil))
+(insn 15 10 16 2 (set (reg/i:SI 0 r0)
+        (const_int 0 [0])) "../Core/Src/syscalls.c":137:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(insn 16 15 19 2 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":137:1 -1
+     (nil))
+(note 19 16 20 NOTE_INSN_DELETED)
+(note 20 19 0 NOTE_INSN_DELETED)
+
+;; Function _link (_link, funcdef_no=40, decl_uid=7545, cgraph_uid=41, symbol_order=42)
+
+
+
+expression hash table
+size 13, 0 elements, 0.000000 collision/search ratio
+
+
+
+_link
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp]
+;;  regs ever live 	 0 [r0] 3 [r3] 12 [ip] 13 [sp] 14 [lr]
+;;  ref usage 	r0={3d,3u} r1={2d} r2={2d} r3={3d,1u} r12={2d} r13={1d,3u} r14={2d} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 112{105d,7u,0e} in 7{6 regular + 1 call} insns.
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 4 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 4 5 9 2 NOTE_INSN_FUNCTION_BEG)
+(note 9 4 13 2 NOTE_INSN_DELETED)
+(note 13 9 7 2 NOTE_INSN_DELETED)
+(debug_insn 7 13 8 2 (debug_marker) "../Core/Src/syscalls.c":141:2 -1
+     (nil))
+(call_insn 8 7 10 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000006aa3000 __errno>) [0 __errno S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/syscalls.c":141:2 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000006aa3000 __errno>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 10 8 11 2 (set (reg:SI 3 r3 [117])
+        (const_int 31 [0x1f])) "../Core/Src/syscalls.c":141:8 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 31 [0x1f])
+        (nil)))
+(insn 11 10 12 2 (set (mem:SI (reg:SI 0 r0 [119]) [1 *_1+0 S4 A32])
+        (reg:SI 3 r3 [117])) "../Core/Src/syscalls.c":141:8 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 12 11 17 2 (debug_marker) "../Core/Src/syscalls.c":142:2 -1
+     (nil))
+(insn 17 12 18 2 (set (reg/i:SI 0 r0)
+        (const_int -1 [0xffffffffffffffff])) "../Core/Src/syscalls.c":143:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int -1 [0xffffffffffffffff])
+        (nil)))
+(insn 18 17 21 2 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":143:1 -1
+     (nil))
+(note 21 18 22 NOTE_INSN_DELETED)
+(note 22 21 0 NOTE_INSN_DELETED)
+
+;; Function _fork (_fork, funcdef_no=41, decl_uid=7548, cgraph_uid=42, symbol_order=43)
+
+
+
+expression hash table
+size 13, 0 elements, 0.000000 collision/search ratio
+
+
+
+_fork
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp]
+;;  regs ever live 	 0 [r0] 3 [r3] 12 [ip] 13 [sp] 14 [lr]
+;;  ref usage 	r0={3d,3u} r1={2d} r2={2d} r3={3d,1u} r12={2d} r13={1d,3u} r14={2d} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 112{105d,7u,0e} in 7{6 regular + 1 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(note 7 2 11 2 NOTE_INSN_DELETED)
+(note 11 7 5 2 NOTE_INSN_DELETED)
+(debug_insn 5 11 6 2 (debug_marker) "../Core/Src/syscalls.c":147:2 -1
+     (nil))
+(call_insn 6 5 8 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000006aa3000 __errno>) [0 __errno S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/syscalls.c":147:2 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000006aa3000 __errno>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 8 6 9 2 (set (reg:SI 3 r3 [115])
+        (const_int 11 [0xb])) "../Core/Src/syscalls.c":147:8 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 11 [0xb])
+        (nil)))
+(insn 9 8 10 2 (set (mem:SI (reg:SI 0 r0 [117]) [1 *_1+0 S4 A32])
+        (reg:SI 3 r3 [115])) "../Core/Src/syscalls.c":147:8 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 10 9 15 2 (debug_marker) "../Core/Src/syscalls.c":148:2 -1
+     (nil))
+(insn 15 10 16 2 (set (reg/i:SI 0 r0)
+        (const_int -1 [0xffffffffffffffff])) "../Core/Src/syscalls.c":149:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int -1 [0xffffffffffffffff])
+        (nil)))
+(insn 16 15 19 2 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":149:1 -1
+     (nil))
+(note 19 16 20 NOTE_INSN_DELETED)
+(note 20 19 0 NOTE_INSN_DELETED)
+
+;; Function _execve (_execve, funcdef_no=42, decl_uid=7553, cgraph_uid=43, symbol_order=44)
+
+
+
+expression hash table
+size 13, 0 elements, 0.000000 collision/search ratio
+
+
+
+_execve
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp]
+;;  regs ever live 	 0 [r0] 3 [r3] 12 [ip] 13 [sp] 14 [lr]
+;;  ref usage 	r0={3d,3u} r1={2d} r2={2d} r3={3d,1u} r12={2d} r13={1d,3u} r14={2d} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 112{105d,7u,0e} in 7{6 regular + 1 call} insns.
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 5 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 5 6 10 2 NOTE_INSN_FUNCTION_BEG)
+(note 10 5 14 2 NOTE_INSN_DELETED)
+(note 14 10 8 2 NOTE_INSN_DELETED)
+(debug_insn 8 14 9 2 (debug_marker) "../Core/Src/syscalls.c":153:2 -1
+     (nil))
+(call_insn 9 8 11 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000006aa3000 __errno>) [0 __errno S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/syscalls.c":153:2 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000006aa3000 __errno>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 11 9 12 2 (set (reg:SI 3 r3 [118])
+        (const_int 12 [0xc])) "../Core/Src/syscalls.c":153:8 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 12 [0xc])
+        (nil)))
+(insn 12 11 13 2 (set (mem:SI (reg:SI 0 r0 [120]) [1 *_1+0 S4 A32])
+        (reg:SI 3 r3 [118])) "../Core/Src/syscalls.c":153:8 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 13 12 18 2 (debug_marker) "../Core/Src/syscalls.c":154:2 -1
+     (nil))
+(insn 18 13 19 2 (set (reg/i:SI 0 r0)
+        (const_int -1 [0xffffffffffffffff])) "../Core/Src/syscalls.c":155:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int -1 [0xffffffffffffffff])
+        (nil)))
+(insn 19 18 22 2 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":155:1 -1
+     (nil))
+(note 22 19 23 NOTE_INSN_DELETED)
+(note 23 22 0 NOTE_INSN_DELETED)

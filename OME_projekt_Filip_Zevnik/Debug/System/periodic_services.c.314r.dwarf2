@@ -1,0 +1,291 @@
+
+;; Function PSERV_init (PSERV_init, funcdef_no=613, decl_uid=11010, cgraph_uid=617, symbol_order=622)
+
+Creating trace 0 : start at note 1
+Creating trace 1 : start at note 48
+Creating trace 2 : start at note 55
+Creating trace 3 : start at code_label 62
+Creating trace 4 : start at code_label 64
+Processing trace 0 : start at note 1
+   saw edge from trace 0 to 1 (via fallthru 0)
+	push trace 1 to worklist
+Processing trace 1 : start at note 48
+   saw edge from trace 1 to 2 (via fallthru 0)
+	push trace 2 to worklist
+Processing trace 2 : start at note 55
+
+
+PSERV_init
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 2 [r2] 3 [r3]
+;;  ref usage 	r0={1d} r1={1d} r2={4d,3u} r3={2d,3u} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 35{26d,9u,0e} in 7{7 regular + 0 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 48 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 48 3 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 48 56 2 NOTE_INSN_FUNCTION_BEG)
+(note 56 2 7 2 ../System/periodic_services.c:14 NOTE_INSN_BEGIN_STMT)
+(insn 7 56 6 2 (set (reg:SI 3 r3 [116])
+        (mem:SI (label_ref 64) [0  S4 A32])) "../System/periodic_services.c":14:24 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073745920 [0x40001000])
+        (nil)))
+(insn 6 7 8 2 (set (reg/f:SI 2 r2 [115])
+        (mem:SI (const:SI (plus:SI (label_ref 64)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../System/periodic_services.c":14:24 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(insn 8 6 57 2 (set (mem/f/c:SI (reg/f:SI 2 r2 [115]) [1 periodic_services.TIM+0 S4 A32])
+        (reg:SI 3 r3 [116])) "../System/periodic_services.c":14:24 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 2 r2 [115])
+        (nil)))
+(note 57 8 60 2 ../System/periodic_services.c:15 NOTE_INSN_BEGIN_STMT)
+(note 60 57 58 2 (var_location TIMx (const_int 1073745920 [0x40001000])) NOTE_INSN_VAR_LOCATION)
+(note 58 60 59 2 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h:2013 NOTE_INSN_INLINE_ENTRY)
+(note 59 58 14 2 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h:2015 NOTE_INSN_BEGIN_STMT)
+(insn 14 59 15 2 (set (reg:SI 2 r2 [orig:113 _3 ] [113])
+        (mem/v:SI (reg:SI 3 r3 [116]) [3 MEM[(struct TIM_TypeDef *)1073745920B].CR1+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2015:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 15 14 17 2 (set (reg:SI 2 r2 [orig:114 _4 ] [114])
+        (ior:SI (reg:SI 2 r2 [orig:113 _3 ] [113])
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2015:3 106 {*iorsi3_insn}
+     (nil))
+(insn 17 15 61 2 (set (mem/v:SI (reg:SI 3 r3 [116]) [3 MEM[(struct TIM_TypeDef *)1073745920B].CR1+0 S4 A64])
+        (reg:SI 2 r2 [orig:114 _4 ] [114])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2015:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [116])
+        (expr_list:REG_DEAD (reg:SI 2 r2 [orig:114 _4 ] [114])
+            (nil))))
+(note 61 17 55 2 (var_location TIMx (nil)) NOTE_INSN_VAR_LOCATION)
+(note 55 61 50 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 50 55 51 2 (simple_return) "../System/periodic_services.c":16:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 51 50 62)
+(code_label 62 51 63 4 (nil) [0 uses])
+(insn 63 62 64 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) 385 {align_4}
+     (nil))
+(code_label 64 63 65 3 (nil) [0 uses])
+(insn 65 64 66 (unspec_volatile [
+            (const_int 1073745920 [0x40001000])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 66 65 67 (unspec_volatile [
+            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 67 66 68 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) 387 {consttable_end}
+     (nil))
+(barrier 68 67 22)
+(note 22 68 23 NOTE_INSN_DELETED)
+(note 23 22 0 NOTE_INSN_DELETED)
+
+;; Function PSERV_enable (PSERV_enable, funcdef_no=614, decl_uid=11012, cgraph_uid=618, symbol_order=623)
+
+Creating trace 0 : start at note 1
+Creating trace 1 : start at note 19
+Creating trace 2 : start at note 23
+Creating trace 3 : start at code_label 29
+Creating trace 4 : start at code_label 31
+Processing trace 0 : start at note 1
+   saw edge from trace 0 to 1 (via fallthru 0)
+	push trace 1 to worklist
+Processing trace 1 : start at note 19
+   saw edge from trace 1 to 2 (via fallthru 0)
+	push trace 2 to worklist
+Processing trace 2 : start at note 23
+
+
+PSERV_enable
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 2 [r2] 3 [r3]
+;;  ref usage 	r0={1d} r1={1d} r2={2d,2u} r3={4d,3u} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 34{26d,8u,0e} in 6{6 regular + 0 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 19 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 19 3 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 19 24 2 NOTE_INSN_FUNCTION_BEG)
+(note 24 2 6 2 ../System/periodic_services.c:20 NOTE_INSN_BEGIN_STMT)
+(insn 6 24 7 2 (set (reg/f:SI 3 r3 [116])
+        (mem:SI (label_ref 31) [0  S4 A32])) "../System/periodic_services.c":20:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(insn 7 6 27 2 (set (reg/f:SI 2 r2 [orig:113 _1 ] [113])
+        (mem/f/c:SI (reg/f:SI 3 r3 [116]) [1 periodic_services.TIM+0 S4 A32])) "../System/periodic_services.c":20:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 3 r3 [116])
+        (nil)))
+(note 27 7 25 2 (var_location TIMx (reg/f:SI 2 r2 [orig:113 _1 ] [113])) NOTE_INSN_VAR_LOCATION)
+(note 25 27 26 2 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h:2046 NOTE_INSN_INLINE_ENTRY)
+(note 26 25 11 2 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h:2048 NOTE_INSN_BEGIN_STMT)
+(insn 11 26 12 2 (set (reg:SI 3 r3 [orig:114 _3 ] [114])
+        (mem/v:SI (reg/f:SI 2 r2 [orig:113 _1 ] [113]) [3 _1->CR1+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2048:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 3 r3 [orig:115 _4 ] [115])
+        (and:SI (reg:SI 3 r3 [orig:114 _3 ] [114])
+            (const_int -3 [0xfffffffffffffffd]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2048:3 90 {*arm_andsi3_insn}
+     (nil))
+(insn 13 12 28 2 (set (mem/v:SI (reg/f:SI 2 r2 [orig:113 _1 ] [113]) [3 _1->CR1+0 S4 A32])
+        (reg:SI 3 r3 [orig:115 _4 ] [115])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2048:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:115 _4 ] [115])
+        (expr_list:REG_DEAD (reg/f:SI 2 r2 [orig:113 _1 ] [113])
+            (nil))))
+(note 28 13 23 2 (var_location TIMx (nil)) NOTE_INSN_VAR_LOCATION)
+(note 23 28 21 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 21 23 22 2 (simple_return) "../System/periodic_services.c":21:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 22 21 29)
+(code_label 29 22 30 7 (nil) [0 uses])
+(insn 30 29 31 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) 385 {align_4}
+     (nil))
+(code_label 31 30 32 6 (nil) [0 uses])
+(insn 32 31 33 (unspec_volatile [
+            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 33 32 34 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) 387 {consttable_end}
+     (nil))
+(barrier 34 33 17)
+(note 17 34 18 NOTE_INSN_DELETED)
+(note 18 17 0 NOTE_INSN_DELETED)
+
+;; Function PSERV_disable (PSERV_disable, funcdef_no=615, decl_uid=11162, cgraph_uid=619, symbol_order=624)
+
+Creating trace 0 : start at note 1
+Creating trace 1 : start at note 19
+Creating trace 2 : start at note 23
+Creating trace 3 : start at code_label 29
+Creating trace 4 : start at code_label 31
+Processing trace 0 : start at note 1
+   saw edge from trace 0 to 1 (via fallthru 0)
+	push trace 1 to worklist
+Processing trace 1 : start at note 19
+   saw edge from trace 1 to 2 (via fallthru 0)
+	push trace 2 to worklist
+Processing trace 2 : start at note 23
+
+
+PSERV_disable
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 2 [r2] 3 [r3]
+;;  ref usage 	r0={1d} r1={1d} r2={2d,2u} r3={4d,3u} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 34{26d,8u,0e} in 6{6 regular + 0 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 19 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 19 3 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 19 24 2 NOTE_INSN_FUNCTION_BEG)
+(note 24 2 6 2 ../System/periodic_services.c:25 NOTE_INSN_BEGIN_STMT)
+(insn 6 24 7 2 (set (reg/f:SI 3 r3 [116])
+        (mem:SI (label_ref 31) [0  S4 A32])) "../System/periodic_services.c":25:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(insn 7 6 27 2 (set (reg/f:SI 2 r2 [orig:113 _1 ] [113])
+        (mem/f/c:SI (reg/f:SI 3 r3 [116]) [1 periodic_services.TIM+0 S4 A32])) "../System/periodic_services.c":25:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 3 r3 [116])
+        (nil)))
+(note 27 7 25 2 (var_location TIMx (reg/f:SI 2 r2 [orig:113 _1 ] [113])) NOTE_INSN_VAR_LOCATION)
+(note 25 27 26 2 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h:2057 NOTE_INSN_INLINE_ENTRY)
+(note 26 25 11 2 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h:2059 NOTE_INSN_BEGIN_STMT)
+(insn 11 26 12 2 (set (reg:SI 3 r3 [orig:114 _3 ] [114])
+        (mem/v:SI (reg/f:SI 2 r2 [orig:113 _1 ] [113]) [3 _1->CR1+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2059:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 3 r3 [orig:115 _4 ] [115])
+        (ior:SI (reg:SI 3 r3 [orig:114 _3 ] [114])
+            (const_int 2 [0x2]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2059:3 106 {*iorsi3_insn}
+     (nil))
+(insn 13 12 28 2 (set (mem/v:SI (reg/f:SI 2 r2 [orig:113 _1 ] [113]) [3 _1->CR1+0 S4 A32])
+        (reg:SI 3 r3 [orig:115 _4 ] [115])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2059:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:115 _4 ] [115])
+        (expr_list:REG_DEAD (reg/f:SI 2 r2 [orig:113 _1 ] [113])
+            (nil))))
+(note 28 13 23 2 (var_location TIMx (nil)) NOTE_INSN_VAR_LOCATION)
+(note 23 28 21 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 21 23 22 2 (simple_return) "../System/periodic_services.c":26:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 22 21 29)
+(code_label 29 22 30 10 (nil) [0 uses])
+(insn 30 29 31 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) 385 {align_4}
+     (nil))
+(code_label 31 30 32 9 (nil) [0 uses])
+(insn 32 31 33 (unspec_volatile [
+            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 33 32 34 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) 387 {consttable_end}
+     (nil))
+(barrier 34 33 17)
+(note 17 34 18 NOTE_INSN_DELETED)
+(note 18 17 0 NOTE_INSN_DELETED)
+
+;; Function PSERV_run_services_Callback (PSERV_run_services_Callback, funcdef_no=616, decl_uid=11008, cgraph_uid=620, symbol_order=625)
+
+Creating trace 0 : start at note 1
+Creating trace 1 : start at note 11
+Processing trace 0 : start at note 1
+   saw edge from trace 0 to 1 (via fallthru 0)
+	push trace 1 to worklist
+Processing trace 1 : start at note 11
+
+
+PSERV_run_services_Callback
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 12 [ip] 13 [sp]
+;;  ref usage 	r0={2d} r1={2d} r2={2d} r3={2d} r12={2d} r13={1d,3u} r14={1d,1u} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 106{102d,4u,0e} in 1{0 regular + 1 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 11 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 11 3 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 11 14 2 NOTE_INSN_FUNCTION_BEG)
+(note 14 2 6 2 ../System/periodic_services.c:30 NOTE_INSN_BEGIN_STMT)
+(call_insn/j 6 14 7 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("KBD_demo_toggle_LEDs_if_buttons_pressed") [flags 0x41]  <function_decl 0000000005dbcf00 KBD_demo_toggle_LEDs_if_buttons_pressed>) [0 KBD_demo_toggle_LEDs_if_buttons_pressed S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../System/periodic_services.c":30:2 292 {*sibcall_insn}
+     (expr_list:REG_CALL_ARG_LOCATION (nil)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("KBD_demo_toggle_LEDs_if_buttons_pressed") [flags 0x41]  <function_decl 0000000005dbcf00 KBD_demo_toggle_LEDs_if_buttons_pressed>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(barrier 7 6 10)
+(note 10 7 0 NOTE_INSN_DELETED)

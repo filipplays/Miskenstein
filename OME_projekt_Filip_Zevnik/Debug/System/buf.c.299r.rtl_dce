@@ -1,0 +1,3121 @@
+
+;; Function BUF_init (BUF_init, funcdef_no=0, decl_uid=5700, cgraph_uid=1, symbol_order=0)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+
+BUF_init
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3]
+;;  ref usage 	r0={1d,7u} r1={1d,1u} r2={1d,2u} r3={2d,3u} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 39{23d,16u,0e} in 13{13 regular + 0 call} insns.
+
+( )->[0]->( 2 )
+;; bb 0 artificial_defs: { d-1(0){ }d-1(1){ }d-1(2){ }d-1(3){ }d-1(13){ }d-1(14){ }d-1(16){ }d-1(17){ }d-1(18){ }d-1(19){ }d-1(20){ }d-1(21){ }d-1(22){ }d-1(23){ }d-1(24){ }d-1(25){ }d-1(26){ }d-1(27){ }d-1(28){ }d-1(29){ }d-1(30){ }d-1(31){ }}
+;; bb 0 artificial_uses: { }
+;; lr  in  	
+;; lr  use 	
+;; lr  def 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;; live  in  	
+;; live  gen 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;; live  kill	
+;; lr  out 	 0 [r0] 1 [r1] 2 [r2] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 1 [r1] 2 [r2] 13 [sp] 14 [lr]
+
+( 0 )->[2]->( 1 )
+;; bb 2 artificial_defs: { }
+;; bb 2 artificial_uses: { u-1(13){ }}
+;; lr  in  	 0 [r0] 1 [r1] 2 [r2] 13 [sp] 14 [lr]
+;; lr  use 	 0 [r0] 1 [r1] 2 [r2] 13 [sp]
+;; lr  def 	 3 [r3]
+;; live  in  	 0 [r0] 1 [r1] 2 [r2] 13 [sp] 14 [lr]
+;; live  gen 	 3 [r3]
+;; live  kill	
+;; lr  out 	 13 [sp] 14 [lr]
+;; live  out 	 13 [sp] 14 [lr]
+
+( 2 )->[1]->( )
+;; bb 1 artificial_defs: { }
+;; bb 1 artificial_uses: { u-1(13){ }u-1(14){ }}
+;; lr  in  	 13 [sp] 14 [lr]
+;; lr  use 	 13 [sp] 14 [lr]
+;; lr  def 	
+;; live  in  	 13 [sp] 14 [lr]
+;; live  gen 	
+;; live  kill	
+;; lr  out 	
+;; live  out 	
+
+Finding needed instructions:
+  Adding insn 60 to worklist
+  Adding insn 66 to worklist
+  Adding insn 65 to worklist
+  Adding insn 64 to worklist
+Finished finding needed instructions:
+processing block 2 lr out =  13 [sp] 14 [lr]
+  Adding insn 16 to worklist
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+BUF_init
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3]
+;;  ref usage 	r0={1d,7u} r1={1d,1u} r2={1d,2u} r3={2d,3u} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 39{23d,16u,0e} in 13{13 regular + 0 call} insns.
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 58 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 58 6 3 2 NOTE_INSN_PROLOGUE_END)
+(note 3 58 5 2 NOTE_INSN_DELETED)
+(note 5 3 8 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 8 5 16 2 (debug_marker) "../System/buf.c":36:2 -1
+     (nil))
+(insn 16 8 64 2 (set (reg:SI 3 r3 [116])
+        (const_int 0 [0])) "../System/buf.c":47:20 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 0 [0])
+        (nil)))
+(insn 64 16 12 2 (parallel [
+            (set (mem/f:SI (reg/v/f:SI 0 r0 [orig:113 buf_handle ] [113]) [3 buf_handle_2(D)->buffer+0 S4 A32])
+                (reg:SI 1 r1 [120]))
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:113 buf_handle ] [113])
+                        (const_int 4 [0x4])) [1 buf_handle_2(D)->length+0 S4 A32])
+                (reg/v:SI 2 r2 [orig:115 buf_length ] [115]))
+        ]) "../System/buf.c":37:21 413 {*thumb2_strd_base}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [120])
+        (nil)))
+(debug_insn 12 64 13 2 (debug_marker) "../System/buf.c":41:2 -1
+     (nil))
+(debug_insn 13 12 14 2 (var_location:SI buf_handle (reg/v/f:SI 0 r0 [orig:113 buf_handle ] [113])) "../System/buf.c":41:2 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker:BLK) "../System/buf.c":45:18 -1
+     (nil))
+(debug_insn 15 14 65 2 (debug_marker) "../System/buf.c":47:2 -1
+     (nil))
+(insn 65 15 21 2 (parallel [
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:113 buf_handle ] [113])
+                        (const_int 8 [0x8])) [1 buf_handle_2(D)->rear+0 S4 A32])
+                (reg:SI 3 r3 [116]))
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:113 buf_handle ] [113])
+                        (const_int 12 [0xc])) [1 buf_handle_2(D)->front+0 S4 A32])
+                (reg:SI 3 r3 [116]))
+        ]) "../System/buf.c":48:19 412 {*thumb2_strd}
+     (nil))
+(debug_insn 21 65 66 2 (debug_marker) "../System/buf.c":49:2 -1
+     (nil))
+(insn 66 21 26 2 (parallel [
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:113 buf_handle ] [113])
+                        (const_int 16 [0x10])) [1 buf_handle_2(D)->data_size+0 S4 A32])
+                (reg:SI 3 r3 [116]))
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:113 buf_handle ] [113])
+                        (const_int 20 [0x14])) [1 buf_handle_2(D)->free_size+0 S4 A32])
+                (reg/v:SI 2 r2 [orig:115 buf_length ] [115]))
+        ]) "../System/buf.c":50:24 412 {*thumb2_strd}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [116])
+        (expr_list:REG_DEAD (reg/v:SI 2 r2 [orig:115 buf_length ] [115])
+            (expr_list:REG_DEAD (reg/v/f:SI 0 r0 [orig:113 buf_handle ] [113])
+                (nil)))))
+(debug_insn 26 66 27 2 (debug_marker) "../System/buf.c":52:2 -1
+     (nil))
+(debug_insn 27 26 59 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) "../System/buf.c":41:2 -1
+     (nil))
+(note 59 27 60 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 60 59 61 2 (simple_return) "../System/buf.c":42:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 61 60 33)
+(note 33 61 34 NOTE_INSN_DELETED)
+(note 34 33 0 NOTE_INSN_DELETED)
+
+;; Function BUF_flush (BUF_flush, funcdef_no=1, decl_uid=5702, cgraph_uid=2, symbol_order=1)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+
+BUF_flush
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 2 [r2] 3 [r3]
+;;  ref usage 	r0={2d,7u,1e} r1={1d} r2={2d,1u} r3={2d,4u} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 41{25d,15u,1e} in 10{10 regular + 0 call} insns.
+
+( )->[0]->( 2 )
+;; bb 0 artificial_defs: { d-1(0){ }d-1(1){ }d-1(2){ }d-1(3){ }d-1(13){ }d-1(14){ }d-1(16){ }d-1(17){ }d-1(18){ }d-1(19){ }d-1(20){ }d-1(21){ }d-1(22){ }d-1(23){ }d-1(24){ }d-1(25){ }d-1(26){ }d-1(27){ }d-1(28){ }d-1(29){ }d-1(30){ }d-1(31){ }}
+;; bb 0 artificial_uses: { }
+;; lr  in  	
+;; lr  use 	
+;; lr  def 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;; live  in  	
+;; live  gen 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;; live  kill	
+;; lr  out 	 0 [r0] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 13 [sp] 14 [lr]
+
+( 0 )->[2]->( 1 )
+;; bb 2 artificial_defs: { }
+;; bb 2 artificial_uses: { u-1(13){ }}
+;; lr  in  	 0 [r0] 13 [sp] 14 [lr]
+;; lr  use 	 0 [r0] 13 [sp]
+;; lr  def 	 0 [r0] 2 [r2] 3 [r3]
+;; live  in  	 0 [r0] 13 [sp] 14 [lr]
+;; live  gen 	 0 [r0] 2 [r2] 3 [r3]
+;; live  kill	
+;; lr  out 	 0 [r0] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 13 [sp] 14 [lr]
+
+( 2 )->[1]->( )
+;; bb 1 artificial_defs: { }
+;; bb 1 artificial_uses: { u-1(0){ }u-1(13){ }u-1(14){ }}
+;; lr  in  	 0 [r0] 13 [sp] 14 [lr]
+;; lr  use 	 0 [r0] 13 [sp] 14 [lr]
+;; lr  def 	
+;; live  in  	 0 [r0] 13 [sp] 14 [lr]
+;; live  gen 	
+;; live  kill	
+;; lr  out 	
+;; live  out 	
+
+Finding needed instructions:
+  Adding insn 31 to worklist
+  Adding insn 24 to worklist
+  Adding insn 34 to worklist
+  Adding insn 33 to worklist
+Finished finding needed instructions:
+processing block 2 lr out =  0 [r0] 13 [sp] 14 [lr]
+  Adding insn 23 to worklist
+  Adding insn 16 to worklist
+  Adding insn 7 to worklist
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+BUF_flush
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 2 [r2] 3 [r3]
+;;  ref usage 	r0={2d,7u,1e} r1={1d} r2={2d,1u} r3={2d,4u} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 41{25d,15u,1e} in 10{10 regular + 0 call} insns.
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 29 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 29 4 3 2 NOTE_INSN_PROLOGUE_END)
+(note 3 29 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../System/buf.c":47:2 -1
+     (nil))
+(insn 7 6 16 2 (set (reg:SI 3 r3 [116])
+        (const_int 0 [0])) "../System/buf.c":47:20 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 0 [0])
+        (nil)))
+(insn 16 7 33 2 (set (reg:SI 2 r2 [orig:119 buf_handle_3(D)->length ] [119])
+        (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:115 buf_handle ] [115])
+                (const_int 4 [0x4])) [1 buf_handle_3(D)->length+0 S4 A32])) "../System/buf.c":50:24 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:115 buf_handle ] [115])
+                (const_int 4 [0x4])) [1 buf_handle_3(D)->length+0 S4 A32])
+        (nil)))
+(insn 33 16 12 2 (parallel [
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:115 buf_handle ] [115])
+                        (const_int 8 [0x8])) [1 buf_handle_3(D)->rear+0 S4 A32])
+                (reg:SI 3 r3 [116]))
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:115 buf_handle ] [115])
+                        (const_int 12 [0xc])) [1 buf_handle_3(D)->front+0 S4 A32])
+                (reg:SI 3 r3 [116]))
+        ]) "../System/buf.c":48:19 412 {*thumb2_strd}
+     (nil))
+(debug_insn 12 33 34 2 (debug_marker) "../System/buf.c":49:2 -1
+     (nil))
+(insn 34 12 18 2 (parallel [
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:115 buf_handle ] [115])
+                        (const_int 16 [0x10])) [1 buf_handle_3(D)->data_size+0 S4 A32])
+                (reg:SI 3 r3 [116]))
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:115 buf_handle ] [115])
+                        (const_int 20 [0x14])) [1 buf_handle_3(D)->free_size+0 S4 A32])
+                (reg:SI 2 r2 [orig:119 buf_handle_3(D)->length ] [119]))
+        ]) "../System/buf.c":50:24 412 {*thumb2_strd}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:119 buf_handle_3(D)->length ] [119])
+        (expr_list:REG_DEAD (reg/v/f:SI 0 r0 [orig:115 buf_handle ] [115])
+            (nil))))
+(debug_insn 18 34 23 2 (debug_marker) "../System/buf.c":52:2 -1
+     (nil))
+(insn 23 18 24 2 (set (reg/i:SI 0 r0)
+        (reg:SI 3 r3 [116])) "../System/buf.c":53:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [116])
+        (expr_list:REG_EQUAL (const_int 0 [0])
+            (nil))))
+(insn 24 23 30 2 (use (reg/i:SI 0 r0)) "../System/buf.c":53:1 -1
+     (nil))
+(note 30 24 31 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 31 30 32 2 (simple_return) "../System/buf.c":53:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 32 31 27)
+(note 27 32 28 NOTE_INSN_DELETED)
+(note 28 27 0 NOTE_INSN_DELETED)
+
+;; Function BUF_store_byte (BUF_store_byte, funcdef_no=2, decl_uid=5705, cgraph_uid=3, symbol_order=2)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+
+BUF_store_byte
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 4 [r4] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 13 [sp] 100 [cc]
+;;  ref usage 	r0={4d,8u} r1={3d,4u} r2={7d,11u} r3={2d,10u,2e} r4={3d,3u} r13={3d,10u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={3d,2u} 
+;;    total ref usage 93{42d,49u,2e} in 41{41 regular + 0 call} insns.
+
+( )->[0]->( 2 )
+;; bb 0 artificial_defs: { d-1(0){ }d-1(1){ }d-1(2){ }d-1(3){ }d-1(4){ }d-1(13){ }d-1(14){ }d-1(16){ }d-1(17){ }d-1(18){ }d-1(19){ }d-1(20){ }d-1(21){ }d-1(22){ }d-1(23){ }d-1(24){ }d-1(25){ }d-1(26){ }d-1(27){ }d-1(28){ }d-1(29){ }d-1(30){ }d-1(31){ }}
+;; bb 0 artificial_uses: { }
+;; lr  in  	
+;; lr  use 	
+;; lr  def 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;; live  in  	
+;; live  gen 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;; live  kill	
+;; lr  out 	 0 [r0] 1 [r1] 4 [r4] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 1 [r1] 4 [r4] 13 [sp] 14 [lr]
+
+( 0 )->[2]->( 9 3 )
+;; bb 2 artificial_defs: { }
+;; bb 2 artificial_uses: { u-1(13){ }}
+;; lr  in  	 0 [r0] 1 [r1] 4 [r4] 13 [sp] 14 [lr]
+;; lr  use 	 0 [r0] 13 [sp]
+;; lr  def 	 0 [r0] 2 [r2] 3 [r3] 100 [cc]
+;; live  in  	 0 [r0] 1 [r1] 4 [r4] 13 [sp] 14 [lr]
+;; live  gen 	 0 [r0] 2 [r2] 3 [r3] 100 [cc]
+;; live  kill	
+;; lr  out 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 13 [sp] 14 [lr]
+
+( 2 )->[3]->( 4 5 )
+;; bb 3 artificial_defs: { }
+;; bb 3 artificial_uses: { u-1(13){ }}
+;; lr  in  	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 13 [sp] 14 [lr]
+;; lr  use 	 2 [r2] 4 [r4] 13 [sp]
+;; lr  def 	 13 [sp] 100 [cc]
+;; live  in  	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 13 [sp] 14 [lr]
+;; live  gen 	 13 [sp]
+;; live  kill	 100 [cc]
+;; lr  out 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr]
+
+( 3 )->[4]->( 8 )
+;; bb 4 artificial_defs: { }
+;; bb 4 artificial_uses: { u-1(13){ }}
+;; lr  in  	 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr]
+;; lr  use 	 2 [r2] 3 [r3] 13 [sp]
+;; lr  def 	
+;; live  in  	 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr]
+;; live  gen 	
+;; live  kill	
+;; lr  out 	 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr]
+;; live  out 	 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr]
+
+( 3 )->[5]->( 8 )
+;; bb 5 artificial_defs: { }
+;; bb 5 artificial_uses: { u-1(13){ }}
+;; lr  in  	 0 [r0] 1 [r1] 3 [r3] 13 [sp] 14 [lr]
+;; lr  use 	 0 [r0] 3 [r3] 13 [sp]
+;; lr  def 	 2 [r2] 100 [cc]
+;; live  in  	 0 [r0] 1 [r1] 3 [r3] 13 [sp] 14 [lr]
+;; live  gen 	 2 [r2] 100 [cc]
+;; live  kill	
+;; lr  out 	 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr]
+;; live  out 	 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr]
+
+( 4 5 )->[8]->( 1 )
+;; bb 8 artificial_defs: { }
+;; bb 8 artificial_uses: { u-1(13){ }}
+;; lr  in  	 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr]
+;; lr  use 	 1 [r1] 2 [r2] 3 [r3] 13 [sp]
+;; lr  def 	 0 [r0] 1 [r1] 2 [r2] 4 [r4] 13 [sp]
+;; live  in  	 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr]
+;; live  gen 	 0 [r0] 1 [r1] 2 [r2] 4 [r4] 13 [sp]
+;; live  kill	
+;; lr  out 	 0 [r0] 4 [r4] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 4 [r4] 13 [sp] 14 [lr]
+
+( 2 )->[9]->( 1 )
+;; bb 9 artificial_defs: { }
+;; bb 9 artificial_uses: { u-1(13){ }}
+;; lr  in  	 4 [r4] 13 [sp] 14 [lr]
+;; lr  use 	 13 [sp]
+;; lr  def 	 0 [r0]
+;; live  in  	 4 [r4] 13 [sp] 14 [lr]
+;; live  gen 	 0 [r0]
+;; live  kill	
+;; lr  out 	 0 [r0] 4 [r4] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 4 [r4] 13 [sp] 14 [lr]
+
+( 8 9 )->[1]->( )
+;; bb 1 artificial_defs: { }
+;; bb 1 artificial_uses: { u-1(0){ }u-1(4){ }u-1(13){ }u-1(14){ }}
+;; lr  in  	 0 [r0] 4 [r4] 13 [sp] 14 [lr]
+;; lr  use 	 0 [r0] 4 [r4] 13 [sp] 14 [lr]
+;; lr  def 	
+;; live  in  	 0 [r0] 4 [r4] 13 [sp] 14 [lr]
+;; live  gen 	
+;; live  kill	
+;; lr  out 	
+;; live  out 	
+
+Finding needed instructions:
+  Adding insn 14 to worklist
+  Adding insn 18 to worklist
+  Adding insn 90 to worklist
+  Adding insn 81 to worklist
+  Adding insn 121 to worklist
+  Adding insn 44 to worklist
+  Adding insn 94 to worklist
+  Adding insn 72 to worklist
+  Adding insn 120 to worklist
+  Adding insn 53 to worklist
+  Adding insn 103 to worklist
+  Adding insn 98 to worklist
+Finished finding needed instructions:
+processing block 9 lr out =  0 [r0] 4 [r4] 13 [sp] 14 [lr]
+  Adding insn 7 to worklist
+processing block 8 lr out =  0 [r0] 4 [r4] 13 [sp] 14 [lr]
+  Adding insn 93 to worklist
+  Adding insn 60 to worklist
+  Adding insn 56 to worklist
+  Adding insn 119 to worklist
+  Adding insn 89 to worklist
+  Adding insn 6 to worklist
+processing block 4 lr out =  1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr]
+processing block 5 lr out =  1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr]
+  Adding insn 43 to worklist
+  Adding insn 34 to worklist
+  Adding insn 32 to worklist
+  Adding insn 31 to worklist
+processing block 3 lr out =  0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr]
+processing block 2 lr out =  0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 13 [sp] 14 [lr]
+  Adding insn 13 to worklist
+  Adding insn 12 to worklist
+  Adding insn 11 to worklist
+  Adding insn 2 to worklist
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+BUF_store_byte
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 4 [r4] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 13 [sp] 100 [cc]
+;;  ref usage 	r0={4d,8u} r1={3d,4u} r2={7d,11u} r3={2d,10u,2e} r4={3d,3u} r13={3d,10u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={3d,2u} 
+;;    total ref usage 93{42d,49u,2e} in 41{41 regular + 0 call} insns.
+(note 1 0 8 NOTE_INSN_DELETED)
+(note 8 1 4 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 4 8 10 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 10 4 2 2 (debug_marker) "../System/buf.c":62:2 -1
+     (nil))
+(insn 2 10 11 2 (set (reg/v/f:SI 3 r3 [orig:123 buf_handle ] [123])
+        (reg:SI 0 r0 [136])) "../System/buf.c":60:1 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 11 2 12 2 (set (reg:SI 2 r2 [orig:113 _1 ] [113])
+        (mem:SI (plus:SI (reg/f:SI 0 r0 [orig:123 buf_handle ] [123])
+                (const_int 16 [0x10])) [1 buf_handle_11(D)->data_size+0 S4 A32])) "../System/buf.c":62:16 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 0 r0 [orig:114 _2 ] [114])
+        (mem:SI (plus:SI (reg/f:SI 0 r0 [orig:123 buf_handle ] [123])
+                (const_int 4 [0x4])) [1 buf_handle_11(D)->length+0 S4 A32])) "../System/buf.c":62:41 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 13 12 14 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 2 r2 [orig:113 _1 ] [113])
+            (reg:SI 0 r0 [orig:114 _2 ] [114]))) "../System/buf.c":62:5 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 14 13 15 2 (set (pc)
+        (if_then_else (geu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 77)
+            (pc))) "../System/buf.c":62:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 77)
+(note 15 14 90 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn/f 90 15 91 3 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -4 [0xfffffffffffffffc]))) [4  A8])
+                (unspec:BLK [
+                        (reg:SI 4 r4)
+                    ] UNSPEC_PUSH_MULT))
+        ]) "../System/buf.c":60:1 378 {*push_multi}
+     (expr_list:REG_DEAD (reg:SI 4 r4)
+        (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                    (set/f (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -4 [0xfffffffffffffffc])))
+                    (set/f (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32])
+                        (reg:SI 4 r4))
+                ])
+            (nil))))
+(note 91 90 17 3 NOTE_INSN_PROLOGUE_END)
+(note 17 91 16 3 NOTE_INSN_DELETED)
+(debug_insn 16 17 18 3 (debug_marker) "../System/buf.c":69:3 -1
+     (nil))
+(jump_insn 18 16 19 3 (parallel [
+            (set (pc)
+                (if_then_else (ne (reg:SI 2 r2 [orig:113 _1 ] [113])
+                        (const_int 0 [0]))
+                    (label_ref 28)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":69:6 1025 {*thumb2_cbnz}
+     (expr_list:REG_UNUSED (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 28)
+(note 19 18 20 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 20 19 121 4 (debug_marker) "../System/buf.c":71:4 -1
+     (nil))
+(insn 121 20 81 4 (parallel [
+            (set (mem:SI (plus:SI (reg/v/f:SI 3 r3 [orig:123 buf_handle ] [123])
+                        (const_int 8 [0x8])) [1 buf_handle_11(D)->rear+0 S4 A32])
+                (reg:SI 2 r2 [orig:113 _1 ] [113]))
+            (set (mem:SI (plus:SI (reg/v/f:SI 3 r3 [orig:123 buf_handle ] [123])
+                        (const_int 12 [0xc])) [1 buf_handle_11(D)->front+0 S4 A32])
+                (reg:SI 2 r2 [orig:113 _1 ] [113]))
+        ]) "../System/buf.c":72:21 412 {*thumb2_strd}
+     (nil))
+(jump_insn 81 121 82 4 (set (pc)
+        (label_ref 45)) 284 {*arm_jump}
+     (nil)
+ -> 45)
+(barrier 82 81 28)
+(code_label 28 82 29 5 6 (nil) [1 uses])
+(note 29 28 30 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 30 29 31 5 (debug_marker) "../System/buf.c":77:4 -1
+     (nil))
+(insn 31 30 32 5 (set (reg:SI 2 r2 [orig:127 buf_handle_11(D)->rear ] [127])
+        (mem:SI (plus:SI (reg/v/f:SI 3 r3 [orig:123 buf_handle ] [123])
+                (const_int 8 [0x8])) [1 buf_handle_11(D)->rear+0 S4 A32])) "../System/buf.c":77:20 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 3 r3 [orig:123 buf_handle ] [123])
+                (const_int 8 [0x8])) [1 buf_handle_11(D)->rear+0 S4 A32])
+        (nil)))
+(insn 32 31 33 5 (set (reg:SI 2 r2 [orig:113 _1 ] [113])
+        (plus:SI (reg:SI 2 r2 [orig:127 buf_handle_11(D)->rear ] [127])
+            (const_int 1 [0x1]))) "../System/buf.c":77:20 7 {*arm_addsi3}
+     (nil))
+(debug_insn 33 32 34 5 (debug_marker) "../System/buf.c":79:4 -1
+     (nil))
+(insn 34 33 42 5 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 0 r0 [orig:114 _2 ] [114])
+            (reg:SI 2 r2 [orig:113 _1 ] [113]))) "../System/buf.c":79:7 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [orig:114 _2 ] [114])
+        (nil)))
+(debug_insn 42 34 43 5 (debug_marker) "../System/buf.c":81:5 -1
+     (nil))
+(insn 43 42 44 5 (cond_exec (leu (reg:CC 100 cc)
+            (const_int 0 [0]))
+        (set (reg:SI 2 r2 [128])
+            (const_int 0 [0]))) "../System/buf.c":81:22 6567 {*p *thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (expr_list:REG_EQUIV (const_int 0 [0])
+            (nil))))
+(insn 44 43 45 5 (set (mem:SI (plus:SI (reg/v/f:SI 3 r3 [orig:123 buf_handle ] [123])
+                (const_int 8 [0x8])) [1 buf_handle_11(D)->rear+0 S4 A32])
+        (reg:SI 2 r2 [128])) "../System/buf.c":81:22 728 {*thumb2_movsi_vfp}
+     (nil))
+(code_label 45 44 46 8 7 (nil) [1 uses])
+(note 46 45 47 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 47 46 48 8 (var_location:SI buf_handle (reg/v/f:SI 3 r3 [orig:123 buf_handle ] [123])) -1
+     (nil))
+(debug_insn 48 47 49 8 (var_location:QI data (reg:QI 1 r1 [orig:124 data ] [124])) -1
+     (nil))
+(debug_insn 49 48 50 8 (debug_marker:BLK) "../System/buf.c":59:18 -1
+     (nil))
+(debug_insn 50 49 51 8 (debug_marker) "../System/buf.c":87:3 -1
+     (nil))
+(note 51 50 6 8 NOTE_INSN_DELETED)
+(insn 6 51 89 8 (set (reg:SI 0 r0 [orig:122 <retval> ] [122])
+        (const_int 0 [0])) "../System/buf.c":91:24 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(insn 89 6 53 8 (set (reg:SI 4 r4 [139])
+        (mem/f:SI (reg/v/f:SI 3 r3 [orig:123 buf_handle ] [123]) [3 buf_handle_11(D)->buffer+0 S4 A32])) "../System/buf.c":87:40 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 53 89 54 8 (set (mem:QI (plus:SI (reg:SI 4 r4 [139])
+                (reg:SI 2 r2 [orig:113 _1 ] [113])) [0 *_19+0 S1 A8])
+        (reg:QI 1 r1 [orig:124 data ] [124])) "../System/buf.c":87:40 263 {*arm_movqi_insn}
+     (expr_list:REG_DEAD (reg:SI 4 r4 [139])
+        (expr_list:REG_DEAD (reg:SI 2 r2 [orig:113 _1 ] [113])
+            (expr_list:REG_DEAD (reg:QI 1 r1 [orig:124 data ] [124])
+                (nil)))))
+(debug_insn 54 53 119 8 (debug_marker) "../System/buf.c":90:3 -1
+     (nil))
+(insn 119 54 56 8 (parallel [
+            (set (reg:SI 1 r1 [orig:132 buf_handle_11(D)->data_size ] [132])
+                (mem:SI (plus:SI (reg/v/f:SI 3 r3 [orig:123 buf_handle ] [123])
+                        (const_int 16 [0x10])) [1 buf_handle_11(D)->data_size+0 S4 A32]))
+            (set (reg:SI 2 r2 [orig:134 buf_handle_11(D)->free_size ] [134])
+                (mem:SI (plus:SI (reg/v/f:SI 3 r3 [orig:123 buf_handle ] [123])
+                        (const_int 20 [0x14])) [1 buf_handle_11(D)->free_size+0 S4 A32]))
+        ]) "../System/buf.c":91:24 409 {*thumb2_ldrd}
+     (nil))
+(insn 56 119 60 8 (set (reg:SI 1 r1 [131])
+        (plus:SI (reg:SI 1 r1 [orig:132 buf_handle_11(D)->data_size ] [132])
+            (const_int 1 [0x1]))) "../System/buf.c":90:24 7 {*arm_addsi3}
+     (nil))
+(insn 60 56 120 8 (set (reg:SI 2 r2 [133])
+        (plus:SI (reg:SI 2 r2 [orig:134 buf_handle_11(D)->free_size ] [134])
+            (const_int -1 [0xffffffffffffffff]))) "../System/buf.c":91:24 7 {*arm_addsi3}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 3 r3 [orig:123 buf_handle ] [123])
+                (const_int 20 [0x14])) [1 buf_handle_11(D)->free_size+0 S4 A32])
+        (nil)))
+(insn 120 60 62 8 (parallel [
+            (set (mem:SI (plus:SI (reg/v/f:SI 3 r3 [orig:123 buf_handle ] [123])
+                        (const_int 16 [0x10])) [1 buf_handle_11(D)->data_size+0 S4 A32])
+                (reg:SI 1 r1 [131]))
+            (set (mem:SI (plus:SI (reg/v/f:SI 3 r3 [orig:123 buf_handle ] [123])
+                        (const_int 20 [0x14])) [1 buf_handle_11(D)->free_size+0 S4 A32])
+                (reg:SI 2 r2 [133]))
+        ]) "../System/buf.c":91:24 412 {*thumb2_strd}
+     (expr_list:REG_DEAD (reg/v/f:SI 3 r3 [orig:123 buf_handle ] [123])
+        (expr_list:REG_DEAD (reg:SI 2 r2 [133])
+            (expr_list:REG_DEAD (reg:SI 1 r1 [131])
+                (nil)))))
+(debug_insn 62 120 63 8 (debug_marker) "../System/buf.c":93:3 -1
+     (nil))
+(debug_insn 63 62 64 8 (var_location:SI buf_handle (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 64 63 72 8 (var_location:QI data (clobber (const_int 0 [0]))) -1
+     (nil))
+(insn 72 64 92 8 (use (reg/i:SI 0 r0)) "../System/buf.c":96:1 -1
+     (nil))
+(note 92 72 93 8 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 93 92 94 8 (set (reg:SI 4 r4)
+        (mem:SI (post_inc:SI (reg/f:SI 13 sp)) [4  S4 A32])) "../System/buf.c":96:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])))
+        (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+            (nil))))
+(jump_insn 94 93 86 8 (simple_return) "../System/buf.c":96:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 86 94 77)
+(code_label 77 86 76 9 9 (nil) [1 uses])
+(note 76 77 7 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 7 76 98 9 (set (reg:SI 0 r0 [orig:122 <retval> ] [122])
+        (const_int 1 [0x1])) "../System/buf.c":64:10 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 1 [0x1])
+        (nil)))
+(insn 98 7 103 9 (use (reg/i:SI 0 r0)) "../System/buf.c":96:1 -1
+     (nil))
+(jump_insn 103 98 102 9 (simple_return) "../System/buf.c":96:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 102 103 87)
+(note 87 102 88 NOTE_INSN_DELETED)
+(note 88 87 0 NOTE_INSN_DELETED)
+
+;; Function BUF_store_bytes (BUF_store_bytes, funcdef_no=3, decl_uid=5709, cgraph_uid=4, symbol_order=3)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+
+BUF_store_bytes
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 4 [r4] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr] 15 [pc] 100 [cc]
+;;  ref usage 	r0={5d,19u,4e} r1={3d,7u} r2={6d,9u} r3={8d,12u} r4={3d,3u} r12={1d,1u} r13={3d,22u} r14={2d,3u} r15={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={6d,6u} 
+;;    total ref usage 140{54d,82u,4e} in 102{102 regular + 0 call} insns.
+
+( )->[0]->( 2 )
+;; bb 0 artificial_defs: { d-1(0){ }d-1(1){ }d-1(2){ }d-1(3){ }d-1(4){ }d-1(13){ }d-1(14){ }d-1(16){ }d-1(17){ }d-1(18){ }d-1(19){ }d-1(20){ }d-1(21){ }d-1(22){ }d-1(23){ }d-1(24){ }d-1(25){ }d-1(26){ }d-1(27){ }d-1(28){ }d-1(29){ }d-1(30){ }d-1(31){ }}
+;; bb 0 artificial_uses: { }
+;; lr  in  	
+;; lr  use 	
+;; lr  def 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;; live  in  	
+;; live  gen 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;; live  kill	
+;; lr  out 	 0 [r0] 1 [r1] 2 [r2] 4 [r4] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 1 [r1] 2 [r2] 4 [r4] 13 [sp] 14 [lr]
+
+( 0 )->[2]->( 15 3 )
+;; bb 2 artificial_defs: { }
+;; bb 2 artificial_uses: { u-1(13){ }}
+;; lr  in  	 0 [r0] 1 [r1] 2 [r2] 4 [r4] 13 [sp] 14 [lr]
+;; lr  use 	 0 [r0] 2 [r2] 13 [sp]
+;; lr  def 	 3 [r3] 100 [cc]
+;; live  in  	 0 [r0] 1 [r1] 2 [r2] 4 [r4] 13 [sp] 14 [lr]
+;; live  gen 	 3 [r3] 100 [cc]
+;; live  kill	
+;; lr  out 	 0 [r0] 1 [r1] 2 [r2] 4 [r4] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 1 [r1] 2 [r2] 4 [r4] 13 [sp] 14 [lr]
+
+( 2 )->[3]->( 6 4 )
+;; bb 3 artificial_defs: { }
+;; bb 3 artificial_uses: { u-1(13){ }}
+;; lr  in  	 0 [r0] 1 [r1] 2 [r2] 4 [r4] 13 [sp] 14 [lr]
+;; lr  use 	 2 [r2] 13 [sp]
+;; lr  def 	 100 [cc]
+;; live  in  	 0 [r0] 1 [r1] 2 [r2] 4 [r4] 13 [sp] 14 [lr]
+;; live  gen 	
+;; live  kill	 100 [cc]
+;; lr  out 	 0 [r0] 1 [r1] 2 [r2] 4 [r4] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 1 [r1] 2 [r2] 4 [r4] 13 [sp] 14 [lr]
+
+( 3 )->[4]->( 18 )
+;; bb 4 artificial_defs: { }
+;; bb 4 artificial_uses: { u-1(13){ }}
+;; lr  in  	 4 [r4] 13 [sp] 14 [lr]
+;; lr  use 	 13 [sp]
+;; lr  def 	
+;; live  in  	 4 [r4] 13 [sp] 14 [lr]
+;; live  gen 	
+;; live  kill	
+;; lr  out 	 4 [r4] 13 [sp] 14 [lr]
+;; live  out 	 4 [r4] 13 [sp] 14 [lr]
+
+( 14 )->[5]->( 17 )
+;; bb 5 artificial_defs: { }
+;; bb 5 artificial_uses: { u-1(13){ }}
+;; lr  in  	 13 [sp] 14 [lr]
+;; lr  use 	 13 [sp]
+;; lr  def 	 0 [r0]
+;; live  in  	 13 [sp] 14 [lr]
+;; live  gen 	 0 [r0]
+;; live  kill	
+;; lr  out 	 0 [r0] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 13 [sp] 14 [lr]
+
+( 3 )->[6]->( 7 )
+;; bb 6 artificial_defs: { }
+;; bb 6 artificial_uses: { u-1(13){ }}
+;; lr  in  	 0 [r0] 1 [r1] 2 [r2] 4 [r4] 13 [sp] 14 [lr]
+;; lr  use 	 0 [r0] 1 [r1] 2 [r2] 4 [r4] 13 [sp] 14 [lr]
+;; lr  def 	 1 [r1] 2 [r2] 3 [r3] 4 [r4] 12 [ip] 13 [sp]
+;; live  in  	 0 [r0] 1 [r1] 2 [r2] 4 [r4] 13 [sp] 14 [lr]
+;; live  gen 	 1 [r1] 2 [r2] 3 [r3] 4 [r4] 12 [ip] 13 [sp]
+;; live  kill	
+;; lr  out 	 0 [r0] 1 [r1] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 1 [r1] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr]
+
+( 6 13 )->[7]->( 16 8 )
+;; bb 7 artificial_defs: { }
+;; bb 7 artificial_uses: { u-1(13){ }}
+;; lr  in  	 0 [r0] 1 [r1] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr]
+;; lr  use 	 0 [r0] 3 [r3] 13 [sp]
+;; lr  def 	 2 [r2] 100 [cc]
+;; live  in  	 0 [r0] 1 [r1] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr]
+;; live  gen 	 2 [r2] 100 [cc]
+;; live  kill	
+;; lr  out 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr]
+
+( 7 )->[8]->( 9 10 )
+;; bb 8 artificial_defs: { }
+;; bb 8 artificial_uses: { u-1(13){ }}
+;; lr  in  	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 12 [ip] 13 [sp]
+;; lr  use 	 1 [r1] 3 [r3] 13 [sp]
+;; lr  def 	 1 [r1] 14 [lr] 100 [cc]
+;; live  in  	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 12 [ip] 13 [sp]
+;; live  gen 	 1 [r1] 14 [lr]
+;; live  kill	 100 [cc]
+;; lr  out 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr]
+
+( 8 )->[9]->( 13 )
+;; bb 9 artificial_defs: { }
+;; bb 9 artificial_uses: { u-1(13){ }}
+;; lr  in  	 0 [r0] 1 [r1] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr]
+;; lr  use 	 0 [r0] 3 [r3] 13 [sp]
+;; lr  def 	
+;; live  in  	 0 [r0] 1 [r1] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr]
+;; live  gen 	
+;; live  kill	
+;; lr  out 	 0 [r0] 1 [r1] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 1 [r1] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr]
+
+( 8 )->[10]->( 13 )
+;; bb 10 artificial_defs: { }
+;; bb 10 artificial_uses: { u-1(13){ }}
+;; lr  in  	 0 [r0] 1 [r1] 2 [r2] 4 [r4] 12 [ip] 13 [sp] 14 [lr]
+;; lr  use 	 0 [r0] 2 [r2] 4 [r4] 13 [sp]
+;; lr  def 	 3 [r3] 100 [cc]
+;; live  in  	 0 [r0] 1 [r1] 2 [r2] 4 [r4] 12 [ip] 13 [sp] 14 [lr]
+;; live  gen 	 3 [r3] 100 [cc]
+;; live  kill	
+;; lr  out 	 0 [r0] 1 [r1] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 1 [r1] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr]
+
+( 9 10 )->[13]->( 7 14 )
+;; bb 13 artificial_defs: { }
+;; bb 13 artificial_uses: { u-1(13){ }}
+;; lr  in  	 0 [r0] 1 [r1] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr]
+;; lr  use 	 0 [r0] 1 [r1] 3 [r3] 12 [ip] 13 [sp] 14 [lr]
+;; lr  def 	 2 [r2] 3 [r3] 100 [cc]
+;; live  in  	 0 [r0] 1 [r1] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr]
+;; live  gen 	 2 [r2] 3 [r3] 100 [cc]
+;; live  kill	
+;; lr  out 	 0 [r0] 1 [r1] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 1 [r1] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr]
+
+( 13 )->[14]->( 5 )
+;; bb 14 artificial_defs: { }
+;; bb 14 artificial_uses: { u-1(13){ }}
+;; lr  in  	 13 [sp] 14 [lr]
+;; lr  use 	 13 [sp]
+;; lr  def 	
+;; live  in  	 13 [sp] 14 [lr]
+;; live  gen 	
+;; live  kill	
+;; lr  out 	 13 [sp] 14 [lr]
+;; live  out 	 13 [sp] 14 [lr]
+
+( 2 )->[15]->( 1 )
+;; bb 15 artificial_defs: { }
+;; bb 15 artificial_uses: { u-1(13){ }}
+;; lr  in  	 4 [r4] 13 [sp] 14 [lr]
+;; lr  use 	 13 [sp]
+;; lr  def 	 0 [r0]
+;; live  in  	 4 [r4] 13 [sp] 14 [lr]
+;; live  gen 	 0 [r0]
+;; live  kill	
+;; lr  out 	 0 [r0] 4 [r4] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 4 [r4] 13 [sp] 14 [lr]
+
+( 7 )->[16]->( 17 )
+;; bb 16 artificial_defs: { }
+;; bb 16 artificial_uses: { u-1(13){ }}
+;; lr  in  	 13 [sp] 14 [lr]
+;; lr  use 	 13 [sp]
+;; lr  def 	 0 [r0]
+;; live  in  	 13 [sp] 14 [lr]
+;; live  gen 	 0 [r0]
+;; live  kill	
+;; lr  out 	 0 [r0] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 13 [sp] 14 [lr]
+
+( 16 5 )->[17]->( 1 )
+;; bb 17 artificial_defs: { }
+;; bb 17 artificial_uses: { u-1(13){ }}
+;; lr  in  	 0 [r0] 13 [sp] 14 [lr]
+;; lr  use 	 0 [r0] 13 [sp]
+;; lr  def 	 4 [r4] 13 [sp] 15 [pc]
+;; live  in  	 0 [r0] 13 [sp] 14 [lr]
+;; live  gen 	 4 [r4] 13 [sp] 15 [pc]
+;; live  kill	
+;; lr  out 	 0 [r0] 4 [r4] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 4 [r4] 13 [sp] 14 [lr]
+
+( 4 )->[18]->( 1 )
+;; bb 18 artificial_defs: { }
+;; bb 18 artificial_uses: { u-1(13){ }}
+;; lr  in  	 4 [r4] 13 [sp] 14 [lr]
+;; lr  use 	 13 [sp]
+;; lr  def 	 0 [r0]
+;; live  in  	 4 [r4] 13 [sp] 14 [lr]
+;; live  gen 	 0 [r0]
+;; live  kill	
+;; lr  out 	 0 [r0] 4 [r4] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 4 [r4] 13 [sp] 14 [lr]
+
+( 17 18 15 )->[1]->( )
+;; bb 1 artificial_defs: { }
+;; bb 1 artificial_uses: { u-1(0){ }u-1(4){ }u-1(13){ }u-1(14){ }}
+;; lr  in  	 0 [r0] 4 [r4] 13 [sp] 14 [lr]
+;; lr  use 	 0 [r0] 4 [r4] 13 [sp] 14 [lr]
+;; lr  def 	
+;; live  in  	 0 [r0] 4 [r4] 13 [sp] 14 [lr]
+;; live  gen 	
+;; live  kill	
+;; lr  out 	
+;; live  out 	
+
+Finding needed instructions:
+  Adding insn 17 to worklist
+  Adding insn 25 to worklist
+  Adding insn 189 to worklist
+  Adding insn 153 to worklist
+  Adding insn 166 to worklist
+  Adding insn 50 to worklist
+  Adding insn 56 to worklist
+  Adding insn 155 to worklist
+  Adding insn 202 to worklist
+  Adding insn 82 to worklist
+  Adding insn 75 to worklist
+  Adding insn 115 to worklist
+  Adding insn 201 to worklist
+  Adding insn 91 to worklist
+  Adding insn 160 to worklist
+  Adding insn 162 to worklist
+  Adding insn 199 to worklist
+  Adding insn 169 to worklist
+  Adding insn 134 to worklist
+  Adding insn 192 to worklist
+  Adding insn 185 to worklist
+Finished finding needed instructions:
+processing block 15 lr out =  0 [r0] 4 [r4] 13 [sp] 14 [lr]
+  Adding insn 7 to worklist
+processing block 17 lr out =  0 [r0] 4 [r4] 13 [sp] 14 [lr]
+processing block 16 lr out =  0 [r0] 13 [sp] 14 [lr]
+  Adding insn 9 to worklist
+processing block 5 lr out =  0 [r0] 13 [sp] 14 [lr]
+  Adding insn 8 to worklist
+processing block 14 lr out =  13 [sp] 14 [lr]
+processing block 13 lr out =  0 [r0] 1 [r1] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr]
+  Adding insn 114 to worklist
+  Adding insn 98 to worklist
+  Adding insn 94 to worklist
+  Adding insn 200 to worklist
+  Adding insn 89 to worklist
+processing block 9 lr out =  0 [r0] 1 [r1] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr]
+processing block 10 lr out =  0 [r0] 1 [r1] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr]
+  Adding insn 148 to worklist
+  Adding insn 72 to worklist
+  Adding insn 70 to worklist
+  Adding insn 69 to worklist
+processing block 8 lr out =  0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr]
+  Adding insn 53 to worklist
+processing block 7 lr out =  0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr]
+  Adding insn 49 to worklist
+  Adding insn 48 to worklist
+processing block 6 lr out =  0 [r0] 1 [r1] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr]
+  Adding insn 81 to worklist
+  Adding insn 34 to worklist
+  Adding insn 32 to worklist
+  Adding insn 31 to worklist
+  Adding insn 33 to worklist
+processing block 18 lr out =  0 [r0] 4 [r4] 13 [sp] 14 [lr]
+  Adding insn 173 to worklist
+processing block 4 lr out =  4 [r4] 13 [sp] 14 [lr]
+processing block 3 lr out =  0 [r0] 1 [r1] 2 [r2] 4 [r4] 13 [sp] 14 [lr]
+processing block 2 lr out =  0 [r0] 1 [r1] 2 [r2] 4 [r4] 13 [sp] 14 [lr]
+  Adding insn 16 to worklist
+  Adding insn 15 to worklist
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+BUF_store_bytes
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 4 [r4] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr] 15 [pc] 100 [cc]
+;;  ref usage 	r0={5d,19u,4e} r1={3d,7u} r2={6d,9u} r3={8d,12u} r4={3d,3u} r12={1d,1u} r13={3d,22u} r14={2d,3u} r15={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={6d,6u} 
+;;    total ref usage 140{54d,82u,4e} in 102{102 regular + 0 call} insns.
+(note 1 0 10 NOTE_INSN_DELETED)
+(note 10 1 5 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 5 10 142 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 142 5 12 2 (var_location:SI D#23 (reg:SI 1 r1 [ data ])) -1
+     (nil))
+(debug_insn 12 142 13 2 (debug_marker) "../System/buf.c":101:2 -1
+     (nil))
+(debug_insn 13 12 14 2 (var_location:QI rtrn_code (const_int 0 [0])) "../System/buf.c":101:19 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker) "../System/buf.c":104:2 -1
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 3 r3 [orig:133 buf_handle_6(D)->free_size ] [133])
+        (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])
+                (const_int 20 [0x14])) [1 buf_handle_6(D)->free_size+0 S4 A32])) "../System/buf.c":104:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])
+                (const_int 20 [0x14])) [1 buf_handle_6(D)->free_size+0 S4 A32])
+        (nil)))
+(insn 16 15 17 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:133 buf_handle_6(D)->free_size ] [133])
+            (reg/v:SI 2 r2 [orig:132 size ] [132]))) "../System/buf.c":104:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:133 buf_handle_6(D)->free_size ] [133])
+        (nil)))
+(jump_insn 17 16 18 2 (set (pc)
+        (if_then_else (ltu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 137)
+            (pc))) "../System/buf.c":104:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 233216732 (nil)))
+ -> 137)
+(note 18 17 24 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 24 18 19 3 NOTE_INSN_DELETED)
+(debug_insn 19 24 20 3 (var_location:SI buf_handle (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 20 19 21 3 (var_location:SI data (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 21 20 22 3 (var_location:SI size (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 22 21 23 3 (var_location:SI i (const_int 0 [0])) -1
+     (nil))
+(debug_insn 23 22 25 3 (debug_marker) "../System/buf.c":111:21 -1
+     (nil))
+(jump_insn 25 23 187 3 (parallel [
+            (set (pc)
+                (if_then_else (ne (reg/v:SI 2 r2 [orig:132 size ] [132])
+                        (const_int 0 [0]))
+                    (label_ref:SI 29)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":111:3 1025 {*thumb2_cbnz}
+     (expr_list:REG_UNUSED (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 1014686028 (nil)))
+ -> 29)
+(note 187 25 189 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 189 187 190 4 (set (pc)
+        (label_ref 188)) 284 {*arm_jump}
+     (nil)
+ -> 188)
+(barrier 190 189 116)
+(code_label 116 190 26 5 23 (nil) [1 uses])
+(note 26 116 8 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 8 26 153 5 (set (reg:SI 0 r0 [orig:129 <retval> ] [129])
+        (const_int 0 [0])) "../System/buf.c":122:10 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(jump_insn 153 8 154 5 (set (pc)
+        (label_ref 120)) 284 {*arm_jump}
+     (nil)
+ -> 120)
+(barrier 154 153 29)
+(code_label 29 154 30 6 18 (nil) [1 uses])
+(note 30 29 166 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn/f 166 30 167 6 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [4  A8])
+                (unspec:BLK [
+                        (reg:SI 4 r4)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 14 lr))
+        ]) "../System/buf.c":100:1 378 {*push_multi}
+     (expr_list:REG_DEAD (reg:SI 4 r4)
+        (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                    (set/f (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8])))
+                    (set/f (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32])
+                        (reg:SI 4 r4))
+                    (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                (const_int 4 [0x4])) [4  S4 A32])
+                        (reg:SI 14 lr))
+                ])
+            (nil))))
+(note 167 166 33 6 NOTE_INSN_PROLOGUE_END)
+(insn 33 167 31 6 (set (reg:SI 2 r2 [134])
+        (plus:SI (reg/v:SI 2 r2 [orig:132 size ] [132])
+            (reg/v/f:SI 1 r1 [orig:131 data ] [131]))) 7 {*arm_addsi3}
+     (nil))
+(insn 31 33 32 6 (set (reg:SI 3 r3 [orig:124 _29 ] [124])
+        (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])
+                (const_int 16 [0x10])) [1 buf_handle_6(D)->data_size+0 S4 A32])) "../System/buf.c":62:16 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 32 31 34 6 (set (reg:SI 1 r1 [orig:127 ivtmp.26 ] [127])
+        (plus:SI (reg/v/f:SI 1 r1 [orig:131 data ] [131])
+            (const_int -1 [0xffffffffffffffff]))) 7 {*arm_addsi3}
+     (nil))
+(insn 34 32 81 6 (set (reg:SI 12 ip [orig:114 _4 ] [114])
+        (plus:SI (reg:SI 2 r2 [134])
+            (const_int -1 [0xffffffffffffffff]))) 7 {*arm_addsi3}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [134])
+        (nil)))
+(insn 81 34 113 6 (set (reg:SI 4 r4 [145])
+        (const_int 0 [0])) "../System/buf.c":81:22 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 0 [0])
+        (nil)))
+(code_label 113 81 35 7 22 (nil) [1 uses])
+(note 35 113 36 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 36 35 37 7 (var_location:SI D#22 (plus:SI (minus:SI (reg:SI 1 r1 [orig:127 ivtmp.26 ] [127])
+            (debug_expr:SI D#23))
+        (const_int 1 [0x1]))) -1
+     (nil))
+(debug_insn 37 36 38 7 (var_location:SI buf_handle (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 38 37 39 7 (var_location:SI data (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 39 38 40 7 (var_location:SI size (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 40 39 41 7 (var_location:SI i (debug_expr:SI D#22)) -1
+     (nil))
+(debug_insn 41 40 42 7 (debug_marker) "../System/buf.c":114:4 -1
+     (nil))
+(debug_insn 42 41 43 7 (var_location:SI D#21 (plus:SI (debug_expr:SI D#23)
+        (debug_expr:SI D#22))) "../System/buf.c":114:47 -1
+     (nil))
+(debug_insn 43 42 44 7 (var_location:QI D#20 (mem:QI (debug_expr:SI D#21) [0 +0 S1 A8])) "../System/buf.c":114:16 -1
+     (nil))
+(debug_insn 44 43 45 7 (var_location:SI buf_handle (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])) "../System/buf.c":114:16 -1
+     (nil))
+(debug_insn 45 44 46 7 (var_location:QI data (debug_expr:QI D#20)) "../System/buf.c":114:16 -1
+     (nil))
+(debug_insn 46 45 47 7 (debug_marker:BLK) "../System/buf.c":59:18 -1
+     (nil))
+(debug_insn 47 46 48 7 (debug_marker) "../System/buf.c":62:2 -1
+     (nil))
+(insn 48 47 49 7 (set (reg:SI 2 r2 [orig:117 _20 ] [117])
+        (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])
+                (const_int 4 [0x4])) [1 buf_handle_6(D)->length+0 S4 A32])) "../System/buf.c":62:41 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 49 48 50 7 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 2 r2 [orig:117 _20 ] [117])
+            (reg:SI 3 r3 [orig:124 _29 ] [124]))) "../System/buf.c":62:5 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 50 49 51 7 (set (pc)
+        (if_then_else (leu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 141)
+            (pc))) "../System/buf.c":62:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 141)
+(note 51 50 55 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(note 55 51 58 8 NOTE_INSN_DELETED)
+(debug_insn 58 55 68 8 (debug_marker) "../System/buf.c":71:4 -1
+     (nil))
+(debug_insn 68 58 53 8 (debug_marker) "../System/buf.c":77:4 -1
+     (nil))
+(insn 53 68 54 8 (set (reg:SI 14 lr [orig:116 _14 ] [116])
+        (zero_extend:SI (mem:QI (pre_inc:SI (reg:SI 1 r1 [orig:127 ivtmp.26 ] [127])) [0 MEM[base: _8, offset: 0B]+0 S1 A8]))) "../System/buf.c":114:16 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_INC (reg:SI 1 r1 [orig:127 ivtmp.26 ] [127])
+        (nil)))
+(debug_insn 54 53 56 8 (debug_marker) "../System/buf.c":69:3 -1
+     (nil))
+(jump_insn 56 54 57 8 (parallel [
+            (set (pc)
+                (if_then_else (ne (reg:SI 3 r3 [orig:124 _29 ] [124])
+                        (const_int 0 [0]))
+                    (label_ref 66)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":69:6 1025 {*thumb2_cbnz}
+     (expr_list:REG_UNUSED (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 66)
+(note 57 56 202 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 202 57 155 9 (parallel [
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])
+                        (const_int 8 [0x8])) [1 buf_handle_6(D)->rear+0 S4 A32])
+                (reg:SI 3 r3 [orig:124 _29 ] [124]))
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])
+                        (const_int 12 [0xc])) [1 buf_handle_6(D)->front+0 S4 A32])
+                (reg:SI 3 r3 [orig:124 _29 ] [124]))
+        ]) "../System/buf.c":72:21 412 {*thumb2_strd}
+     (nil))
+(jump_insn 155 202 156 9 (set (pc)
+        (label_ref 83)) 284 {*arm_jump}
+     (nil)
+ -> 83)
+(barrier 156 155 66)
+(code_label 66 156 67 10 19 (nil) [1 uses])
+(note 67 66 80 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 80 67 69 10 (debug_marker) "../System/buf.c":81:5 -1
+     (nil))
+(insn 69 80 70 10 (set (reg:SI 3 r3 [orig:137 buf_handle_6(D)->rear ] [137])
+        (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])
+                (const_int 8 [0x8])) [1 buf_handle_6(D)->rear+0 S4 A32])) "../System/buf.c":77:20 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])
+                (const_int 8 [0x8])) [1 buf_handle_6(D)->rear+0 S4 A32])
+        (nil)))
+(insn 70 69 71 10 (set (reg:SI 3 r3 [orig:124 _29 ] [124])
+        (plus:SI (reg:SI 3 r3 [orig:137 buf_handle_6(D)->rear ] [137])
+            (const_int 1 [0x1]))) "../System/buf.c":77:20 7 {*arm_addsi3}
+     (nil))
+(debug_insn 71 70 72 10 (debug_marker) "../System/buf.c":79:4 -1
+     (nil))
+(insn 72 71 75 10 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 2 r2 [orig:117 _20 ] [117])
+            (reg:SI 3 r3 [orig:124 _29 ] [124]))) "../System/buf.c":79:7 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:117 _20 ] [117])
+        (nil)))
+(insn 75 72 82 10 (cond_exec (gtu (reg:CC 100 cc)
+            (const_int 0 [0]))
+        (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])
+                    (const_int 8 [0x8])) [1 buf_handle_6(D)->rear+0 S4 A32])
+            (reg:SI 3 r3 [orig:124 _29 ] [124]))) "../System/buf.c":77:20 6567 {*p *thumb2_movsi_vfp}
+     (nil))
+(insn 82 75 148 10 (cond_exec (leu (reg:CC 100 cc)
+            (const_int 0 [0]))
+        (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])
+                    (const_int 8 [0x8])) [1 buf_handle_6(D)->rear+0 S4 A32])
+            (reg:SI 4 r4 [145]))) "../System/buf.c":81:22 6567 {*p *thumb2_movsi_vfp}
+     (nil))
+(insn 148 82 83 10 (cond_exec (leu (reg:CC 100 cc)
+            (const_int 0 [0]))
+        (set (reg:SI 3 r3 [orig:124 _29 ] [124])
+            (const_int 0 [0]))) "../System/buf.c":81:22 6567 {*p *thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (nil)))
+(code_label 83 148 84 13 20 (nil) [1 uses])
+(note 84 83 85 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 85 84 86 13 (var_location:SI buf_handle (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])) -1
+     (nil))
+(debug_insn 86 85 87 13 (var_location:QI data (debug_expr:QI D#20)) -1
+     (nil))
+(debug_insn 87 86 88 13 (debug_marker:BLK) "../System/buf.c":59:18 -1
+     (nil))
+(debug_insn 88 87 89 13 (debug_marker) "../System/buf.c":87:3 -1
+     (nil))
+(insn 89 88 91 13 (set (reg/f:SI 2 r2 [orig:139 buf_handle_6(D)->buffer ] [139])
+        (mem/f:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130]) [3 buf_handle_6(D)->buffer+0 S4 A32])) "../System/buf.c":87:40 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem/f:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130]) [3 buf_handle_6(D)->buffer+0 S4 A32])
+        (nil)))
+(insn 91 89 92 13 (set (mem:QI (plus:SI (reg/f:SI 2 r2 [orig:139 buf_handle_6(D)->buffer ] [139])
+                (reg:SI 3 r3 [orig:124 _29 ] [124])) [0 *_27+0 S1 A8])
+        (reg:QI 14 lr [orig:116 _14 ] [116])) "../System/buf.c":87:40 263 {*arm_movqi_insn}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:124 _29 ] [124])
+        (expr_list:REG_DEAD (reg/f:SI 2 r2 [orig:139 buf_handle_6(D)->buffer ] [139])
+            (nil))))
+(debug_insn 92 91 200 13 (debug_marker) "../System/buf.c":90:3 -1
+     (nil))
+(insn 200 92 94 13 (parallel [
+            (set (reg:SI 3 r3 [orig:141 buf_handle_6(D)->data_size ] [141])
+                (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])
+                        (const_int 16 [0x10])) [1 buf_handle_6(D)->data_size+0 S4 A32]))
+            (set (reg:SI 2 r2 [orig:143 buf_handle_6(D)->free_size ] [143])
+                (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])
+                        (const_int 20 [0x14])) [1 buf_handle_6(D)->free_size+0 S4 A32]))
+        ]) "../System/buf.c":91:24 409 {*thumb2_ldrd}
+     (nil))
+(insn 94 200 98 13 (set (reg:SI 3 r3 [orig:124 _29 ] [124])
+        (plus:SI (reg:SI 3 r3 [orig:141 buf_handle_6(D)->data_size ] [141])
+            (const_int 1 [0x1]))) "../System/buf.c":90:24 7 {*arm_addsi3}
+     (nil))
+(insn 98 94 201 13 (set (reg:SI 2 r2 [142])
+        (plus:SI (reg:SI 2 r2 [orig:143 buf_handle_6(D)->free_size ] [143])
+            (const_int -1 [0xffffffffffffffff]))) "../System/buf.c":91:24 7 {*arm_addsi3}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])
+                (const_int 20 [0x14])) [1 buf_handle_6(D)->free_size+0 S4 A32])
+        (nil)))
+(insn 201 98 100 13 (parallel [
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])
+                        (const_int 16 [0x10])) [1 buf_handle_6(D)->data_size+0 S4 A32])
+                (reg:SI 3 r3 [orig:124 _29 ] [124]))
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])
+                        (const_int 20 [0x14])) [1 buf_handle_6(D)->free_size+0 S4 A32])
+                (reg:SI 2 r2 [142]))
+        ]) "../System/buf.c":91:24 412 {*thumb2_strd}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [142])
+        (nil)))
+(debug_insn 100 201 101 13 (debug_marker) "../System/buf.c":93:3 -1
+     (nil))
+(debug_insn 101 100 102 13 (var_location:SI buf_handle (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 102 101 103 13 (var_location:QI data (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 103 102 104 13 (var_location:SI buf_handle (clobber (const_int 0 [0]))) "../System/buf.c":114:16 -1
+     (nil))
+(debug_insn 104 103 105 13 (var_location:QI data (clobber (const_int 0 [0]))) "../System/buf.c":114:16 -1
+     (nil))
+(debug_insn 105 104 106 13 (var_location:QI rtrn_code (const_int 0 [0])) "../System/buf.c":114:16 -1
+     (nil))
+(debug_insn 106 105 107 13 (debug_marker) "../System/buf.c":117:4 -1
+     (nil))
+(debug_insn 107 106 108 13 (debug_marker) "../System/buf.c":111:29 -1
+     (nil))
+(debug_insn 108 107 109 13 (var_location:SI buf_handle (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 109 108 110 13 (var_location:SI data (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 110 109 111 13 (var_location:SI size (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 111 110 112 13 (var_location:SI i (plus:SI (minus:SI (reg:SI 1 r1 [orig:127 ivtmp.26 ] [127])
+            (debug_expr:SI D#23))
+        (const_int 1 [0x1]))) -1
+     (nil))
+(debug_insn 112 111 114 13 (debug_marker) "../System/buf.c":111:21 -1
+     (nil))
+(insn 114 112 115 13 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 12 ip [orig:114 _4 ] [114])
+            (reg:SI 1 r1 [orig:127 ivtmp.26 ] [127]))) "../System/buf.c":111:3 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 115 114 159 13 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 113)
+            (pc))) "../System/buf.c":111:3 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 1014686028 (nil)))
+ -> 113)
+(note 159 115 160 14 [bb 14] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 160 159 161 14 (set (pc)
+        (label_ref 116)) 284 {*arm_jump}
+     (nil)
+ -> 116)
+(barrier 161 160 137)
+(code_label 137 161 136 15 24 (nil) [1 uses])
+(note 136 137 7 15 [bb 15] NOTE_INSN_BASIC_BLOCK)
+(insn 7 136 199 15 (set (reg:SI 0 r0 [orig:129 <retval> ] [129])
+        (const_int 3 [0x3])) "../System/buf.c":106:10 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 3 [0x3])
+        (nil)))
+(insn 199 7 162 15 (use (reg/i:SI 0 r0)) -1
+     (nil))
+(jump_insn 162 199 163 15 (simple_return) 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 163 162 141)
+(code_label 141 163 140 16 25 (nil) [1 uses])
+(note 140 141 9 16 [bb 16] NOTE_INSN_BASIC_BLOCK)
+(insn 9 140 120 16 (set (reg:SI 0 r0 [orig:129 <retval> ] [129])
+        (const_int 1 [0x1])) "../System/buf.c":64:10 728 {*thumb2_movsi_vfp}
+     (nil))
+(code_label 120 9 121 17 17 (nil) [1 uses])
+(note 121 120 122 17 [bb 17] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 122 121 123 17 (var_location:SI buf_handle (clobber (const_int 0 [0]))) "../System/buf.c":114:16 -1
+     (nil))
+(debug_insn 123 122 124 17 (var_location:QI data (clobber (const_int 0 [0]))) "../System/buf.c":114:16 -1
+     (nil))
+(debug_insn 124 123 125 17 (var_location:SI buf_handle (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 125 124 126 17 (var_location:SI data (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 126 125 127 17 (var_location:SI size (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 127 126 128 17 (var_location:QI rtrn_code (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 128 127 134 17 (var_location:SI i (clobber (const_int 0 [0]))) -1
+     (nil))
+(insn 134 128 168 17 (use (reg/i:SI 0 r0)) "../System/buf.c":124:1 -1
+     (nil))
+(note 168 134 169 17 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 169 168 198 17 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg:SI 4 r4)
+                (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [4  S4 A32]))
+        ]) "../System/buf.c":124:1 381 {*pop_multiple_with_writeback_and_return}
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+            (nil)))
+ -> return)
+(barrier 198 169 164)
+(note 164 198 165 NOTE_INSN_DELETED)
+(note 165 164 188 NOTE_INSN_DELETED)
+(code_label 188 165 175 18 28 (nil) [1 uses])
+(note 175 188 173 18 [bb 18] NOTE_INSN_BASIC_BLOCK)
+(insn 173 175 178 18 (set (reg:SI 0 r0 [orig:129 <retval> ] [129])
+        (const_int 0 [0])) "../System/buf.c":122:10 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(debug_insn 178 173 179 18 (var_location:SI buf_handle (clobber (const_int 0 [0]))) "../System/buf.c":114:16 -1
+     (nil))
+(debug_insn 179 178 180 18 (var_location:QI data (clobber (const_int 0 [0]))) "../System/buf.c":114:16 -1
+     (nil))
+(debug_insn 180 179 181 18 (var_location:SI buf_handle (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 181 180 182 18 (var_location:SI data (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 182 181 183 18 (var_location:SI size (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 183 182 184 18 (var_location:QI rtrn_code (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 184 183 185 18 (var_location:SI i (clobber (const_int 0 [0]))) -1
+     (nil))
+(insn 185 184 192 18 (use (reg/i:SI 0 r0)) "../System/buf.c":124:1 -1
+     (nil))
+(jump_insn 192 185 193 18 (simple_return) "../System/buf.c":124:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 193 192 0)
+
+;; Function BUF_get_byte (BUF_get_byte, funcdef_no=4, decl_uid=5712, cgraph_uid=5, symbol_order=4)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+
+BUF_get_byte
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 100 [cc]
+;;  ref usage 	r0={4d,15u,4e} r1={3d,3u} r2={5d,4u} r3={7d,8u} r13={1d,6u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={2d,1u} 
+;;    total ref usage 81{39d,38u,4e} in 33{33 regular + 0 call} insns.
+
+( )->[0]->( 2 )
+;; bb 0 artificial_defs: { d-1(0){ }d-1(1){ }d-1(2){ }d-1(3){ }d-1(13){ }d-1(14){ }d-1(16){ }d-1(17){ }d-1(18){ }d-1(19){ }d-1(20){ }d-1(21){ }d-1(22){ }d-1(23){ }d-1(24){ }d-1(25){ }d-1(26){ }d-1(27){ }d-1(28){ }d-1(29){ }d-1(30){ }d-1(31){ }}
+;; bb 0 artificial_uses: { }
+;; lr  in  	
+;; lr  use 	
+;; lr  def 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;; live  in  	
+;; live  gen 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;; live  kill	
+;; lr  out 	 0 [r0] 1 [r1] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 1 [r1] 13 [sp] 14 [lr]
+
+( 0 )->[2]->( 5 3 )
+;; bb 2 artificial_defs: { }
+;; bb 2 artificial_uses: { u-1(13){ }}
+;; lr  in  	 0 [r0] 1 [r1] 13 [sp] 14 [lr]
+;; lr  use 	 0 [r0] 13 [sp]
+;; lr  def 	 3 [r3] 100 [cc]
+;; live  in  	 0 [r0] 1 [r1] 13 [sp] 14 [lr]
+;; live  gen 	 3 [r3]
+;; live  kill	 100 [cc]
+;; lr  out 	 0 [r0] 1 [r1] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 1 [r1] 13 [sp] 14 [lr]
+
+( 2 )->[3]->( 4 6 )
+;; bb 3 artificial_defs: { }
+;; bb 3 artificial_uses: { u-1(13){ }}
+;; lr  in  	 0 [r0] 1 [r1] 13 [sp] 14 [lr]
+;; lr  use 	 0 [r0] 1 [r1] 13 [sp]
+;; lr  def 	 1 [r1] 2 [r2] 3 [r3] 100 [cc]
+;; live  in  	 0 [r0] 1 [r1] 13 [sp] 14 [lr]
+;; live  gen 	 1 [r1] 2 [r2] 3 [r3] 100 [cc]
+;; live  kill	
+;; lr  out 	 0 [r0] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 13 [sp] 14 [lr]
+
+( 3 )->[4]->( 1 )
+;; bb 4 artificial_defs: { }
+;; bb 4 artificial_uses: { u-1(13){ }}
+;; lr  in  	 0 [r0] 13 [sp] 14 [lr]
+;; lr  use 	 0 [r0] 13 [sp]
+;; lr  def 	 0 [r0] 3 [r3]
+;; live  in  	 0 [r0] 13 [sp] 14 [lr]
+;; live  gen 	 0 [r0] 3 [r3]
+;; live  kill	
+;; lr  out 	 0 [r0] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 13 [sp] 14 [lr]
+
+( 2 )->[5]->( 1 )
+;; bb 5 artificial_defs: { }
+;; bb 5 artificial_uses: { u-1(13){ }}
+;; lr  in  	 13 [sp] 14 [lr]
+;; lr  use 	 13 [sp]
+;; lr  def 	 0 [r0]
+;; live  in  	 13 [sp] 14 [lr]
+;; live  gen 	 0 [r0]
+;; live  kill	
+;; lr  out 	 0 [r0] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 13 [sp] 14 [lr]
+
+( 3 )->[6]->( 1 )
+;; bb 6 artificial_defs: { }
+;; bb 6 artificial_uses: { u-1(13){ }}
+;; lr  in  	 13 [sp] 14 [lr]
+;; lr  use 	 13 [sp]
+;; lr  def 	 0 [r0]
+;; live  in  	 13 [sp] 14 [lr]
+;; live  gen 	 0 [r0]
+;; live  kill	
+;; lr  out 	 0 [r0] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 13 [sp] 14 [lr]
+
+( 6 4 5 )->[1]->( )
+;; bb 1 artificial_defs: { }
+;; bb 1 artificial_uses: { u-1(0){ }u-1(13){ }u-1(14){ }}
+;; lr  in  	 0 [r0] 13 [sp] 14 [lr]
+;; lr  use 	 0 [r0] 13 [sp] 14 [lr]
+;; lr  def 	
+;; live  in  	 0 [r0] 13 [sp] 14 [lr]
+;; live  gen 	
+;; live  kill	
+;; lr  out 	
+;; live  out 	
+
+Finding needed instructions:
+  Adding insn 13 to worklist
+  Adding insn 36 to worklist
+  Adding insn 32 to worklist
+  Adding insn 74 to worklist
+  Adding insn 20 to worklist
+  Adding insn 60 to worklist
+  Adding insn 71 to worklist
+  Adding insn 40 to worklist
+  Adding insn 62 to worklist
+  Adding insn 72 to worklist
+  Adding insn 69 to worklist
+  Adding insn 48 to worklist
+Finished finding needed instructions:
+processing block 5 lr out =  0 [r0] 13 [sp] 14 [lr]
+  Adding insn 5 to worklist
+processing block 4 lr out =  0 [r0] 13 [sp] 14 [lr]
+  Adding insn 6 to worklist
+  Adding insn 39 to worklist
+processing block 6 lr out =  0 [r0] 13 [sp] 14 [lr]
+  Adding insn 7 to worklist
+processing block 3 lr out =  0 [r0] 13 [sp] 14 [lr]
+  Adding insn 35 to worklist
+  Adding insn 66 to worklist
+  Adding insn 31 to worklist
+  Adding insn 27 to worklist
+  Adding insn 23 to worklist
+  Adding insn 30 to worklist
+  Adding insn 73 to worklist
+  Adding insn 18 to worklist
+  Adding insn 16 to worklist
+  Adding insn 17 to worklist
+processing block 2 lr out =  0 [r0] 1 [r1] 13 [sp] 14 [lr]
+  Adding insn 11 to worklist
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+BUF_get_byte
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 100 [cc]
+;;  ref usage 	r0={4d,15u,4e} r1={3d,3u} r2={5d,4u} r3={7d,8u} r13={1d,6u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={2d,1u} 
+;;    total ref usage 81{39d,38u,4e} in 33{33 regular + 0 call} insns.
+(note 1 0 8 NOTE_INSN_DELETED)
+(note 8 1 67 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 67 8 4 2 NOTE_INSN_PROLOGUE_END)
+(note 4 67 12 2 NOTE_INSN_FUNCTION_BEG)
+(note 12 4 10 2 NOTE_INSN_DELETED)
+(debug_insn 10 12 11 2 (debug_marker) "../System/buf.c":136:2 -1
+     (nil))
+(insn 11 10 13 2 (set (reg:SI 3 r3 [orig:128 buf_handle_16(D)->data_size ] [128])
+        (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126])
+                (const_int 16 [0x10])) [1 buf_handle_16(D)->data_size+0 S4 A32])) "../System/buf.c":136:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126])
+                (const_int 16 [0x10])) [1 buf_handle_16(D)->data_size+0 S4 A32])
+        (nil)))
+(jump_insn 13 11 14 2 (parallel [
+            (set (pc)
+                (if_then_else (eq (reg:SI 3 r3 [orig:128 buf_handle_16(D)->data_size ] [128])
+                        (const_int 0 [0]))
+                    (label_ref:SI 53)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":136:5 1024 {*thumb2_cbz}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:128 buf_handle_16(D)->data_size ] [128])
+        (expr_list:REG_UNUSED (reg:CC 100 cc)
+            (int_list:REG_BR_PROB 233216732 (nil))))
+ -> 53)
+(note 14 13 15 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 15 14 17 3 (debug_marker) "../System/buf.c":142:2 -1
+     (nil))
+(insn 17 15 16 3 (set (reg:SI 3 r3 [orig:130 buf_handle_16(D)->front ] [130])
+        (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126])
+                (const_int 12 [0xc])) [1 buf_handle_16(D)->front+0 S4 A32])) "../System/buf.c":142:28 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126])
+                (const_int 12 [0xc])) [1 buf_handle_16(D)->front+0 S4 A32])
+        (nil)))
+(insn 16 17 18 3 (set (reg/f:SI 2 r2 [orig:129 buf_handle_16(D)->buffer ] [129])
+        (mem/f:SI (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126]) [3 buf_handle_16(D)->buffer+0 S4 A32])) "../System/buf.c":142:28 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem/f:SI (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126]) [3 buf_handle_16(D)->buffer+0 S4 A32])
+        (nil)))
+(insn 18 16 20 3 (set (reg:SI 3 r3 [orig:117 _5 ] [117])
+        (zero_extend:SI (mem:QI (plus:SI (reg/f:SI 2 r2 [orig:129 buf_handle_16(D)->buffer ] [129])
+                    (reg:SI 3 r3 [orig:130 buf_handle_16(D)->front ] [130])) [0 *_4+0 S1 A8]))) "../System/buf.c":142:28 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_DEAD (reg/f:SI 2 r2 [orig:129 buf_handle_16(D)->buffer ] [129])
+        (nil)))
+(insn 20 18 21 3 (set (mem:QI (reg/v/f:SI 1 r1 [orig:127 data ] [127]) [0 *data_17(D)+0 S1 A8])
+        (reg:QI 3 r3 [orig:117 _5 ] [117])) "../System/buf.c":142:8 263 {*arm_movqi_insn}
+     (expr_list:REG_DEAD (reg:QI 3 r3 [orig:117 _5 ] [117])
+        (expr_list:REG_DEAD (reg/v/f:SI 1 r1 [orig:127 data ] [127])
+            (nil))))
+(debug_insn 21 20 73 3 (debug_marker) "../System/buf.c":145:2 -1
+     (nil))
+(insn 73 21 30 3 (parallel [
+            (set (reg:SI 1 r1 [orig:133 buf_handle_16(D)->data_size ] [133])
+                (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126])
+                        (const_int 16 [0x10])) [1 buf_handle_16(D)->data_size+0 S4 A32]))
+            (set (reg:SI 2 r2 [orig:135 buf_handle_16(D)->free_size ] [135])
+                (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126])
+                        (const_int 20 [0x14])) [1 buf_handle_16(D)->free_size+0 S4 A32]))
+        ]) "../System/buf.c":146:23 409 {*thumb2_ldrd}
+     (nil))
+(insn 30 73 34 3 (set (reg:SI 3 r3 [orig:136 buf_handle_16(D)->front ] [136])
+        (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126])
+                (const_int 12 [0xc])) [1 buf_handle_16(D)->front+0 S4 A32])) "../System/buf.c":151:19 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126])
+                (const_int 12 [0xc])) [1 buf_handle_16(D)->front+0 S4 A32])
+        (nil)))
+(note 34 30 23 3 NOTE_INSN_DELETED)
+(insn 23 34 27 3 (set (reg:SI 1 r1 [132])
+        (plus:SI (reg:SI 1 r1 [orig:133 buf_handle_16(D)->data_size ] [133])
+            (const_int -1 [0xffffffffffffffff]))) "../System/buf.c":145:23 7 {*arm_addsi3}
+     (nil))
+(insn 27 23 31 3 (set (reg:SI 2 r2 [134])
+        (plus:SI (reg:SI 2 r2 [orig:135 buf_handle_16(D)->free_size ] [135])
+            (const_int 1 [0x1]))) "../System/buf.c":146:23 7 {*arm_addsi3}
+     (nil))
+(insn 31 27 74 3 (set (reg:SI 3 r3 [orig:123 _11 ] [123])
+        (plus:SI (reg:SI 3 r3 [orig:136 buf_handle_16(D)->front ] [136])
+            (const_int 1 [0x1]))) "../System/buf.c":151:19 7 {*arm_addsi3}
+     (nil))
+(insn 74 31 29 3 (parallel [
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126])
+                        (const_int 16 [0x10])) [1 buf_handle_16(D)->data_size+0 S4 A32])
+                (reg:SI 1 r1 [132]))
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126])
+                        (const_int 20 [0x14])) [1 buf_handle_16(D)->free_size+0 S4 A32])
+                (reg:SI 2 r2 [134]))
+        ]) "../System/buf.c":146:23 412 {*thumb2_strd}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [134])
+        (expr_list:REG_DEAD (reg:SI 1 r1 [132])
+            (nil))))
+(debug_insn 29 74 32 3 (debug_marker) "../System/buf.c":151:2 -1
+     (nil))
+(insn 32 29 33 3 (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126])
+                (const_int 12 [0xc])) [1 buf_handle_16(D)->front+0 S4 A32])
+        (reg:SI 3 r3 [orig:123 _11 ] [123])) "../System/buf.c":151:19 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 33 32 66 3 (debug_marker) "../System/buf.c":153:2 -1
+     (nil))
+(insn 66 33 35 3 (set (reg:SI 2 r2 [143])
+        (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126])
+                (const_int 4 [0x4])) [1 buf_handle_16(D)->length+0 S4 A32])) "../System/buf.c":153:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 35 66 36 3 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:123 _11 ] [123])
+            (reg:SI 2 r2 [143]))) "../System/buf.c":153:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:123 _11 ] [123])
+        (expr_list:REG_DEAD (reg:SI 2 r2 [143])
+            (nil))))
+(jump_insn 36 35 37 3 (set (pc)
+        (if_then_else (ltu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 57)
+            (pc))) "../System/buf.c":153:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 57)
+(note 37 36 38 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 38 37 39 4 (debug_marker) "../System/buf.c":155:3 -1
+     (nil))
+(insn 39 38 40 4 (set (reg:SI 3 r3 [138])
+        (const_int 0 [0])) "../System/buf.c":155:21 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 0 [0])
+        (nil)))
+(insn 40 39 6 4 (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126])
+                (const_int 12 [0xc])) [1 buf_handle_16(D)->front+0 S4 A32])
+        (reg:SI 3 r3 [138])) "../System/buf.c":155:21 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126])
+        (nil)))
+(insn 6 40 71 4 (set (reg:SI 0 r0 [orig:125 <retval> ] [125])
+        (reg:SI 3 r3 [138])) "../System/buf.c":158:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [138])
+        (nil)))
+(insn 71 6 60 4 (use (reg/i:SI 0 r0)) -1
+     (nil))
+(jump_insn 60 71 61 4 (simple_return) 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 61 60 53)
+(code_label 53 61 52 5 36 (nil) [1 uses])
+(note 52 53 5 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 5 52 72 5 (set (reg:SI 0 r0 [orig:125 <retval> ] [125])
+        (const_int 2 [0x2])) "../System/buf.c":138:10 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 2 [0x2])
+        (nil)))
+(insn 72 5 62 5 (use (reg/i:SI 0 r0)) -1
+     (nil))
+(jump_insn 62 72 63 5 (simple_return) 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 63 62 57)
+(code_label 57 63 56 6 37 (nil) [1 uses])
+(note 56 57 7 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 7 56 48 6 (set (reg:SI 0 r0 [orig:125 <retval> ] [125])
+        (const_int 0 [0])) "../System/buf.c":158:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 48 7 68 6 (use (reg/i:SI 0 r0)) "../System/buf.c":160:1 -1
+     (nil))
+(note 68 48 69 6 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 69 68 70 6 (simple_return) "../System/buf.c":160:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 70 69 64)
+(note 64 70 65 NOTE_INSN_DELETED)
+(note 65 64 0 NOTE_INSN_DELETED)
+
+;; Function BUF_get_bytes (BUF_get_bytes, funcdef_no=5, decl_uid=5716, cgraph_uid=6, symbol_order=5)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+
+BUF_get_bytes
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 5 [r5] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 4 [r4] 5 [r5] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 5 [r5] 12 [ip] 13 [sp] 100 [cc]
+;;  ref usage 	r0={4d,15u,3e} r1={3d,9u} r2={4d,5u} r3={6d,6u} r4={6d,9u} r5={3d,3u} r12={1d,1u} r13={3d,17u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={5d,4u} 
+;;    total ref usage 125{52d,70u,3e} in 79{79 regular + 0 call} insns.
+
+( )->[0]->( 2 )
+;; bb 0 artificial_defs: { d-1(0){ }d-1(1){ }d-1(2){ }d-1(3){ }d-1(4){ }d-1(5){ }d-1(13){ }d-1(14){ }d-1(16){ }d-1(17){ }d-1(18){ }d-1(19){ }d-1(20){ }d-1(21){ }d-1(22){ }d-1(23){ }d-1(24){ }d-1(25){ }d-1(26){ }d-1(27){ }d-1(28){ }d-1(29){ }d-1(30){ }d-1(31){ }}
+;; bb 0 artificial_uses: { }
+;; lr  in  	
+;; lr  use 	
+;; lr  def 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 5 [r5] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;; live  in  	
+;; live  gen 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 5 [r5] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;; live  kill	
+;; lr  out 	 0 [r0] 1 [r1] 2 [r2] 4 [r4] 5 [r5] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 1 [r1] 2 [r2] 4 [r4] 5 [r5] 13 [sp] 14 [lr]
+
+( 0 )->[2]->( 3 10 )
+;; bb 2 artificial_defs: { }
+;; bb 2 artificial_uses: { u-1(13){ }}
+;; lr  in  	 0 [r0] 1 [r1] 2 [r2] 4 [r4] 5 [r5] 13 [sp] 14 [lr]
+;; lr  use 	 0 [r0] 2 [r2] 4 [r4] 5 [r5] 13 [sp]
+;; lr  def 	 4 [r4] 13 [sp] 100 [cc]
+;; live  in  	 0 [r0] 1 [r1] 2 [r2] 4 [r4] 5 [r5] 13 [sp] 14 [lr]
+;; live  gen 	 4 [r4] 13 [sp] 100 [cc]
+;; live  kill	
+;; lr  out 	 0 [r0] 1 [r1] 4 [r4] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 1 [r1] 4 [r4] 13 [sp] 14 [lr]
+
+( 2 )->[3]->( 12 4 )
+;; bb 3 artificial_defs: { }
+;; bb 3 artificial_uses: { u-1(13){ }}
+;; lr  in  	 0 [r0] 1 [r1] 4 [r4] 13 [sp] 14 [lr]
+;; lr  use 	 4 [r4] 13 [sp]
+;; lr  def 	 100 [cc]
+;; live  in  	 0 [r0] 1 [r1] 4 [r4] 13 [sp] 14 [lr]
+;; live  gen 	
+;; live  kill	 100 [cc]
+;; lr  out 	 0 [r0] 1 [r1] 4 [r4] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 1 [r1] 4 [r4] 13 [sp] 14 [lr]
+
+( 3 9 )->[4]->( 13 )
+;; bb 4 artificial_defs: { }
+;; bb 4 artificial_uses: { u-1(13){ }}
+;; lr  in  	 13 [sp] 14 [lr]
+;; lr  use 	 13 [sp]
+;; lr  def 	 0 [r0]
+;; live  in  	 13 [sp] 14 [lr]
+;; live  gen 	 0 [r0]
+;; live  kill	
+;; lr  out 	 0 [r0] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 13 [sp] 14 [lr]
+
+( 6 )->[5]->( 11 6 )
+;; bb 5 artificial_defs: { }
+;; bb 5 artificial_uses: { u-1(13){ }}
+;; lr  in  	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 5 [r5] 12 [ip] 13 [sp] 14 [lr]
+;; lr  use 	 2 [r2] 13 [sp]
+;; lr  def 	 100 [cc]
+;; live  in  	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 5 [r5] 12 [ip] 13 [sp] 14 [lr]
+;; live  gen 	
+;; live  kill	 100 [cc]
+;; lr  out 	 0 [r0] 1 [r1] 3 [r3] 5 [r5] 12 [ip] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 1 [r1] 3 [r3] 5 [r5] 12 [ip] 13 [sp] 14 [lr]
+
+( 5 12 )->[6]->( 5 9 )
+;; bb 6 artificial_defs: { }
+;; bb 6 artificial_uses: { u-1(13){ }}
+;; lr  in  	 0 [r0] 1 [r1] 3 [r3] 5 [r5] 12 [ip] 13 [sp] 14 [lr]
+;; lr  use 	 0 [r0] 1 [r1] 3 [r3] 5 [r5] 12 [ip] 13 [sp]
+;; lr  def 	 1 [r1] 2 [r2] 3 [r3] 4 [r4] 100 [cc]
+;; live  in  	 0 [r0] 1 [r1] 3 [r3] 5 [r5] 12 [ip] 13 [sp] 14 [lr]
+;; live  gen 	 1 [r1] 2 [r2] 3 [r3] 4 [r4] 100 [cc]
+;; live  kill	
+;; lr  out 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 5 [r5] 12 [ip] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 5 [r5] 12 [ip] 13 [sp] 14 [lr]
+
+( 6 )->[9]->( 4 )
+;; bb 9 artificial_defs: { }
+;; bb 9 artificial_uses: { u-1(13){ }}
+;; lr  in  	 13 [sp] 14 [lr]
+;; lr  use 	 13 [sp]
+;; lr  def 	
+;; live  in  	 13 [sp] 14 [lr]
+;; live  gen 	
+;; live  kill	
+;; lr  out 	 13 [sp] 14 [lr]
+;; live  out 	 13 [sp] 14 [lr]
+
+( 2 )->[10]->( 13 )
+;; bb 10 artificial_defs: { }
+;; bb 10 artificial_uses: { u-1(13){ }}
+;; lr  in  	 13 [sp] 14 [lr]
+;; lr  use 	 13 [sp]
+;; lr  def 	 0 [r0]
+;; live  in  	 13 [sp] 14 [lr]
+;; live  gen 	 0 [r0]
+;; live  kill	
+;; lr  out 	 0 [r0] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 13 [sp] 14 [lr]
+
+( 5 )->[11]->( 13 )
+;; bb 11 artificial_defs: { }
+;; bb 11 artificial_uses: { u-1(13){ }}
+;; lr  in  	 13 [sp] 14 [lr]
+;; lr  use 	 13 [sp]
+;; lr  def 	 0 [r0]
+;; live  in  	 13 [sp] 14 [lr]
+;; live  gen 	 0 [r0]
+;; live  kill	
+;; lr  out 	 0 [r0] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 13 [sp] 14 [lr]
+
+( 3 )->[12]->( 6 )
+;; bb 12 artificial_defs: { }
+;; bb 12 artificial_uses: { u-1(13){ }}
+;; lr  in  	 0 [r0] 1 [r1] 4 [r4] 13 [sp] 14 [lr]
+;; lr  use 	 0 [r0] 1 [r1] 4 [r4] 13 [sp]
+;; lr  def 	 1 [r1] 3 [r3] 5 [r5] 12 [ip]
+;; live  in  	 0 [r0] 1 [r1] 4 [r4] 13 [sp] 14 [lr]
+;; live  gen 	 1 [r1] 3 [r3] 5 [r5] 12 [ip]
+;; live  kill	
+;; lr  out 	 0 [r0] 1 [r1] 3 [r3] 5 [r5] 12 [ip] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 1 [r1] 3 [r3] 5 [r5] 12 [ip] 13 [sp] 14 [lr]
+
+( 10 4 11 )->[13]->( 1 )
+;; bb 13 artificial_defs: { }
+;; bb 13 artificial_uses: { u-1(13){ }}
+;; lr  in  	 0 [r0] 13 [sp] 14 [lr]
+;; lr  use 	 0 [r0] 13 [sp]
+;; lr  def 	 4 [r4] 5 [r5] 13 [sp]
+;; live  in  	 0 [r0] 13 [sp] 14 [lr]
+;; live  gen 	 4 [r4] 5 [r5] 13 [sp]
+;; live  kill	
+;; lr  out 	 0 [r0] 4 [r4] 5 [r5] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 4 [r4] 5 [r5] 13 [sp] 14 [lr]
+
+( 13 )->[1]->( )
+;; bb 1 artificial_defs: { }
+;; bb 1 artificial_uses: { u-1(0){ }u-1(4){ }u-1(5){ }u-1(13){ }u-1(14){ }}
+;; lr  in  	 0 [r0] 4 [r4] 5 [r5] 13 [sp] 14 [lr]
+;; lr  use 	 0 [r0] 4 [r4] 5 [r5] 13 [sp] 14 [lr]
+;; lr  def 	
+;; live  in  	 0 [r0] 4 [r4] 5 [r5] 13 [sp] 14 [lr]
+;; live  gen 	
+;; live  kill	
+;; lr  out 	
+;; live  out 	
+
+Finding needed instructions:
+  Adding insn 19 to worklist
+  Adding insn 145 to worklist
+  Adding insn 24 to worklist
+  Adding insn 131 to worklist
+  Adding insn 36 to worklist
+  Adding insn 82 to worklist
+  Adding insn 66 to worklist
+  Adding insn 54 to worklist
+  Adding insn 154 to worklist
+  Adding insn 46 to worklist
+  Adding insn 134 to worklist
+  Adding insn 136 to worklist
+  Adding insn 138 to worklist
+  Adding insn 140 to worklist
+  Adding insn 149 to worklist
+  Adding insn 112 to worklist
+Finished finding needed instructions:
+processing block 13 lr out =  0 [r0] 4 [r4] 5 [r5] 13 [sp] 14 [lr]
+  Adding insn 148 to worklist
+processing block 11 lr out =  0 [r0] 13 [sp] 14 [lr]
+  Adding insn 9 to worklist
+processing block 5 lr out =  0 [r0] 1 [r1] 3 [r3] 5 [r5] 12 [ip] 13 [sp] 14 [lr]
+processing block 4 lr out =  0 [r0] 13 [sp] 14 [lr]
+  Adding insn 8 to worklist
+processing block 9 lr out =  13 [sp] 14 [lr]
+processing block 6 lr out =  0 [r0] 1 [r1] 2 [r2] 3 [r3] 5 [r5] 12 [ip] 13 [sp] 14 [lr]
+  Adding insn 81 to worklist
+  Adding insn 125 to worklist
+  Adding insn 61 to worklist
+  Adding insn 144 to worklist
+  Adding insn 53 to worklist
+  Adding insn 57 to worklist
+  Adding insn 49 to worklist
+  Adding insn 52 to worklist
+  Adding insn 153 to worklist
+  Adding insn 43 to worklist
+  Adding insn 42 to worklist
+processing block 12 lr out =  0 [r0] 1 [r1] 3 [r3] 5 [r5] 12 [ip] 13 [sp] 14 [lr]
+  Adding insn 65 to worklist
+  Adding insn 106 to worklist
+  Adding insn 103 to worklist
+  Adding insn 104 to worklist
+processing block 3 lr out =  0 [r0] 1 [r1] 4 [r4] 13 [sp] 14 [lr]
+processing block 10 lr out =  0 [r0] 13 [sp] 14 [lr]
+  Adding insn 7 to worklist
+processing block 2 lr out =  0 [r0] 1 [r1] 4 [r4] 13 [sp] 14 [lr]
+  Adding insn 18 to worklist
+  Adding insn 15 to worklist
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+BUF_get_bytes
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 5 [r5] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 4 [r4] 5 [r5] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 5 [r5] 12 [ip] 13 [sp] 100 [cc]
+;;  ref usage 	r0={4d,15u,3e} r1={3d,9u} r2={4d,5u} r3={6d,6u} r4={6d,9u} r5={3d,3u} r12={1d,1u} r13={3d,17u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={5d,4u} 
+;;    total ref usage 125{52d,70u,3e} in 79{79 regular + 0 call} insns.
+(note 1 0 10 NOTE_INSN_DELETED)
+(note 10 1 145 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 145 10 146 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [4  A8])
+                (unspec:BLK [
+                        (reg:SI 4 r4)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 5 r5))
+        ]) "../System/buf.c":165:1 378 {*push_multi}
+     (expr_list:REG_DEAD (reg:SI 5 r5)
+        (expr_list:REG_DEAD (reg:SI 4 r4)
+            (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                        (set/f (reg/f:SI 13 sp)
+                            (plus:SI (reg/f:SI 13 sp)
+                                (const_int -8 [0xfffffffffffffff8])))
+                        (set/f (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32])
+                            (reg:SI 4 r4))
+                        (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                    (const_int 4 [0x4])) [4  S4 A32])
+                            (reg:SI 5 r5))
+                    ])
+                (nil)))))
+(note 146 145 4 2 NOTE_INSN_PROLOGUE_END)
+(note 4 146 5 2 NOTE_INSN_DELETED)
+(note 5 4 120 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 120 5 12 2 (var_location:SI D#25 (reg:SI 1 r1 [ data ])) -1
+     (nil))
+(debug_insn 12 120 13 2 (debug_marker) "../System/buf.c":166:2 -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker) "../System/buf.c":167:2 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker) "../System/buf.c":170:2 -1
+     (nil))
+(insn 15 14 16 2 (set (reg/v:SI 4 r4 [orig:114 buf_data_size ] [114])
+        (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:131 buf_handle ] [131])
+                (const_int 16 [0x10])) [1 buf_handle_8(D)->data_size+0 S4 A32])) "../System/buf.c":170:16 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 16 15 17 2 (var_location:SI buf_data_size (reg/v:SI 4 r4 [orig:114 buf_data_size ] [114])) "../System/buf.c":170:16 -1
+     (nil))
+(debug_insn 17 16 18 2 (debug_marker) "../System/buf.c":171:2 -1
+     (nil))
+(insn 18 17 19 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 4 r4 [orig:114 buf_data_size ] [114])
+            (reg:SI 2 r2 [149]))) "../System/buf.c":171:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [149])
+        (nil)))
+(jump_insn 19 18 20 2 (set (pc)
+        (if_then_else (ltu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 115)
+            (pc))) "../System/buf.c":171:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 233216732 (nil)))
+ -> 115)
+(note 20 19 23 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 23 20 21 3 NOTE_INSN_DELETED)
+(debug_insn 21 23 22 3 (var_location:SI i (const_int 0 [0])) -1
+     (nil))
+(debug_insn 22 21 24 3 (debug_marker) "../System/buf.c":174:16 -1
+     (nil))
+(jump_insn 24 22 83 3 (parallel [
+            (set (pc)
+                (if_then_else (ne (reg/v:SI 4 r4 [orig:114 buf_data_size ] [114])
+                        (const_int 0 [0]))
+                    (label_ref 95)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":174:3 1025 {*thumb2_cbnz}
+     (expr_list:REG_UNUSED (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 1014686028 (nil)))
+ -> 95)
+(code_label 83 24 25 4 43 (nil) [1 uses])
+(note 25 83 8 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 8 25 131 4 (set (reg:SI 0 r0 [orig:130 <retval> ] [130])
+        (const_int 0 [0])) "../System/buf.c":185:10 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(jump_insn 131 8 132 4 (set (pc)
+        (label_ref 130)) 284 {*arm_jump}
+     (nil)
+ -> 130)
+(barrier 132 131 80)
+(code_label 80 132 28 5 42 (nil) [1 uses])
+(note 28 80 35 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(note 35 28 36 5 NOTE_INSN_DELETED)
+(jump_insn 36 35 107 5 (parallel [
+            (set (pc)
+                (if_then_else (eq (reg:SI 2 r2 [orig:119 _20 ] [119])
+                        (const_int 0 [0]))
+                    (label_ref:SI 119)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":136:5 1024 {*thumb2_cbz}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:119 _20 ] [119])
+        (expr_list:REG_UNUSED (reg:CC 100 cc)
+            (int_list:REG_BR_PROB 315265956 (nil))))
+ -> 119)
+(code_label 107 36 37 6 44 (nil) [1 uses])
+(note 37 107 29 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 29 37 30 6 (var_location:SI i (debug_expr:SI D#24)) -1
+     (nil))
+(debug_insn 30 29 38 6 (debug_marker) "../System/buf.c":177:4 -1
+     (nil))
+(debug_insn 38 30 39 6 (var_location:SI i (plus:SI (minus:SI (reg:SI 1 r1 [orig:127 ivtmp.40 ] [127])
+            (debug_expr:SI D#25))
+        (const_int 1 [0x1]))) -1
+     (nil))
+(debug_insn 39 38 40 6 (var_location:SI buf_handle (reg/v/f:SI 0 r0 [orig:131 buf_handle ] [131])) "../System/buf.c":177:16 -1
+     (nil))
+(debug_insn 40 39 41 6 (var_location:SI data (plus:SI (reg:SI 1 r1 [orig:127 ivtmp.40 ] [127])
+        (const_int 1 [0x1]))) "../System/buf.c":177:16 -1
+     (nil))
+(debug_insn 41 40 64 6 (debug_marker) "../System/buf.c":142:2 -1
+     (nil))
+(debug_insn 64 41 73 6 (debug_marker) "../System/buf.c":155:3 -1
+     (nil))
+(debug_insn 73 64 74 6 (var_location:SI buf_handle (clobber (const_int 0 [0]))) "../System/buf.c":177:16 -1
+     (nil))
+(debug_insn 74 73 75 6 (var_location:SI data (clobber (const_int 0 [0]))) "../System/buf.c":177:16 -1
+     (nil))
+(debug_insn 75 74 76 6 (var_location:QI rtnr_code (clobber (const_int 0 [0]))) "../System/buf.c":177:16 -1
+     (nil))
+(debug_insn 76 75 42 6 (debug_marker) "../System/buf.c":174:33 -1
+     (nil))
+(insn 42 76 43 6 (set (reg/f:SI 2 r2 [orig:134 buf_handle_8(D)->buffer ] [134])
+        (mem/f:SI (reg/v/f:SI 0 r0 [orig:131 buf_handle ] [131]) [3 buf_handle_8(D)->buffer+0 S4 A32])) "../System/buf.c":142:28 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem/f:SI (reg/v/f:SI 0 r0 [orig:131 buf_handle ] [131]) [3 buf_handle_8(D)->buffer+0 S4 A32])
+        (nil)))
+(insn 43 42 46 6 (set (reg:SI 3 r3 [orig:117 _18 ] [117])
+        (zero_extend:SI (mem:QI (plus:SI (reg/f:SI 2 r2 [orig:134 buf_handle_8(D)->buffer ] [134])
+                    (reg:SI 3 r3 [orig:129 prephitmp_42 ] [129])) [0 *_17+0 S1 A8]))) "../System/buf.c":142:28 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_DEAD (reg/f:SI 2 r2 [orig:134 buf_handle_8(D)->buffer ] [134])
+        (nil)))
+(insn 46 43 32 6 (set (mem:QI (pre_inc:SI (reg:SI 1 r1 [orig:127 ivtmp.40 ] [127])) [0 MEM[base: _32, offset: 0B]+0 S1 A8])
+        (reg:QI 3 r3 [orig:117 _18 ] [117])) "../System/buf.c":142:8 263 {*arm_movqi_insn}
+     (expr_list:REG_DEAD (reg:QI 3 r3 [orig:117 _18 ] [117])
+        (expr_list:REG_INC (reg:SI 1 r1 [orig:127 ivtmp.40 ] [127])
+            (nil))))
+(debug_insn 32 46 33 6 (var_location:SI data (plus:SI (reg:SI 1 r1 [orig:127 ivtmp.40 ] [127])
+        (const_int 1 [0x1]))) "../System/buf.c":177:16 -1
+     (nil))
+(debug_insn 33 32 34 6 (debug_marker:BLK) "../System/buf.c":133:18 -1
+     (nil))
+(debug_insn 34 33 47 6 (debug_marker) "../System/buf.c":136:2 -1
+     (nil))
+(debug_insn 47 34 77 6 (debug_marker) "../System/buf.c":145:2 -1
+     (nil))
+(debug_insn 77 47 78 6 (var_location:SI D#24 (plus:SI (minus:SI (reg:SI 1 r1 [orig:127 ivtmp.40 ] [127])
+            (debug_expr:SI D#25))
+        (const_int 1 [0x1]))) -1
+     (nil))
+(debug_insn 78 77 79 6 (var_location:SI i (debug_expr:SI D#24)) -1
+     (nil))
+(debug_insn 79 78 153 6 (debug_marker) "../System/buf.c":174:16 -1
+     (nil))
+(insn 153 79 52 6 (parallel [
+            (set (reg:SI 3 r3 [orig:139 buf_handle_8(D)->front ] [139])
+                (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:131 buf_handle ] [131])
+                        (const_int 12 [0xc])) [1 buf_handle_8(D)->front+0 S4 A32]))
+            (set (reg:SI 2 r2 [orig:136 buf_handle_8(D)->data_size ] [136])
+                (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:131 buf_handle ] [131])
+                        (const_int 16 [0x10])) [1 buf_handle_8(D)->data_size+0 S4 A32]))
+        ]) "../System/buf.c":145:23 409 {*thumb2_ldrd}
+     (nil))
+(insn 52 153 60 6 (set (reg:SI 4 r4 [orig:138 buf_handle_8(D)->free_size ] [138])
+        (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:131 buf_handle ] [131])
+                (const_int 20 [0x14])) [1 buf_handle_8(D)->free_size+0 S4 A32])) "../System/buf.c":146:23 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:131 buf_handle ] [131])
+                (const_int 20 [0x14])) [1 buf_handle_8(D)->free_size+0 S4 A32])
+        (nil)))
+(note 60 52 49 6 NOTE_INSN_DELETED)
+(insn 49 60 57 6 (set (reg:SI 2 r2 [orig:119 _20 ] [119])
+        (plus:SI (reg:SI 2 r2 [orig:136 buf_handle_8(D)->data_size ] [136])
+            (const_int -1 [0xffffffffffffffff]))) "../System/buf.c":145:23 7 {*arm_addsi3}
+     (nil))
+(insn 57 49 53 6 (set (reg:SI 3 r3 [orig:129 prephitmp_42 ] [129])
+        (plus:SI (reg:SI 3 r3 [orig:139 buf_handle_8(D)->front ] [139])
+            (const_int 1 [0x1]))) "../System/buf.c":151:19 7 {*arm_addsi3}
+     (nil))
+(insn 53 57 154 6 (set (reg:SI 4 r4 [137])
+        (plus:SI (reg:SI 4 r4 [orig:138 buf_handle_8(D)->free_size ] [138])
+            (const_int 1 [0x1]))) "../System/buf.c":146:23 7 {*arm_addsi3}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:131 buf_handle ] [131])
+                (const_int 20 [0x14])) [1 buf_handle_8(D)->free_size+0 S4 A32])
+        (nil)))
+(insn 154 53 51 6 (parallel [
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:131 buf_handle ] [131])
+                        (const_int 12 [0xc])) [1 buf_handle_8(D)->front+0 S4 A32])
+                (reg:SI 3 r3 [orig:129 prephitmp_42 ] [129]))
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:131 buf_handle ] [131])
+                        (const_int 16 [0x10])) [1 buf_handle_8(D)->data_size+0 S4 A32])
+                (reg:SI 2 r2 [orig:119 _20 ] [119]))
+        ]) "../System/buf.c":145:23 412 {*thumb2_strd}
+     (nil))
+(debug_insn 51 154 54 6 (debug_marker) "../System/buf.c":146:2 -1
+     (nil))
+(insn 54 51 55 6 (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:131 buf_handle ] [131])
+                (const_int 20 [0x14])) [1 buf_handle_8(D)->free_size+0 S4 A32])
+        (reg:SI 4 r4 [137])) "../System/buf.c":146:23 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 4 r4 [137])
+        (nil)))
+(debug_insn 55 54 59 6 (debug_marker) "../System/buf.c":151:2 -1
+     (nil))
+(debug_insn 59 55 144 6 (debug_marker) "../System/buf.c":153:2 -1
+     (nil))
+(insn 144 59 61 6 (set (reg:SI 4 r4 [151])
+        (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:131 buf_handle ] [131])
+                (const_int 4 [0x4])) [1 buf_handle_8(D)->length+0 S4 A32])) "../System/buf.c":153:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 61 144 66 6 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:129 prephitmp_42 ] [129])
+            (reg:SI 4 r4 [151]))) "../System/buf.c":153:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 4 r4 [151])
+        (nil)))
+(insn 66 61 67 6 (cond_exec (geu (reg:CC 100 cc)
+            (const_int 0 [0]))
+        (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:131 buf_handle ] [131])
+                    (const_int 12 [0xc])) [1 buf_handle_8(D)->front+0 S4 A32])
+            (reg:SI 5 r5 [144]))) "../System/buf.c":155:21 6567 {*p *thumb2_movsi_vfp}
+     (nil))
+(debug_insn 67 66 68 6 (var_location:SI buf_handle (clobber (const_int 0 [0]))) "../System/buf.c":177:16 -1
+     (nil))
+(debug_insn 68 67 69 6 (var_location:SI data (clobber (const_int 0 [0]))) "../System/buf.c":177:16 -1
+     (nil))
+(debug_insn 69 68 70 6 (var_location:QI rtnr_code (const_int 0 [0])) "../System/buf.c":177:16 -1
+     (nil))
+(debug_insn 70 69 125 6 (debug_marker) "../System/buf.c":180:4 -1
+     (nil))
+(insn 125 70 81 6 (cond_exec (geu (reg:CC 100 cc)
+            (const_int 0 [0]))
+        (set (reg:SI 3 r3 [orig:129 prephitmp_42 ] [129])
+            (const_int 0 [0]))) "../System/buf.c":155:21 6567 {*p *thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (nil)))
+(insn 81 125 82 6 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 12 ip [orig:113 _3 ] [113])
+            (reg:SI 1 r1 [orig:127 ivtmp.40 ] [127]))) "../System/buf.c":174:3 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 82 81 133 6 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 80)
+            (pc))) "../System/buf.c":174:3 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 1014686028 (nil)))
+ -> 80)
+(note 133 82 134 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 134 133 135 9 (set (pc)
+        (label_ref 83)) 284 {*arm_jump}
+     (nil)
+ -> 83)
+(barrier 135 134 115)
+(code_label 115 135 114 10 45 (nil) [1 uses])
+(note 114 115 7 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 7 114 136 10 (set (reg:SI 0 r0 [orig:130 <retval> ] [130])
+        (const_int 4 [0x4])) "../System/buf.c":190:10 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 4 [0x4])
+        (nil)))
+(jump_insn 136 7 137 10 (set (pc)
+        (label_ref 130)) 284 {*arm_jump}
+     (nil)
+ -> 130)
+(barrier 137 136 119)
+(code_label 119 137 118 11 46 (nil) [1 uses])
+(note 118 119 9 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 9 118 89 11 (set (reg:SI 0 r0 [orig:130 <retval> ] [130])
+        (const_int 2 [0x2])) "../System/buf.c":138:10 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 89 9 90 11 (var_location:SI buf_handle (clobber (const_int 0 [0]))) "../System/buf.c":177:16 -1
+     (nil))
+(debug_insn 90 89 91 11 (var_location:SI data (clobber (const_int 0 [0]))) "../System/buf.c":177:16 -1
+     (nil))
+(debug_insn 91 90 138 11 (var_location:QI rtnr_code (clobber (const_int 0 [0]))) "../System/buf.c":177:16 -1
+     (nil))
+(jump_insn 138 91 139 11 (set (pc)
+        (label_ref 130)) 284 {*arm_jump}
+     (nil)
+ -> 130)
+(barrier 139 138 95)
+(code_label 95 139 96 12 40 (nil) [1 uses])
+(note 96 95 97 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 97 96 98 12 (var_location:SI i (const_int 0 [0])) -1
+     (nil))
+(debug_insn 98 97 99 12 (debug_marker) "../System/buf.c":177:4 -1
+     (nil))
+(debug_insn 99 98 100 12 (var_location:SI buf_handle (reg/v/f:SI 0 r0 [orig:131 buf_handle ] [131])) "../System/buf.c":177:16 -1
+     (nil))
+(debug_insn 100 99 101 12 (var_location:SI data (debug_expr:SI D#25)) "../System/buf.c":177:16 -1
+     (nil))
+(debug_insn 101 100 102 12 (debug_marker:BLK) "../System/buf.c":133:18 -1
+     (nil))
+(debug_insn 102 101 104 12 (debug_marker) "../System/buf.c":136:2 -1
+     (nil))
+(insn 104 102 103 12 (set (reg:SI 1 r1 [orig:127 ivtmp.40 ] [127])
+        (plus:SI (reg/v/f:SI 1 r1 [orig:132 data ] [132])
+            (const_int -1 [0xffffffffffffffff]))) 7 {*arm_addsi3}
+     (nil))
+(insn 103 104 106 12 (set (reg:SI 3 r3 [orig:129 prephitmp_42 ] [129])
+        (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:131 buf_handle ] [131])
+                (const_int 12 [0xc])) [1 buf_handle_8(D)->front+0 S4 A32])) "../System/buf.c":142:39 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 106 103 65 12 (set (reg:SI 12 ip [orig:113 _3 ] [113])
+        (plus:SI (reg:SI 1 r1 [orig:127 ivtmp.40 ] [127])
+            (reg/v:SI 4 r4 [orig:114 buf_data_size ] [114]))) 7 {*arm_addsi3}
+     (expr_list:REG_DEAD (reg/v:SI 4 r4 [orig:114 buf_data_size ] [114])
+        (nil)))
+(insn 65 106 140 12 (set (reg:SI 5 r5 [144])
+        (const_int 0 [0])) "../System/buf.c":155:21 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 0 [0])
+        (nil)))
+(jump_insn 140 65 141 12 (set (pc)
+        (label_ref 107)) 284 {*arm_jump}
+     (nil)
+ -> 107)
+(barrier 141 140 130)
+(code_label 130 141 113 13 47 (nil) [3 uses])
+(note 113 130 112 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 112 113 147 13 (use (reg/i:SI 0 r0)) "../System/buf.c":193:1 -1
+     (nil))
+(note 147 112 148 13 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 148 147 149 13 (parallel [
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg:SI 4 r4)
+                (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32]))
+            (set/f (reg:SI 5 r5)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [4  S4 A32]))
+        ]) "../System/buf.c":193:1 380 {*load_multiple_with_writeback}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 8 [0x8])))
+        (expr_list:REG_CFA_RESTORE (reg:SI 5 r5)
+            (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+                (nil)))))
+(jump_insn 149 148 152 13 (simple_return) "../System/buf.c":193:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 152 149 142)
+(note 142 152 143 NOTE_INSN_DELETED)
+(note 143 142 0 NOTE_INSN_DELETED)
+
+;; Function BUF_get_data_size (BUF_get_data_size, funcdef_no=6, decl_uid=5718, cgraph_uid=7, symbol_order=6)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+
+BUF_get_data_size
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0]
+;;  ref usage 	r0={2d,3u} r1={1d} r2={1d} r3={1d} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 29{23d,6u,0e} in 4{4 regular + 0 call} insns.
+
+( )->[0]->( 2 )
+;; bb 0 artificial_defs: { d-1(0){ }d-1(1){ }d-1(2){ }d-1(3){ }d-1(13){ }d-1(14){ }d-1(16){ }d-1(17){ }d-1(18){ }d-1(19){ }d-1(20){ }d-1(21){ }d-1(22){ }d-1(23){ }d-1(24){ }d-1(25){ }d-1(26){ }d-1(27){ }d-1(28){ }d-1(29){ }d-1(30){ }d-1(31){ }}
+;; bb 0 artificial_uses: { }
+;; lr  in  	
+;; lr  use 	
+;; lr  def 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;; live  in  	
+;; live  gen 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;; live  kill	
+;; lr  out 	 0 [r0] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 13 [sp] 14 [lr]
+
+( 0 )->[2]->( 1 )
+;; bb 2 artificial_defs: { }
+;; bb 2 artificial_uses: { u-1(13){ }}
+;; lr  in  	 0 [r0] 13 [sp] 14 [lr]
+;; lr  use 	 0 [r0] 13 [sp]
+;; lr  def 	 0 [r0]
+;; live  in  	 0 [r0] 13 [sp] 14 [lr]
+;; live  gen 	 0 [r0]
+;; live  kill	
+;; lr  out 	 0 [r0] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 13 [sp] 14 [lr]
+
+( 2 )->[1]->( )
+;; bb 1 artificial_defs: { }
+;; bb 1 artificial_uses: { u-1(0){ }u-1(13){ }u-1(14){ }}
+;; lr  in  	 0 [r0] 13 [sp] 14 [lr]
+;; lr  use 	 0 [r0] 13 [sp] 14 [lr]
+;; lr  def 	
+;; live  in  	 0 [r0] 13 [sp] 14 [lr]
+;; live  gen 	
+;; live  kill	
+;; lr  out 	
+;; live  out 	
+
+Finding needed instructions:
+  Adding insn 20 to worklist
+  Adding insn 13 to worklist
+Finished finding needed instructions:
+processing block 2 lr out =  0 [r0] 13 [sp] 14 [lr]
+  Adding insn 12 to worklist
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+BUF_get_data_size
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0]
+;;  ref usage 	r0={2d,3u} r1={1d} r2={1d} r3={1d} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 29{23d,6u,0e} in 4{4 regular + 0 call} insns.
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 18 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 18 4 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 18 3 2 NOTE_INSN_DELETED)
+(note 3 2 7 2 NOTE_INSN_FUNCTION_BEG)
+(note 7 3 6 2 NOTE_INSN_DELETED)
+(debug_insn 6 7 12 2 (debug_marker) "../System/buf.c":200:2 -1
+     (nil))
+(insn 12 6 13 2 (set (reg/i:SI 0 r0)
+        (mem:SI (plus:SI (reg:SI 0 r0 [117])
+                (const_int 16 [0x10])) [1 buf_handle_2(D)->data_size+0 S4 A32])) "../System/buf.c":201:1 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 13 12 19 2 (use (reg/i:SI 0 r0)) "../System/buf.c":201:1 -1
+     (nil))
+(note 19 13 20 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 20 19 21 2 (simple_return) "../System/buf.c":201:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 21 20 16)
+(note 16 21 17 NOTE_INSN_DELETED)
+(note 17 16 0 NOTE_INSN_DELETED)
+
+;; Function BUF_get_free_size (BUF_get_free_size, funcdef_no=7, decl_uid=5720, cgraph_uid=8, symbol_order=7)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+
+BUF_get_free_size
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0]
+;;  ref usage 	r0={2d,3u} r1={1d} r2={1d} r3={1d} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 29{23d,6u,0e} in 4{4 regular + 0 call} insns.
+
+( )->[0]->( 2 )
+;; bb 0 artificial_defs: { d-1(0){ }d-1(1){ }d-1(2){ }d-1(3){ }d-1(13){ }d-1(14){ }d-1(16){ }d-1(17){ }d-1(18){ }d-1(19){ }d-1(20){ }d-1(21){ }d-1(22){ }d-1(23){ }d-1(24){ }d-1(25){ }d-1(26){ }d-1(27){ }d-1(28){ }d-1(29){ }d-1(30){ }d-1(31){ }}
+;; bb 0 artificial_uses: { }
+;; lr  in  	
+;; lr  use 	
+;; lr  def 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;; live  in  	
+;; live  gen 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;; live  kill	
+;; lr  out 	 0 [r0] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 13 [sp] 14 [lr]
+
+( 0 )->[2]->( 1 )
+;; bb 2 artificial_defs: { }
+;; bb 2 artificial_uses: { u-1(13){ }}
+;; lr  in  	 0 [r0] 13 [sp] 14 [lr]
+;; lr  use 	 0 [r0] 13 [sp]
+;; lr  def 	 0 [r0]
+;; live  in  	 0 [r0] 13 [sp] 14 [lr]
+;; live  gen 	 0 [r0]
+;; live  kill	
+;; lr  out 	 0 [r0] 13 [sp] 14 [lr]
+;; live  out 	 0 [r0] 13 [sp] 14 [lr]
+
+( 2 )->[1]->( )
+;; bb 1 artificial_defs: { }
+;; bb 1 artificial_uses: { u-1(0){ }u-1(13){ }u-1(14){ }}
+;; lr  in  	 0 [r0] 13 [sp] 14 [lr]
+;; lr  use 	 0 [r0] 13 [sp] 14 [lr]
+;; lr  def 	
+;; live  in  	 0 [r0] 13 [sp] 14 [lr]
+;; live  gen 	
+;; live  kill	
+;; lr  out 	
+;; live  out 	
+
+Finding needed instructions:
+  Adding insn 20 to worklist
+  Adding insn 13 to worklist
+Finished finding needed instructions:
+processing block 2 lr out =  0 [r0] 13 [sp] 14 [lr]
+  Adding insn 12 to worklist
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+BUF_get_free_size
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0]
+;;  ref usage 	r0={2d,3u} r1={1d} r2={1d} r3={1d} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 29{23d,6u,0e} in 4{4 regular + 0 call} insns.
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 18 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 18 4 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 18 3 2 NOTE_INSN_DELETED)
+(note 3 2 7 2 NOTE_INSN_FUNCTION_BEG)
+(note 7 3 6 2 NOTE_INSN_DELETED)
+(debug_insn 6 7 12 2 (debug_marker) "../System/buf.c":207:2 -1
+     (nil))
+(insn 12 6 13 2 (set (reg/i:SI 0 r0)
+        (mem:SI (plus:SI (reg:SI 0 r0 [117])
+                (const_int 20 [0x14])) [1 buf_handle_2(D)->free_size+0 S4 A32])) "../System/buf.c":208:1 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 13 12 19 2 (use (reg/i:SI 0 r0)) "../System/buf.c":208:1 -1
+     (nil))
+(note 19 13 20 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 20 19 21 2 (simple_return) "../System/buf.c":208:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 21 20 16)
+(note 16 21 17 NOTE_INSN_DELETED)
+(note 17 16 0 NOTE_INSN_DELETED)
+
+;; Function BUF_demo (BUF_demo, funcdef_no=8, decl_uid=5722, cgraph_uid=9, symbol_order=8)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+
+BUF_demo
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 25{22d,3u,0e} in 286{286 regular + 0 call} insns.
+
+( )->[0]->( 2 )
+;; bb 0 artificial_defs: { d-1(0){ }d-1(1){ }d-1(2){ }d-1(3){ }d-1(13){ }d-1(14){ }d-1(16){ }d-1(17){ }d-1(18){ }d-1(19){ }d-1(20){ }d-1(21){ }d-1(22){ }d-1(23){ }d-1(24){ }d-1(25){ }d-1(26){ }d-1(27){ }d-1(28){ }d-1(29){ }d-1(30){ }d-1(31){ }}
+;; bb 0 artificial_uses: { }
+;; lr  in  	
+;; lr  use 	
+;; lr  def 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;; live  in  	
+;; live  gen 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;; live  kill	
+;; lr  out 	 13 [sp] 14 [lr]
+;; live  out 	 13 [sp] 14 [lr]
+
+( 0 )->[2]->( 1 )
+;; bb 2 artificial_defs: { }
+;; bb 2 artificial_uses: { u-1(13){ }}
+;; lr  in  	 13 [sp] 14 [lr]
+;; lr  use 	 13 [sp]
+;; lr  def 	
+;; live  in  	 13 [sp] 14 [lr]
+;; live  gen 	
+;; live  kill	
+;; lr  out 	 13 [sp] 14 [lr]
+;; live  out 	 13 [sp] 14 [lr]
+
+( 2 )->[1]->( )
+;; bb 1 artificial_defs: { }
+;; bb 1 artificial_uses: { u-1(13){ }u-1(14){ }}
+;; lr  in  	 13 [sp] 14 [lr]
+;; lr  use 	 13 [sp] 14 [lr]
+;; lr  def 	
+;; live  in  	 13 [sp] 14 [lr]
+;; live  gen 	
+;; live  kill	
+;; lr  out 	
+;; live  out 	
+
+Finding needed instructions:
+  Adding insn 296 to worklist
+Finished finding needed instructions:
+processing block 2 lr out =  13 [sp] 14 [lr]
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+BUF_demo
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 25{22d,3u,0e} in 286{286 regular + 0 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 294 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 294 3 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 294 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../System/buf.c":224:2 -1
+     (nil))
+(debug_insn 6 5 7 2 (debug_marker) "../System/buf.c":226:2 -1
+     (nil))
+(debug_insn 7 6 8 2 (var_location:QI data (const_int 0 [0])) "../System/buf.c":226:10 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "../System/buf.c":227:2 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "../System/buf.c":228:2 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "../System/buf.c":230:2 -1
+     (nil))
+(debug_insn 11 10 12 2 (var_location:SI buf_handle (debug_implicit_ptr:SI test_buf_handle)) "../System/buf.c":230:2 -1
+     (nil))
+(debug_insn 12 11 13 2 (var_location:SI buffer_ptr (debug_implicit_ptr:SI test_buffer)) "../System/buf.c":230:2 -1
+     (nil))
+(debug_insn 13 12 14 2 (var_location:SI buf_length (const_int 4 [0x4])) "../System/buf.c":230:2 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker) "../System/buf.c":36:2 -1
+     (nil))
+(debug_insn 15 14 16 2 (debug_marker) "../System/buf.c":37:2 -1
+     (nil))
+(debug_insn 16 15 17 2 (debug_marker) "../System/buf.c":41:2 -1
+     (nil))
+(debug_insn 17 16 18 2 (var_location:SI buf_handle (debug_implicit_ptr:SI test_buf_handle)) "../System/buf.c":41:2 -1
+     (nil))
+(debug_insn 18 17 19 2 (debug_marker) "../System/buf.c":47:2 -1
+     (nil))
+(debug_insn 19 18 20 2 (debug_marker) "../System/buf.c":48:2 -1
+     (nil))
+(debug_insn 20 19 21 2 (debug_marker) "../System/buf.c":49:2 -1
+     (nil))
+(debug_insn 21 20 22 2 (debug_marker) "../System/buf.c":50:2 -1
+     (nil))
+(debug_insn 22 21 23 2 (debug_marker) "../System/buf.c":52:2 -1
+     (nil))
+(debug_insn 23 22 24 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) "../System/buf.c":41:2 -1
+     (nil))
+(debug_insn 24 23 25 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) "../System/buf.c":230:2 -1
+     (nil))
+(debug_insn 25 24 26 2 (var_location:SI buffer_ptr (clobber (const_int 0 [0]))) "../System/buf.c":230:2 -1
+     (nil))
+(debug_insn 26 25 27 2 (var_location:SI buf_length (clobber (const_int 0 [0]))) "../System/buf.c":230:2 -1
+     (nil))
+(debug_insn 27 26 28 2 (debug_marker) "../System/buf.c":233:2 -1
+     (nil))
+(debug_insn 28 27 29 2 (var_location:SI buf_handle (debug_implicit_ptr:SI test_buf_handle)) "../System/buf.c":233:2 -1
+     (nil))
+(debug_insn 29 28 30 2 (var_location:QI data (const_int 1 [0x1])) "../System/buf.c":233:2 -1
+     (nil))
+(debug_insn 30 29 31 2 (debug_marker) "../System/buf.c":62:2 -1
+     (nil))
+(debug_insn 31 30 32 2 (debug_marker) "../System/buf.c":69:3 -1
+     (nil))
+(debug_insn 32 31 33 2 (debug_marker) "../System/buf.c":71:4 -1
+     (nil))
+(debug_insn 33 32 34 2 (debug_marker) "../System/buf.c":72:4 -1
+     (nil))
+(debug_insn 34 33 35 2 (var_location:SI buf_handle (debug_implicit_ptr:SI test_buf_handle)) -1
+     (nil))
+(debug_insn 35 34 36 2 (var_location:QI data (const_int 1 [0x1])) -1
+     (nil))
+(debug_insn 36 35 37 2 (debug_marker) "../System/buf.c":87:3 -1
+     (nil))
+(debug_insn 37 36 38 2 (debug_marker) "../System/buf.c":90:3 -1
+     (nil))
+(debug_insn 38 37 39 2 (debug_marker) "../System/buf.c":91:3 -1
+     (nil))
+(debug_insn 39 38 40 2 (debug_marker) "../System/buf.c":93:3 -1
+     (nil))
+(debug_insn 40 39 41 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 41 40 42 2 (var_location:QI data (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 42 41 43 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) "../System/buf.c":233:2 -1
+     (nil))
+(debug_insn 43 42 44 2 (var_location:QI data (clobber (const_int 0 [0]))) "../System/buf.c":233:2 -1
+     (nil))
+(debug_insn 44 43 45 2 (debug_marker) "../System/buf.c":234:2 -1
+     (nil))
+(debug_insn 45 44 46 2 (var_location:SI buf_handle (debug_implicit_ptr:SI test_buf_handle)) "../System/buf.c":234:2 -1
+     (nil))
+(debug_insn 46 45 47 2 (var_location:QI data (const_int 2 [0x2])) "../System/buf.c":234:2 -1
+     (nil))
+(debug_insn 47 46 48 2 (debug_marker) "../System/buf.c":62:2 -1
+     (nil))
+(debug_insn 48 47 49 2 (debug_marker) "../System/buf.c":69:3 -1
+     (nil))
+(debug_insn 49 48 50 2 (debug_marker) "../System/buf.c":77:4 -1
+     (nil))
+(debug_insn 50 49 51 2 (debug_marker) "../System/buf.c":79:4 -1
+     (nil))
+(debug_insn 51 50 52 2 (var_location:SI buf_handle (debug_implicit_ptr:SI test_buf_handle)) -1
+     (nil))
+(debug_insn 52 51 53 2 (var_location:QI data (const_int 2 [0x2])) -1
+     (nil))
+(debug_insn 53 52 54 2 (debug_marker) "../System/buf.c":87:3 -1
+     (nil))
+(debug_insn 54 53 55 2 (debug_marker) "../System/buf.c":90:3 -1
+     (nil))
+(debug_insn 55 54 56 2 (debug_marker) "../System/buf.c":91:3 -1
+     (nil))
+(debug_insn 56 55 57 2 (debug_marker) "../System/buf.c":93:3 -1
+     (nil))
+(debug_insn 57 56 58 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 58 57 59 2 (var_location:QI data (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 59 58 60 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) "../System/buf.c":234:2 -1
+     (nil))
+(debug_insn 60 59 61 2 (var_location:QI data (clobber (const_int 0 [0]))) "../System/buf.c":234:2 -1
+     (nil))
+(debug_insn 61 60 62 2 (debug_marker) "../System/buf.c":235:2 -1
+     (nil))
+(debug_insn 62 61 63 2 (var_location:SI buf_handle (debug_implicit_ptr:SI test_buf_handle)) "../System/buf.c":235:2 -1
+     (nil))
+(debug_insn 63 62 64 2 (var_location:QI data (const_int 3 [0x3])) "../System/buf.c":235:2 -1
+     (nil))
+(debug_insn 64 63 65 2 (debug_marker) "../System/buf.c":62:2 -1
+     (nil))
+(debug_insn 65 64 66 2 (debug_marker) "../System/buf.c":69:3 -1
+     (nil))
+(debug_insn 66 65 67 2 (debug_marker) "../System/buf.c":77:4 -1
+     (nil))
+(debug_insn 67 66 68 2 (debug_marker) "../System/buf.c":79:4 -1
+     (nil))
+(debug_insn 68 67 69 2 (var_location:SI buf_handle (debug_implicit_ptr:SI test_buf_handle)) -1
+     (nil))
+(debug_insn 69 68 70 2 (var_location:QI data (const_int 3 [0x3])) -1
+     (nil))
+(debug_insn 70 69 71 2 (debug_marker) "../System/buf.c":87:3 -1
+     (nil))
+(debug_insn 71 70 72 2 (debug_marker) "../System/buf.c":90:3 -1
+     (nil))
+(debug_insn 72 71 73 2 (debug_marker) "../System/buf.c":91:3 -1
+     (nil))
+(debug_insn 73 72 74 2 (debug_marker) "../System/buf.c":93:3 -1
+     (nil))
+(debug_insn 74 73 75 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 75 74 76 2 (var_location:QI data (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 76 75 77 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) "../System/buf.c":235:2 -1
+     (nil))
+(debug_insn 77 76 78 2 (var_location:QI data (clobber (const_int 0 [0]))) "../System/buf.c":235:2 -1
+     (nil))
+(debug_insn 78 77 79 2 (debug_marker) "../System/buf.c":236:2 -1
+     (nil))
+(debug_insn 79 78 80 2 (var_location:SI buf_handle (debug_implicit_ptr:SI test_buf_handle)) "../System/buf.c":236:2 -1
+     (nil))
+(debug_insn 80 79 81 2 (var_location:QI data (const_int 4 [0x4])) "../System/buf.c":236:2 -1
+     (nil))
+(debug_insn 81 80 82 2 (debug_marker) "../System/buf.c":62:2 -1
+     (nil))
+(debug_insn 82 81 83 2 (debug_marker) "../System/buf.c":69:3 -1
+     (nil))
+(debug_insn 83 82 84 2 (debug_marker) "../System/buf.c":77:4 -1
+     (nil))
+(debug_insn 84 83 85 2 (debug_marker) "../System/buf.c":79:4 -1
+     (nil))
+(debug_insn 85 84 86 2 (var_location:SI buf_handle (debug_implicit_ptr:SI test_buf_handle)) -1
+     (nil))
+(debug_insn 86 85 87 2 (var_location:QI data (const_int 4 [0x4])) -1
+     (nil))
+(debug_insn 87 86 88 2 (debug_marker) "../System/buf.c":87:3 -1
+     (nil))
+(debug_insn 88 87 89 2 (debug_marker) "../System/buf.c":90:3 -1
+     (nil))
+(debug_insn 89 88 90 2 (debug_marker) "../System/buf.c":91:3 -1
+     (nil))
+(debug_insn 90 89 91 2 (debug_marker) "../System/buf.c":93:3 -1
+     (nil))
+(debug_insn 91 90 92 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 92 91 93 2 (var_location:QI data (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 93 92 94 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) "../System/buf.c":236:2 -1
+     (nil))
+(debug_insn 94 93 95 2 (var_location:QI data (clobber (const_int 0 [0]))) "../System/buf.c":236:2 -1
+     (nil))
+(debug_insn 95 94 96 2 (debug_marker) "../System/buf.c":239:2 -1
+     (nil))
+(debug_insn 96 95 97 2 (var_location:SI buf_handle (debug_implicit_ptr:SI test_buf_handle)) "../System/buf.c":239:2 -1
+     (nil))
+(debug_insn 97 96 98 2 (var_location:SI data (debug_implicit_ptr:SI data)) "../System/buf.c":239:2 -1
+     (nil))
+(debug_insn 98 97 99 2 (debug_marker) "../System/buf.c":136:2 -1
+     (nil))
+(debug_insn 99 98 100 2 (debug_marker) "../System/buf.c":142:2 -1
+     (nil))
+(debug_insn 100 99 101 2 (var_location:SI D#19 (clobber (const_int 0 [0]))) "../System/buf.c":142:20 -1
+     (nil))
+(debug_insn 101 100 102 2 (var_location:SI D#18 (debug_expr:SI D#19)) "../System/buf.c":142:28 -1
+     (nil))
+(debug_insn 102 101 103 2 (var_location:QI D#17 (mem:QI (debug_expr:SI D#18) [0 +0 S1 A8])) "../System/buf.c":142:28 -1
+     (nil))
+(debug_insn 103 102 104 2 (var_location:QI data (debug_expr:QI D#17)) "../System/buf.c":142:8 -1
+     (nil))
+(debug_insn 104 103 105 2 (debug_marker) "../System/buf.c":145:2 -1
+     (nil))
+(debug_insn 105 104 106 2 (debug_marker) "../System/buf.c":146:2 -1
+     (nil))
+(debug_insn 106 105 107 2 (debug_marker) "../System/buf.c":151:2 -1
+     (nil))
+(debug_insn 107 106 108 2 (debug_marker) "../System/buf.c":153:2 -1
+     (nil))
+(debug_insn 108 107 109 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) "../System/buf.c":239:2 -1
+     (nil))
+(debug_insn 109 108 110 2 (var_location:SI data (clobber (const_int 0 [0]))) "../System/buf.c":239:2 -1
+     (nil))
+(debug_insn 110 109 111 2 (debug_marker) "../System/buf.c":240:2 -1
+     (nil))
+(debug_insn 111 110 112 2 (var_location:SI buf_handle (debug_implicit_ptr:SI test_buf_handle)) "../System/buf.c":240:2 -1
+     (nil))
+(debug_insn 112 111 113 2 (var_location:SI data (debug_implicit_ptr:SI data)) "../System/buf.c":240:2 -1
+     (nil))
+(debug_insn 113 112 114 2 (debug_marker) "../System/buf.c":136:2 -1
+     (nil))
+(debug_insn 114 113 115 2 (debug_marker) "../System/buf.c":142:2 -1
+     (nil))
+(debug_insn 115 114 116 2 (var_location:SI D#16 (clobber (const_int 0 [0]))) "../System/buf.c":142:20 -1
+     (nil))
+(debug_insn 116 115 117 2 (var_location:SI D#15 (plus:SI (debug_expr:SI D#16)
+        (const_int 1 [0x1]))) "../System/buf.c":142:28 -1
+     (nil))
+(debug_insn 117 116 118 2 (var_location:QI D#14 (mem:QI (debug_expr:SI D#15) [0 +0 S1 A8])) "../System/buf.c":142:28 -1
+     (nil))
+(debug_insn 118 117 119 2 (var_location:QI data (debug_expr:QI D#14)) "../System/buf.c":142:8 -1
+     (nil))
+(debug_insn 119 118 120 2 (debug_marker) "../System/buf.c":145:2 -1
+     (nil))
+(debug_insn 120 119 121 2 (debug_marker) "../System/buf.c":146:2 -1
+     (nil))
+(debug_insn 121 120 122 2 (debug_marker) "../System/buf.c":151:2 -1
+     (nil))
+(debug_insn 122 121 123 2 (debug_marker) "../System/buf.c":153:2 -1
+     (nil))
+(debug_insn 123 122 124 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) "../System/buf.c":240:2 -1
+     (nil))
+(debug_insn 124 123 125 2 (var_location:SI data (clobber (const_int 0 [0]))) "../System/buf.c":240:2 -1
+     (nil))
+(debug_insn 125 124 126 2 (debug_marker) "../System/buf.c":241:2 -1
+     (nil))
+(debug_insn 126 125 127 2 (var_location:SI buf_handle (debug_implicit_ptr:SI test_buf_handle)) "../System/buf.c":241:2 -1
+     (nil))
+(debug_insn 127 126 128 2 (var_location:SI data (debug_implicit_ptr:SI data)) "../System/buf.c":241:2 -1
+     (nil))
+(debug_insn 128 127 129 2 (debug_marker) "../System/buf.c":136:2 -1
+     (nil))
+(debug_insn 129 128 130 2 (debug_marker) "../System/buf.c":142:2 -1
+     (nil))
+(debug_insn 130 129 131 2 (var_location:SI D#13 (clobber (const_int 0 [0]))) "../System/buf.c":142:20 -1
+     (nil))
+(debug_insn 131 130 132 2 (var_location:SI D#12 (plus:SI (debug_expr:SI D#13)
+        (const_int 2 [0x2]))) "../System/buf.c":142:28 -1
+     (nil))
+(debug_insn 132 131 133 2 (var_location:QI D#11 (mem:QI (debug_expr:SI D#12) [0 +0 S1 A8])) "../System/buf.c":142:28 -1
+     (nil))
+(debug_insn 133 132 134 2 (var_location:QI data (debug_expr:QI D#11)) "../System/buf.c":142:8 -1
+     (nil))
+(debug_insn 134 133 135 2 (debug_marker) "../System/buf.c":145:2 -1
+     (nil))
+(debug_insn 135 134 136 2 (debug_marker) "../System/buf.c":146:2 -1
+     (nil))
+(debug_insn 136 135 137 2 (debug_marker) "../System/buf.c":151:2 -1
+     (nil))
+(debug_insn 137 136 138 2 (debug_marker) "../System/buf.c":153:2 -1
+     (nil))
+(debug_insn 138 137 139 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) "../System/buf.c":241:2 -1
+     (nil))
+(debug_insn 139 138 140 2 (var_location:SI data (clobber (const_int 0 [0]))) "../System/buf.c":241:2 -1
+     (nil))
+(debug_insn 140 139 141 2 (debug_marker) "../System/buf.c":243:2 -1
+     (nil))
+(debug_insn 141 140 142 2 (var_location:SI buf_handle (debug_implicit_ptr:SI test_buf_handle)) "../System/buf.c":243:2 -1
+     (nil))
+(debug_insn 142 141 143 2 (var_location:QI data (const_int 5 [0x5])) "../System/buf.c":243:2 -1
+     (nil))
+(debug_insn 143 142 144 2 (debug_marker) "../System/buf.c":62:2 -1
+     (nil))
+(debug_insn 144 143 145 2 (debug_marker) "../System/buf.c":69:3 -1
+     (nil))
+(debug_insn 145 144 146 2 (debug_marker) "../System/buf.c":77:4 -1
+     (nil))
+(debug_insn 146 145 147 2 (debug_marker) "../System/buf.c":79:4 -1
+     (nil))
+(debug_insn 147 146 148 2 (debug_marker) "../System/buf.c":81:5 -1
+     (nil))
+(debug_insn 148 147 149 2 (var_location:SI buf_handle (debug_implicit_ptr:SI test_buf_handle)) -1
+     (nil))
+(debug_insn 149 148 150 2 (var_location:QI data (const_int 5 [0x5])) -1
+     (nil))
+(debug_insn 150 149 151 2 (debug_marker) "../System/buf.c":87:3 -1
+     (nil))
+(debug_insn 151 150 152 2 (debug_marker) "../System/buf.c":90:3 -1
+     (nil))
+(debug_insn 152 151 153 2 (debug_marker) "../System/buf.c":91:3 -1
+     (nil))
+(debug_insn 153 152 154 2 (debug_marker) "../System/buf.c":93:3 -1
+     (nil))
+(debug_insn 154 153 155 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 155 154 156 2 (var_location:QI data (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 156 155 157 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) "../System/buf.c":243:2 -1
+     (nil))
+(debug_insn 157 156 158 2 (var_location:QI data (clobber (const_int 0 [0]))) "../System/buf.c":243:2 -1
+     (nil))
+(debug_insn 158 157 159 2 (debug_marker) "../System/buf.c":244:2 -1
+     (nil))
+(debug_insn 159 158 160 2 (var_location:SI buf_handle (debug_implicit_ptr:SI test_buf_handle)) "../System/buf.c":244:2 -1
+     (nil))
+(debug_insn 160 159 161 2 (var_location:QI data (const_int 6 [0x6])) "../System/buf.c":244:2 -1
+     (nil))
+(debug_insn 161 160 162 2 (debug_marker) "../System/buf.c":62:2 -1
+     (nil))
+(debug_insn 162 161 163 2 (debug_marker) "../System/buf.c":69:3 -1
+     (nil))
+(debug_insn 163 162 164 2 (debug_marker) "../System/buf.c":77:4 -1
+     (nil))
+(debug_insn 164 163 165 2 (debug_marker) "../System/buf.c":79:4 -1
+     (nil))
+(debug_insn 165 164 166 2 (var_location:SI buf_handle (debug_implicit_ptr:SI test_buf_handle)) -1
+     (nil))
+(debug_insn 166 165 167 2 (var_location:QI data (const_int 6 [0x6])) -1
+     (nil))
+(debug_insn 167 166 168 2 (debug_marker) "../System/buf.c":87:3 -1
+     (nil))
+(debug_insn 168 167 169 2 (debug_marker) "../System/buf.c":90:3 -1
+     (nil))
+(debug_insn 169 168 170 2 (debug_marker) "../System/buf.c":91:3 -1
+     (nil))
+(debug_insn 170 169 171 2 (debug_marker) "../System/buf.c":93:3 -1
+     (nil))
+(debug_insn 171 170 172 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 172 171 173 2 (var_location:QI data (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 173 172 174 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) "../System/buf.c":244:2 -1
+     (nil))
+(debug_insn 174 173 175 2 (var_location:QI data (clobber (const_int 0 [0]))) "../System/buf.c":244:2 -1
+     (nil))
+(debug_insn 175 174 176 2 (debug_marker) "../System/buf.c":246:2 -1
+     (nil))
+(debug_insn 176 175 177 2 (var_location:SI buf_handle (debug_implicit_ptr:SI test_buf_handle)) "../System/buf.c":246:2 -1
+     (nil))
+(debug_insn 177 176 178 2 (var_location:SI data (debug_implicit_ptr:SI data)) "../System/buf.c":246:2 -1
+     (nil))
+(debug_insn 178 177 179 2 (debug_marker) "../System/buf.c":136:2 -1
+     (nil))
+(debug_insn 179 178 180 2 (debug_marker) "../System/buf.c":142:2 -1
+     (nil))
+(debug_insn 180 179 181 2 (var_location:SI D#10 (clobber (const_int 0 [0]))) "../System/buf.c":142:20 -1
+     (nil))
+(debug_insn 181 180 182 2 (var_location:SI D#9 (plus:SI (debug_expr:SI D#10)
+        (const_int 3 [0x3]))) "../System/buf.c":142:28 -1
+     (nil))
+(debug_insn 182 181 183 2 (var_location:QI D#8 (mem:QI (debug_expr:SI D#9) [0 +0 S1 A8])) "../System/buf.c":142:28 -1
+     (nil))
+(debug_insn 183 182 184 2 (var_location:QI data (debug_expr:QI D#8)) "../System/buf.c":142:8 -1
+     (nil))
+(debug_insn 184 183 185 2 (debug_marker) "../System/buf.c":145:2 -1
+     (nil))
+(debug_insn 185 184 186 2 (debug_marker) "../System/buf.c":146:2 -1
+     (nil))
+(debug_insn 186 185 187 2 (debug_marker) "../System/buf.c":151:2 -1
+     (nil))
+(debug_insn 187 186 188 2 (debug_marker) "../System/buf.c":153:2 -1
+     (nil))
+(debug_insn 188 187 189 2 (debug_marker) "../System/buf.c":155:3 -1
+     (nil))
+(debug_insn 189 188 190 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) "../System/buf.c":246:2 -1
+     (nil))
+(debug_insn 190 189 191 2 (var_location:SI data (clobber (const_int 0 [0]))) "../System/buf.c":246:2 -1
+     (nil))
+(debug_insn 191 190 192 2 (debug_marker) "../System/buf.c":247:2 -1
+     (nil))
+(debug_insn 192 191 193 2 (var_location:SI buf_handle (debug_implicit_ptr:SI test_buf_handle)) "../System/buf.c":247:2 -1
+     (nil))
+(debug_insn 193 192 194 2 (var_location:SI data (debug_implicit_ptr:SI data)) "../System/buf.c":247:2 -1
+     (nil))
+(debug_insn 194 193 195 2 (debug_marker) "../System/buf.c":136:2 -1
+     (nil))
+(debug_insn 195 194 196 2 (debug_marker) "../System/buf.c":142:2 -1
+     (nil))
+(debug_insn 196 195 197 2 (var_location:SI D#7 (clobber (const_int 0 [0]))) "../System/buf.c":142:20 -1
+     (nil))
+(debug_insn 197 196 198 2 (var_location:SI D#6 (debug_expr:SI D#7)) "../System/buf.c":142:28 -1
+     (nil))
+(debug_insn 198 197 199 2 (var_location:QI D#5 (mem:QI (debug_expr:SI D#6) [0 +0 S1 A8])) "../System/buf.c":142:28 -1
+     (nil))
+(debug_insn 199 198 200 2 (var_location:QI data (debug_expr:QI D#5)) "../System/buf.c":142:8 -1
+     (nil))
+(debug_insn 200 199 201 2 (debug_marker) "../System/buf.c":145:2 -1
+     (nil))
+(debug_insn 201 200 202 2 (debug_marker) "../System/buf.c":146:2 -1
+     (nil))
+(debug_insn 202 201 203 2 (debug_marker) "../System/buf.c":151:2 -1
+     (nil))
+(debug_insn 203 202 204 2 (debug_marker) "../System/buf.c":153:2 -1
+     (nil))
+(debug_insn 204 203 205 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) "../System/buf.c":247:2 -1
+     (nil))
+(debug_insn 205 204 206 2 (var_location:SI data (clobber (const_int 0 [0]))) "../System/buf.c":247:2 -1
+     (nil))
+(debug_insn 206 205 207 2 (debug_marker) "../System/buf.c":248:2 -1
+     (nil))
+(debug_insn 207 206 208 2 (var_location:SI buf_handle (debug_implicit_ptr:SI test_buf_handle)) "../System/buf.c":248:2 -1
+     (nil))
+(debug_insn 208 207 209 2 (var_location:SI data (debug_implicit_ptr:SI data)) "../System/buf.c":248:2 -1
+     (nil))
+(debug_insn 209 208 210 2 (debug_marker) "../System/buf.c":136:2 -1
+     (nil))
+(debug_insn 210 209 211 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) "../System/buf.c":248:2 -1
+     (nil))
+(debug_insn 211 210 212 2 (var_location:SI data (clobber (const_int 0 [0]))) "../System/buf.c":248:2 -1
+     (nil))
+(debug_insn 212 211 213 2 (debug_marker) "../System/buf.c":252:2 -1
+     (nil))
+(debug_insn 213 212 214 2 (var_location:SI buf_handle (debug_implicit_ptr:SI test_buf_handle)) "../System/buf.c":252:2 -1
+     (nil))
+(debug_insn 214 213 215 2 (debug_marker) "../System/buf.c":47:2 -1
+     (nil))
+(debug_insn 215 214 216 2 (debug_marker) "../System/buf.c":48:2 -1
+     (nil))
+(debug_insn 216 215 217 2 (var_location:SI test_buf_handle$rear (const_int 0 [0])) "../System/buf.c":48:19 -1
+     (nil))
+(debug_insn 217 216 218 2 (debug_marker) "../System/buf.c":49:2 -1
+     (nil))
+(debug_insn 218 217 219 2 (var_location:SI test_buf_handle$data_size (const_int 0 [0])) "../System/buf.c":49:24 -1
+     (nil))
+(debug_insn 219 218 220 2 (debug_marker) "../System/buf.c":50:2 -1
+     (nil))
+(debug_insn 220 219 221 2 (debug_marker) "../System/buf.c":52:2 -1
+     (nil))
+(debug_insn 221 220 222 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) "../System/buf.c":252:2 -1
+     (nil))
+(debug_insn 222 221 223 2 (debug_marker) "../System/buf.c":254:2 -1
+     (nil))
+(debug_insn 223 222 224 2 (var_location:SI buf_handle (debug_implicit_ptr:SI test_buf_handle)) "../System/buf.c":254:2 -1
+     (nil))
+(debug_insn 224 223 225 2 (var_location:SI data (debug_implicit_ptr:SI test_string)) "../System/buf.c":254:2 -1
+     (nil))
+(debug_insn 225 224 226 2 (var_location:SI size (const_int 4 [0x4])) "../System/buf.c":254:2 -1
+     (nil))
+(debug_insn 226 225 227 2 (debug_marker) "../System/buf.c":101:2 -1
+     (nil))
+(debug_insn 227 226 228 2 (var_location:QI rtrn_code (const_int 0 [0])) "../System/buf.c":101:19 -1
+     (nil))
+(debug_insn 228 227 229 2 (debug_marker) "../System/buf.c":104:2 -1
+     (nil))
+(debug_insn 229 228 230 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 230 229 231 2 (var_location:SI data (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 231 230 232 2 (var_location:SI size (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 232 231 233 2 (var_location:SI i (const_int 0 [0])) -1
+     (nil))
+(debug_insn 233 232 234 2 (debug_marker) "../System/buf.c":111:21 -1
+     (nil))
+(debug_insn 234 233 235 2 (var_location:SI test_buf_handle$data_size (const_int 0 [0])) -1
+     (nil))
+(debug_insn 235 234 236 2 (var_location:SI test_buf_handle$rear (const_int 0 [0])) -1
+     (nil))
+(debug_insn 236 235 237 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 237 236 238 2 (var_location:SI data (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 238 237 239 2 (var_location:SI size (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 239 238 240 2 (var_location:SI i (const_int 0 [0])) -1
+     (nil))
+(debug_insn 240 239 241 2 (debug_marker) "../System/buf.c":114:4 -1
+     (nil))
+(debug_insn 241 240 242 2 (var_location:SI D#27 (debug_implicit_ptr:SI test_string)) "../System/buf.c":114:47 -1
+     (nil))
+(debug_insn 242 241 243 2 (var_location:QI D#26 (mem:QI (debug_expr:SI D#27) [0 +0 S1 A8])) "../System/buf.c":114:16 -1
+     (nil))
+(debug_insn 243 242 244 2 (var_location:SI buf_handle (debug_implicit_ptr:SI test_buf_handle)) "../System/buf.c":114:16 -1
+     (nil))
+(debug_insn 244 243 245 2 (var_location:QI data (debug_expr:QI D#26)) "../System/buf.c":114:16 -1
+     (nil))
+(debug_insn 245 244 246 2 (debug_marker) "../System/buf.c":62:2 -1
+     (nil))
+(debug_insn 246 245 247 2 (var_location:SI test_buf_handle$data_size (const_int 0 [0])) -1
+     (nil))
+(debug_insn 247 246 248 2 (var_location:SI test_buf_handle$rear (const_int 0 [0])) -1
+     (nil))
+(debug_insn 248 247 249 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 249 248 250 2 (var_location:SI data (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 250 249 251 2 (var_location:SI size (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 251 250 252 2 (var_location:SI i (const_int 0 [0])) -1
+     (nil))
+(debug_insn 252 251 253 2 (var_location:SI D#27 (debug_implicit_ptr:SI test_string)) "../System/buf.c":114:47 -1
+     (nil))
+(debug_insn 253 252 254 2 (var_location:QI D#26 (mem:QI (debug_expr:SI D#27) [0 +0 S1 A8])) "../System/buf.c":114:16 -1
+     (nil))
+(debug_insn 254 253 255 2 (var_location:SI buf_handle (debug_implicit_ptr:SI test_buf_handle)) "../System/buf.c":114:16 -1
+     (nil))
+(debug_insn 255 254 256 2 (var_location:QI data (debug_expr:QI D#26)) "../System/buf.c":114:16 -1
+     (nil))
+(debug_insn 256 255 257 2 (debug_marker) "../System/buf.c":71:4 -1
+     (nil))
+(debug_insn 257 256 258 2 (debug_marker) "../System/buf.c":72:4 -1
+     (nil))
+(debug_insn 258 257 259 2 (var_location:SI test_buf_handle$rear (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 259 258 260 2 (var_location:SI buf_handle (debug_implicit_ptr:SI test_buf_handle)) -1
+     (nil))
+(debug_insn 260 259 261 2 (var_location:QI data (debug_expr:QI D#26)) -1
+     (nil))
+(debug_insn 261 260 262 2 (debug_marker) "../System/buf.c":87:3 -1
+     (nil))
+(debug_insn 262 261 263 2 (debug_marker) "../System/buf.c":90:3 -1
+     (nil))
+(debug_insn 263 262 264 2 (var_location:SI test_buf_handle$data_size (debug_expr:SI D#28)) "../System/buf.c":90:24 -1
+     (nil))
+(debug_insn 264 263 265 2 (debug_marker) "../System/buf.c":91:3 -1
+     (nil))
+(debug_insn 265 264 266 2 (debug_marker) "../System/buf.c":93:3 -1
+     (nil))
+(debug_insn 266 265 267 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 267 266 268 2 (var_location:QI data (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 268 267 269 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) "../System/buf.c":114:16 -1
+     (nil))
+(debug_insn 269 268 270 2 (var_location:QI data (clobber (const_int 0 [0]))) "../System/buf.c":114:16 -1
+     (nil))
+(debug_insn 270 269 271 2 (var_location:QI rtrn_code (const_int 0 [0])) "../System/buf.c":114:16 -1
+     (nil))
+(debug_insn 271 270 272 2 (debug_marker) "../System/buf.c":117:4 -1
+     (nil))
+(debug_insn 272 271 273 2 (debug_marker) "../System/buf.c":111:29 -1
+     (nil))
+(debug_insn 273 272 274 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 274 273 275 2 (var_location:SI data (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 275 274 276 2 (var_location:SI size (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 276 275 277 2 (var_location:SI i (debug_expr:SI D#28)) -1
+     (nil))
+(debug_insn 277 276 278 2 (debug_marker) "../System/buf.c":111:21 -1
+     (nil))
+(debug_insn 278 277 279 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) "../System/buf.c":114:16 -1
+     (nil))
+(debug_insn 279 278 280 2 (var_location:QI data (clobber (const_int 0 [0]))) "../System/buf.c":114:16 -1
+     (nil))
+(debug_insn 280 279 281 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 281 280 282 2 (var_location:SI data (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 282 281 283 2 (var_location:SI size (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 283 282 284 2 (var_location:QI rtrn_code (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 284 283 285 2 (var_location:SI i (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 285 284 286 2 (var_location:SI buf_handle (clobber (const_int 0 [0]))) "../System/buf.c":254:2 -1
+     (nil))
+(debug_insn 286 285 287 2 (var_location:SI data (clobber (const_int 0 [0]))) "../System/buf.c":254:2 -1
+     (nil))
+(debug_insn 287 286 288 2 (var_location:SI size (clobber (const_int 0 [0]))) "../System/buf.c":254:2 -1
+     (nil))
+(debug_insn 288 287 289 2 (var_location:SI i (clobber (const_int 0 [0]))) "../System/buf.c":254:2 -1
+     (nil))
+(debug_insn 289 288 295 2 (var_location:QI data (clobber (const_int 0 [0]))) -1
+     (nil))
+(note 295 289 296 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 296 295 297 2 (simple_return) "../System/buf.c":258:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 297 296 292)
+(note 292 297 293 NOTE_INSN_DELETED)
+(note 293 292 0 NOTE_INSN_DELETED)

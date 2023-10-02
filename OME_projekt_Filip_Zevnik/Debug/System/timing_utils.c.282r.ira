@@ -1,0 +1,1701 @@
+
+;; Function TIMUT_stopwatch_set_time_mark (TIMUT_stopwatch_set_time_mark, funcdef_no=352, decl_uid=5687, cgraph_uid=356, symbol_order=355)
+
+Starting decreasing number of live ranges...
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+Adding REG_EQUIV to insn 13 for source of insn 9
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Reg 115 uninteresting
+Ignoring reg 116, has equiv memory
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+init_insns for 116: (insn_list:REG_DEP_TRUE 9 (nil))
+
+Pass 1 for finding pseudo/allocno costs
+
+    r116: preferred LO_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r115: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r114: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+
+  a0(r114,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:20000,20000
+  a1(r116,l0) costs: LO_REGS:2000,2000 HI_REGS:6000,6000 CALLER_SAVE_REGS:6000,6000 EVEN_REG:6000,6000 GENERAL_REGS:4000,4000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a2(r115,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+
+   Insn 9(l0): point = 0
+   Insn 13(l0): point = 2
+   Insn 7(l0): point = 4
+   Insn 2(l0): point = 6
+   Insn 12(l0): point = 8
+ a0(r114): [1..6]
+ a1(r116): [1..2]
+ a2(r115): [7..8]
+Compressing live ranges: from 11 to 4 - 36%
+Ranges after the compression:
+ a0(r114): [0..1]
+ a1(r116): [0..1]
+ a2(r115): [2..3]
++++Allocating 16 bytes for conflict table (uncompressed size 24)
+;; a0(r114,l0) conflicts: a1(r116,l0)
+;;     total conflict hard regs: 0 12 14
+;;     conflict hard regs: 0 12 14
+
+;; a1(r116,l0) conflicts: a0(r114,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a2(r115,l0) conflicts:
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+
+  cp0:a0(r114)<->a2(r115)@1000:move
+  pref0:a2(r115)<-hr0@2000
+  pref1:a1(r116)<-hr0@2000
+  regions=1, blocks=3, points=4
+    allocnos=3 (big 0), copies=1, conflicts=0, ranges=3
+
+**** Allocnos coloring:
+
+
+  Loop 0 (parent -1, header bb2, depth 0)
+    bbs: 2
+    all: 0r114 1r116 2r115
+    modified regnos: 114 115 116
+    border:
+    Pressure: GENERAL_REGS=4
+    Hard reg set forest:
+      0:( 0-12 14 16-47)@0
+        1:( 0-12 14)@232000
+          2:( 1-11)@40000
+      Allocno a0r114 of GENERAL_REGS(14) has 11 avail. regs  1-11, node:  1-11 (confl regs =  0 12-106)
+      Allocno a1r116 of ALL_REGS(46) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15 48-106)
+      Allocno a2r115 of ALL_REGS(46) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15 48-106)
+      Forming thread by copy 0:a0r114-a2r115 (freq=1000):
+        Result (freq=4000): a0r114(2000) a2r115(2000)
+      Pushing a1(r116,l0)(cost 0)
+      Pushing a2(r115,l0)(cost 0)
+      Pushing a0(r114,l0)(cost 0)
+      Popping a0(r114,l0)  -- assign reg 4
+      Popping a2(r115,l0)  -- assign reg 0
+      Popping a1(r116,l0)  -- assign reg 0
+Disposition:
+    0:r114 l0     4    2:r115 l0     0    1:r116 l0     0
+New iteration of spill/restore move
++++Costs: overall -56000, reg -56000, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+TIMUT_stopwatch_set_time_mark
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 12 [ip] 13 [sp] 14 [lr]
+;;  ref usage 	r0={2d,2u} r1={2d} r2={2d} r3={2d} r7={1d,2u} r12={2d} r13={1d,3u} r14={2d} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r102={1d,2u} r103={1d,1u} r104={1d} r105={1d} r106={1d} r114={1d,1u,1e} r115={1d,1u} r116={1d,1u} 
+;;    total ref usage 123{109d,13u,1e} in 6{5 regular + 1 call} insns.
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 3 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 3 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(note 8 3 6 2 NOTE_INSN_DELETED)
+(debug_insn 6 8 12 2 (debug_marker) "../System/timing_utils.c":58:2 -1
+     (nil))
+(insn 12 6 2 2 (set (reg:SI 115)
+        (reg:SI 0 r0 [ stopwatch ])) "../System/timing_utils.c":57:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [ stopwatch ])
+        (nil)))
+(insn 2 12 7 2 (set (reg/v/f:SI 114 [ stopwatch ])
+        (reg:SI 115)) "../System/timing_utils.c":57:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 115)
+        (nil)))
+(call_insn 7 2 13 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":58:25 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 13 7 9 2 (set (reg:SI 116)
+        (reg:SI 0 r0)) "../System/timing_utils.c":58:25 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_EQUIV (mem:SI (reg/v/f:SI 114 [ stopwatch ]) [1 stopwatch_4(D)->time_mark+0 S4 A32])
+            (nil))))
+(insn 9 13 14 2 (set (mem:SI (reg/v/f:SI 114 [ stopwatch ]) [1 stopwatch_4(D)->time_mark+0 S4 A32])
+        (reg:SI 116)) "../System/timing_utils.c":58:23 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 116)
+        (expr_list:REG_DEAD (reg/v/f:SI 114 [ stopwatch ])
+            (nil))))
+(note 14 9 0 NOTE_INSN_DELETED)
+
+;; Function TIMUT_stopwatch_update (TIMUT_stopwatch_update, funcdef_no=353, decl_uid=5689, cgraph_uid=357, symbol_order=356)
+
+Starting decreasing number of live ranges...
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+Adding REG_EQUIV to insn 10 for source of insn 11
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Reg 119 uninteresting
+Reg 120: local to bb 2 def dominates all uses has unique first use
+Ignoring reg 118, has equiv memory
+Ignoring reg 117, has equiv memory
+Found def insn 15 for 120 to be not moveable
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+init_insns for 117: (insn_list:REG_DEP_TRUE 11 (nil))
+init_insns for 118: (insn_list:REG_DEP_TRUE 9 (nil))
+
+Pass 1 for finding pseudo/allocno costs
+
+    r120: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r119: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r118: preferred LO_REGS, alternative NO_REGS, allocno LO_REGS
+    r117: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r116: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+
+  a0(r116,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:60000,60000 VFP_LO_REGS:60000,60000 ALL_REGS:60000,60000 MEM:40000,40000
+  a1(r117,l0) costs: LO_REGS:0,0 HI_REGS:2000,2000 CALLER_SAVE_REGS:2000,2000 EVEN_REG:2000,2000 GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:20000,20000
+  a2(r118,l0) costs: LO_REGS:0,0 HI_REGS:2000,2000 CALLER_SAVE_REGS:2000,2000 EVEN_REG:2000,2000 GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:0,0
+  a3(r120,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a4(r119,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+
+   Insn 11(l0): point = 0
+   Insn 10(l0): point = 2
+   Insn 9(l0): point = 4
+   Insn 15(l0): point = 6
+   Insn 7(l0): point = 8
+   Insn 2(l0): point = 10
+   Insn 14(l0): point = 12
+ a0(r116): [1..10]
+ a1(r117): [1..2]
+ a2(r118): [3..4]
+ a3(r120): [3..6]
+ a4(r119): [11..12]
+Compressing live ranges: from 15 to 6 - 40%
+Ranges after the compression:
+ a0(r116): [0..3]
+ a1(r117): [0..1]
+ a2(r118): [2..3]
+ a3(r120): [2..3]
+ a4(r119): [4..5]
++++Allocating 32 bytes for conflict table (uncompressed size 40)
+;; a0(r116,l0) conflicts: a1(r117,l0) a2(r118,l0) a3(r120,l0)
+;;     total conflict hard regs: 0 12 14
+;;     conflict hard regs: 0 12 14
+
+;; a1(r117,l0) conflicts: a0(r116,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a2(r118,l0) conflicts: a0(r116,l0) a3(r120,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a3(r120,l0) conflicts: a0(r116,l0) a2(r118,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a4(r119,l0) conflicts:
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+
+  cp0:a0(r116)<->a4(r119)@1000:move
+  cp1:a1(r117)<->a3(r120)@125:shuffle
+  cp2:a1(r117)<->a2(r118)@125:shuffle
+  pref0:a4(r119)<-hr0@2000
+  pref1:a3(r120)<-hr0@2000
+  regions=1, blocks=3, points=6
+    allocnos=5 (big 0), copies=3, conflicts=0, ranges=5
+
+**** Allocnos coloring:
+
+
+  Loop 0 (parent -1, header bb2, depth 0)
+    bbs: 2
+    all: 0r116 1r117 2r118 3r120 4r119
+    modified regnos: 116 117 118 119 120
+    border:
+    Pressure: GENERAL_REGS=4
+    Hard reg set forest:
+      0:( 0-12 14 16-47)@0
+        1:( 0-12 14)@272000
+          2:( 1-11)@80000
+      Allocno a0r116 of GENERAL_REGS(14) has 11 avail. regs  1-11, node:  1-11 (confl regs =  0 12-106)
+      Allocno a1r117 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a2r118 of LO_REGS(8) has 8 avail. regs  0-7, ^node:  0-12 14 (confl regs =  8-106)
+      Allocno a3r120 of ALL_REGS(46) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15 48-106)
+      Allocno a4r119 of ALL_REGS(46) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15 48-106)
+      Forming thread by copy 0:a0r116-a4r119 (freq=1000):
+        Result (freq=5000): a0r116(3000) a4r119(2000)
+      Forming thread by copy 1:a1r117-a3r120 (freq=125):
+        Result (freq=4000): a1r117(2000) a3r120(2000)
+      Pushing a2(r118,l0)(cost 0)
+      Pushing a3(r120,l0)(cost 0)
+      Pushing a1(r117,l0)(cost 0)
+      Pushing a4(r119,l0)(cost 0)
+      Pushing a0(r116,l0)(cost 0)
+      Popping a0(r116,l0)  -- assign reg 4
+      Popping a4(r119,l0)  -- assign reg 0
+      Popping a1(r117,l0)  -- assign reg 0
+      Popping a3(r120,l0)  -- assign reg 0
+      Popping a2(r118,l0)  -- assign reg 3
+Disposition:
+    0:r116 l0     4    1:r117 l0     0    2:r118 l0     3    4:r119 l0     0
+    3:r120 l0     0
+New iteration of spill/restore move
++++Costs: overall -56000, reg -56000, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+TIMUT_stopwatch_update
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 12 [ip] 13 [sp] 14 [lr]
+;;  ref usage 	r0={2d,2u} r1={2d} r2={2d} r3={2d} r7={1d,2u} r12={2d} r13={1d,3u} r14={2d} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r102={1d,2u} r103={1d,1u} r104={1d} r105={1d} r106={1d} r116={1d,2u,2e} r117={1d,1u} r118={1d,1u} r119={1d,1u} r120={1d,1u} 
+;;    total ref usage 129{111d,16u,2e} in 8{7 regular + 1 call} insns.
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 3 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 3 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(note 8 3 6 2 NOTE_INSN_DELETED)
+(debug_insn 6 8 14 2 (debug_marker) "../System/timing_utils.c":67:2 -1
+     (nil))
+(insn 14 6 2 2 (set (reg:SI 119)
+        (reg:SI 0 r0 [ stopwatch ])) "../System/timing_utils.c":66:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [ stopwatch ])
+        (nil)))
+(insn 2 14 7 2 (set (reg/v/f:SI 116 [ stopwatch ])
+        (reg:SI 119)) "../System/timing_utils.c":66:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 119)
+        (nil)))
+(call_insn 7 2 15 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":67:28 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 15 7 9 2 (set (reg:SI 120)
+        (reg:SI 0 r0)) "../System/timing_utils.c":67:28 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+(insn 9 15 10 2 (set (reg:SI 118 [ stopwatch_6(D)->time_mark ])
+        (mem:SI (reg/v/f:SI 116 [ stopwatch ]) [1 stopwatch_6(D)->time_mark+0 S4 A32])) "../System/timing_utils.c":67:42 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (reg/v/f:SI 116 [ stopwatch ]) [1 stopwatch_6(D)->time_mark+0 S4 A32])
+        (nil)))
+(insn 10 9 11 2 (set (reg:SI 117)
+        (minus:SI (reg:SI 120)
+            (reg:SI 118 [ stopwatch_6(D)->time_mark ]))) "../System/timing_utils.c":67:42 45 {*arm_subsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 120)
+        (expr_list:REG_DEAD (reg:SI 118 [ stopwatch_6(D)->time_mark ])
+            (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 116 [ stopwatch ])
+                        (const_int 4 [0x4])) [1 stopwatch_6(D)->elapsed_time+0 S4 A32])
+                (nil)))))
+(insn 11 10 16 2 (set (mem:SI (plus:SI (reg/v/f:SI 116 [ stopwatch ])
+                (const_int 4 [0x4])) [1 stopwatch_6(D)->elapsed_time+0 S4 A32])
+        (reg:SI 117)) "../System/timing_utils.c":67:26 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 117)
+        (expr_list:REG_DEAD (reg/v/f:SI 116 [ stopwatch ])
+            (nil))))
+(note 16 11 0 NOTE_INSN_DELETED)
+
+;; Function TIMUT_stopwatch_has_X_ms_passed (TIMUT_stopwatch_has_X_ms_passed, funcdef_no=354, decl_uid=5692, cgraph_uid=358, symbol_order=357)
+
+Starting decreasing number of live ranges...
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Reg 124 uninteresting
+Reg 125 uninteresting
+Reg 119: local to bb 2 def dominates all uses has unique first use
+Reg 126: local to bb 2 def dominates all uses has unique first use
+Ignoring reg 120, has equiv memory
+Reg 115 uninteresting
+Examining insn 3, def for 119
+  all ok
+Found def insn 31 for 126 to be not moveable
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+init_insns for 120: (insn_list:REG_DEP_TRUE 13 (nil))
+
+Pass 1 for finding pseudo/allocno costs
+
+    r126: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r125: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r124: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r120: preferred LO_REGS, alternative NO_REGS, allocno LO_REGS
+    r119: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r118: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r115: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+
+  a0(r115,l0) costs: LO_REGS:0,0 HI_REGS:2000,2000 CALLER_SAVE_REGS:2000,2000 EVEN_REG:2000,2000 GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:45000,45000 MEM:30000,30000
+  a1(r119,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:20000,20000
+  a2(r118,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:60000,60000 VFP_LO_REGS:60000,60000 ALL_REGS:60000,60000 MEM:40000,40000
+  a3(r120,l0) costs: LO_REGS:0,0 HI_REGS:2000,2000 CALLER_SAVE_REGS:2000,2000 EVEN_REG:2000,2000 GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:0,0
+  a4(r126,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a5(r125,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a6(r124,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+
+   Insn 27(l0): point = 0
+   Insn 26(l0): point = 2
+   Insn 15(l0): point = 4
+   Insn 14(l0): point = 6
+   Insn 13(l0): point = 8
+   Insn 31(l0): point = 10
+   Insn 11(l0): point = 12
+   Insn 3(l0): point = 14
+   Insn 30(l0): point = 16
+   Insn 2(l0): point = 18
+   Insn 29(l0): point = 20
+ a0(r115): [3..6]
+ a1(r119): [3..14]
+ a2(r118): [5..18]
+ a3(r120): [7..8]
+ a4(r126): [7..10]
+ a5(r125): [15..16]
+ a6(r124): [19..20]
+Compressing live ranges: from 23 to 8 - 34%
+Ranges after the compression:
+ a0(r115): [0..1]
+ a1(r119): [0..3]
+ a2(r118): [0..5]
+ a3(r120): [2..3]
+ a4(r126): [2..3]
+ a5(r125): [4..5]
+ a6(r124): [6..7]
++++Allocating 48 bytes for conflict table (uncompressed size 56)
+;; a0(r115,l0) conflicts: a1(r119,l0) a2(r118,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a1(r119,l0) conflicts: a0(r115,l0) a2(r118,l0) a3(r120,l0) a4(r126,l0)
+;;     total conflict hard regs: 0 12 14
+;;     conflict hard regs: 0 12 14
+
+;; a2(r118,l0) conflicts: a0(r115,l0) a1(r119,l0) a3(r120,l0) a4(r126,l0) a5(r125,l0)
+;;     total conflict hard regs: 0-1 12 14
+;;     conflict hard regs: 0-1 12 14
+
+;; a3(r120,l0) conflicts: a1(r119,l0) a2(r118,l0) a4(r126,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a4(r126,l0) conflicts: a1(r119,l0) a2(r118,l0) a3(r120,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a5(r125,l0) conflicts: a2(r118,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a6(r124,l0) conflicts:
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+
+  cp0:a2(r118)<->a6(r124)@1000:move
+  cp1:a1(r119)<->a5(r125)@1000:move
+  cp2:a0(r115)<->a4(r126)@125:shuffle
+  cp3:a0(r115)<->a3(r120)@125:shuffle
+  pref0:a6(r124)<-hr0@2000
+  pref1:a5(r125)<-hr1@2000
+  pref2:a4(r126)<-hr0@2000
+  pref3:a1(r119)<-hr0@125
+  pref4:a0(r115)<-hr0@125
+  regions=1, blocks=3, points=8
+    allocnos=7 (big 0), copies=4, conflicts=0, ranges=7
+
+**** Allocnos coloring:
+
+
+  Loop 0 (parent -1, header bb2, depth 0)
+    bbs: 2
+    all: 0r115 1r119 2r118 3r120 4r126 5r125 6r124
+    modified regnos: 115 118 119 120 124 125 126
+    border:
+    Pressure: GENERAL_REGS=5
+ Removing pref3:hr0@125
+    Hard reg set forest:
+      0:( 0-12 14 16-47)@0
+        1:( 0-12 14)@292500
+          2:( 0 2-12 14)@116000
+            3:( 2-11)@100250
+      Allocno a0r115 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a1r119 of GENERAL_REGS(14) has 11 avail. regs  1-11, ^node:  0-12 14 (confl regs =  0 12-106)
+      Allocno a2r118 of GENERAL_REGS(14) has 10 avail. regs  2-11, node:  2-11 (confl regs =  0-1 12-106)
+      Allocno a3r120 of LO_REGS(8) has 8 avail. regs  0-7, ^node:  0-12 14 (confl regs =  8-106)
+      Allocno a4r126 of ALL_REGS(46) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15 48-106)
+      Allocno a5r125 of ALL_REGS(46) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15 48-106)
+      Allocno a6r124 of ALL_REGS(46) has 13 avail. regs  0 2-12 14, node:  0 2-12 14 (confl regs =  1 13 15 48-106)
+      Forming thread by copy 0:a2r118-a6r124 (freq=1000):
+        Result (freq=5000): a2r118(3000) a6r124(2000)
+      Forming thread by copy 1:a1r119-a5r125 (freq=1000):
+        Result (freq=4000): a1r119(2000) a5r125(2000)
+      Forming thread by copy 2:a0r115-a4r126 (freq=125):
+        Result (freq=5000): a0r115(3000) a4r126(2000)
+      Pushing a3(r120,l0)(cost 0)
+      Pushing a5(r125,l0)(cost 0)
+      Pushing a1(r119,l0)(cost 0)
+      Pushing a6(r124,l0)(cost 0)
+      Pushing a2(r118,l0)(cost 0)
+      Pushing a4(r126,l0)(cost 0)
+      Pushing a0(r115,l0)(cost 0)
+      Popping a0(r115,l0)  -- assign reg 3
+      Popping a4(r126,l0)  -- assign reg 0
+      Popping a2(r118,l0)  -- assign reg 4
+      Popping a6(r124,l0)  -- assign reg 0
+      Popping a1(r119,l0)  -- assign reg 5
+      Popping a5(r125,l0)  -- assign reg 1
+      Popping a3(r120,l0)  -- assign reg 3
+Assigning 0 to a0r115
+Disposition:
+    0:r115 l0     0    2:r118 l0     4    1:r119 l0     5    3:r120 l0     3
+    6:r124 l0     0    5:r125 l0     1    4:r126 l0     0
+New iteration of spill/restore move
++++Costs: overall -84250, reg -84250, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+TIMUT_stopwatch_has_X_ms_passed
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={3d,4u} r1={2d,1u} r2={2d} r3={2d} r7={1d,2u} r12={2d} r13={1d,3u} r14={2d} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={2d} r101={1d} r102={1d,2u} r103={1d,1u} r104={1d} r105={1d} r106={1d} r115={1d,2u} r118={1d,3u,1e} r119={1d,1u} r120={1d,1u} r124={1d,1u} r125={1d,1u} r126={1d,1u} 
+;;    total ref usage 139{115d,23u,1e} in 17{16 regular + 1 call} insns.
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 4 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 4 5 12 2 NOTE_INSN_FUNCTION_BEG)
+(note 12 4 18 2 NOTE_INSN_DELETED)
+(note 18 12 19 2 NOTE_INSN_DELETED)
+(note 19 18 21 2 NOTE_INSN_DELETED)
+(note 21 19 7 2 NOTE_INSN_DELETED)
+(debug_insn 7 21 29 2 (debug_marker) "../System/timing_utils.c":81:2 -1
+     (nil))
+(insn 29 7 2 2 (set (reg:SI 124)
+        (reg:SI 0 r0 [ stopwatch ])) "../System/timing_utils.c":76:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [ stopwatch ])
+        (nil)))
+(insn 2 29 8 2 (set (reg/v/f:SI 118 [ stopwatch ])
+        (reg:SI 124)) "../System/timing_utils.c":76:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 124)
+        (nil)))
+(debug_insn 8 2 9 2 (var_location:SI stopwatch (reg/v/f:SI 118 [ stopwatch ])) "../System/timing_utils.c":81:2 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker:BLK) "../System/timing_utils.c":65:6 -1
+     (nil))
+(debug_insn 10 9 30 2 (debug_marker) "../System/timing_utils.c":67:2 -1
+     (nil))
+(insn 30 10 3 2 (set (reg:SI 125)
+        (reg:SI 1 r1 [ x ])) "../System/timing_utils.c":76:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [ x ])
+        (nil)))
+(insn 3 30 11 2 (set (reg/v:SI 119 [ x ])
+        (reg:SI 125)) "../System/timing_utils.c":76:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 125)
+        (nil)))
+(call_insn 11 3 31 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":67:28 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 31 11 13 2 (set (reg:SI 126)
+        (reg:SI 0 r0)) "../System/timing_utils.c":67:28 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+(insn 13 31 14 2 (set (reg:SI 120 [ stopwatch_3(D)->time_mark ])
+        (mem:SI (reg/v/f:SI 118 [ stopwatch ]) [1 stopwatch_3(D)->time_mark+0 S4 A32])) "../System/timing_utils.c":67:42 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (reg/v/f:SI 118 [ stopwatch ]) [1 stopwatch_3(D)->time_mark+0 S4 A32])
+        (nil)))
+(insn 14 13 15 2 (set (reg:SI 115 [ _7 ])
+        (minus:SI (reg:SI 126)
+            (reg:SI 120 [ stopwatch_3(D)->time_mark ]))) "../System/timing_utils.c":67:42 45 {*arm_subsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 126)
+        (expr_list:REG_DEAD (reg:SI 120 [ stopwatch_3(D)->time_mark ])
+            (nil))))
+(insn 15 14 16 2 (set (mem:SI (plus:SI (reg/v/f:SI 118 [ stopwatch ])
+                (const_int 4 [0x4])) [1 stopwatch_3(D)->elapsed_time+0 S4 A32])
+        (reg:SI 115 [ _7 ])) "../System/timing_utils.c":67:26 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v/f:SI 118 [ stopwatch ])
+        (nil)))
+(debug_insn 16 15 17 2 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":81:2 -1
+     (nil))
+(debug_insn 17 16 26 2 (debug_marker) "../System/timing_utils.c":84:2 -1
+     (nil))
+(insn 26 17 27 2 (parallel [
+            (set (reg/i:SI 0 r0)
+                (ltu:SI (reg/v:SI 119 [ x ])
+                    (reg:SI 115 [ _7 ])))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/timing_utils.c":93:1 330 {*compare_scc}
+     (expr_list:REG_DEAD (reg/v:SI 119 [ x ])
+        (expr_list:REG_DEAD (reg:SI 115 [ _7 ])
+            (expr_list:REG_UNUSED (reg:CC 100 cc)
+                (nil)))))
+(insn 27 26 32 2 (use (reg/i:SI 0 r0)) "../System/timing_utils.c":93:1 -1
+     (nil))
+(note 32 27 0 NOTE_INSN_DELETED)
+
+;; Function TIMUT_stopwatch_has_another_X_ms_passed (TIMUT_stopwatch_has_another_X_ms_passed, funcdef_no=355, decl_uid=5695, cgraph_uid=359, symbol_order=358)
+
+Starting decreasing number of live ranges...
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7
+;; 2 succs { 3 6 }
+;; 3 succs { 4 5 }
+;; 4 succs { 7 }
+;; 5 succs { 7 }
+;; 6 succs { 7 }
+;; 7 succs { 1 }
+Adding REG_EQUIV to insn 71 for source of insn 41
+Adding REG_EQUIV to insn 49 for source of insn 50
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Reg 125 uninteresting
+Reg 126 uninteresting
+Reg 121: def dominates all uses has unique first use
+Reg 127: local to bb 2 def dominates all uses has unique first use
+Reg 116 uninteresting
+Reg 117 uninteresting
+Ignoring reg 128, has equiv memory
+Ignoring reg 123, has equiv memory
+Reg 121 not local to one basic block
+Found def insn 70 for 127 to be not moveable
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7
+;; 2 succs { 3 6 }
+;; 3 succs { 4 5 }
+;; 4 succs { 7 }
+;; 5 succs { 7 }
+;; 6 succs { 7 }
+;; 7 succs { 1 }
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+init_insns for 123: (insn_list:REG_DEP_TRUE 50 (nil))
+init_insns for 128: (insn_list:REG_DEP_TRUE 41 (nil))
+
+Pass 1 for finding pseudo/allocno costs
+
+    r128: preferred LO_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r127: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r126: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r125: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r123: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r121: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r120: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r119: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r117: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r116: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+
+  a0(r119,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a1(r120,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:52500,52500 VFP_LO_REGS:52500,52500 ALL_REGS:52500,52500 MEM:35000,35000
+  a2(r123,l0) costs: LO_REGS:0,0 HI_REGS:670,670 CALLER_SAVE_REGS:670,670 EVEN_REG:670,670 GENERAL_REGS:670,670 VFP_D0_D7_REGS:10050,10050 VFP_LO_REGS:10050,10050 ALL_REGS:10050,10050 MEM:6700,6700
+  a3(r116,l0) costs: LO_REGS:0,0 HI_REGS:2000,2000 CALLER_SAVE_REGS:2000,2000 EVEN_REG:2000,2000 GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:35025,35025 VFP_LO_REGS:35025,35025 ALL_REGS:35025,35025 MEM:23350,23350
+  a4(r121,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:42525,42525 VFP_LO_REGS:42525,42525 ALL_REGS:42525,42525 MEM:28350,28350
+  a5(r128,l0) costs: LO_REGS:330,330 HI_REGS:990,990 CALLER_SAVE_REGS:990,990 EVEN_REG:990,990 GENERAL_REGS:660,660 VFP_D0_D7_REGS:7425,7425 VFP_LO_REGS:7425,7425 ALL_REGS:4950,4950 MEM:4950,4950
+  a6(r117,l0) costs: LO_REGS:0,0 HI_REGS:2000,2000 CALLER_SAVE_REGS:2000,2000 EVEN_REG:2000,2000 GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:52500,52500 VFP_LO_REGS:52500,52500 ALL_REGS:52500,52500 MEM:35000,35000
+  a7(r127,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a8(r126,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a9(r125,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+
+   Insn 61(l0): point = 0
+   Insn 60(l0): point = 2
+   Insn 7(l0): point = 5
+   Insn 74(l0): point = 8
+   Insn 6(l0): point = 10
+   Insn 50(l0): point = 12
+   Insn 49(l0): point = 14
+   Insn 72(l0): point = 17
+   Insn 5(l0): point = 19
+   Insn 41(l0): point = 21
+   Insn 71(l0): point = 23
+   Insn 39(l0): point = 25
+   Insn 33(l0): point = 28
+   Insn 32(l0): point = 30
+   Insn 26(l0): point = 33
+   Insn 25(l0): point = 35
+   Insn 22(l0): point = 37
+   Insn 21(l0): point = 39
+   Insn 20(l0): point = 41
+   Insn 70(l0): point = 43
+   Insn 18(l0): point = 45
+   Insn 3(l0): point = 47
+   Insn 69(l0): point = 49
+   Insn 2(l0): point = 51
+   Insn 68(l0): point = 53
+ a0(r119): [17..19] [8..10] [3..5]
+ a1(r120): [22..51] [13..16]
+ a2(r123): [13..14]
+ a3(r116): [28..41] [15..16]
+ a4(r121): [28..47] [15..16]
+ a5(r128): [22..23]
+ a6(r117): [31..39]
+ a7(r127): [40..43]
+ a8(r126): [48..49]
+ a9(r125): [52..53]
+Compressing live ranges: from 56 to 20 - 35%
+Ranges after the compression:
+ a0(r119): [8..9] [0..3]
+ a1(r120): [10..17] [4..7]
+ a2(r123): [4..5]
+ a3(r116): [12..15] [6..7]
+ a4(r121): [12..15] [6..7]
+ a5(r128): [10..11]
+ a6(r117): [12..13]
+ a7(r127): [14..15]
+ a8(r126): [16..17]
+ a9(r125): [18..19]
++++Allocating 72 bytes for conflict table (uncompressed size 80)
+;; a0(r119,l0) conflicts:
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a1(r120,l0) conflicts: a2(r123,l0) a3(r116,l0) a4(r121,l0) a5(r128,l0) a6(r117,l0) a7(r127,l0) a8(r126,l0)
+;;     total conflict hard regs: 0-1 12 14
+;;     conflict hard regs: 0-1 12 14
+
+;; a2(r123,l0) conflicts: a1(r120,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a3(r116,l0) conflicts: a1(r120,l0) a4(r121,l0) a6(r117,l0) a7(r127,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a4(r121,l0) conflicts: a1(r120,l0) a3(r116,l0) a6(r117,l0) a7(r127,l0)
+;;     total conflict hard regs: 0 12 14
+;;     conflict hard regs: 0 12 14
+
+;; a5(r128,l0) conflicts: a1(r120,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a6(r117,l0) conflicts: a1(r120,l0) a3(r116,l0) a4(r121,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a7(r127,l0) conflicts: a1(r120,l0) a3(r116,l0) a4(r121,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a8(r126,l0) conflicts: a1(r120,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a9(r125,l0) conflicts:
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+
+  cp0:a2(r123)<->a4(r121)@41:shuffle
+  cp1:a2(r123)<->a3(r116)@41:shuffle
+  cp2:a1(r120)<->a9(r125)@1000:move
+  cp3:a4(r121)<->a8(r126)@1000:move
+  cp4:a6(r117)<->a7(r127)@125:shuffle
+  pref0:a0(r119)<-hr0@2000
+  pref1:a5(r128)<-hr0@330
+  pref2:a9(r125)<-hr0@2000
+  pref3:a8(r126)<-hr1@2000
+  pref4:a7(r127)<-hr0@2000
+  regions=1, blocks=8, points=20
+    allocnos=10 (big 0), copies=5, conflicts=0, ranges=14
+
+**** Allocnos coloring:
+
+
+  Loop 0 (parent -1, header bb2, depth 0)
+    bbs: 7 6 5 4 3 2
+    all: 0r119 1r120 2r123 3r116 4r121 5r128 6r117 7r127 8r126 9r125
+    modified regnos: 116 117 119 120 121 123 125 126 127 128
+    border:
+    Pressure: GENERAL_REGS=5
+    Hard reg set forest:
+      0:( 0-12 14 16-47)@0
+        1:( 0-12 14)@497240
+          2:( 0 2-12 14)@116000
+            3:( 2-11)@98350
+      Allocno a0r119 of ALL_REGS(46) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15 48-106)
+      Allocno a1r120 of GENERAL_REGS(14) has 10 avail. regs  2-11, node:  2-11 (confl regs =  0-1 12-106)
+      Allocno a2r123 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a3r116 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a4r121 of GENERAL_REGS(14) has 11 avail. regs  1-11, ^node:  0-12 14 (confl regs =  0 12-106)
+      Allocno a5r128 of ALL_REGS(46) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15 48-106)
+      Allocno a6r117 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a7r127 of ALL_REGS(46) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15 48-106)
+      Allocno a8r126 of ALL_REGS(46) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15 48-106)
+      Allocno a9r125 of ALL_REGS(46) has 13 avail. regs  0 2-12 14, node:  0 2-12 14 (confl regs =  1 13 15 48-106)
+      Forming thread by copy 2:a1r120-a9r125 (freq=1000):
+        Result (freq=5500): a1r120(3500) a9r125(2000)
+      Forming thread by copy 3:a4r121-a8r126 (freq=1000):
+        Result (freq=4835): a4r121(2835) a8r126(2000)
+      Forming thread by copy 4:a6r117-a7r127 (freq=125):
+        Result (freq=5500): a6r117(3500) a7r127(2000)
+      Forming thread by copy 0:a2r123-a4r121 (freq=41):
+        Result (freq=5505): a2r123(670) a4r121(2835) a8r126(2000)
+      Pushing a5(r128,l0)(cost 0)
+      Pushing a0(r119,l0)(cost 0)
+      Pushing a3(r116,l0)(cost 0)
+      Pushing a7(r127,l0)(cost 0)
+      Pushing a6(r117,l0)(cost 0)
+      Pushing a9(r125,l0)(cost 0)
+      Pushing a1(r120,l0)(cost 0)
+      Pushing a2(r123,l0)(cost 0)
+      Pushing a8(r126,l0)(cost 0)
+      Pushing a4(r121,l0)(cost 0)
+      Popping a4(r121,l0)  -- assign reg 4
+      Popping a8(r126,l0)  -- assign reg 1
+      Popping a2(r123,l0)  -- assign reg 4
+      Popping a1(r120,l0)  -- assign reg 5
+      Popping a9(r125,l0)  -- assign reg 0
+      Popping a6(r117,l0)  -- assign reg 0
+      Popping a7(r127,l0)  -- assign reg 0
+      Popping a3(r116,l0)  -- assign reg 1
+      Popping a0(r119,l0)  -- assign reg 0
+      Popping a5(r128,l0)  -- assign reg 0
+Disposition:
+    3:r116 l0     1    6:r117 l0     0    0:r119 l0     0    1:r120 l0     5
+    4:r121 l0     4    2:r123 l0     4    9:r125 l0     0    8:r126 l0     1
+    7:r127 l0     0    5:r128 l0     0
+New iteration of spill/restore move
++++Costs: overall -116620, reg -116620, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+TIMUT_stopwatch_has_another_X_ms_passed
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={4d,5u} r1={3d,1u} r2={3d} r3={3d} r7={1d,7u} r12={4d} r13={1d,9u} r14={3d} r15={2d} r16={3d} r17={3d} r18={3d} r19={3d} r20={3d} r21={3d} r22={3d} r23={3d} r24={3d} r25={3d} r26={3d} r27={3d} r28={3d} r29={3d} r30={3d} r31={3d} r48={2d} r49={2d} r50={2d} r51={2d} r52={2d} r53={2d} r54={2d} r55={2d} r56={2d} r57={2d} r58={2d} r59={2d} r60={2d} r61={2d} r62={2d} r63={2d} r64={2d} r65={2d} r66={2d} r67={2d} r68={2d} r69={2d} r70={2d} r71={2d} r72={2d} r73={2d} r74={2d} r75={2d} r76={2d} r77={2d} r78={2d} r79={2d} r80={2d} r81={2d} r82={2d} r83={2d} r84={2d} r85={2d} r86={2d} r87={2d} r88={2d} r89={2d} r90={2d} r91={2d} r92={2d} r93={2d} r94={2d} r95={2d} r96={2d} r97={2d} r98={2d} r99={2d} r100={4d,2u} r101={2d} r102={1d,7u} r103={1d,6u} r104={2d} r105={2d} r106={2d} r116={1d,2u} r117={1d,3u} r119={3d,1u} r120={1d,7u,2e} r121={1d,4u} r123={1d,1u} r125={1d,1u} r126={1d,1u} r127={1d,1u} r128={1d,1u} 
+;;    total ref usage 263{202d,59u,2e} in 48{46 regular + 2 call} insns.
+(note 1 0 8 NOTE_INSN_DELETED)
+(note 8 1 4 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 4 8 19 2 NOTE_INSN_FUNCTION_BEG)
+(note 19 4 10 2 NOTE_INSN_DELETED)
+(debug_insn 10 19 68 2 (debug_marker) "../System/timing_utils.c":116:2 -1
+     (nil))
+(insn 68 10 2 2 (set (reg:SI 125)
+        (reg:SI 0 r0 [ stopwatch ])) "../System/timing_utils.c":113:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [ stopwatch ])
+        (nil)))
+(insn 2 68 11 2 (set (reg/v/f:SI 120 [ stopwatch ])
+        (reg:SI 125)) "../System/timing_utils.c":113:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 125)
+        (nil)))
+(debug_insn 11 2 69 2 (var_location:SI stopwatch (reg/v/f:SI 120 [ stopwatch ])) "../System/timing_utils.c":116:2 -1
+     (nil))
+(insn 69 11 3 2 (set (reg:SI 126)
+        (reg:SI 1 r1 [ x ])) "../System/timing_utils.c":113:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [ x ])
+        (nil)))
+(insn 3 69 12 2 (set (reg/v:SI 121 [ x ])
+        (reg:SI 126)) "../System/timing_utils.c":113:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 126)
+        (nil)))
+(debug_insn 12 3 13 2 (var_location:SI x (reg/v:SI 121 [ x ])) "../System/timing_utils.c":116:2 -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker:BLK) "../System/timing_utils.c":75:9 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker) "../System/timing_utils.c":81:2 -1
+     (nil))
+(debug_insn 15 14 16 2 (var_location:SI stopwatch (reg/v/f:SI 120 [ stopwatch ])) "../System/timing_utils.c":81:2 -1
+     (nil))
+(debug_insn 16 15 17 2 (debug_marker:BLK) "../System/timing_utils.c":65:6 -1
+     (nil))
+(debug_insn 17 16 18 2 (debug_marker) "../System/timing_utils.c":67:2 -1
+     (nil))
+(call_insn 18 17 70 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":67:28 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 70 18 20 2 (set (reg:SI 127)
+        (reg:SI 0 r0)) "../System/timing_utils.c":67:28 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+(insn 20 70 21 2 (set (reg:SI 116 [ _10 ])
+        (mem:SI (reg/v/f:SI 120 [ stopwatch ]) [1 stopwatch_6(D)->time_mark+0 S4 A32])) "../System/timing_utils.c":67:53 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 21 20 22 2 (set (reg:SI 117 [ _11 ])
+        (minus:SI (reg:SI 127)
+            (reg:SI 116 [ _10 ]))) "../System/timing_utils.c":67:42 45 {*arm_subsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 127)
+        (nil)))
+(insn 22 21 23 2 (set (mem:SI (plus:SI (reg/v/f:SI 120 [ stopwatch ])
+                (const_int 4 [0x4])) [1 stopwatch_6(D)->elapsed_time+0 S4 A32])
+        (reg:SI 117 [ _11 ])) "../System/timing_utils.c":67:26 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 23 22 24 2 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":81:2 -1
+     (nil))
+(debug_insn 24 23 25 2 (debug_marker) "../System/timing_utils.c":84:2 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 121 [ x ])
+            (reg:SI 117 [ _11 ]))) "../System/timing_utils.c":84:5 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 26 25 27 2 (set (pc)
+        (if_then_else (geu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 66)
+            (pc))) "../System/timing_utils.c":84:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 66)
+(note 27 26 31 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 31 27 28 3 NOTE_INSN_DELETED)
+(debug_insn 28 31 29 3 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":116:7 -1
+     (nil))
+(debug_insn 29 28 30 3 (var_location:SI x (clobber (const_int 0 [0]))) "../System/timing_utils.c":116:7 -1
+     (nil))
+(debug_insn 30 29 32 3 (debug_marker) "../System/timing_utils.c":128:3 -1
+     (nil))
+(insn 32 30 33 3 (set (reg:CC_SWP 100 cc)
+        (compare:CC_SWP (ashift:SI (reg/v:SI 121 [ x ])
+                (const_int 1 [0x1]))
+            (reg:SI 117 [ _11 ]))) "../System/timing_utils.c":128:6 270 {*cmpsi_shiftsi_swp}
+     (expr_list:REG_DEAD (reg:SI 117 [ _11 ])
+        (nil)))
+(jump_insn 33 32 34 3 (set (pc)
+        (if_then_else (geu (reg:CC_SWP 100 cc)
+                (const_int 0 [0]))
+            (label_ref 46)
+            (pc))) "../System/timing_utils.c":128:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC_SWP 100 cc)
+        (int_list:REG_BR_PROB 719407028 (nil)))
+ -> 46)
+(note 34 33 40 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 40 34 35 4 NOTE_INSN_DELETED)
+(debug_insn 35 40 36 4 (debug_marker) "../System/timing_utils.c":134:4 -1
+     (nil))
+(debug_insn 36 35 37 4 (var_location:SI stopwatch (reg/v/f:SI 120 [ stopwatch ])) "../System/timing_utils.c":134:4 -1
+     (nil))
+(debug_insn 37 36 38 4 (debug_marker:BLK) "../System/timing_utils.c":56:6 -1
+     (nil))
+(debug_insn 38 37 39 4 (debug_marker) "../System/timing_utils.c":58:2 -1
+     (nil))
+(call_insn 39 38 71 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":58:25 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 71 39 41 4 (set (reg:SI 128)
+        (reg:SI 0 r0)) "../System/timing_utils.c":58:25 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_EQUIV (mem:SI (reg/v/f:SI 120 [ stopwatch ]) [1 stopwatch_6(D)->time_mark+0 S4 A32])
+            (nil))))
+(insn 41 71 42 4 (set (mem:SI (reg/v/f:SI 120 [ stopwatch ]) [1 stopwatch_6(D)->time_mark+0 S4 A32])
+        (reg:SI 128)) "../System/timing_utils.c":58:23 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 128)
+        (expr_list:REG_DEAD (reg/v/f:SI 120 [ stopwatch ])
+            (nil))))
+(debug_insn 42 41 43 4 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":134:4 -1
+     (nil))
+(debug_insn 43 42 5 4 (debug_marker) "../System/timing_utils.c":137:4 -1
+     (nil))
+(insn 5 43 72 4 (set (reg:SI 119 [ <retval> ])
+        (const_int 1 [0x1])) "../System/timing_utils.c":137:11 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 1 [0x1])
+        (nil)))
+(jump_insn 72 5 73 4 (set (pc)
+        (label_ref 52)) "../System/timing_utils.c":137:11 284 {*arm_jump}
+     (nil)
+ -> 52)
+(barrier 73 72 46)
+(code_label 46 73 47 5 10 (nil) [1 uses])
+(note 47 46 48 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 48 47 49 5 (debug_marker) "../System/timing_utils.c":147:4 -1
+     (nil))
+(insn 49 48 50 5 (set (reg:SI 123)
+        (plus:SI (reg/v:SI 121 [ x ])
+            (reg:SI 116 [ _10 ]))) "../System/timing_utils.c":147:25 7 {*arm_addsi3}
+     (expr_list:REG_DEAD (reg/v:SI 121 [ x ])
+        (expr_list:REG_DEAD (reg:SI 116 [ _10 ])
+            (expr_list:REG_EQUIV (mem:SI (reg/v/f:SI 120 [ stopwatch ]) [1 stopwatch_6(D)->time_mark+0 S4 A32])
+                (nil)))))
+(insn 50 49 51 5 (set (mem:SI (reg/v/f:SI 120 [ stopwatch ]) [1 stopwatch_6(D)->time_mark+0 S4 A32])
+        (reg:SI 123)) "../System/timing_utils.c":147:25 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 123)
+        (expr_list:REG_DEAD (reg/v/f:SI 120 [ stopwatch ])
+            (nil))))
+(debug_insn 51 50 6 5 (debug_marker) "../System/timing_utils.c":150:4 -1
+     (nil))
+(insn 6 51 74 5 (set (reg:SI 119 [ <retval> ])
+        (const_int 1 [0x1])) "../System/timing_utils.c":150:11 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 1 [0x1])
+        (nil)))
+(jump_insn 74 6 75 5 (set (pc)
+        (label_ref 52)) "../System/timing_utils.c":150:11 284 {*arm_jump}
+     (nil)
+ -> 52)
+(barrier 75 74 66)
+(code_label 66 75 65 6 11 (nil) [1 uses])
+(note 65 66 7 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 7 65 52 6 (set (reg:SI 119 [ <retval> ])
+        (const_int 0 [0])) "../System/timing_utils.c":157:10 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(code_label 52 7 53 7 9 (nil) [2 uses])
+(note 53 52 54 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 54 53 55 7 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":116:7 -1
+     (nil))
+(debug_insn 55 54 60 7 (var_location:SI x (clobber (const_int 0 [0]))) "../System/timing_utils.c":116:7 -1
+     (nil))
+(insn 60 55 61 7 (set (reg/i:SI 0 r0)
+        (reg:SI 119 [ <retval> ])) "../System/timing_utils.c":160:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 119 [ <retval> ])
+        (nil)))
+(insn 61 60 76 7 (use (reg/i:SI 0 r0)) "../System/timing_utils.c":160:1 -1
+     (nil))
+(note 76 61 0 NOTE_INSN_DELETED)
+
+;; Function TIMUT_stopwatch_demo (TIMUT_stopwatch_demo, funcdef_no=356, decl_uid=5697, cgraph_uid=360, symbol_order=359) (executed once)
+
+Starting decreasing number of live ranges...
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 10 n_edges 12 count 10 (    1)
+;; 3 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9
+;;
+;; Loop 2
+;;  header 5, multiple latches: 5 9
+;;  depth 1, outer 0
+;;  nodes: 5 9 8 7 6
+;;
+;; Loop 1
+;;  header 3, latch 3
+;;  depth 1, outer 0
+;;  nodes: 3
+;; 2 succs { 3 }
+;; 3 succs { 3 4 }
+;; 4 succs { 5 }
+;; 5 succs { 6 5 }
+;; 6 succs { 7 8 }
+;; 7 succs { 9 }
+;; 8 succs { 9 }
+;; 9 succs { 5 }
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Reg 121 uninteresting
+Reg 114: def dominates all uses has unique first use
+Reg 122 uninteresting
+Reg 119 uninteresting
+Reg 123 uninteresting
+Reg 124 uninteresting
+Reg 118 uninteresting
+Reg 125 uninteresting
+Reg 114 not local to one basic block
+;; 3 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9
+;;
+;; Loop 2
+;;  header 5, multiple latches: 5 9
+;;  depth 1, outer 0
+;;  nodes: 5 9 8 7 6
+;;
+;; Loop 1
+;;  header 3, latch 3
+;;  depth 1, outer 0
+;;  nodes: 3
+;; 2 succs { 3 }
+;; 3 succs { 3 4 }
+;; 4 succs { 5 }
+;; 5 succs { 6 5 }
+;; 6 succs { 7 8 }
+;; 7 succs { 9 }
+;; 8 succs { 9 }
+;; 9 succs { 5 }
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+Pass 1 for finding pseudo/allocno costs
+
+    r125: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r124: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r123: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r122: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r121: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r119: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r118: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r114: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r113: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+
+  a0(r113,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:45,27570 VFP_LO_REGS:45,27570 ALL_REGS:45,27570 MEM:30,18380
+  a1(r123,l0) costs: GENERAL_REGS:6,6 VFP_D0_D7_REGS:135,135 VFP_LO_REGS:135,135 ALL_REGS:90,90 MEM:90,90
+  a2(r114,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:45,135 VFP_LO_REGS:45,135 ALL_REGS:45,135 MEM:30,90
+  a3(r121,l0) costs: GENERAL_REGS:6,6 VFP_D0_D7_REGS:135,135 VFP_LO_REGS:135,135 ALL_REGS:90,90 MEM:90,90
+  a4(r113,l2) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:27525,27525 VFP_LO_REGS:27525,27525 ALL_REGS:27525,27525 MEM:18350,18350
+  a5(r125,l2) costs: GENERAL_REGS:330,330 VFP_D0_D7_REGS:7425,7425 VFP_LO_REGS:7425,7425 ALL_REGS:4950,4950 MEM:4950,4950
+  a6(r118,l2) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:37500,37500 VFP_LO_REGS:37500,37500 ALL_REGS:37500,37500 MEM:25000,25000
+  a7(r124,l2) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a8(r114,l1) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:90,90 VFP_LO_REGS:90,90 ALL_REGS:90,90 MEM:60,60
+  a9(r119,l1) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:180,180 VFP_LO_REGS:180,180 ALL_REGS:180,180 MEM:120,120
+  a10(r122,l1) costs: GENERAL_REGS:12,12 VFP_D0_D7_REGS:270,270 VFP_LO_REGS:270,270 ALL_REGS:180,180 MEM:180,180
+
+   Insn 50(l0): point = 0
+   Insn 136(l0): point = 2
+   Insn 49(l0): point = 4
+   Insn 44(l0): point = 6
+   Insn 43(l0): point = 8
+   Insn 14(l0): point = 11
+   Insn 134(l0): point = 13
+   Insn 13(l0): point = 15
+   Insn 8(l0): point = 17
+   Insn 7(l0): point = 19
+   Insn 83(l2): point = 22
+   Insn 82(l2): point = 24
+   Insn 76(l2): point = 26
+   Insn 137(l2): point = 28
+   Insn 74(l2): point = 30
+   Insn 141(l2): point = 33
+   Insn 123(l2): point = 35
+   Insn 133(l2): point = 37
+   Insn 111(l2): point = 40
+   Insn 139(l2): point = 43
+   Insn 98(l2): point = 45
+   Insn 138(l2): point = 47
+   Insn 97(l2): point = 49
+   Insn 91(l2): point = 52
+   Insn 90(l2): point = 54
+   Insn 37(l1): point = 57
+   Insn 36(l1): point = 59
+   Insn 33(l1): point = 61
+   Insn 135(l1): point = 63
+   Insn 28(l1): point = 65
+ a0(r113): [0..0]
+ a1(r123): [1..2]
+ a2(r114): [11..11]
+ a3(r121): [12..13]
+ a4(r113): [52..56] [22..45]
+ a5(r125): [46..47]
+ a6(r118): [55..56] [22..26]
+ a7(r124): [27..28]
+ a8(r114): [57..67]
+ a9(r119): [60..61]
+ a10(r122): [62..63]
+ Rebuilding regno allocno list for 125
+ Rebuilding regno allocno list for 124
+ Rebuilding regno allocno list for 122
+ Rebuilding regno allocno list for 119
+ Rebuilding regno allocno list for 118
+      Moving ranges of a8r114 to a2r114:  [57..67]
+      Moving ranges of a4r113 to a0r113:  [52..56] [22..45]
+Compressing live ranges: from 68 to 18 - 26%
+Ranges after the compression:
+ a0(r113): [12..13] [6..9] [0..0]
+ a1(r123): [1..2]
+ a2(r114): [14..17] [3..3]
+ a3(r121): [4..5]
+ a5(r125): [10..11]
+ a6(r118): [12..13] [6..7]
+ a7(r124): [8..9]
+ a9(r119): [14..15]
+ a10(r122): [16..17]
++++Allocating 72 bytes for conflict table (uncompressed size 88)
+;; a0(r113,l0) conflicts: a6(r118,l0) a7(r124,l0)
+;;     total conflict hard regs: 0 12 14
+;;     conflict hard regs: 0 12 14
+
+;; a1(r123,l0) conflicts:
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a2(r114,l0) conflicts: a9(r119,l0) a10(r122,l0)
+;;     total conflict hard regs: 0 12 14
+;;     conflict hard regs: 0 12 14
+
+;; a3(r121,l0) conflicts:
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a5(r125,l0) conflicts:
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a6(r118,l0) conflicts: a0(r113,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a7(r124,l0) conflicts: a0(r113,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a9(r119,l0) conflicts: a2(r114,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a10(r122,l0) conflicts: a2(r114,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+
+  cp0:a0(r113)<->a5(r125)@165:move
+  cp1:a6(r118)<->a7(r124)@125:shuffle
+  cp2:a0(r113)<->a1(r123)@3:move
+  cp3:a9(r119)<->a10(r122)@1:shuffle
+  cp4:a2(r114)<->a3(r121)@3:move
+  pref0:a1(r123)<-hr0@6
+  pref1:a3(r121)<-hr0@6
+  pref2:a5(r125)<-hr0@330
+  pref3:a7(r124)<-hr0@2000
+  pref4:a10(r122)<-hr0@12
+  regions=3, blocks=10, points=18
+    allocnos=11 (big 0), copies=5, conflicts=0, ranges=13
+
+**** Allocnos coloring:
+
+
+  Loop 0 (parent -1, header bb2, depth 0)
+    bbs: 9 8 7 6 5 4 3 2
+    all: 0r113 1r123 2r114 3r121 5r125 6r118 7r124 9r119 10r122
+    modified regnos: 113 114 118 119 121 122 123 124 125
+    border:
+    Pressure: GENERAL_REGS=4
+    Hard reg set forest:
+      0:( 0-12 14 16-47)@0
+        1:( 0-12 14)@186772
+          2:( 4-11)@36940
+      Allocno a0r113 of GENERAL_REGS(14) has 8 avail. regs  4-11, node:  4-11 (confl regs =  0 12-106)
+      Allocno a1r123 of ALL_REGS(46) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15 48-106)
+      Allocno a2r114 of GENERAL_REGS(14) has 8 avail. regs  4-11, node:  4-11 (confl regs =  0 12-106)
+      Allocno a3r121 of ALL_REGS(46) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15 48-106)
+      Allocno a5r125 of ALL_REGS(46) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15 48-106)
+      Allocno a6r118 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a7r124 of ALL_REGS(46) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15 48-106)
+      Allocno a9r119 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a10r122 of ALL_REGS(46) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15 48-106)
+      Forming thread by copy 0:a0r113-a5r125 (freq=165):
+        Result (freq=2168): a0r113(1838) a5r125(330)
+      Forming thread by copy 1:a6r118-a7r124 (freq=125):
+        Result (freq=4500): a6r118(2500) a7r124(2000)
+      Forming thread by copy 2:a0r113-a1r123 (freq=3):
+        Result (freq=2174): a0r113(1838) a1r123(6) a5r125(330)
+      Forming thread by copy 4:a2r114-a3r121 (freq=3):
+        Result (freq=15): a2r114(9) a3r121(6)
+      Forming thread by copy 3:a9r119-a10r122 (freq=1):
+        Result (freq=24): a9r119(12) a10r122(12)
+      Pushing a3(r121,l0)(cost 0)
+      Pushing a2(r114,l0)(cost 0)
+      Pushing a10(r122,l0)(cost 0)
+      Pushing a9(r119,l0)(cost 0)
+      Pushing a1(r123,l0)(cost 0)
+      Pushing a5(r125,l0)(cost 0)
+      Pushing a0(r113,l0)(cost 0)
+      Pushing a7(r124,l0)(cost 0)
+      Pushing a6(r118,l0)(cost 0)
+      Popping a6(r118,l0)  -- assign reg 3
+      Popping a7(r124,l0)  -- assign reg 0
+      Popping a0(r113,l0)  -- assign reg 4
+      Popping a5(r125,l0)  -- assign reg 0
+      Popping a1(r123,l0)  -- assign reg 0
+      Popping a9(r119,l0)  -- assign reg 3
+      Popping a10(r122,l0)  -- assign reg 0
+      Popping a2(r114,l0)  -- assign reg 4
+      Popping a3(r121,l0)  -- assign reg 0
+Disposition:
+    0:r113 l0     4    2:r114 l0     4    6:r118 l0     3    9:r119 l0     3
+    3:r121 l0     0   10:r122 l0     0    1:r123 l0     0    7:r124 l0     0
+    5:r125 l0     0
+New iteration of spill/restore move
++++Costs: overall -32956, reg -32956, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+TIMUT_stopwatch_demo
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={12d,8u} r1={9d} r2={9d} r3={9d} r7={1d,9u} r12={16d} r13={1d,17u} r14={9d} r15={8d} r16={9d} r17={9d} r18={9d} r19={9d} r20={9d} r21={9d} r22={9d} r23={9d} r24={9d} r25={9d} r26={9d} r27={9d} r28={9d} r29={9d} r30={9d} r31={9d} r48={8d} r49={8d} r50={8d} r51={8d} r52={8d} r53={8d} r54={8d} r55={8d} r56={8d} r57={8d} r58={8d} r59={8d} r60={8d} r61={8d} r62={8d} r63={8d} r64={8d} r65={8d} r66={8d} r67={8d} r68={8d} r69={8d} r70={8d} r71={8d} r72={8d} r73={8d} r74={8d} r75={8d} r76={8d} r77={8d} r78={8d} r79={8d} r80={8d} r81={8d} r82={8d} r83={8d} r84={8d} r85={8d} r86={8d} r87={8d} r88={8d} r89={8d} r90={8d} r91={8d} r92={8d} r93={8d} r94={8d} r95={8d} r96={8d} r97={8d} r98={8d} r99={8d} r100={11d,3u} r101={8d} r102={1d,9u} r103={1d,8u} r104={8d} r105={8d} r106={8d} r113={3d,7u} r114={1d,1u} r118={1d,2u} r119={1d,1u} r121={1d,1u} r122={1d,1u} r123={1d,1u} r124={1d,1u} r125={1d,1u} 
+;;    total ref usage 760{690d,70u,0e} in 104{96 regular + 8 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../System/timing_utils.c":174:2 -1
+     (nil))
+(debug_insn 6 5 7 2 (debug_marker) "../System/timing_utils.c":184:2 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 0 r0)
+        (const_int 0 [0])) "../System/timing_utils.c":184:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 8 7 9 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("LED_on") [flags 0x41]  <function_decl 0000000006c2b600 LED_on>) [0 LED_on S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":184:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("LED_on") [flags 0x41]  <function_decl 0000000006c2b600 LED_on>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 9 8 10 2 (debug_marker) "../System/timing_utils.c":185:2 -1
+     (nil))
+(debug_insn 10 9 11 2 (var_location:SI stopwatch (debug_implicit_ptr:SI stopwatch)) "../System/timing_utils.c":185:2 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker:BLK) "../System/timing_utils.c":56:6 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "../System/timing_utils.c":58:2 -1
+     (nil))
+(call_insn 13 12 134 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":58:25 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 134 13 14 2 (set (reg:SI 121)
+        (reg:SI 0 r0)) "../System/timing_utils.c":58:25 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+(insn 14 134 32 2 (set (reg:SI 114 [ _10 ])
+        (reg:SI 121)) "../System/timing_utils.c":58:25 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 121)
+        (nil)))
+(code_label 32 14 15 3 15 (nil) [1 uses])
+(note 15 32 29 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 29 15 16 3 NOTE_INSN_DELETED)
+(debug_insn 16 29 17 3 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":190:10 -1
+     (nil))
+(debug_insn 17 16 18 3 (var_location:SI x (clobber (const_int 0 [0]))) "../System/timing_utils.c":190:10 -1
+     (nil))
+(debug_insn 18 17 19 3 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":185:2 -1
+     (nil))
+(debug_insn 19 18 20 3 (debug_marker) "../System/timing_utils.c":195:2 -1
+     (nil))
+(debug_insn 20 19 21 3 (debug_marker) "../System/timing_utils.c":190:8 -1
+     (nil))
+(debug_insn 21 20 22 3 (var_location:SI stopwatch (debug_implicit_ptr:SI stopwatch)) "../System/timing_utils.c":190:8 -1
+     (nil))
+(debug_insn 22 21 23 3 (var_location:SI x (const_int 1000 [0x3e8])) "../System/timing_utils.c":190:8 -1
+     (nil))
+(debug_insn 23 22 24 3 (debug_marker:BLK) "../System/timing_utils.c":75:9 -1
+     (nil))
+(debug_insn 24 23 25 3 (debug_marker) "../System/timing_utils.c":81:2 -1
+     (nil))
+(debug_insn 25 24 26 3 (var_location:SI stopwatch (debug_implicit_ptr:SI stopwatch)) "../System/timing_utils.c":81:2 -1
+     (nil))
+(debug_insn 26 25 27 3 (debug_marker:BLK) "../System/timing_utils.c":65:6 -1
+     (nil))
+(debug_insn 27 26 28 3 (debug_marker) "../System/timing_utils.c":67:2 -1
+     (nil))
+(call_insn 28 27 30 3 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":67:28 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(debug_insn 30 28 31 3 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":81:2 -1
+     (nil))
+(debug_insn 31 30 135 3 (debug_marker) "../System/timing_utils.c":84:2 -1
+     (nil))
+(insn 135 31 33 3 (set (reg:SI 122)
+        (reg:SI 0 r0)) "../System/timing_utils.c":67:28 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+(insn 33 135 36 3 (set (reg:SI 119)
+        (minus:SI (reg:SI 122)
+            (reg:SI 114 [ _10 ]))) "../System/timing_utils.c":67:42 45 {*arm_subsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 122)
+        (nil)))
+(insn 36 33 37 3 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 119)
+            (const_int 1000 [0x3e8]))) "../System/timing_utils.c":84:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 119)
+        (nil)))
+(jump_insn 37 36 38 3 (set (pc)
+        (if_then_else (gtu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 32)
+            (pc))) "../System/timing_utils.c":84:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 32)
+(note 38 37 39 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 39 38 40 4 (debug_marker) "../System/timing_utils.c":90:3 -1
+     (nil))
+(debug_insn 40 39 41 4 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":190:10 -1
+     (nil))
+(debug_insn 41 40 42 4 (var_location:SI x (clobber (const_int 0 [0]))) "../System/timing_utils.c":190:10 -1
+     (nil))
+(debug_insn 42 41 43 4 (debug_marker) "../System/timing_utils.c":201:2 -1
+     (nil))
+(insn 43 42 44 4 (set (reg:SI 0 r0)
+        (const_int 0 [0])) "../System/timing_utils.c":201:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 44 43 45 4 (parallel [
+            (call (mem:SI (symbol_ref:SI ("LED_off") [flags 0x41]  <function_decl 0000000006c2b700 LED_off>) [0 LED_off S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":201:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("LED_off") [flags 0x41]  <function_decl 0000000006c2b700 LED_off>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 45 44 46 4 (debug_marker) "../System/timing_utils.c":216:2 -1
+     (nil))
+(debug_insn 46 45 47 4 (var_location:SI stopwatch (debug_implicit_ptr:SI stopwatch)) "../System/timing_utils.c":216:2 -1
+     (nil))
+(debug_insn 47 46 48 4 (debug_marker:BLK) "../System/timing_utils.c":56:6 -1
+     (nil))
+(debug_insn 48 47 49 4 (debug_marker) "../System/timing_utils.c":58:2 -1
+     (nil))
+(call_insn 49 48 136 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":58:25 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 136 49 50 4 (set (reg:SI 123)
+        (reg:SI 0 r0)) "../System/timing_utils.c":58:25 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+(insn 50 136 51 4 (set (reg:SI 113 [ stopwatch$time_mark ])
+        (reg:SI 123)) "../System/timing_utils.c":58:25 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 123)
+        (nil)))
+(debug_insn 51 50 79 4 (var_location:SI stopwatch$time_mark (reg:SI 113 [ stopwatch$time_mark ])) "../System/timing_utils.c":58:23 -1
+     (nil))
+(code_label 79 51 54 5 16 (nil) [2 uses])
+(note 54 79 75 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(note 75 54 55 5 NOTE_INSN_DELETED)
+(debug_insn 55 75 56 5 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":116:7 -1
+     (nil))
+(debug_insn 56 55 57 5 (var_location:SI x (clobber (const_int 0 [0]))) "../System/timing_utils.c":116:7 -1
+     (nil))
+(debug_insn 57 56 58 5 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":223:8 -1
+     (nil))
+(debug_insn 58 57 59 5 (var_location:SI x (clobber (const_int 0 [0]))) "../System/timing_utils.c":223:8 -1
+     (nil))
+(debug_insn 59 58 60 5 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":216:2 -1
+     (nil))
+(debug_insn 60 59 61 5 (debug_marker) "../System/timing_utils.c":221:2 -1
+     (nil))
+(debug_insn 61 60 62 5 (debug_marker) "../System/timing_utils.c":223:3 -1
+     (nil))
+(debug_insn 62 61 63 5 (var_location:SI D#1 (const_int 1000 [0x3e8])) "../System/timing_utils.c":223:8 -1
+     (nil))
+(debug_insn 63 62 64 5 (var_location:SI stopwatch (debug_implicit_ptr:SI stopwatch)) "../System/timing_utils.c":223:8 -1
+     (nil))
+(debug_insn 64 63 65 5 (debug_marker:BLK) "../System/timing_utils.c":112:9 -1
+     (nil))
+(debug_insn 65 64 66 5 (var_location:SI x (const_int 1000 [0x3e8])) -1
+     (nil))
+(debug_insn 66 65 67 5 (debug_marker) "../System/timing_utils.c":116:2 -1
+     (nil))
+(debug_insn 67 66 68 5 (var_location:SI stopwatch (debug_implicit_ptr:SI stopwatch)) "../System/timing_utils.c":116:2 -1
+     (nil))
+(debug_insn 68 67 69 5 (var_location:SI x (const_int 1000 [0x3e8])) "../System/timing_utils.c":116:2 -1
+     (nil))
+(debug_insn 69 68 70 5 (debug_marker:BLK) "../System/timing_utils.c":75:9 -1
+     (nil))
+(debug_insn 70 69 71 5 (debug_marker) "../System/timing_utils.c":81:2 -1
+     (nil))
+(debug_insn 71 70 72 5 (var_location:SI stopwatch (debug_implicit_ptr:SI stopwatch)) "../System/timing_utils.c":81:2 -1
+     (nil))
+(debug_insn 72 71 73 5 (debug_marker:BLK) "../System/timing_utils.c":65:6 -1
+     (nil))
+(debug_insn 73 72 74 5 (debug_marker) "../System/timing_utils.c":67:2 -1
+     (nil))
+(call_insn 74 73 85 5 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":67:28 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(debug_insn 85 74 86 5 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":116:7 -1
+     (nil))
+(debug_insn 86 85 87 5 (var_location:SI x (clobber (const_int 0 [0]))) "../System/timing_utils.c":116:7 -1
+     (nil))
+(debug_insn 87 86 137 5 (debug_marker) "../System/timing_utils.c":128:3 -1
+     (nil))
+(insn 137 87 76 5 (set (reg:SI 124)
+        (reg:SI 0 r0)) "../System/timing_utils.c":67:28 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+(insn 76 137 77 5 (set (reg:SI 118 [ _23 ])
+        (minus:SI (reg:SI 124)
+            (reg:SI 113 [ stopwatch$time_mark ]))) "../System/timing_utils.c":67:42 45 {*arm_subsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 124)
+        (nil)))
+(debug_insn 77 76 78 5 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":81:2 -1
+     (nil))
+(debug_insn 78 77 82 5 (debug_marker) "../System/timing_utils.c":84:2 -1
+     (nil))
+(insn 82 78 83 5 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 118 [ _23 ])
+            (const_int 1000 [0x3e8]))) "../System/timing_utils.c":84:5 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 83 82 84 5 (set (pc)
+        (if_then_else (leu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 79)
+            (pc))) "../System/timing_utils.c":84:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 79)
+(note 84 83 110 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 110 84 90 6 (debug_marker) "../System/timing_utils.c":147:4 -1
+     (nil))
+(insn 90 110 91 6 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 118 [ _23 ])
+            (const_int 2000 [0x7d0]))) "../System/timing_utils.c":128:6 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 118 [ _23 ])
+        (nil)))
+(jump_insn 91 90 92 6 (set (pc)
+        (if_then_else (leu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 108)
+            (pc))) "../System/timing_utils.c":128:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 719407028 (nil)))
+ -> 108)
+(note 92 91 93 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 93 92 94 7 (debug_marker) "../System/timing_utils.c":134:4 -1
+     (nil))
+(debug_insn 94 93 95 7 (var_location:SI stopwatch (debug_implicit_ptr:SI stopwatch)) "../System/timing_utils.c":134:4 -1
+     (nil))
+(debug_insn 95 94 96 7 (debug_marker:BLK) "../System/timing_utils.c":56:6 -1
+     (nil))
+(debug_insn 96 95 97 7 (debug_marker) "../System/timing_utils.c":58:2 -1
+     (nil))
+(call_insn 97 96 138 7 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":58:25 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 138 97 98 7 (set (reg:SI 125)
+        (reg:SI 0 r0)) "../System/timing_utils.c":58:25 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+(insn 98 138 99 7 (set (reg:SI 113 [ stopwatch$time_mark ])
+        (reg:SI 125)) "../System/timing_utils.c":58:25 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 125)
+        (nil)))
+(debug_insn 99 98 100 7 (var_location:SI stopwatch$time_mark (reg:SI 113 [ stopwatch$time_mark ])) "../System/timing_utils.c":58:23 -1
+     (nil))
+(debug_insn 100 99 101 7 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":134:4 -1
+     (nil))
+(debug_insn 101 100 102 7 (debug_marker) "../System/timing_utils.c":137:4 -1
+     (nil))
+(debug_insn 102 101 103 7 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":116:7 -1
+     (nil))
+(debug_insn 103 102 104 7 (var_location:SI x (clobber (const_int 0 [0]))) "../System/timing_utils.c":116:7 -1
+     (nil))
+(debug_insn 104 103 105 7 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":223:8 -1
+     (nil))
+(debug_insn 105 104 139 7 (var_location:SI x (clobber (const_int 0 [0]))) "../System/timing_utils.c":223:8 -1
+     (nil))
+(jump_insn 139 105 140 7 (set (pc)
+        (label_ref 118)) 284 {*arm_jump}
+     (nil)
+ -> 118)
+(barrier 140 139 108)
+(code_label 108 140 109 8 17 (nil) [1 uses])
+(note 109 108 111 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 111 109 112 8 (set (reg:SI 113 [ stopwatch$time_mark ])
+        (plus:SI (reg:SI 113 [ stopwatch$time_mark ])
+            (const_int 1000 [0x3e8]))) "../System/timing_utils.c":147:25 7 {*arm_addsi3}
+     (nil))
+(debug_insn 112 111 113 8 (var_location:SI stopwatch$time_mark (reg:SI 113 [ stopwatch$time_mark ])) "../System/timing_utils.c":147:25 -1
+     (nil))
+(debug_insn 113 112 114 8 (debug_marker) "../System/timing_utils.c":150:4 -1
+     (nil))
+(debug_insn 114 113 115 8 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":116:7 -1
+     (nil))
+(debug_insn 115 114 116 8 (var_location:SI x (clobber (const_int 0 [0]))) "../System/timing_utils.c":116:7 -1
+     (nil))
+(debug_insn 116 115 117 8 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":223:8 -1
+     (nil))
+(debug_insn 117 116 118 8 (var_location:SI x (clobber (const_int 0 [0]))) "../System/timing_utils.c":223:8 -1
+     (nil))
+(code_label 118 117 119 9 18 (nil) [1 uses])
+(note 119 118 120 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 120 119 121 9 (var_location:SI stopwatch$time_mark (reg:SI 113 [ stopwatch$time_mark ])) -1
+     (nil))
+(debug_insn 121 120 133 9 (debug_marker) "../System/timing_utils.c":227:4 -1
+     (nil))
+(insn 133 121 123 9 (set (reg:SI 0 r0)
+        (const_int 1 [0x1])) "../System/timing_utils.c":227:4 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 123 133 53 9 (parallel [
+            (call (mem:SI (symbol_ref:SI ("LED_toggle") [flags 0x41]  <function_decl 0000000006c2b800 LED_toggle>) [0 LED_toggle S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":227:4 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("LED_toggle") [flags 0x41]  <function_decl 0000000006c2b800 LED_toggle>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 53 123 141 9 (var_location:SI stopwatch$time_mark (reg:SI 113 [ stopwatch$time_mark ])) -1
+     (nil))
+(jump_insn 141 53 142 9 (set (pc)
+        (label_ref 79)) 284 {*arm_jump}
+     (nil)
+ -> 79)
+(barrier 142 141 0)

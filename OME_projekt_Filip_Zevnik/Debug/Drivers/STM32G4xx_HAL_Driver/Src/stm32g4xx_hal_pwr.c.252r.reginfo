@@ -1,0 +1,1178 @@
+
+;; Function HAL_PWR_DeInit (HAL_PWR_DeInit, funcdef_no=329, decl_uid=8969, cgraph_uid=333, symbol_order=332)
+
+
+
+HAL_PWR_DeInit
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r7={1d,2u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r102={1d,2u} r103={1d,1u} r113={1d,1u} r114={1d,1u} r115={1d,1u} r116={1d,1u} r117={1d,4u} 
+;;    total ref usage 45{30d,15u,0e} in 9{9 regular + 0 call} insns.
+(note 3 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":88:3 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 117)
+        (const_int 1073876992 [0x40021000])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":88:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 113 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 117)
+                (const_int 56 [0x38])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB1RSTR1+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":88:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 8 7 10 2 (set (reg:SI 114 [ _2 ])
+        (ior:SI (reg:SI 113 [ _1 ])
+            (const_int 268435456 [0x10000000]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":88:3 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 113 [ _1 ])
+        (nil)))
+(insn 10 8 11 2 (set (mem/v:SI (plus:SI (reg/f:SI 117)
+                (const_int 56 [0x38])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB1RSTR1+0 S4 A64])
+        (reg:SI 114 [ _2 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":88:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 114 [ _2 ])
+        (nil)))
+(debug_insn 11 10 13 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":89:3 -1
+     (nil))
+(insn 13 11 14 2 (set (reg:SI 115 [ _3 ])
+        (mem/v:SI (plus:SI (reg/f:SI 117)
+                (const_int 56 [0x38])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB1RSTR1+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":89:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 14 13 16 2 (set (reg:SI 116 [ _4 ])
+        (and:SI (reg:SI 115 [ _3 ])
+            (const_int -268435457 [0xffffffffefffffff]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":89:3 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 115 [ _3 ])
+        (nil)))
+(insn 16 14 0 2 (set (mem/v:SI (plus:SI (reg/f:SI 117)
+                (const_int 56 [0x38])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB1RSTR1+0 S4 A64])
+        (reg:SI 116 [ _4 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":89:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 117)
+        (expr_list:REG_DEAD (reg:SI 116 [ _4 ])
+            (nil))))
+
+;; Function HAL_PWR_EnableBkUpAccess (HAL_PWR_EnableBkUpAccess, funcdef_no=330, decl_uid=8971, cgraph_uid=334, symbol_order=333)
+
+
+
+HAL_PWR_EnableBkUpAccess
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r7={1d,2u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r102={1d,2u} r103={1d,1u} r113={1d,1u} r114={1d,1u} r115={1d,2u} 
+;;    total ref usage 39{28d,11u,0e} in 5{5 regular + 0 call} insns.
+(note 3 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":106:3 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 115)
+        (const_int 1073770496 [0x40007000])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":106:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 113 [ _1 ])
+        (mem/v:SI (reg/f:SI 115) [1 MEM[(struct PWR_TypeDef *)1073770496B].CR1+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":106:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 8 7 10 2 (set (reg:SI 114 [ _2 ])
+        (ior:SI (reg:SI 113 [ _1 ])
+            (const_int 256 [0x100]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":106:3 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 113 [ _1 ])
+        (nil)))
+(insn 10 8 0 2 (set (mem/v:SI (reg/f:SI 115) [1 MEM[(struct PWR_TypeDef *)1073770496B].CR1+0 S4 A64])
+        (reg:SI 114 [ _2 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":106:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 115)
+        (expr_list:REG_DEAD (reg:SI 114 [ _2 ])
+            (nil))))
+
+;; Function HAL_PWR_DisableBkUpAccess (HAL_PWR_DisableBkUpAccess, funcdef_no=331, decl_uid=8973, cgraph_uid=335, symbol_order=334)
+
+
+
+HAL_PWR_DisableBkUpAccess
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r7={1d,2u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r102={1d,2u} r103={1d,1u} r113={1d,1u} r114={1d,1u} r115={1d,2u} 
+;;    total ref usage 39{28d,11u,0e} in 5{5 regular + 0 call} insns.
+(note 3 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":116:3 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 115)
+        (const_int 1073770496 [0x40007000])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":116:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 113 [ _1 ])
+        (mem/v:SI (reg/f:SI 115) [1 MEM[(struct PWR_TypeDef *)1073770496B].CR1+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":116:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 8 7 10 2 (set (reg:SI 114 [ _2 ])
+        (and:SI (reg:SI 113 [ _1 ])
+            (const_int -257 [0xfffffffffffffeff]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":116:3 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 113 [ _1 ])
+        (nil)))
+(insn 10 8 0 2 (set (mem/v:SI (reg/f:SI 115) [1 MEM[(struct PWR_TypeDef *)1073770496B].CR1+0 S4 A64])
+        (reg:SI 114 [ _2 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":116:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 115)
+        (expr_list:REG_DEAD (reg:SI 114 [ _2 ])
+            (nil))))
+
+;; Function HAL_PWR_ConfigPVD (HAL_PWR_ConfigPVD, funcdef_no=332, decl_uid=8975, cgraph_uid=336, symbol_order=335)
+
+
+
+HAL_PWR_ConfigPVD
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 100 [cc]
+;;  ref usage 	r0={2d,3u} r1={1d} r2={1d} r3={1d} r7={1d,10u} r13={1d,10u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={4d,4u} r102={1d,10u} r103={1d,9u} r113={1d,1u} r116={1d,1u} r117={1d,1u} r118={1d,1u} r119={1d,1u} r120={1d,1u} r121={1d,1u} r122={1d,1u} r123={1d,1u} r124={1d,1u} r125={1d,4u} r127={1d,1u} r128={1d,1u} r130={1d,1u} r131={1d,1u} r133={1d,1u} r134={1d,1u} r136={1d,1u} r137={1d,1u} r139={1d,2u} r140={1d,2u} r141={1d,1u} r142={1d,1u} r144={1d,10u} r152={1d,1u} r155={1d,1u} r156={1d,2u} r158={1d,1u} r159={1d,2u} r161={1d,1u} r162={1d,2u} 
+;;    total ref usage 155{61d,94u,0e} in 66{66 regular + 0 call} insns.
+(note 4 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:SI 139 [ sConfigPVD ])
+        (reg:SI 0 r0 [ sConfigPVD ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":309:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [ sConfigPVD ])
+        (nil)))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":311:3 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":312:3 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":315:3 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/f:SI 140)
+        (const_int 1073770496 [0x40007000])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":315:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 113 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 140)
+                (const_int 4 [0x4])) [1 MEM[(struct PWR_TypeDef *)1073770496B].CR2+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":315:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 141)
+        (and:SI (reg:SI 113 [ _1 ])
+            (const_int -15 [0xfffffffffffffff1]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":315:3 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 113 [ _1 ])
+        (nil)))
+(insn 12 11 13 2 (set (reg:SI 142 [ sConfigPVD_31(D)->PVDLevel ])
+        (mem:SI (reg/v/f:SI 139 [ sConfigPVD ]) [1 sConfigPVD_31(D)->PVDLevel+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":315:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 13 12 15 2 (set (reg:SI 116 [ _4 ])
+        (ior:SI (reg:SI 141)
+            (reg:SI 142 [ sConfigPVD_31(D)->PVDLevel ]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":315:3 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 142 [ sConfigPVD_31(D)->PVDLevel ])
+        (expr_list:REG_DEAD (reg:SI 141)
+            (nil))))
+(insn 15 13 16 2 (set (mem/v:SI (plus:SI (reg/f:SI 140)
+                (const_int 4 [0x4])) [1 MEM[(struct PWR_TypeDef *)1073770496B].CR2+0 S4 A32])
+        (reg:SI 116 [ _4 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":315:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 140)
+        (expr_list:REG_DEAD (reg:SI 116 [ _4 ])
+            (nil))))
+(debug_insn 16 15 17 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":318:3 -1
+     (nil))
+(insn 17 16 18 2 (set (reg/f:SI 144)
+        (const_int 1073808384 [0x40010400])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":318:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 18 17 19 2 (set (reg:SI 117 [ _5 ])
+        (mem/v:SI (plus:SI (reg/f:SI 144)
+                (const_int 4 [0x4])) [1 MEM[(struct EXTI_TypeDef *)1073808384B].EMR1+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":318:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 19 18 21 2 (set (reg:SI 118 [ _6 ])
+        (and:SI (reg:SI 117 [ _5 ])
+            (const_int -65537 [0xfffffffffffeffff]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":318:3 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 117 [ _5 ])
+        (nil)))
+(insn 21 19 22 2 (set (mem/v:SI (plus:SI (reg/f:SI 144)
+                (const_int 4 [0x4])) [1 MEM[(struct EXTI_TypeDef *)1073808384B].EMR1+0 S4 A32])
+        (reg:SI 118 [ _6 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":318:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 118 [ _6 ])
+        (nil)))
+(debug_insn 22 21 24 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":319:3 -1
+     (nil))
+(insn 24 22 25 2 (set (reg:SI 119 [ _7 ])
+        (mem/v:SI (reg/f:SI 144) [1 MEM[(struct EXTI_TypeDef *)1073808384B].IMR1+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":319:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 25 24 27 2 (set (reg:SI 120 [ _8 ])
+        (and:SI (reg:SI 119 [ _7 ])
+            (const_int -65537 [0xfffffffffffeffff]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":319:3 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 119 [ _7 ])
+        (nil)))
+(insn 27 25 28 2 (set (mem/v:SI (reg/f:SI 144) [1 MEM[(struct EXTI_TypeDef *)1073808384B].IMR1+0 S4 A64])
+        (reg:SI 120 [ _8 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":319:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 120 [ _8 ])
+        (nil)))
+(debug_insn 28 27 30 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":320:3 -1
+     (nil))
+(insn 30 28 31 2 (set (reg:SI 121 [ _9 ])
+        (mem/v:SI (plus:SI (reg/f:SI 144)
+                (const_int 12 [0xc])) [1 MEM[(struct EXTI_TypeDef *)1073808384B].FTSR1+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":320:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 31 30 33 2 (set (reg:SI 122 [ _10 ])
+        (and:SI (reg:SI 121 [ _9 ])
+            (const_int -65537 [0xfffffffffffeffff]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":320:3 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 121 [ _9 ])
+        (nil)))
+(insn 33 31 34 2 (set (mem/v:SI (plus:SI (reg/f:SI 144)
+                (const_int 12 [0xc])) [1 MEM[(struct EXTI_TypeDef *)1073808384B].FTSR1+0 S4 A32])
+        (reg:SI 122 [ _10 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":320:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 122 [ _10 ])
+        (nil)))
+(debug_insn 34 33 36 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":321:3 -1
+     (nil))
+(insn 36 34 37 2 (set (reg:SI 123 [ _11 ])
+        (mem/v:SI (plus:SI (reg/f:SI 144)
+                (const_int 8 [0x8])) [1 MEM[(struct EXTI_TypeDef *)1073808384B].RTSR1+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":321:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 37 36 39 2 (set (reg:SI 124 [ _12 ])
+        (and:SI (reg:SI 123 [ _11 ])
+            (const_int -65537 [0xfffffffffffeffff]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":321:3 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 123 [ _11 ])
+        (nil)))
+(insn 39 37 40 2 (set (mem/v:SI (plus:SI (reg/f:SI 144)
+                (const_int 8 [0x8])) [1 MEM[(struct EXTI_TypeDef *)1073808384B].RTSR1+0 S4 A64])
+        (reg:SI 124 [ _12 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":321:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 124 [ _12 ])
+        (nil)))
+(debug_insn 40 39 41 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":324:3 -1
+     (nil))
+(insn 41 40 42 2 (set (reg:SI 125 [ _13 ])
+        (mem:SI (plus:SI (reg/v/f:SI 139 [ sConfigPVD ])
+                (const_int 4 [0x4])) [1 sConfigPVD_31(D)->Mode+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":324:17 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v/f:SI 139 [ sConfigPVD ])
+        (nil)))
+(insn 42 41 43 2 (set (reg:SI 152)
+        (and:SI (reg:SI 125 [ _13 ])
+            (const_int 65536 [0x10000]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":324:24 90 {*arm_andsi3_insn}
+     (nil))
+(insn 43 42 44 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 152)
+            (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":324:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 152)
+        (nil)))
+(jump_insn 44 43 45 2 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 52)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":324:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 52)
+(note 45 44 46 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 46 45 48 3 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":326:5 -1
+     (nil))
+(insn 48 46 49 3 (set (reg:SI 127 [ _15 ])
+        (mem/v:SI (reg/f:SI 144) [1 MEM[(struct EXTI_TypeDef *)1073808384B].IMR1+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":326:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 49 48 51 3 (set (reg:SI 128 [ _16 ])
+        (ior:SI (reg:SI 127 [ _15 ])
+            (const_int 65536 [0x10000]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":326:5 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 127 [ _15 ])
+        (nil)))
+(insn 51 49 52 3 (set (mem/v:SI (reg/f:SI 144) [1 MEM[(struct EXTI_TypeDef *)1073808384B].IMR1+0 S4 A64])
+        (reg:SI 128 [ _16 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":326:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 144)
+        (expr_list:REG_DEAD (reg:SI 128 [ _16 ])
+            (nil))))
+(code_label 52 51 53 4 12 (nil) [1 uses])
+(note 53 52 54 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 54 53 55 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":330:3 -1
+     (nil))
+(insn 55 54 56 4 (set (reg:SI 155)
+        (and:SI (reg:SI 125 [ _13 ])
+            (const_int 131072 [0x20000]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":330:24 90 {*arm_andsi3_insn}
+     (nil))
+(insn 56 55 57 4 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 155)
+            (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":330:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 155)
+        (nil)))
+(jump_insn 57 56 58 4 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 65)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":330:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 65)
+(note 58 57 59 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 59 58 60 5 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":332:5 -1
+     (nil))
+(insn 60 59 61 5 (set (reg/f:SI 156)
+        (const_int 1073808384 [0x40010400])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":332:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 61 60 62 5 (set (reg:SI 130 [ _18 ])
+        (mem/v:SI (plus:SI (reg/f:SI 156)
+                (const_int 4 [0x4])) [1 MEM[(struct EXTI_TypeDef *)1073808384B].EMR1+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":332:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 62 61 64 5 (set (reg:SI 131 [ _19 ])
+        (ior:SI (reg:SI 130 [ _18 ])
+            (const_int 65536 [0x10000]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":332:5 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 130 [ _18 ])
+        (nil)))
+(insn 64 62 65 5 (set (mem/v:SI (plus:SI (reg/f:SI 156)
+                (const_int 4 [0x4])) [1 MEM[(struct EXTI_TypeDef *)1073808384B].EMR1+0 S4 A32])
+        (reg:SI 131 [ _19 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":332:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 156)
+        (expr_list:REG_DEAD (reg:SI 131 [ _19 ])
+            (nil))))
+(code_label 65 64 66 6 13 (nil) [1 uses])
+(note 66 65 67 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 67 66 68 6 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":336:3 -1
+     (nil))
+(insn 68 67 69 6 (set (reg:SI 158)
+        (and:SI (reg:SI 125 [ _13 ])
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":336:24 90 {*arm_andsi3_insn}
+     (nil))
+(insn 69 68 70 6 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 158)
+            (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":336:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 158)
+        (nil)))
+(jump_insn 70 69 71 6 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 78)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":336:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 78)
+(note 71 70 72 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 72 71 73 7 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":338:5 -1
+     (nil))
+(insn 73 72 74 7 (set (reg/f:SI 159)
+        (const_int 1073808384 [0x40010400])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":338:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 74 73 75 7 (set (reg:SI 133 [ _21 ])
+        (mem/v:SI (plus:SI (reg/f:SI 159)
+                (const_int 8 [0x8])) [1 MEM[(struct EXTI_TypeDef *)1073808384B].RTSR1+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":338:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 75 74 77 7 (set (reg:SI 134 [ _22 ])
+        (ior:SI (reg:SI 133 [ _21 ])
+            (const_int 65536 [0x10000]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":338:5 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 133 [ _21 ])
+        (nil)))
+(insn 77 75 78 7 (set (mem/v:SI (plus:SI (reg/f:SI 159)
+                (const_int 8 [0x8])) [1 MEM[(struct EXTI_TypeDef *)1073808384B].RTSR1+0 S4 A64])
+        (reg:SI 134 [ _22 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":338:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 159)
+        (expr_list:REG_DEAD (reg:SI 134 [ _22 ])
+            (nil))))
+(code_label 78 77 79 8 14 (nil) [1 uses])
+(note 79 78 80 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 80 79 81 8 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":341:3 -1
+     (nil))
+(insn 81 80 82 8 (set (reg:SI 161)
+        (and:SI (reg:SI 125 [ _13 ])
+            (const_int 2 [0x2]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":341:24 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 125 [ _13 ])
+        (nil)))
+(insn 82 81 83 8 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 161)
+            (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":341:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 161)
+        (nil)))
+(jump_insn 83 82 84 8 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 91)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":341:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 91)
+(note 84 83 85 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 85 84 86 9 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":343:5 -1
+     (nil))
+(insn 86 85 87 9 (set (reg/f:SI 162)
+        (const_int 1073808384 [0x40010400])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":343:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 87 86 88 9 (set (reg:SI 136 [ _24 ])
+        (mem/v:SI (plus:SI (reg/f:SI 162)
+                (const_int 12 [0xc])) [1 MEM[(struct EXTI_TypeDef *)1073808384B].FTSR1+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":343:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 88 87 90 9 (set (reg:SI 137 [ _25 ])
+        (ior:SI (reg:SI 136 [ _24 ])
+            (const_int 65536 [0x10000]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":343:5 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 136 [ _24 ])
+        (nil)))
+(insn 90 88 91 9 (set (mem/v:SI (plus:SI (reg/f:SI 162)
+                (const_int 12 [0xc])) [1 MEM[(struct EXTI_TypeDef *)1073808384B].FTSR1+0 S4 A32])
+        (reg:SI 137 [ _25 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":343:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 162)
+        (expr_list:REG_DEAD (reg:SI 137 [ _25 ])
+            (nil))))
+(code_label 91 90 92 10 15 (nil) [1 uses])
+(note 92 91 93 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 93 92 98 10 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":346:3 -1
+     (nil))
+(insn 98 93 99 10 (set (reg/i:SI 0 r0)
+        (const_int 0 [0])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":347:1 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 99 98 0 10 (use (reg/i:SI 0 r0)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":347:1 -1
+     (nil))
+
+;; Function HAL_PWR_EnablePVD (HAL_PWR_EnablePVD, funcdef_no=333, decl_uid=8977, cgraph_uid=337, symbol_order=336)
+
+
+
+HAL_PWR_EnablePVD
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r7={1d,2u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r102={1d,2u} r103={1d,1u} r113={1d,1u} r114={1d,1u} r115={1d,2u} 
+;;    total ref usage 39{28d,11u,0e} in 5{5 regular + 0 call} insns.
+(note 3 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":356:3 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 115)
+        (const_int 1073770496 [0x40007000])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":356:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 113 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 115)
+                (const_int 4 [0x4])) [1 MEM[(struct PWR_TypeDef *)1073770496B].CR2+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":356:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 8 7 10 2 (set (reg:SI 114 [ _2 ])
+        (ior:SI (reg:SI 113 [ _1 ])
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":356:3 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 113 [ _1 ])
+        (nil)))
+(insn 10 8 0 2 (set (mem/v:SI (plus:SI (reg/f:SI 115)
+                (const_int 4 [0x4])) [1 MEM[(struct PWR_TypeDef *)1073770496B].CR2+0 S4 A32])
+        (reg:SI 114 [ _2 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":356:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 115)
+        (expr_list:REG_DEAD (reg:SI 114 [ _2 ])
+            (nil))))
+
+;; Function HAL_PWR_DisablePVD (HAL_PWR_DisablePVD, funcdef_no=334, decl_uid=8979, cgraph_uid=338, symbol_order=337)
+
+
+
+HAL_PWR_DisablePVD
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r7={1d,2u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r102={1d,2u} r103={1d,1u} r113={1d,1u} r114={1d,1u} r115={1d,2u} 
+;;    total ref usage 39{28d,11u,0e} in 5{5 regular + 0 call} insns.
+(note 3 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":365:3 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 115)
+        (const_int 1073770496 [0x40007000])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":365:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 113 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 115)
+                (const_int 4 [0x4])) [1 MEM[(struct PWR_TypeDef *)1073770496B].CR2+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":365:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 8 7 10 2 (set (reg:SI 114 [ _2 ])
+        (and:SI (reg:SI 113 [ _1 ])
+            (const_int -2 [0xfffffffffffffffe]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":365:3 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 113 [ _1 ])
+        (nil)))
+(insn 10 8 0 2 (set (mem/v:SI (plus:SI (reg/f:SI 115)
+                (const_int 4 [0x4])) [1 MEM[(struct PWR_TypeDef *)1073770496B].CR2+0 S4 A32])
+        (reg:SI 114 [ _2 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":365:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 115)
+        (expr_list:REG_DEAD (reg:SI 114 [ _2 ])
+            (nil))))
+
+;; Function HAL_PWR_EnableWakeUpPin (HAL_PWR_EnableWakeUpPin, funcdef_no=335, decl_uid=8981, cgraph_uid=339, symbol_order=338)
+
+
+
+HAL_PWR_EnableWakeUpPin
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0]
+;;  ref usage 	r0={1d,1u} r1={1d} r2={1d} r3={1d} r7={1d,2u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r102={1d,2u} r103={1d,1u} r113={1d,1u} r114={1d,2u} r118={1d,1u} r119={1d,1u} r120={1d,1u} r121={1d,2u} r122={1d,4u} r123={1d,1u} r124={1d,1u} r125={1d,1u} 
+;;    total ref usage 58{35d,23u,0e} in 15{15 regular + 0 call} insns.
+(note 4 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 121 [ WakeUpPinPolarity ])
+        (reg:SI 0 r0 [ WakeUpPinPolarity ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":389:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [ WakeUpPinPolarity ])
+        (nil)))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":390:3 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":394:3 -1
+     (nil))
+(insn 8 7 9 2 (set (reg/f:SI 122)
+        (const_int 1073770496 [0x40007000])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":394:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 113 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 122)
+                (const_int 12 [0xc])) [1 MEM[(struct PWR_TypeDef *)1073770496B].CR4+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":394:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 114 [ _2 ])
+        (and:SI (reg/v:SI 121 [ WakeUpPinPolarity ])
+            (const_int 31 [0x1f]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":394:3 90 {*arm_andsi3_insn}
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 123)
+        (not:SI (reg:SI 114 [ _2 ]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":394:3 169 {*arm_one_cmplsi2}
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 124)
+        (and:SI (reg:SI 123)
+            (reg:SI 113 [ _1 ]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":394:3 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 123)
+        (expr_list:REG_DEAD (reg:SI 113 [ _1 ])
+            (nil))))
+(insn 13 12 14 2 (set (reg:SI 125)
+        (lshiftrt:SI (reg/v:SI 121 [ WakeUpPinPolarity ])
+            (const_int 5 [0x5]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":394:3 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg/v:SI 121 [ WakeUpPinPolarity ])
+        (nil)))
+(insn 14 13 16 2 (set (reg:SI 118 [ _6 ])
+        (ior:SI (reg:SI 124)
+            (reg:SI 125))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":394:3 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 125)
+        (expr_list:REG_DEAD (reg:SI 124)
+            (nil))))
+(insn 16 14 17 2 (set (mem/v:SI (plus:SI (reg/f:SI 122)
+                (const_int 12 [0xc])) [1 MEM[(struct PWR_TypeDef *)1073770496B].CR4+0 S4 A32])
+        (reg:SI 118 [ _6 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":394:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 118 [ _6 ])
+        (nil)))
+(debug_insn 17 16 19 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":397:3 -1
+     (nil))
+(insn 19 17 20 2 (set (reg:SI 119 [ _7 ])
+        (mem/v:SI (plus:SI (reg/f:SI 122)
+                (const_int 8 [0x8])) [1 MEM[(struct PWR_TypeDef *)1073770496B].CR3+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":397:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 20 19 22 2 (set (reg:SI 120 [ _8 ])
+        (ior:SI (reg:SI 114 [ _2 ])
+            (reg:SI 119 [ _7 ]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":397:3 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 119 [ _7 ])
+        (expr_list:REG_DEAD (reg:SI 114 [ _2 ])
+            (nil))))
+(insn 22 20 0 2 (set (mem/v:SI (plus:SI (reg/f:SI 122)
+                (const_int 8 [0x8])) [1 MEM[(struct PWR_TypeDef *)1073770496B].CR3+0 S4 A64])
+        (reg:SI 120 [ _8 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":397:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 122)
+        (expr_list:REG_DEAD (reg:SI 120 [ _8 ])
+            (nil))))
+
+;; Function HAL_PWR_DisableWakeUpPin (HAL_PWR_DisableWakeUpPin, funcdef_no=336, decl_uid=8983, cgraph_uid=340, symbol_order=339)
+
+
+
+HAL_PWR_DisableWakeUpPin
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0]
+;;  ref usage 	r0={1d,1u} r1={1d} r2={1d} r3={1d} r7={1d,2u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r102={1d,2u} r103={1d,1u} r113={1d,1u} r116={1d,1u} r117={1d,1u} r118={1d,2u} r119={1d,1u} r120={1d,1u} 
+;;    total ref usage 46{31d,15u,0e} in 9{9 regular + 0 call} insns.
+(note 4 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 117 [ WakeUpPinx ])
+        (reg:SI 0 r0 [ WakeUpPinx ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":410:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [ WakeUpPinx ])
+        (nil)))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":411:3 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":413:3 -1
+     (nil))
+(insn 8 7 9 2 (set (reg/f:SI 118)
+        (const_int 1073770496 [0x40007000])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":413:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 113 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 118)
+                (const_int 8 [0x8])) [1 MEM[(struct PWR_TypeDef *)1073770496B].CR3+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":413:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 119)
+        (and:SI (reg/v:SI 117 [ WakeUpPinx ])
+            (const_int 31 [0x1f]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":413:3 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg/v:SI 117 [ WakeUpPinx ])
+        (nil)))
+(insn 11 10 12 2 (set (reg:SI 120)
+        (not:SI (reg:SI 119))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":413:3 169 {*arm_one_cmplsi2}
+     (expr_list:REG_DEAD (reg:SI 119)
+        (nil)))
+(insn 12 11 14 2 (set (reg:SI 116 [ _4 ])
+        (and:SI (reg:SI 120)
+            (reg:SI 113 [ _1 ]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":413:3 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 120)
+        (expr_list:REG_DEAD (reg:SI 113 [ _1 ])
+            (nil))))
+(insn 14 12 0 2 (set (mem/v:SI (plus:SI (reg/f:SI 118)
+                (const_int 8 [0x8])) [1 MEM[(struct PWR_TypeDef *)1073770496B].CR3+0 S4 A64])
+        (reg:SI 116 [ _4 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":413:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 118)
+        (expr_list:REG_DEAD (reg:SI 116 [ _4 ])
+            (nil))))
+
+;; Function HAL_PWR_EnterSLEEPMode (HAL_PWR_EnterSLEEPMode, funcdef_no=337, decl_uid=8986, cgraph_uid=341, symbol_order=340)
+
+verify found no changes in insn with uid = 21.
+verify found no changes in insn with uid = 34.
+
+
+HAL_PWR_EnterSLEEPMode
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={3d,1u} r1={3d,1u} r2={3d} r3={3d} r7={1d,10u} r12={4d} r13={1d,12u} r14={3d} r15={2d} r16={3d} r17={3d} r18={3d} r19={3d} r20={3d} r21={3d} r22={3d} r23={3d} r24={3d} r25={3d} r26={3d} r27={3d} r28={3d} r29={3d} r30={3d} r31={3d} r48={2d} r49={2d} r50={2d} r51={2d} r52={2d} r53={2d} r54={2d} r55={2d} r56={2d} r57={2d} r58={2d} r59={2d} r60={2d} r61={2d} r62={2d} r63={2d} r64={2d} r65={2d} r66={2d} r67={2d} r68={2d} r69={2d} r70={2d} r71={2d} r72={2d} r73={2d} r74={2d} r75={2d} r76={2d} r77={2d} r78={2d} r79={2d} r80={2d} r81={2d} r82={2d} r83={2d} r84={2d} r85={2d} r86={2d} r87={2d} r88={2d} r89={2d} r90={2d} r91={2d} r92={2d} r93={2d} r94={2d} r95={2d} r96={2d} r97={2d} r98={2d} r99={2d} r100={6d,4u} r101={2d} r102={1d,10u} r103={1d,9u} r104={2d} r105={2d} r106={2d} r113={1d,1u} r115={1d,1u} r117={1d,1u} r118={1d,1u} r119={1d,1u} r120={1d,1u} r121={1d,1u} r122={1d,1u} r123={1d,1u} r124={1d,1u} r125={1d,2u} 
+;;    total ref usage 261{202d,59u,0e} in 39{37 regular + 2 call} insns.
+(note 5 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v:SI 119 [ Regulator ])
+        (reg:SI 0 r0 [ Regulator ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":442:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [ Regulator ])
+        (nil)))
+(insn 3 2 4 2 (set (reg/v:SI 120 [ SLEEPEntry ])
+        (reg:SI 1 r1 [ SLEEPEntry ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":442:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [ SLEEPEntry ])
+        (nil)))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 4 8 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":444:3 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":445:3 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":448:3 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 119 [ Regulator ])
+            (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":448:6 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg/v:SI 119 [ Regulator ])
+        (nil)))
+(jump_insn 11 10 12 2 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 24)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":448:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 24)
+(note 12 11 13 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 13 12 14 3 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":451:5 -1
+     (nil))
+(insn 14 13 15 3 (set (reg/f:SI 121)
+        (const_int 1073770496 [0x40007000])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":451:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 15 14 16 3 (set (reg:SI 113 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 121)
+                (const_int 20 [0x14])) [1 MEM[(struct PWR_TypeDef *)1073770496B].SR2+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":451:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 121)
+        (nil)))
+(insn 16 15 17 3 (set (reg:SI 122)
+        (and:SI (reg:SI 113 [ _1 ])
+            (const_int 512 [0x200]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":451:9 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 113 [ _1 ])
+        (nil)))
+(insn 17 16 18 3 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 122)
+            (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":451:8 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 122)
+        (nil)))
+(jump_insn 18 17 19 3 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 35)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":451:8 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 719407028 (nil)))
+ -> 35)
+(note 19 18 20 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 20 19 21 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":453:7 -1
+     (nil))
+(call_insn 21 20 24 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_PWREx_DisableLowPowerRunMode") [flags 0x41]  <function_decl 0000000006ad3500 HAL_PWREx_DisableLowPowerRunMode>) [0 HAL_PWREx_DisableLowPowerRunMode S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":453:13 291 {*call_value_symbol}
+     (expr_list:REG_UNUSED (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_PWREx_DisableLowPowerRunMode") [flags 0x41]  <function_decl 0000000006ad3500 HAL_PWREx_DisableLowPowerRunMode>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+      ; pc falls through to BB 7
+(code_label 24 21 25 5 44 (nil) [1 uses])
+(note 25 24 26 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 26 25 27 5 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":461:5 -1
+     (nil))
+(insn 27 26 28 5 (set (reg/f:SI 123)
+        (const_int 1073770496 [0x40007000])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":461:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 28 27 29 5 (set (reg:SI 115 [ _3 ])
+        (mem/v:SI (plus:SI (reg/f:SI 123)
+                (const_int 20 [0x14])) [1 MEM[(struct PWR_TypeDef *)1073770496B].SR2+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":461:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 123)
+        (nil)))
+(insn 29 28 30 5 (set (reg:SI 124)
+        (and:SI (reg:SI 115 [ _3 ])
+            (const_int 512 [0x200]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":461:9 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 115 [ _3 ])
+        (nil)))
+(insn 30 29 31 5 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 124)
+            (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":461:8 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 124)
+        (nil)))
+(jump_insn 31 30 32 5 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 35)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":461:8 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 719407028 (nil)))
+ -> 35)
+(note 32 31 33 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 33 32 34 6 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":463:7 -1
+     (nil))
+(call_insn 34 33 35 6 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_PWREx_EnableLowPowerRunMode") [flags 0x41]  <function_decl 0000000006ad3400 HAL_PWREx_EnableLowPowerRunMode>) [0 HAL_PWREx_EnableLowPowerRunMode S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":463:7 290 {*call_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_PWREx_EnableLowPowerRunMode") [flags 0x41]  <function_decl 0000000006ad3400 HAL_PWREx_EnableLowPowerRunMode>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(code_label 35 34 36 7 45 (nil) [2 uses])
+(note 36 35 37 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 37 36 38 7 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":468:3 -1
+     (nil))
+(insn 38 37 39 7 (set (reg/f:SI 125)
+        (const_int -536810240 [0xffffffffe000ed00])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":468:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 39 38 40 7 (set (reg:SI 117 [ _5 ])
+        (mem/v:SI (plus:SI (reg/f:SI 125)
+                (const_int 16 [0x10])) [1 MEM[(struct SCB_Type *)3758157056B].SCR+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":468:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 40 39 42 7 (set (reg:SI 118 [ _6 ])
+        (and:SI (reg:SI 117 [ _5 ])
+            (const_int -5 [0xfffffffffffffffb]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":468:3 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 117 [ _5 ])
+        (nil)))
+(insn 42 40 43 7 (set (mem/v:SI (plus:SI (reg/f:SI 125)
+                (const_int 16 [0x10])) [1 MEM[(struct SCB_Type *)3758157056B].SCR+0 S4 A64])
+        (reg:SI 118 [ _6 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":468:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 125)
+        (expr_list:REG_DEAD (reg:SI 118 [ _6 ])
+            (nil))))
+(debug_insn 43 42 44 7 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":471:3 -1
+     (nil))
+(insn 44 43 45 7 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 120 [ SLEEPEntry ])
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":471:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg/v:SI 120 [ SLEEPEntry ])
+        (nil)))
+(jump_insn 45 44 46 7 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 51)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":471:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 708669604 (nil)))
+ -> 51)
+(note 46 45 47 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 47 46 48 8 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":474:5 -1
+     (nil))
+(insn 48 47 51 8 (parallel [
+            (asm_input/v ("wfi") ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c:474)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":474:5 -1
+     (nil))
+      ; pc falls through to BB 10
+(code_label 51 48 52 9 46 (nil) [1 uses])
+(note 52 51 53 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 53 52 54 9 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":479:5 -1
+     (nil))
+(insn 54 53 55 9 (parallel [
+            (asm_input/v ("sev") ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c:479)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":479:5 -1
+     (nil))
+(debug_insn 55 54 56 9 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":480:5 -1
+     (nil))
+(insn 56 55 57 9 (parallel [
+            (asm_input/v ("wfe") ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c:480)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":480:5 -1
+     (nil))
+(debug_insn 57 56 58 9 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":481:5 -1
+     (nil))
+(insn 58 57 61 9 (parallel [
+            (asm_input/v ("wfe") ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c:481)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":481:5 -1
+     (nil))
+(code_label 61 58 62 10 43 (nil) [0 uses])
+(note 62 61 0 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+
+;; Function HAL_PWR_EnterSTOPMode (HAL_PWR_EnterSTOPMode, funcdef_no=338, decl_uid=8989, cgraph_uid=342, symbol_order=341)
+
+verify found no changes in insn with uid = 14.
+verify found no changes in insn with uid = 20.
+
+
+HAL_PWR_EnterSTOPMode
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 12 [ip] 13 [sp] 100 [cc]
+;;  ref usage 	r0={5d,3u} r1={3d,1u} r2={3d} r3={3d} r7={1d,4u} r12={4d} r13={1d,6u} r14={3d} r15={2d} r16={3d} r17={3d} r18={3d} r19={3d} r20={3d} r21={3d} r22={3d} r23={3d} r24={3d} r25={3d} r26={3d} r27={3d} r28={3d} r29={3d} r30={3d} r31={3d} r48={2d} r49={2d} r50={2d} r51={2d} r52={2d} r53={2d} r54={2d} r55={2d} r56={2d} r57={2d} r58={2d} r59={2d} r60={2d} r61={2d} r62={2d} r63={2d} r64={2d} r65={2d} r66={2d} r67={2d} r68={2d} r69={2d} r70={2d} r71={2d} r72={2d} r73={2d} r74={2d} r75={2d} r76={2d} r77={2d} r78={2d} r79={2d} r80={2d} r81={2d} r82={2d} r83={2d} r84={2d} r85={2d} r86={2d} r87={2d} r88={2d} r89={2d} r90={2d} r91={2d} r92={2d} r93={2d} r94={2d} r95={2d} r96={2d} r97={2d} r98={2d} r99={2d} r100={3d,1u} r101={2d} r102={1d,4u} r103={1d,3u} r104={2d} r105={2d} r106={2d} r113={1d,1u} r114={1d,2u} 
+;;    total ref usage 217{192d,25u,0e} in 12{10 regular + 2 call} insns.
+(note 5 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v:SI 113 [ Regulator ])
+        (reg:SI 0 r0 [ Regulator ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":517:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [ Regulator ])
+        (nil)))
+(insn 3 2 4 2 (set (reg/v:SI 114 [ STOPEntry ])
+        (reg:SI 1 r1 [ STOPEntry ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":517:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [ STOPEntry ])
+        (nil)))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 4 8 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":519:3 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":521:3 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 113 [ Regulator ])
+            (const_int 16384 [0x4000]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":521:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg/v:SI 113 [ Regulator ])
+        (nil)))
+(jump_insn 10 9 11 2 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 16)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":521:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 708669604 (nil)))
+ -> 16)
+(note 11 10 12 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 12 11 13 3 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":523:5 -1
+     (nil))
+(insn 13 12 14 3 (set (reg:SI 0 r0)
+        (reg/v:SI 114 [ STOPEntry ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":523:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 114 [ STOPEntry ])
+        (nil)))
+(call_insn/j 14 13 16 3 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_PWREx_EnterSTOP1Mode") [flags 0x41]  <function_decl 0000000006ad3700 HAL_PWREx_EnterSTOP1Mode>) [0 HAL_PWREx_EnterSTOP1Mode S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":523:5 292 {*sibcall_insn}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_PWREx_EnterSTOP1Mode") [flags 0x41]  <function_decl 0000000006ad3700 HAL_PWREx_EnterSTOP1Mode>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(code_label 16 14 17 4 57 (nil) [1 uses])
+(note 17 16 18 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 18 17 19 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":527:5 -1
+     (nil))
+(insn 19 18 20 4 (set (reg:SI 0 r0)
+        (reg/v:SI 114 [ STOPEntry ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":527:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 114 [ STOPEntry ])
+        (nil)))
+(call_insn/j 20 19 0 4 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_PWREx_EnterSTOP0Mode") [flags 0x41]  <function_decl 0000000006ad3600 HAL_PWREx_EnterSTOP0Mode>) [0 HAL_PWREx_EnterSTOP0Mode S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":527:5 292 {*sibcall_insn}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_PWREx_EnterSTOP0Mode") [flags 0x41]  <function_decl 0000000006ad3600 HAL_PWREx_EnterSTOP0Mode>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+
+;; Function HAL_PWR_EnterSTANDBYMode (HAL_PWR_EnterSTANDBYMode, funcdef_no=339, decl_uid=8991, cgraph_uid=343, symbol_order=342)
+
+
+
+HAL_PWR_EnterSTANDBYMode
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r7={1d,2u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r102={1d,2u} r103={1d,1u} r113={1d,1u} r115={1d,1u} r116={1d,1u} r117={1d,1u} r118={1d,2u} r119={1d,1u} r121={1d,2u} 
+;;    total ref usage 48{32d,16u,0e} in 13{13 regular + 0 call} insns.
+(note 3 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":552:3 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 118)
+        (const_int 1073770496 [0x40007000])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":552:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 113 [ _1 ])
+        (mem/v:SI (reg/f:SI 118) [1 MEM[(struct PWR_TypeDef *)1073770496B].CR1+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":552:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 119)
+        (and:SI (reg:SI 113 [ _1 ])
+            (const_int -8 [0xfffffffffffffff8]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":552:3 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 113 [ _1 ])
+        (nil)))
+(insn 9 8 11 2 (set (reg:SI 115 [ _3 ])
+        (ior:SI (reg:SI 119)
+            (const_int 3 [0x3]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":552:3 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 119)
+        (nil)))
+(insn 11 9 12 2 (set (mem/v:SI (reg/f:SI 118) [1 MEM[(struct PWR_TypeDef *)1073770496B].CR1+0 S4 A64])
+        (reg:SI 115 [ _3 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":552:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 118)
+        (expr_list:REG_DEAD (reg:SI 115 [ _3 ])
+            (nil))))
+(debug_insn 12 11 13 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":555:3 -1
+     (nil))
+(insn 13 12 14 2 (set (reg/f:SI 121)
+        (const_int -536810240 [0xffffffffe000ed00])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":555:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 116 [ _4 ])
+        (mem/v:SI (plus:SI (reg/f:SI 121)
+                (const_int 16 [0x10])) [1 MEM[(struct SCB_Type *)3758157056B].SCR+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":555:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 15 14 17 2 (set (reg:SI 117 [ _5 ])
+        (ior:SI (reg:SI 116 [ _4 ])
+            (const_int 4 [0x4]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":555:3 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 116 [ _4 ])
+        (nil)))
+(insn 17 15 18 2 (set (mem/v:SI (plus:SI (reg/f:SI 121)
+                (const_int 16 [0x10])) [1 MEM[(struct SCB_Type *)3758157056B].SCR+0 S4 A64])
+        (reg:SI 117 [ _5 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":555:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 121)
+        (expr_list:REG_DEAD (reg:SI 117 [ _5 ])
+            (nil))))
+(debug_insn 18 17 19 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":562:3 -1
+     (nil))
+(insn 19 18 0 2 (parallel [
+            (asm_input/v ("wfi") ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c:562)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":562:3 -1
+     (nil))
+
+;; Function HAL_PWR_EnableSleepOnExit (HAL_PWR_EnableSleepOnExit, funcdef_no=340, decl_uid=8993, cgraph_uid=344, symbol_order=343)
+
+
+
+HAL_PWR_EnableSleepOnExit
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r7={1d,2u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r102={1d,2u} r103={1d,1u} r113={1d,1u} r114={1d,1u} r115={1d,2u} 
+;;    total ref usage 39{28d,11u,0e} in 5{5 regular + 0 call} insns.
+(note 3 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":578:3 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 115)
+        (const_int -536810240 [0xffffffffe000ed00])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":578:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 113 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 115)
+                (const_int 16 [0x10])) [1 MEM[(struct SCB_Type *)3758157056B].SCR+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":578:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 8 7 10 2 (set (reg:SI 114 [ _2 ])
+        (ior:SI (reg:SI 113 [ _1 ])
+            (const_int 2 [0x2]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":578:3 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 113 [ _1 ])
+        (nil)))
+(insn 10 8 0 2 (set (mem/v:SI (plus:SI (reg/f:SI 115)
+                (const_int 16 [0x10])) [1 MEM[(struct SCB_Type *)3758157056B].SCR+0 S4 A64])
+        (reg:SI 114 [ _2 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":578:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 115)
+        (expr_list:REG_DEAD (reg:SI 114 [ _2 ])
+            (nil))))
+
+;; Function HAL_PWR_DisableSleepOnExit (HAL_PWR_DisableSleepOnExit, funcdef_no=341, decl_uid=8995, cgraph_uid=345, symbol_order=344)
+
+
+
+HAL_PWR_DisableSleepOnExit
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r7={1d,2u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r102={1d,2u} r103={1d,1u} r113={1d,1u} r114={1d,1u} r115={1d,2u} 
+;;    total ref usage 39{28d,11u,0e} in 5{5 regular + 0 call} insns.
+(note 3 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":591:3 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 115)
+        (const_int -536810240 [0xffffffffe000ed00])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":591:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 113 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 115)
+                (const_int 16 [0x10])) [1 MEM[(struct SCB_Type *)3758157056B].SCR+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":591:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 8 7 10 2 (set (reg:SI 114 [ _2 ])
+        (and:SI (reg:SI 113 [ _1 ])
+            (const_int -3 [0xfffffffffffffffd]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":591:3 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 113 [ _1 ])
+        (nil)))
+(insn 10 8 0 2 (set (mem/v:SI (plus:SI (reg/f:SI 115)
+                (const_int 16 [0x10])) [1 MEM[(struct SCB_Type *)3758157056B].SCR+0 S4 A64])
+        (reg:SI 114 [ _2 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":591:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 115)
+        (expr_list:REG_DEAD (reg:SI 114 [ _2 ])
+            (nil))))
+
+;; Function HAL_PWR_EnableSEVOnPend (HAL_PWR_EnableSEVOnPend, funcdef_no=342, decl_uid=8997, cgraph_uid=346, symbol_order=345)
+
+
+
+HAL_PWR_EnableSEVOnPend
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r7={1d,2u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r102={1d,2u} r103={1d,1u} r113={1d,1u} r114={1d,1u} r115={1d,2u} 
+;;    total ref usage 39{28d,11u,0e} in 5{5 regular + 0 call} insns.
+(note 3 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":605:3 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 115)
+        (const_int -536810240 [0xffffffffe000ed00])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":605:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 113 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 115)
+                (const_int 16 [0x10])) [1 MEM[(struct SCB_Type *)3758157056B].SCR+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":605:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 8 7 10 2 (set (reg:SI 114 [ _2 ])
+        (ior:SI (reg:SI 113 [ _1 ])
+            (const_int 16 [0x10]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":605:3 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 113 [ _1 ])
+        (nil)))
+(insn 10 8 0 2 (set (mem/v:SI (plus:SI (reg/f:SI 115)
+                (const_int 16 [0x10])) [1 MEM[(struct SCB_Type *)3758157056B].SCR+0 S4 A64])
+        (reg:SI 114 [ _2 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":605:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 115)
+        (expr_list:REG_DEAD (reg:SI 114 [ _2 ])
+            (nil))))
+
+;; Function HAL_PWR_DisableSEVOnPend (HAL_PWR_DisableSEVOnPend, funcdef_no=343, decl_uid=8999, cgraph_uid=347, symbol_order=346)
+
+
+
+HAL_PWR_DisableSEVOnPend
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r7={1d,2u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r102={1d,2u} r103={1d,1u} r113={1d,1u} r114={1d,1u} r115={1d,2u} 
+;;    total ref usage 39{28d,11u,0e} in 5{5 regular + 0 call} insns.
+(note 3 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":618:3 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 115)
+        (const_int -536810240 [0xffffffffe000ed00])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":618:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 113 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 115)
+                (const_int 16 [0x10])) [1 MEM[(struct SCB_Type *)3758157056B].SCR+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":618:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 8 7 10 2 (set (reg:SI 114 [ _2 ])
+        (and:SI (reg:SI 113 [ _1 ])
+            (const_int -17 [0xffffffffffffffef]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":618:3 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 113 [ _1 ])
+        (nil)))
+(insn 10 8 0 2 (set (mem/v:SI (plus:SI (reg/f:SI 115)
+                (const_int 16 [0x10])) [1 MEM[(struct SCB_Type *)3758157056B].SCR+0 S4 A64])
+        (reg:SI 114 [ _2 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":618:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 115)
+        (expr_list:REG_DEAD (reg:SI 114 [ _2 ])
+            (nil))))
+
+;; Function HAL_PWR_PVDCallback (HAL_PWR_PVDCallback, funcdef_no=344, decl_uid=9001, cgraph_uid=348, symbol_order=347)
+
+
+
+HAL_PWR_PVDCallback
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r7={1d,2u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r102={1d,2u} r103={1d,1u} 
+;;    total ref usage 32{25d,7u,0e} in 1{1 regular + 0 call} insns.
+(note 3 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 0 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c":634:1 -1
+     (nil))

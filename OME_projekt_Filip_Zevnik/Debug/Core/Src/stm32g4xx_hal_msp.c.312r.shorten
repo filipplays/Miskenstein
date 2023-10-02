@@ -1,0 +1,3280 @@
+
+;; Function HAL_MspInit (HAL_MspInit, funcdef_no=1438, decl_uid=9919, cgraph_uid=1442, symbol_order=1448)
+
+
+
+HAL_MspInit
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 2 [r2] 3 [r3] 12 [ip] 13 [sp]
+;;  ref usage 	r0={2d} r1={2d} r2={9d,6u} r3={6d,8u} r12={2d} r13={3d,12u} r14={1d,1u} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 142{115d,27u,0e} in 20{19 regular + 1 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 85 2 NOTE_INSN_FUNCTION_BEG)
+(note 85 2 86 2 ../Core/Src/stm32g4xx_hal_msp.c:72 NOTE_INSN_BEGIN_STMT)
+(note 86 85 87 2 ../Core/Src/stm32g4xx_hal_msp.c:72 NOTE_INSN_BEGIN_STMT)
+(note 87 86 8 2 ../Core/Src/stm32g4xx_hal_msp.c:72 NOTE_INSN_BEGIN_STMT)
+(insn 8 87 9 2 (set (reg/f:SI 3 r3 [123])
+        (mem:SI (label_ref 100) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":72:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073876992 [0x40021000])
+        (nil)))
+(insn 9 8 10 2 (set (reg:SI 2 r2 [orig:113 _1 ] [113])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [123])
+                (const_int 96 [0x60])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB2ENR+0 S4 A64])) "../Core/Src/stm32g4xx_hal_msp.c":72:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 10 9 12 2 (set (reg:SI 2 r2 [orig:114 _2 ] [114])
+        (ior:SI (reg:SI 2 r2 [orig:113 _1 ] [113])
+            (const_int 1 [0x1]))) "../Core/Src/stm32g4xx_hal_msp.c":72:3 106 {*iorsi3_insn}
+     (nil))
+(insn 12 10 88 2 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [123])
+                (const_int 96 [0x60])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB2ENR+0 S4 A64])
+        (reg:SI 2 r2 [orig:114 _2 ] [114])) "../Core/Src/stm32g4xx_hal_msp.c":72:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:114 _2 ] [114])
+        (nil)))
+(note 88 12 15 2 ../Core/Src/stm32g4xx_hal_msp.c:72 NOTE_INSN_BEGIN_STMT)
+(insn 15 88 68 2 (set (reg:SI 2 r2 [orig:115 _3 ] [115])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [123])
+                (const_int 96 [0x60])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB2ENR+0 S4 A64])) "../Core/Src/stm32g4xx_hal_msp.c":72:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn/f 68 15 69 2 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int -8 [0xfffffffffffffff8]))) "../Core/Src/stm32g4xx_hal_msp.c":67:1 7 {*arm_addsi3}
+     (nil))
+(note 69 68 16 2 NOTE_INSN_PROLOGUE_END)
+(insn 16 69 17 2 (set (reg:SI 2 r2 [orig:116 _4 ] [116])
+        (and:SI (reg:SI 2 r2 [orig:115 _3 ] [115])
+            (const_int 1 [0x1]))) "../Core/Src/stm32g4xx_hal_msp.c":72:3 90 {*arm_andsi3_insn}
+     (nil))
+(insn 17 16 89 2 (set (mem/v/c:SI (reg/f:SI 13 sp) [1 tmpreg+0 S4 A64])
+        (reg:SI 2 r2 [orig:116 _4 ] [116])) "../Core/Src/stm32g4xx_hal_msp.c":72:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:116 _4 ] [116])
+        (nil)))
+(note 89 17 19 2 ../Core/Src/stm32g4xx_hal_msp.c:72 NOTE_INSN_BEGIN_STMT)
+(insn 19 89 90 2 (set (reg:SI 2 r2 [orig:121 vol.0_12 ] [121])
+        (mem/v/c:SI (reg/f:SI 13 sp) [1 tmpreg+0 S4 A64])) "../Core/Src/stm32g4xx_hal_msp.c":72:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_UNUSED (reg:SI 2 r2 [orig:121 vol.0_12 ] [121])
+        (nil)))
+(note 90 19 91 2 ../Core/Src/stm32g4xx_hal_msp.c:72 NOTE_INSN_BEGIN_STMT)
+(note 91 90 92 2 ../Core/Src/stm32g4xx_hal_msp.c:73 NOTE_INSN_BEGIN_STMT)
+(note 92 91 93 2 ../Core/Src/stm32g4xx_hal_msp.c:73 NOTE_INSN_BEGIN_STMT)
+(note 93 92 25 2 ../Core/Src/stm32g4xx_hal_msp.c:73 NOTE_INSN_BEGIN_STMT)
+(insn 25 93 26 2 (set (reg:SI 2 r2 [orig:117 _5 ] [117])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [123])
+                (const_int 88 [0x58])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB1ENR1+0 S4 A64])) "../Core/Src/stm32g4xx_hal_msp.c":73:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 26 25 28 2 (set (reg:SI 2 r2 [orig:118 _6 ] [118])
+        (ior:SI (reg:SI 2 r2 [orig:117 _5 ] [117])
+            (const_int 268435456 [0x10000000]))) "../Core/Src/stm32g4xx_hal_msp.c":73:3 106 {*iorsi3_insn}
+     (nil))
+(insn 28 26 94 2 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [123])
+                (const_int 88 [0x58])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB1ENR1+0 S4 A64])
+        (reg:SI 2 r2 [orig:118 _6 ] [118])) "../Core/Src/stm32g4xx_hal_msp.c":73:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:118 _6 ] [118])
+        (nil)))
+(note 94 28 31 2 ../Core/Src/stm32g4xx_hal_msp.c:73 NOTE_INSN_BEGIN_STMT)
+(insn 31 94 32 2 (set (reg:SI 3 r3 [orig:119 _7 ] [119])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [123])
+                (const_int 88 [0x58])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB1ENR1+0 S4 A64])) "../Core/Src/stm32g4xx_hal_msp.c":73:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 32 31 33 2 (set (reg:SI 3 r3 [orig:120 _8 ] [120])
+        (and:SI (reg:SI 3 r3 [orig:119 _7 ] [119])
+            (const_int 268435456 [0x10000000]))) "../Core/Src/stm32g4xx_hal_msp.c":73:3 90 {*arm_andsi3_insn}
+     (nil))
+(insn 33 32 95 2 (set (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [1 tmpreg+0 S4 A32])
+        (reg:SI 3 r3 [orig:120 _8 ] [120])) "../Core/Src/stm32g4xx_hal_msp.c":73:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:120 _8 ] [120])
+        (nil)))
+(note 95 33 35 2 ../Core/Src/stm32g4xx_hal_msp.c:73 NOTE_INSN_BEGIN_STMT)
+(insn 35 95 96 2 (set (reg:SI 3 r3 [orig:122 vol.1_15 ] [122])
+        (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [1 tmpreg+0 S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":73:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_UNUSED (reg:SI 3 r3 [orig:122 vol.1_15 ] [122])
+        (nil)))
+(note 96 35 97 2 ../Core/Src/stm32g4xx_hal_msp.c:73 NOTE_INSN_BEGIN_STMT)
+(note 97 96 84 2 ../Core/Src/stm32g4xx_hal_msp.c:79 NOTE_INSN_BEGIN_STMT)
+(note 84 97 77 2 NOTE_INSN_EPILOGUE_BEG)
+(insn 77 84 78 2 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../Core/Src/stm32g4xx_hal_msp.c":84:1 301 {blockage}
+     (nil))
+(insn/f 78 77 79 2 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 8 [0x8]))) "../Core/Src/stm32g4xx_hal_msp.c":84:1 7 {*arm_addsi3}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 8 [0x8])))
+        (nil)))
+(insn 79 78 38 2 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../Core/Src/stm32g4xx_hal_msp.c":84:1 397 {force_register_use}
+     (nil))
+(call_insn/j 38 79 39 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_PWREx_DisableUCPDDeadBattery") [flags 0x41]  <function_decl 0000000006af6100 HAL_PWREx_DisableUCPDDeadBattery>) [0 HAL_PWREx_DisableUCPDDeadBattery S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":79:3 292 {*sibcall_insn}
+     (expr_list:REG_CALL_ARG_LOCATION (nil)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_PWREx_DisableUCPDDeadBattery") [flags 0x41]  <function_decl 0000000006af6100 HAL_PWREx_DisableUCPDDeadBattery>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(barrier 39 38 98)
+(code_label 98 39 99 5 (nil) [0 uses])
+(insn 99 98 100 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) 385 {align_4}
+     (nil))
+(code_label 100 99 101 4 (nil) [0 uses])
+(insn 101 100 102 (unspec_volatile [
+            (const_int 1073876992 [0x40021000])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 102 101 103 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) 387 {consttable_end}
+     (nil))
+(barrier 103 102 43)
+(note 43 103 0 NOTE_INSN_DELETED)
+
+;; Function HAL_ADC_MspInit (HAL_ADC_MspInit, funcdef_no=1439, decl_uid=8608, cgraph_uid=1443, symbol_order=1449)
+
+
+
+HAL_ADC_MspInit
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 5 [r5] 6 [r6] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 4 [r4] 5 [r5] 6 [r6] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 5 [r5] 6 [r6] 12 [ip] 13 [sp] 14 [lr] 15 [pc] 100 [cc]
+;;  ref usage 	r0={11d,7u} r1={9d,7u} r2={21d,13u,1e} r3={17d,14u} r4={4d,5u,1e} r5={4d,14u} r6={4d,6u} r12={12d} r13={7d,52u} r14={7d,2u} r15={8d} r16={7d} r17={7d} r18={7d} r19={7d} r20={7d} r21={7d} r22={7d} r23={7d} r24={7d} r25={7d} r26={7d} r27={7d} r28={7d} r29={7d} r30={7d} r31={7d} r48={6d} r49={6d} r50={6d} r51={6d} r52={6d} r53={6d} r54={6d} r55={6d} r56={6d} r57={6d} r58={6d} r59={6d} r60={6d} r61={6d} r62={6d} r63={6d} r64={6d} r65={6d} r66={6d} r67={6d} r68={6d} r69={6d} r70={6d} r71={6d} r72={6d} r73={6d} r74={6d} r75={6d} r76={6d} r77={6d} r78={6d} r79={6d} r80={6d} r81={6d} r82={6d} r83={6d} r84={6d} r85={6d} r86={6d} r87={6d} r88={6d} r89={6d} r90={6d} r91={6d} r92={6d} r93={6d} r94={6d} r95={6d} r96={6d} r97={6d} r98={6d} r99={6d} r100={9d,1u} r101={6d} r104={6d} r105={6d} r106={6d} 
+;;    total ref usage 684{561d,121u,2e} in 73{67 regular + 6 call} insns.
+(note 1 0 264 NOTE_INSN_DELETED)
+(note 264 1 4 (var_location hadc (reg:SI 0 r0 [ hadc ])) NOTE_INSN_VAR_LOCATION)
+(note 4 264 3 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 3 4 15 2 NOTE_INSN_FUNCTION_BEG)
+(note 15 3 7 2 NOTE_INSN_DELETED)
+(note 7 15 230 2 NOTE_INSN_DELETED)
+(note 230 7 188 2 ../Core/Src/stm32g4xx_hal_msp.c:94 NOTE_INSN_BEGIN_STMT)
+(insn/f 188 230 2 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -16 [0xfffffffffffffff0]))) [33  A8])
+                (unspec:BLK [
+                        (reg:SI 4 r4)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 5 r5))
+            (use (reg:SI 6 r6))
+            (use (reg:SI 14 lr))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":93:1 378 {*push_multi}
+     (expr_list:REG_DEAD (reg:SI 14 lr)
+        (expr_list:REG_DEAD (reg:SI 6 r6)
+            (expr_list:REG_DEAD (reg:SI 5 r5)
+                (expr_list:REG_DEAD (reg:SI 4 r4)
+                    (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                                (set/f (reg/f:SI 13 sp)
+                                    (plus:SI (reg/f:SI 13 sp)
+                                        (const_int -16 [0xfffffffffffffff0])))
+                                (set/f (mem/c:SI (reg/f:SI 13 sp) [33  S4 A32])
+                                    (reg:SI 4 r4))
+                                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                            (const_int 4 [0x4])) [33  S4 A32])
+                                    (reg:SI 5 r5))
+                                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                            (const_int 8 [0x8])) [33  S4 A32])
+                                    (reg:SI 6 r6))
+                                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                            (const_int 12 [0xc])) [33  S4 A32])
+                                    (reg:SI 14 lr))
+                            ])
+                        (nil)))))))
+(insn 2 188 189 2 (set (reg/v/f:SI 4 r4 [orig:126 hadc ] [126])
+        (reg:SI 0 r0 [172])) "../Core/Src/stm32g4xx_hal_msp.c":93:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [172])
+        (nil)))
+(insn/f 189 2 190 2 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int -112 [0xffffffffffffff90]))) "../Core/Src/stm32g4xx_hal_msp.c":93:1 7 {*arm_addsi3}
+     (nil))
+(note 190 189 8 2 NOTE_INSN_PROLOGUE_END)
+(insn 8 190 17 2 (parallel [
+            (set (reg:SI 1 r1 [128])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":94:20 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUIV (const_int 0 [0])
+        (nil)))
+(insn 17 8 179 2 (parallel [
+            (set (reg:SI 2 r2)
+                (const_int 84 [0x54]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":95:28 1016 {*thumb2_movsi_shortim}
+     (nil))
+(insn 179 17 265 2 (set (reg:SI 0 r0 [176])
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 28 [0x1c]))) "../Core/Src/stm32g4xx_hal_msp.c":95:28 7 {*arm_addsi3}
+     (nil))
+(note 265 179 207 2 (var_location hadc (reg/v/f:SI 4 r4 [orig:126 hadc ] [126])) NOTE_INSN_VAR_LOCATION)
+(insn 207 265 208 2 (parallel [
+            (set (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 8 [0x8])) [3 GPIO_InitStruct+0 S4 A64])
+                (reg:SI 1 r1 [128]))
+            (set (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 12 [0xc])) [3 GPIO_InitStruct+4 S4 A32])
+                (reg:SI 1 r1 [128]))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":94:20 412 {*thumb2_strd}
+     (nil))
+(insn 208 207 13 2 (parallel [
+            (set (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 16 [0x10])) [3 GPIO_InitStruct+8 S4 A64])
+                (reg:SI 1 r1 [128]))
+            (set (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 20 [0x14])) [3 GPIO_InitStruct+12 S4 A32])
+                (reg:SI 1 r1 [128]))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":94:20 412 {*thumb2_strd}
+     (nil))
+(insn 13 208 231 2 (set (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 24 [0x18])) [3 GPIO_InitStruct+16 S4 A64])
+        (reg:SI 1 r1 [128])) "../Core/Src/stm32g4xx_hal_msp.c":94:20 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 231 13 20 2 ../Core/Src/stm32g4xx_hal_msp.c:95 NOTE_INSN_BEGIN_STMT)
+(call_insn 20 231 232 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("memset") [flags 0x41]  <function_decl 0000000004e8e800 __builtin_memset>) [0 __builtin_memset S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":95:28 291 {*call_value_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 0 r0)
+                (plus:SI (reg/f:SI 103 afp)
+                    (const_int -100 [0xffffffffffffff9c])))
+            (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 1 r1)
+                    (const_int 0 [0]))
+                (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 2 r2)
+                        (const_int 84 [0x54]))
+                    (nil))))
+        (expr_list:REG_DEAD (reg:SI 2 r2)
+            (expr_list:REG_DEAD (reg:SI 1 r1)
+                (expr_list:REG_UNUSED (reg:SI 0 r0)
+                    (expr_list:REG_RETURNED (reg/f:SI 129)
+                        (expr_list:REG_CALL_DECL (symbol_ref:SI ("memset") [flags 0x41]  <function_decl 0000000004e8e800 __builtin_memset>)
+                            (expr_list:REG_EH_REGION (const_int 0 [0])
+                                (nil))))))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (set (reg:SI 0 r0)
+                (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 0 r0))
+                (expr_list:SI (use (reg:SI 1 r1))
+                    (expr_list:SI (use (reg:SI 2 r2))
+                        (nil)))))))
+(note 232 20 23 2 ../Core/Src/stm32g4xx_hal_msp.c:96 NOTE_INSN_BEGIN_STMT)
+(insn 23 232 24 2 (set (reg:SI 3 r3 [132])
+        (mem:SI (label_ref 272) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":96:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1342178560 [0x50000500])
+        (nil)))
+(insn 24 23 25 2 (set (reg/f:SI 2 r2 [orig:133 hadc_18(D)->Instance ] [133])
+        (mem/f:SI (reg/v/f:SI 4 r4 [orig:126 hadc ] [126]) [4 hadc_18(D)->Instance+0 S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":96:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem/f:SI (reg/v/f:SI 4 r4 [orig:126 hadc ] [126]) [4 hadc_18(D)->Instance+0 S4 A32])
+        (nil)))
+(insn 25 24 26 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/f:SI 2 r2 [orig:133 hadc_18(D)->Instance ] [133])
+            (reg:SI 3 r3 [132]))) "../Core/Src/stm32g4xx_hal_msp.c":96:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [132])
+        (expr_list:REG_DEAD (reg/f:SI 2 r2 [orig:133 hadc_18(D)->Instance ] [133])
+            (expr_list:REG_EQUAL (compare:CC (reg/f:SI 2 r2 [orig:133 hadc_18(D)->Instance ] [133])
+                    (const_int 1342178560 [0x50000500]))
+                (nil)))))
+(jump_insn 26 25 152 2 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 218)
+            (pc))) "../Core/Src/stm32g4xx_hal_msp.c":96:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 187153204 (nil)))
+ -> 218)
+(note 152 26 191 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 191 152 192 3 NOTE_INSN_EPILOGUE_BEG)
+(insn 192 191 193 3 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../Core/Src/stm32g4xx_hal_msp.c":146:1 301 {blockage}
+     (nil))
+(insn/f 193 192 194 3 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 112 [0x70]))) "../Core/Src/stm32g4xx_hal_msp.c":146:1 7 {*arm_addsi3}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 112 [0x70])))
+        (nil)))
+(insn 194 193 195 3 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../Core/Src/stm32g4xx_hal_msp.c":146:1 397 {force_register_use}
+     (nil))
+(jump_insn 195 194 198 3 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 16 [0x10])))
+            (set/f (reg:SI 4 r4)
+                (mem/c:SI (reg/f:SI 13 sp) [33  S4 A32]))
+            (set/f (reg:SI 5 r5)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [33  S4 A32]))
+            (set/f (reg:SI 6 r6)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 8 [0x8])) [33  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 12 [0xc])) [33  S4 A32]))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":146:1 381 {*pop_multiple_with_writeback_and_return}
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (expr_list:REG_CFA_RESTORE (reg:SI 6 r6)
+            (expr_list:REG_CFA_RESTORE (reg:SI 5 r5)
+                (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+                    (nil)))))
+ -> return)
+(barrier 198 195 266)
+(note 266 198 267 (var_location hadc (entry_value:SI (reg:SI 0 r0 [ hadc ]))) NOTE_INSN_VAR_LOCATION)
+(note 267 266 218 (var_location hadc (reg/v/f:SI 4 r4 [orig:126 hadc ] [126])) NOTE_INSN_VAR_LOCATION)
+(code_label 218 267 27 4 17 (nil) [1 uses])
+(note 27 218 38 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 38 27 40 4 NOTE_INSN_DELETED)
+(note 40 38 233 4 NOTE_INSN_DELETED)
+(note 233 40 29 4 ../Core/Src/stm32g4xx_hal_msp.c:103 NOTE_INSN_BEGIN_STMT)
+(insn 29 233 32 4 (set (reg:SI 2 r2 [134])
+        (const_int 65536 [0x10000])) "../Core/Src/stm32g4xx_hal_msp.c":103:40 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 65536 [0x10000])
+        (nil)))
+(insn 32 29 180 4 (set (reg:SI 3 r3 [135])
+        (const_int -2147483648 [0xffffffff80000000])) "../Core/Src/stm32g4xx_hal_msp.c":104:40 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int -2147483648 [0xffffffff80000000])
+        (nil)))
+(insn 180 32 30 4 (set (reg:SI 0 r0 [177])
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 28 [0x1c]))) "../Core/Src/stm32g4xx_hal_msp.c":105:9 7 {*arm_addsi3}
+     (nil))
+(insn 30 180 234 4 (set (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 28 [0x1c])) [1 PeriphClkInit.PeriphClockSelection+0 S4 A32])
+        (reg:SI 2 r2 [134])) "../Core/Src/stm32g4xx_hal_msp.c":103:40 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [134])
+        (nil)))
+(note 234 30 33 4 ../Core/Src/stm32g4xx_hal_msp.c:104 NOTE_INSN_BEGIN_STMT)
+(insn 33 234 235 4 (set (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 100 [0x64])) [1 PeriphClkInit.Adc345ClockSelection+0 S4 A32])
+        (reg:SI 3 r3 [135])) "../Core/Src/stm32g4xx_hal_msp.c":104:40 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [135])
+        (nil)))
+(note 235 33 37 4 ../Core/Src/stm32g4xx_hal_msp.c:105 NOTE_INSN_BEGIN_STMT)
+(call_insn 37 235 41 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_RCCEx_PeriphCLKConfig") [flags 0x41]  <function_decl 0000000006860a00 HAL_RCCEx_PeriphCLKConfig>) [0 HAL_RCCEx_PeriphCLKConfig S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":105:9 291 {*call_value_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 0 r0)
+                (plus:SI (reg/f:SI 103 afp)
+                    (const_int -100 [0xffffffffffffff9c])))
+            (nil))
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_RCCEx_PeriphCLKConfig") [flags 0x41]  <function_decl 0000000006860a00 HAL_RCCEx_PeriphCLKConfig>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(jump_insn 41 37 45 4 (parallel [
+            (set (pc)
+                (if_then_else (ne (reg:SI 0 r0 [173])
+                        (const_int 0 [0]))
+                    (label_ref:SI 219)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":105:8 1025 {*thumb2_cbnz}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [173])
+        (expr_list:REG_UNUSED (reg:CC 100 cc)
+            (int_list:REG_BR_PROB 354334804 (nil))))
+ -> 219)
+(code_label 45 41 46 5 8 (nil) [1 uses])
+(note 46 45 132 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(note 132 46 134 5 NOTE_INSN_DELETED)
+(note 134 132 236 5 NOTE_INSN_DELETED)
+(note 236 134 237 5 ../Core/Src/stm32g4xx_hal_msp.c:111 NOTE_INSN_BEGIN_STMT)
+(note 237 236 238 5 ../Core/Src/stm32g4xx_hal_msp.c:111 NOTE_INSN_BEGIN_STMT)
+(note 238 237 50 5 ../Core/Src/stm32g4xx_hal_msp.c:111 NOTE_INSN_BEGIN_STMT)
+(insn 50 238 90 5 (set (reg/f:SI 3 r3 [138])
+        (mem:SI (const:SI (plus:SI (label_ref 272)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":111:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073876992 [0x40021000])
+        (nil)))
+(insn 90 50 51 5 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 272)
+                    (const_int 8 [0x8]))) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":121:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 51 90 93 5 (set (reg:SI 2 r2 [orig:115 _3 ] [115])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [138])
+                (const_int 76 [0x4c])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB2ENR+0 S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":111:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 93 51 52 5 (set (reg/f:SI 5 r5 [170])
+        (mem:SI (const:SI (plus:SI (label_ref 272)
+                    (const_int 12 [0xc]))) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":125:24 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (symbol_ref:SI ("hdma_adc4") [flags 0xc0]  <var_decl 00000000072b57e0 hdma_adc4>)
+        (nil)))
+(insn 52 93 54 5 (set (reg:SI 2 r2 [orig:116 _4 ] [116])
+        (ior:SI (reg:SI 2 r2 [orig:115 _3 ] [115])
+            (const_int 16384 [0x4000]))) "../Core/Src/stm32g4xx_hal_msp.c":111:5 106 {*iorsi3_insn}
+     (nil))
+(insn 54 52 239 5 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [138])
+                (const_int 76 [0x4c])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB2ENR+0 S4 A32])
+        (reg:SI 2 r2 [orig:116 _4 ] [116])) "../Core/Src/stm32g4xx_hal_msp.c":111:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:116 _4 ] [116])
+        (nil)))
+(note 239 54 57 5 ../Core/Src/stm32g4xx_hal_msp.c:111 NOTE_INSN_BEGIN_STMT)
+(insn 57 239 58 5 (set (reg:SI 2 r2 [orig:117 _5 ] [117])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [138])
+                (const_int 76 [0x4c])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB2ENR+0 S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":111:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 58 57 59 5 (set (reg:SI 2 r2 [orig:118 _6 ] [118])
+        (and:SI (reg:SI 2 r2 [orig:117 _5 ] [117])
+            (const_int 16384 [0x4000]))) "../Core/Src/stm32g4xx_hal_msp.c":111:5 90 {*arm_andsi3_insn}
+     (nil))
+(insn 59 58 240 5 (set (mem/v/c:SI (reg/f:SI 13 sp) [1 tmpreg+0 S4 A64])
+        (reg:SI 2 r2 [orig:118 _6 ] [118])) "../Core/Src/stm32g4xx_hal_msp.c":111:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:118 _6 ] [118])
+        (nil)))
+(note 240 59 61 5 ../Core/Src/stm32g4xx_hal_msp.c:111 NOTE_INSN_BEGIN_STMT)
+(insn 61 240 241 5 (set (reg:SI 2 r2 [orig:124 vol.2_25 ] [124])
+        (mem/v/c:SI (reg/f:SI 13 sp) [1 tmpreg+0 S4 A64])) "../Core/Src/stm32g4xx_hal_msp.c":111:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_UNUSED (reg:SI 2 r2 [orig:124 vol.2_25 ] [124])
+        (nil)))
+(note 241 61 242 5 ../Core/Src/stm32g4xx_hal_msp.c:111 NOTE_INSN_BEGIN_STMT)
+(note 242 241 243 5 ../Core/Src/stm32g4xx_hal_msp.c:113 NOTE_INSN_BEGIN_STMT)
+(note 243 242 244 5 ../Core/Src/stm32g4xx_hal_msp.c:113 NOTE_INSN_BEGIN_STMT)
+(note 244 243 67 5 ../Core/Src/stm32g4xx_hal_msp.c:113 NOTE_INSN_BEGIN_STMT)
+(insn 67 244 68 5 (set (reg:SI 2 r2 [orig:119 _7 ] [119])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [138])
+                (const_int 76 [0x4c])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB2ENR+0 S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":113:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 68 67 70 5 (set (reg:SI 2 r2 [orig:120 _8 ] [120])
+        (ior:SI (reg:SI 2 r2 [orig:119 _7 ] [119])
+            (const_int 2 [0x2]))) "../Core/Src/stm32g4xx_hal_msp.c":113:5 106 {*iorsi3_insn}
+     (nil))
+(insn 70 68 245 5 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [138])
+                (const_int 76 [0x4c])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB2ENR+0 S4 A32])
+        (reg:SI 2 r2 [orig:120 _8 ] [120])) "../Core/Src/stm32g4xx_hal_msp.c":113:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:120 _8 ] [120])
+        (nil)))
+(note 245 70 73 5 ../Core/Src/stm32g4xx_hal_msp.c:113 NOTE_INSN_BEGIN_STMT)
+(insn 73 245 74 5 (set (reg:SI 3 r3 [orig:121 _9 ] [121])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [138])
+                (const_int 76 [0x4c])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB2ENR+0 S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":113:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 74 73 75 5 (set (reg:SI 3 r3 [orig:122 _10 ] [122])
+        (and:SI (reg:SI 3 r3 [orig:121 _9 ] [121])
+            (const_int 2 [0x2]))) "../Core/Src/stm32g4xx_hal_msp.c":113:5 90 {*arm_andsi3_insn}
+     (nil))
+(insn 75 74 246 5 (set (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [1 tmpreg+0 S4 A32])
+        (reg:SI 3 r3 [orig:122 _10 ] [122])) "../Core/Src/stm32g4xx_hal_msp.c":113:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:122 _10 ] [122])
+        (nil)))
+(note 246 75 84 5 ../Core/Src/stm32g4xx_hal_msp.c:113 NOTE_INSN_BEGIN_STMT)
+(insn 84 246 184 5 (parallel [
+            (set (reg:SI 6 r6 [145])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":120:26 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUIV (const_int 0 [0])
+        (nil)))
+(insn 184 84 185 5 (set (reg:SI 2 r2 [144])
+        (const_int 49152 [0xc000])) "../Core/Src/stm32g4xx_hal_msp.c":118:25 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 185 184 181 5 (parallel [
+            (set (reg:SI 3 r3 [+4 ])
+                (const_int 3 [0x3]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":118:25 1016 {*thumb2_movsi_shortim}
+     (nil))
+(insn 181 185 82 5 (set (reg:SI 1 r1 [178])
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 8 [0x8]))) "../Core/Src/stm32g4xx_hal_msp.c":121:5 7 {*arm_addsi3}
+     (nil))
+(insn 82 181 85 5 (set (mem/c:DI (plus:SI (reg/f:SI 13 sp)
+                (const_int 8 [0x8])) [1 MEM <vector(2) long unsigned int> [(long unsigned int *)&GPIO_InitStruct]+0 S8 A64])
+        (reg:DI 2 r2 [144])) "../Core/Src/stm32g4xx_hal_msp.c":118:25 729 {*movdi_vfp}
+     (expr_list:REG_DEAD (reg:DI 2 r2 [144])
+        (nil)))
+(insn 85 82 77 5 (set (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 16 [0x10])) [1 GPIO_InitStruct.Pull+0 S4 A64])
+        (reg:SI 6 r6 [145])) "../Core/Src/stm32g4xx_hal_msp.c":120:26 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 77 85 247 5 (set (reg:SI 3 r3 [orig:125 vol.3_28 ] [125])
+        (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [1 tmpreg+0 S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":113:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_UNUSED (reg:SI 3 r3 [orig:125 vol.3_28 ] [125])
+        (nil)))
+(note 247 77 248 5 ../Core/Src/stm32g4xx_hal_msp.c:113 NOTE_INSN_BEGIN_STMT)
+(note 248 247 249 5 ../Core/Src/stm32g4xx_hal_msp.c:118 NOTE_INSN_BEGIN_STMT)
+(note 249 248 250 5 ../Core/Src/stm32g4xx_hal_msp.c:119 NOTE_INSN_BEGIN_STMT)
+(note 250 249 251 5 ../Core/Src/stm32g4xx_hal_msp.c:120 NOTE_INSN_BEGIN_STMT)
+(note 251 250 91 5 ../Core/Src/stm32g4xx_hal_msp.c:121 NOTE_INSN_BEGIN_STMT)
+(call_insn 91 251 252 5 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_GPIO_Init") [flags 0x41]  <function_decl 0000000006848500 HAL_GPIO_Init>) [0 HAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":121:5 290 {*call_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 0 r0)
+                (const_int 1207960576 [0x48000400]))
+            (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 1 r1)
+                    (plus:SI (reg/f:SI 103 afp)
+                        (const_int -120 [0xffffffffffffff88])))
+                (nil)))
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_DEAD (reg:SI 0 r0)
+                (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GPIO_Init") [flags 0x41]  <function_decl 0000000006848500 HAL_GPIO_Init>)
+                    (nil)))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(note 252 91 199 5 ../Core/Src/stm32g4xx_hal_msp.c:125 NOTE_INSN_BEGIN_STMT)
+(insn 199 252 127 5 (set (reg:SI 2 r2 [149])
+        (mem:SI (const:SI (plus:SI (label_ref 272)
+                    (const_int 16 [0x10]))) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":126:28 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 127 199 200 5 (set (mem/c:SI (plus:SI (reg/f:SI 5 r5 [170])
+                (const_int 32 [0x20])) [1 hdma_adc4.Init.Priority+0 S4 A32])
+        (reg:SI 6 r6 [145])) "../Core/Src/stm32g4xx_hal_msp.c":133:29 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 6 r6 [145])
+        (nil)))
+(insn 200 127 201 5 (parallel [
+            (set (reg:SI 3 r3 [151])
+                (const_int 38 [0x26]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":126:28 1016 {*thumb2_movsi_shortim}
+     (nil))
+(insn 201 200 253 5 (parallel [
+            (set (mem/f/c:SI (reg/f:SI 5 r5 [170]) [13 hdma_adc4.Instance+0 S4 A32])
+                (reg:SI 2 r2 [149]))
+            (set (mem/c:SI (plus:SI (reg/f:SI 5 r5 [170])
+                        (const_int 4 [0x4])) [1 hdma_adc4.Init.Request+0 S4 A32])
+                (reg:SI 3 r3 [151]))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":126:28 413 {*thumb2_strd_base}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [151])
+        (expr_list:REG_DEAD (reg:SI 2 r2 [149])
+            (nil))))
+(note 253 201 110 5 ../Core/Src/stm32g4xx_hal_msp.c:127 NOTE_INSN_BEGIN_STMT)
+(insn 110 253 114 5 (parallel [
+            (set (reg:SI 2 r2 [157])
+                (const_int 128 [0x80]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":129:27 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUIV (const_int 128 [0x80])
+        (nil)))
+(insn 114 110 203 5 (set (reg:SI 3 r3 [159])
+        (const_int 256 [0x100])) "../Core/Src/stm32g4xx_hal_msp.c":130:40 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 256 [0x100])
+        (nil)))
+(insn 203 114 130 5 (parallel [
+            (set (mem/c:SI (plus:SI (reg/f:SI 5 r5 [170])
+                        (const_int 16 [0x10])) [1 hdma_adc4.Init.MemInc+0 S4 A32])
+                (reg:SI 2 r2 [157]))
+            (set (mem/c:SI (plus:SI (reg/f:SI 5 r5 [170])
+                        (const_int 20 [0x14])) [1 hdma_adc4.Init.PeriphDataAlignment+0 S4 A32])
+                (reg:SI 3 r3 [159]))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":130:40 412 {*thumb2_strd}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [159])
+        (expr_list:REG_DEAD (reg:SI 2 r2 [157])
+            (nil))))
+(insn 130 203 204 5 (set (reg:SI 0 r0)
+        (reg/f:SI 5 r5 [170])) "../Core/Src/stm32g4xx_hal_msp.c":134:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (symbol_ref:SI ("hdma_adc4") [flags 0xc0]  <var_decl 00000000072b57e0 hdma_adc4>)
+        (nil)))
+(insn 204 130 205 5 (set (reg:SI 2 r2 [161])
+        (const_int 1024 [0x400])) "../Core/Src/stm32g4xx_hal_msp.c":132:25 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 205 204 202 5 (parallel [
+            (set (reg:SI 3 r3 [163])
+                (const_int 32 [0x20]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":132:25 1016 {*thumb2_movsi_shortim}
+     (nil))
+(insn 202 205 254 5 (parallel [
+            (set (mem/c:SI (plus:SI (reg/f:SI 5 r5 [170])
+                        (const_int 8 [0x8])) [1 hdma_adc4.Init.Direction+0 S4 A32])
+                (reg:SI 6 r6 [145]))
+            (set (mem/c:SI (plus:SI (reg/f:SI 5 r5 [170])
+                        (const_int 12 [0xc])) [1 hdma_adc4.Init.PeriphInc+0 S4 A32])
+                (reg:SI 6 r6 [145]))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":128:30 412 {*thumb2_strd}
+     (nil))
+(note 254 202 255 5 ../Core/Src/stm32g4xx_hal_msp.c:129 NOTE_INSN_BEGIN_STMT)
+(note 255 254 206 5 ../Core/Src/stm32g4xx_hal_msp.c:131 NOTE_INSN_BEGIN_STMT)
+(insn 206 255 256 5 (parallel [
+            (set (mem/c:SI (plus:SI (reg/f:SI 5 r5 [170])
+                        (const_int 24 [0x18])) [1 hdma_adc4.Init.MemDataAlignment+0 S4 A32])
+                (reg:SI 2 r2 [161]))
+            (set (mem/c:SI (plus:SI (reg/f:SI 5 r5 [170])
+                        (const_int 28 [0x1c])) [1 hdma_adc4.Init.Mode+0 S4 A32])
+                (reg:SI 3 r3 [163]))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":132:25 412 {*thumb2_strd}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [163])
+        (expr_list:REG_DEAD (reg:SI 2 r2 [161])
+            (nil))))
+(note 256 206 257 5 ../Core/Src/stm32g4xx_hal_msp.c:133 NOTE_INSN_BEGIN_STMT)
+(note 257 256 131 5 ../Core/Src/stm32g4xx_hal_msp.c:134 NOTE_INSN_BEGIN_STMT)
+(call_insn 131 257 135 5 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_DMA_Init") [flags 0x41]  <function_decl 000000000687f800 HAL_DMA_Init>) [0 HAL_DMA_Init S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":134:9 291 {*call_value_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 0 r0)
+                (reg/f:SI 5 r5 [170]))
+            (nil))
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_DMA_Init") [flags 0x41]  <function_decl 000000000687f800 HAL_DMA_Init>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(jump_insn 135 131 139 5 (parallel [
+            (set (pc)
+                (if_then_else (ne (reg:SI 0 r0 [174])
+                        (const_int 0 [0]))
+                    (label_ref:SI 220)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":134:8 1025 {*thumb2_cbnz}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [174])
+        (expr_list:REG_UNUSED (reg:CC 100 cc)
+            (int_list:REG_BR_PROB 354334804 (nil))))
+ -> 220)
+(code_label 139 135 140 6 9 (nil) [1 uses])
+(note 140 139 258 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(note 258 140 259 6 ../Core/Src/stm32g4xx_hal_msp.c:139 NOTE_INSN_BEGIN_STMT)
+(note 259 258 144 6 ../Core/Src/stm32g4xx_hal_msp.c:139 NOTE_INSN_BEGIN_STMT)
+(insn 144 259 260 6 (set (mem/f:SI (plus:SI (reg/v/f:SI 4 r4 [orig:126 hadc ] [126])
+                (const_int 84 [0x54])) [11 hadc_18(D)->DMA_Handle+0 S4 A32])
+        (reg/f:SI 5 r5 [170])) "../Core/Src/stm32g4xx_hal_msp.c":139:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 260 144 147 6 ../Core/Src/stm32g4xx_hal_msp.c:139 NOTE_INSN_BEGIN_STMT)
+(insn 147 260 261 6 (set (mem/f/c:SI (plus:SI (reg/f:SI 5 r5 [170])
+                (const_int 40 [0x28])) [16 hdma_adc4.Parent+0 S4 A32])
+        (reg/v/f:SI 4 r4 [orig:126 hadc ] [126])) "../Core/Src/stm32g4xx_hal_msp.c":139:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 5 r5 [170])
+        (expr_list:REG_DEAD (reg/v/f:SI 4 r4 [orig:126 hadc ] [126])
+            (nil))))
+(note 261 147 229 6 ../Core/Src/stm32g4xx_hal_msp.c:139 NOTE_INSN_BEGIN_STMT)
+(note 229 261 211 6 NOTE_INSN_EPILOGUE_BEG)
+(insn 211 229 212 6 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../Core/Src/stm32g4xx_hal_msp.c":146:1 301 {blockage}
+     (nil))
+(insn/f 212 211 213 6 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 112 [0x70]))) "../Core/Src/stm32g4xx_hal_msp.c":146:1 7 {*arm_addsi3}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 112 [0x70])))
+        (nil)))
+(insn 213 212 214 6 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../Core/Src/stm32g4xx_hal_msp.c":146:1 397 {force_register_use}
+     (nil))
+(jump_insn 214 213 217 6 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 16 [0x10])))
+            (set/f (reg:SI 4 r4)
+                (mem/c:SI (reg/f:SI 13 sp) [33  S4 A32]))
+            (set/f (reg:SI 5 r5)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [33  S4 A32]))
+            (set/f (reg:SI 6 r6)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 8 [0x8])) [33  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 12 [0xc])) [33  S4 A32]))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":146:1 381 {*pop_multiple_with_writeback_and_return}
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (expr_list:REG_CFA_RESTORE (reg:SI 6 r6)
+            (expr_list:REG_CFA_RESTORE (reg:SI 5 r5)
+                (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+                    (nil)))))
+ -> return)
+(barrier 217 214 268)
+(note 268 217 269 (var_location hadc (mem/f/c:SI (const:SI (plus:SI (symbol_ref:SI ("hdma_adc4") [flags 0xc0]  <var_decl 00000000072b57e0 hdma_adc4>)
+            (const_int 40 [0x28]))) [16 hdma_adc4.Parent+0 S4 A32])) NOTE_INSN_VAR_LOCATION)
+(note 269 268 219 (var_location hadc (reg/v/f:SI 4 r4 [orig:126 hadc ] [126])) NOTE_INSN_VAR_LOCATION)
+(code_label 219 269 42 7 18 (nil) [1 uses])
+(note 42 219 262 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(note 262 42 44 7 ../Core/Src/stm32g4xx_hal_msp.c:107 NOTE_INSN_BEGIN_STMT)
+(call_insn 44 262 221 7 (parallel [
+            (call (mem:SI (symbol_ref:SI ("Error_Handler") [flags 0x41]  <function_decl 00000000072edf00 Error_Handler>) [0 Error_Handler S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":107:7 290 {*call_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (nil)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("Error_Handler") [flags 0x41]  <function_decl 00000000072edf00 Error_Handler>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(jump_insn 221 44 222 7 (set (pc)
+        (label_ref 45)) 284 {*arm_jump}
+     (nil)
+ -> 45)
+(barrier 222 221 220)
+(code_label 220 222 136 8 19 (nil) [1 uses])
+(note 136 220 263 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(note 263 136 138 8 ../Core/Src/stm32g4xx_hal_msp.c:136 NOTE_INSN_BEGIN_STMT)
+(call_insn 138 263 223 8 (parallel [
+            (call (mem:SI (symbol_ref:SI ("Error_Handler") [flags 0x41]  <function_decl 00000000072edf00 Error_Handler>) [0 Error_Handler S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":136:7 290 {*call_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (nil)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("Error_Handler") [flags 0x41]  <function_decl 00000000072edf00 Error_Handler>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(jump_insn 223 138 224 8 (set (pc)
+        (label_ref 139)) 284 {*arm_jump}
+     (nil)
+ -> 139)
+(barrier 224 223 270)
+(code_label 270 224 271 21 (nil) [0 uses])
+(insn 271 270 272 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) 385 {align_4}
+     (nil))
+(code_label 272 271 273 20 (nil) [0 uses])
+(insn 273 272 274 (unspec_volatile [
+            (const_int 1342178560 [0x50000500])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 274 273 275 (unspec_volatile [
+            (const_int 1073876992 [0x40021000])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 275 274 276 (unspec_volatile [
+            (const_int 1207960576 [0x48000400])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 276 275 277 (unspec_volatile [
+            (symbol_ref:SI ("hdma_adc4") [flags 0xc0]  <var_decl 00000000072b57e0 hdma_adc4>)
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 277 276 278 (unspec_volatile [
+            (const_int 1073872904 [0x40020008])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 278 277 279 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) 387 {consttable_end}
+     (nil))
+(barrier 279 278 177)
+(note 177 279 178 NOTE_INSN_DELETED)
+(note 178 177 0 NOTE_INSN_DELETED)
+
+;; Function HAL_ADC_MspDeInit (HAL_ADC_MspDeInit, funcdef_no=1440, decl_uid=8610, cgraph_uid=1444, symbol_order=1450)
+
+
+
+HAL_ADC_MspDeInit
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 4 [r4] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={5d,4u} r1={4d,1u} r2={5d,3u,1e} r3={6d,3u} r4={3d,3u,1e} r12={4d} r13={3d,12u} r14={3d,2u} r15={2d} r16={3d} r17={3d} r18={3d} r19={3d} r20={3d} r21={3d} r22={3d} r23={3d} r24={3d} r25={3d} r26={3d} r27={3d} r28={3d} r29={3d} r30={3d} r31={3d} r48={2d} r49={2d} r50={2d} r51={2d} r52={2d} r53={2d} r54={2d} r55={2d} r56={2d} r57={2d} r58={2d} r59={2d} r60={2d} r61={2d} r62={2d} r63={2d} r64={2d} r65={2d} r66={2d} r67={2d} r68={2d} r69={2d} r70={2d} r71={2d} r72={2d} r73={2d} r74={2d} r75={2d} r76={2d} r77={2d} r78={2d} r79={2d} r80={2d} r81={2d} r82={2d} r83={2d} r84={2d} r85={2d} r86={2d} r87={2d} r88={2d} r89={2d} r90={2d} r91={2d} r92={2d} r93={2d} r94={2d} r95={2d} r96={2d} r97={2d} r98={2d} r99={2d} r100={3d,1u} r101={2d} r104={2d} r105={2d} r106={2d} 
+;;    total ref usage 229{198d,29u,2e} in 17{15 regular + 2 call} insns.
+(note 1 0 69 NOTE_INSN_DELETED)
+(note 69 1 4 (var_location hadc (reg:SI 0 r0 [ hadc ])) NOTE_INSN_VAR_LOCATION)
+(note 4 69 3 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 3 4 65 2 NOTE_INSN_FUNCTION_BEG)
+(note 65 3 7 2 ../Core/Src/stm32g4xx_hal_msp.c:156 NOTE_INSN_BEGIN_STMT)
+(insn 7 65 8 2 (set (reg:SI 3 r3 [118])
+        (mem:SI (label_ref 74) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":156:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1342178560 [0x50000500])
+        (nil)))
+(insn 8 7 9 2 (set (reg/f:SI 2 r2 [orig:119 hadc_7(D)->Instance ] [119])
+        (mem/f:SI (reg/f:SI 0 r0 [orig:117 hadc ] [117]) [4 hadc_7(D)->Instance+0 S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":156:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem/f:SI (reg/v/f:SI 4 r4 [orig:117 hadc ] [117]) [4 hadc_7(D)->Instance+0 S4 A32])
+        (nil)))
+(insn 9 8 10 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/f:SI 2 r2 [orig:119 hadc_7(D)->Instance ] [119])
+            (reg:SI 3 r3 [118]))) "../Core/Src/stm32g4xx_hal_msp.c":156:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [118])
+        (expr_list:REG_DEAD (reg/f:SI 2 r2 [orig:119 hadc_7(D)->Instance ] [119])
+            (expr_list:REG_EQUAL (compare:CC (reg/f:SI 2 r2 [orig:119 hadc_7(D)->Instance ] [119])
+                    (const_int 1342178560 [0x50000500]))
+                (nil)))))
+(jump_insn 10 9 31 2 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 60)
+            (pc))) "../Core/Src/stm32g4xx_hal_msp.c":156:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 187153204 (nil)))
+ -> 60)
+(note 31 10 48 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 48 31 49 3 (simple_return) 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 49 48 60)
+(code_label 60 49 11 4 27 (nil) [1 uses])
+(note 11 60 24 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 24 11 66 4 NOTE_INSN_DELETED)
+(note 66 24 13 4 ../Core/Src/stm32g4xx_hal_msp.c:162 NOTE_INSN_BEGIN_STMT)
+(insn 13 66 41 4 (set (reg/f:SI 2 r2 [120])
+        (mem:SI (const:SI (plus:SI (label_ref 74)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":162:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073876992 [0x40021000])
+        (nil)))
+(insn/f 41 13 42 4 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [33  A8])
+                (unspec:BLK [
+                        (reg:SI 4 r4)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 14 lr))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":155:1 378 {*push_multi}
+     (expr_list:REG_DEAD (reg:SI 14 lr)
+        (expr_list:REG_DEAD (reg:SI 4 r4)
+            (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                        (set/f (reg/f:SI 13 sp)
+                            (plus:SI (reg/f:SI 13 sp)
+                                (const_int -8 [0xfffffffffffffff8])))
+                        (set/f (mem/c:SI (reg/f:SI 13 sp) [33  S4 A32])
+                            (reg:SI 4 r4))
+                        (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                    (const_int 4 [0x4])) [33  S4 A32])
+                            (reg:SI 14 lr))
+                    ])
+                (nil)))))
+(note 42 41 14 4 NOTE_INSN_PROLOGUE_END)
+(insn 14 42 45 4 (set (reg:SI 3 r3 [orig:114 _2 ] [114])
+        (mem/v:SI (plus:SI (reg/f:SI 2 r2 [120])
+                (const_int 76 [0x4c])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB2ENR+0 S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":162:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 45 14 15 4 (set (reg/v/f:SI 4 r4 [orig:117 hadc ] [117])
+        (reg:SI 0 r0 [124])) 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [124])
+        (nil)))
+(insn 15 45 21 4 (set (reg:SI 3 r3 [orig:115 _3 ] [115])
+        (and:SI (reg:SI 3 r3 [orig:114 _2 ] [114])
+            (const_int -16385 [0xffffffffffffbfff]))) "../Core/Src/stm32g4xx_hal_msp.c":162:5 90 {*arm_andsi3_insn}
+     (nil))
+(insn 21 15 70 4 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 74)
+                    (const_int 8 [0x8]))) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":168:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 70 21 17 4 (var_location hadc (reg/v/f:SI 4 r4 [orig:117 hadc ] [117])) NOTE_INSN_VAR_LOCATION)
+(insn 17 70 67 4 (set (mem/v:SI (plus:SI (reg/f:SI 2 r2 [120])
+                (const_int 76 [0x4c])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB2ENR+0 S4 A32])
+        (reg:SI 3 r3 [orig:115 _3 ] [115])) "../Core/Src/stm32g4xx_hal_msp.c":162:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:115 _3 ] [115])
+        (expr_list:REG_DEAD (reg/f:SI 2 r2 [120])
+            (nil))))
+(note 67 17 20 4 ../Core/Src/stm32g4xx_hal_msp.c:168 NOTE_INSN_BEGIN_STMT)
+(insn 20 67 22 4 (set (reg:SI 1 r1)
+        (const_int 49152 [0xc000])) "../Core/Src/stm32g4xx_hal_msp.c":168:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 22 20 68 4 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_GPIO_DeInit") [flags 0x41]  <function_decl 0000000006848600 HAL_GPIO_DeInit>) [0 HAL_GPIO_DeInit S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":168:5 290 {*call_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 0 r0)
+                (const_int 1207960576 [0x48000400]))
+            (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 1 r1)
+                    (const_int 49152 [0xc000]))
+                (nil)))
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_DEAD (reg:SI 0 r0)
+                (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GPIO_DeInit") [flags 0x41]  <function_decl 0000000006848600 HAL_GPIO_DeInit>)
+                    (nil)))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(note 68 22 25 4 ../Core/Src/stm32g4xx_hal_msp.c:171 NOTE_INSN_BEGIN_STMT)
+(insn 25 68 64 4 (set (reg:SI 0 r0)
+        (mem/f:SI (plus:SI (reg/v/f:SI 4 r4 [orig:117 hadc ] [117])
+                (const_int 84 [0x54])) [11 hadc_7(D)->DMA_Handle+0 S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":171:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v/f:SI 4 r4 [orig:117 hadc ] [117])
+        (nil)))
+(note 64 25 58 4 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 58 64 71 4 (parallel [
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg:SI 4 r4)
+                (mem/c:SI (reg/f:SI 13 sp) [33  S4 A32]))
+            (set/f (reg:SI 14 lr)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [33  S4 A32]))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":177:1 380 {*load_multiple_with_writeback}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 8 [0x8])))
+        (expr_list:REG_CFA_RESTORE (reg:SI 14 lr)
+            (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+                (nil)))))
+(note 71 58 26 4 (var_location hadc (entry_value:SI (reg:SI 0 r0 [ hadc ]))) NOTE_INSN_VAR_LOCATION)
+(call_insn/j 26 71 27 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_DMA_DeInit") [flags 0x41]  <function_decl 000000000687f900 HAL_DMA_DeInit>) [0 HAL_DMA_DeInit S4 A32])
+                    (const_int 0 [0])))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":171:5 293 {*sibcall_value_insn}
+     (expr_list:REG_CALL_ARG_LOCATION (nil)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_DMA_DeInit") [flags 0x41]  <function_decl 000000000687f900 HAL_DMA_DeInit>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(barrier 27 26 72)
+(code_label 72 27 73 29 (nil) [0 uses])
+(insn 73 72 74 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) 385 {align_4}
+     (nil))
+(code_label 74 73 75 28 (nil) [0 uses])
+(insn 75 74 76 (unspec_volatile [
+            (const_int 1342178560 [0x50000500])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 76 75 77 (unspec_volatile [
+            (const_int 1073876992 [0x40021000])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 77 76 78 (unspec_volatile [
+            (const_int 1207960576 [0x48000400])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 78 77 79 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) 387 {consttable_end}
+     (nil))
+(barrier 79 78 36)
+(note 36 79 37 NOTE_INSN_DELETED)
+(note 37 36 0 NOTE_INSN_DELETED)
+
+;; Function HAL_CORDIC_MspInit (HAL_CORDIC_MspInit, funcdef_no=1441, decl_uid=8704, cgraph_uid=1445, symbol_order=1451)
+
+
+
+HAL_CORDIC_MspInit
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 2 [r2] 3 [r3] 13 [sp] 100 [cc]
+;;  ref usage 	r0={1d,1u} r1={1d} r2={4d,3u,1e} r3={6d,7u} r13={3d,11u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={1d,1u} 
+;;    total ref usage 58{33d,24u,1e} in 18{18 regular + 0 call} insns.
+(note 1 0 71 NOTE_INSN_DELETED)
+(note 71 1 4 (var_location hcordic (reg:SI 0 r0 [ hcordic ])) NOTE_INSN_VAR_LOCATION)
+(note 4 71 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 4 3 2 NOTE_INSN_DELETED)
+(note 3 2 64 2 NOTE_INSN_FUNCTION_BEG)
+(note 64 3 7 2 ../Core/Src/stm32g4xx_hal_msp.c:187 NOTE_INSN_BEGIN_STMT)
+(insn 7 64 8 2 (set (reg:SI 3 r3 [120])
+        (mem:SI (label_ref 74) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":187:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073875968 [0x40020c00])
+        (nil)))
+(insn 8 7 9 2 (set (reg/f:SI 2 r2 [orig:121 hcordic_8(D)->Instance ] [121])
+        (mem/f:SI (reg:SI 0 r0 [125]) [23 hcordic_8(D)->Instance+0 S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":187:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [125])
+        (nil)))
+(insn 9 8 10 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/f:SI 2 r2 [orig:121 hcordic_8(D)->Instance ] [121])
+            (reg:SI 3 r3 [120]))) "../Core/Src/stm32g4xx_hal_msp.c":187:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg/f:SI 2 r2 [orig:121 hcordic_8(D)->Instance ] [121])
+        (expr_list:REG_EQUAL (compare:CC (reg/f:SI 2 r2 [orig:121 hcordic_8(D)->Instance ] [121])
+                (const_int 1073875968 [0x40020c00]))
+            (nil))))
+(jump_insn 10 9 35 2 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 61)
+            (pc))) "../Core/Src/stm32g4xx_hal_msp.c":187:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 322122548 (nil)))
+ -> 61)
+(note 35 10 36 NOTE_INSN_DELETED)
+(note 36 35 48 NOTE_INSN_DELETED)
+(note 48 36 50 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(jump_insn 50 48 51 3 (simple_return) 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 51 50 61)
+(code_label 61 51 11 4 36 (nil) [1 uses])
+(note 11 61 65 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 65 11 66 4 ../Core/Src/stm32g4xx_hal_msp.c:193 NOTE_INSN_BEGIN_STMT)
+(note 66 65 67 4 ../Core/Src/stm32g4xx_hal_msp.c:193 NOTE_INSN_BEGIN_STMT)
+(note 67 66 16 4 ../Core/Src/stm32g4xx_hal_msp.c:193 NOTE_INSN_BEGIN_STMT)
+(insn 16 67 17 4 (set (reg:SI 2 r2 [orig:114 _2 ] [114])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [122])
+                (const_int 1096 [0x448])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB1ENR+0 S4 A64])) "../Core/Src/stm32g4xx_hal_msp.c":193:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 17 16 19 4 (set (reg:SI 2 r2 [orig:115 _3 ] [115])
+        (ior:SI (reg:SI 2 r2 [orig:114 _2 ] [114])
+            (const_int 8 [0x8]))) "../Core/Src/stm32g4xx_hal_msp.c":193:5 106 {*iorsi3_insn}
+     (nil))
+(insn 19 17 15 4 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [122])
+                (const_int 1096 [0x448])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB1ENR+0 S4 A64])
+        (reg:SI 2 r2 [orig:115 _3 ] [115])) "../Core/Src/stm32g4xx_hal_msp.c":193:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:115 _3 ] [115])
+        (nil)))
+(insn 15 19 68 4 (set (reg/f:SI 3 r3 [122])
+        (plus:SI (reg/f:SI 3 r3 [122])
+            (const_int 1024 [0x400]))) "../Core/Src/stm32g4xx_hal_msp.c":193:5 7 {*arm_addsi3}
+     (expr_list:REG_EQUIV (const_int 1073876992 [0x40021000])
+        (nil)))
+(note 68 15 38 4 ../Core/Src/stm32g4xx_hal_msp.c:193 NOTE_INSN_BEGIN_STMT)
+(insn/f 38 68 39 4 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int -8 [0xfffffffffffffff8]))) "../Core/Src/stm32g4xx_hal_msp.c":186:1 7 {*arm_addsi3}
+     (nil))
+(note 39 38 22 4 NOTE_INSN_PROLOGUE_END)
+(insn 22 39 23 4 (set (reg:SI 3 r3 [orig:116 _4 ] [116])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [122])
+                (const_int 72 [0x48])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB1ENR+0 S4 A64])) "../Core/Src/stm32g4xx_hal_msp.c":193:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 23 22 24 4 (set (reg:SI 3 r3 [orig:117 _5 ] [117])
+        (and:SI (reg:SI 3 r3 [orig:116 _4 ] [116])
+            (const_int 8 [0x8]))) "../Core/Src/stm32g4xx_hal_msp.c":193:5 90 {*arm_andsi3_insn}
+     (nil))
+(insn 24 23 69 4 (set (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [1 tmpreg+0 S4 A32])
+        (reg:SI 3 r3 [orig:117 _5 ] [117])) "../Core/Src/stm32g4xx_hal_msp.c":193:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:117 _5 ] [117])
+        (nil)))
+(note 69 24 26 4 ../Core/Src/stm32g4xx_hal_msp.c:193 NOTE_INSN_BEGIN_STMT)
+(insn 26 69 70 4 (set (reg:SI 3 r3 [orig:118 vol.4_11 ] [118])
+        (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [1 tmpreg+0 S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":193:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_UNUSED (reg:SI 3 r3 [orig:118 vol.4_11 ] [118])
+        (nil)))
+(note 70 26 63 4 ../Core/Src/stm32g4xx_hal_msp.c:193 NOTE_INSN_BEGIN_STMT)
+(note 63 70 41 4 NOTE_INSN_EPILOGUE_BEG)
+(insn 41 63 42 4 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../Core/Src/stm32g4xx_hal_msp.c":199:1 301 {blockage}
+     (nil))
+(insn/f 42 41 43 4 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 8 [0x8]))) "../Core/Src/stm32g4xx_hal_msp.c":199:1 7 {*arm_addsi3}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 8 [0x8])))
+        (nil)))
+(insn 43 42 44 4 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../Core/Src/stm32g4xx_hal_msp.c":199:1 397 {force_register_use}
+     (nil))
+(jump_insn 44 43 60 4 (simple_return) "../Core/Src/stm32g4xx_hal_msp.c":199:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 60 44 72)
+(code_label 72 60 73 38 (nil) [0 uses])
+(insn 73 72 74 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) 385 {align_4}
+     (nil))
+(code_label 74 73 75 37 (nil) [0 uses])
+(insn 75 74 76 (unspec_volatile [
+            (const_int 1073875968 [0x40020c00])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 76 75 77 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) 387 {consttable_end}
+     (nil))
+(barrier 77 76 0)
+
+;; Function HAL_CORDIC_MspDeInit (HAL_CORDIC_MspDeInit, funcdef_no=1442, decl_uid=8706, cgraph_uid=1446, symbol_order=1452)
+
+
+
+HAL_CORDIC_MspDeInit
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 2 [r2] 3 [r3] 100 [cc]
+;;  ref usage 	r0={1d,1u} r1={1d} r2={3d,3u,1e} r3={4d,3u} r13={1d,4u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={1d,1u} 
+;;    total ref usage 42{28d,13u,1e} in 10{10 regular + 0 call} insns.
+(note 1 0 45 NOTE_INSN_DELETED)
+(note 45 1 4 (var_location hcordic (reg:SI 0 r0 [ hcordic ])) NOTE_INSN_VAR_LOCATION)
+(note 4 45 29 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 29 4 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 29 3 2 NOTE_INSN_DELETED)
+(note 3 2 43 2 NOTE_INSN_FUNCTION_BEG)
+(note 43 3 7 2 ../Core/Src/stm32g4xx_hal_msp.c:209 NOTE_INSN_BEGIN_STMT)
+(insn 7 43 8 2 (set (reg:SI 3 r3 [117])
+        (mem:SI (label_ref 48) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":209:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073875968 [0x40020c00])
+        (nil)))
+(insn 8 7 9 2 (set (reg/f:SI 2 r2 [orig:118 hcordic_6(D)->Instance ] [118])
+        (mem/f:SI (reg:SI 0 r0 [121]) [23 hcordic_6(D)->Instance+0 S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":209:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [121])
+        (nil)))
+(insn 9 8 10 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/f:SI 2 r2 [orig:118 hcordic_6(D)->Instance ] [118])
+            (reg:SI 3 r3 [117]))) "../Core/Src/stm32g4xx_hal_msp.c":209:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [117])
+        (expr_list:REG_DEAD (reg/f:SI 2 r2 [orig:118 hcordic_6(D)->Instance ] [118])
+            (expr_list:REG_EQUAL (compare:CC (reg/f:SI 2 r2 [orig:118 hcordic_6(D)->Instance ] [118])
+                    (const_int 1073875968 [0x40020c00]))
+                (nil)))))
+(jump_insn 10 9 21 2 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 39)
+            (pc))) "../Core/Src/stm32g4xx_hal_msp.c":209:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 322122548 (nil)))
+ -> 39)
+(note 21 10 30 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 30 21 31 3 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 31 30 32 3 (simple_return) "../Core/Src/stm32g4xx_hal_msp.c":221:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 32 31 39)
+(code_label 39 32 11 4 41 (nil) [1 uses])
+(note 11 39 44 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 44 11 13 4 ../Core/Src/stm32g4xx_hal_msp.c:215 NOTE_INSN_BEGIN_STMT)
+(insn 13 44 14 4 (set (reg/f:SI 2 r2 [119])
+        (mem:SI (const:SI (plus:SI (label_ref 48)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":215:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073876992 [0x40021000])
+        (nil)))
+(insn 14 13 15 4 (set (reg:SI 3 r3 [orig:114 _2 ] [114])
+        (mem/v:SI (plus:SI (reg/f:SI 2 r2 [119])
+                (const_int 72 [0x48])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB1ENR+0 S4 A64])) "../Core/Src/stm32g4xx_hal_msp.c":215:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 15 14 17 4 (set (reg:SI 3 r3 [orig:115 _3 ] [115])
+        (and:SI (reg:SI 3 r3 [orig:114 _2 ] [114])
+            (const_int -9 [0xfffffffffffffff7]))) "../Core/Src/stm32g4xx_hal_msp.c":215:5 90 {*arm_andsi3_insn}
+     (nil))
+(insn 17 15 42 4 (set (mem/v:SI (plus:SI (reg/f:SI 2 r2 [119])
+                (const_int 72 [0x48])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB1ENR+0 S4 A64])
+        (reg:SI 3 r3 [orig:115 _3 ] [115])) "../Core/Src/stm32g4xx_hal_msp.c":215:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:115 _3 ] [115])
+        (expr_list:REG_DEAD (reg/f:SI 2 r2 [119])
+            (nil))))
+(note 42 17 35 4 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 35 42 38 4 (simple_return) "../Core/Src/stm32g4xx_hal_msp.c":221:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 38 35 46)
+(code_label 46 38 47 43 (nil) [0 uses])
+(insn 47 46 48 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) 385 {align_4}
+     (nil))
+(code_label 48 47 49 42 (nil) [0 uses])
+(insn 49 48 50 (unspec_volatile [
+            (const_int 1073875968 [0x40020c00])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 50 49 51 (unspec_volatile [
+            (const_int 1073876992 [0x40021000])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 51 50 52 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) 387 {consttable_end}
+     (nil))
+(barrier 52 51 25)
+(note 25 52 26 NOTE_INSN_DELETED)
+(note 26 25 0 NOTE_INSN_DELETED)
+
+;; Function HAL_SPI_MspInit (HAL_SPI_MspInit, funcdef_no=1443, decl_uid=9054, cgraph_uid=1447, symbol_order=1453)
+
+
+
+HAL_SPI_MspInit
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 13 [sp] 14 [lr] 15 [pc] 30 [s14] 31 [s15] 100 [cc]
+;;  ref usage 	r0={3d,2u} r1={4d,2u,1e} r2={11d,7u} r3={8d,16u} r12={2d} r13={7d,29u} r14={2d,2u} r15={3d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={3d,1u} r31={3d,1u} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={2d,1u} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 194{132d,61u,1e} in 41{40 regular + 1 call} insns.
+(note 1 0 128 NOTE_INSN_DELETED)
+(note 128 1 4 (var_location hspi (reg:SI 0 r0 [ hspi ])) NOTE_INSN_VAR_LOCATION)
+(note 4 128 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 4 3 2 NOTE_INSN_DELETED)
+(note 3 2 7 2 NOTE_INSN_FUNCTION_BEG)
+(note 7 3 108 2 NOTE_INSN_DELETED)
+(note 108 7 82 2 ../Core/Src/stm32g4xx_hal_msp.c:231 NOTE_INSN_BEGIN_STMT)
+(insn/f 82 108 15 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -4 [0xfffffffffffffffc]))) [33  A8])
+                (unspec:BLK [
+                        (reg:SI 14 lr)
+                    ] UNSPEC_PUSH_MULT))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":230:1 378 {*push_multi}
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -4 [0xfffffffffffffffc])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [33  S4 A32])
+                    (reg:SI 14 lr))
+            ])
+        (nil)))
+(insn 15 82 16 2 (set (reg:SI 2 r2 [127])
+        (mem:SI (const:SI (plus:SI (label_ref 132)
+                    (const_int 8 [0x8]))) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":232:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073819648 [0x40013000])
+        (nil)))
+(insn 16 15 83 2 (set (reg/f:SI 1 r1 [orig:128 hspi_13(D)->Instance ] [128])
+        (mem/f:SI (reg:SI 0 r0 [139]) [6 hspi_13(D)->Instance+0 S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":232:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [139])
+        (nil)))
+(insn/f 83 16 84 2 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int -36 [0xffffffffffffffdc]))) "../Core/Src/stm32g4xx_hal_msp.c":230:1 7 {*arm_addsi3}
+     (nil))
+(note 84 83 8 2 NOTE_INSN_PROLOGUE_END)
+(insn 8 84 17 2 (parallel [
+            (set (reg:SI 3 r3 [126])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":231:20 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUIV (const_int 0 [0])
+        (nil)))
+(insn 17 8 93 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/f:SI 1 r1 [orig:128 hspi_13(D)->Instance ] [128])
+            (reg:SI 2 r2 [127]))) "../Core/Src/stm32g4xx_hal_msp.c":232:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [127])
+        (expr_list:REG_DEAD (reg/f:SI 1 r1 [orig:128 hspi_13(D)->Instance ] [128])
+            (expr_list:REG_EQUAL (compare:CC (reg/f:SI 1 r1 [orig:128 hspi_13(D)->Instance ] [128])
+                    (const_int 1073819648 [0x40013000]))
+                (nil)))))
+(insn 93 17 94 2 (parallel [
+            (set (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 8 [0x8])) [3 GPIO_InitStruct+0 S4 A64])
+                (reg:SI 3 r3 [126]))
+            (set (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 12 [0xc])) [3 GPIO_InitStruct+4 S4 A32])
+                (reg:SI 3 r3 [126]))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":231:20 412 {*thumb2_strd}
+     (nil))
+(insn 94 93 13 2 (parallel [
+            (set (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 16 [0x10])) [3 GPIO_InitStruct+8 S4 A64])
+                (reg:SI 3 r3 [126]))
+            (set (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 20 [0x14])) [3 GPIO_InitStruct+12 S4 A32])
+                (reg:SI 3 r3 [126]))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":231:20 412 {*thumb2_strd}
+     (nil))
+(insn 13 94 109 2 (set (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 24 [0x18])) [3 GPIO_InitStruct+16 S4 A64])
+        (reg:SI 3 r3 [126])) "../Core/Src/stm32g4xx_hal_msp.c":231:20 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 109 13 18 2 ../Core/Src/stm32g4xx_hal_msp.c:232 NOTE_INSN_BEGIN_STMT)
+(jump_insn 18 109 70 2 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 104)
+            (pc))) "../Core/Src/stm32g4xx_hal_msp.c":232:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 187153204 (nil)))
+ -> 104)
+(note 70 18 85 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 85 70 86 3 NOTE_INSN_EPILOGUE_BEG)
+(insn 86 85 87 3 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../Core/Src/stm32g4xx_hal_msp.c":258:1 301 {blockage}
+     (nil))
+(insn/f 87 86 88 3 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 36 [0x24]))) "../Core/Src/stm32g4xx_hal_msp.c":258:1 7 {*arm_addsi3}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 36 [0x24])))
+        (nil)))
+(insn 88 87 89 3 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../Core/Src/stm32g4xx_hal_msp.c":258:1 397 {force_register_use}
+     (nil))
+(jump_insn 89 88 92 3 (parallel [
+            (return)
+            (set/f (reg:SI 15 pc)
+                (mem:SI (post_inc:SI (reg/f:SI 13 sp)) [33  S4 A32]))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":258:1 383 {*ldr_with_return}
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (nil))
+ -> return)
+(barrier 92 89 104)
+(code_label 104 92 19 4 47 (nil) [1 uses])
+(note 19 104 110 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 110 19 111 4 ../Core/Src/stm32g4xx_hal_msp.c:238 NOTE_INSN_BEGIN_STMT)
+(note 111 110 112 4 ../Core/Src/stm32g4xx_hal_msp.c:238 NOTE_INSN_BEGIN_STMT)
+(note 112 111 78 4 ../Core/Src/stm32g4xx_hal_msp.c:238 NOTE_INSN_BEGIN_STMT)
+(insn 78 112 79 4 (set (reg/f:SI 3 r3 [129])
+        (plus:SI (reg/f:SI 3 r3 [129])
+            (const_int 1073741824 [0x40000000]))) "../Core/Src/stm32g4xx_hal_msp.c":238:5 7 {*arm_addsi3}
+     (nil))
+(insn 79 78 54 4 (set (reg/f:SI 3 r3 [129])
+        (plus:SI (reg/f:SI 3 r3 [129])
+            (const_int 135168 [0x21000]))) "../Core/Src/stm32g4xx_hal_msp.c":238:5 7 {*arm_addsi3}
+     (expr_list:REG_EQUAL (const_int 1073876992 [0x40021000])
+        (nil)))
+(insn 54 79 24 4 (set (reg:DI 30 s14 [135])
+        (mem:DI (label_ref 132) [0  S8 A64])) "../Core/Src/stm32g4xx_hal_msp.c":246:25 729 {*movdi_vfp}
+     (expr_list:REG_EQUIV (const_int 8589934620 [0x20000001c])
+        (nil)))
+(insn 24 54 65 4 (set (reg:SI 2 r2 [orig:114 _2 ] [114])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [129])
+                (const_int 96 [0x60])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB2ENR+0 S4 A64])) "../Core/Src/stm32g4xx_hal_msp.c":238:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 65 24 129 4 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 132)
+                    (const_int 12 [0xc]))) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":251:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 129 65 25 4 (var_location hspi (entry_value:SI (reg:SI 0 r0 [ hspi ]))) NOTE_INSN_VAR_LOCATION)
+(insn 25 129 27 4 (set (reg:SI 2 r2 [orig:115 _3 ] [115])
+        (ior:SI (reg:SI 2 r2 [orig:114 _2 ] [114])
+            (const_int 4096 [0x1000]))) "../Core/Src/stm32g4xx_hal_msp.c":238:5 106 {*iorsi3_insn}
+     (nil))
+(insn 27 25 113 4 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [129])
+                (const_int 96 [0x60])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB2ENR+0 S4 A64])
+        (reg:SI 2 r2 [orig:115 _3 ] [115])) "../Core/Src/stm32g4xx_hal_msp.c":238:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:115 _3 ] [115])
+        (nil)))
+(note 113 27 30 4 ../Core/Src/stm32g4xx_hal_msp.c:238 NOTE_INSN_BEGIN_STMT)
+(insn 30 113 31 4 (set (reg:SI 2 r2 [orig:116 _4 ] [116])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [129])
+                (const_int 96 [0x60])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB2ENR+0 S4 A64])) "../Core/Src/stm32g4xx_hal_msp.c":238:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 31 30 32 4 (set (reg:SI 2 r2 [orig:117 _5 ] [117])
+        (and:SI (reg:SI 2 r2 [orig:116 _4 ] [116])
+            (const_int 4096 [0x1000]))) "../Core/Src/stm32g4xx_hal_msp.c":238:5 90 {*arm_andsi3_insn}
+     (nil))
+(insn 32 31 114 4 (set (mem/v/c:SI (reg/f:SI 13 sp) [1 tmpreg+0 S4 A64])
+        (reg:SI 2 r2 [orig:117 _5 ] [117])) "../Core/Src/stm32g4xx_hal_msp.c":238:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:117 _5 ] [117])
+        (nil)))
+(note 114 32 34 4 ../Core/Src/stm32g4xx_hal_msp.c:238 NOTE_INSN_BEGIN_STMT)
+(insn 34 114 115 4 (set (reg:SI 2 r2 [orig:122 vol.5_16 ] [122])
+        (mem/v/c:SI (reg/f:SI 13 sp) [1 tmpreg+0 S4 A64])) "../Core/Src/stm32g4xx_hal_msp.c":238:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_UNUSED (reg:SI 2 r2 [orig:122 vol.5_16 ] [122])
+        (nil)))
+(note 115 34 116 4 ../Core/Src/stm32g4xx_hal_msp.c:238 NOTE_INSN_BEGIN_STMT)
+(note 116 115 117 4 ../Core/Src/stm32g4xx_hal_msp.c:240 NOTE_INSN_BEGIN_STMT)
+(note 117 116 118 4 ../Core/Src/stm32g4xx_hal_msp.c:240 NOTE_INSN_BEGIN_STMT)
+(note 118 117 40 4 ../Core/Src/stm32g4xx_hal_msp.c:240 NOTE_INSN_BEGIN_STMT)
+(insn 40 118 41 4 (set (reg:SI 2 r2 [orig:118 _6 ] [118])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [129])
+                (const_int 76 [0x4c])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB2ENR+0 S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":240:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 41 40 43 4 (set (reg:SI 2 r2 [orig:119 _7 ] [119])
+        (ior:SI (reg:SI 2 r2 [orig:118 _6 ] [118])
+            (const_int 64 [0x40]))) "../Core/Src/stm32g4xx_hal_msp.c":240:5 106 {*iorsi3_insn}
+     (nil))
+(insn 43 41 119 4 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [129])
+                (const_int 76 [0x4c])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB2ENR+0 S4 A32])
+        (reg:SI 2 r2 [orig:119 _7 ] [119])) "../Core/Src/stm32g4xx_hal_msp.c":240:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:119 _7 ] [119])
+        (nil)))
+(note 119 43 46 4 ../Core/Src/stm32g4xx_hal_msp.c:240 NOTE_INSN_BEGIN_STMT)
+(insn 46 119 47 4 (set (reg:SI 3 r3 [orig:120 _8 ] [120])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [129])
+                (const_int 76 [0x4c])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB2ENR+0 S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":240:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 47 46 48 4 (set (reg:SI 3 r3 [orig:121 _9 ] [121])
+        (and:SI (reg:SI 3 r3 [orig:120 _8 ] [120])
+            (const_int 64 [0x40]))) "../Core/Src/stm32g4xx_hal_msp.c":240:5 90 {*arm_andsi3_insn}
+     (nil))
+(insn 48 47 120 4 (set (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [1 tmpreg+0 S4 A32])
+        (reg:SI 3 r3 [orig:121 _9 ] [121])) "../Core/Src/stm32g4xx_hal_msp.c":240:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:121 _9 ] [121])
+        (nil)))
+(note 120 48 77 4 ../Core/Src/stm32g4xx_hal_msp.c:240 NOTE_INSN_BEGIN_STMT)
+(insn 77 120 59 4 (set (reg:SI 1 r1 [141])
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 8 [0x8]))) "../Core/Src/stm32g4xx_hal_msp.c":251:5 7 {*arm_addsi3}
+     (nil))
+(insn 59 77 55 4 (parallel [
+            (set (reg:SI 3 r3 [136])
+                (const_int 5 [0x5]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":250:31 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUIV (const_int 5 [0x5])
+        (nil)))
+(insn 55 59 50 4 (set (mem/c:DI (plus:SI (reg/f:SI 13 sp)
+                (const_int 8 [0x8])) [1 MEM <vector(2) long unsigned int> [(long unsigned int *)&GPIO_InitStruct]+0 S8 A64])
+        (reg:DI 30 s14 [135])) "../Core/Src/stm32g4xx_hal_msp.c":246:25 729 {*movdi_vfp}
+     (expr_list:REG_DEAD (reg:DI 30 s14 [135])
+        (nil)))
+(insn 50 55 121 4 (set (reg:SI 2 r2 [orig:123 vol.6_19 ] [123])
+        (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [1 tmpreg+0 S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":240:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_UNUSED (reg:SI 2 r2 [orig:123 vol.6_19 ] [123])
+        (nil)))
+(note 121 50 122 4 ../Core/Src/stm32g4xx_hal_msp.c:240 NOTE_INSN_BEGIN_STMT)
+(note 122 121 123 4 ../Core/Src/stm32g4xx_hal_msp.c:246 NOTE_INSN_BEGIN_STMT)
+(note 123 122 124 4 ../Core/Src/stm32g4xx_hal_msp.c:247 NOTE_INSN_BEGIN_STMT)
+(note 124 123 125 4 ../Core/Src/stm32g4xx_hal_msp.c:248 NOTE_INSN_BEGIN_STMT)
+(note 125 124 126 4 ../Core/Src/stm32g4xx_hal_msp.c:249 NOTE_INSN_BEGIN_STMT)
+(note 126 125 60 4 ../Core/Src/stm32g4xx_hal_msp.c:250 NOTE_INSN_BEGIN_STMT)
+(insn 60 126 127 4 (set (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 24 [0x18])) [1 GPIO_InitStruct.Alternate+0 S4 A64])
+        (reg:SI 3 r3 [136])) "../Core/Src/stm32g4xx_hal_msp.c":250:31 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [136])
+        (nil)))
+(note 127 60 66 4 ../Core/Src/stm32g4xx_hal_msp.c:251 NOTE_INSN_BEGIN_STMT)
+(call_insn 66 127 107 4 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_GPIO_Init") [flags 0x41]  <function_decl 0000000006848500 HAL_GPIO_Init>) [0 HAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":251:5 290 {*call_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 0 r0)
+                (const_int 1207965696 [0x48001800]))
+            (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 1 r1)
+                    (plus:SI (reg/f:SI 103 afp)
+                        (const_int -32 [0xffffffffffffffe0])))
+                (nil)))
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_DEAD (reg:SI 0 r0)
+                (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GPIO_Init") [flags 0x41]  <function_decl 0000000006848500 HAL_GPIO_Init>)
+                    (nil)))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(note 107 66 97 4 NOTE_INSN_EPILOGUE_BEG)
+(insn 97 107 98 4 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../Core/Src/stm32g4xx_hal_msp.c":258:1 301 {blockage}
+     (nil))
+(insn/f 98 97 99 4 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 36 [0x24]))) "../Core/Src/stm32g4xx_hal_msp.c":258:1 7 {*arm_addsi3}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 36 [0x24])))
+        (nil)))
+(insn 99 98 100 4 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../Core/Src/stm32g4xx_hal_msp.c":258:1 397 {force_register_use}
+     (nil))
+(jump_insn 100 99 103 4 (parallel [
+            (return)
+            (set/f (reg:SI 15 pc)
+                (mem:SI (post_inc:SI (reg/f:SI 13 sp)) [33  S4 A32]))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":258:1 383 {*ldr_with_return}
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (nil))
+ -> return)
+(barrier 103 100 130)
+(code_label 130 103 131 49 (nil) [0 uses])
+(insn 131 130 132 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN8) 386 {align_8}
+     (nil))
+(code_label 132 131 133 48 (nil) [0 uses])
+(insn 133 132 134 (unspec_volatile [
+            (const_int 8589934620 [0x20000001c])
+        ] VUNSPEC_POOL_8) 391 {consttable_8}
+     (nil))
+(insn 134 133 135 (unspec_volatile [
+            (const_int 1073819648 [0x40013000])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 135 134 136 (unspec_volatile [
+            (const_int 1207965696 [0x48001800])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 136 135 137 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) 387 {consttable_end}
+     (nil))
+(barrier 137 136 75)
+(note 75 137 76 NOTE_INSN_DELETED)
+(note 76 75 0 NOTE_INSN_DELETED)
+
+;; Function HAL_SPI_MspDeInit (HAL_SPI_MspDeInit, funcdef_no=1444, decl_uid=9056, cgraph_uid=1448, symbol_order=1454)
+
+
+
+HAL_SPI_MspDeInit
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 13 [sp] 100 [cc]
+;;  ref usage 	r0={3d,2u} r1={3d,1u} r2={4d,3u,1e} r3={5d,3u} r12={2d} r13={1d,5u} r14={1d,1u} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={2d,1u} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 127{110d,16u,1e} in 12{11 regular + 1 call} insns.
+(note 1 0 48 NOTE_INSN_DELETED)
+(note 48 1 4 (var_location hspi (reg:SI 0 r0 [ hspi ])) NOTE_INSN_VAR_LOCATION)
+(note 4 48 37 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 37 4 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 37 3 2 NOTE_INSN_DELETED)
+(note 3 2 45 2 NOTE_INSN_FUNCTION_BEG)
+(note 45 3 7 2 ../Core/Src/stm32g4xx_hal_msp.c:268 NOTE_INSN_BEGIN_STMT)
+(insn 7 45 8 2 (set (reg:SI 3 r3 [117])
+        (mem:SI (label_ref 52) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":268:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073819648 [0x40013000])
+        (nil)))
+(insn 8 7 9 2 (set (reg/f:SI 2 r2 [orig:118 hspi_6(D)->Instance ] [118])
+        (mem/f:SI (reg:SI 0 r0 [122]) [6 hspi_6(D)->Instance+0 S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":268:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [122])
+        (nil)))
+(insn 9 8 10 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/f:SI 2 r2 [orig:118 hspi_6(D)->Instance ] [118])
+            (reg:SI 3 r3 [117]))) "../Core/Src/stm32g4xx_hal_msp.c":268:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [117])
+        (expr_list:REG_DEAD (reg/f:SI 2 r2 [orig:118 hspi_6(D)->Instance ] [118])
+            (expr_list:REG_EQUAL (compare:CC (reg/f:SI 2 r2 [orig:118 hspi_6(D)->Instance ] [118])
+                    (const_int 1073819648 [0x40013000]))
+                (nil)))))
+(jump_insn 10 9 27 2 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 41)
+            (pc))) "../Core/Src/stm32g4xx_hal_msp.c":268:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 187153204 (nil)))
+ -> 41)
+(note 27 10 38 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 38 27 39 3 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 39 38 40 3 (simple_return) "../Core/Src/stm32g4xx_hal_msp.c":288:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 40 39 41)
+(code_label 41 40 11 4 52 (nil) [1 uses])
+(note 11 41 46 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 46 11 13 4 ../Core/Src/stm32g4xx_hal_msp.c:274 NOTE_INSN_BEGIN_STMT)
+(insn 13 46 21 4 (set (reg/f:SI 2 r2 [119])
+        (mem:SI (const:SI (plus:SI (label_ref 52)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":274:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073876992 [0x40021000])
+        (nil)))
+(insn 21 13 49 4 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 52)
+                    (const_int 8 [0x8]))) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":281:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 49 21 14 4 (var_location hspi (entry_value:SI (reg:SI 0 r0 [ hspi ]))) NOTE_INSN_VAR_LOCATION)
+(insn 14 49 15 4 (set (reg:SI 3 r3 [orig:114 _2 ] [114])
+        (mem/v:SI (plus:SI (reg/f:SI 2 r2 [119])
+                (const_int 96 [0x60])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB2ENR+0 S4 A64])) "../Core/Src/stm32g4xx_hal_msp.c":274:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 15 14 20 4 (set (reg:SI 3 r3 [orig:115 _3 ] [115])
+        (and:SI (reg:SI 3 r3 [orig:114 _2 ] [114])
+            (const_int -4097 [0xffffffffffffefff]))) "../Core/Src/stm32g4xx_hal_msp.c":274:5 90 {*arm_andsi3_insn}
+     (nil))
+(insn 20 15 17 4 (parallel [
+            (set (reg:SI 1 r1)
+                (const_int 28 [0x1c]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":281:5 1016 {*thumb2_movsi_shortim}
+     (nil))
+(insn 17 20 47 4 (set (mem/v:SI (plus:SI (reg/f:SI 2 r2 [119])
+                (const_int 96 [0x60])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB2ENR+0 S4 A64])
+        (reg:SI 3 r3 [orig:115 _3 ] [115])) "../Core/Src/stm32g4xx_hal_msp.c":274:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:115 _3 ] [115])
+        (expr_list:REG_DEAD (reg/f:SI 2 r2 [119])
+            (nil))))
+(note 47 17 22 4 ../Core/Src/stm32g4xx_hal_msp.c:281 NOTE_INSN_BEGIN_STMT)
+(call_insn/j 22 47 23 4 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_GPIO_DeInit") [flags 0x41]  <function_decl 0000000006848600 HAL_GPIO_DeInit>) [0 HAL_GPIO_DeInit S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":281:5 292 {*sibcall_insn}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 0 r0)
+                (const_int 1207965696 [0x48001800]))
+            (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 1 r1)
+                    (const_int 28 [0x1c]))
+                (nil)))
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_DEAD (reg:SI 0 r0)
+                (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GPIO_DeInit") [flags 0x41]  <function_decl 0000000006848600 HAL_GPIO_DeInit>)
+                    (nil)))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(barrier 23 22 50)
+(code_label 50 23 51 54 (nil) [0 uses])
+(insn 51 50 52 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) 385 {align_4}
+     (nil))
+(code_label 52 51 53 53 (nil) [0 uses])
+(insn 53 52 54 (unspec_volatile [
+            (const_int 1073819648 [0x40013000])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 54 53 55 (unspec_volatile [
+            (const_int 1073876992 [0x40021000])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 55 54 56 (unspec_volatile [
+            (const_int 1207965696 [0x48001800])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 56 55 57 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) 387 {consttable_end}
+     (nil))
+(barrier 57 56 32)
+(note 32 57 33 NOTE_INSN_DELETED)
+(note 33 32 0 NOTE_INSN_DELETED)
+
+;; Function HAL_TIM_Base_MspInit (HAL_TIM_Base_MspInit, funcdef_no=1445, decl_uid=9622, cgraph_uid=1449, symbol_order=1455)
+
+
+
+HAL_TIM_Base_MspInit
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 13 [sp] 14 [lr] 15 [pc] 100 [cc]
+;;  ref usage 	r0={5d,3u} r1={6d,3u} r2={10d,8u} r3={16d,19u,2e} r12={4d} r13={11d,36u} r14={3d,2u} r15={5d} r16={3d} r17={3d} r18={3d} r19={3d} r20={3d} r21={3d} r22={3d} r23={3d} r24={3d} r25={3d} r26={3d} r27={3d} r28={3d} r29={3d} r30={3d} r31={3d} r48={2d} r49={2d} r50={2d} r51={2d} r52={2d} r53={2d} r54={2d} r55={2d} r56={2d} r57={2d} r58={2d} r59={2d} r60={2d} r61={2d} r62={2d} r63={2d} r64={2d} r65={2d} r66={2d} r67={2d} r68={2d} r69={2d} r70={2d} r71={2d} r72={2d} r73={2d} r74={2d} r75={2d} r76={2d} r77={2d} r78={2d} r79={2d} r80={2d} r81={2d} r82={2d} r83={2d} r84={2d} r85={2d} r86={2d} r87={2d} r88={2d} r89={2d} r90={2d} r91={2d} r92={2d} r93={2d} r94={2d} r95={2d} r96={2d} r97={2d} r98={2d} r99={2d} r100={5d,3u} r101={2d} r104={2d} r105={2d} r106={2d} 
+;;    total ref usage 301{225d,74u,2e} in 57{55 regular + 2 call} insns.
+(note 1 0 169 NOTE_INSN_DELETED)
+(note 169 1 4 (var_location htim_base (reg:SI 0 r0 [ htim_base ])) NOTE_INSN_VAR_LOCATION)
+(note 4 169 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 4 3 2 NOTE_INSN_DELETED)
+(note 3 2 146 2 NOTE_INSN_FUNCTION_BEG)
+(note 146 3 102 2 ../Core/Src/stm32g4xx_hal_msp.c:298 NOTE_INSN_BEGIN_STMT)
+(insn/f 102 146 8 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -4 [0xfffffffffffffffc]))) [33  A8])
+                (unspec:BLK [
+                        (reg:SI 14 lr)
+                    ] UNSPEC_PUSH_MULT))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":297:1 378 {*push_multi}
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -4 [0xfffffffffffffffc])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [33  S4 A32])
+                    (reg:SI 14 lr))
+            ])
+        (nil)))
+(insn 8 102 7 2 (set (reg:SI 2 r2 [130])
+        (mem:SI (label_ref 173) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":298:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073818624 [0x40012c00])
+        (nil)))
+(insn 7 8 9 2 (set (reg/f:SI 3 r3 [orig:113 _1 ] [113])
+        (mem/f:SI (reg:SI 0 r0 [141]) [7 htim_base_16(D)->Instance+0 S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":298:15 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [141])
+        (nil)))
+(insn 9 7 103 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/f:SI 3 r3 [orig:113 _1 ] [113])
+            (reg:SI 2 r2 [130]))) "../Core/Src/stm32g4xx_hal_msp.c":298:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [130])
+        (expr_list:REG_EQUAL (compare:CC (reg/f:SI 3 r3 [orig:113 _1 ] [113])
+                (const_int 1073818624 [0x40012c00]))
+            (nil))))
+(insn/f 103 9 104 2 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int -20 [0xffffffffffffffec]))) "../Core/Src/stm32g4xx_hal_msp.c":297:1 7 {*arm_addsi3}
+     (nil))
+(note 104 103 10 2 NOTE_INSN_PROLOGUE_END)
+(jump_insn 10 104 31 2 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 136)
+            (pc))) "../Core/Src/stm32g4xx_hal_msp.c":298:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 322122548 (nil)))
+ -> 136)
+(note 31 10 147 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 147 31 33 3 ../Core/Src/stm32g4xx_hal_msp.c:309 NOTE_INSN_BEGIN_STMT)
+(insn 33 147 34 3 (set (reg:CC 100 cc)
+        (compare:CC (reg/f:SI 3 r3 [orig:113 _1 ] [113])
+            (const_int 1073741824 [0x40000000]))) "../Core/Src/stm32g4xx_hal_msp.c":309:10 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 34 33 62 3 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 137)
+            (pc))) "../Core/Src/stm32g4xx_hal_msp.c":309:10 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 187153204 (nil)))
+ -> 137)
+(note 62 34 148 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 148 62 64 4 ../Core/Src/stm32g4xx_hal_msp.c:323 NOTE_INSN_BEGIN_STMT)
+(insn 64 148 65 4 (set (reg:SI 2 r2 [137])
+        (mem:SI (const:SI (plus:SI (label_ref 173)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":323:10 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073744896 [0x40000c00])
+        (nil)))
+(insn 65 64 66 4 (set (reg:CC 100 cc)
+        (compare:CC (reg/f:SI 3 r3 [orig:113 _1 ] [113])
+            (reg:SI 2 r2 [137]))) "../Core/Src/stm32g4xx_hal_msp.c":323:10 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg/f:SI 3 r3 [orig:113 _1 ] [113])
+        (expr_list:REG_DEAD (reg:SI 2 r2 [137])
+            (expr_list:REG_EQUAL (compare:CC (reg/f:SI 3 r3 [orig:113 _1 ] [113])
+                    (const_int 1073744896 [0x40000c00]))
+                (nil)))))
+(jump_insn 66 65 87 4 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 138)
+            (pc))) "../Core/Src/stm32g4xx_hal_msp.c":323:10 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 322122548 (nil)))
+ -> 138)
+(note 87 66 105 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(note 105 87 106 5 NOTE_INSN_EPILOGUE_BEG)
+(insn 106 105 107 5 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../Core/Src/stm32g4xx_hal_msp.c":335:1 301 {blockage}
+     (nil))
+(insn/f 107 106 108 5 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 20 [0x14]))) "../Core/Src/stm32g4xx_hal_msp.c":335:1 7 {*arm_addsi3}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 20 [0x14])))
+        (nil)))
+(insn 108 107 109 5 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../Core/Src/stm32g4xx_hal_msp.c":335:1 397 {force_register_use}
+     (nil))
+(jump_insn 109 108 112 5 (parallel [
+            (return)
+            (set/f (reg:SI 15 pc)
+                (mem:SI (post_inc:SI (reg/f:SI 13 sp)) [33  S4 A32]))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":335:1 383 {*ldr_with_return}
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (nil))
+ -> return)
+(barrier 112 109 136)
+(code_label 136 112 11 6 60 (nil) [1 uses])
+(note 11 136 149 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(note 149 11 150 6 ../Core/Src/stm32g4xx_hal_msp.c:304 NOTE_INSN_BEGIN_STMT)
+(note 150 149 151 6 ../Core/Src/stm32g4xx_hal_msp.c:304 NOTE_INSN_BEGIN_STMT)
+(note 151 150 15 6 ../Core/Src/stm32g4xx_hal_msp.c:304 NOTE_INSN_BEGIN_STMT)
+(insn 15 151 16 6 (set (reg/f:SI 3 r3 [131])
+        (mem:SI (const:SI (plus:SI (label_ref 173)
+                    (const_int 8 [0x8]))) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":304:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073876992 [0x40021000])
+        (nil)))
+(insn 16 15 17 6 (set (reg:SI 2 r2 [orig:114 _2 ] [114])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [131])
+                (const_int 96 [0x60])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB2ENR+0 S4 A64])) "../Core/Src/stm32g4xx_hal_msp.c":304:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 17 16 19 6 (set (reg:SI 2 r2 [orig:115 _3 ] [115])
+        (ior:SI (reg:SI 2 r2 [orig:114 _2 ] [114])
+            (const_int 2048 [0x800]))) "../Core/Src/stm32g4xx_hal_msp.c":304:5 106 {*iorsi3_insn}
+     (nil))
+(insn 19 17 152 6 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [131])
+                (const_int 96 [0x60])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB2ENR+0 S4 A64])
+        (reg:SI 2 r2 [orig:115 _3 ] [115])) "../Core/Src/stm32g4xx_hal_msp.c":304:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:115 _3 ] [115])
+        (nil)))
+(note 152 19 22 6 ../Core/Src/stm32g4xx_hal_msp.c:304 NOTE_INSN_BEGIN_STMT)
+(insn 22 152 23 6 (set (reg:SI 3 r3 [orig:116 _4 ] [116])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [131])
+                (const_int 96 [0x60])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB2ENR+0 S4 A64])) "../Core/Src/stm32g4xx_hal_msp.c":304:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 23 22 24 6 (set (reg:SI 3 r3 [orig:117 _5 ] [117])
+        (and:SI (reg:SI 3 r3 [orig:116 _4 ] [116])
+            (const_int 2048 [0x800]))) "../Core/Src/stm32g4xx_hal_msp.c":304:5 90 {*arm_andsi3_insn}
+     (nil))
+(insn 24 23 153 6 (set (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [1 tmpreg+0 S4 A32])
+        (reg:SI 3 r3 [orig:117 _5 ] [117])) "../Core/Src/stm32g4xx_hal_msp.c":304:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:117 _5 ] [117])
+        (nil)))
+(note 153 24 26 6 ../Core/Src/stm32g4xx_hal_msp.c:304 NOTE_INSN_BEGIN_STMT)
+(insn 26 153 154 6 (set (reg:SI 3 r3 [orig:128 vol.7_27 ] [128])
+        (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [1 tmpreg+0 S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":304:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_UNUSED (reg:SI 3 r3 [orig:128 vol.7_27 ] [128])
+        (nil)))
+(note 154 26 143 6 ../Core/Src/stm32g4xx_hal_msp.c:304 NOTE_INSN_BEGIN_STMT)
+(note 143 154 120 6 NOTE_INSN_EPILOGUE_BEG)
+(insn 120 143 121 6 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../Core/Src/stm32g4xx_hal_msp.c":335:1 301 {blockage}
+     (nil))
+(insn/f 121 120 122 6 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 20 [0x14]))) "../Core/Src/stm32g4xx_hal_msp.c":335:1 7 {*arm_addsi3}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 20 [0x14])))
+        (nil)))
+(insn 122 121 123 6 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../Core/Src/stm32g4xx_hal_msp.c":335:1 397 {force_register_use}
+     (nil))
+(jump_insn 123 122 126 6 (parallel [
+            (return)
+            (set/f (reg:SI 15 pc)
+                (mem:SI (post_inc:SI (reg/f:SI 13 sp)) [33  S4 A32]))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":335:1 383 {*ldr_with_return}
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (nil))
+ -> return)
+(barrier 126 123 138)
+(code_label 138 126 67 7 62 (nil) [1 uses])
+(note 67 138 155 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(note 155 67 156 7 ../Core/Src/stm32g4xx_hal_msp.c:329 NOTE_INSN_BEGIN_STMT)
+(note 156 155 157 7 ../Core/Src/stm32g4xx_hal_msp.c:329 NOTE_INSN_BEGIN_STMT)
+(note 157 156 71 7 ../Core/Src/stm32g4xx_hal_msp.c:329 NOTE_INSN_BEGIN_STMT)
+(insn 71 157 72 7 (set (reg/f:SI 3 r3 [138])
+        (mem:SI (const:SI (plus:SI (label_ref 173)
+                    (const_int 8 [0x8]))) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":329:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073876992 [0x40021000])
+        (nil)))
+(insn 72 71 73 7 (set (reg:SI 2 r2 [orig:122 _10 ] [122])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [138])
+                (const_int 88 [0x58])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB1ENR1+0 S4 A64])) "../Core/Src/stm32g4xx_hal_msp.c":329:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 73 72 75 7 (set (reg:SI 2 r2 [orig:123 _11 ] [123])
+        (ior:SI (reg:SI 2 r2 [orig:122 _10 ] [122])
+            (const_int 8 [0x8]))) "../Core/Src/stm32g4xx_hal_msp.c":329:5 106 {*iorsi3_insn}
+     (nil))
+(insn 75 73 158 7 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [138])
+                (const_int 88 [0x58])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB1ENR1+0 S4 A64])
+        (reg:SI 2 r2 [orig:123 _11 ] [123])) "../Core/Src/stm32g4xx_hal_msp.c":329:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:123 _11 ] [123])
+        (nil)))
+(note 158 75 78 7 ../Core/Src/stm32g4xx_hal_msp.c:329 NOTE_INSN_BEGIN_STMT)
+(insn 78 158 79 7 (set (reg:SI 3 r3 [orig:124 _12 ] [124])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [138])
+                (const_int 88 [0x58])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB1ENR1+0 S4 A64])) "../Core/Src/stm32g4xx_hal_msp.c":329:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 79 78 80 7 (set (reg:SI 3 r3 [orig:125 _13 ] [125])
+        (and:SI (reg:SI 3 r3 [orig:124 _12 ] [124])
+            (const_int 8 [0x8]))) "../Core/Src/stm32g4xx_hal_msp.c":329:5 90 {*arm_andsi3_insn}
+     (nil))
+(insn 80 79 159 7 (set (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 12 [0xc])) [1 tmpreg+0 S4 A32])
+        (reg:SI 3 r3 [orig:125 _13 ] [125])) "../Core/Src/stm32g4xx_hal_msp.c":329:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:125 _13 ] [125])
+        (nil)))
+(note 159 80 82 7 ../Core/Src/stm32g4xx_hal_msp.c:329 NOTE_INSN_BEGIN_STMT)
+(insn 82 159 160 7 (set (reg:SI 3 r3 [orig:126 vol.9_19 ] [126])
+        (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 12 [0xc])) [1 tmpreg+0 S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":329:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_UNUSED (reg:SI 3 r3 [orig:126 vol.9_19 ] [126])
+        (nil)))
+(note 160 82 144 7 ../Core/Src/stm32g4xx_hal_msp.c:329 NOTE_INSN_BEGIN_STMT)
+(note 144 160 129 7 NOTE_INSN_EPILOGUE_BEG)
+(insn 129 144 130 7 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../Core/Src/stm32g4xx_hal_msp.c":335:1 301 {blockage}
+     (nil))
+(insn/f 130 129 131 7 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 20 [0x14]))) "../Core/Src/stm32g4xx_hal_msp.c":335:1 7 {*arm_addsi3}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 20 [0x14])))
+        (nil)))
+(insn 131 130 132 7 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../Core/Src/stm32g4xx_hal_msp.c":335:1 397 {force_register_use}
+     (nil))
+(jump_insn 132 131 135 7 (parallel [
+            (return)
+            (set/f (reg:SI 15 pc)
+                (mem:SI (post_inc:SI (reg/f:SI 13 sp)) [33  S4 A32]))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":335:1 383 {*ldr_with_return}
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (nil))
+ -> return)
+(barrier 135 132 137)
+(code_label 137 135 35 8 61 (nil) [1 uses])
+(note 35 137 161 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(note 161 35 162 8 ../Core/Src/stm32g4xx_hal_msp.c:315 NOTE_INSN_BEGIN_STMT)
+(note 162 161 163 8 ../Core/Src/stm32g4xx_hal_msp.c:315 NOTE_INSN_BEGIN_STMT)
+(note 163 162 39 8 ../Core/Src/stm32g4xx_hal_msp.c:315 NOTE_INSN_BEGIN_STMT)
+(insn 39 163 53 8 (set (reg/f:SI 3 r3 [134])
+        (plus:SI (reg/f:SI 3 r3 [134])
+            (const_int 135168 [0x21000]))) "../Core/Src/stm32g4xx_hal_msp.c":315:5 7 {*arm_addsi3}
+     (expr_list:REG_EQUIV (const_int 1073876992 [0x40021000])
+        (nil)))
+(insn 53 39 40 8 (parallel [
+            (set (reg:SI 2 r2)
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":317:5 1016 {*thumb2_movsi_shortim}
+     (nil))
+(insn 40 53 41 8 (set (reg:SI 1 r1 [orig:118 _6 ] [118])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [134])
+                (const_int 88 [0x58])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB1ENR1+0 S4 A64])) "../Core/Src/stm32g4xx_hal_msp.c":315:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 41 40 43 8 (set (reg:SI 1 r1 [orig:119 _7 ] [119])
+        (ior:SI (reg:SI 1 r1 [orig:118 _6 ] [118])
+            (const_int 1 [0x1]))) "../Core/Src/stm32g4xx_hal_msp.c":315:5 106 {*iorsi3_insn}
+     (nil))
+(insn 43 41 164 8 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [134])
+                (const_int 88 [0x58])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB1ENR1+0 S4 A64])
+        (reg:SI 1 r1 [orig:119 _7 ] [119])) "../Core/Src/stm32g4xx_hal_msp.c":315:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [orig:119 _7 ] [119])
+        (nil)))
+(note 164 43 46 8 ../Core/Src/stm32g4xx_hal_msp.c:315 NOTE_INSN_BEGIN_STMT)
+(insn 46 164 47 8 (set (reg:SI 3 r3 [orig:120 _8 ] [120])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [134])
+                (const_int 88 [0x58])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB1ENR1+0 S4 A64])) "../Core/Src/stm32g4xx_hal_msp.c":315:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 47 46 48 8 (set (reg:SI 3 r3 [orig:121 _9 ] [121])
+        (and:SI (reg:SI 3 r3 [orig:120 _8 ] [120])
+            (const_int 1 [0x1]))) "../Core/Src/stm32g4xx_hal_msp.c":315:5 90 {*arm_andsi3_insn}
+     (nil))
+(insn 48 47 165 8 (set (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 8 [0x8])) [1 tmpreg+0 S4 A64])
+        (reg:SI 3 r3 [orig:121 _9 ] [121])) "../Core/Src/stm32g4xx_hal_msp.c":315:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:121 _9 ] [121])
+        (nil)))
+(note 165 48 55 8 ../Core/Src/stm32g4xx_hal_msp.c:315 NOTE_INSN_BEGIN_STMT)
+(insn 55 165 170 8 (parallel [
+            (set (reg:SI 0 r0)
+                (const_int 28 [0x1c]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":317:5 1016 {*thumb2_movsi_shortim}
+     (nil))
+(note 170 55 54 8 (var_location htim_base (entry_value:SI (reg:SI 0 r0 [ htim_base ]))) NOTE_INSN_VAR_LOCATION)
+(insn 54 170 50 8 (set (reg:SI 1 r1)
+        (reg:SI 2 r2)) "../Core/Src/stm32g4xx_hal_msp.c":317:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(insn 50 54 166 8 (set (reg:SI 3 r3 [orig:127 vol.8_22 ] [127])
+        (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 8 [0x8])) [1 tmpreg+0 S4 A64])) "../Core/Src/stm32g4xx_hal_msp.c":315:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_UNUSED (reg:SI 3 r3 [orig:127 vol.8_22 ] [127])
+        (nil)))
+(note 166 50 167 8 ../Core/Src/stm32g4xx_hal_msp.c:315 NOTE_INSN_BEGIN_STMT)
+(note 167 166 56 8 ../Core/Src/stm32g4xx_hal_msp.c:317 NOTE_INSN_BEGIN_STMT)
+(call_insn 56 167 168 8 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_NVIC_SetPriority") [flags 0x41]  <function_decl 0000000006885600 HAL_NVIC_SetPriority>) [0 HAL_NVIC_SetPriority S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":317:5 290 {*call_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:QI (reg:QI 0 r0)
+                (const_int 28 [0x1c]))
+            (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 1 r1)
+                    (const_int 0 [0]))
+                (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 2 r2)
+                        (const_int 0 [0]))
+                    (nil))))
+        (expr_list:REG_DEAD (reg:SI 2 r2)
+            (expr_list:REG_DEAD (reg:SI 1 r1)
+                (expr_list:REG_DEAD (reg:SI 0 r0)
+                    (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_NVIC_SetPriority") [flags 0x41]  <function_decl 0000000006885600 HAL_NVIC_SetPriority>)
+                        (nil))))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (expr_list:SI (use (reg:SI 2 r2))
+                    (nil))))))
+(note 168 56 58 8 ../Core/Src/stm32g4xx_hal_msp.c:318 NOTE_INSN_BEGIN_STMT)
+(insn 58 168 145 8 (parallel [
+            (set (reg:SI 0 r0)
+                (const_int 28 [0x1c]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":318:5 1016 {*thumb2_movsi_shortim}
+     (nil))
+(note 145 58 113 8 NOTE_INSN_EPILOGUE_BEG)
+(insn 113 145 114 8 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../Core/Src/stm32g4xx_hal_msp.c":335:1 301 {blockage}
+     (nil))
+(insn/f 114 113 115 8 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 20 [0x14]))) "../Core/Src/stm32g4xx_hal_msp.c":335:1 7 {*arm_addsi3}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 20 [0x14])))
+        (nil)))
+(insn 115 114 116 8 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../Core/Src/stm32g4xx_hal_msp.c":335:1 397 {force_register_use}
+     (nil))
+(insn/f 116 115 59 8 (set (reg:SI 14 lr)
+        (mem:SI (post_inc:SI (reg/f:SI 13 sp)) [33  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":335:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])))
+        (expr_list:REG_CFA_RESTORE (reg:SI 14 lr)
+            (nil))))
+(call_insn/j 59 116 60 8 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_NVIC_EnableIRQ") [flags 0x41]  <function_decl 0000000006885700 HAL_NVIC_EnableIRQ>) [0 HAL_NVIC_EnableIRQ S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":318:5 292 {*sibcall_insn}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:QI (reg:QI 0 r0)
+                (const_int 28 [0x1c]))
+            (nil))
+        (expr_list:REG_DEAD (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_NVIC_EnableIRQ") [flags 0x41]  <function_decl 0000000006885700 HAL_NVIC_EnableIRQ>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(barrier 60 59 171)
+(code_label 171 60 172 64 (nil) [0 uses])
+(insn 172 171 173 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) 385 {align_4}
+     (nil))
+(code_label 173 172 174 63 (nil) [0 uses])
+(insn 174 173 175 (unspec_volatile [
+            (const_int 1073818624 [0x40012c00])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 175 174 176 (unspec_volatile [
+            (const_int 1073744896 [0x40000c00])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 176 175 177 (unspec_volatile [
+            (const_int 1073876992 [0x40021000])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 177 176 178 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) 387 {consttable_end}
+     (nil))
+(barrier 178 177 96)
+(note 96 178 97 NOTE_INSN_DELETED)
+(note 97 96 0 NOTE_INSN_DELETED)
+
+;; Function HAL_TIM_MspPostInit (HAL_TIM_MspPostInit, funcdef_no=1446, decl_uid=14116, cgraph_uid=1450, symbol_order=1456)
+
+
+
+HAL_TIM_MspPostInit
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 13 [sp] 14 [lr] 15 [pc] 30 [s14] 31 [s15] 100 [cc]
+;;  ref usage 	r0={3d,2u} r1={4d,2u,1e} r2={6d,3u} r3={8d,13u} r12={2d} r13={7d,27u} r14={2d,2u} r15={3d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={3d,1u} r31={3d,1u} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={2d,1u} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 180{127d,52u,1e} in 34{33 regular + 1 call} insns.
+(note 1 0 106 NOTE_INSN_DELETED)
+(note 106 1 4 (var_location htim (reg:SI 0 r0 [ htim ])) NOTE_INSN_VAR_LOCATION)
+(note 4 106 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 4 3 2 NOTE_INSN_DELETED)
+(note 3 2 7 2 NOTE_INSN_FUNCTION_BEG)
+(note 7 3 92 2 NOTE_INSN_DELETED)
+(note 92 7 66 2 ../Core/Src/stm32g4xx_hal_msp.c:339 NOTE_INSN_BEGIN_STMT)
+(insn/f 66 92 15 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -4 [0xfffffffffffffffc]))) [33  A8])
+                (unspec:BLK [
+                        (reg:SI 14 lr)
+                    ] UNSPEC_PUSH_MULT))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":338:1 378 {*push_multi}
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -4 [0xfffffffffffffffc])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [33  S4 A32])
+                    (reg:SI 14 lr))
+            ])
+        (nil)))
+(insn 15 66 16 2 (set (reg:SI 2 r2 [122])
+        (mem:SI (const:SI (plus:SI (label_ref 110)
+                    (const_int 8 [0x8]))) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":340:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073744896 [0x40000c00])
+        (nil)))
+(insn 16 15 67 2 (set (reg/f:SI 1 r1 [orig:123 htim_9(D)->Instance ] [123])
+        (mem/f:SI (reg:SI 0 r0 [131]) [7 htim_9(D)->Instance+0 S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":340:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [131])
+        (nil)))
+(insn/f 67 16 68 2 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int -36 [0xffffffffffffffdc]))) "../Core/Src/stm32g4xx_hal_msp.c":338:1 7 {*arm_addsi3}
+     (nil))
+(note 68 67 8 2 NOTE_INSN_PROLOGUE_END)
+(insn 8 68 17 2 (parallel [
+            (set (reg:SI 3 r3 [121])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":339:20 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUIV (const_int 0 [0])
+        (nil)))
+(insn 17 8 77 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/f:SI 1 r1 [orig:123 htim_9(D)->Instance ] [123])
+            (reg:SI 2 r2 [122]))) "../Core/Src/stm32g4xx_hal_msp.c":340:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [122])
+        (expr_list:REG_DEAD (reg/f:SI 1 r1 [orig:123 htim_9(D)->Instance ] [123])
+            (expr_list:REG_EQUAL (compare:CC (reg/f:SI 1 r1 [orig:123 htim_9(D)->Instance ] [123])
+                    (const_int 1073744896 [0x40000c00]))
+                (nil)))))
+(insn 77 17 78 2 (parallel [
+            (set (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 8 [0x8])) [3 GPIO_InitStruct+0 S4 A64])
+                (reg:SI 3 r3 [121]))
+            (set (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 12 [0xc])) [3 GPIO_InitStruct+4 S4 A32])
+                (reg:SI 3 r3 [121]))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":339:20 412 {*thumb2_strd}
+     (nil))
+(insn 78 77 13 2 (parallel [
+            (set (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 16 [0x10])) [3 GPIO_InitStruct+8 S4 A64])
+                (reg:SI 3 r3 [121]))
+            (set (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 20 [0x14])) [3 GPIO_InitStruct+12 S4 A32])
+                (reg:SI 3 r3 [121]))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":339:20 412 {*thumb2_strd}
+     (nil))
+(insn 13 78 93 2 (set (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 24 [0x18])) [3 GPIO_InitStruct+16 S4 A64])
+        (reg:SI 3 r3 [121])) "../Core/Src/stm32g4xx_hal_msp.c":339:20 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 93 13 18 2 ../Core/Src/stm32g4xx_hal_msp.c:340 NOTE_INSN_BEGIN_STMT)
+(jump_insn 18 93 54 2 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 88)
+            (pc))) "../Core/Src/stm32g4xx_hal_msp.c":340:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 187153204 (nil)))
+ -> 88)
+(note 54 18 69 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 69 54 70 3 NOTE_INSN_EPILOGUE_BEG)
+(insn 70 69 71 3 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../Core/Src/stm32g4xx_hal_msp.c":362:1 301 {blockage}
+     (nil))
+(insn/f 71 70 72 3 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 36 [0x24]))) "../Core/Src/stm32g4xx_hal_msp.c":362:1 7 {*arm_addsi3}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 36 [0x24])))
+        (nil)))
+(insn 72 71 73 3 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../Core/Src/stm32g4xx_hal_msp.c":362:1 397 {force_register_use}
+     (nil))
+(jump_insn 73 72 76 3 (parallel [
+            (return)
+            (set/f (reg:SI 15 pc)
+                (mem:SI (post_inc:SI (reg/f:SI 13 sp)) [33  S4 A32]))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":362:1 383 {*ldr_with_return}
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (nil))
+ -> return)
+(barrier 76 73 88)
+(code_label 88 76 19 4 68 (nil) [1 uses])
+(note 19 88 94 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 94 19 95 4 ../Core/Src/stm32g4xx_hal_msp.c:346 NOTE_INSN_BEGIN_STMT)
+(note 95 94 96 4 ../Core/Src/stm32g4xx_hal_msp.c:346 NOTE_INSN_BEGIN_STMT)
+(note 96 95 62 4 ../Core/Src/stm32g4xx_hal_msp.c:346 NOTE_INSN_BEGIN_STMT)
+(insn 62 96 63 4 (set (reg/f:SI 3 r3 [124])
+        (plus:SI (reg/f:SI 3 r3 [124])
+            (const_int 1073741824 [0x40000000]))) "../Core/Src/stm32g4xx_hal_msp.c":346:5 7 {*arm_addsi3}
+     (nil))
+(insn 63 62 38 4 (set (reg/f:SI 3 r3 [124])
+        (plus:SI (reg/f:SI 3 r3 [124])
+            (const_int 135168 [0x21000]))) "../Core/Src/stm32g4xx_hal_msp.c":346:5 7 {*arm_addsi3}
+     (expr_list:REG_EQUAL (const_int 1073876992 [0x40021000])
+        (nil)))
+(insn 38 63 24 4 (set (reg:DI 30 s14 [127])
+        (mem:DI (label_ref 110) [0  S8 A64])) "../Core/Src/stm32g4xx_hal_msp.c":350:25 729 {*movdi_vfp}
+     (expr_list:REG_EQUIV (const_int 8589934720 [0x200000080])
+        (nil)))
+(insn 24 38 49 4 (set (reg:SI 2 r2 [orig:114 _2 ] [114])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [124])
+                (const_int 76 [0x4c])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB2ENR+0 S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":346:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 49 24 107 4 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 110)
+                    (const_int 12 [0xc]))) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":355:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 107 49 25 4 (var_location htim (entry_value:SI (reg:SI 0 r0 [ htim ]))) NOTE_INSN_VAR_LOCATION)
+(insn 25 107 27 4 (set (reg:SI 2 r2 [orig:115 _3 ] [115])
+        (ior:SI (reg:SI 2 r2 [orig:114 _2 ] [114])
+            (const_int 32 [0x20]))) "../Core/Src/stm32g4xx_hal_msp.c":346:5 106 {*iorsi3_insn}
+     (nil))
+(insn 27 25 97 4 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [124])
+                (const_int 76 [0x4c])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB2ENR+0 S4 A32])
+        (reg:SI 2 r2 [orig:115 _3 ] [115])) "../Core/Src/stm32g4xx_hal_msp.c":346:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:115 _3 ] [115])
+        (nil)))
+(note 97 27 30 4 ../Core/Src/stm32g4xx_hal_msp.c:346 NOTE_INSN_BEGIN_STMT)
+(insn 30 97 31 4 (set (reg:SI 3 r3 [orig:116 _4 ] [116])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [124])
+                (const_int 76 [0x4c])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB2ENR+0 S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":346:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 31 30 32 4 (set (reg:SI 3 r3 [orig:117 _5 ] [117])
+        (and:SI (reg:SI 3 r3 [orig:116 _4 ] [116])
+            (const_int 32 [0x20]))) "../Core/Src/stm32g4xx_hal_msp.c":346:5 90 {*arm_andsi3_insn}
+     (nil))
+(insn 32 31 98 4 (set (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [1 tmpreg+0 S4 A32])
+        (reg:SI 3 r3 [orig:117 _5 ] [117])) "../Core/Src/stm32g4xx_hal_msp.c":346:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:117 _5 ] [117])
+        (nil)))
+(note 98 32 61 4 ../Core/Src/stm32g4xx_hal_msp.c:346 NOTE_INSN_BEGIN_STMT)
+(insn 61 98 43 4 (set (reg:SI 1 r1 [133])
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 8 [0x8]))) "../Core/Src/stm32g4xx_hal_msp.c":355:5 7 {*arm_addsi3}
+     (nil))
+(insn 43 61 39 4 (parallel [
+            (set (reg:SI 3 r3 [128])
+                (const_int 6 [0x6]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":354:31 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUIV (const_int 6 [0x6])
+        (nil)))
+(insn 39 43 34 4 (set (mem/c:DI (plus:SI (reg/f:SI 13 sp)
+                (const_int 8 [0x8])) [1 MEM <vector(2) long unsigned int> [(long unsigned int *)&GPIO_InitStruct]+0 S8 A64])
+        (reg:DI 30 s14 [127])) "../Core/Src/stm32g4xx_hal_msp.c":350:25 729 {*movdi_vfp}
+     (expr_list:REG_DEAD (reg:DI 30 s14 [127])
+        (nil)))
+(insn 34 39 99 4 (set (reg:SI 2 r2 [orig:118 vol.10_12 ] [118])
+        (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [1 tmpreg+0 S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":346:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_UNUSED (reg:SI 2 r2 [orig:118 vol.10_12 ] [118])
+        (nil)))
+(note 99 34 100 4 ../Core/Src/stm32g4xx_hal_msp.c:346 NOTE_INSN_BEGIN_STMT)
+(note 100 99 101 4 ../Core/Src/stm32g4xx_hal_msp.c:350 NOTE_INSN_BEGIN_STMT)
+(note 101 100 102 4 ../Core/Src/stm32g4xx_hal_msp.c:351 NOTE_INSN_BEGIN_STMT)
+(note 102 101 103 4 ../Core/Src/stm32g4xx_hal_msp.c:352 NOTE_INSN_BEGIN_STMT)
+(note 103 102 104 4 ../Core/Src/stm32g4xx_hal_msp.c:353 NOTE_INSN_BEGIN_STMT)
+(note 104 103 44 4 ../Core/Src/stm32g4xx_hal_msp.c:354 NOTE_INSN_BEGIN_STMT)
+(insn 44 104 105 4 (set (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 24 [0x18])) [1 GPIO_InitStruct.Alternate+0 S4 A64])
+        (reg:SI 3 r3 [128])) "../Core/Src/stm32g4xx_hal_msp.c":354:31 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [128])
+        (nil)))
+(note 105 44 50 4 ../Core/Src/stm32g4xx_hal_msp.c:355 NOTE_INSN_BEGIN_STMT)
+(call_insn 50 105 91 4 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_GPIO_Init") [flags 0x41]  <function_decl 0000000006848500 HAL_GPIO_Init>) [0 HAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":355:5 290 {*call_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 0 r0)
+                (const_int 1207964672 [0x48001400]))
+            (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 1 r1)
+                    (plus:SI (reg/f:SI 103 afp)
+                        (const_int -32 [0xffffffffffffffe0])))
+                (nil)))
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_DEAD (reg:SI 0 r0)
+                (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GPIO_Init") [flags 0x41]  <function_decl 0000000006848500 HAL_GPIO_Init>)
+                    (nil)))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(note 91 50 81 4 NOTE_INSN_EPILOGUE_BEG)
+(insn 81 91 82 4 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../Core/Src/stm32g4xx_hal_msp.c":362:1 301 {blockage}
+     (nil))
+(insn/f 82 81 83 4 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 36 [0x24]))) "../Core/Src/stm32g4xx_hal_msp.c":362:1 7 {*arm_addsi3}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 36 [0x24])))
+        (nil)))
+(insn 83 82 84 4 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../Core/Src/stm32g4xx_hal_msp.c":362:1 397 {force_register_use}
+     (nil))
+(jump_insn 84 83 87 4 (parallel [
+            (return)
+            (set/f (reg:SI 15 pc)
+                (mem:SI (post_inc:SI (reg/f:SI 13 sp)) [33  S4 A32]))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":362:1 383 {*ldr_with_return}
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (nil))
+ -> return)
+(barrier 87 84 108)
+(code_label 108 87 109 70 (nil) [0 uses])
+(insn 109 108 110 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN8) 386 {align_8}
+     (nil))
+(code_label 110 109 111 69 (nil) [0 uses])
+(insn 111 110 112 (unspec_volatile [
+            (const_int 8589934720 [0x200000080])
+        ] VUNSPEC_POOL_8) 391 {consttable_8}
+     (nil))
+(insn 112 111 113 (unspec_volatile [
+            (const_int 1073744896 [0x40000c00])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 113 112 114 (unspec_volatile [
+            (const_int 1207964672 [0x48001400])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 114 113 115 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) 387 {consttable_end}
+     (nil))
+(barrier 115 114 59)
+(note 59 115 60 NOTE_INSN_DELETED)
+(note 60 59 0 NOTE_INSN_DELETED)
+
+;; Function HAL_TIM_Base_MspDeInit (HAL_TIM_Base_MspDeInit, funcdef_no=1447, decl_uid=9624, cgraph_uid=1451, symbol_order=1457)
+
+
+
+HAL_TIM_Base_MspDeInit
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 2 [r2] 3 [r3] 12 [ip] 13 [sp] 100 [cc]
+;;  ref usage 	r0={3d,2u} r1={2d} r2={7d,10u} r3={9d,9u,2e} r12={2d} r13={1d,9u} r14={1d,1u} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={4d,3u} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 154{118d,34u,2e} in 26{25 regular + 1 call} insns.
+(note 1 0 90 NOTE_INSN_DELETED)
+(note 90 1 4 (var_location htim_base (reg:SI 0 r0 [ htim_base ])) NOTE_INSN_VAR_LOCATION)
+(note 4 90 66 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 66 4 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 66 3 2 NOTE_INSN_DELETED)
+(note 3 2 83 2 NOTE_INSN_FUNCTION_BEG)
+(note 83 3 8 2 ../Core/Src/stm32g4xx_hal_msp.c:371 NOTE_INSN_BEGIN_STMT)
+(insn 8 83 7 2 (set (reg:SI 2 r2 [121])
+        (mem:SI (label_ref 94) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":371:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073818624 [0x40012c00])
+        (nil)))
+(insn 7 8 9 2 (set (reg/f:SI 3 r3 [orig:113 _1 ] [113])
+        (mem/f:SI (reg:SI 0 r0 [129]) [7 htim_base_10(D)->Instance+0 S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":371:15 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [129])
+        (nil)))
+(insn 9 7 10 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/f:SI 3 r3 [orig:113 _1 ] [113])
+            (reg:SI 2 r2 [121]))) "../Core/Src/stm32g4xx_hal_msp.c":371:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_EQUAL (compare:CC (reg/f:SI 3 r3 [orig:113 _1 ] [113])
+            (const_int 1073818624 [0x40012c00]))
+        (nil)))
+(jump_insn 10 9 21 2 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 76)
+            (pc))) "../Core/Src/stm32g4xx_hal_msp.c":371:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 322122548 (nil)))
+ -> 76)
+(note 21 10 84 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 84 21 23 3 ../Core/Src/stm32g4xx_hal_msp.c:382 NOTE_INSN_BEGIN_STMT)
+(insn 23 84 24 3 (set (reg:CC 100 cc)
+        (compare:CC (reg/f:SI 3 r3 [orig:113 _1 ] [113])
+            (const_int 1073741824 [0x40000000]))) "../Core/Src/stm32g4xx_hal_msp.c":382:10 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 24 23 37 3 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 77)
+            (pc))) "../Core/Src/stm32g4xx_hal_msp.c":382:10 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 187153204 (nil)))
+ -> 77)
+(note 37 24 85 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 85 37 39 4 ../Core/Src/stm32g4xx_hal_msp.c:396 NOTE_INSN_BEGIN_STMT)
+(insn 39 85 40 4 (set (reg:SI 2 r2 [126])
+        (mem:SI (const:SI (plus:SI (label_ref 94)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":396:10 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073744896 [0x40000c00])
+        (nil)))
+(insn 40 39 41 4 (set (reg:CC 100 cc)
+        (compare:CC (reg/f:SI 3 r3 [orig:113 _1 ] [113])
+            (reg:SI 2 r2 [126]))) "../Core/Src/stm32g4xx_hal_msp.c":396:10 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg/f:SI 3 r3 [orig:113 _1 ] [113])
+        (expr_list:REG_EQUAL (compare:CC (reg/f:SI 3 r3 [orig:113 _1 ] [113])
+                (const_int 1073744896 [0x40000c00]))
+            (nil))))
+(jump_insn 41 40 52 4 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 78)
+            (pc))) "../Core/Src/stm32g4xx_hal_msp.c":396:10 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 322122548 (nil)))
+ -> 78)
+(note 52 41 67 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(note 67 52 68 5 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 68 67 69 5 (simple_return) "../Core/Src/stm32g4xx_hal_msp.c":408:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 69 68 76)
+(code_label 76 69 11 6 75 (nil) [1 uses])
+(note 11 76 86 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(note 86 11 13 6 ../Core/Src/stm32g4xx_hal_msp.c:377 NOTE_INSN_BEGIN_STMT)
+(insn 13 86 14 6 (set (reg/f:SI 2 r2 [122])
+        (plus:SI (reg/f:SI 2 r2 [122])
+            (const_int 58368 [0xe400]))) "../Core/Src/stm32g4xx_hal_msp.c":377:5 7 {*arm_addsi3}
+     (expr_list:REG_EQUIV (const_int 1073876992 [0x40021000])
+        (nil)))
+(insn 14 13 15 6 (set (reg:SI 3 r3 [orig:114 _2 ] [114])
+        (mem/v:SI (plus:SI (reg/f:SI 2 r2 [122])
+                (const_int 96 [0x60])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB2ENR+0 S4 A64])) "../Core/Src/stm32g4xx_hal_msp.c":377:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 15 14 17 6 (set (reg:SI 3 r3 [orig:115 _3 ] [115])
+        (and:SI (reg:SI 3 r3 [orig:114 _2 ] [114])
+            (const_int -2049 [0xfffffffffffff7ff]))) "../Core/Src/stm32g4xx_hal_msp.c":377:5 90 {*arm_andsi3_insn}
+     (nil))
+(insn 17 15 54 6 (set (mem/v:SI (plus:SI (reg/f:SI 2 r2 [122])
+                (const_int 96 [0x60])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB2ENR+0 S4 A64])
+        (reg:SI 3 r3 [orig:115 _3 ] [115])) "../Core/Src/stm32g4xx_hal_msp.c":377:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:115 _3 ] [115])
+        (expr_list:REG_DEAD (reg/f:SI 2 r2 [122])
+            (nil))))
+(jump_insn 54 17 55 6 (simple_return) 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 55 54 78)
+(code_label 78 55 42 7 77 (nil) [1 uses])
+(note 42 78 87 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(note 87 42 44 7 ../Core/Src/stm32g4xx_hal_msp.c:402 NOTE_INSN_BEGIN_STMT)
+(insn 44 87 45 7 (set (reg/f:SI 2 r2 [127])
+        (plus:SI (reg/f:SI 2 r2 [127])
+            (const_int 132096 [0x20400]))) "../Core/Src/stm32g4xx_hal_msp.c":402:5 7 {*arm_addsi3}
+     (expr_list:REG_EQUIV (const_int 1073876992 [0x40021000])
+        (nil)))
+(insn 45 44 46 7 (set (reg:SI 3 r3 [orig:118 _6 ] [118])
+        (mem/v:SI (plus:SI (reg/f:SI 2 r2 [127])
+                (const_int 88 [0x58])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB1ENR1+0 S4 A64])) "../Core/Src/stm32g4xx_hal_msp.c":402:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 46 45 48 7 (set (reg:SI 3 r3 [orig:119 _7 ] [119])
+        (and:SI (reg:SI 3 r3 [orig:118 _6 ] [118])
+            (const_int -9 [0xfffffffffffffff7]))) "../Core/Src/stm32g4xx_hal_msp.c":402:5 90 {*arm_andsi3_insn}
+     (nil))
+(insn 48 46 82 7 (set (mem/v:SI (plus:SI (reg/f:SI 2 r2 [127])
+                (const_int 88 [0x58])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB1ENR1+0 S4 A64])
+        (reg:SI 3 r3 [orig:119 _7 ] [119])) "../Core/Src/stm32g4xx_hal_msp.c":402:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:119 _7 ] [119])
+        (expr_list:REG_DEAD (reg/f:SI 2 r2 [127])
+            (nil))))
+(note 82 48 72 7 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 72 82 75 7 (simple_return) "../Core/Src/stm32g4xx_hal_msp.c":408:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 75 72 77)
+(code_label 77 75 25 8 76 (nil) [1 uses])
+(note 25 77 88 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(note 88 25 27 8 ../Core/Src/stm32g4xx_hal_msp.c:388 NOTE_INSN_BEGIN_STMT)
+(insn 27 88 28 8 (set (reg/f:SI 2 r2 [124])
+        (mem:SI (const:SI (plus:SI (label_ref 94)
+                    (const_int 8 [0x8]))) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":388:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073876992 [0x40021000])
+        (nil)))
+(insn 28 27 29 8 (set (reg:SI 3 r3 [orig:116 _4 ] [116])
+        (mem/v:SI (plus:SI (reg/f:SI 2 r2 [124])
+                (const_int 88 [0x58])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB1ENR1+0 S4 A64])) "../Core/Src/stm32g4xx_hal_msp.c":388:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 29 28 33 8 (set (reg:SI 3 r3 [orig:117 _5 ] [117])
+        (and:SI (reg:SI 3 r3 [orig:116 _4 ] [116])
+            (const_int -2 [0xfffffffffffffffe]))) "../Core/Src/stm32g4xx_hal_msp.c":388:5 90 {*arm_andsi3_insn}
+     (nil))
+(insn 33 29 91 8 (parallel [
+            (set (reg:SI 0 r0)
+                (const_int 28 [0x1c]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":391:5 1016 {*thumb2_movsi_shortim}
+     (nil))
+(note 91 33 31 8 (var_location htim_base (entry_value:SI (reg:SI 0 r0 [ htim_base ]))) NOTE_INSN_VAR_LOCATION)
+(insn 31 91 89 8 (set (mem/v:SI (plus:SI (reg/f:SI 2 r2 [124])
+                (const_int 88 [0x58])) [1 MEM[(struct RCC_TypeDef *)1073876992B].APB1ENR1+0 S4 A64])
+        (reg:SI 3 r3 [orig:117 _5 ] [117])) "../Core/Src/stm32g4xx_hal_msp.c":388:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:117 _5 ] [117])
+        (expr_list:REG_DEAD (reg/f:SI 2 r2 [124])
+            (nil))))
+(note 89 31 34 8 ../Core/Src/stm32g4xx_hal_msp.c:391 NOTE_INSN_BEGIN_STMT)
+(call_insn/j 34 89 35 8 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_NVIC_DisableIRQ") [flags 0x41]  <function_decl 0000000006885800 HAL_NVIC_DisableIRQ>) [0 HAL_NVIC_DisableIRQ S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":391:5 292 {*sibcall_insn}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:QI (reg:QI 0 r0)
+                (const_int 28 [0x1c]))
+            (nil))
+        (expr_list:REG_DEAD (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_NVIC_DisableIRQ") [flags 0x41]  <function_decl 0000000006885800 HAL_NVIC_DisableIRQ>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(barrier 35 34 92)
+(code_label 92 35 93 79 (nil) [0 uses])
+(insn 93 92 94 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) 385 {align_4}
+     (nil))
+(code_label 94 93 95 78 (nil) [0 uses])
+(insn 95 94 96 (unspec_volatile [
+            (const_int 1073818624 [0x40012c00])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 96 95 97 (unspec_volatile [
+            (const_int 1073744896 [0x40000c00])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 97 96 98 (unspec_volatile [
+            (const_int 1073876992 [0x40021000])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 98 97 99 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) 387 {consttable_end}
+     (nil))
+(barrier 99 98 61)
+(note 61 99 62 NOTE_INSN_DELETED)
+(note 62 61 0 NOTE_INSN_DELETED)
+
+;; Function HAL_SRAM_MspInit (HAL_SRAM_MspInit, funcdef_no=1449, decl_uid=9245, cgraph_uid=1453, symbol_order=1460)
+
+
+
+HAL_SRAM_MspInit
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 6 [r6] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 4 [r4] 6 [r6] 7 [r7] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 6 [r6] 7 [r7] 12 [ip] 13 [sp] 14 [lr] 15 [pc] 100 [cc]
+;;  ref usage 	r0={7d,3u} r1={9d,7u} r2={11d,9u} r3={13d,10u,1e} r4={3d,5u} r6={3d,4u} r7={3d,4u} r12={6d} r13={5d,35u} r14={4d,2u} r15={4d} r16={4d} r17={4d} r18={4d} r19={4d} r20={4d} r21={4d} r22={4d} r23={4d} r24={4d} r25={4d} r26={4d} r27={4d} r28={4d} r29={4d} r30={4d} r31={4d} r48={3d} r49={3d} r50={3d} r51={3d} r52={3d} r53={3d} r54={3d} r55={3d} r56={3d} r57={3d} r58={3d} r59={3d} r60={3d} r61={3d} r62={3d} r63={3d} r64={3d} r65={3d} r66={3d} r67={3d} r68={3d} r69={3d} r70={3d} r71={3d} r72={3d} r73={3d} r74={3d} r75={3d} r76={3d} r77={3d} r78={3d} r79={3d} r80={3d} r81={3d} r82={3d} r83={3d} r84={3d} r85={3d} r86={3d} r87={3d} r88={3d} r89={3d} r90={3d} r91={3d} r92={3d} r93={3d} r94={3d} r95={3d} r96={3d} r97={3d} r98={3d} r99={3d} r100={4d} r101={3d} r104={3d} r105={3d} r106={3d} 
+;;    total ref usage 384{304d,79u,1e} in 49{46 regular + 3 call} insns.
+(note 1 0 167 NOTE_INSN_DELETED)
+(note 167 1 4 (var_location hsram (reg:SI 0 r0 [ hsram ])) NOTE_INSN_VAR_LOCATION)
+(note 4 167 3 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 3 4 14 2 NOTE_INSN_FUNCTION_BEG)
+(note 14 3 139 2 NOTE_INSN_DELETED)
+(note 139 14 140 2 ../Core/Src/stm32g4xx_hal_msp.c:481 NOTE_INSN_BEGIN_STMT)
+(note 140 139 141 2 ../Core/Src/stm32g4xx_hal_msp.c:412 NOTE_INSN_INLINE_ENTRY)
+(note 141 140 122 2 ../Core/Src/stm32g4xx_hal_msp.c:416 NOTE_INSN_BEGIN_STMT)
+(insn/f 122 141 12 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -16 [0xfffffffffffffff0]))) [33  A8])
+                (unspec:BLK [
+                        (reg:SI 4 r4)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 6 r6))
+            (use (reg:SI 7 r7))
+            (use (reg:SI 14 lr))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":477:49 378 {*push_multi}
+     (expr_list:REG_DEAD (reg:SI 7 r7)
+        (expr_list:REG_DEAD (reg:SI 6 r6)
+            (expr_list:REG_DEAD (reg:SI 4 r4)
+                (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                            (set/f (reg/f:SI 13 sp)
+                                (plus:SI (reg/f:SI 13 sp)
+                                    (const_int -16 [0xfffffffffffffff0])))
+                            (set/f (mem/c:SI (reg/f:SI 13 sp) [33  S4 A32])
+                                (reg:SI 4 r4))
+                            (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                        (const_int 4 [0x4])) [33  S4 A32])
+                                (reg:SI 6 r6))
+                            (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                        (const_int 8 [0x8])) [33  S4 A32])
+                                (reg:SI 7 r7))
+                            (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                        (const_int 12 [0xc])) [33  S4 A32])
+                                (reg:SI 14 lr))
+                        ])
+                    (nil))))))
+(insn 12 122 123 2 (set (reg/f:SI 3 r3 [121])
+        (mem:SI (label_ref 171) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":417:7 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(insn/f 123 12 124 2 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int -32 [0xffffffffffffffe0]))) "../Core/Src/stm32g4xx_hal_msp.c":477:49 7 {*arm_addsi3}
+     (nil))
+(note 124 123 13 2 NOTE_INSN_PROLOGUE_END)
+(insn 13 124 9 2 (set (reg:SI 2 r2 [orig:122 FMC_Initialized ] [122])
+        (mem/c:SI (reg/f:SI 3 r3 [121]) [1 FMC_Initialized+0 S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":417:6 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem/c:SI (reg/f:SI 3 r3 [121]) [1 FMC_Initialized+0 S4 A32])
+        (expr_list:REG_EQUAL (mem/c:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]) [1 FMC_Initialized+0 S4 A32])
+            (nil))))
+(insn 9 13 10 2 (parallel [
+            (set (reg:SI 1 r1 [120])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":416:20 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUIV (const_int 0 [0])
+        (nil)))
+(insn 10 9 142 2 (set (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 16 [0x10])) [3 MEM <char[4]> [(struct  *)&GPIO_InitStruct + 8B]+0 S4 A64])
+        (reg:SI 1 r1 [120])) "../Core/Src/stm32g4xx_hal_msp.c":416:20 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [120])
+        (nil)))
+(note 142 10 15 2 ../Core/Src/stm32g4xx_hal_msp.c:417 NOTE_INSN_BEGIN_STMT)
+(jump_insn 15 142 21 2 (parallel [
+            (set (pc)
+                (if_then_else (ne (reg:SI 2 r2 [orig:122 FMC_Initialized ] [122])
+                        (const_int 0 [0]))
+                    (label_ref:SI 96)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":417:6 1025 {*thumb2_cbnz}
+     (expr_list:REG_UNUSED (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 548896828 (nil)))
+ -> 96)
+(note 21 15 54 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 54 21 143 3 NOTE_INSN_DELETED)
+(note 143 54 107 3 ../Core/Src/stm32g4xx_hal_msp.c:420 NOTE_INSN_BEGIN_STMT)
+(insn 107 143 108 3 (set (reg/f:SI 2 r2 [125])
+        (plus:SI (reg/f:SI 2 r2 [125])
+            (const_int 1073741824 [0x40000000]))) "../Core/Src/stm32g4xx_hal_msp.c":423:3 7 {*arm_addsi3}
+     (nil))
+(insn 108 107 24 3 (set (reg/f:SI 2 r2 [125])
+        (plus:SI (reg/f:SI 2 r2 [125])
+            (const_int 135168 [0x21000]))) "../Core/Src/stm32g4xx_hal_msp.c":423:3 7 {*arm_addsi3}
+     (expr_list:REG_EQUAL (const_int 1073876992 [0x40021000])
+        (nil)))
+(insn 24 108 25 3 (parallel [
+            (set (reg:SI 1 r1 [124])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":420:19 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUIV (const_int 1 [0x1])
+        (nil)))
+(insn 25 24 144 3 (set (mem/c:SI (reg/f:SI 3 r3 [121]) [1 FMC_Initialized+0 S4 A32])
+        (reg:SI 1 r1 [124])) "../Core/Src/stm32g4xx_hal_msp.c":420:19 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 3 r3 [121])
+        (nil)))
+(note 144 25 145 3 ../Core/Src/stm32g4xx_hal_msp.c:423 NOTE_INSN_BEGIN_STMT)
+(note 145 144 146 3 ../Core/Src/stm32g4xx_hal_msp.c:423 NOTE_INSN_BEGIN_STMT)
+(note 146 145 30 3 ../Core/Src/stm32g4xx_hal_msp.c:423 NOTE_INSN_BEGIN_STMT)
+(insn 30 146 57 3 (set (reg:SI 3 r3 [orig:114 _4 ] [114])
+        (mem/v:SI (plus:SI (reg/f:SI 2 r2 [125])
+                (const_int 80 [0x50])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB3ENR+0 S4 A64])) "../Core/Src/stm32g4xx_hal_msp.c":423:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 57 30 168 3 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 171)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":454:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 168 57 31 3 (var_location hsram (entry_value:SI (reg:SI 0 r0 [ hsram ]))) NOTE_INSN_VAR_LOCATION)
+(insn 31 168 33 3 (parallel [
+            (set (reg:SI 3 r3 [orig:115 _5 ] [115])
+                (ior:SI (reg:SI 3 r3 [orig:114 _4 ] [114])
+                    (reg:SI 1 r1)))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":423:3 1012 {*thumb2_alusi3_short}
+     (nil))
+(insn 33 31 147 3 (set (mem/v:SI (plus:SI (reg/f:SI 2 r2 [125])
+                (const_int 80 [0x50])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB3ENR+0 S4 A64])
+        (reg:SI 3 r3 [orig:115 _5 ] [115])) "../Core/Src/stm32g4xx_hal_msp.c":423:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:115 _5 ] [115])
+        (nil)))
+(note 147 33 36 3 ../Core/Src/stm32g4xx_hal_msp.c:423 NOTE_INSN_BEGIN_STMT)
+(insn 36 147 37 3 (set (reg:SI 3 r3 [orig:116 _6 ] [116])
+        (mem/v:SI (plus:SI (reg/f:SI 2 r2 [125])
+                (const_int 80 [0x50])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB3ENR+0 S4 A64])) "../Core/Src/stm32g4xx_hal_msp.c":423:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 2 r2 [125])
+        (nil)))
+(insn 37 36 38 3 (parallel [
+            (set (reg:SI 3 r3 [orig:117 _7 ] [117])
+                (and:SI (reg:SI 3 r3 [orig:116 _6 ] [116])
+                    (reg:SI 1 r1)))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":423:3 1012 {*thumb2_alusi3_short}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (nil)))
+(insn 38 37 148 3 (set (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [1 tmpreg+0 S4 A32])
+        (reg:SI 3 r3 [orig:117 _7 ] [117])) "../Core/Src/stm32g4xx_hal_msp.c":423:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:117 _7 ] [117])
+        (nil)))
+(note 148 38 110 3 ../Core/Src/stm32g4xx_hal_msp.c:423 NOTE_INSN_BEGIN_STMT)
+(insn 110 148 111 3 (set (reg:SI 2 r2 [128])
+        (const_int 65408 [0xff80])) "../Core/Src/stm32g4xx_hal_msp.c":447:23 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 111 110 45 3 (parallel [
+            (set (reg:SI 3 r3 [+4 ])
+                (const_int 2 [0x2]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":447:23 1016 {*thumb2_movsi_shortim}
+     (nil))
+(insn 45 111 51 3 (set (mem/c:DI (plus:SI (reg/f:SI 13 sp)
+                (const_int 8 [0x8])) [1 MEM <vector(2) long unsigned int> [(long unsigned int *)&GPIO_InitStruct]+0 S8 A64])
+        (reg:DI 2 r2 [128])) "../Core/Src/stm32g4xx_hal_msp.c":447:23 729 {*movdi_vfp}
+     (expr_list:REG_DEAD (reg:DI 2 r2 [128])
+        (nil)))
+(insn 51 45 48 3 (parallel [
+            (set (reg:SI 4 r4 [130])
+                (const_int 12 [0xc]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":453:29 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUIV (const_int 12 [0xc])
+        (nil)))
+(insn 48 51 104 3 (parallel [
+            (set (reg:SI 3 r3 [129])
+                (const_int 3 [0x3]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":452:25 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUIV (const_int 3 [0x3])
+        (nil)))
+(insn 104 48 133 3 (set (reg:SI 1 r1 [144])
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 8 [0x8]))) "../Core/Src/stm32g4xx_hal_msp.c":454:3 7 {*arm_addsi3}
+     (nil))
+(insn 133 104 40 3 (parallel [
+            (set (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 20 [0x14])) [1 GPIO_InitStruct.Speed+0 S4 A32])
+                (reg:SI 3 r3 [129]))
+            (set (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 24 [0x18])) [1 GPIO_InitStruct.Alternate+0 S4 A64])
+                (reg:SI 4 r4 [130]))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":453:29 412 {*thumb2_strd}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [129])
+        (nil)))
+(insn 40 133 149 3 (set (reg:SI 2 r2 [orig:118 vol.12_8 ] [118])
+        (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [1 tmpreg+0 S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":423:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_UNUSED (reg:SI 2 r2 [orig:118 vol.12_8 ] [118])
+        (nil)))
+(note 149 40 150 3 ../Core/Src/stm32g4xx_hal_msp.c:423 NOTE_INSN_BEGIN_STMT)
+(note 150 149 151 3 ../Core/Src/stm32g4xx_hal_msp.c:447 NOTE_INSN_BEGIN_STMT)
+(note 151 150 152 3 ../Core/Src/stm32g4xx_hal_msp.c:450 NOTE_INSN_BEGIN_STMT)
+(note 152 151 153 3 ../Core/Src/stm32g4xx_hal_msp.c:451 NOTE_INSN_BEGIN_STMT)
+(note 153 152 154 3 ../Core/Src/stm32g4xx_hal_msp.c:452 NOTE_INSN_BEGIN_STMT)
+(note 154 153 117 3 ../Core/Src/stm32g4xx_hal_msp.c:454 NOTE_INSN_BEGIN_STMT)
+(insn 117 154 58 3 (parallel [
+            (set (reg:SI 6 r6 [134])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":456:23 1016 {*thumb2_movsi_shortim}
+     (nil))
+(call_insn 58 117 155 3 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_GPIO_Init") [flags 0x41]  <function_decl 0000000006848500 HAL_GPIO_Init>) [0 HAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":454:3 290 {*call_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 0 r0)
+                (const_int 1207963648 [0x48001000]))
+            (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 1 r1)
+                    (plus:SI (reg/f:SI 103 afp)
+                        (const_int -40 [0xffffffffffffffd8])))
+                (nil)))
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_DEAD (reg:SI 0 r0)
+                (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GPIO_Init") [flags 0x41]  <function_decl 0000000006848500 HAL_GPIO_Init>)
+                    (nil)))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(note 155 58 156 3 ../Core/Src/stm32g4xx_hal_msp.c:456 NOTE_INSN_BEGIN_STMT)
+(note 156 155 157 3 ../Core/Src/stm32g4xx_hal_msp.c:459 NOTE_INSN_BEGIN_STMT)
+(note 157 156 158 3 ../Core/Src/stm32g4xx_hal_msp.c:460 NOTE_INSN_BEGIN_STMT)
+(note 158 157 118 3 ../Core/Src/stm32g4xx_hal_msp.c:461 NOTE_INSN_BEGIN_STMT)
+(insn 118 158 114 3 (parallel [
+            (set (reg:SI 7 r7 [+4 ])
+                (const_int 3 [0x3]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":456:23 1016 {*thumb2_movsi_shortim}
+     (nil))
+(insn 114 118 115 3 (set (reg:SI 2 r2 [133])
+        (const_int 51123 [0xc7b3])) "../Core/Src/stm32g4xx_hal_msp.c":456:23 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 115 114 74 3 (parallel [
+            (set (reg:SI 3 r3 [+4 ])
+                (const_int 2 [0x2]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":456:23 1016 {*thumb2_movsi_shortim}
+     (nil))
+(insn 74 115 69 3 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 171)
+                    (const_int 8 [0x8]))) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":463:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 69 74 105 3 (set (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 24 [0x18])) [1 GPIO_InitStruct.Alternate+0 S4 A64])
+        (reg:SI 4 r4 [130])) "../Core/Src/stm32g4xx_hal_msp.c":462:29 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 105 69 64 3 (set (reg:SI 1 r1 [145])
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 8 [0x8]))) "../Core/Src/stm32g4xx_hal_msp.c":463:3 7 {*arm_addsi3}
+     (nil))
+(insn 64 105 66 3 (set (mem/c:DI (plus:SI (reg/f:SI 13 sp)
+                (const_int 8 [0x8])) [1 MEM <vector(2) long unsigned int> [(long unsigned int *)&GPIO_InitStruct]+0 S8 A64])
+        (reg:DI 2 r2 [133])) "../Core/Src/stm32g4xx_hal_msp.c":456:23 729 {*movdi_vfp}
+     (expr_list:REG_DEAD (reg:DI 2 r2 [133])
+        (nil)))
+(insn 66 64 159 3 (set (mem/c:DI (plus:SI (reg/f:SI 13 sp)
+                (const_int 16 [0x10])) [1 MEM <vector(2) long unsigned int> [(long unsigned int *)&GPIO_InitStruct + 8B]+0 S8 A64])
+        (reg:DI 6 r6 [134])) "../Core/Src/stm32g4xx_hal_msp.c":456:23 729 {*movdi_vfp}
+     (nil))
+(note 159 66 160 3 ../Core/Src/stm32g4xx_hal_msp.c:462 NOTE_INSN_BEGIN_STMT)
+(note 160 159 75 3 ../Core/Src/stm32g4xx_hal_msp.c:463 NOTE_INSN_BEGIN_STMT)
+(call_insn 75 160 161 3 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_GPIO_Init") [flags 0x41]  <function_decl 0000000006848500 HAL_GPIO_Init>) [0 HAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":463:3 290 {*call_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 0 r0)
+                (const_int 1207962624 [0x48000c00]))
+            (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 1 r1)
+                    (plus:SI (reg/f:SI 103 afp)
+                        (const_int -40 [0xffffffffffffffd8])))
+                (nil)))
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_DEAD (reg:SI 0 r0)
+                (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GPIO_Init") [flags 0x41]  <function_decl 0000000006848500 HAL_GPIO_Init>)
+                    (nil)))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(note 161 75 162 3 ../Core/Src/stm32g4xx_hal_msp.c:465 NOTE_INSN_BEGIN_STMT)
+(note 162 161 163 3 ../Core/Src/stm32g4xx_hal_msp.c:466 NOTE_INSN_BEGIN_STMT)
+(note 163 162 164 3 ../Core/Src/stm32g4xx_hal_msp.c:467 NOTE_INSN_BEGIN_STMT)
+(note 164 163 120 3 ../Core/Src/stm32g4xx_hal_msp.c:468 NOTE_INSN_BEGIN_STMT)
+(insn 120 164 121 3 (parallel [
+            (set (reg:SI 2 r2 [138])
+                (const_int 32 [0x20]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":465:23 1016 {*thumb2_movsi_shortim}
+     (nil))
+(insn 121 120 91 3 (parallel [
+            (set (reg:SI 3 r3 [+4 ])
+                (const_int 2 [0x2]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":465:23 1016 {*thumb2_movsi_shortim}
+     (nil))
+(insn 91 121 86 3 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 171)
+                    (const_int 12 [0xc]))) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":470:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 86 91 106 3 (set (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 24 [0x18])) [1 GPIO_InitStruct.Alternate+0 S4 A64])
+        (reg:SI 4 r4 [130])) "../Core/Src/stm32g4xx_hal_msp.c":469:29 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 4 r4 [130])
+        (nil)))
+(insn 106 86 83 3 (set (reg:SI 1 r1 [146])
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 8 [0x8]))) "../Core/Src/stm32g4xx_hal_msp.c":470:3 7 {*arm_addsi3}
+     (nil))
+(insn 83 106 165 3 (set (mem/c:DI (plus:SI (reg/f:SI 13 sp)
+                (const_int 16 [0x10])) [1 MEM <vector(2) long unsigned int> [(long unsigned int *)&GPIO_InitStruct + 8B]+0 S8 A64])
+        (reg:DI 6 r6 [134])) "../Core/Src/stm32g4xx_hal_msp.c":465:23 729 {*movdi_vfp}
+     (expr_list:REG_DEAD (reg:DI 6 r6 [134])
+        (nil)))
+(note 165 83 166 3 ../Core/Src/stm32g4xx_hal_msp.c:469 NOTE_INSN_BEGIN_STMT)
+(note 166 165 81 3 ../Core/Src/stm32g4xx_hal_msp.c:470 NOTE_INSN_BEGIN_STMT)
+(insn 81 166 92 3 (set (mem/c:DI (plus:SI (reg/f:SI 13 sp)
+                (const_int 8 [0x8])) [1 MEM <vector(2) long unsigned int> [(long unsigned int *)&GPIO_InitStruct]+0 S8 A64])
+        (reg:DI 2 r2 [138])) "../Core/Src/stm32g4xx_hal_msp.c":465:23 729 {*movdi_vfp}
+     (expr_list:REG_DEAD (reg:DI 2 r2 [138])
+        (nil)))
+(call_insn 92 81 96 3 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_GPIO_Init") [flags 0x41]  <function_decl 0000000006848500 HAL_GPIO_Init>) [0 HAL_GPIO_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":470:3 290 {*call_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 0 r0)
+                (const_int 1207965696 [0x48001800]))
+            (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 1 r1)
+                    (plus:SI (reg/f:SI 103 afp)
+                        (const_int -40 [0xffffffffffffffd8])))
+                (nil)))
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_DEAD (reg:SI 0 r0)
+                (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GPIO_Init") [flags 0x41]  <function_decl 0000000006848500 HAL_GPIO_Init>)
+                    (nil)))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(code_label 96 92 97 4 80 (nil) [1 uses])
+(note 97 96 125 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 125 97 126 4 NOTE_INSN_EPILOGUE_BEG)
+(insn 126 125 127 4 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../Core/Src/stm32g4xx_hal_msp.c":485:1 301 {blockage}
+     (nil))
+(insn/f 127 126 128 4 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 32 [0x20]))) "../Core/Src/stm32g4xx_hal_msp.c":485:1 7 {*arm_addsi3}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 32 [0x20])))
+        (nil)))
+(insn 128 127 129 4 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../Core/Src/stm32g4xx_hal_msp.c":485:1 397 {force_register_use}
+     (nil))
+(jump_insn 129 128 132 4 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 16 [0x10])))
+            (set/f (reg:SI 4 r4)
+                (mem/c:SI (reg/f:SI 13 sp) [33  S4 A32]))
+            (set/f (reg:SI 6 r6)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [33  S4 A32]))
+            (set/f (reg:SI 7 r7)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 8 [0x8])) [33  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 12 [0xc])) [33  S4 A32]))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":485:1 381 {*pop_multiple_with_writeback_and_return}
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (expr_list:REG_CFA_RESTORE (reg:SI 7 r7)
+            (expr_list:REG_CFA_RESTORE (reg:SI 6 r6)
+                (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+                    (nil)))))
+ -> return)
+(barrier 132 129 169)
+(code_label 169 132 170 85 (nil) [0 uses])
+(insn 170 169 171 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) 385 {align_4}
+     (nil))
+(code_label 171 170 172 84 (nil) [0 uses])
+(insn 172 171 173 (unspec_volatile [
+            (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 173 172 174 (unspec_volatile [
+            (const_int 1207963648 [0x48001000])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 174 173 175 (unspec_volatile [
+            (const_int 1207962624 [0x48000c00])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 175 174 176 (unspec_volatile [
+            (const_int 1207965696 [0x48001800])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 176 175 177 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) 387 {consttable_end}
+     (nil))
+(barrier 177 176 102)
+(note 102 177 103 NOTE_INSN_DELETED)
+(note 103 102 0 NOTE_INSN_DELETED)
+
+;; Function HAL_SRAM_MspDeInit (HAL_SRAM_MspDeInit, funcdef_no=1451, decl_uid=9247, cgraph_uid=1455, symbol_order=1463)
+
+
+
+HAL_SRAM_MspDeInit
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 13 [sp] 14 [lr] 15 [pc] 100 [cc]
+;;  ref usage 	r0={7d,3u} r1={8d,4u} r2={7d,5u} r3={9d,5u,1e} r12={6d} r13={4d,17u} r14={4d,2u} r15={4d} r16={4d} r17={4d} r18={4d} r19={4d} r20={4d} r21={4d} r22={4d} r23={4d} r24={4d} r25={4d} r26={4d} r27={4d} r28={4d} r29={4d} r30={4d} r31={4d} r48={3d} r49={3d} r50={3d} r51={3d} r52={3d} r53={3d} r54={3d} r55={3d} r56={3d} r57={3d} r58={3d} r59={3d} r60={3d} r61={3d} r62={3d} r63={3d} r64={3d} r65={3d} r66={3d} r67={3d} r68={3d} r69={3d} r70={3d} r71={3d} r72={3d} r73={3d} r74={3d} r75={3d} r76={3d} r77={3d} r78={3d} r79={3d} r80={3d} r81={3d} r82={3d} r83={3d} r84={3d} r85={3d} r86={3d} r87={3d} r88={3d} r89={3d} r90={3d} r91={3d} r92={3d} r93={3d} r94={3d} r95={3d} r96={3d} r97={3d} r98={3d} r99={3d} r100={4d} r101={3d} r104={3d} r105={3d} r106={3d} 
+;;    total ref usage 322{285d,36u,1e} in 22{19 regular + 3 call} insns.
+(note 1 0 83 NOTE_INSN_DELETED)
+(note 83 1 4 (var_location hsram (reg:SI 0 r0 [ hsram ])) NOTE_INSN_VAR_LOCATION)
+(note 4 83 3 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 3 4 11 2 NOTE_INSN_FUNCTION_BEG)
+(note 11 3 75 2 NOTE_INSN_DELETED)
+(note 75 11 76 2 ../Core/Src/stm32g4xx_hal_msp.c:541 NOTE_INSN_BEGIN_STMT)
+(note 76 75 77 2 ../Core/Src/stm32g4xx_hal_msp.c:489 NOTE_INSN_INLINE_ENTRY)
+(note 77 76 59 2 ../Core/Src/stm32g4xx_hal_msp.c:493 NOTE_INSN_BEGIN_STMT)
+(insn/f 59 77 60 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [33  A8])
+                (unspec:BLK [
+                        (reg:SI 3 r3)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 14 lr))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":537:51 378 {*push_multi}
+     (expr_list:REG_DEAD (reg:SI 3 r3)
+        (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                    (set/f (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8])))
+                    (set/f (mem/c:SI (reg/f:SI 13 sp) [33  S4 A32])
+                        (reg:SI 3 r3))
+                    (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                (const_int 4 [0x4])) [33  S4 A32])
+                        (reg:SI 14 lr))
+                ])
+            (nil))))
+(note 60 59 9 2 NOTE_INSN_PROLOGUE_END)
+(insn 9 60 10 2 (set (reg/f:SI 3 r3 [117])
+        (mem:SI (label_ref 87) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":493:7 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (symbol_ref:SI ("*.LANCHOR1") [flags 0x182])
+        (nil)))
+(insn 10 9 12 2 (set (reg:SI 2 r2 [orig:118 FMC_DeInitialized ] [118])
+        (mem/c:SI (reg/f:SI 3 r3 [117]) [1 FMC_DeInitialized+0 S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":493:6 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem/c:SI (reg/f:SI 3 r3 [117]) [1 FMC_DeInitialized+0 S4 A32])
+        (expr_list:REG_EQUAL (mem/c:SI (symbol_ref:SI ("*.LANCHOR1") [flags 0x182]) [1 FMC_DeInitialized+0 S4 A32])
+            (nil))))
+(jump_insn 12 10 43 2 (parallel [
+            (set (pc)
+                (if_then_else (eq (reg:SI 2 r2 [orig:118 FMC_DeInitialized ] [118])
+                        (const_int 0 [0]))
+                    (label_ref:SI 68)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":493:6 1024 {*thumb2_cbz}
+     (expr_list:REG_UNUSED (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 524845004 (nil)))
+ -> 68)
+(note 43 12 61 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 61 43 62 3 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 62 61 65 3 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg:SI 3 r3)
+                (mem/c:SI (reg/f:SI 13 sp) [33  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [33  S4 A32]))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":545:1 381 {*pop_multiple_with_writeback_and_return}
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (expr_list:REG_UNUSED (reg:SI 3 r3)
+            (expr_list:REG_CFA_RESTORE (reg:SI 3 r3)
+                (nil))))
+ -> return)
+(barrier 65 62 68)
+(code_label 68 65 13 4 89 (nil) [1 uses])
+(note 13 68 78 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 78 13 52 4 ../Core/Src/stm32g4xx_hal_msp.c:496 NOTE_INSN_BEGIN_STMT)
+(insn 52 78 53 4 (set (reg/f:SI 2 r2 [121])
+        (plus:SI (reg/f:SI 2 r2 [121])
+            (const_int 1073741824 [0x40000000]))) "../Core/Src/stm32g4xx_hal_msp.c":498:3 7 {*arm_addsi3}
+     (nil))
+(insn 53 52 16 4 (set (reg/f:SI 2 r2 [121])
+        (plus:SI (reg/f:SI 2 r2 [121])
+            (const_int 135168 [0x21000]))) "../Core/Src/stm32g4xx_hal_msp.c":498:3 7 {*arm_addsi3}
+     (expr_list:REG_EQUAL (const_int 1073876992 [0x40021000])
+        (nil)))
+(insn 16 53 17 4 (parallel [
+            (set (reg:SI 1 r1 [120])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":496:21 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUIV (const_int 1 [0x1])
+        (nil)))
+(insn 17 16 79 4 (set (mem/c:SI (reg/f:SI 3 r3 [117]) [1 FMC_DeInitialized+0 S4 A32])
+        (reg:SI 1 r1 [120])) "../Core/Src/stm32g4xx_hal_msp.c":496:21 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 3 r3 [117])
+        (expr_list:REG_DEAD (reg:SI 1 r1 [120])
+            (nil))))
+(note 79 17 20 4 ../Core/Src/stm32g4xx_hal_msp.c:498 NOTE_INSN_BEGIN_STMT)
+(insn 20 79 27 4 (set (reg:SI 3 r3 [orig:114 _4 ] [114])
+        (mem/v:SI (plus:SI (reg/f:SI 2 r2 [121])
+                (const_int 80 [0x50])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB3ENR+0 S4 A64])) "../Core/Src/stm32g4xx_hal_msp.c":498:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 27 20 84 4 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 87)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":522:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 84 27 21 4 (var_location hsram (entry_value:SI (reg:SI 0 r0 [ hsram ]))) NOTE_INSN_VAR_LOCATION)
+(insn 21 84 23 4 (set (reg:SI 3 r3 [orig:115 _5 ] [115])
+        (and:SI (reg:SI 3 r3 [orig:114 _4 ] [114])
+            (const_int -2 [0xfffffffffffffffe]))) "../Core/Src/stm32g4xx_hal_msp.c":498:3 90 {*arm_andsi3_insn}
+     (nil))
+(insn 23 21 80 4 (set (mem/v:SI (plus:SI (reg/f:SI 2 r2 [121])
+                (const_int 80 [0x50])) [1 MEM[(struct RCC_TypeDef *)1073876992B].AHB3ENR+0 S4 A64])
+        (reg:SI 3 r3 [orig:115 _5 ] [115])) "../Core/Src/stm32g4xx_hal_msp.c":498:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:115 _5 ] [115])
+        (expr_list:REG_DEAD (reg/f:SI 2 r2 [121])
+            (nil))))
+(note 80 23 26 4 ../Core/Src/stm32g4xx_hal_msp.c:522 NOTE_INSN_BEGIN_STMT)
+(insn 26 80 28 4 (set (reg:SI 1 r1)
+        (const_int 65408 [0xff80])) "../Core/Src/stm32g4xx_hal_msp.c":522:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 28 26 81 4 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_GPIO_DeInit") [flags 0x41]  <function_decl 0000000006848600 HAL_GPIO_DeInit>) [0 HAL_GPIO_DeInit S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":522:3 290 {*call_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 0 r0)
+                (const_int 1207963648 [0x48001000]))
+            (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 1 r1)
+                    (const_int 65408 [0xff80]))
+                (nil)))
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_DEAD (reg:SI 0 r0)
+                (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GPIO_DeInit") [flags 0x41]  <function_decl 0000000006848600 HAL_GPIO_DeInit>)
+                    (nil)))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(note 81 28 32 4 ../Core/Src/stm32g4xx_hal_msp.c:526 NOTE_INSN_BEGIN_STMT)
+(insn 32 81 31 4 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 87)
+                    (const_int 8 [0x8]))) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":526:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 31 32 33 4 (set (reg:SI 1 r1)
+        (const_int 51123 [0xc7b3])) "../Core/Src/stm32g4xx_hal_msp.c":526:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 33 31 82 4 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_GPIO_DeInit") [flags 0x41]  <function_decl 0000000006848600 HAL_GPIO_DeInit>) [0 HAL_GPIO_DeInit S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":526:3 290 {*call_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 0 r0)
+                (const_int 1207962624 [0x48000c00]))
+            (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 1 r1)
+                    (const_int 51123 [0xc7b3]))
+                (nil)))
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_DEAD (reg:SI 0 r0)
+                (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GPIO_DeInit") [flags 0x41]  <function_decl 0000000006848600 HAL_GPIO_DeInit>)
+                    (nil)))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(note 82 33 74 4 ../Core/Src/stm32g4xx_hal_msp.c:530 NOTE_INSN_BEGIN_STMT)
+(note 74 82 66 4 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 66 74 37 4 (parallel [
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg:SI 3 r3)
+                (mem/c:SI (reg/f:SI 13 sp) [33  S4 A32]))
+            (set/f (reg:SI 14 lr)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [33  S4 A32]))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":545:1 380 {*load_multiple_with_writeback}
+     (expr_list:REG_UNUSED (reg:SI 3 r3)
+        (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (expr_list:REG_CFA_RESTORE (reg:SI 14 lr)
+                (expr_list:REG_CFA_RESTORE (reg:SI 3 r3)
+                    (nil))))))
+(insn 37 66 36 4 (set (reg:SI 0 r0)
+        (mem:SI (const:SI (plus:SI (label_ref 87)
+                    (const_int 12 [0xc]))) [0  S4 A32])) "../Core/Src/stm32g4xx_hal_msp.c":530:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 36 37 38 4 (parallel [
+            (set (reg:SI 1 r1)
+                (const_int 32 [0x20]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":530:3 1016 {*thumb2_movsi_shortim}
+     (nil))
+(call_insn/j 38 36 39 4 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_GPIO_DeInit") [flags 0x41]  <function_decl 0000000006848600 HAL_GPIO_DeInit>) [0 HAL_GPIO_DeInit S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../Core/Src/stm32g4xx_hal_msp.c":530:3 292 {*sibcall_insn}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 0 r0)
+                (const_int 1207965696 [0x48001800]))
+            (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 1 r1)
+                    (const_int 32 [0x20]))
+                (nil)))
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_DEAD (reg:SI 0 r0)
+                (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GPIO_DeInit") [flags 0x41]  <function_decl 0000000006848600 HAL_GPIO_DeInit>)
+                    (nil)))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(barrier 39 38 85)
+(code_label 85 39 86 91 (nil) [0 uses])
+(insn 86 85 87 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) 385 {align_4}
+     (nil))
+(code_label 87 86 88 90 (nil) [0 uses])
+(insn 88 87 89 (unspec_volatile [
+            (symbol_ref:SI ("*.LANCHOR1") [flags 0x182])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 89 88 90 (unspec_volatile [
+            (const_int 1207963648 [0x48001000])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 90 89 91 (unspec_volatile [
+            (const_int 1207962624 [0x48000c00])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 91 90 92 (unspec_volatile [
+            (const_int 1207965696 [0x48001800])
+        ] VUNSPEC_POOL_4) 390 {consttable_4}
+     (nil))
+(insn 92 91 93 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) 387 {consttable_end}
+     (nil))
+(barrier 93 92 50)
+(note 50 93 51 NOTE_INSN_DELETED)
+(note 51 50 0 NOTE_INSN_DELETED)

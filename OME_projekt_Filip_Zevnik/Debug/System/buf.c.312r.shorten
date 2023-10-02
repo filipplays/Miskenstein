@@ -1,0 +1,1737 @@
+
+;; Function BUF_init (BUF_init, funcdef_no=0, decl_uid=5700, cgraph_uid=1, symbol_order=0)
+
+
+
+BUF_init
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3]
+;;  ref usage 	r0={1d,6u} r1={1d,1u} r2={1d,2u} r3={2d,3u} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 38{23d,15u,0e} in 5{5 regular + 0 call} insns.
+(note 1 0 74 NOTE_INSN_DELETED)
+(note 74 1 75 (var_location buffer_ptr (reg:SI 1 r1 [ buffer_ptr ])) NOTE_INSN_VAR_LOCATION)
+(note 75 74 76 (var_location buf_length (reg:SI 2 r2 [ buf_length ])) NOTE_INSN_VAR_LOCATION)
+(note 76 75 6 (var_location buf_handle (reg:SI 0 r0 [ buf_handle ])) NOTE_INSN_VAR_LOCATION)
+(note 6 76 58 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 58 6 3 2 NOTE_INSN_PROLOGUE_END)
+(note 3 58 5 2 NOTE_INSN_DELETED)
+(note 5 3 68 2 NOTE_INSN_FUNCTION_BEG)
+(note 68 5 16 2 ../System/buf.c:36 NOTE_INSN_BEGIN_STMT)
+(insn 16 68 64 2 (parallel [
+            (set (reg:SI 3 r3 [116])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":47:20 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUIV (const_int 0 [0])
+        (nil)))
+(insn 64 16 69 2 (parallel [
+            (set (mem/f:SI (reg/v/f:SI 0 r0 [orig:113 buf_handle ] [113]) [3 buf_handle_2(D)->buffer+0 S4 A32])
+                (reg:SI 1 r1 [120]))
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:113 buf_handle ] [113])
+                        (const_int 4 [0x4])) [1 buf_handle_2(D)->length+0 S4 A32])
+                (reg/v:SI 2 r2 [orig:115 buf_length ] [115]))
+        ]) "../System/buf.c":37:21 413 {*thumb2_strd_base}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [120])
+        (nil)))
+(note 69 64 77 2 ../System/buf.c:41 NOTE_INSN_BEGIN_STMT)
+(note 77 69 70 2 (var_location buf_handle (reg:SI 0 r0 [ buf_handle ])) NOTE_INSN_VAR_LOCATION)
+(note 70 77 71 2 ../System/buf.c:45 NOTE_INSN_INLINE_ENTRY)
+(note 71 70 65 2 ../System/buf.c:47 NOTE_INSN_BEGIN_STMT)
+(insn 65 71 72 2 (parallel [
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:113 buf_handle ] [113])
+                        (const_int 8 [0x8])) [1 buf_handle_2(D)->rear+0 S4 A32])
+                (reg:SI 3 r3 [116]))
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:113 buf_handle ] [113])
+                        (const_int 12 [0xc])) [1 buf_handle_2(D)->front+0 S4 A32])
+                (reg:SI 3 r3 [116]))
+        ]) "../System/buf.c":48:19 412 {*thumb2_strd}
+     (nil))
+(note 72 65 66 2 ../System/buf.c:49 NOTE_INSN_BEGIN_STMT)
+(insn 66 72 73 2 (parallel [
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:113 buf_handle ] [113])
+                        (const_int 16 [0x10])) [1 buf_handle_2(D)->data_size+0 S4 A32])
+                (reg:SI 3 r3 [116]))
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:113 buf_handle ] [113])
+                        (const_int 20 [0x14])) [1 buf_handle_2(D)->free_size+0 S4 A32])
+                (reg/v:SI 2 r2 [orig:115 buf_length ] [115]))
+        ]) "../System/buf.c":50:24 412 {*thumb2_strd}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [116])
+        (expr_list:REG_DEAD (reg/v:SI 2 r2 [orig:115 buf_length ] [115])
+            (expr_list:REG_DEAD (reg/v/f:SI 0 r0 [orig:113 buf_handle ] [113])
+                (nil)))))
+(note 73 66 78 2 ../System/buf.c:52 NOTE_INSN_BEGIN_STMT)
+(note 78 73 67 2 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 67 78 60 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 60 67 61 2 (simple_return) "../System/buf.c":42:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 61 60 33)
+(note 33 61 34 NOTE_INSN_DELETED)
+(note 34 33 0 NOTE_INSN_DELETED)
+
+;; Function BUF_flush (BUF_flush, funcdef_no=1, decl_uid=5702, cgraph_uid=2, symbol_order=1)
+
+
+
+BUF_flush
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 2 [r2] 3 [r3]
+;;  ref usage 	r0={2d,7u,1e} r1={1d} r2={2d,1u} r3={2d,4u} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 41{25d,15u,1e} in 7{7 regular + 0 call} insns.
+(note 1 0 39 NOTE_INSN_DELETED)
+(note 39 1 4 (var_location buf_handle (reg:SI 0 r0 [ buf_handle ])) NOTE_INSN_VAR_LOCATION)
+(note 4 39 29 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 29 4 3 2 NOTE_INSN_PROLOGUE_END)
+(note 3 29 36 2 NOTE_INSN_FUNCTION_BEG)
+(note 36 3 16 2 ../System/buf.c:47 NOTE_INSN_BEGIN_STMT)
+(insn 16 36 7 2 (set (reg:SI 2 r2 [orig:119 buf_handle_3(D)->length ] [119])
+        (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:115 buf_handle ] [115])
+                (const_int 4 [0x4])) [1 buf_handle_3(D)->length+0 S4 A32])) "../System/buf.c":50:24 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:115 buf_handle ] [115])
+                (const_int 4 [0x4])) [1 buf_handle_3(D)->length+0 S4 A32])
+        (nil)))
+(insn 7 16 33 2 (parallel [
+            (set (reg:SI 3 r3 [116])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":47:20 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUIV (const_int 0 [0])
+        (nil)))
+(insn 33 7 37 2 (parallel [
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:115 buf_handle ] [115])
+                        (const_int 8 [0x8])) [1 buf_handle_3(D)->rear+0 S4 A32])
+                (reg:SI 3 r3 [116]))
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:115 buf_handle ] [115])
+                        (const_int 12 [0xc])) [1 buf_handle_3(D)->front+0 S4 A32])
+                (reg:SI 3 r3 [116]))
+        ]) "../System/buf.c":48:19 412 {*thumb2_strd}
+     (nil))
+(note 37 33 34 2 ../System/buf.c:49 NOTE_INSN_BEGIN_STMT)
+(insn 34 37 38 2 (parallel [
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:115 buf_handle ] [115])
+                        (const_int 16 [0x10])) [1 buf_handle_3(D)->data_size+0 S4 A32])
+                (reg:SI 3 r3 [116]))
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:115 buf_handle ] [115])
+                        (const_int 20 [0x14])) [1 buf_handle_3(D)->free_size+0 S4 A32])
+                (reg:SI 2 r2 [orig:119 buf_handle_3(D)->length ] [119]))
+        ]) "../System/buf.c":50:24 412 {*thumb2_strd}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:119 buf_handle_3(D)->length ] [119])
+        (expr_list:REG_DEAD (reg/v/f:SI 0 r0 [orig:115 buf_handle ] [115])
+            (nil))))
+(note 38 34 23 2 ../System/buf.c:52 NOTE_INSN_BEGIN_STMT)
+(insn 23 38 40 2 (set (reg/i:SI 0 r0)
+        (reg:SI 3 r3 [116])) "../System/buf.c":53:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [116])
+        (expr_list:REG_EQUAL (const_int 0 [0])
+            (nil))))
+(note 40 23 24 2 (var_location buf_handle (entry_value:SI (reg:SI 0 r0 [ buf_handle ]))) NOTE_INSN_VAR_LOCATION)
+(insn 24 40 35 2 (use (reg/i:SI 0 r0)) "../System/buf.c":53:1 -1
+     (nil))
+(note 35 24 31 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 31 35 32 2 (simple_return) "../System/buf.c":53:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 32 31 27)
+(note 27 32 28 NOTE_INSN_DELETED)
+(note 28 27 0 NOTE_INSN_DELETED)
+
+;; Function BUF_store_byte (BUF_store_byte, funcdef_no=2, decl_uid=5705, cgraph_uid=3, symbol_order=2)
+
+
+
+BUF_store_byte
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 4 [r4] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 13 [sp] 100 [cc]
+;;  ref usage 	r0={4d,8u} r1={3d,3u} r2={7d,11u} r3={2d,9u,2e} r4={3d,3u} r13={3d,10u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={3d,2u} 
+;;    total ref usage 91{42d,47u,2e} in 27{27 regular + 0 call} insns.
+(note 1 0 136 NOTE_INSN_DELETED)
+(note 136 1 137 (var_location buf_handle (reg:SI 0 r0 [ buf_handle ])) NOTE_INSN_VAR_LOCATION)
+(note 137 136 8 (var_location data (reg:QI 1 r1 [ data ])) NOTE_INSN_VAR_LOCATION)
+(note 8 137 4 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 4 8 126 2 NOTE_INSN_FUNCTION_BEG)
+(note 126 4 11 2 ../System/buf.c:62 NOTE_INSN_BEGIN_STMT)
+(insn 11 126 2 2 (set (reg:SI 2 r2 [orig:113 _1 ] [113])
+        (mem:SI (plus:SI (reg/f:SI 0 r0 [orig:123 buf_handle ] [123])
+                (const_int 16 [0x10])) [1 buf_handle_11(D)->data_size+0 S4 A32])) "../System/buf.c":62:16 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 2 11 12 2 (set (reg/v/f:SI 3 r3 [orig:123 buf_handle ] [123])
+        (reg:SI 0 r0 [136])) "../System/buf.c":60:1 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 12 2 138 2 (set (reg:SI 0 r0 [orig:114 _2 ] [114])
+        (mem:SI (plus:SI (reg/f:SI 0 r0 [orig:123 buf_handle ] [123])
+                (const_int 4 [0x4])) [1 buf_handle_11(D)->length+0 S4 A32])) "../System/buf.c":62:41 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 138 12 13 2 (var_location buf_handle (reg/v/f:SI 3 r3 [orig:123 buf_handle ] [123])) NOTE_INSN_VAR_LOCATION)
+(insn 13 138 14 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 2 r2 [orig:113 _1 ] [113])
+            (reg:SI 0 r0 [orig:114 _2 ] [114]))) "../System/buf.c":62:5 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 14 13 15 2 (set (pc)
+        (if_then_else (geu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 77)
+            (pc))) "../System/buf.c":62:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 77)
+(note 15 14 17 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 17 15 127 3 NOTE_INSN_DELETED)
+(note 127 17 90 3 ../System/buf.c:69 NOTE_INSN_BEGIN_STMT)
+(insn/f 90 127 91 3 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -4 [0xfffffffffffffffc]))) [4  A8])
+                (unspec:BLK [
+                        (reg:SI 4 r4)
+                    ] UNSPEC_PUSH_MULT))
+        ]) "../System/buf.c":60:1 378 {*push_multi}
+     (expr_list:REG_DEAD (reg:SI 4 r4)
+        (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                    (set/f (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -4 [0xfffffffffffffffc])))
+                    (set/f (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32])
+                        (reg:SI 4 r4))
+                ])
+            (nil))))
+(note 91 90 18 3 NOTE_INSN_PROLOGUE_END)
+(jump_insn 18 91 29 3 (parallel [
+            (set (pc)
+                (if_then_else (eq (reg:SI 2 r2 [orig:113 _1 ] [113])
+                        (const_int 0 [0]))
+                    (label_ref:SI 122)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":69:6 1024 {*thumb2_cbz}
+     (expr_list:REG_UNUSED (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 122)
+(note 29 18 128 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 128 29 31 4 ../System/buf.c:77 NOTE_INSN_BEGIN_STMT)
+(insn 31 128 32 4 (set (reg:SI 2 r2 [orig:127 buf_handle_11(D)->rear ] [127])
+        (mem:SI (plus:SI (reg/v/f:SI 3 r3 [orig:123 buf_handle ] [123])
+                (const_int 8 [0x8])) [1 buf_handle_11(D)->rear+0 S4 A32])) "../System/buf.c":77:20 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 3 r3 [orig:123 buf_handle ] [123])
+                (const_int 8 [0x8])) [1 buf_handle_11(D)->rear+0 S4 A32])
+        (nil)))
+(insn 32 31 129 4 (parallel [
+            (set (reg:SI 2 r2 [orig:113 _1 ] [113])
+                (plus:SI (reg:SI 2 r2 [orig:127 buf_handle_11(D)->rear ] [127])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":77:20 1017 {*thumb2_addsi_short}
+     (nil))
+(note 129 32 34 4 ../System/buf.c:79 NOTE_INSN_BEGIN_STMT)
+(insn 34 129 130 4 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 0 r0 [orig:114 _2 ] [114])
+            (reg:SI 2 r2 [orig:113 _1 ] [113]))) "../System/buf.c":79:7 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [orig:114 _2 ] [114])
+        (nil)))
+(note 130 34 43 4 ../System/buf.c:81 NOTE_INSN_BEGIN_STMT)
+(insn 43 130 44 4 (cond_exec (leu (reg:CC 100 cc)
+            (const_int 0 [0]))
+        (set (reg:SI 2 r2 [128])
+            (const_int 0 [0]))) "../System/buf.c":81:22 6567 {*p *thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (expr_list:REG_EQUIV (const_int 0 [0])
+            (nil))))
+(insn 44 43 45 4 (set (mem:SI (plus:SI (reg/v/f:SI 3 r3 [orig:123 buf_handle ] [123])
+                (const_int 8 [0x8])) [1 buf_handle_11(D)->rear+0 S4 A32])
+        (reg:SI 2 r2 [128])) "../System/buf.c":81:22 728 {*thumb2_movsi_vfp}
+     (nil))
+(code_label 45 44 46 5 7 (nil) [1 uses])
+(note 46 45 51 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(note 51 46 139 5 NOTE_INSN_DELETED)
+(note 139 51 140 5 (var_location buf_handle (reg/v/f:SI 3 r3 [orig:123 buf_handle ] [123])) NOTE_INSN_VAR_LOCATION)
+(note 140 139 131 5 (var_location data (reg:QI 1 r1 [ data ])) NOTE_INSN_VAR_LOCATION)
+(note 131 140 132 5 ../System/buf.c:59 NOTE_INSN_INLINE_ENTRY)
+(note 132 131 89 5 ../System/buf.c:87 NOTE_INSN_BEGIN_STMT)
+(insn 89 132 53 5 (set (reg:SI 4 r4 [139])
+        (mem/f:SI (reg/v/f:SI 3 r3 [orig:123 buf_handle ] [123]) [3 buf_handle_11(D)->buffer+0 S4 A32])) "../System/buf.c":87:40 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 53 89 133 5 (set (mem:QI (plus:SI (reg:SI 4 r4 [139])
+                (reg:SI 2 r2 [orig:113 _1 ] [113])) [0 *_19+0 S1 A8])
+        (reg:QI 1 r1 [orig:124 data ] [124])) "../System/buf.c":87:40 263 {*arm_movqi_insn}
+     (expr_list:REG_DEAD (reg:SI 4 r4 [139])
+        (expr_list:REG_DEAD (reg:SI 2 r2 [orig:113 _1 ] [113])
+            (expr_list:REG_DEAD (reg:QI 1 r1 [orig:124 data ] [124])
+                (nil)))))
+(note 133 53 119 5 ../System/buf.c:90 NOTE_INSN_BEGIN_STMT)
+(insn 119 133 141 5 (parallel [
+            (set (reg:SI 1 r1 [orig:132 buf_handle_11(D)->data_size ] [132])
+                (mem:SI (plus:SI (reg/v/f:SI 3 r3 [orig:123 buf_handle ] [123])
+                        (const_int 16 [0x10])) [1 buf_handle_11(D)->data_size+0 S4 A32]))
+            (set (reg:SI 2 r2 [orig:134 buf_handle_11(D)->free_size ] [134])
+                (mem:SI (plus:SI (reg/v/f:SI 3 r3 [orig:123 buf_handle ] [123])
+                        (const_int 20 [0x14])) [1 buf_handle_11(D)->free_size+0 S4 A32]))
+        ]) "../System/buf.c":91:24 409 {*thumb2_ldrd}
+     (nil))
+(note 141 119 142 5 (var_location data (entry_value:QI (reg:QI 1 r1 [ data ]))) NOTE_INSN_VAR_LOCATION)
+(note 142 141 56 5 (var_location data (entry_value:QI (reg:QI 1 r1 [ data ]))) NOTE_INSN_VAR_LOCATION)
+(insn 56 142 60 5 (parallel [
+            (set (reg:SI 1 r1 [131])
+                (plus:SI (reg:SI 1 r1 [orig:132 buf_handle_11(D)->data_size ] [132])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":90:24 1017 {*thumb2_addsi_short}
+     (nil))
+(insn 60 56 6 5 (parallel [
+            (set (reg:SI 2 r2 [133])
+                (plus:SI (reg:SI 2 r2 [orig:134 buf_handle_11(D)->free_size ] [134])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":91:24 1017 {*thumb2_addsi_short}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 3 r3 [orig:123 buf_handle ] [123])
+                (const_int 20 [0x14])) [1 buf_handle_11(D)->free_size+0 S4 A32])
+        (nil)))
+(insn 6 60 120 5 (parallel [
+            (set (reg:SI 0 r0 [orig:122 <retval> ] [122])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":91:24 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(insn 120 6 134 5 (parallel [
+            (set (mem:SI (plus:SI (reg/v/f:SI 3 r3 [orig:123 buf_handle ] [123])
+                        (const_int 16 [0x10])) [1 buf_handle_11(D)->data_size+0 S4 A32])
+                (reg:SI 1 r1 [131]))
+            (set (mem:SI (plus:SI (reg/v/f:SI 3 r3 [orig:123 buf_handle ] [123])
+                        (const_int 20 [0x14])) [1 buf_handle_11(D)->free_size+0 S4 A32])
+                (reg:SI 2 r2 [133]))
+        ]) "../System/buf.c":91:24 412 {*thumb2_strd}
+     (expr_list:REG_DEAD (reg/v/f:SI 3 r3 [orig:123 buf_handle ] [123])
+        (expr_list:REG_DEAD (reg:SI 2 r2 [133])
+            (expr_list:REG_DEAD (reg:SI 1 r1 [131])
+                (nil)))))
+(note 134 120 143 5 ../System/buf.c:93 NOTE_INSN_BEGIN_STMT)
+(note 143 134 144 5 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 144 143 72 5 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(insn 72 144 125 5 (use (reg/i:SI 0 r0)) "../System/buf.c":96:1 -1
+     (nil))
+(note 125 72 93 5 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 93 125 94 5 (set (reg:SI 4 r4)
+        (mem:SI (post_inc:SI (reg/f:SI 13 sp)) [4  S4 A32])) "../System/buf.c":96:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])))
+        (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+            (nil))))
+(jump_insn 94 93 86 5 (simple_return) "../System/buf.c":96:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 86 94 145)
+(note 145 86 146 (var_location buf_handle (reg/v/f:SI 3 r3 [orig:123 buf_handle ] [123])) NOTE_INSN_VAR_LOCATION)
+(note 146 145 77 (var_location data (reg:QI 1 r1 [ data ])) NOTE_INSN_VAR_LOCATION)
+(code_label 77 146 76 6 9 (nil) [1 uses])
+(note 76 77 7 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 7 76 98 6 (parallel [
+            (set (reg:SI 0 r0 [orig:122 <retval> ] [122])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":64:10 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUAL (const_int 1 [0x1])
+        (nil)))
+(insn 98 7 103 6 (use (reg/i:SI 0 r0)) "../System/buf.c":96:1 -1
+     (nil))
+(jump_insn 103 98 102 6 (simple_return) "../System/buf.c":96:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 102 103 122)
+(code_label 122 102 19 7 15 (nil) [1 uses])
+(note 19 122 135 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(note 135 19 121 7 ../System/buf.c:71 NOTE_INSN_BEGIN_STMT)
+(insn 121 135 123 7 (parallel [
+            (set (mem:SI (plus:SI (reg/v/f:SI 3 r3 [orig:123 buf_handle ] [123])
+                        (const_int 8 [0x8])) [1 buf_handle_11(D)->rear+0 S4 A32])
+                (reg:SI 2 r2 [orig:113 _1 ] [113]))
+            (set (mem:SI (plus:SI (reg/v/f:SI 3 r3 [orig:123 buf_handle ] [123])
+                        (const_int 12 [0xc])) [1 buf_handle_11(D)->front+0 S4 A32])
+                (reg:SI 2 r2 [orig:113 _1 ] [113]))
+        ]) "../System/buf.c":72:21 412 {*thumb2_strd}
+     (nil))
+(jump_insn 123 121 124 7 (set (pc)
+        (label_ref 45)) 284 {*arm_jump}
+     (nil)
+ -> 45)
+(barrier 124 123 87)
+(note 87 124 88 NOTE_INSN_DELETED)
+(note 88 87 0 NOTE_INSN_DELETED)
+
+;; Function BUF_store_bytes (BUF_store_bytes, funcdef_no=3, decl_uid=5709, cgraph_uid=4, symbol_order=3)
+
+
+
+BUF_store_bytes
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 4 [r4] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr] 15 [pc] 100 [cc]
+;;  ref usage 	r0={5d,18u,4e} r1={3d,4u} r2={6d,9u} r3={8d,12u} r4={4d,3u} r12={1d,1u} r13={4d,23u} r14={2d,3u} r15={2d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={6d,6u} 
+;;    total ref usage 140{57d,79u,4e} in 44{44 regular + 0 call} insns.
+(note 1 0 244 NOTE_INSN_DELETED)
+(note 244 1 245 (var_location buf_handle (reg:SI 0 r0 [ buf_handle ])) NOTE_INSN_VAR_LOCATION)
+(note 245 244 246 (var_location size (reg:SI 2 r2 [ size ])) NOTE_INSN_VAR_LOCATION)
+(note 246 245 10 (var_location data (reg:SI 1 r1 [ data ])) NOTE_INSN_VAR_LOCATION)
+(note 10 246 5 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 5 10 226 2 NOTE_INSN_FUNCTION_BEG)
+(note 226 5 247 2 ../System/buf.c:101 NOTE_INSN_BEGIN_STMT)
+(note 247 226 227 2 (var_location rtrn_code (const_int 0 [0])) NOTE_INSN_VAR_LOCATION)
+(note 227 247 15 2 ../System/buf.c:104 NOTE_INSN_BEGIN_STMT)
+(insn 15 227 16 2 (set (reg:SI 3 r3 [orig:133 buf_handle_6(D)->free_size ] [133])
+        (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])
+                (const_int 20 [0x14])) [1 buf_handle_6(D)->free_size+0 S4 A32])) "../System/buf.c":104:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])
+                (const_int 20 [0x14])) [1 buf_handle_6(D)->free_size+0 S4 A32])
+        (nil)))
+(insn 16 15 17 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:133 buf_handle_6(D)->free_size ] [133])
+            (reg/v:SI 2 r2 [orig:132 size ] [132]))) "../System/buf.c":104:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:133 buf_handle_6(D)->free_size ] [133])
+        (nil)))
+(jump_insn 17 16 18 2 (set (pc)
+        (if_then_else (ltu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 137)
+            (pc))) "../System/buf.c":104:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 233216732 (nil)))
+ -> 137)
+(note 18 17 24 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 24 18 248 3 NOTE_INSN_DELETED)
+(note 248 24 228 3 (var_location i (const_int 0 [0])) NOTE_INSN_VAR_LOCATION)
+(note 228 248 25 3 ../System/buf.c:111 NOTE_INSN_BEGIN_STMT)
+(jump_insn 25 228 30 3 (parallel [
+            (set (pc)
+                (if_then_else (eq (reg/v:SI 2 r2 [orig:132 size ] [132])
+                        (const_int 0 [0]))
+                    (label_ref:SI 217)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":111:3 1024 {*thumb2_cbz}
+     (expr_list:REG_UNUSED (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 59055804 (nil)))
+ -> 217)
+(note 30 25 33 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 33 30 249 4 (set (reg:SI 2 r2 [134])
+        (plus:SI (reg/v:SI 2 r2 [orig:132 size ] [132])
+            (reg/v/f:SI 1 r1 [orig:131 data ] [131]))) 7 {*arm_addsi3}
+     (nil))
+(note 249 33 166 4 (var_location size (entry_value:SI (reg:SI 2 r2 [ size ]))) NOTE_INSN_VAR_LOCATION)
+(insn/f 166 249 167 4 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [4  A8])
+                (unspec:BLK [
+                        (reg:SI 4 r4)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 14 lr))
+        ]) "../System/buf.c":100:1 378 {*push_multi}
+     (expr_list:REG_DEAD (reg:SI 4 r4)
+        (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                    (set/f (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8])))
+                    (set/f (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32])
+                        (reg:SI 4 r4))
+                    (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                (const_int 4 [0x4])) [4  S4 A32])
+                        (reg:SI 14 lr))
+                ])
+            (nil))))
+(note 167 166 31 4 NOTE_INSN_PROLOGUE_END)
+(insn 31 167 32 4 (set (reg:SI 3 r3 [orig:124 _29 ] [124])
+        (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])
+                (const_int 16 [0x10])) [1 buf_handle_6(D)->data_size+0 S4 A32])) "../System/buf.c":62:16 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 32 31 250 4 (parallel [
+            (set (reg:SI 1 r1 [orig:127 ivtmp.26 ] [127])
+                (plus:SI (reg/v/f:SI 1 r1 [orig:131 data ] [131])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 100 cc))
+        ]) 1017 {*thumb2_addsi_short}
+     (nil))
+(note 250 32 34 4 (var_location data (plus:SI (reg:SI 1 r1 [orig:127 ivtmp.26 ] [127])
+    (const_int 1 [0x1]))) NOTE_INSN_VAR_LOCATION)
+(insn 34 250 81 4 (set (reg:SI 12 ip [orig:114 _4 ] [114])
+        (plus:SI (reg:SI 2 r2 [134])
+            (const_int -1 [0xffffffffffffffff]))) 7 {*arm_addsi3}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [134])
+        (nil)))
+(insn 81 34 218 4 (parallel [
+            (set (reg:SI 4 r4 [145])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":81:22 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUIV (const_int 0 [0])
+        (nil)))
+(jump_insn 218 81 219 4 (set (pc)
+        (label_ref 113)) 284 {*arm_jump}
+     (nil)
+ -> 113)
+(barrier 219 218 251)
+(note 251 219 252 (var_location buf_handle (reg:SI 0 r0 [ buf_handle ])) NOTE_INSN_VAR_LOCATION)
+(note 252 251 253 (var_location i (plus:SI (minus:SI (reg:SI 1 r1 [orig:127 ivtmp.26 ] [127])
+        (entry_value:SI (reg:SI 1 r1 [ data ])))
+    (const_int 1 [0x1]))) NOTE_INSN_VAR_LOCATION)
+(note 253 252 254 (var_location data (entry_value:SI (reg:SI 1 r1 [ data ]))) NOTE_INSN_VAR_LOCATION)
+(note 254 253 255 (var_location buf_handle (reg:SI 0 r0 [ buf_handle ])) NOTE_INSN_VAR_LOCATION)
+(note 255 254 221 (var_location data (mem:QI (plus:SI (reg:SI 1 r1 [orig:127 ivtmp.26 ] [127])
+        (const_int 1 [0x1])) [0 +0 S1 A8])) NOTE_INSN_VAR_LOCATION)
+(code_label 221 255 51 5 33 (nil) [1 uses])
+(note 51 221 55 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(note 55 51 229 5 NOTE_INSN_DELETED)
+(note 229 55 230 5 ../System/buf.c:71 NOTE_INSN_BEGIN_STMT)
+(note 230 229 53 5 ../System/buf.c:77 NOTE_INSN_BEGIN_STMT)
+(insn 53 230 256 5 (set (reg:SI 14 lr [orig:116 _14 ] [116])
+        (zero_extend:SI (mem:QI (pre_inc:SI (reg:SI 1 r1 [orig:127 ivtmp.26 ] [127])) [0 MEM[base: _8, offset: 0B]+0 S1 A8]))) "../System/buf.c":114:16 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_INC (reg:SI 1 r1 [orig:127 ivtmp.26 ] [127])
+        (nil)))
+(note 256 53 257 5 (var_location i (minus:SI (reg:SI 1 r1 [orig:127 ivtmp.26 ] [127])
+    (entry_value:SI (reg:SI 1 r1 [ data ])))) NOTE_INSN_VAR_LOCATION)
+(note 257 256 231 5 (var_location data (mem:QI (reg:SI 1 r1 [orig:127 ivtmp.26 ] [127]) [0 +0 S1 A8])) NOTE_INSN_VAR_LOCATION)
+(note 231 257 56 5 ../System/buf.c:69 NOTE_INSN_BEGIN_STMT)
+(jump_insn 56 231 57 5 (parallel [
+            (set (pc)
+                (if_then_else (ne (reg:SI 3 r3 [orig:124 _29 ] [124])
+                        (const_int 0 [0]))
+                    (label_ref 66)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":69:6 1025 {*thumb2_cbnz}
+     (expr_list:REG_UNUSED (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 66)
+(note 57 56 202 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 202 57 258 6 (parallel [
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])
+                        (const_int 8 [0x8])) [1 buf_handle_6(D)->rear+0 S4 A32])
+                (reg:SI 3 r3 [orig:124 _29 ] [124]))
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])
+                        (const_int 12 [0xc])) [1 buf_handle_6(D)->front+0 S4 A32])
+                (reg:SI 3 r3 [orig:124 _29 ] [124]))
+        ]) "../System/buf.c":72:21 412 {*thumb2_strd}
+     (nil))
+(note 258 202 259 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 259 258 260 (var_location buf_handle (reg:SI 0 r0 [ buf_handle ])) NOTE_INSN_VAR_LOCATION)
+(note 260 259 83 (var_location buf_handle (reg:SI 0 r0 [ buf_handle ])) NOTE_INSN_VAR_LOCATION)
+(code_label 83 260 84 7 20 (nil) [1 uses])
+(note 84 83 261 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(note 261 84 262 7 (var_location buf_handle (reg:SI 0 r0 [ buf_handle ])) NOTE_INSN_VAR_LOCATION)
+(note 262 261 232 7 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 232 262 233 7 ../System/buf.c:59 NOTE_INSN_INLINE_ENTRY)
+(note 233 232 89 7 ../System/buf.c:87 NOTE_INSN_BEGIN_STMT)
+(insn 89 233 91 7 (set (reg/f:SI 2 r2 [orig:139 buf_handle_6(D)->buffer ] [139])
+        (mem/f:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130]) [3 buf_handle_6(D)->buffer+0 S4 A32])) "../System/buf.c":87:40 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem/f:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130]) [3 buf_handle_6(D)->buffer+0 S4 A32])
+        (nil)))
+(insn 91 89 234 7 (set (mem:QI (plus:SI (reg/f:SI 2 r2 [orig:139 buf_handle_6(D)->buffer ] [139])
+                (reg:SI 3 r3 [orig:124 _29 ] [124])) [0 *_27+0 S1 A8])
+        (reg:QI 14 lr [orig:116 _14 ] [116])) "../System/buf.c":87:40 263 {*arm_movqi_insn}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:124 _29 ] [124])
+        (expr_list:REG_DEAD (reg/f:SI 2 r2 [orig:139 buf_handle_6(D)->buffer ] [139])
+            (nil))))
+(note 234 91 200 7 ../System/buf.c:90 NOTE_INSN_BEGIN_STMT)
+(insn 200 234 114 7 (parallel [
+            (set (reg:SI 3 r3 [orig:141 buf_handle_6(D)->data_size ] [141])
+                (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])
+                        (const_int 16 [0x10])) [1 buf_handle_6(D)->data_size+0 S4 A32]))
+            (set (reg:SI 2 r2 [orig:143 buf_handle_6(D)->free_size ] [143])
+                (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])
+                        (const_int 20 [0x14])) [1 buf_handle_6(D)->free_size+0 S4 A32]))
+        ]) "../System/buf.c":91:24 409 {*thumb2_ldrd}
+     (nil))
+(insn 114 200 94 7 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 12 ip [orig:114 _4 ] [114])
+            (reg:SI 1 r1 [orig:127 ivtmp.26 ] [127]))) "../System/buf.c":111:3 268 {*arm_cmpsi_insn}
+     (nil))
+(insn 94 114 98 7 (set (reg:SI 3 r3 [orig:124 _29 ] [124])
+        (plus:SI (reg:SI 3 r3 [orig:141 buf_handle_6(D)->data_size ] [141])
+            (const_int 1 [0x1]))) "../System/buf.c":90:24 7 {*arm_addsi3}
+     (nil))
+(insn 98 94 201 7 (set (reg:SI 2 r2 [142])
+        (plus:SI (reg:SI 2 r2 [orig:143 buf_handle_6(D)->free_size ] [143])
+            (const_int -1 [0xffffffffffffffff]))) "../System/buf.c":91:24 7 {*arm_addsi3}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])
+                (const_int 20 [0x14])) [1 buf_handle_6(D)->free_size+0 S4 A32])
+        (nil)))
+(insn 201 98 235 7 (parallel [
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])
+                        (const_int 16 [0x10])) [1 buf_handle_6(D)->data_size+0 S4 A32])
+                (reg:SI 3 r3 [orig:124 _29 ] [124]))
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])
+                        (const_int 20 [0x14])) [1 buf_handle_6(D)->free_size+0 S4 A32])
+                (reg:SI 2 r2 [142]))
+        ]) "../System/buf.c":91:24 412 {*thumb2_strd}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [142])
+        (nil)))
+(note 235 201 263 7 ../System/buf.c:93 NOTE_INSN_BEGIN_STMT)
+(note 263 235 264 7 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 264 263 265 7 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 265 264 266 7 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 266 265 267 7 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 267 266 236 7 (var_location rtrn_code (const_int 0 [0])) NOTE_INSN_VAR_LOCATION)
+(note 236 267 237 7 ../System/buf.c:117 NOTE_INSN_BEGIN_STMT)
+(note 237 236 268 7 ../System/buf.c:111 NOTE_INSN_BEGIN_STMT)
+(note 268 237 238 7 (var_location i (plus:SI (minus:SI (reg:SI 1 r1 [orig:127 ivtmp.26 ] [127])
+        (entry_value:SI (reg:SI 1 r1 [ data ])))
+    (const_int 1 [0x1]))) NOTE_INSN_VAR_LOCATION)
+(note 238 268 115 7 ../System/buf.c:111 NOTE_INSN_BEGIN_STMT)
+(jump_insn 115 238 269 7 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 220)
+            (pc))) "../System/buf.c":111:3 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 59055804 (nil)))
+ -> 220)
+(note 269 115 270 (var_location buf_handle (reg:SI 0 r0 [ buf_handle ])) NOTE_INSN_VAR_LOCATION)
+(note 270 269 271 (var_location rtrn_code (nil)) NOTE_INSN_VAR_LOCATION)
+(note 271 270 113 (var_location i (nil)) NOTE_INSN_VAR_LOCATION)
+(code_label 113 271 35 8 22 (nil) [1 uses])
+(note 35 113 272 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(note 272 35 239 8 (var_location i (plus:SI (minus:SI (reg:SI 1 r1 [orig:127 ivtmp.26 ] [127])
+        (entry_value:SI (reg:SI 1 r1 [ data ])))
+    (const_int 1 [0x1]))) NOTE_INSN_VAR_LOCATION)
+(note 239 272 273 8 ../System/buf.c:114 NOTE_INSN_BEGIN_STMT)
+(note 273 239 274 8 (var_location buf_handle (reg:SI 0 r0 [ buf_handle ])) NOTE_INSN_VAR_LOCATION)
+(note 274 273 240 8 (var_location data (mem:QI (plus:SI (reg:SI 1 r1 [orig:127 ivtmp.26 ] [127])
+        (const_int 1 [0x1])) [0 +0 S1 A8])) NOTE_INSN_VAR_LOCATION)
+(note 240 274 241 8 ../System/buf.c:59 NOTE_INSN_INLINE_ENTRY)
+(note 241 240 48 8 ../System/buf.c:62 NOTE_INSN_BEGIN_STMT)
+(insn 48 241 49 8 (set (reg:SI 2 r2 [orig:117 _20 ] [117])
+        (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])
+                (const_int 4 [0x4])) [1 buf_handle_6(D)->length+0 S4 A32])) "../System/buf.c":62:41 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 49 48 50 8 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 2 r2 [orig:117 _20 ] [117])
+            (reg:SI 3 r3 [orig:124 _29 ] [124]))) "../System/buf.c":62:5 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 50 49 140 8 (set (pc)
+        (if_then_else (gtu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 221)
+            (pc))) "../System/buf.c":62:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 221)
+(note 140 50 9 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 9 140 275 9 (parallel [
+            (set (reg:SI 0 r0 [orig:129 <retval> ] [129])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":64:10 1016 {*thumb2_movsi_shortim}
+     (nil))
+(note 275 9 276 9 (var_location buf_handle (entry_value:SI (reg:SI 0 r0 [ buf_handle ]))) NOTE_INSN_VAR_LOCATION)
+(note 276 275 277 9 (var_location buf_handle (entry_value:SI (reg:SI 0 r0 [ buf_handle ]))) NOTE_INSN_VAR_LOCATION)
+(note 277 276 278 9 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 278 277 279 9 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 279 278 134 9 (var_location i (nil)) NOTE_INSN_VAR_LOCATION)
+(insn 134 279 224 9 (use (reg/i:SI 0 r0)) "../System/buf.c":124:1 -1
+     (nil))
+(note 224 134 169 9 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 169 224 198 9 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg:SI 4 r4)
+                (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [4  S4 A32]))
+        ]) "../System/buf.c":124:1 381 {*pop_multiple_with_writeback_and_return}
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+            (nil)))
+ -> return)
+(barrier 198 169 280)
+(note 280 198 281 (var_location buf_handle (reg:SI 0 r0 [ buf_handle ])) NOTE_INSN_VAR_LOCATION)
+(note 281 280 282 (var_location i (minus:SI (reg:SI 1 r1 [orig:127 ivtmp.26 ] [127])
+    (entry_value:SI (reg:SI 1 r1 [ data ])))) NOTE_INSN_VAR_LOCATION)
+(note 282 281 283 (var_location data (mem:QI (reg:SI 1 r1 [orig:127 ivtmp.26 ] [127]) [0 +0 S1 A8])) NOTE_INSN_VAR_LOCATION)
+(note 283 282 66 (var_location buf_handle (reg:SI 0 r0 [ buf_handle ])) NOTE_INSN_VAR_LOCATION)
+(code_label 66 283 67 10 19 (nil) [1 uses])
+(note 67 66 242 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(note 242 67 69 10 ../System/buf.c:81 NOTE_INSN_BEGIN_STMT)
+(insn 69 242 70 10 (set (reg:SI 3 r3 [orig:137 buf_handle_6(D)->rear ] [137])
+        (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])
+                (const_int 8 [0x8])) [1 buf_handle_6(D)->rear+0 S4 A32])) "../System/buf.c":77:20 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])
+                (const_int 8 [0x8])) [1 buf_handle_6(D)->rear+0 S4 A32])
+        (nil)))
+(insn 70 69 243 10 (parallel [
+            (set (reg:SI 3 r3 [orig:124 _29 ] [124])
+                (plus:SI (reg:SI 3 r3 [orig:137 buf_handle_6(D)->rear ] [137])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":77:20 1017 {*thumb2_addsi_short}
+     (nil))
+(note 243 70 72 10 ../System/buf.c:79 NOTE_INSN_BEGIN_STMT)
+(insn 72 243 75 10 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 2 r2 [orig:117 _20 ] [117])
+            (reg:SI 3 r3 [orig:124 _29 ] [124]))) "../System/buf.c":79:7 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:117 _20 ] [117])
+        (nil)))
+(insn 75 72 284 10 (cond_exec (gtu (reg:CC 100 cc)
+            (const_int 0 [0]))
+        (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])
+                    (const_int 8 [0x8])) [1 buf_handle_6(D)->rear+0 S4 A32])
+            (reg:SI 3 r3 [orig:124 _29 ] [124]))) "../System/buf.c":77:20 6567 {*p *thumb2_movsi_vfp}
+     (nil))
+(note 284 75 82 10 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(insn 82 284 148 10 (cond_exec (leu (reg:CC 100 cc)
+            (const_int 0 [0]))
+        (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:130 buf_handle ] [130])
+                    (const_int 8 [0x8])) [1 buf_handle_6(D)->rear+0 S4 A32])
+            (reg:SI 4 r4 [145]))) "../System/buf.c":81:22 6567 {*p *thumb2_movsi_vfp}
+     (nil))
+(insn 148 82 222 10 (cond_exec (leu (reg:CC 100 cc)
+            (const_int 0 [0]))
+        (set (reg:SI 3 r3 [orig:124 _29 ] [124])
+            (const_int 0 [0]))) "../System/buf.c":81:22 6567 {*p *thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (nil)))
+(jump_insn 222 148 223 10 (set (pc)
+        (label_ref 83)) 284 {*arm_jump}
+     (nil)
+ -> 83)
+(barrier 223 222 285)
+(note 285 223 286 (var_location rtrn_code (const_int 0 [0])) NOTE_INSN_VAR_LOCATION)
+(note 286 285 287 (var_location buf_handle (reg:SI 0 r0 [ buf_handle ])) NOTE_INSN_VAR_LOCATION)
+(note 287 286 288 (var_location i (plus:SI (minus:SI (reg:SI 1 r1 [orig:127 ivtmp.26 ] [127])
+        (entry_value:SI (reg:SI 1 r1 [ data ])))
+    (const_int 1 [0x1]))) NOTE_INSN_VAR_LOCATION)
+(note 288 287 289 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 289 288 220 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(code_label 220 289 26 11 32 (nil) [1 uses])
+(note 26 220 8 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 8 26 290 11 (parallel [
+            (set (reg:SI 0 r0 [orig:129 <retval> ] [129])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":122:10 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(note 290 8 291 11 (var_location buf_handle (entry_value:SI (reg:SI 0 r0 [ buf_handle ]))) NOTE_INSN_VAR_LOCATION)
+(note 291 290 292 11 (var_location rtrn_code (nil)) NOTE_INSN_VAR_LOCATION)
+(note 292 291 211 11 (var_location i (nil)) NOTE_INSN_VAR_LOCATION)
+(insn 211 292 225 11 (use (reg/i:SI 0 r0)) "../System/buf.c":124:1 -1
+     (nil))
+(note 225 211 213 11 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 213 225 216 11 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg:SI 4 r4)
+                (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [4  S4 A32]))
+        ]) "../System/buf.c":124:1 381 {*pop_multiple_with_writeback_and_return}
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+            (nil)))
+ -> return)
+(barrier 216 213 293)
+(note 293 216 294 (var_location buf_handle (reg:SI 0 r0 [ buf_handle ])) NOTE_INSN_VAR_LOCATION)
+(note 294 293 295 (var_location data (reg:SI 1 r1 [ data ])) NOTE_INSN_VAR_LOCATION)
+(note 295 294 137 (var_location size (reg:SI 2 r2 [ size ])) NOTE_INSN_VAR_LOCATION)
+(code_label 137 295 136 12 24 (nil) [1 uses])
+(note 136 137 7 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 7 136 296 12 (parallel [
+            (set (reg:SI 0 r0 [orig:129 <retval> ] [129])
+                (const_int 3 [0x3]))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":106:10 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUAL (const_int 3 [0x3])
+        (nil)))
+(note 296 7 199 12 (var_location buf_handle (entry_value:SI (reg:SI 0 r0 [ buf_handle ]))) NOTE_INSN_VAR_LOCATION)
+(insn 199 296 162 12 (use (reg/i:SI 0 r0)) -1
+     (nil))
+(jump_insn 162 199 163 12 (simple_return) 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 163 162 164)
+(note 164 163 165 NOTE_INSN_DELETED)
+(note 165 164 297 NOTE_INSN_DELETED)
+(note 297 165 298 (var_location buf_handle (reg:SI 0 r0 [ buf_handle ])) NOTE_INSN_VAR_LOCATION)
+(note 298 297 217 (var_location i (const_int 0 [0])) NOTE_INSN_VAR_LOCATION)
+(code_label 217 298 175 13 31 (nil) [1 uses])
+(note 175 217 173 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(insn 173 175 299 13 (parallel [
+            (set (reg:SI 0 r0 [orig:129 <retval> ] [129])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":122:10 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(note 299 173 300 13 (var_location buf_handle (entry_value:SI (reg:SI 0 r0 [ buf_handle ]))) NOTE_INSN_VAR_LOCATION)
+(note 300 299 185 13 (var_location i (nil)) NOTE_INSN_VAR_LOCATION)
+(insn 185 300 192 13 (use (reg/i:SI 0 r0)) "../System/buf.c":124:1 -1
+     (nil))
+(jump_insn 192 185 193 13 (simple_return) "../System/buf.c":124:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 193 192 0)
+
+;; Function BUF_get_byte (BUF_get_byte, funcdef_no=4, decl_uid=5712, cgraph_uid=5, symbol_order=4)
+
+
+
+BUF_get_byte
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 100 [cc]
+;;  ref usage 	r0={4d,15u,4e} r1={3d,3u} r2={5d,4u} r3={7d,8u} r13={1d,6u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={2d,1u} 
+;;    total ref usage 81{39d,38u,4e} in 27{27 regular + 0 call} insns.
+(note 1 0 82 NOTE_INSN_DELETED)
+(note 82 1 83 (var_location data (reg:SI 1 r1 [ data ])) NOTE_INSN_VAR_LOCATION)
+(note 83 82 8 (var_location buf_handle (reg:SI 0 r0 [ buf_handle ])) NOTE_INSN_VAR_LOCATION)
+(note 8 83 67 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 67 8 4 2 NOTE_INSN_PROLOGUE_END)
+(note 4 67 12 2 NOTE_INSN_FUNCTION_BEG)
+(note 12 4 76 2 NOTE_INSN_DELETED)
+(note 76 12 11 2 ../System/buf.c:136 NOTE_INSN_BEGIN_STMT)
+(insn 11 76 13 2 (set (reg:SI 3 r3 [orig:128 buf_handle_16(D)->data_size ] [128])
+        (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126])
+                (const_int 16 [0x10])) [1 buf_handle_16(D)->data_size+0 S4 A32])) "../System/buf.c":136:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126])
+                (const_int 16 [0x10])) [1 buf_handle_16(D)->data_size+0 S4 A32])
+        (nil)))
+(jump_insn 13 11 14 2 (parallel [
+            (set (pc)
+                (if_then_else (eq (reg:SI 3 r3 [orig:128 buf_handle_16(D)->data_size ] [128])
+                        (const_int 0 [0]))
+                    (label_ref:SI 53)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":136:5 1024 {*thumb2_cbz}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:128 buf_handle_16(D)->data_size ] [128])
+        (expr_list:REG_UNUSED (reg:CC 100 cc)
+            (int_list:REG_BR_PROB 233216732 (nil))))
+ -> 53)
+(note 14 13 34 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 34 14 77 3 NOTE_INSN_DELETED)
+(note 77 34 17 3 ../System/buf.c:142 NOTE_INSN_BEGIN_STMT)
+(insn 17 77 16 3 (set (reg:SI 3 r3 [orig:130 buf_handle_16(D)->front ] [130])
+        (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126])
+                (const_int 12 [0xc])) [1 buf_handle_16(D)->front+0 S4 A32])) "../System/buf.c":142:28 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126])
+                (const_int 12 [0xc])) [1 buf_handle_16(D)->front+0 S4 A32])
+        (nil)))
+(insn 16 17 18 3 (set (reg/f:SI 2 r2 [orig:129 buf_handle_16(D)->buffer ] [129])
+        (mem/f:SI (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126]) [3 buf_handle_16(D)->buffer+0 S4 A32])) "../System/buf.c":142:28 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem/f:SI (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126]) [3 buf_handle_16(D)->buffer+0 S4 A32])
+        (nil)))
+(insn 18 16 20 3 (set (reg:SI 3 r3 [orig:117 _5 ] [117])
+        (zero_extend:SI (mem:QI (plus:SI (reg/f:SI 2 r2 [orig:129 buf_handle_16(D)->buffer ] [129])
+                    (reg:SI 3 r3 [orig:130 buf_handle_16(D)->front ] [130])) [0 *_4+0 S1 A8]))) "../System/buf.c":142:28 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_DEAD (reg/f:SI 2 r2 [orig:129 buf_handle_16(D)->buffer ] [129])
+        (nil)))
+(insn 20 18 78 3 (set (mem:QI (reg/v/f:SI 1 r1 [orig:127 data ] [127]) [0 *data_17(D)+0 S1 A8])
+        (reg:QI 3 r3 [orig:117 _5 ] [117])) "../System/buf.c":142:8 263 {*arm_movqi_insn}
+     (expr_list:REG_DEAD (reg:QI 3 r3 [orig:117 _5 ] [117])
+        (expr_list:REG_DEAD (reg/v/f:SI 1 r1 [orig:127 data ] [127])
+            (nil))))
+(note 78 20 73 3 ../System/buf.c:145 NOTE_INSN_BEGIN_STMT)
+(insn 73 78 84 3 (parallel [
+            (set (reg:SI 1 r1 [orig:133 buf_handle_16(D)->data_size ] [133])
+                (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126])
+                        (const_int 16 [0x10])) [1 buf_handle_16(D)->data_size+0 S4 A32]))
+            (set (reg:SI 2 r2 [orig:135 buf_handle_16(D)->free_size ] [135])
+                (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126])
+                        (const_int 20 [0x14])) [1 buf_handle_16(D)->free_size+0 S4 A32]))
+        ]) "../System/buf.c":146:23 409 {*thumb2_ldrd}
+     (nil))
+(note 84 73 30 3 (var_location data (entry_value:SI (reg:SI 1 r1 [ data ]))) NOTE_INSN_VAR_LOCATION)
+(insn 30 84 27 3 (set (reg:SI 3 r3 [orig:136 buf_handle_16(D)->front ] [136])
+        (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126])
+                (const_int 12 [0xc])) [1 buf_handle_16(D)->front+0 S4 A32])) "../System/buf.c":151:19 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126])
+                (const_int 12 [0xc])) [1 buf_handle_16(D)->front+0 S4 A32])
+        (nil)))
+(insn 27 30 23 3 (parallel [
+            (set (reg:SI 2 r2 [134])
+                (plus:SI (reg:SI 2 r2 [orig:135 buf_handle_16(D)->free_size ] [135])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":146:23 1017 {*thumb2_addsi_short}
+     (nil))
+(insn 23 27 74 3 (parallel [
+            (set (reg:SI 1 r1 [132])
+                (plus:SI (reg:SI 1 r1 [orig:133 buf_handle_16(D)->data_size ] [133])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":145:23 1017 {*thumb2_addsi_short}
+     (nil))
+(insn 74 23 79 3 (parallel [
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126])
+                        (const_int 16 [0x10])) [1 buf_handle_16(D)->data_size+0 S4 A32])
+                (reg:SI 1 r1 [132]))
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126])
+                        (const_int 20 [0x14])) [1 buf_handle_16(D)->free_size+0 S4 A32])
+                (reg:SI 2 r2 [134]))
+        ]) "../System/buf.c":146:23 412 {*thumb2_strd}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [134])
+        (expr_list:REG_DEAD (reg:SI 1 r1 [132])
+            (nil))))
+(note 79 74 66 3 ../System/buf.c:151 NOTE_INSN_BEGIN_STMT)
+(insn 66 79 31 3 (set (reg:SI 2 r2 [143])
+        (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126])
+                (const_int 4 [0x4])) [1 buf_handle_16(D)->length+0 S4 A32])) "../System/buf.c":153:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 31 66 35 3 (parallel [
+            (set (reg:SI 3 r3 [orig:123 _11 ] [123])
+                (plus:SI (reg:SI 3 r3 [orig:136 buf_handle_16(D)->front ] [136])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":151:19 1017 {*thumb2_addsi_short}
+     (nil))
+(insn 35 31 32 3 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:123 _11 ] [123])
+            (reg:SI 2 r2 [143]))) "../System/buf.c":153:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:123 _11 ] [123])
+        (expr_list:REG_DEAD (reg:SI 2 r2 [143])
+            (nil))))
+(insn 32 35 80 3 (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126])
+                (const_int 12 [0xc])) [1 buf_handle_16(D)->front+0 S4 A32])
+        (reg:SI 3 r3 [orig:123 _11 ] [123])) "../System/buf.c":151:19 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 80 32 36 3 ../System/buf.c:153 NOTE_INSN_BEGIN_STMT)
+(jump_insn 36 80 37 3 (set (pc)
+        (if_then_else (ltu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 57)
+            (pc))) "../System/buf.c":153:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 57)
+(note 37 36 81 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 81 37 39 4 ../System/buf.c:155 NOTE_INSN_BEGIN_STMT)
+(insn 39 81 40 4 (parallel [
+            (set (reg:SI 3 r3 [138])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":155:21 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUIV (const_int 0 [0])
+        (nil)))
+(insn 40 39 6 4 (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126])
+                (const_int 12 [0xc])) [1 buf_handle_16(D)->front+0 S4 A32])
+        (reg:SI 3 r3 [138])) "../System/buf.c":155:21 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v/f:SI 0 r0 [orig:126 buf_handle ] [126])
+        (nil)))
+(insn 6 40 85 4 (set (reg:SI 0 r0 [orig:125 <retval> ] [125])
+        (reg:SI 3 r3 [138])) "../System/buf.c":158:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [138])
+        (nil)))
+(note 85 6 71 4 (var_location buf_handle (entry_value:SI (reg:SI 0 r0 [ buf_handle ]))) NOTE_INSN_VAR_LOCATION)
+(insn 71 85 60 4 (use (reg/i:SI 0 r0)) -1
+     (nil))
+(jump_insn 60 71 61 4 (simple_return) 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 61 60 86)
+(note 86 61 57 (var_location buf_handle (reg:SI 0 r0 [ buf_handle ])) NOTE_INSN_VAR_LOCATION)
+(code_label 57 86 56 5 37 (nil) [1 uses])
+(note 56 57 7 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 7 56 87 5 (parallel [
+            (set (reg:SI 0 r0 [orig:125 <retval> ] [125])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":158:9 1016 {*thumb2_movsi_shortim}
+     (nil))
+(note 87 7 48 5 (var_location buf_handle (entry_value:SI (reg:SI 0 r0 [ buf_handle ]))) NOTE_INSN_VAR_LOCATION)
+(insn 48 87 75 5 (use (reg/i:SI 0 r0)) "../System/buf.c":160:1 -1
+     (nil))
+(note 75 48 69 5 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 69 75 70 5 (simple_return) "../System/buf.c":160:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 70 69 88)
+(note 88 70 89 (var_location data (reg:SI 1 r1 [ data ])) NOTE_INSN_VAR_LOCATION)
+(note 89 88 53 (var_location buf_handle (reg:SI 0 r0 [ buf_handle ])) NOTE_INSN_VAR_LOCATION)
+(code_label 53 89 52 6 36 (nil) [1 uses])
+(note 52 53 5 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 5 52 90 6 (parallel [
+            (set (reg:SI 0 r0 [orig:125 <retval> ] [125])
+                (const_int 2 [0x2]))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":138:10 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUAL (const_int 2 [0x2])
+        (nil)))
+(note 90 5 72 6 (var_location buf_handle (entry_value:SI (reg:SI 0 r0 [ buf_handle ]))) NOTE_INSN_VAR_LOCATION)
+(insn 72 90 62 6 (use (reg/i:SI 0 r0)) -1
+     (nil))
+(jump_insn 62 72 63 6 (simple_return) 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 63 62 64)
+(note 64 63 65 NOTE_INSN_DELETED)
+(note 65 64 0 NOTE_INSN_DELETED)
+
+;; Function BUF_get_bytes (BUF_get_bytes, funcdef_no=5, decl_uid=5716, cgraph_uid=6, symbol_order=5)
+
+
+
+BUF_get_bytes
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 5 [r5] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 4 [r4] 5 [r5] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 5 [r5] 12 [ip] 13 [sp] 100 [cc]
+;;  ref usage 	r0={4d,15u,3e} r1={3d,4u} r2={4d,5u} r3={6d,6u} r4={8d,8u} r5={5d,3u} r12={1d,1u} r13={5d,23u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={5d,4u} 
+;;    total ref usage 131{58d,70u,3e} in 38{38 regular + 0 call} insns.
+(note 1 0 194 NOTE_INSN_DELETED)
+(note 194 1 195 (var_location size (reg:SI 2 r2 [ size ])) NOTE_INSN_VAR_LOCATION)
+(note 195 194 196 (var_location buf_handle (reg:SI 0 r0 [ buf_handle ])) NOTE_INSN_VAR_LOCATION)
+(note 196 195 10 (var_location data (reg:SI 1 r1 [ data ])) NOTE_INSN_VAR_LOCATION)
+(note 10 196 4 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 4 10 5 2 NOTE_INSN_DELETED)
+(note 5 4 174 2 NOTE_INSN_FUNCTION_BEG)
+(note 174 5 175 2 ../System/buf.c:166 NOTE_INSN_BEGIN_STMT)
+(note 175 174 176 2 ../System/buf.c:167 NOTE_INSN_BEGIN_STMT)
+(note 176 175 145 2 ../System/buf.c:170 NOTE_INSN_BEGIN_STMT)
+(insn/f 145 176 146 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [4  A8])
+                (unspec:BLK [
+                        (reg:SI 4 r4)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 5 r5))
+        ]) "../System/buf.c":165:1 378 {*push_multi}
+     (expr_list:REG_DEAD (reg:SI 5 r5)
+        (expr_list:REG_DEAD (reg:SI 4 r4)
+            (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                        (set/f (reg/f:SI 13 sp)
+                            (plus:SI (reg/f:SI 13 sp)
+                                (const_int -8 [0xfffffffffffffff8])))
+                        (set/f (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32])
+                            (reg:SI 4 r4))
+                        (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                    (const_int 4 [0x4])) [4  S4 A32])
+                            (reg:SI 5 r5))
+                    ])
+                (nil)))))
+(note 146 145 15 2 NOTE_INSN_PROLOGUE_END)
+(insn 15 146 197 2 (set (reg/v:SI 4 r4 [orig:114 buf_data_size ] [114])
+        (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:131 buf_handle ] [131])
+                (const_int 16 [0x10])) [1 buf_handle_8(D)->data_size+0 S4 A32])) "../System/buf.c":170:16 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 197 15 177 2 (var_location buf_data_size (reg/v:SI 4 r4 [orig:114 buf_data_size ] [114])) NOTE_INSN_VAR_LOCATION)
+(note 177 197 18 2 ../System/buf.c:171 NOTE_INSN_BEGIN_STMT)
+(insn 18 177 19 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 4 r4 [orig:114 buf_data_size ] [114])
+            (reg:SI 2 r2 [149]))) "../System/buf.c":171:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [149])
+        (nil)))
+(jump_insn 19 18 20 2 (set (pc)
+        (if_then_else (ltu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 115)
+            (pc))) "../System/buf.c":171:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 233216732 (nil)))
+ -> 115)
+(note 20 19 23 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 23 20 198 3 NOTE_INSN_DELETED)
+(note 198 23 178 3 (var_location i (const_int 0 [0])) NOTE_INSN_VAR_LOCATION)
+(note 178 198 24 3 ../System/buf.c:174 NOTE_INSN_BEGIN_STMT)
+(jump_insn 24 178 96 3 (parallel [
+            (set (pc)
+                (if_then_else (eq (reg/v:SI 4 r4 [orig:114 buf_data_size ] [114])
+                        (const_int 0 [0]))
+                    (label_ref:SI 83)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":174:3 1024 {*thumb2_cbz}
+     (expr_list:REG_UNUSED (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 59055804 (nil)))
+ -> 83)
+(note 96 24 199 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 199 96 179 4 (var_location i (const_int 0 [0])) NOTE_INSN_VAR_LOCATION)
+(note 179 199 200 4 ../System/buf.c:177 NOTE_INSN_BEGIN_STMT)
+(note 200 179 201 4 (var_location buf_handle (reg:SI 0 r0 [ buf_handle ])) NOTE_INSN_VAR_LOCATION)
+(note 201 200 180 4 (var_location data (reg:SI 1 r1 [ data ])) NOTE_INSN_VAR_LOCATION)
+(note 180 201 181 4 ../System/buf.c:133 NOTE_INSN_INLINE_ENTRY)
+(note 181 180 104 4 ../System/buf.c:136 NOTE_INSN_BEGIN_STMT)
+(insn 104 181 202 4 (parallel [
+            (set (reg:SI 1 r1 [orig:127 ivtmp.40 ] [127])
+                (plus:SI (reg/v/f:SI 1 r1 [orig:132 data ] [132])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 100 cc))
+        ]) 1017 {*thumb2_addsi_short}
+     (nil))
+(note 202 104 203 4 (var_location data (plus:SI (reg:SI 1 r1 [orig:127 ivtmp.40 ] [127])
+    (const_int 1 [0x1]))) NOTE_INSN_VAR_LOCATION)
+(note 203 202 103 4 (var_location data (plus:SI (reg:SI 1 r1 [orig:127 ivtmp.40 ] [127])
+    (const_int 1 [0x1]))) NOTE_INSN_VAR_LOCATION)
+(insn 103 203 106 4 (set (reg:SI 3 r3 [orig:129 prephitmp_42 ] [129])
+        (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:131 buf_handle ] [131])
+                (const_int 12 [0xc])) [1 buf_handle_8(D)->front+0 S4 A32])) "../System/buf.c":142:39 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 106 103 65 4 (set (reg:SI 12 ip [orig:113 _3 ] [113])
+        (plus:SI (reg:SI 1 r1 [orig:127 ivtmp.40 ] [127])
+            (reg/v:SI 4 r4 [orig:114 buf_data_size ] [114]))) 7 {*arm_addsi3}
+     (expr_list:REG_DEAD (reg/v:SI 4 r4 [orig:114 buf_data_size ] [114])
+        (nil)))
+(insn 65 106 204 4 (parallel [
+            (set (reg:SI 5 r5 [144])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":155:21 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUIV (const_int 0 [0])
+        (nil)))
+(note 204 65 205 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 205 204 206 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 206 205 207 (var_location data (entry_value:SI (reg:SI 1 r1 [ data ]))) NOTE_INSN_VAR_LOCATION)
+(note 207 206 208 (var_location size (entry_value:SI (reg:SI 2 r2 [ size ]))) NOTE_INSN_VAR_LOCATION)
+(note 208 207 209 (var_location buf_data_size (nil)) NOTE_INSN_VAR_LOCATION)
+(note 209 208 107 (var_location i (nil)) NOTE_INSN_VAR_LOCATION)
+(code_label 107 209 37 5 44 (nil) [1 uses])
+(note 37 107 60 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(note 60 37 210 5 NOTE_INSN_DELETED)
+(note 210 60 182 5 (var_location i (nil)) NOTE_INSN_VAR_LOCATION)
+(note 182 210 211 5 ../System/buf.c:177 NOTE_INSN_BEGIN_STMT)
+(note 211 182 212 5 (var_location i (plus:SI (minus:SI (reg:SI 1 r1 [orig:127 ivtmp.40 ] [127])
+        (entry_value:SI (reg:SI 1 r1 [ data ])))
+    (const_int 1 [0x1]))) NOTE_INSN_VAR_LOCATION)
+(note 212 211 213 5 (var_location buf_handle (reg:SI 0 r0 [ buf_handle ])) NOTE_INSN_VAR_LOCATION)
+(note 213 212 183 5 (var_location data (plus:SI (reg:SI 1 r1 [orig:127 ivtmp.40 ] [127])
+    (const_int 1 [0x1]))) NOTE_INSN_VAR_LOCATION)
+(note 183 213 184 5 ../System/buf.c:142 NOTE_INSN_BEGIN_STMT)
+(note 184 183 214 5 ../System/buf.c:155 NOTE_INSN_BEGIN_STMT)
+(note 214 184 215 5 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 215 214 185 5 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 185 215 42 5 ../System/buf.c:174 NOTE_INSN_BEGIN_STMT)
+(insn 42 185 43 5 (set (reg/f:SI 2 r2 [orig:134 buf_handle_8(D)->buffer ] [134])
+        (mem/f:SI (reg/v/f:SI 0 r0 [orig:131 buf_handle ] [131]) [3 buf_handle_8(D)->buffer+0 S4 A32])) "../System/buf.c":142:28 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem/f:SI (reg/v/f:SI 0 r0 [orig:131 buf_handle ] [131]) [3 buf_handle_8(D)->buffer+0 S4 A32])
+        (nil)))
+(insn 43 42 46 5 (set (reg:SI 3 r3 [orig:117 _18 ] [117])
+        (zero_extend:SI (mem:QI (plus:SI (reg/f:SI 2 r2 [orig:134 buf_handle_8(D)->buffer ] [134])
+                    (reg:SI 3 r3 [orig:129 prephitmp_42 ] [129])) [0 *_17+0 S1 A8]))) "../System/buf.c":142:28 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_DEAD (reg/f:SI 2 r2 [orig:134 buf_handle_8(D)->buffer ] [134])
+        (nil)))
+(insn 46 43 216 5 (set (mem:QI (pre_inc:SI (reg:SI 1 r1 [orig:127 ivtmp.40 ] [127])) [0 MEM[base: _32, offset: 0B]+0 S1 A8])
+        (reg:QI 3 r3 [orig:117 _18 ] [117])) "../System/buf.c":142:8 263 {*arm_movqi_insn}
+     (expr_list:REG_DEAD (reg:QI 3 r3 [orig:117 _18 ] [117])
+        (expr_list:REG_INC (reg:SI 1 r1 [orig:127 ivtmp.40 ] [127])
+            (nil))))
+(note 216 46 217 5 (var_location i (minus:SI (reg:SI 1 r1 [orig:127 ivtmp.40 ] [127])
+    (entry_value:SI (reg:SI 1 r1 [ data ])))) NOTE_INSN_VAR_LOCATION)
+(note 217 216 186 5 (var_location data (plus:SI (reg:SI 1 r1 [orig:127 ivtmp.40 ] [127])
+    (const_int 1 [0x1]))) NOTE_INSN_VAR_LOCATION)
+(note 186 217 187 5 ../System/buf.c:133 NOTE_INSN_INLINE_ENTRY)
+(note 187 186 188 5 ../System/buf.c:136 NOTE_INSN_BEGIN_STMT)
+(note 188 187 218 5 ../System/buf.c:145 NOTE_INSN_BEGIN_STMT)
+(note 218 188 189 5 (var_location i (plus:SI (minus:SI (reg:SI 1 r1 [orig:127 ivtmp.40 ] [127])
+        (entry_value:SI (reg:SI 1 r1 [ data ])))
+    (const_int 1 [0x1]))) NOTE_INSN_VAR_LOCATION)
+(note 189 218 52 5 ../System/buf.c:174 NOTE_INSN_BEGIN_STMT)
+(insn 52 189 153 5 (set (reg:SI 4 r4 [orig:138 buf_handle_8(D)->free_size ] [138])
+        (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:131 buf_handle ] [131])
+                (const_int 20 [0x14])) [1 buf_handle_8(D)->free_size+0 S4 A32])) "../System/buf.c":146:23 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:131 buf_handle ] [131])
+                (const_int 20 [0x14])) [1 buf_handle_8(D)->free_size+0 S4 A32])
+        (nil)))
+(insn 153 52 53 5 (parallel [
+            (set (reg:SI 3 r3 [orig:139 buf_handle_8(D)->front ] [139])
+                (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:131 buf_handle ] [131])
+                        (const_int 12 [0xc])) [1 buf_handle_8(D)->front+0 S4 A32]))
+            (set (reg:SI 2 r2 [orig:136 buf_handle_8(D)->data_size ] [136])
+                (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:131 buf_handle ] [131])
+                        (const_int 16 [0x10])) [1 buf_handle_8(D)->data_size+0 S4 A32]))
+        ]) "../System/buf.c":145:23 409 {*thumb2_ldrd}
+     (nil))
+(insn 53 153 54 5 (parallel [
+            (set (reg:SI 4 r4 [137])
+                (plus:SI (reg:SI 4 r4 [orig:138 buf_handle_8(D)->free_size ] [138])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":146:23 1017 {*thumb2_addsi_short}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:131 buf_handle ] [131])
+                (const_int 20 [0x14])) [1 buf_handle_8(D)->free_size+0 S4 A32])
+        (nil)))
+(insn 54 53 144 5 (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:131 buf_handle ] [131])
+                (const_int 20 [0x14])) [1 buf_handle_8(D)->free_size+0 S4 A32])
+        (reg:SI 4 r4 [137])) "../System/buf.c":146:23 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 4 r4 [137])
+        (nil)))
+(insn 144 54 57 5 (set (reg:SI 4 r4 [151])
+        (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:131 buf_handle ] [131])
+                (const_int 4 [0x4])) [1 buf_handle_8(D)->length+0 S4 A32])) "../System/buf.c":153:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 57 144 61 5 (parallel [
+            (set (reg:SI 3 r3 [orig:129 prephitmp_42 ] [129])
+                (plus:SI (reg:SI 3 r3 [orig:139 buf_handle_8(D)->front ] [139])
+                    (const_int 1 [0x1])))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":151:19 1017 {*thumb2_addsi_short}
+     (nil))
+(insn 61 57 49 5 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:129 prephitmp_42 ] [129])
+            (reg:SI 4 r4 [151]))) "../System/buf.c":153:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 4 r4 [151])
+        (nil)))
+(insn 49 61 154 5 (set (reg:SI 2 r2 [orig:119 _20 ] [119])
+        (plus:SI (reg:SI 2 r2 [orig:136 buf_handle_8(D)->data_size ] [136])
+            (const_int -1 [0xffffffffffffffff]))) "../System/buf.c":145:23 7 {*arm_addsi3}
+     (nil))
+(insn 154 49 190 5 (parallel [
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:131 buf_handle ] [131])
+                        (const_int 12 [0xc])) [1 buf_handle_8(D)->front+0 S4 A32])
+                (reg:SI 3 r3 [orig:129 prephitmp_42 ] [129]))
+            (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:131 buf_handle ] [131])
+                        (const_int 16 [0x10])) [1 buf_handle_8(D)->data_size+0 S4 A32])
+                (reg:SI 2 r2 [orig:119 _20 ] [119]))
+        ]) "../System/buf.c":145:23 412 {*thumb2_strd}
+     (nil))
+(note 190 154 191 5 ../System/buf.c:146 NOTE_INSN_BEGIN_STMT)
+(note 191 190 192 5 ../System/buf.c:151 NOTE_INSN_BEGIN_STMT)
+(note 192 191 66 5 ../System/buf.c:153 NOTE_INSN_BEGIN_STMT)
+(insn 66 192 219 5 (cond_exec (geu (reg:CC 100 cc)
+            (const_int 0 [0]))
+        (set (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:131 buf_handle ] [131])
+                    (const_int 12 [0xc])) [1 buf_handle_8(D)->front+0 S4 A32])
+            (reg:SI 5 r5 [144]))) "../System/buf.c":155:21 6567 {*p *thumb2_movsi_vfp}
+     (nil))
+(note 219 66 220 5 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 220 219 193 5 (var_location rtnr_code (const_int 0 [0])) NOTE_INSN_VAR_LOCATION)
+(note 193 220 125 5 ../System/buf.c:180 NOTE_INSN_BEGIN_STMT)
+(insn 125 193 81 5 (cond_exec (geu (reg:CC 100 cc)
+            (const_int 0 [0]))
+        (set (reg:SI 3 r3 [orig:129 prephitmp_42 ] [129])
+            (const_int 0 [0]))) "../System/buf.c":155:21 6567 {*p *thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (nil)))
+(insn 81 125 82 5 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 12 ip [orig:113 _3 ] [113])
+            (reg:SI 1 r1 [orig:127 ivtmp.40 ] [127]))) "../System/buf.c":174:3 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 82 81 28 5 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 83)
+            (pc))) "../System/buf.c":174:3 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 59055804 (nil)))
+ -> 83)
+(note 28 82 35 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(note 35 28 36 6 NOTE_INSN_DELETED)
+(jump_insn 36 35 118 6 (parallel [
+            (set (pc)
+                (if_then_else (ne (reg:SI 2 r2 [orig:119 _20 ] [119])
+                        (const_int 0 [0]))
+                    (label_ref:SI 107)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":136:5 1025 {*thumb2_cbnz}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:119 _20 ] [119])
+        (expr_list:REG_UNUSED (reg:CC 100 cc)
+            (int_list:REG_BR_PROB 758475876 (nil))))
+ -> 107)
+(note 118 36 9 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 9 118 221 7 (parallel [
+            (set (reg:SI 0 r0 [orig:130 <retval> ] [130])
+                (const_int 2 [0x2]))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":138:10 1016 {*thumb2_movsi_shortim}
+     (nil))
+(note 221 9 222 7 (var_location buf_handle (entry_value:SI (reg:SI 0 r0 [ buf_handle ]))) NOTE_INSN_VAR_LOCATION)
+(note 222 221 171 7 (var_location rtnr_code (nil)) NOTE_INSN_VAR_LOCATION)
+(note 171 222 148 7 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 148 171 112 7 (parallel [
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg:SI 4 r4)
+                (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32]))
+            (set/f (reg:SI 5 r5)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [4  S4 A32]))
+        ]) "../System/buf.c":193:1 380 {*load_multiple_with_writeback}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 8 [0x8])))
+        (expr_list:REG_CFA_RESTORE (reg:SI 5 r5)
+            (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+                (nil)))))
+(insn 112 148 149 7 (use (reg/i:SI 0 r0)) "../System/buf.c":193:1 -1
+     (nil))
+(jump_insn 149 112 152 7 (simple_return) "../System/buf.c":193:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 152 149 223)
+(note 223 152 224 (var_location buf_handle (reg:SI 0 r0 [ buf_handle ])) NOTE_INSN_VAR_LOCATION)
+(note 224 223 225 (var_location data (reg:SI 1 r1 [ data ])) NOTE_INSN_VAR_LOCATION)
+(note 225 224 226 (var_location size (reg:SI 2 r2 [ size ])) NOTE_INSN_VAR_LOCATION)
+(note 226 225 227 (var_location buf_data_size (reg/v:SI 4 r4 [orig:114 buf_data_size ] [114])) NOTE_INSN_VAR_LOCATION)
+(note 227 226 115 (var_location i (nil)) NOTE_INSN_VAR_LOCATION)
+(code_label 115 227 114 8 45 (nil) [1 uses])
+(note 114 115 7 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 7 114 228 8 (parallel [
+            (set (reg:SI 0 r0 [orig:130 <retval> ] [130])
+                (const_int 4 [0x4]))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":190:10 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUAL (const_int 4 [0x4])
+        (nil)))
+(note 228 7 172 8 (var_location buf_handle (entry_value:SI (reg:SI 0 r0 [ buf_handle ]))) NOTE_INSN_VAR_LOCATION)
+(note 172 228 158 8 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 158 172 229 8 (parallel [
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg:SI 4 r4)
+                (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32]))
+            (set/f (reg:SI 5 r5)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [4  S4 A32]))
+        ]) "../System/buf.c":193:1 380 {*load_multiple_with_writeback}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 8 [0x8])))
+        (expr_list:REG_CFA_RESTORE (reg:SI 5 r5)
+            (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+                (nil)))))
+(note 229 158 156 8 (var_location buf_data_size (mem:SI (plus:SI (entry_value:SI (reg:SI 0 r0 [ buf_handle ]))
+        (const_int 16 [0x10])) [1 buf_handle_8(D)->data_size+0 S4 A32])) NOTE_INSN_VAR_LOCATION)
+(insn 156 229 159 8 (use (reg/i:SI 0 r0)) "../System/buf.c":193:1 -1
+     (nil))
+(jump_insn 159 156 162 8 (simple_return) "../System/buf.c":193:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 162 159 230)
+(note 230 162 231 (var_location buf_handle (reg:SI 0 r0 [ buf_handle ])) NOTE_INSN_VAR_LOCATION)
+(note 231 230 232 (var_location data (entry_value:SI (reg:SI 1 r1 [ data ]))) NOTE_INSN_VAR_LOCATION)
+(note 232 231 233 (var_location size (entry_value:SI (reg:SI 2 r2 [ size ]))) NOTE_INSN_VAR_LOCATION)
+(note 233 232 83 (var_location buf_data_size (nil)) NOTE_INSN_VAR_LOCATION)
+(code_label 83 233 25 9 43 (nil) [2 uses])
+(note 25 83 8 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 8 25 234 9 (parallel [
+            (set (reg:SI 0 r0 [orig:130 <retval> ] [130])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/buf.c":185:10 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(note 234 8 173 9 (var_location buf_handle (entry_value:SI (reg:SI 0 r0 [ buf_handle ]))) NOTE_INSN_VAR_LOCATION)
+(note 173 234 166 9 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 166 173 164 9 (parallel [
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg:SI 4 r4)
+                (mem/c:SI (reg/f:SI 13 sp) [4  S4 A32]))
+            (set/f (reg:SI 5 r5)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [4  S4 A32]))
+        ]) "../System/buf.c":193:1 380 {*load_multiple_with_writeback}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 8 [0x8])))
+        (expr_list:REG_CFA_RESTORE (reg:SI 5 r5)
+            (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+                (nil)))))
+(insn 164 166 167 9 (use (reg/i:SI 0 r0)) "../System/buf.c":193:1 -1
+     (nil))
+(jump_insn 167 164 170 9 (simple_return) "../System/buf.c":193:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 170 167 142)
+(note 142 170 143 NOTE_INSN_DELETED)
+(note 143 142 0 NOTE_INSN_DELETED)
+
+;; Function BUF_get_data_size (BUF_get_data_size, funcdef_no=6, decl_uid=5718, cgraph_uid=7, symbol_order=6)
+
+
+
+BUF_get_data_size
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0]
+;;  ref usage 	r0={2d,3u} r1={1d} r2={1d} r3={1d} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 29{23d,6u,0e} in 3{3 regular + 0 call} insns.
+(note 1 0 24 NOTE_INSN_DELETED)
+(note 24 1 4 (var_location buf_handle (reg:SI 0 r0 [ buf_handle ])) NOTE_INSN_VAR_LOCATION)
+(note 4 24 18 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 18 4 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 18 3 2 NOTE_INSN_DELETED)
+(note 3 2 7 2 NOTE_INSN_FUNCTION_BEG)
+(note 7 3 23 2 NOTE_INSN_DELETED)
+(note 23 7 12 2 ../System/buf.c:200 NOTE_INSN_BEGIN_STMT)
+(insn 12 23 25 2 (set (reg/i:SI 0 r0)
+        (mem:SI (plus:SI (reg:SI 0 r0 [117])
+                (const_int 16 [0x10])) [1 buf_handle_2(D)->data_size+0 S4 A32])) "../System/buf.c":201:1 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 25 12 13 2 (var_location buf_handle (entry_value:SI (reg:SI 0 r0 [ buf_handle ]))) NOTE_INSN_VAR_LOCATION)
+(insn 13 25 22 2 (use (reg/i:SI 0 r0)) "../System/buf.c":201:1 -1
+     (nil))
+(note 22 13 20 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 20 22 21 2 (simple_return) "../System/buf.c":201:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 21 20 16)
+(note 16 21 17 NOTE_INSN_DELETED)
+(note 17 16 0 NOTE_INSN_DELETED)
+
+;; Function BUF_get_free_size (BUF_get_free_size, funcdef_no=7, decl_uid=5720, cgraph_uid=8, symbol_order=7)
+
+
+
+BUF_get_free_size
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0]
+;;  ref usage 	r0={2d,3u} r1={1d} r2={1d} r3={1d} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 29{23d,6u,0e} in 3{3 regular + 0 call} insns.
+(note 1 0 24 NOTE_INSN_DELETED)
+(note 24 1 4 (var_location buf_handle (reg:SI 0 r0 [ buf_handle ])) NOTE_INSN_VAR_LOCATION)
+(note 4 24 18 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 18 4 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 18 3 2 NOTE_INSN_DELETED)
+(note 3 2 7 2 NOTE_INSN_FUNCTION_BEG)
+(note 7 3 23 2 NOTE_INSN_DELETED)
+(note 23 7 12 2 ../System/buf.c:207 NOTE_INSN_BEGIN_STMT)
+(insn 12 23 25 2 (set (reg/i:SI 0 r0)
+        (mem:SI (plus:SI (reg:SI 0 r0 [117])
+                (const_int 20 [0x14])) [1 buf_handle_2(D)->free_size+0 S4 A32])) "../System/buf.c":208:1 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 25 12 13 2 (var_location buf_handle (entry_value:SI (reg:SI 0 r0 [ buf_handle ]))) NOTE_INSN_VAR_LOCATION)
+(insn 13 25 22 2 (use (reg/i:SI 0 r0)) "../System/buf.c":208:1 -1
+     (nil))
+(note 22 13 20 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 20 22 21 2 (simple_return) "../System/buf.c":208:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 21 20 16)
+(note 16 21 17 NOTE_INSN_DELETED)
+(note 17 16 0 NOTE_INSN_DELETED)
+
+;; Function BUF_demo (BUF_demo, funcdef_no=8, decl_uid=5722, cgraph_uid=9, symbol_order=8)
+
+
+
+BUF_demo
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 25{22d,3u,0e} in 1{1 regular + 0 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 294 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 294 3 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 294 298 2 NOTE_INSN_FUNCTION_BEG)
+(note 298 2 299 2 ../System/buf.c:224 NOTE_INSN_BEGIN_STMT)
+(note 299 298 425 2 ../System/buf.c:226 NOTE_INSN_BEGIN_STMT)
+(note 425 299 300 2 (var_location data (const_int 0 [0])) NOTE_INSN_VAR_LOCATION)
+(note 300 425 301 2 ../System/buf.c:227 NOTE_INSN_BEGIN_STMT)
+(note 301 300 302 2 ../System/buf.c:228 NOTE_INSN_BEGIN_STMT)
+(note 302 301 426 2 ../System/buf.c:230 NOTE_INSN_BEGIN_STMT)
+(note 426 302 427 2 (var_location buf_handle (debug_implicit_ptr:SI test_buf_handle)) NOTE_INSN_VAR_LOCATION)
+(note 427 426 428 2 (var_location buffer_ptr (debug_implicit_ptr:SI test_buffer)) NOTE_INSN_VAR_LOCATION)
+(note 428 427 303 2 (var_location buf_length (const_int 4 [0x4])) NOTE_INSN_VAR_LOCATION)
+(note 303 428 304 2 ../System/buf.c:36 NOTE_INSN_BEGIN_STMT)
+(note 304 303 305 2 ../System/buf.c:37 NOTE_INSN_BEGIN_STMT)
+(note 305 304 429 2 ../System/buf.c:41 NOTE_INSN_BEGIN_STMT)
+(note 429 305 306 2 (var_location buf_handle (debug_implicit_ptr:SI test_buf_handle)) NOTE_INSN_VAR_LOCATION)
+(note 306 429 307 2 ../System/buf.c:47 NOTE_INSN_BEGIN_STMT)
+(note 307 306 308 2 ../System/buf.c:48 NOTE_INSN_BEGIN_STMT)
+(note 308 307 309 2 ../System/buf.c:49 NOTE_INSN_BEGIN_STMT)
+(note 309 308 310 2 ../System/buf.c:50 NOTE_INSN_BEGIN_STMT)
+(note 310 309 430 2 ../System/buf.c:52 NOTE_INSN_BEGIN_STMT)
+(note 430 310 431 2 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 431 430 432 2 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 432 431 433 2 (var_location buffer_ptr (nil)) NOTE_INSN_VAR_LOCATION)
+(note 433 432 311 2 (var_location buf_length (nil)) NOTE_INSN_VAR_LOCATION)
+(note 311 433 434 2 ../System/buf.c:233 NOTE_INSN_BEGIN_STMT)
+(note 434 311 435 2 (var_location buf_handle (debug_implicit_ptr:SI test_buf_handle)) NOTE_INSN_VAR_LOCATION)
+(note 435 434 312 2 (var_location data (const_int 1 [0x1])) NOTE_INSN_VAR_LOCATION)
+(note 312 435 313 2 ../System/buf.c:62 NOTE_INSN_BEGIN_STMT)
+(note 313 312 314 2 ../System/buf.c:69 NOTE_INSN_BEGIN_STMT)
+(note 314 313 315 2 ../System/buf.c:71 NOTE_INSN_BEGIN_STMT)
+(note 315 314 436 2 ../System/buf.c:72 NOTE_INSN_BEGIN_STMT)
+(note 436 315 437 2 (var_location buf_handle (debug_implicit_ptr:SI test_buf_handle)) NOTE_INSN_VAR_LOCATION)
+(note 437 436 316 2 (var_location data (const_int 1 [0x1])) NOTE_INSN_VAR_LOCATION)
+(note 316 437 317 2 ../System/buf.c:87 NOTE_INSN_BEGIN_STMT)
+(note 317 316 318 2 ../System/buf.c:90 NOTE_INSN_BEGIN_STMT)
+(note 318 317 319 2 ../System/buf.c:91 NOTE_INSN_BEGIN_STMT)
+(note 319 318 438 2 ../System/buf.c:93 NOTE_INSN_BEGIN_STMT)
+(note 438 319 439 2 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 439 438 440 2 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 440 439 441 2 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 441 440 320 2 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 320 441 442 2 ../System/buf.c:234 NOTE_INSN_BEGIN_STMT)
+(note 442 320 443 2 (var_location buf_handle (debug_implicit_ptr:SI test_buf_handle)) NOTE_INSN_VAR_LOCATION)
+(note 443 442 321 2 (var_location data (const_int 2 [0x2])) NOTE_INSN_VAR_LOCATION)
+(note 321 443 322 2 ../System/buf.c:62 NOTE_INSN_BEGIN_STMT)
+(note 322 321 323 2 ../System/buf.c:69 NOTE_INSN_BEGIN_STMT)
+(note 323 322 324 2 ../System/buf.c:77 NOTE_INSN_BEGIN_STMT)
+(note 324 323 444 2 ../System/buf.c:79 NOTE_INSN_BEGIN_STMT)
+(note 444 324 445 2 (var_location buf_handle (debug_implicit_ptr:SI test_buf_handle)) NOTE_INSN_VAR_LOCATION)
+(note 445 444 325 2 (var_location data (const_int 2 [0x2])) NOTE_INSN_VAR_LOCATION)
+(note 325 445 326 2 ../System/buf.c:87 NOTE_INSN_BEGIN_STMT)
+(note 326 325 327 2 ../System/buf.c:90 NOTE_INSN_BEGIN_STMT)
+(note 327 326 328 2 ../System/buf.c:91 NOTE_INSN_BEGIN_STMT)
+(note 328 327 446 2 ../System/buf.c:93 NOTE_INSN_BEGIN_STMT)
+(note 446 328 447 2 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 447 446 448 2 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 448 447 449 2 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 449 448 329 2 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 329 449 450 2 ../System/buf.c:235 NOTE_INSN_BEGIN_STMT)
+(note 450 329 451 2 (var_location buf_handle (debug_implicit_ptr:SI test_buf_handle)) NOTE_INSN_VAR_LOCATION)
+(note 451 450 330 2 (var_location data (const_int 3 [0x3])) NOTE_INSN_VAR_LOCATION)
+(note 330 451 331 2 ../System/buf.c:62 NOTE_INSN_BEGIN_STMT)
+(note 331 330 332 2 ../System/buf.c:69 NOTE_INSN_BEGIN_STMT)
+(note 332 331 333 2 ../System/buf.c:77 NOTE_INSN_BEGIN_STMT)
+(note 333 332 452 2 ../System/buf.c:79 NOTE_INSN_BEGIN_STMT)
+(note 452 333 453 2 (var_location buf_handle (debug_implicit_ptr:SI test_buf_handle)) NOTE_INSN_VAR_LOCATION)
+(note 453 452 334 2 (var_location data (const_int 3 [0x3])) NOTE_INSN_VAR_LOCATION)
+(note 334 453 335 2 ../System/buf.c:87 NOTE_INSN_BEGIN_STMT)
+(note 335 334 336 2 ../System/buf.c:90 NOTE_INSN_BEGIN_STMT)
+(note 336 335 337 2 ../System/buf.c:91 NOTE_INSN_BEGIN_STMT)
+(note 337 336 454 2 ../System/buf.c:93 NOTE_INSN_BEGIN_STMT)
+(note 454 337 455 2 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 455 454 456 2 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 456 455 457 2 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 457 456 338 2 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 338 457 458 2 ../System/buf.c:236 NOTE_INSN_BEGIN_STMT)
+(note 458 338 459 2 (var_location buf_handle (debug_implicit_ptr:SI test_buf_handle)) NOTE_INSN_VAR_LOCATION)
+(note 459 458 339 2 (var_location data (const_int 4 [0x4])) NOTE_INSN_VAR_LOCATION)
+(note 339 459 340 2 ../System/buf.c:62 NOTE_INSN_BEGIN_STMT)
+(note 340 339 341 2 ../System/buf.c:69 NOTE_INSN_BEGIN_STMT)
+(note 341 340 342 2 ../System/buf.c:77 NOTE_INSN_BEGIN_STMT)
+(note 342 341 460 2 ../System/buf.c:79 NOTE_INSN_BEGIN_STMT)
+(note 460 342 461 2 (var_location buf_handle (debug_implicit_ptr:SI test_buf_handle)) NOTE_INSN_VAR_LOCATION)
+(note 461 460 343 2 (var_location data (const_int 4 [0x4])) NOTE_INSN_VAR_LOCATION)
+(note 343 461 344 2 ../System/buf.c:87 NOTE_INSN_BEGIN_STMT)
+(note 344 343 345 2 ../System/buf.c:90 NOTE_INSN_BEGIN_STMT)
+(note 345 344 346 2 ../System/buf.c:91 NOTE_INSN_BEGIN_STMT)
+(note 346 345 462 2 ../System/buf.c:93 NOTE_INSN_BEGIN_STMT)
+(note 462 346 463 2 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 463 462 464 2 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 464 463 465 2 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 465 464 347 2 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 347 465 466 2 ../System/buf.c:239 NOTE_INSN_BEGIN_STMT)
+(note 466 347 467 2 (var_location buf_handle (debug_implicit_ptr:SI test_buf_handle)) NOTE_INSN_VAR_LOCATION)
+(note 467 466 348 2 (var_location data (debug_implicit_ptr:SI data)) NOTE_INSN_VAR_LOCATION)
+(note 348 467 349 2 ../System/buf.c:136 NOTE_INSN_BEGIN_STMT)
+(note 349 348 468 2 ../System/buf.c:142 NOTE_INSN_BEGIN_STMT)
+(note 468 349 350 2 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 350 468 351 2 ../System/buf.c:145 NOTE_INSN_BEGIN_STMT)
+(note 351 350 352 2 ../System/buf.c:146 NOTE_INSN_BEGIN_STMT)
+(note 352 351 353 2 ../System/buf.c:151 NOTE_INSN_BEGIN_STMT)
+(note 353 352 469 2 ../System/buf.c:153 NOTE_INSN_BEGIN_STMT)
+(note 469 353 470 2 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 470 469 354 2 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 354 470 471 2 ../System/buf.c:240 NOTE_INSN_BEGIN_STMT)
+(note 471 354 472 2 (var_location buf_handle (debug_implicit_ptr:SI test_buf_handle)) NOTE_INSN_VAR_LOCATION)
+(note 472 471 355 2 (var_location data (debug_implicit_ptr:SI data)) NOTE_INSN_VAR_LOCATION)
+(note 355 472 356 2 ../System/buf.c:136 NOTE_INSN_BEGIN_STMT)
+(note 356 355 473 2 ../System/buf.c:142 NOTE_INSN_BEGIN_STMT)
+(note 473 356 357 2 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 357 473 358 2 ../System/buf.c:145 NOTE_INSN_BEGIN_STMT)
+(note 358 357 359 2 ../System/buf.c:146 NOTE_INSN_BEGIN_STMT)
+(note 359 358 360 2 ../System/buf.c:151 NOTE_INSN_BEGIN_STMT)
+(note 360 359 474 2 ../System/buf.c:153 NOTE_INSN_BEGIN_STMT)
+(note 474 360 475 2 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 475 474 361 2 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 361 475 476 2 ../System/buf.c:241 NOTE_INSN_BEGIN_STMT)
+(note 476 361 477 2 (var_location buf_handle (debug_implicit_ptr:SI test_buf_handle)) NOTE_INSN_VAR_LOCATION)
+(note 477 476 362 2 (var_location data (debug_implicit_ptr:SI data)) NOTE_INSN_VAR_LOCATION)
+(note 362 477 363 2 ../System/buf.c:136 NOTE_INSN_BEGIN_STMT)
+(note 363 362 478 2 ../System/buf.c:142 NOTE_INSN_BEGIN_STMT)
+(note 478 363 364 2 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 364 478 365 2 ../System/buf.c:145 NOTE_INSN_BEGIN_STMT)
+(note 365 364 366 2 ../System/buf.c:146 NOTE_INSN_BEGIN_STMT)
+(note 366 365 367 2 ../System/buf.c:151 NOTE_INSN_BEGIN_STMT)
+(note 367 366 479 2 ../System/buf.c:153 NOTE_INSN_BEGIN_STMT)
+(note 479 367 480 2 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 480 479 368 2 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 368 480 481 2 ../System/buf.c:243 NOTE_INSN_BEGIN_STMT)
+(note 481 368 482 2 (var_location buf_handle (debug_implicit_ptr:SI test_buf_handle)) NOTE_INSN_VAR_LOCATION)
+(note 482 481 369 2 (var_location data (const_int 5 [0x5])) NOTE_INSN_VAR_LOCATION)
+(note 369 482 370 2 ../System/buf.c:62 NOTE_INSN_BEGIN_STMT)
+(note 370 369 371 2 ../System/buf.c:69 NOTE_INSN_BEGIN_STMT)
+(note 371 370 372 2 ../System/buf.c:77 NOTE_INSN_BEGIN_STMT)
+(note 372 371 373 2 ../System/buf.c:79 NOTE_INSN_BEGIN_STMT)
+(note 373 372 483 2 ../System/buf.c:81 NOTE_INSN_BEGIN_STMT)
+(note 483 373 484 2 (var_location buf_handle (debug_implicit_ptr:SI test_buf_handle)) NOTE_INSN_VAR_LOCATION)
+(note 484 483 374 2 (var_location data (const_int 5 [0x5])) NOTE_INSN_VAR_LOCATION)
+(note 374 484 375 2 ../System/buf.c:87 NOTE_INSN_BEGIN_STMT)
+(note 375 374 376 2 ../System/buf.c:90 NOTE_INSN_BEGIN_STMT)
+(note 376 375 377 2 ../System/buf.c:91 NOTE_INSN_BEGIN_STMT)
+(note 377 376 485 2 ../System/buf.c:93 NOTE_INSN_BEGIN_STMT)
+(note 485 377 486 2 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 486 485 487 2 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 487 486 488 2 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 488 487 378 2 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 378 488 489 2 ../System/buf.c:244 NOTE_INSN_BEGIN_STMT)
+(note 489 378 490 2 (var_location buf_handle (debug_implicit_ptr:SI test_buf_handle)) NOTE_INSN_VAR_LOCATION)
+(note 490 489 379 2 (var_location data (const_int 6 [0x6])) NOTE_INSN_VAR_LOCATION)
+(note 379 490 380 2 ../System/buf.c:62 NOTE_INSN_BEGIN_STMT)
+(note 380 379 381 2 ../System/buf.c:69 NOTE_INSN_BEGIN_STMT)
+(note 381 380 382 2 ../System/buf.c:77 NOTE_INSN_BEGIN_STMT)
+(note 382 381 491 2 ../System/buf.c:79 NOTE_INSN_BEGIN_STMT)
+(note 491 382 492 2 (var_location buf_handle (debug_implicit_ptr:SI test_buf_handle)) NOTE_INSN_VAR_LOCATION)
+(note 492 491 383 2 (var_location data (const_int 6 [0x6])) NOTE_INSN_VAR_LOCATION)
+(note 383 492 384 2 ../System/buf.c:87 NOTE_INSN_BEGIN_STMT)
+(note 384 383 385 2 ../System/buf.c:90 NOTE_INSN_BEGIN_STMT)
+(note 385 384 386 2 ../System/buf.c:91 NOTE_INSN_BEGIN_STMT)
+(note 386 385 493 2 ../System/buf.c:93 NOTE_INSN_BEGIN_STMT)
+(note 493 386 494 2 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 494 493 495 2 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 495 494 496 2 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 496 495 387 2 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 387 496 497 2 ../System/buf.c:246 NOTE_INSN_BEGIN_STMT)
+(note 497 387 498 2 (var_location buf_handle (debug_implicit_ptr:SI test_buf_handle)) NOTE_INSN_VAR_LOCATION)
+(note 498 497 388 2 (var_location data (debug_implicit_ptr:SI data)) NOTE_INSN_VAR_LOCATION)
+(note 388 498 389 2 ../System/buf.c:136 NOTE_INSN_BEGIN_STMT)
+(note 389 388 499 2 ../System/buf.c:142 NOTE_INSN_BEGIN_STMT)
+(note 499 389 390 2 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 390 499 391 2 ../System/buf.c:145 NOTE_INSN_BEGIN_STMT)
+(note 391 390 392 2 ../System/buf.c:146 NOTE_INSN_BEGIN_STMT)
+(note 392 391 393 2 ../System/buf.c:151 NOTE_INSN_BEGIN_STMT)
+(note 393 392 394 2 ../System/buf.c:153 NOTE_INSN_BEGIN_STMT)
+(note 394 393 500 2 ../System/buf.c:155 NOTE_INSN_BEGIN_STMT)
+(note 500 394 501 2 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 501 500 395 2 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 395 501 502 2 ../System/buf.c:247 NOTE_INSN_BEGIN_STMT)
+(note 502 395 503 2 (var_location buf_handle (debug_implicit_ptr:SI test_buf_handle)) NOTE_INSN_VAR_LOCATION)
+(note 503 502 396 2 (var_location data (debug_implicit_ptr:SI data)) NOTE_INSN_VAR_LOCATION)
+(note 396 503 397 2 ../System/buf.c:136 NOTE_INSN_BEGIN_STMT)
+(note 397 396 504 2 ../System/buf.c:142 NOTE_INSN_BEGIN_STMT)
+(note 504 397 398 2 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 398 504 399 2 ../System/buf.c:145 NOTE_INSN_BEGIN_STMT)
+(note 399 398 400 2 ../System/buf.c:146 NOTE_INSN_BEGIN_STMT)
+(note 400 399 401 2 ../System/buf.c:151 NOTE_INSN_BEGIN_STMT)
+(note 401 400 505 2 ../System/buf.c:153 NOTE_INSN_BEGIN_STMT)
+(note 505 401 506 2 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 506 505 402 2 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 402 506 507 2 ../System/buf.c:248 NOTE_INSN_BEGIN_STMT)
+(note 507 402 508 2 (var_location buf_handle (debug_implicit_ptr:SI test_buf_handle)) NOTE_INSN_VAR_LOCATION)
+(note 508 507 403 2 (var_location data (debug_implicit_ptr:SI data)) NOTE_INSN_VAR_LOCATION)
+(note 403 508 509 2 ../System/buf.c:136 NOTE_INSN_BEGIN_STMT)
+(note 509 403 510 2 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 510 509 404 2 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 404 510 511 2 ../System/buf.c:252 NOTE_INSN_BEGIN_STMT)
+(note 511 404 405 2 (var_location buf_handle (debug_implicit_ptr:SI test_buf_handle)) NOTE_INSN_VAR_LOCATION)
+(note 405 511 406 2 ../System/buf.c:47 NOTE_INSN_BEGIN_STMT)
+(note 406 405 512 2 ../System/buf.c:48 NOTE_INSN_BEGIN_STMT)
+(note 512 406 407 2 (var_location test_buf_handle$rear (const_int 0 [0])) NOTE_INSN_VAR_LOCATION)
+(note 407 512 513 2 ../System/buf.c:49 NOTE_INSN_BEGIN_STMT)
+(note 513 407 408 2 (var_location test_buf_handle$data_size (const_int 0 [0])) NOTE_INSN_VAR_LOCATION)
+(note 408 513 409 2 ../System/buf.c:50 NOTE_INSN_BEGIN_STMT)
+(note 409 408 514 2 ../System/buf.c:52 NOTE_INSN_BEGIN_STMT)
+(note 514 409 410 2 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 410 514 515 2 ../System/buf.c:254 NOTE_INSN_BEGIN_STMT)
+(note 515 410 516 2 (var_location buf_handle (debug_implicit_ptr:SI test_buf_handle)) NOTE_INSN_VAR_LOCATION)
+(note 516 515 517 2 (var_location data (debug_implicit_ptr:SI test_string)) NOTE_INSN_VAR_LOCATION)
+(note 517 516 411 2 (var_location size (const_int 4 [0x4])) NOTE_INSN_VAR_LOCATION)
+(note 411 517 518 2 ../System/buf.c:101 NOTE_INSN_BEGIN_STMT)
+(note 518 411 412 2 (var_location rtrn_code (const_int 0 [0])) NOTE_INSN_VAR_LOCATION)
+(note 412 518 519 2 ../System/buf.c:104 NOTE_INSN_BEGIN_STMT)
+(note 519 412 413 2 (var_location i (const_int 0 [0])) NOTE_INSN_VAR_LOCATION)
+(note 413 519 520 2 ../System/buf.c:111 NOTE_INSN_BEGIN_STMT)
+(note 520 413 521 2 (var_location test_buf_handle$data_size (const_int 0 [0])) NOTE_INSN_VAR_LOCATION)
+(note 521 520 522 2 (var_location test_buf_handle$rear (const_int 0 [0])) NOTE_INSN_VAR_LOCATION)
+(note 522 521 414 2 (var_location i (const_int 0 [0])) NOTE_INSN_VAR_LOCATION)
+(note 414 522 523 2 ../System/buf.c:114 NOTE_INSN_BEGIN_STMT)
+(note 523 414 524 2 (var_location buf_handle (debug_implicit_ptr:SI test_buf_handle)) NOTE_INSN_VAR_LOCATION)
+(note 524 523 415 2 (var_location data (mem:QI (debug_implicit_ptr:SI test_string) [0 +0 S1 A8])) NOTE_INSN_VAR_LOCATION)
+(note 415 524 525 2 ../System/buf.c:62 NOTE_INSN_BEGIN_STMT)
+(note 525 415 526 2 (var_location test_buf_handle$data_size (const_int 0 [0])) NOTE_INSN_VAR_LOCATION)
+(note 526 525 527 2 (var_location test_buf_handle$rear (const_int 0 [0])) NOTE_INSN_VAR_LOCATION)
+(note 527 526 528 2 (var_location i (const_int 0 [0])) NOTE_INSN_VAR_LOCATION)
+(note 528 527 529 2 (var_location data (mem:QI (debug_implicit_ptr:SI test_string) [0 +0 S1 A8])) NOTE_INSN_VAR_LOCATION)
+(note 529 528 530 2 (var_location data (mem:QI (debug_implicit_ptr:SI test_string) [0 +0 S1 A8])) NOTE_INSN_VAR_LOCATION)
+(note 530 529 531 2 (var_location buf_handle (debug_implicit_ptr:SI test_buf_handle)) NOTE_INSN_VAR_LOCATION)
+(note 531 530 416 2 (var_location data (mem:QI (debug_implicit_ptr:SI test_string) [0 +0 S1 A8])) NOTE_INSN_VAR_LOCATION)
+(note 416 531 417 2 ../System/buf.c:71 NOTE_INSN_BEGIN_STMT)
+(note 417 416 532 2 ../System/buf.c:72 NOTE_INSN_BEGIN_STMT)
+(note 532 417 533 2 (var_location test_buf_handle$rear (nil)) NOTE_INSN_VAR_LOCATION)
+(note 533 532 534 2 (var_location buf_handle (debug_implicit_ptr:SI test_buf_handle)) NOTE_INSN_VAR_LOCATION)
+(note 534 533 418 2 (var_location data (mem:QI (debug_implicit_ptr:SI test_string) [0 +0 S1 A8])) NOTE_INSN_VAR_LOCATION)
+(note 418 534 419 2 ../System/buf.c:87 NOTE_INSN_BEGIN_STMT)
+(note 419 418 535 2 ../System/buf.c:90 NOTE_INSN_BEGIN_STMT)
+(note 535 419 420 2 (var_location test_buf_handle$data_size (nil)) NOTE_INSN_VAR_LOCATION)
+(note 420 535 421 2 ../System/buf.c:91 NOTE_INSN_BEGIN_STMT)
+(note 421 420 536 2 ../System/buf.c:93 NOTE_INSN_BEGIN_STMT)
+(note 536 421 537 2 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 537 536 538 2 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 538 537 539 2 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 539 538 540 2 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 540 539 422 2 (var_location rtrn_code (const_int 0 [0])) NOTE_INSN_VAR_LOCATION)
+(note 422 540 423 2 ../System/buf.c:117 NOTE_INSN_BEGIN_STMT)
+(note 423 422 541 2 ../System/buf.c:111 NOTE_INSN_BEGIN_STMT)
+(note 541 423 424 2 (var_location i (nil)) NOTE_INSN_VAR_LOCATION)
+(note 424 541 542 2 ../System/buf.c:111 NOTE_INSN_BEGIN_STMT)
+(note 542 424 543 2 (var_location rtrn_code (nil)) NOTE_INSN_VAR_LOCATION)
+(note 543 542 544 2 (var_location i (nil)) NOTE_INSN_VAR_LOCATION)
+(note 544 543 545 2 (var_location buf_handle (nil)) NOTE_INSN_VAR_LOCATION)
+(note 545 544 546 2 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 546 545 547 2 (var_location size (nil)) NOTE_INSN_VAR_LOCATION)
+(note 547 546 295 2 (var_location data (nil)) NOTE_INSN_VAR_LOCATION)
+(note 295 547 296 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 296 295 297 2 (simple_return) "../System/buf.c":258:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 297 296 292)
+(note 292 297 293 NOTE_INSN_DELETED)
+(note 293 292 0 NOTE_INSN_DELETED)

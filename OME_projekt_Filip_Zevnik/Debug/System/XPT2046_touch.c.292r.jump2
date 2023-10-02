@@ -1,0 +1,914 @@
+
+;; Function XPT2046_touch_pressed (XPT2046_touch_pressed, funcdef_no=357, decl_uid=10099, cgraph_uid=361, symbol_order=360)
+
+
+
+try_optimize_cfg iteration 1
+
+
+
+XPT2046_touch_pressed
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 3 [r3]
+;;  ref usage 	r0={4d,4u} r1={1d} r2={1d} r3={2d,1u} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 34{26d,8u,0e} in 7{7 regular + 0 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 47 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 47 3 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 47 8 2 NOTE_INSN_FUNCTION_BEG)
+(note 8 2 11 2 NOTE_INSN_DELETED)
+(note 11 8 12 2 NOTE_INSN_DELETED)
+(note 12 11 5 2 NOTE_INSN_DELETED)
+(debug_insn 5 12 6 2 (debug_marker) "../System/XPT2046_touch.c":46:5 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 3 r3 [116])
+        (const_int 1207962624 [0x48000c00])) "../System/XPT2046_touch.c":46:12 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1207962624 [0x48000c00])
+        (nil)))
+(insn 7 6 9 2 (set (reg:SI 0 r0 [orig:113 _1 ] [113])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [116])
+                (const_int 16 [0x10])) [3 MEM[(struct GPIO_TypeDef *)1207962624B].IDR+0 S4 A64])) "../System/XPT2046_touch.c":46:12 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 3 r3 [116])
+        (nil)))
+(insn 9 7 17 2 (set (reg:SI 0 r0 [119])
+        (xor:SI (reg:SI 0 r0 [orig:113 _1 ] [113])
+            (const_int 64 [0x40]))) "../System/XPT2046_touch.c":46:66 109 {*arm_xorsi3}
+     (nil))
+(insn 17 9 18 2 (set (reg/i:SI 0 r0)
+        (zero_extract:SI (reg:SI 0 r0 [119])
+            (const_int 1 [0x1])
+            (const_int 6 [0x6]))) "../System/XPT2046_touch.c":47:1 161 {extzv_t2}
+     (nil))
+(insn 18 17 48 2 (use (reg/i:SI 0 r0)) "../System/XPT2046_touch.c":47:1 -1
+     (nil))
+(note 48 18 49 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 49 48 50 2 (simple_return) "../System/XPT2046_touch.c":47:1 -1
+     (nil)
+ -> simple_return)
+(barrier 50 49 21)
+(note 21 50 22 NOTE_INSN_DELETED)
+(note 22 21 0 NOTE_INSN_DELETED)
+
+;; Function XPT2046_touch_get_coordinates (XPT2046_touch_get_coordinates, funcdef_no=358, decl_uid=10102, cgraph_uid=362, symbol_order=361)
+
+
+
+try_optimize_cfg iteration 1
+
+
+
+XPT2046_touch_get_coordinates
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 5 [r5] 6 [r6] 7 [r7] 8 [r8] 9 [r9] 10 [r10] 11 [fp] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 4 [r4] 5 [r5] 6 [r6] 7 [r7] 8 [r8] 9 [r9] 10 [r10] 11 [fp] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 5 [r5] 6 [r6] 7 [r7] 8 [r8] 9 [r9] 10 [r10] 11 [fp] 12 [ip] 13 [sp] 14 [lr] 15 [pc] 100 [cc]
+;;  ref usage 	r0={11d,6u} r1={15d,11u} r2={26d,26u,1e} r3={23d,24u,1e} r4={6d,6u} r5={4d,7u} r6={4d,8u,1e} r7={4d,9u,2e} r8={3d,4u} r9={3d,4u} r10={3d,3u} r11={3d,3u} r12={8d} r13={5d,36u} r14={5d,2u} r15={5d} r16={5d} r17={5d} r18={5d} r19={5d} r20={5d} r21={5d} r22={5d} r23={5d} r24={5d} r25={5d} r26={5d} r27={5d} r28={5d} r29={5d} r30={5d} r31={5d} r48={4d} r49={4d} r50={4d} r51={4d} r52={4d} r53={4d} r54={4d} r55={4d} r56={4d} r57={4d} r58={4d} r59={4d} r60={4d} r61={4d} r62={4d} r63={4d} r64={4d} r65={4d} r66={4d} r67={4d} r68={4d} r69={4d} r70={4d} r71={4d} r72={4d} r73={4d} r74={4d} r75={4d} r76={4d} r77={4d} r78={4d} r79={4d} r80={4d} r81={4d} r82={4d} r83={4d} r84={4d} r85={4d} r86={4d} r87={4d} r88={4d} r89={4d} r90={4d} r91={4d} r92={4d} r93={4d} r94={4d} r95={4d} r96={4d} r97={4d} r98={4d} r99={4d} r100={9d,5u} r101={4d} r102={2e} r104={4d} r105={4d} r106={4d} 
+;;    total ref usage 602{441d,154u,7e} in 141{137 regular + 4 call} insns.
+(note 1 0 9 NOTE_INSN_DELETED)
+(note 9 1 236 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 236 9 237 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -36 [0xffffffffffffffdc]))) [10  A8])
+                (unspec:BLK [
+                        (reg:SI 4 r4)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 5 r5))
+            (use (reg:SI 6 r6))
+            (use (reg:SI 7 r7))
+            (use (reg:SI 8 r8))
+            (use (reg:SI 9 r9))
+            (use (reg:SI 10 r10))
+            (use (reg:SI 11 fp))
+            (use (reg:SI 14 lr))
+        ]) "../System/XPT2046_touch.c":53:1 -1
+     (expr_list:REG_DEAD (reg:SI 14 lr)
+        (expr_list:REG_DEAD (reg:SI 11 fp)
+            (expr_list:REG_DEAD (reg:SI 10 r10)
+                (expr_list:REG_DEAD (reg:SI 9 r9)
+                    (expr_list:REG_DEAD (reg:SI 8 r8)
+                        (expr_list:REG_DEAD (reg:SI 7 r7)
+                            (expr_list:REG_DEAD (reg:SI 6 r6)
+                                (expr_list:REG_DEAD (reg:SI 5 r5)
+                                    (expr_list:REG_DEAD (reg:SI 4 r4)
+                                        (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                                                    (set/f (reg/f:SI 13 sp)
+                                                        (plus:SI (reg/f:SI 13 sp)
+                                                            (const_int -36 [0xffffffffffffffdc])))
+                                                    (set/f (mem/c:SI (reg/f:SI 13 sp) [10  S4 A32])
+                                                        (reg:SI 4 r4))
+                                                    (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                                                (const_int 4 [0x4])) [10  S4 A32])
+                                                        (reg:SI 5 r5))
+                                                    (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                                                (const_int 8 [0x8])) [10  S4 A32])
+                                                        (reg:SI 6 r6))
+                                                    (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                                                (const_int 12 [0xc])) [10  S4 A32])
+                                                        (reg:SI 7 r7))
+                                                    (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                                                (const_int 16 [0x10])) [10  S4 A32])
+                                                        (reg:SI 8 r8))
+                                                    (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                                                (const_int 20 [0x14])) [10  S4 A32])
+                                                        (reg:SI 9 r9))
+                                                    (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                                                (const_int 24 [0x18])) [10  S4 A32])
+                                                        (reg:SI 10 r10))
+                                                    (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                                                (const_int 28 [0x1c])) [10  S4 A32])
+                                                        (reg:SI 11 fp))
+                                                    (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                                                (const_int 32 [0x20])) [10  S4 A32])
+                                                        (reg:SI 14 lr))
+                                                ])
+                                            (nil))))))))))))
+(insn/f 237 236 238 2 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int -20 [0xffffffffffffffec]))) "../System/XPT2046_touch.c":53:1 -1
+     (nil))
+(note 238 237 4 2 NOTE_INSN_PROLOGUE_END)
+(note 4 238 11 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 11 4 12 2 (debug_marker) "../System/XPT2046_touch.c":56:2 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "../System/XPT2046_touch.c":57:5 -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker) "../System/XPT2046_touch.c":58:5 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker) "../System/XPT2046_touch.c":60:5 -1
+     (nil))
+(debug_insn 15 14 16 2 (debug_marker:BLK) "../System/XPT2046_touch.c":32:13 -1
+     (nil))
+(debug_insn 16 15 17 2 (debug_marker) "../System/XPT2046_touch.c":34:2 -1
+     (nil))
+(insn 17 16 18 2 (set (reg/f:SI 3 r3 [138])
+        (const_int 1207963648 [0x48001000])) "../System/XPT2046_touch.c":34:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1207963648 [0x48001000])
+        (nil)))
+(insn 18 17 6 2 (set (reg:SI 2 r2 [139])
+        (const_int 2 [0x2])) "../System/XPT2046_touch.c":34:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 2 [0x2])
+        (nil)))
+(insn 6 18 2 2 (set (reg/v:SI 6 r6 [orig:131 avg_y ] [131])
+        (const_int 0 [0])) "../System/XPT2046_touch.c":63:14 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(insn 2 6 3 2 (set (reg/v/f:SI 11 fp [orig:136 x ] [136])
+        (reg:SI 0 r0 [209])) "../System/XPT2046_touch.c":53:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [209])
+        (nil)))
+(insn 3 2 19 2 (set (reg/v/f:SI 10 r10 [orig:137 y ] [137])
+        (reg:SI 1 r1 [210])) "../System/XPT2046_touch.c":53:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [210])
+        (nil)))
+(insn 19 3 20 2 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [138])
+                (const_int 40 [0x28])) [3 MEM[(struct GPIO_TypeDef *)1207963648B].BRR+0 S4 A64])
+        (reg:SI 2 r2 [139])) "../System/XPT2046_touch.c":34:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 3 r3 [138])
+        (expr_list:REG_DEAD (reg:SI 2 r2 [139])
+            (nil))))
+(debug_insn 20 19 21 2 (debug_marker) "../System/XPT2046_touch.c":62:5 -1
+     (nil))
+(debug_insn 21 20 22 2 (var_location:SI avg_x (const_int 0 [0])) "../System/XPT2046_touch.c":62:14 -1
+     (nil))
+(debug_insn 22 21 23 2 (debug_marker) "../System/XPT2046_touch.c":63:5 -1
+     (nil))
+(debug_insn 23 22 24 2 (var_location:SI avg_y (const_int 0 [0])) "../System/XPT2046_touch.c":63:14 -1
+     (nil))
+(debug_insn 24 23 25 2 (debug_marker) "../System/XPT2046_touch.c":66:5 -1
+     (nil))
+(debug_insn 25 24 26 2 (debug_marker) "../System/XPT2046_touch.c":66:9 -1
+     (nil))
+(debug_insn 26 25 27 2 (var_location:QI i (const_int 0 [0])) -1
+     (nil))
+(debug_insn 27 26 28 2 (var_location:SI avg_y (const_int 0 [0])) -1
+     (nil))
+(debug_insn 28 27 29 2 (var_location:SI avg_x (const_int 0 [0])) -1
+     (nil))
+(debug_insn 29 28 5 2 (debug_marker) "../System/XPT2046_touch.c":66:24 -1
+     (nil))
+(insn 5 29 40 2 (set (reg:SI 4 r4 [orig:113 ivtmp_2 ] [113])
+        (const_int 100 [0x64])) "../System/XPT2046_touch.c":34:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 100 [0x64])
+        (nil)))
+(insn 40 5 51 2 (set (reg/f:SI 5 r5 [207])
+        (symbol_ref:SI ("hspi1") [flags 0xc0]  <var_decl 0000000006af7c60 hspi1>)) "../System/XPT2046_touch.c":70:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (symbol_ref:SI ("hspi1") [flags 0xc0]  <var_decl 0000000006af7c60 hspi1>)
+        (nil)))
+(insn 51 40 7 2 (set (reg/f:SI 9 r9 [208])
+        (symbol_ref:SI ("*.LANCHOR1") [flags 0x182])) "../System/XPT2046_touch.c":73:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (symbol_ref:SI ("*.LANCHOR1") [flags 0x182])
+        (nil)))
+(insn 7 51 187 2 (set (reg/v:SI 7 r7 [orig:130 avg_x ] [130])
+        (reg/v:SI 6 r6 [orig:131 avg_y ] [131])) "../System/XPT2046_touch.c":62:14 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(note 187 7 188 2 NOTE_INSN_DELETED)
+(note 188 187 37 2 NOTE_INSN_DELETED)
+(insn 37 188 93 2 (set (reg:SI 8 r8 [206])
+        (const_int -1 [0xffffffffffffffff])) "../System/XPT2046_touch.c":70:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int -1 [0xffffffffffffffff])
+        (nil)))
+(code_label 93 37 30 3 6 (nil) [1 uses])
+(note 30 93 77 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 77 30 83 3 NOTE_INSN_DELETED)
+(note 83 77 92 3 NOTE_INSN_DELETED)
+(note 92 83 31 3 NOTE_INSN_DELETED)
+(debug_insn 31 92 32 3 (var_location:QI i (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 32 31 33 3 (var_location:SI avg_y (reg/v:SI 6 r6 [orig:131 avg_y ] [131])) -1
+     (nil))
+(debug_insn 33 32 34 3 (var_location:SI avg_x (reg/v:SI 7 r7 [orig:130 avg_x ] [130])) -1
+     (nil))
+(debug_insn 34 33 39 3 (debug_marker) "../System/XPT2046_touch.c":70:9 -1
+     (nil))
+(insn 39 34 191 3 (set (reg:SI 1 r1)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/XPT2046_touch.c":70:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 191 39 38 3 (set (reg:SI 3 r3)
+        (const_int -1 [0xffffffffffffffff])) "../System/XPT2046_touch.c":70:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 38 191 192 3 (set (reg:SI 2 r2)
+        (const_int 1 [0x1])) "../System/XPT2046_touch.c":70:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 192 38 41 3 (set (reg:SI 0 r0)
+        (reg/f:SI 5 r5 [207])) "../System/XPT2046_touch.c":70:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 41 192 42 3 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_SPI_Transmit") [flags 0x41]  <function_decl 0000000006aa4e00 HAL_SPI_Transmit>) [0 HAL_SPI_Transmit S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/XPT2046_touch.c":70:9 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 3 r3)
+        (expr_list:REG_DEAD (reg:SI 2 r2)
+            (expr_list:REG_DEAD (reg:SI 1 r1)
+                (expr_list:REG_UNUSED (reg:SI 0 r0)
+                    (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_SPI_Transmit") [flags 0x41]  <function_decl 0000000006aa4e00 HAL_SPI_Transmit>)
+                        (nil))))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (expr_list:HI (use (reg:SI 2 r2))
+                    (expr_list:SI (use (reg:SI 3 r3))
+                        (nil)))))))
+(debug_insn 42 41 43 3 (debug_marker) "../System/XPT2046_touch.c":71:9 -1
+     (nil))
+(debug_insn 43 42 49 3 (debug_marker) "../System/XPT2046_touch.c":73:9 -1
+     (nil))
+(insn 49 43 219 3 (set (reg:SI 3 r3)
+        (const_int 2 [0x2])) "../System/XPT2046_touch.c":73:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 219 49 194 3 (set (reg:SI 2 r2 [216])
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 8 [0x8]))) "../System/XPT2046_touch.c":73:9 7 {*arm_addsi3}
+     (nil))
+(insn 194 219 48 3 (set (reg:SI 1 r1)
+        (reg/f:SI 9 r9 [208])) "../System/XPT2046_touch.c":73:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 48 194 195 3 (set (mem:SI (reg/f:SI 13 sp) [0  S4 A32])
+        (reg:SI 8 r8 [206])) "../System/XPT2046_touch.c":73:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 195 48 53 3 (set (reg:SI 0 r0)
+        (reg/f:SI 5 r5 [207])) "../System/XPT2046_touch.c":73:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 53 195 54 3 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_SPI_TransmitReceive") [flags 0x41]  <function_decl 0000000006ac1000 HAL_SPI_TransmitReceive>) [0 HAL_SPI_TransmitReceive S4 A32])
+                    (const_int 8 [0x8])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/XPT2046_touch.c":73:9 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 3 r3)
+        (expr_list:REG_DEAD (reg:SI 2 r2)
+            (expr_list:REG_DEAD (reg:SI 1 r1)
+                (expr_list:REG_UNUSED (reg:SI 0 r0)
+                    (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_SPI_TransmitReceive") [flags 0x41]  <function_decl 0000000006ac1000 HAL_SPI_TransmitReceive>)
+                        (nil))))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (expr_list:SI (use (reg:SI 2 r2))
+                    (expr_list:HI (use (reg:SI 3 r3))
+                        (expr_list:SI (use (mem:SI (reg/f:SI 13 sp) [0  S4 A32]))
+                            (nil))))))))
+(debug_insn 54 53 59 3 (debug_marker) "../System/XPT2046_touch.c":75:9 -1
+     (nil))
+(insn 59 54 57 3 (set (reg:SI 1 r1)
+        (symbol_ref:SI ("*.LANCHOR2") [flags 0x182])) "../System/XPT2046_touch.c":75:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 57 59 58 3 (set (reg:SI 3 r3)
+        (const_int -1 [0xffffffffffffffff])) "../System/XPT2046_touch.c":75:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 58 57 196 3 (set (reg:SI 2 r2)
+        (const_int 1 [0x1])) "../System/XPT2046_touch.c":75:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 196 58 61 3 (set (reg:SI 0 r0)
+        (reg/f:SI 5 r5 [207])) "../System/XPT2046_touch.c":75:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 61 196 62 3 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_SPI_Transmit") [flags 0x41]  <function_decl 0000000006aa4e00 HAL_SPI_Transmit>) [0 HAL_SPI_Transmit S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/XPT2046_touch.c":75:9 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 3 r3)
+        (expr_list:REG_DEAD (reg:SI 2 r2)
+            (expr_list:REG_DEAD (reg:SI 1 r1)
+                (expr_list:REG_UNUSED (reg:SI 0 r0)
+                    (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_SPI_Transmit") [flags 0x41]  <function_decl 0000000006aa4e00 HAL_SPI_Transmit>)
+                        (nil))))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (expr_list:HI (use (reg:SI 2 r2))
+                    (expr_list:SI (use (reg:SI 3 r3))
+                        (nil)))))))
+(debug_insn 62 61 63 3 (debug_marker) "../System/XPT2046_touch.c":76:9 -1
+     (nil))
+(debug_insn 63 62 68 3 (debug_marker) "../System/XPT2046_touch.c":78:9 -1
+     (nil))
+(insn 68 63 69 3 (set (mem:SI (reg/f:SI 13 sp) [0  S4 A32])
+        (reg:SI 8 r8 [206])) "../System/XPT2046_touch.c":78:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 69 68 220 3 (set (reg:SI 3 r3)
+        (const_int 2 [0x2])) "../System/XPT2046_touch.c":78:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 220 69 197 3 (set (reg:SI 2 r2 [217])
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 12 [0xc]))) "../System/XPT2046_touch.c":78:9 7 {*arm_addsi3}
+     (nil))
+(insn 197 220 198 3 (set (reg:SI 1 r1)
+        (reg/f:SI 9 r9 [208])) "../System/XPT2046_touch.c":78:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 198 197 73 3 (set (reg:SI 0 r0)
+        (reg/f:SI 5 r5 [207])) "../System/XPT2046_touch.c":78:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 73 198 74 3 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_SPI_TransmitReceive") [flags 0x41]  <function_decl 0000000006ac1000 HAL_SPI_TransmitReceive>) [0 HAL_SPI_TransmitReceive S4 A32])
+                    (const_int 8 [0x8])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/XPT2046_touch.c":78:9 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 3 r3)
+        (expr_list:REG_DEAD (reg:SI 2 r2)
+            (expr_list:REG_DEAD (reg:SI 1 r1)
+                (expr_list:REG_UNUSED (reg:SI 0 r0)
+                    (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_SPI_TransmitReceive") [flags 0x41]  <function_decl 0000000006ac1000 HAL_SPI_TransmitReceive>)
+                        (nil))))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (expr_list:SI (use (reg:SI 2 r2))
+                    (expr_list:HI (use (reg:SI 3 r3))
+                        (expr_list:SI (use (mem:SI (reg/f:SI 13 sp) [0  S4 A32]))
+                            (nil))))))))
+(debug_insn 74 73 75 3 (debug_marker) "../System/XPT2046_touch.c":80:9 -1
+     (nil))
+(insn 75 74 81 3 (set (reg:SI 2 r2)
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 13 sp)
+                    (const_int 12 [0xc])) [0 MEM <short unsigned int> [(unsigned char *)&x_raw]+0 S2 A32]))) "../System/XPT2046_touch.c":80:46 1005 {*thumb2_zero_extendhisi2_v6}
+     (expr_list:REG_EQUIV (mem/c:HI (plus:SI (reg/f:SI 102 sfp)
+                (const_int -4 [0xfffffffffffffffc])) [0 MEM <short unsigned int> [(unsigned char *)&x_raw]+0 S2 A32])
+        (nil)))
+(insn 81 75 76 3 (set (reg:SI 3 r3)
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])) [0 MEM <short unsigned int> [(unsigned char *)&y_raw]+0 S2 A64]))) "../System/XPT2046_touch.c":81:46 1005 {*thumb2_zero_extendhisi2_v6}
+     (expr_list:REG_EQUIV (mem/c:HI (plus:SI (reg/f:SI 102 sfp)
+                (const_int -8 [0xfffffffffffffff8])) [0 MEM <short unsigned int> [(unsigned char *)&y_raw]+0 S2 A64])
+        (nil)))
+(insn 76 81 82 3 (set (reg:HI 2 r2 [152])
+        (bswap:HI (reg:HI 2 r2 [orig:153 MEM <short unsigned int> [(unsigned char *)&x_raw] ] [153]))) "../System/XPT2046_touch.c":80:46 406 {*arm_rev16}
+     (nil))
+(insn 82 76 91 3 (set (reg:HI 3 r3 [155])
+        (bswap:HI (reg:HI 3 r3 [orig:156 MEM <short unsigned int> [(unsigned char *)&y_raw] ] [156]))) "../System/XPT2046_touch.c":81:46 406 {*arm_rev16}
+     (nil))
+(insn 91 82 78 3 (set (reg:SI 4 r4 [158])
+        (plus:SI (reg:SI 4 r4 [orig:113 ivtmp_2 ] [113])
+            (const_int -1 [0xffffffffffffffff]))) "../System/XPT2046_touch.c":66:5 7 {*arm_addsi3}
+     (nil))
+(insn 78 91 79 3 (set (reg/v:SI 7 r7 [orig:130 avg_x ] [130])
+        (plus:SI (zero_extend:SI (reg:HI 2 r2 [152]))
+            (reg/v:SI 7 r7 [orig:130 avg_x ] [130]))) "../System/XPT2046_touch.c":80:15 174 {*arm_zero_extendhisi2addsi}
+     (expr_list:REG_DEAD (reg:HI 2 r2 [152])
+        (nil)))
+(debug_insn 79 78 80 3 (var_location:SI avg_x (reg/v:SI 7 r7 [orig:130 avg_x ] [130])) "../System/XPT2046_touch.c":80:15 -1
+     (nil))
+(debug_insn 80 79 84 3 (debug_marker) "../System/XPT2046_touch.c":81:9 -1
+     (nil))
+(insn 84 80 85 3 (set (reg/v:SI 6 r6 [orig:131 avg_y ] [131])
+        (plus:SI (zero_extend:SI (reg:HI 3 r3 [155]))
+            (reg/v:SI 6 r6 [orig:131 avg_y ] [131]))) "../System/XPT2046_touch.c":81:15 174 {*arm_zero_extendhisi2addsi}
+     (expr_list:REG_DEAD (reg:HI 3 r3 [155])
+        (nil)))
+(debug_insn 85 84 86 3 (var_location:SI avg_y (reg/v:SI 6 r6 [orig:131 avg_y ] [131])) "../System/XPT2046_touch.c":81:15 -1
+     (nil))
+(debug_insn 86 85 87 3 (debug_marker) "../System/XPT2046_touch.c":66:54 -1
+     (nil))
+(debug_insn 87 86 88 3 (var_location:QI i (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 88 87 89 3 (var_location:SI avg_y (reg/v:SI 6 r6 [orig:131 avg_y ] [131])) -1
+     (nil))
+(debug_insn 89 88 90 3 (var_location:SI avg_x (reg/v:SI 7 r7 [orig:130 avg_x ] [130])) -1
+     (nil))
+(debug_insn 90 89 94 3 (debug_marker) "../System/XPT2046_touch.c":66:24 -1
+     (nil))
+(insn 94 90 95 3 (parallel [
+            (set (reg:CC_NZ 100 cc)
+                (compare:CC_NZ (and:SI (reg:SI 4 r4 [158])
+                        (const_int 255 [0xff]))
+                    (const_int 0 [0])))
+            (set (reg:SI 4 r4 [orig:113 ivtmp_2 ] [113])
+                (and:SI (reg:SI 4 r4 [158])
+                    (const_int 255 [0xff])))
+        ]) "../System/XPT2046_touch.c":66:5 91 {*andsi3_compare0}
+     (nil))
+(jump_insn 95 94 96 3 (set (pc)
+        (if_then_else (ne (reg:CC_NZ 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 93)
+            (pc))) "../System/XPT2046_touch.c":66:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC_NZ 100 cc)
+        (int_list:REG_BR_PROB 1062895956 (nil)))
+ -> 93)
+(note 96 95 97 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 97 96 98 4 (debug_marker) "../System/XPT2046_touch.c":84:5 -1
+     (nil))
+(debug_insn 98 97 99 4 (debug_marker:BLK) "../System/XPT2046_touch.c":38:13 -1
+     (nil))
+(debug_insn 99 98 107 4 (debug_marker) "../System/XPT2046_touch.c":40:2 -1
+     (nil))
+(insn 107 99 108 4 (set (reg:SI 2 r2 [162])
+        (const_int 1374389535 [0x51eb851f])) "../System/XPT2046_touch.c":88:14 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1374389535 [0x51eb851f])
+        (nil)))
+(insn 108 107 109 4 (parallel [
+            (set (reg:SI 3 r3 [161])
+                (truncate:SI (lshiftrt:DI (mult:DI (zero_extend:DI (reg/v:SI 6 r6 [orig:131 avg_y ] [131]))
+                            (zero_extend:DI (reg:SI 2 r2 [162])))
+                        (const_int 32 [0x20]))))
+            (clobber (reg:SI 1 r1 [212]))
+        ]) "../System/XPT2046_touch.c":88:14 72 {*umull_high}
+     (expr_list:REG_DEAD (reg/v:SI 6 r6 [orig:131 avg_y ] [131])
+        (expr_list:REG_UNUSED (reg:SI 1 r1 [212])
+            (expr_list:REG_EQUAL (truncate:SI (lshiftrt:DI (mult:DI (zero_extend:DI (reg/v:SI 6 r6 [orig:131 avg_y ] [131]))
+                            (const_int 1374389535 [0x51eb851f]))
+                        (const_int 32 [0x20])))
+                (nil)))))
+(insn 109 108 217 4 (set (reg/v:SI 3 r3 [orig:128 raw_y ] [128])
+        (lshiftrt:SI (reg:SI 3 r3 [161])
+            (const_int 5 [0x5]))) "../System/XPT2046_touch.c":88:14 147 {*arm_shiftsi3}
+     (nil))
+(debug_insn 217 109 112 4 (var_location:SI D#2 (reg/v:SI 3 r3 [orig:128 raw_y ] [128])) -1
+     (nil))
+(insn 112 217 100 4 (set (reg/v:SI 3 r3 [orig:129 raw_y ] [129])
+        (minus:SI (const_int 32768 [0x8000])
+            (reg/v:SI 3 r3 [orig:128 raw_y ] [128]))) "../System/XPT2046_touch.c":91:8 45 {*arm_subsi3_insn}
+     (nil))
+(insn 100 112 118 4 (set (reg/f:SI 0 r0 [159])
+        (const_int 1207963648 [0x48001000])) "../System/XPT2046_touch.c":40:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1207963648 [0x48001000])
+        (nil)))
+(insn 118 100 101 4 (set (reg:SI 1 r1 [163])
+        (const_int 175599 [0x2adef])) "../System/XPT2046_touch.c":105:8 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 175599 [0x2adef])
+        (nil)))
+(insn 101 118 102 4 (set (reg:SI 5 r5 [160])
+        (const_int 2 [0x2])) "../System/XPT2046_touch.c":40:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 2 [0x2])
+        (nil)))
+(insn 102 101 103 4 (set (mem/v:SI (plus:SI (reg/f:SI 0 r0 [159])
+                (const_int 24 [0x18])) [3 MEM[(struct GPIO_TypeDef *)1207963648B].BSRR+0 S4 A64])
+        (reg:SI 5 r5 [160])) "../System/XPT2046_touch.c":40:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 5 r5 [160])
+        (expr_list:REG_DEAD (reg/f:SI 0 r0 [159])
+            (nil))))
+(debug_insn 103 102 104 4 (debug_marker) "../System/XPT2046_touch.c":87:5 -1
+     (nil))
+(debug_insn 104 103 105 4 (var_location:SI D#1 (udiv:SI (reg/v:SI 7 r7 [orig:130 avg_x ] [130])
+        (const_int 100 [0x64]))) "../System/XPT2046_touch.c":87:14 -1
+     (nil))
+(debug_insn 105 104 106 4 (var_location:SI raw_x (debug_expr:SI D#1)) "../System/XPT2046_touch.c":87:14 -1
+     (nil))
+(debug_insn 106 105 110 4 (debug_marker) "../System/XPT2046_touch.c":88:5 -1
+     (nil))
+(debug_insn 110 106 111 4 (var_location:SI raw_y (debug_expr:SI D#2)) "../System/XPT2046_touch.c":88:14 -1
+     (nil))
+(debug_insn 111 110 113 4 (debug_marker) "../System/XPT2046_touch.c":91:3 -1
+     (nil))
+(debug_insn 113 111 114 4 (var_location:SI raw_y (reg/v:SI 3 r3 [orig:129 raw_y ] [129])) "../System/XPT2046_touch.c":91:8 -1
+     (nil))
+(debug_insn 114 113 115 4 (debug_marker) "../System/XPT2046_touch.c":98:5 -1
+     (nil))
+(debug_insn 115 114 119 4 (debug_marker) "../System/XPT2046_touch.c":105:6 -1
+     (nil))
+(insn 119 115 120 4 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 7 r7 [orig:130 avg_x ] [130])
+            (reg:SI 1 r1 [163]))) "../System/XPT2046_touch.c":105:8 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [163])
+        (expr_list:REG_EQUAL (compare:CC (reg/v:SI 7 r7 [orig:130 avg_x ] [130])
+                (const_int 175599 [0x2adef]))
+            (nil))))
+(jump_insn 120 119 121 4 (set (pc)
+        (if_then_else (leu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 148)
+            (pc))) "../System/XPT2046_touch.c":105:8 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 148)
+(note 121 120 130 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(note 130 121 134 5 NOTE_INSN_DELETED)
+(note 134 130 139 5 NOTE_INSN_DELETED)
+(note 139 134 141 5 NOTE_INSN_DELETED)
+(note 141 139 122 5 NOTE_INSN_DELETED)
+(debug_insn 122 141 123 5 (var_location:SI raw_x (debug_expr:SI D#1)) -1
+     (nil))
+(debug_insn 123 122 125 5 (debug_marker) "../System/XPT2046_touch.c":106:9 -1
+     (nil))
+(insn 125 123 126 5 (parallel [
+            (set (reg:SI 2 r2 [165])
+                (truncate:SI (lshiftrt:DI (mult:DI (zero_extend:DI (reg/v:SI 7 r7 [orig:130 avg_x ] [130]))
+                            (zero_extend:DI (reg:SI 2 r2 [162])))
+                        (const_int 32 [0x20]))))
+            (clobber (reg:SI 1 r1 [213]))
+        ]) "../System/XPT2046_touch.c":87:14 72 {*umull_high}
+     (expr_list:REG_DEAD (reg/v:SI 7 r7 [orig:130 avg_x ] [130])
+        (expr_list:REG_UNUSED (reg:SI 1 r1 [213])
+            (expr_list:REG_EQUAL (truncate:SI (lshiftrt:DI (mult:DI (zero_extend:DI (reg/v:SI 7 r7 [orig:130 avg_x ] [130]))
+                            (const_int 1374389535 [0x51eb851f]))
+                        (const_int 32 [0x20])))
+                (nil)))))
+(insn 126 125 127 5 (set (reg:SI 2 r2 [orig:164 raw_x ] [164])
+        (lshiftrt:SI (reg:SI 2 r2 [165])
+            (const_int 5 [0x5]))) "../System/XPT2046_touch.c":87:14 147 {*arm_shiftsi3}
+     (nil))
+(insn 127 126 229 5 (set (reg:SI 1 r1 [167])
+        (const_int 28899 [0x70e3])) "../System/XPT2046_touch.c":111:42 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 28899 [0x70e3])
+        (nil)))
+(insn 229 127 230 5 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 2 r2 [orig:164 raw_x ] [164])
+            (reg:SI 1 r1 [167]))) "../System/XPT2046_touch.c":111:42 268 {*arm_cmpsi_insn}
+     (nil))
+(insn 230 229 131 5 (cond_exec (geu:SI (reg:CC 100 cc)
+            (const_int 0 [0]))
+        (set (reg:SI 2 r2 [orig:164 raw_x ] [164])
+            (reg:SI 1 r1 [167]))) "../System/XPT2046_touch.c":111:42 6567 {*p *thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (expr_list:REG_DEAD (reg:SI 1 r1 [167])
+            (nil))))
+(insn 131 230 132 5 (set (reg:SI 2 r2 [170])
+        (minus:SI (ashift:SI (reg:SI 2 r2 [orig:164 raw_x ] [164])
+                (const_int 4 [0x4]))
+            (reg:SI 2 r2 [orig:164 raw_x ] [164]))) "../System/XPT2046_touch.c":111:42 319 {*rsb_shiftsi}
+     (nil))
+(insn 132 131 136 5 (set (reg:SI 2 r2 [171])
+        (ashift:SI (reg:SI 2 r2 [170])
+            (const_int 4 [0x4]))) "../System/XPT2046_touch.c":111:42 147 {*arm_shiftsi3}
+     (nil))
+(insn 136 132 209 5 (set (reg:SI 1 r1 [176])
+        (const_int 890070775 [0x350d66f7])) "../System/XPT2046_touch.c":111:60 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 890070775 [0x350d66f7])
+        (nil)))
+(insn 209 136 210 5 (set (reg:SI 2 r2 [172])
+        (plus:SI (reg:SI 2 r2 [171])
+            (const_int -419840 [0xfffffffffff99800]))) "../System/XPT2046_touch.c":111:42 7 {*arm_addsi3}
+     (nil))
+(insn 210 209 137 5 (set (reg:SI 2 r2 [172])
+        (plus:SI (reg:SI 2 r2 [172])
+            (const_int -1600 [0xfffffffffffff9c0]))) "../System/XPT2046_touch.c":111:42 7 {*arm_addsi3}
+     (nil))
+(insn 137 210 138 5 (parallel [
+            (set (reg:SI 1 r1 [175])
+                (truncate:SI (lshiftrt:DI (mult:DI (zero_extend:DI (reg:SI 2 r2 [172]))
+                            (zero_extend:DI (reg:SI 1 r1 [176])))
+                        (const_int 32 [0x20]))))
+            (clobber (reg:SI 0 r0 [214]))
+        ]) "../System/XPT2046_touch.c":111:60 72 {*umull_high}
+     (expr_list:REG_UNUSED (reg:SI 0 r0 [214])
+        (expr_list:REG_EQUAL (truncate:SI (lshiftrt:DI (mult:DI (zero_extend:DI (reg:SI 2 r2 [172]))
+                        (const_int 890070775 [0x350d66f7]))
+                    (const_int 32 [0x20])))
+            (nil))))
+(insn 138 137 140 5 (set (reg:SI 2 r2 [177])
+        (minus:SI (reg:SI 2 r2 [172])
+            (reg:SI 1 r1 [175]))) "../System/XPT2046_touch.c":111:60 45 {*arm_subsi3_insn}
+     (nil))
+(insn 140 138 147 5 (set (reg:SI 2 r2 [179])
+        (plus:SI (lshiftrt:SI (reg:SI 2 r2 [177])
+                (const_int 1 [0x1]))
+            (reg:SI 1 r1 [175]))) "../System/XPT2046_touch.c":111:60 318 {*add_shiftsi}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [175])
+        (nil)))
+(insn 147 140 148 5 (set (reg:SI 4 r4 [orig:135 _64 ] [135])
+        (zero_extract:SI (reg:SI 2 r2 [179])
+            (const_int 16 [0x10])
+            (const_int 14 [0xe]))) "../System/XPT2046_touch.c":111:12 161 {extzv_t2}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [179])
+        (nil)))
+(code_label 148 147 149 6 7 (nil) [1 uses])
+(note 149 148 162 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(note 162 149 166 6 NOTE_INSN_DELETED)
+(note 166 162 150 6 NOTE_INSN_DELETED)
+(debug_insn 150 166 151 6 (var_location:SI raw_x (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 151 150 152 6 (debug_marker) "../System/XPT2046_touch.c":108:9 -1
+     (nil))
+(insn 152 151 222 6 (set (reg:SI 2 r2 [185])
+        (const_int 30198 [0x75f6])) 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 30198 [0x75f6])
+        (nil)))
+(insn 222 152 223 6 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 3 r3 [orig:129 raw_y ] [129])
+            (reg:SI 2 r2 [185]))) 268 {*arm_cmpsi_insn}
+     (nil))
+(insn 223 222 154 6 (cond_exec (geu:SI (reg:CC 100 cc)
+            (const_int 0 [0]))
+        (set (reg:SI 3 r3 [orig:123 _29 ] [123])
+            (reg:SI 2 r2 [185]))) 6567 {*p *thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (expr_list:REG_DEAD (reg:SI 2 r2 [185])
+            (nil))))
+(debug_insn 154 223 155 6 (var_location:SI raw_y (umax:SI (reg:SI 3 r3 [orig:123 _29 ] [123])
+        (const_int 3327 [0xcff]))) -1
+     (nil))
+(debug_insn 155 154 159 6 (debug_marker) "../System/XPT2046_touch.c":111:9 -1
+     (nil))
+(insn 159 155 225 6 (set (reg:SI 2 r2 [188])
+        (const_int 3327 [0xcff])) "../System/XPT2046_touch.c":112:41 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 3327 [0xcff])
+        (nil)))
+(insn 225 159 226 6 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:123 _29 ] [123])
+            (reg:SI 2 r2 [188]))) "../System/XPT2046_touch.c":112:41 268 {*arm_cmpsi_insn}
+     (nil))
+(insn 226 225 163 6 (cond_exec (ltu:SI (reg:CC 100 cc)
+            (const_int 0 [0]))
+        (set (reg:SI 3 r3 [orig:187 raw_y ] [187])
+            (reg:SI 2 r2 [188]))) "../System/XPT2046_touch.c":112:41 6567 {*p *thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (expr_list:REG_DEAD (reg:SI 2 r2 [188])
+            (nil))))
+(insn 163 226 164 6 (set (reg:SI 3 r3 [191])
+        (plus:SI (ashift:SI (reg:SI 3 r3 [orig:187 raw_y ] [187])
+                (const_int 2 [0x2]))
+            (reg:SI 3 r3 [orig:187 raw_y ] [187]))) "../System/XPT2046_touch.c":112:41 318 {*add_shiftsi}
+     (nil))
+(insn 164 163 168 6 (set (reg:SI 3 r3 [192])
+        (ashift:SI (reg:SI 3 r3 [191])
+            (const_int 6 [0x6]))) "../System/XPT2046_touch.c":112:41 147 {*arm_shiftsi3}
+     (nil))
+(insn 168 164 205 6 (set (reg:SI 2 r2 [197])
+        (const_int 1309380823 [0x4e0b90d7])) "../System/XPT2046_touch.c":112:59 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1309380823 [0x4e0b90d7])
+        (nil)))
+(insn 205 168 206 6 (set (reg:SI 3 r3 [193])
+        (plus:SI (reg:SI 3 r3 [192])
+            (const_int -1056768 [0xffffffffffefe000]))) "../System/XPT2046_touch.c":112:41 7 {*arm_addsi3}
+     (nil))
+(insn 206 205 169 6 (set (reg:SI 3 r3 [193])
+        (plus:SI (reg:SI 3 r3 [193])
+            (const_int -7872 [0xffffffffffffe140]))) "../System/XPT2046_touch.c":112:41 7 {*arm_addsi3}
+     (nil))
+(insn 169 206 170 6 (parallel [
+            (set (reg:SI 3 r3 [196])
+                (truncate:SI (lshiftrt:DI (mult:DI (zero_extend:DI (reg:SI 3 r3 [193]))
+                            (zero_extend:DI (reg:SI 2 r2 [197])))
+                        (const_int 32 [0x20]))))
+            (clobber (reg:SI 2 r2 [215]))
+        ]) "../System/XPT2046_touch.c":112:59 72 {*umull_high}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [197])
+        (expr_list:REG_UNUSED (reg:SI 2 r2 [215])
+            (expr_list:REG_EQUAL (truncate:SI (lshiftrt:DI (mult:DI (zero_extend:DI (reg:SI 3 r3 [193]))
+                            (const_int 1309380823 [0x4e0b90d7]))
+                        (const_int 32 [0x20])))
+                (nil)))))
+(insn 170 169 157 6 (set (reg:SI 3 r3 [195])
+        (lshiftrt:SI (reg:SI 3 r3 [196])
+            (const_int 13 [0xd]))) "../System/XPT2046_touch.c":112:59 147 {*arm_shiftsi3}
+     (nil))
+(insn 157 170 158 6 (set (mem:HI (reg/v/f:SI 11 fp [orig:136 x ] [136]) [1 *x_37(D)+0 S2 A16])
+        (reg:HI 4 r4 [orig:135 _64 ] [135])) "../System/XPT2046_touch.c":111:12 724 {*thumb2_movhi_vfp}
+     (expr_list:REG_DEAD (reg/v/f:SI 11 fp [orig:136 x ] [136])
+        (expr_list:REG_DEAD (reg:HI 4 r4 [orig:135 _64 ] [135])
+            (nil))))
+(debug_insn 158 157 177 6 (debug_marker) "../System/XPT2046_touch.c":112:8 -1
+     (nil))
+(insn 177 158 239 6 (set (mem:HI (reg/v/f:SI 10 r10 [orig:137 y ] [137]) [1 *y_39(D)+0 S2 A16])
+        (reg:HI 3 r3 [195])) "../System/XPT2046_touch.c":112:11 724 {*thumb2_movhi_vfp}
+     (expr_list:REG_DEAD (reg/v/f:SI 10 r10 [orig:137 y ] [137])
+        (expr_list:REG_DEAD (reg:HI 3 r3 [195])
+            (nil))))
+(note 239 177 240 6 NOTE_INSN_EPILOGUE_BEG)
+(insn 240 239 241 6 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_BLOCKAGE) "../System/XPT2046_touch.c":115:1 -1
+     (nil))
+(insn/f 241 240 242 6 (set (reg/f:SI 13 sp)
+        (plus:SI (reg/f:SI 13 sp)
+            (const_int 20 [0x14]))) "../System/XPT2046_touch.c":115:1 -1
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 20 [0x14])))
+        (nil)))
+(insn 242 241 243 6 (unspec:SI [
+            (reg/f:SI 13 sp)
+        ] UNSPEC_REGISTER_USE) "../System/XPT2046_touch.c":115:1 -1
+     (nil))
+(jump_insn 243 242 246 6 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 36 [0x24])))
+            (set/f (reg:SI 4 r4)
+                (mem/c:SI (reg/f:SI 13 sp) [10  S4 A32]))
+            (set/f (reg:SI 5 r5)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [10  S4 A32]))
+            (set/f (reg:SI 6 r6)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 8 [0x8])) [10  S4 A32]))
+            (set/f (reg:SI 7 r7)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 12 [0xc])) [10  S4 A32]))
+            (set/f (reg:SI 8 r8)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 16 [0x10])) [10  S4 A32]))
+            (set/f (reg:SI 9 r9)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 20 [0x14])) [10  S4 A32]))
+            (set/f (reg:SI 10 r10)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 24 [0x18])) [10  S4 A32]))
+            (set/f (reg:SI 11 fp)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 28 [0x1c])) [10  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 32 [0x20])) [10  S4 A32]))
+        ]) "../System/XPT2046_touch.c":115:1 -1
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (expr_list:REG_CFA_RESTORE (reg:SI 11 fp)
+            (expr_list:REG_CFA_RESTORE (reg:SI 10 r10)
+                (expr_list:REG_CFA_RESTORE (reg:SI 9 r9)
+                    (expr_list:REG_CFA_RESTORE (reg:SI 8 r8)
+                        (expr_list:REG_CFA_RESTORE (reg:SI 7 r7)
+                            (expr_list:REG_CFA_RESTORE (reg:SI 6 r6)
+                                (expr_list:REG_CFA_RESTORE (reg:SI 5 r5)
+                                    (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+                                        (nil))))))))))
+ -> return)
+(barrier 246 243 216)
+(note 216 246 218 NOTE_INSN_DELETED)
+(note 218 216 0 NOTE_INSN_DELETED)
+
+;; Function XPT2046_touch_get_coordinates_if_pressed (XPT2046_touch_get_coordinates_if_pressed, funcdef_no=359, decl_uid=10105, cgraph_uid=363, symbol_order=362)
+
+
+
+try_optimize_cfg iteration 1
+
+
+
+XPT2046_touch_get_coordinates_if_pressed
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 3 [r3] 12 [ip] 13 [sp] 14 [lr] 15 [pc] 100 [cc]
+;;  ref usage 	r0={4d,3u} r1={2d,1u} r2={2d} r3={5d,3u} r12={2d} r13={3d,12u} r14={2d,2u} r15={2d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={2d,1u} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 134{112d,22u,0e} in 16{15 regular + 1 call} insns.
+(note 1 0 7 NOTE_INSN_DELETED)
+(note 7 1 42 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 42 7 43 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [10  A8])
+                (unspec:BLK [
+                        (reg:SI 3 r3)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 14 lr))
+        ]) "../System/XPT2046_touch.c":123:1 -1
+     (expr_list:REG_DEAD (reg:SI 3 r3)
+        (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                    (set/f (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8])))
+                    (set/f (mem/c:SI (reg/f:SI 13 sp) [10  S4 A32])
+                        (reg:SI 3 r3))
+                    (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                (const_int 4 [0x4])) [10  S4 A32])
+                        (reg:SI 14 lr))
+                ])
+            (nil))))
+(note 43 42 4 2 NOTE_INSN_PROLOGUE_END)
+(note 4 43 14 2 NOTE_INSN_FUNCTION_BEG)
+(note 14 4 9 2 NOTE_INSN_DELETED)
+(debug_insn 9 14 10 2 (debug_marker) "../System/XPT2046_touch.c":124:2 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker:BLK) "../System/XPT2046_touch.c":44:6 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "../System/XPT2046_touch.c":46:5 -1
+     (nil))
+(insn 12 11 13 2 (set (reg/f:SI 3 r3 [118])
+        (const_int 1207962624 [0x48000c00])) "../System/XPT2046_touch.c":46:12 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1207962624 [0x48000c00])
+        (nil)))
+(insn 13 12 15 2 (set (reg:SI 3 r3 [orig:113 _7 ] [113])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [118])
+                (const_int 16 [0x10])) [3 MEM[(struct GPIO_TypeDef *)1207962624B].IDR+0 S4 A64])) "../System/XPT2046_touch.c":46:12 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 15 13 16 2 (set (reg:CC_NZ 100 cc)
+        (compare:CC_NZ (zero_extract:SI (reg:SI 3 r3 [orig:113 _7 ] [113])
+                (const_int 1 [0x1])
+                (const_int 6 [0x6]))
+            (const_int 0 [0]))) "../System/XPT2046_touch.c":124:4 93 {*zeroextractsi_compare0_scratch}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:113 _7 ] [113])
+        (nil)))
+(jump_insn 16 15 17 2 (set (pc)
+        (if_then_else (ne (reg:CC_NZ 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 35)
+            (pc))) "../System/XPT2046_touch.c":124:4 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC_NZ 100 cc)
+        (int_list:REG_BR_PROB 719407028 (nil)))
+ -> 35)
+(note 17 16 18 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 18 17 21 3 (debug_marker) "../System/XPT2046_touch.c":126:3 -1
+     (nil))
+(call_insn 21 18 22 3 (parallel [
+            (call (mem:SI (symbol_ref:SI ("XPT2046_touch_get_coordinates") [flags 0x3]  <function_decl 0000000006c00200 XPT2046_touch_get_coordinates>) [0 XPT2046_touch_get_coordinates S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/XPT2046_touch.c":126:3 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_DEAD (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("XPT2046_touch_get_coordinates") [flags 0x3]  <function_decl 0000000006c00200 XPT2046_touch_get_coordinates>)
+                (expr_list:REG_EH_REGION (const_int 0 [0])
+                    (nil)))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 22 21 5 3 (debug_marker) "../System/XPT2046_touch.c":127:3 -1
+     (nil))
+(insn 5 22 36 3 (set (reg:SI 0 r0 [orig:115 <retval> ] [115])
+        (const_int 1 [0x1])) "../System/XPT2046_touch.c":127:10 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 1 [0x1])
+        (nil)))
+(jump_insn 36 5 37 3 (set (pc)
+        (label_ref 23)) "../System/XPT2046_touch.c":127:10 284 {*arm_jump}
+     (nil)
+ -> 23)
+(barrier 37 36 35)
+(code_label 35 37 34 4 15 (nil) [1 uses])
+(note 34 35 6 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 6 34 23 4 (set (reg:SI 0 r0 [orig:115 <retval> ] [115])
+        (const_int 0 [0])) "../System/XPT2046_touch.c":131:10 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(code_label 23 6 24 5 14 (nil) [1 uses])
+(note 24 23 30 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 30 24 44 5 (use (reg/i:SI 0 r0)) "../System/XPT2046_touch.c":133:1 -1
+     (nil))
+(note 44 30 45 5 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 45 44 48 5 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg:SI 3 r3)
+                (mem/c:SI (reg/f:SI 13 sp) [10  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [10  S4 A32]))
+        ]) "../System/XPT2046_touch.c":133:1 -1
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (expr_list:REG_UNUSED (reg:SI 3 r3)
+            (expr_list:REG_CFA_RESTORE (reg:SI 3 r3)
+                (nil))))
+ -> return)
+(barrier 48 45 39)
+(note 39 48 40 NOTE_INSN_DELETED)
+(note 40 39 0 NOTE_INSN_DELETED)

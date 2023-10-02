@@ -1,0 +1,3739 @@
+
+;; Function UserPixelSetFunction (UserPixelSetFunction, funcdef_no=868, decl_uid=12909, cgraph_uid=872, symbol_order=878)
+
+Starting decreasing number of live ranges...
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+Pass 1 for finding pseudo/allocno costs
+
+
+
+   Insn 18(l0): point = 0
+   Insn 17(l0): point = 2
+   Insn 16(l0): point = 4
+   Insn 13(l0): point = 6
+   Insn 10(l0): point = 8
+   Insn 4(l0): point = 10
+   Insn 9(l0): point = 12
+Compressing live ranges: from 15 to 0 - 0%
+Ranges after the compression:
++++Allocating 0 bytes for conflict table (uncompressed size 0)
+
+  regions=1, blocks=3, points=0
+    allocnos=0 (big 0), copies=0, conflicts=0, ranges=0
+
+**** Allocnos coloring:
+
+
+  Loop 0 (parent -1, header bb2, depth 0)
+    bbs: 2
+    all:
+    modified regnos:
+    border:
+    Pressure: GENERAL_REGS=6
+    Hard reg set forest:
+      0:( 0-12 14 16-47)@0
+Disposition:
+New iteration of spill/restore move
++++Costs: overall 0, reg 0, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+UserPixelSetFunction
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 13 [sp] 14 [lr]
+;;  ref usage 	r0={4d,2u} r1={4d,2u} r2={4d,2u} r3={4d,2u} r7={1d,2u} r12={4d} r13={1d,4u} r14={3d} r15={2d} r16={3d} r17={3d} r18={3d} r19={3d} r20={3d} r21={3d} r22={3d} r23={3d} r24={3d} r25={3d} r26={3d} r27={3d} r28={3d} r29={3d} r30={3d} r31={3d} r48={2d} r49={2d} r50={2d} r51={2d} r52={2d} r53={2d} r54={2d} r55={2d} r56={2d} r57={2d} r58={2d} r59={2d} r60={2d} r61={2d} r62={2d} r63={2d} r64={2d} r65={2d} r66={2d} r67={2d} r68={2d} r69={2d} r70={2d} r71={2d} r72={2d} r73={2d} r74={2d} r75={2d} r76={2d} r77={2d} r78={2d} r79={2d} r80={2d} r81={2d} r82={2d} r83={2d} r84={2d} r85={2d} r86={2d} r87={2d} r88={2d} r89={2d} r90={2d} r91={2d} r92={2d} r93={2d} r94={2d} r95={2d} r96={2d} r97={2d} r98={2d} r99={2d} r100={2d} r101={2d} r102={1d,4u} r103={1d,1u} r104={2d} r105={2d} r106={2d} 
+;;    total ref usage 210{191d,19u,0e} in 9{7 regular + 2 call} insns.
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 5 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 5 6 15 2 NOTE_INSN_FUNCTION_BEG)
+(note 15 5 8 2 NOTE_INSN_DELETED)
+(debug_insn 8 15 9 2 (debug_marker) "../System/lcd.c":169:2 -1
+     (nil))
+(insn 9 8 4 2 (set (reg:SI 3 r3)
+        (const_int 1 [0x1])) "../System/lcd.c":169:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 4 9 10 2 (set (mem/c:SI (plus:SI (reg/f:SI 102 sfp)
+                (const_int -4 [0xfffffffffffffffc])) [2 c+0 S4 A32])
+        (reg:SI 2 r2 [ c ])) "../System/lcd.c":168:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [ c ])
+        (nil)))
+(insn 10 4 13 2 (set (reg:SI 2 r2)
+        (reg:SI 3 r3)) "../System/lcd.c":169:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 1 [0x1])
+        (nil)))
+(call_insn 13 10 14 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("ILI9341_SetDisplayWindow") [flags 0x41]  <function_decl 0000000006c72600 ILI9341_SetDisplayWindow>) [0 ILI9341_SetDisplayWindow S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":169:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 3 r3)
+        (expr_list:REG_DEAD (reg:SI 2 r2)
+            (expr_list:REG_DEAD (reg:SI 1 r1)
+                (expr_list:REG_DEAD (reg:SI 0 r0)
+                    (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_SetDisplayWindow") [flags 0x41]  <function_decl 0000000006c72600 ILI9341_SetDisplayWindow>)
+                        (nil))))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (expr_list:SI (use (reg:SI 2 r2))
+                    (expr_list:SI (use (reg:SI 3 r3))
+                        (nil)))))))
+(debug_insn 14 13 16 2 (debug_marker) "../System/lcd.c":170:2 -1
+     (nil))
+(insn 16 14 17 2 (set (reg:SI 1 r1)
+        (const_int 1 [0x1])) "../System/lcd.c":170:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 17 16 18 2 (set (reg:SI 0 r0)
+        (plus:SI (reg/f:SI 102 sfp)
+            (const_int -4 [0xfffffffffffffffc]))) "../System/lcd.c":170:2 7 {*arm_addsi3}
+     (nil))
+(call_insn 18 17 21 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("ILI9341_SendData") [flags 0x41]  <function_decl 0000000006c72200 ILI9341_SendData>) [0 ILI9341_SendData S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":170:2 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_SendData") [flags 0x41]  <function_decl 0000000006c72200 ILI9341_SendData>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(note 21 18 0 NOTE_INSN_DELETED)
+
+;; Function _HW_FillFrame_ (_HW_FillFrame_, funcdef_no=869, decl_uid=12915, cgraph_uid=873, symbol_order=879)
+
+Starting decreasing number of live ranges...
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8
+;; 2 succs { 3 4 }
+;; 3 succs { 5 }
+;; 4 succs { 5 }
+;; 5 succs { 6 7 }
+;; 6 succs { 8 }
+;; 7 succs { 8 }
+;; 8 succs { 1 }
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8
+;; 2 succs { 3 4 }
+;; 3 succs { 5 }
+;; 4 succs { 5 }
+;; 5 succs { 6 7 }
+;; 6 succs { 8 }
+;; 7 succs { 8 }
+;; 8 succs { 1 }
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Reg 131: local to bb 2 def dominates all uses has unique first use
+Reg 133: local to bb 2 def dominates all uses has unique first use
+Reg 132: local to bb 2 def dominates all uses has unique first use
+Reg 134: local to bb 2 def dominates all uses has unique first use
+Reg 126 uninteresting (no unique first use)
+Ignoring reg 128, has equiv memory
+Reg 127 uninteresting (no unique first use)
+Reg 135: local to bb 8 def dominates all uses has unique first use
+Reg 121 uninteresting
+Found def insn 100 for 131 to be not moveable
+Found def insn 101 for 132 to be not moveable
+Found def insn 102 for 133 to be not moveable
+Found def insn 103 for 134 to be not moveable
+Found def insn 104 for 135 to be not moveable
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8
+;; 2 succs { 3 4 }
+;; 3 succs { 5 }
+;; 4 succs { 5 }
+;; 5 succs { 6 7 }
+;; 6 succs { 8 }
+;; 7 succs { 8 }
+;; 8 succs { 1 }
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+init_insns for 128: (insn_list:REG_DEP_TRUE 6 (nil))
+
+Pass 1 for finding pseudo/allocno costs
+
+    r135: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r134: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r133: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r132: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r131: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r128: preferred NO_REGS, alternative NO_REGS, allocno NO_REGS
+    r127: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r126: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r125: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r124: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r122: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r121: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r119: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r118: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+
+  a0(r128,l0) costs: LO_REGS:20000,20000 HI_REGS:22000,22000 CALLER_SAVE_REGS:22000,22000 EVEN_REG:22000,22000 GENERAL_REGS:22000,22000 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:-9000,-9000
+  a1(r122,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a2(r118,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:60000,60000 VFP_LO_REGS:60000,60000 ALL_REGS:45000,45000 MEM:40000,40000
+  a3(r119,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:60000,60000 VFP_LO_REGS:60000,60000 ALL_REGS:45000,45000 MEM:40000,40000
+  a4(r121,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:20000,20000
+  a5(r135,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a6(r124,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:82500,82500 VFP_LO_REGS:82500,82500 ALL_REGS:67500,67500 MEM:55000,55000
+  a7(r125,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:82500,82500 VFP_LO_REGS:82500,82500 ALL_REGS:67500,67500 MEM:55000,55000
+  a8(r127,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:52500,52500 VFP_LO_REGS:52500,52500 ALL_REGS:52500,52500 MEM:35000,35000
+  a9(r126,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:52500,52500 VFP_LO_REGS:52500,52500 ALL_REGS:52500,52500 MEM:35000,35000
+  a10(r134,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a11(r132,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a12(r133,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a13(r131,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+
+   Insn 97(l0): point = 0
+   Insn 96(l0): point = 2
+   Insn 83(l0): point = 4
+   Insn 82(l0): point = 6
+   Insn 81(l0): point = 8
+   Insn 78(l0): point = 10
+   Insn 75(l0): point = 12
+   Insn 74(l0): point = 14
+   Insn 71(l0): point = 16
+   Insn 68(l0): point = 18
+   Insn 77(l0): point = 20
+   Insn 76(l0): point = 22
+   Insn 104(l0): point = 24
+   Insn 64(l0): point = 26
+   Insn 63(l0): point = 28
+   Insn 9(l0): point = 31
+   Insn 45(l0): point = 33
+   Insn 107(l0): point = 36
+   Insn 38(l0): point = 38
+   Insn 35(l0): point = 41
+   Insn 34(l0): point = 43
+   Insn 8(l0): point = 46
+   Insn 25(l0): point = 48
+   Insn 105(l0): point = 51
+   Insn 18(l0): point = 53
+   Insn 15(l0): point = 56
+   Insn 14(l0): point = 58
+   Insn 5(l0): point = 60
+   Insn 3(l0): point = 62
+   Insn 6(l0): point = 64
+   Insn 4(l0): point = 66
+   Insn 2(l0): point = 68
+   Insn 103(l0): point = 70
+   Insn 101(l0): point = 72
+   Insn 102(l0): point = 74
+   Insn 100(l0): point = 76
+ a0(r128): [7..64]
+ a1(r122): [9..16]
+ a2(r118): [51..53] [13..48]
+ a3(r119): [36..38] [15..33]
+ a4(r121): [17..18]
+ a5(r135): [17..24]
+ a6(r124): [49..68] [21..46]
+ a7(r125): [34..62] [23..31]
+ a8(r127): [39..60] [32..35]
+ a9(r126): [54..66] [47..50]
+ a10(r134): [61..70]
+ a11(r132): [63..72]
+ a12(r133): [67..74]
+ a13(r131): [69..76]
+Compressing live ranges: from 79 to 30 - 37%
+Ranges after the compression:
+ a0(r128): [0..25]
+ a1(r122): [0..1]
+ a2(r118): [18..19] [0..15]
+ a3(r119): [10..11] [0..7]
+ a4(r121): [2..3]
+ a5(r135): [2..5]
+ a6(r124): [16..27] [4..13]
+ a7(r125): [8..23] [4..5]
+ a8(r127): [12..21] [6..9]
+ a9(r126): [20..25] [14..17]
+ a10(r134): [22..29]
+ a11(r132): [24..29]
+ a12(r133): [26..29]
+ a13(r131): [28..29]
++++Allocating 112 bytes for conflict table (uncompressed size 112)
+;; a0(r128,l0) conflicts:
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a1(r122,l0) conflicts: a3(r119,l0) a2(r118,l0)
+;;     total conflict hard regs: 0-3 12 14
+;;     conflict hard regs: 0-3 12 14
+
+;; a2(r118,l0) conflicts: a1(r122,l0) a3(r119,l0) a4(r121,l0) a5(r135,l0) a7(r125,l0) a6(r124,l0) a8(r127,l0) a9(r126,l0)
+;;     total conflict hard regs: 0-1 3 12 14
+;;     conflict hard regs: 0-1 3 12 14
+
+;; a3(r119,l0) conflicts: a1(r122,l0) a2(r118,l0) a4(r121,l0) a5(r135,l0) a7(r125,l0) a6(r124,l0) a8(r127,l0)
+;;     total conflict hard regs: 0-1 12 14
+;;     conflict hard regs: 0-1 12 14
+
+;; a4(r121,l0) conflicts: a3(r119,l0) a2(r118,l0) a5(r135,l0)
+;;     total conflict hard regs: 0-1
+;;     conflict hard regs: 0-1
+
+;; a5(r135,l0) conflicts: a3(r119,l0) a2(r118,l0) a4(r121,l0) a7(r125,l0) a6(r124,l0)
+;;     total conflict hard regs: 0-1
+;;     conflict hard regs: 0-1
+
+;; a6(r124,l0) conflicts: a3(r119,l0) a2(r118,l0) a5(r135,l0) a7(r125,l0) a8(r127,l0) a9(r126,l0) a10(r134,l0) a11(r132,l0) a12(r133,l0)
+;;     total conflict hard regs: 0-1 12 14
+;;     conflict hard regs: 0-1 12 14
+
+;; a7(r125,l0) conflicts: a3(r119,l0) a2(r118,l0) a5(r135,l0) a6(r124,l0) a8(r127,l0) a9(r126,l0) a10(r134,l0)
+;;     total conflict hard regs: 0 12 14
+;;     conflict hard regs: 0 12 14
+
+;; a8(r127,l0) conflicts: a3(r119,l0) a2(r118,l0) a7(r125,l0) a6(r124,l0) a9(r126,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a9(r126,l0) conflicts: a2(r118,l0) a7(r125,l0) a6(r124,l0) a8(r127,l0) a10(r134,l0) a11(r132,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a10(r134,l0) conflicts: a7(r125,l0) a6(r124,l0) a9(r126,l0) a11(r132,l0) a12(r133,l0) a13(r131,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a11(r132,l0) conflicts: a6(r124,l0) a9(r126,l0) a10(r134,l0) a12(r133,l0) a13(r131,l0)
+;;     total conflict hard regs: 3
+;;     conflict hard regs: 3
+
+;; a12(r133,l0) conflicts: a6(r124,l0) a10(r134,l0) a11(r132,l0) a13(r131,l0)
+;;     total conflict hard regs: 1 3
+;;     conflict hard regs: 1 3
+
+;; a13(r131,l0) conflicts: a10(r134,l0) a11(r132,l0) a12(r133,l0)
+;;     total conflict hard regs: 1-3
+;;     conflict hard regs: 1-3
+
+
+  cp0:a1(r122)<->a5(r135)@1000:constraint
+  cp1:a1(r122)<->a4(r121)@1000:constraint
+  cp2:a6(r124)<->a13(r131)@1000:move
+  cp3:a9(r126)<->a12(r133)@1000:move
+  cp4:a7(r125)<->a11(r132)@1000:move
+  cp5:a8(r127)<->a10(r134)@1000:move
+  pref0:a5(r135)<-hr0@2000
+  pref1:a7(r125)<-hr1@2000
+  pref2:a6(r124)<-hr0@2000
+  pref3:a3(r119)<-hr3@2000
+  pref4:a2(r118)<-hr2@2000
+  pref5:a1(r122)<-hr1@2000
+  pref6:a13(r131)<-hr0@2000
+  pref7:a12(r133)<-hr2@2000
+  pref8:a11(r132)<-hr1@2000
+  pref9:a10(r134)<-hr3@2000
+  regions=1, blocks=9, points=30
+    allocnos=14 (big 0), copies=6, conflicts=0, ranges=20
+
+**** Allocnos coloring:
+
+
+  Loop 0 (parent -1, header bb2, depth 0)
+    bbs: 8 7 6 5 4 3 2
+    all: 0r128 1r122 2r118 3r119 4r121 5r135 6r124 7r125 8r127 9r126 10r134 11r132 12r133 13r131
+    modified regnos: 118 119 121 122 124 125 126 127 128 131 132 133 134 135
+    border:
+    Pressure: GENERAL_REGS=7
+ Removing pref5:hr1@2000
+ Removing pref0:hr0@2000
+ Removing pref2:hr0@2000
+    Hard reg set forest:
+      0:( 0-12 14 16-47)@0
+        1:( 0-12 14)@256000
+          2:( 2-12 14)@156000
+            3:( 2-11)@243000
+              4:( 2 4-11)@424000
+                5:( 4-11)@290000
+      Spill a0(r128,l0)
+      Allocno a1r122 of ALL_REGS(46) has 8 avail. regs  4-11, node:  4-11 (confl regs =  0-3 12-15 48-106)
+      Allocno a2r118 of GENERAL_REGS(14) has 9 avail. regs  2 4-11, node:  2 4-11 (confl regs =  0-1 3 12-106)
+      Allocno a3r119 of GENERAL_REGS(14) has 10 avail. regs  2-11, node:  2-11 (confl regs =  0-1 12-106)
+      Allocno a4r121 of GENERAL_REGS(14) has 12 avail. regs  2-12 14, node:  2-12 14 (confl regs =  0-1 13 15-106)
+      Allocno a5r135 of ALL_REGS(46) has 12 avail. regs  2-12 14, node:  2-12 14 (confl regs =  0-1 13 15 48-106)
+      Allocno a6r124 of GENERAL_REGS(14) has 10 avail. regs  2-11, node:  2-11 (confl regs =  0-1 12-106)
+      Allocno a7r125 of GENERAL_REGS(14) has 11 avail. regs  1-11, ^node:  0-12 14 (confl regs =  0 12-106)
+      Allocno a8r127 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a9r126 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a10r134 of ALL_REGS(46) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15 48-106)
+      Allocno a11r132 of ALL_REGS(46) has 13 avail. regs  0-2 4-12 14, ^node:  0-12 14 (confl regs =  3 13 15 48-106)
+      Allocno a12r133 of ALL_REGS(46) has 12 avail. regs  0 2 4-12 14, ^node:  0-12 14 (confl regs =  1 3 13 15 48-106)
+      Allocno a13r131 of ALL_REGS(46) has 11 avail. regs  0 4-12 14, ^node:  0-12 14 (confl regs =  1-3 13 15 48-106)
+      Forming thread by copy 0:a1r122-a5r135 (freq=1000):
+        Result (freq=4000): a1r122(2000) a5r135(2000)
+      Forming thread by copy 2:a6r124-a13r131 (freq=1000):
+        Result (freq=6500): a6r124(4500) a13r131(2000)
+      Forming thread by copy 3:a9r126-a12r133 (freq=1000):
+        Result (freq=5500): a9r126(3500) a12r133(2000)
+      Forming thread by copy 4:a7r125-a11r132 (freq=1000):
+        Result (freq=6500): a7r125(4500) a11r132(2000)
+      Forming thread by copy 5:a8r127-a10r134 (freq=1000):
+        Result (freq=5500): a8r127(3500) a10r134(2000)
+      Pushing a4(r121,l0)(cost 0)
+      Pushing a3(r119,l0)(cost 0)
+      Pushing a2(r118,l0)(cost 0)
+      Pushing a5(r135,l0)(cost 0)
+      Pushing a1(r122,l0)(cost 0)
+      Pushing a12(r133,l0)(cost 0)
+      Pushing a9(r126,l0)(cost 0)
+      Pushing a10(r134,l0)(cost 0)
+      Pushing a8(r127,l0)(cost 0)
+      Pushing a11(r132,l0)(cost 0)
+      Pushing a7(r125,l0)(cost 0)
+      Pushing a13(r131,l0)(cost 0)
+      Pushing a6(r124,l0)(cost 0)
+      Popping a6(r124,l0)  -- assign reg 4
+      Popping a13(r131,l0)  -- assign reg 0
+      Popping a7(r125,l0)  -- assign reg 5
+      Popping a11(r132,l0)  -- assign reg 1
+      Popping a8(r127,l0)  -- assign reg 3
+      Popping a10(r134,l0)  -- assign reg 3
+      Popping a9(r126,l0)  -- assign reg 2
+      Popping a12(r133,l0)  -- assign reg 2
+      Popping a1(r122,l0)  -- assign reg 4
+      Popping a5(r135,l0)  -- assign reg 12
+      Popping a2(r118,l0)  -- assign reg 6
+      Popping a3(r119,l0)  -- assign reg 7
+      Popping a4(r121,l0)  -- assign reg 4
+Disposition:
+    2:r118 l0     6    3:r119 l0     7    4:r121 l0     4    1:r122 l0     4
+    6:r124 l0     4    7:r125 l0     5    9:r126 l0     2    8:r127 l0     3
+    0:r128 l0   mem   13:r131 l0     0   11:r132 l0     1   12:r133 l0     2
+   10:r134 l0     3    5:r135 l0    12
+New iteration of spill/restore move
++++Costs: overall -109000, reg -100000, mem -9000, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+_HW_FillFrame_
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={8d,7u} r1={6d,3u} r2={5d,2u} r3={5d,2u} r7={1d,8u} r12={6d} r13={1d,11u} r14={4d} r15={3d} r16={4d} r17={4d} r18={4d} r19={4d} r20={4d} r21={4d} r22={4d} r23={4d} r24={4d} r25={4d} r26={4d} r27={4d} r28={4d} r29={4d} r30={4d} r31={4d} r48={3d} r49={3d} r50={3d} r51={3d} r52={3d} r53={3d} r54={3d} r55={3d} r56={3d} r57={3d} r58={3d} r59={3d} r60={3d} r61={3d} r62={3d} r63={3d} r64={3d} r65={3d} r66={3d} r67={3d} r68={3d} r69={3d} r70={3d} r71={3d} r72={3d} r73={3d} r74={3d} r75={3d} r76={3d} r77={3d} r78={3d} r79={3d} r80={3d} r81={3d} r82={3d} r83={3d} r84={3d} r85={3d} r86={3d} r87={3d} r88={3d} r89={3d} r90={3d} r91={3d} r92={3d} r93={3d} r94={3d} r95={3d} r96={3d} r97={3d} r98={3d} r99={3d} r100={6d,2u} r101={3d} r102={1d,8u} r103={1d,8u,1e} r104={3d} r105={3d} r106={3d} r118={2d,6u} r119={2d,6u} r121={1d,2u} r122={1d,2u} r124={2d,6u} r125={2d,6u} r126={1d,5u} r127={1d,5u} r128={1d,2u} r131={1d,1u} r132={1d,1u} r133={1d,1u} r134={1d,1u} r135={1d,2u} 
+;;    total ref usage 395{297d,97u,1e} in 78{75 regular + 3 call} insns.
+(note 1 0 10 NOTE_INSN_DELETED)
+(note 10 1 7 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 7 10 12 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 12 7 13 2 (debug_marker) "../System/lcd.c":177:2 -1
+     (nil))
+(debug_insn 13 12 100 2 (debug_marker) "../System/lcd.c":178:2 -1
+     (nil))
+(insn 100 13 102 2 (set (reg:SI 131)
+        (reg:SI 0 r0 [ x1 ])) "../System/lcd.c":176:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [ x1 ])
+        (nil)))
+(insn 102 100 101 2 (set (reg:SI 133)
+        (reg:SI 2 r2 [ x2 ])) "../System/lcd.c":176:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [ x2 ])
+        (nil)))
+(insn 101 102 103 2 (set (reg:SI 132)
+        (reg:SI 1 r1 [ y1 ])) "../System/lcd.c":176:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [ y1 ])
+        (nil)))
+(insn 103 101 2 2 (set (reg:SI 134)
+        (reg:SI 3 r3 [ y2 ])) "../System/lcd.c":176:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [ y2 ])
+        (nil)))
+(insn 2 103 4 2 (set (reg/v:SI 124 [ x1 ])
+        (reg:SI 131)) "../System/lcd.c":176:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 131)
+        (nil)))
+(insn 4 2 6 2 (set (reg/v:SI 126 [ x2 ])
+        (reg:SI 133)) "../System/lcd.c":176:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 133)
+        (nil)))
+(insn 6 4 3 2 (set (reg/v:SI 128 [ c ])
+        (mem/c:SI (reg/f:SI 103 afp) [2 c+0 S4 A64])) "../System/lcd.c":176:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem/c:SI (reg/f:SI 103 afp) [2 c+0 S4 A64])
+        (nil)))
+(insn 3 6 5 2 (set (reg/v:SI 125 [ y1 ])
+        (reg:SI 132)) "../System/lcd.c":176:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 132)
+        (nil)))
+(insn 5 3 14 2 (set (reg/v:SI 127 [ y2 ])
+        (reg:SI 134)) "../System/lcd.c":176:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 134)
+        (nil)))
+(insn 14 5 15 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 126 [ x2 ])
+            (reg/v:SI 124 [ x1 ]))) "../System/lcd.c":178:5 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 15 14 16 2 (set (pc)
+        (if_then_else (le (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 22)
+            (pc))) "../System/lcd.c":178:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 22)
+(note 16 15 17 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 17 16 18 3 (debug_marker) "../System/lcd.c":178:15 -1
+     (nil))
+(insn 18 17 19 3 (set (reg/v:SI 118 [ w ])
+        (minus:SI (reg/v:SI 126 [ x2 ])
+            (reg/v:SI 124 [ x1 ]))) "../System/lcd.c":178:17 45 {*arm_subsi3_insn}
+     (expr_list:REG_DEAD (reg/v:SI 126 [ x2 ])
+        (nil)))
+(debug_insn 19 18 105 3 (var_location:SI w (reg/v:SI 118 [ w ])) "../System/lcd.c":178:17 -1
+     (nil))
+(jump_insn 105 19 106 3 (set (pc)
+        (label_ref 29)) 284 {*arm_jump}
+     (nil)
+ -> 29)
+(barrier 106 105 22)
+(code_label 22 106 23 4 5 (nil) [1 uses])
+(note 23 22 24 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 24 23 25 4 (debug_marker) "../System/lcd.c":181:3 -1
+     (nil))
+(insn 25 24 26 4 (set (reg/v:SI 118 [ w ])
+        (minus:SI (reg/v:SI 124 [ x1 ])
+            (reg/v:SI 126 [ x2 ]))) "../System/lcd.c":181:5 45 {*arm_subsi3_insn}
+     (expr_list:REG_DEAD (reg/v:SI 124 [ x1 ])
+        (nil)))
+(debug_insn 26 25 27 4 (var_location:SI w (reg/v:SI 118 [ w ])) "../System/lcd.c":181:5 -1
+     (nil))
+(debug_insn 27 26 28 4 (debug_marker) "../System/lcd.c":182:3 -1
+     (nil))
+(debug_insn 28 27 8 4 (var_location:SI x1 (reg/v:SI 126 [ x2 ])) "../System/lcd.c":182:6 -1
+     (nil))
+(insn 8 28 29 4 (set (reg/v:SI 124 [ x1 ])
+        (reg/v:SI 126 [ x2 ])) "../System/lcd.c":181:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 126 [ x2 ])
+        (nil)))
+(code_label 29 8 30 5 6 (nil) [1 uses])
+(note 30 29 31 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 31 30 32 5 (var_location:SI w (reg/v:SI 118 [ w ])) -1
+     (nil))
+(debug_insn 32 31 33 5 (var_location:SI x1 (reg/v:SI 124 [ x1 ])) -1
+     (nil))
+(debug_insn 33 32 34 5 (debug_marker) "../System/lcd.c":184:2 -1
+     (nil))
+(insn 34 33 35 5 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 127 [ y2 ])
+            (reg/v:SI 125 [ y1 ]))) "../System/lcd.c":184:5 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 35 34 36 5 (set (pc)
+        (if_then_else (le (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 42)
+            (pc))) "../System/lcd.c":184:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 42)
+(note 36 35 37 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 37 36 38 6 (debug_marker) "../System/lcd.c":184:15 -1
+     (nil))
+(insn 38 37 39 6 (set (reg/v:SI 119 [ h ])
+        (minus:SI (reg/v:SI 127 [ y2 ])
+            (reg/v:SI 125 [ y1 ]))) "../System/lcd.c":184:17 45 {*arm_subsi3_insn}
+     (expr_list:REG_DEAD (reg/v:SI 127 [ y2 ])
+        (nil)))
+(debug_insn 39 38 107 6 (var_location:SI h (reg/v:SI 119 [ h ])) "../System/lcd.c":184:17 -1
+     (nil))
+(jump_insn 107 39 108 6 (set (pc)
+        (label_ref 49)) 284 {*arm_jump}
+     (nil)
+ -> 49)
+(barrier 108 107 42)
+(code_label 42 108 43 7 7 (nil) [1 uses])
+(note 43 42 44 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 44 43 45 7 (debug_marker) "../System/lcd.c":187:3 -1
+     (nil))
+(insn 45 44 46 7 (set (reg/v:SI 119 [ h ])
+        (minus:SI (reg/v:SI 125 [ y1 ])
+            (reg/v:SI 127 [ y2 ]))) "../System/lcd.c":187:5 45 {*arm_subsi3_insn}
+     (expr_list:REG_DEAD (reg/v:SI 125 [ y1 ])
+        (nil)))
+(debug_insn 46 45 47 7 (var_location:SI h (reg/v:SI 119 [ h ])) "../System/lcd.c":187:5 -1
+     (nil))
+(debug_insn 47 46 48 7 (debug_marker) "../System/lcd.c":188:3 -1
+     (nil))
+(debug_insn 48 47 9 7 (var_location:SI y1 (reg/v:SI 127 [ y2 ])) "../System/lcd.c":188:6 -1
+     (nil))
+(insn 9 48 49 7 (set (reg/v:SI 125 [ y1 ])
+        (reg/v:SI 127 [ y2 ])) "../System/lcd.c":187:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 127 [ y2 ])
+        (nil)))
+(code_label 49 9 50 8 8 (nil) [1 uses])
+(note 50 49 65 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(note 65 50 80 8 NOTE_INSN_DELETED)
+(note 80 65 51 8 NOTE_INSN_DELETED)
+(debug_insn 51 80 52 8 (var_location:SI h (reg/v:SI 119 [ h ])) -1
+     (nil))
+(debug_insn 52 51 53 8 (var_location:SI y1 (reg/v:SI 125 [ y1 ])) -1
+     (nil))
+(debug_insn 53 52 56 8 (debug_marker) "../System/lcd.c":191:2 -1
+     (nil))
+(debug_insn 56 53 57 8 (var_location:SI x (reg/v:SI 124 [ x1 ])) "../System/lcd.c":191:2 -1
+     (nil))
+(debug_insn 57 56 58 8 (var_location:SI y (reg/v:SI 125 [ y1 ])) "../System/lcd.c":191:2 -1
+     (nil))
+(debug_insn 58 57 59 8 (var_location:SI w (reg/v:SI 118 [ w ])) "../System/lcd.c":191:2 -1
+     (nil))
+(debug_insn 59 58 60 8 (var_location:SI h (reg/v:SI 119 [ h ])) "../System/lcd.c":191:2 -1
+     (nil))
+(debug_insn 60 59 61 8 (var_location:HI c (subreg:HI (reg/v:SI 128 [ c ]) 0)) "../System/lcd.c":191:2 -1
+     (nil))
+(debug_insn 61 60 62 8 (debug_marker:BLK) "../System/lcd.c":69:6 -1
+     (nil))
+(debug_insn 62 61 63 8 (debug_marker) "../System/lcd.c":71:2 -1
+     (nil))
+(insn 63 62 64 8 (set (reg:SI 0 r0)
+        (const_int 2 [0x2])) "../System/lcd.c":71:25 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 64 63 104 8 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("ILI9341_GetParam") [flags 0x41]  <function_decl 0000000006c72f00 ILI9341_GetParam>) [0 ILI9341_GetParam S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":71:25 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_GetParam") [flags 0x41]  <function_decl 0000000006c72f00 ILI9341_GetParam>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(insn 104 64 66 8 (set (reg:SI 135)
+        (reg:SI 0 r0)) "../System/lcd.c":71:25 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+(debug_insn 66 104 67 8 (var_location:SI max_count (reg:SI 135)) "../System/lcd.c":71:25 -1
+     (nil))
+(debug_insn 67 66 76 8 (debug_marker) "../System/lcd.c":72:2 -1
+     (nil))
+(insn 76 67 77 8 (set (reg:SI 1 r1)
+        (reg/v:SI 125 [ y1 ])) "../System/lcd.c":78:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 125 [ y1 ])
+        (nil)))
+(insn 77 76 68 8 (set (reg:SI 0 r0)
+        (reg/v:SI 124 [ x1 ])) "../System/lcd.c":78:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 124 [ x1 ])
+        (nil)))
+(insn 68 77 69 8 (set (reg/v:SI 121 [ pixel_count ])
+        (mult:SI (reg/v:SI 119 [ h ])
+            (reg/v:SI 118 [ w ]))) "../System/lcd.c":72:11 56 {*mul}
+     (nil))
+(debug_insn 69 68 70 8 (var_location:SI pixel_count (reg/v:SI 121 [ pixel_count ])) "../System/lcd.c":72:11 -1
+     (nil))
+(debug_insn 70 69 71 8 (debug_marker) "../System/lcd.c":74:2 -1
+     (nil))
+(insn 71 70 72 8 (parallel [
+            (set (reg/v:SI 122 [ pixel_count ])
+                (umin:SI (reg:SI 135)
+                    (reg/v:SI 121 [ pixel_count ])))
+            (clobber (reg:CC 100 cc))
+        ]) 973 {*thumb2_uminsi3}
+     (expr_list:REG_DEAD (reg:SI 135)
+        (expr_list:REG_DEAD (reg/v:SI 121 [ pixel_count ])
+            (expr_list:REG_UNUSED (reg:CC 100 cc)
+                (nil)))))
+(debug_insn 72 71 73 8 (var_location:SI pixel_count (reg/v:SI 122 [ pixel_count ])) -1
+     (nil))
+(debug_insn 73 72 74 8 (debug_marker) "../System/lcd.c":78:2 -1
+     (nil))
+(insn 74 73 75 8 (set (reg:SI 3 r3)
+        (reg/v:SI 119 [ h ])) "../System/lcd.c":78:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 119 [ h ])
+        (nil)))
+(insn 75 74 78 8 (set (reg:SI 2 r2)
+        (reg/v:SI 118 [ w ])) "../System/lcd.c":78:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 118 [ w ])
+        (nil)))
+(call_insn 78 75 79 8 (parallel [
+            (call (mem:SI (symbol_ref:SI ("ILI9341_SetDisplayWindow") [flags 0x41]  <function_decl 0000000006c72600 ILI9341_SetDisplayWindow>) [0 ILI9341_SetDisplayWindow S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":78:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 3 r3)
+        (expr_list:REG_DEAD (reg:SI 2 r2)
+            (expr_list:REG_DEAD (reg:SI 1 r1)
+                (expr_list:REG_DEAD (reg:SI 0 r0)
+                    (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_SetDisplayWindow") [flags 0x41]  <function_decl 0000000006c72600 ILI9341_SetDisplayWindow>)
+                        (nil))))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (expr_list:SI (use (reg:SI 2 r2))
+                    (expr_list:SI (use (reg:SI 3 r3))
+                        (nil)))))))
+(debug_insn 79 78 81 8 (debug_marker) "../System/lcd.c":79:2 -1
+     (nil))
+(insn 81 79 82 8 (set (reg:SI 1 r1)
+        (reg/v:SI 122 [ pixel_count ])) "../System/lcd.c":79:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 122 [ pixel_count ])
+        (nil)))
+(insn 82 81 83 8 (set (reg:SI 0 r0)
+        (zero_extend:SI (subreg:HI (reg/v:SI 128 [ c ]) 0))) "../System/lcd.c":79:2 1005 {*thumb2_zero_extendhisi2_v6}
+     (expr_list:REG_DEAD (reg/v:SI 128 [ c ])
+        (nil)))
+(call_insn 83 82 84 8 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("ILI9341_SendRepeatedData") [flags 0x41]  <function_decl 0000000006c72300 ILI9341_SendRepeatedData>) [0 ILI9341_SendRepeatedData S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":79:2 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_SendRepeatedData") [flags 0x41]  <function_decl 0000000006c72300 ILI9341_SendRepeatedData>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:HI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 84 83 85 8 (var_location:SI x (clobber (const_int 0 [0]))) "../System/lcd.c":191:2 -1
+     (nil))
+(debug_insn 85 84 86 8 (var_location:SI y (clobber (const_int 0 [0]))) "../System/lcd.c":191:2 -1
+     (nil))
+(debug_insn 86 85 87 8 (var_location:SI w (clobber (const_int 0 [0]))) "../System/lcd.c":191:2 -1
+     (nil))
+(debug_insn 87 86 88 8 (var_location:SI h (clobber (const_int 0 [0]))) "../System/lcd.c":191:2 -1
+     (nil))
+(debug_insn 88 87 89 8 (var_location:HI c (clobber (const_int 0 [0]))) "../System/lcd.c":191:2 -1
+     (nil))
+(debug_insn 89 88 90 8 (var_location:SI pixel_count (clobber (const_int 0 [0]))) "../System/lcd.c":191:2 -1
+     (nil))
+(debug_insn 90 89 91 8 (var_location:SI max_count (clobber (const_int 0 [0]))) "../System/lcd.c":191:2 -1
+     (nil))
+(debug_insn 91 90 96 8 (debug_marker) "../System/lcd.c":193:2 -1
+     (nil))
+(insn 96 91 97 8 (set (reg/i:SI 0 r0)
+        (const_int 0 [0])) "../System/lcd.c":194:1 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 97 96 109 8 (use (reg/i:SI 0 r0)) "../System/lcd.c":194:1 -1
+     (nil))
+(note 109 97 0 NOTE_INSN_DELETED)
+
+;; Function LCD_DisplayBuffer (LCD_DisplayBuffer, funcdef_no=862, decl_uid=11870, cgraph_uid=866, symbol_order=872)
+
+Starting decreasing number of live ranges...
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Reg 125 uninteresting
+Reg 121: local to bb 2 def dominates all uses has unique first use
+Reg 123: local to bb 2 def dominates all uses has unique first use
+Reg 126 uninteresting
+Reg 122: local to bb 2 def dominates all uses has unique first use
+Examining insn 4, def for 121
+  all ok
+Examining insn 5, def for 122
+  all ok
+Found def insn 6 for 123 to be not moveable
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+Pass 1 for finding pseudo/allocno costs
+
+    r126: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r125: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r123: preferred LO_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r122: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r121: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+
+  a0(r123,l0) costs: LO_REGS:2000,2000 HI_REGS:6000,6000 CALLER_SAVE_REGS:6000,6000 EVEN_REG:6000,6000 GENERAL_REGS:4000,4000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a1(r121,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:20000,20000
+  a2(r122,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:20000,20000
+  a3(r126,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a4(r125,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+
+   Insn 20(l0): point = 0
+   Insn 19(l0): point = 2
+   Insn 18(l0): point = 4
+   Insn 15(l0): point = 6
+   Insn 5(l0): point = 8
+   Insn 25(l0): point = 10
+   Insn 6(l0): point = 12
+   Insn 4(l0): point = 14
+   Insn 24(l0): point = 16
+ a0(r123): [3..12]
+ a1(r121): [5..14]
+ a2(r122): [5..8]
+ a3(r126): [9..10]
+ a4(r125): [15..16]
+Compressing live ranges: from 19 to 6 - 31%
+Ranges after the compression:
+ a0(r123): [0..3]
+ a1(r121): [0..3]
+ a2(r122): [0..1]
+ a3(r126): [2..3]
+ a4(r125): [4..5]
++++Allocating 32 bytes for conflict table (uncompressed size 40)
+;; a0(r123,l0) conflicts: a2(r122,l0) a1(r121,l0) a3(r126,l0)
+;;     total conflict hard regs: 0-3 12 14
+;;     conflict hard regs: 0-3 12 14
+
+;; a1(r121,l0) conflicts: a2(r122,l0) a0(r123,l0) a3(r126,l0)
+;;     total conflict hard regs: 0-3 12 14
+;;     conflict hard regs: 0-3 12 14
+
+;; a2(r122,l0) conflicts: a0(r123,l0) a1(r121,l0)
+;;     total conflict hard regs: 0-3 12 14
+;;     conflict hard regs: 0-3 12 14
+
+;; a3(r126,l0) conflicts: a0(r123,l0) a1(r121,l0)
+;;     total conflict hard regs: 0-2
+;;     conflict hard regs: 0-2
+
+;; a4(r125,l0) conflicts:
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+
+  cp0:a1(r121)<->a4(r125)@1000:move
+  cp1:a2(r122)<->a3(r126)@1000:move
+  pref0:a4(r125)<-hr2@1000
+  pref1:a3(r126)<-hr3@1000
+  pref2:a0(r123)<-hr0@2000
+  pref3:a1(r121)<-hr1@125
+  pref4:a2(r122)<-hr1@125
+  regions=1, blocks=3, points=6
+    allocnos=5 (big 0), copies=2, conflicts=0, ranges=5
+
+**** Allocnos coloring:
+
+
+  Loop 0 (parent -1, header bb2, depth 0)
+    bbs: 2
+    all: 0r123 1r121 2r122 3r126 4r125
+    modified regnos: 121 122 123 125 126
+    border:
+    Pressure: GENERAL_REGS=9
+ Removing pref2:hr0@2000
+ Removing pref3:hr1@125
+ Removing pref4:hr1@125
+    Hard reg set forest:
+      0:( 0-12 14 16-47)@0
+        1:( 3-12 14)@86000
+          2:( 4-11)@197000
+      Allocno a0r123 of ALL_REGS(46) has 8 avail. regs  4-11, node:  4-11 (confl regs =  0-3 12-15 48-106)
+      Allocno a1r121 of GENERAL_REGS(14) has 8 avail. regs  4-11, node:  4-11 (confl regs =  0-3 12-106)
+      Allocno a2r122 of GENERAL_REGS(14) has 8 avail. regs  4-11, node:  4-11 (confl regs =  0-3 12-106)
+      Allocno a3r126 of ALL_REGS(46) has 11 avail. regs  3-12 14, node:  3-12 14 (confl regs =  0-2 13 15 48-106)
+      Allocno a4r125 of ALL_REGS(46) has 11 avail. regs  2 4-12 14, ^node:  0-12 14 16-47 (confl regs =  0-1 3 13 15 48-106)
+      Forming thread by copy 0:a1r121-a4r125 (freq=1000):
+        Result (freq=4000): a1r121(2000) a4r125(2000)
+      Forming thread by copy 1:a2r122-a3r126 (freq=1000):
+        Result (freq=4000): a2r122(2000) a3r126(2000)
+      Pushing a0(r123,l0)(cost 0)
+      Pushing a3(r126,l0)(cost 0)
+      Pushing a2(r122,l0)(cost 0)
+      Pushing a4(r125,l0)(cost 0)
+      Pushing a1(r121,l0)(cost 0)
+      Popping a1(r121,l0)  -- assign reg 4
+      Popping a4(r125,l0)  -- assign reg 2
+      Popping a2(r122,l0)  -- assign reg 5
+      Popping a3(r126,l0)  -- assign reg 3
+      Popping a0(r123,l0)  -- assign reg 6
+Disposition:
+    1:r121 l0     4    2:r122 l0     5    0:r123 l0     6    4:r125 l0     2
+    3:r126 l0     3
+New iteration of spill/restore move
++++Costs: overall -24000, reg -24000, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+LCD_DisplayBuffer
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 13 [sp] 14 [lr]
+;;  ref usage 	r0={4d,2u} r1={4d,2u} r2={3d,2u} r3={3d,2u} r7={1d,2u} r12={4d} r13={1d,4u} r14={3d} r15={2d} r16={3d} r17={3d} r18={3d} r19={3d} r20={3d} r21={3d} r22={3d} r23={3d} r24={3d} r25={3d} r26={3d} r27={3d} r28={3d} r29={3d} r30={3d} r31={3d} r48={2d} r49={2d} r50={2d} r51={2d} r52={2d} r53={2d} r54={2d} r55={2d} r56={2d} r57={2d} r58={2d} r59={2d} r60={2d} r61={2d} r62={2d} r63={2d} r64={2d} r65={2d} r66={2d} r67={2d} r68={2d} r69={2d} r70={2d} r71={2d} r72={2d} r73={2d} r74={2d} r75={2d} r76={2d} r77={2d} r78={2d} r79={2d} r80={2d} r81={2d} r82={2d} r83={2d} r84={2d} r85={2d} r86={2d} r87={2d} r88={2d} r89={2d} r90={2d} r91={2d} r92={2d} r93={2d} r94={2d} r95={2d} r96={2d} r97={2d} r98={2d} r99={2d} r100={2d} r101={2d} r102={1d,2u} r103={1d,2u} r104={2d} r105={2d} r106={2d} r121={1d,1u} r122={1d,1u} r123={1d,1u} r125={1d,1u} r126={1d,1u} 
+;;    total ref usage 217{194d,23u,0e} in 11{9 regular + 2 call} insns.
+(note 1 0 8 NOTE_INSN_DELETED)
+(note 8 1 7 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 7 8 17 2 NOTE_INSN_FUNCTION_BEG)
+(note 17 7 10 2 NOTE_INSN_DELETED)
+(debug_insn 10 17 24 2 (debug_marker) "../System/lcd.c":40:8 -1
+     (nil))
+(insn 24 10 4 2 (set (reg:SI 125)
+        (reg:SI 2 r2 [ w ])) "../System/lcd.c":39:1 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 4 24 6 2 (set (reg/v:SI 121 [ w ])
+        (reg:SI 125)) "../System/lcd.c":39:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 125)
+        (nil)))
+(insn 6 4 25 2 (set (reg/v/f:SI 123 [ data ])
+        (mem/f/c:SI (reg/f:SI 103 afp) [4 data+0 S4 A64])) "../System/lcd.c":39:1 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 25 6 5 2 (set (reg:SI 126)
+        (reg:SI 3 r3 [ h ])) "../System/lcd.c":39:1 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 5 25 15 2 (set (reg/v:SI 122 [ h ])
+        (reg:SI 126)) "../System/lcd.c":39:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 126)
+        (nil)))
+(call_insn 15 5 16 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("ILI9341_SetDisplayWindow") [flags 0x41]  <function_decl 0000000006c72600 ILI9341_SetDisplayWindow>) [0 ILI9341_SetDisplayWindow S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":40:8 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 3 r3)
+        (expr_list:REG_DEAD (reg:SI 2 r2)
+            (expr_list:REG_DEAD (reg:SI 1 r1)
+                (expr_list:REG_DEAD (reg:SI 0 r0)
+                    (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_SetDisplayWindow") [flags 0x41]  <function_decl 0000000006c72600 ILI9341_SetDisplayWindow>)
+                        (nil))))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (expr_list:SI (use (reg:SI 2 r2))
+                    (expr_list:SI (use (reg:SI 3 r3))
+                        (nil)))))))
+(debug_insn 16 15 18 2 (debug_marker) "../System/lcd.c":41:8 -1
+     (nil))
+(insn 18 16 19 2 (set (reg:SI 1 r1)
+        (mult:SI (reg/v:SI 122 [ h ])
+            (reg/v:SI 121 [ w ]))) "../System/lcd.c":41:8 56 {*mul}
+     (expr_list:REG_DEAD (reg/v:SI 122 [ h ])
+        (expr_list:REG_DEAD (reg/v:SI 121 [ w ])
+            (nil))))
+(insn 19 18 20 2 (set (reg:SI 0 r0)
+        (reg/v/f:SI 123 [ data ])) "../System/lcd.c":41:8 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v/f:SI 123 [ data ])
+        (nil)))
+(call_insn/j 20 19 21 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("ILI9341_SendData") [flags 0x41]  <function_decl 0000000006c72200 ILI9341_SendData>) [0 ILI9341_SendData S4 A32])
+                    (const_int 0 [0])))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../System/lcd.c":41:8 293 {*sibcall_value_insn}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_SendData") [flags 0x41]  <function_decl 0000000006c72200 ILI9341_SendData>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(barrier 21 20 0)
+
+;; Function LCD_FillRect (LCD_FillRect, funcdef_no=864, decl_uid=11878, cgraph_uid=868, symbol_order=874)
+
+Starting decreasing number of live ranges...
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Reg 123: local to bb 2 def dominates all uses has unique first use
+Reg 124: local to bb 2 def dominates all uses has unique first use
+Reg 122: local to bb 2 def dominates all uses has unique first use
+Reg 118: local to bb 2 def dominates all uses has unique first use
+Reg 119: local to bb 2 def dominates all uses has unique first use
+Reg 121: local to bb 2 def dominates all uses has unique first use
+Reg 120: local to bb 2 def dominates all uses has unique first use
+Reg 116: local to bb 2 def dominates all uses has unique first use
+Reg 117: local to bb 2 def dominates all uses has unique first use
+Reg 125: local to bb 2 def dominates all uses has unique first use
+Reg 114 uninteresting
+Examining insn 2, def for 116
+  all ok
+Examining insn 3, def for 117
+  all ok
+Examining insn 4, def for 118
+  all ok
+Examining insn 5, def for 119
+  all ok
+Found def insn 6 for 120 to be not moveable
+Found def insn 34 for 121 to be not moveable
+Found def insn 35 for 122 to be not moveable
+Found def insn 36 for 123 to be not moveable
+Found def insn 37 for 124 to be not moveable
+Found def insn 38 for 125 to be not moveable
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+Pass 1 for finding pseudo/allocno costs
+
+    r125: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r124: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r123: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r122: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r121: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r120: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r119: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r118: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r117: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r116: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r115: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r114: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+
+  a0(r120,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a1(r115,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a2(r118,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:60000,60000 VFP_LO_REGS:60000,60000 ALL_REGS:45000,45000 MEM:40000,40000
+  a3(r119,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:60000,60000 VFP_LO_REGS:60000,60000 ALL_REGS:45000,45000 MEM:40000,40000
+  a4(r114,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:20000,20000
+  a5(r125,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a6(r116,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a7(r117,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a8(r122,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a9(r121,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a10(r124,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a11(r123,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+
+   Insn 30(l0): point = 0
+   Insn 29(l0): point = 2
+   Insn 28(l0): point = 4
+   Insn 26(l0): point = 6
+   Insn 23(l0): point = 8
+   Insn 22(l0): point = 10
+   Insn 19(l0): point = 12
+   Insn 16(l0): point = 14
+   Insn 25(l0): point = 16
+   Insn 24(l0): point = 18
+   Insn 38(l0): point = 20
+   Insn 12(l0): point = 22
+   Insn 11(l0): point = 24
+   Insn 3(l0): point = 26
+   Insn 2(l0): point = 28
+   Insn 6(l0): point = 30
+   Insn 34(l0): point = 32
+   Insn 5(l0): point = 34
+   Insn 4(l0): point = 36
+   Insn 35(l0): point = 38
+   Insn 37(l0): point = 40
+   Insn 36(l0): point = 42
+ a0(r120): [3..30]
+ a1(r115): [5..12]
+ a2(r118): [9..36]
+ a3(r119): [11..34]
+ a4(r114): [13..14]
+ a5(r125): [13..20]
+ a6(r116): [17..28]
+ a7(r117): [19..26]
+ a8(r122): [27..38]
+ a9(r121): [29..32]
+ a10(r124): [35..40]
+ a11(r123): [37..42]
+Compressing live ranges: from 45 to 14 - 31%
+Ranges after the compression:
+ a0(r120): [0..9]
+ a1(r115): [0..1]
+ a2(r118): [0..11]
+ a3(r119): [0..9]
+ a4(r114): [2..3]
+ a5(r125): [2..5]
+ a6(r116): [4..7]
+ a7(r117): [4..5]
+ a8(r122): [6..13]
+ a9(r121): [8..9]
+ a10(r124): [10..13]
+ a11(r123): [12..13]
++++Allocating 96 bytes for conflict table (uncompressed size 96)
+;; a0(r120,l0) conflicts: a1(r115,l0) a3(r119,l0) a2(r118,l0) a4(r114,l0) a5(r125,l0) a7(r117,l0) a6(r116,l0) a8(r122,l0) a9(r121,l0)
+;;     total conflict hard regs: 0-3 12 14
+;;     conflict hard regs: 0-3 12 14
+
+;; a1(r115,l0) conflicts: a0(r120,l0) a3(r119,l0) a2(r118,l0)
+;;     total conflict hard regs: 0-3 12 14
+;;     conflict hard regs: 0-3 12 14
+
+;; a2(r118,l0) conflicts: a1(r115,l0) a0(r120,l0) a3(r119,l0) a4(r114,l0) a5(r125,l0) a7(r117,l0) a6(r116,l0) a8(r122,l0) a9(r121,l0) a10(r124,l0)
+;;     total conflict hard regs: 0-1 3 12 14
+;;     conflict hard regs: 0-1 3 12 14
+
+;; a3(r119,l0) conflicts: a1(r115,l0) a0(r120,l0) a2(r118,l0) a4(r114,l0) a5(r125,l0) a7(r117,l0) a6(r116,l0) a8(r122,l0) a9(r121,l0)
+;;     total conflict hard regs: 0-1 12 14
+;;     conflict hard regs: 0-1 12 14
+
+;; a4(r114,l0) conflicts: a0(r120,l0) a3(r119,l0) a2(r118,l0) a5(r125,l0)
+;;     total conflict hard regs: 0-1
+;;     conflict hard regs: 0-1
+
+;; a5(r125,l0) conflicts: a0(r120,l0) a3(r119,l0) a2(r118,l0) a4(r114,l0) a7(r117,l0) a6(r116,l0)
+;;     total conflict hard regs: 0-1
+;;     conflict hard regs: 0-1
+
+;; a6(r116,l0) conflicts: a0(r120,l0) a3(r119,l0) a2(r118,l0) a5(r125,l0) a7(r117,l0) a8(r122,l0)
+;;     total conflict hard regs: 0-1 12 14
+;;     conflict hard regs: 0-1 12 14
+
+;; a7(r117,l0) conflicts: a0(r120,l0) a3(r119,l0) a2(r118,l0) a5(r125,l0) a6(r116,l0)
+;;     total conflict hard regs: 0 12 14
+;;     conflict hard regs: 0 12 14
+
+;; a8(r122,l0) conflicts: a0(r120,l0) a3(r119,l0) a2(r118,l0) a6(r116,l0) a9(r121,l0) a10(r124,l0) a11(r123,l0)
+;;     total conflict hard regs: 0
+;;     conflict hard regs: 0
+
+;; a9(r121,l0) conflicts: a0(r120,l0) a3(r119,l0) a2(r118,l0) a8(r122,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a10(r124,l0) conflicts: a2(r118,l0) a8(r122,l0) a11(r123,l0)
+;;     total conflict hard regs: 0-1
+;;     conflict hard regs: 0-1
+
+;; a11(r123,l0) conflicts: a8(r122,l0) a10(r124,l0)
+;;     total conflict hard regs: 0-1 3
+;;     conflict hard regs: 0-1 3
+
+
+  cp0:a2(r118)<->a11(r123)@1000:move
+  cp1:a3(r119)<->a10(r124)@1000:move
+  cp2:a6(r116)<->a9(r121)@1000:move
+  cp3:a7(r117)<->a8(r122)@1000:move
+  cp4:a1(r115)<->a5(r125)@1000:constraint
+  cp5:a1(r115)<->a4(r114)@1000:constraint
+  pref0:a11(r123)<-hr2@2000
+  pref1:a10(r124)<-hr3@2000
+  pref2:a8(r122)<-hr1@2000
+  pref3:a9(r121)<-hr0@2000
+  pref4:a5(r125)<-hr0@2000
+  pref5:a7(r117)<-hr1@2000
+  pref6:a6(r116)<-hr0@2000
+  pref7:a3(r119)<-hr3@2000
+  pref8:a2(r118)<-hr2@2000
+  pref9:a1(r115)<-hr1@2000
+  pref10:a0(r120)<-hr0@2000
+  regions=1, blocks=3, points=14
+    allocnos=12 (big 0), copies=6, conflicts=0, ranges=12
+
+**** Allocnos coloring:
+
+
+  Loop 0 (parent -1, header bb2, depth 0)
+    bbs: 2
+    all: 0r120 1r115 2r118 3r119 4r114 5r125 6r116 7r117 8r122 9r121 10r124 11r123
+    modified regnos: 114 115 116 117 118 119 120 121 122 123 124 125
+    border:
+    Pressure: GENERAL_REGS=8
+ Removing pref10:hr0@2000
+ Removing pref9:hr1@2000
+ Removing pref4:hr0@2000
+ Removing pref6:hr0@2000
+    Hard reg set forest:
+      0:( 0-12 14 16-47)@0
+        1:( 0-12 14)@116000
+          2:( 1-12 14)@116000
+            3:( 2-12 14)@272000
+              4:( 2-11)@230000
+                5:( 2 4-11)@192000
+                  6:( 4-11)@232000
+      Allocno a0r120 of ALL_REGS(46) has 8 avail. regs  4-11, node:  4-11 (confl regs =  0-3 12-15 48-106)
+      Allocno a1r115 of ALL_REGS(46) has 8 avail. regs  4-11, node:  4-11 (confl regs =  0-3 12-15 48-106)
+      Allocno a2r118 of GENERAL_REGS(14) has 9 avail. regs  2 4-11, node:  2 4-11 (confl regs =  0-1 3 12-106)
+      Allocno a3r119 of GENERAL_REGS(14) has 10 avail. regs  2-11, node:  2-11 (confl regs =  0-1 12-106)
+      Allocno a4r114 of GENERAL_REGS(14) has 12 avail. regs  2-12 14, node:  2-12 14 (confl regs =  0-1 13 15-106)
+      Allocno a5r125 of ALL_REGS(46) has 12 avail. regs  2-12 14, node:  2-12 14 (confl regs =  0-1 13 15 48-106)
+      Allocno a6r116 of ALL_REGS(46) has 10 avail. regs  2-11, node:  2-11 (confl regs =  0-1 12-15 48-106)
+      Allocno a7r117 of ALL_REGS(46) has 11 avail. regs  1-11, ^node:  1-12 14 (confl regs =  0 12-15 48-106)
+      Allocno a8r122 of ALL_REGS(46) has 13 avail. regs  1-12 14, node:  1-12 14 (confl regs =  0 13 15 48-106)
+      Allocno a9r121 of ALL_REGS(46) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15 48-106)
+      Allocno a10r124 of ALL_REGS(46) has 12 avail. regs  2-12 14, node:  2-12 14 (confl regs =  0-1 13 15 48-106)
+      Allocno a11r123 of ALL_REGS(46) has 11 avail. regs  2 4-12 14, ^node:  2-12 14 (confl regs =  0-1 3 13 15 48-106)
+      Forming thread by copy 1:a3r119-a10r124 (freq=1000):
+        Result (freq=5000): a3r119(3000) a10r124(2000)
+      Forming thread by copy 2:a6r116-a9r121 (freq=1000):
+        Result (freq=4000): a6r116(2000) a9r121(2000)
+      Forming thread by copy 3:a7r117-a8r122 (freq=1000):
+        Result (freq=4000): a7r117(2000) a8r122(2000)
+      Forming thread by copy 4:a1r115-a5r125 (freq=1000):
+        Result (freq=4000): a1r115(2000) a5r125(2000)
+      Pushing a11(r123,l0)(cost 0)
+      Pushing a4(r114,l0)(cost 0)
+      Pushing a8(r122,l0)(cost 0)
+        Making a0(r120,l0) colorable
+      Forming thread by copy 0:a2r118-a11r123 (freq=1000):
+        Result (freq=5000): a2r118(3000) a11r123(2000)
+        Making a2(r118,l0) colorable
+      Pushing a0(r120,l0)(cost 58000)
+      Pushing a7(r117,l0)(cost 0)
+      Pushing a9(r121,l0)(cost 0)
+      Pushing a6(r116,l0)(cost 0)
+      Pushing a5(r125,l0)(cost 0)
+      Pushing a1(r115,l0)(cost 0)
+      Pushing a10(r124,l0)(cost 0)
+      Pushing a3(r119,l0)(cost 0)
+      Pushing a2(r118,l0)(cost 38000)
+      Popping a2(r118,l0)  -- assign reg 4
+      Popping a3(r119,l0)  -- assign reg 5
+      Popping a10(r124,l0)  -- assign reg 3
+      Popping a1(r115,l0)  -- assign reg 6
+      Popping a5(r125,l0)  -- assign reg 6
+      Popping a6(r116,l0)  -- assign reg 7
+      Popping a9(r121,l0)  -- assign reg 0
+      Popping a7(r117,l0)  -- assign reg 1
+      Popping a0(r120,l0)  -- assign reg 8
+      Popping a8(r122,l0)  -- assign reg 1
+      Popping a4(r114,l0)  -- assign reg 3
+      Popping a11(r123,l0)  -- assign reg 2
+Disposition:
+    4:r114 l0     3    1:r115 l0     6    6:r116 l0     7    7:r117 l0     1
+    2:r118 l0     4    3:r119 l0     5    0:r120 l0     8    9:r121 l0     0
+    8:r122 l0     1   11:r123 l0     2   10:r124 l0     3    5:r125 l0     6
+New iteration of spill/restore move
++++Costs: overall -108000, reg -108000, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+LCD_FillRect
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={7d,5u} r1={6d,3u} r2={5d,2u} r3={5d,2u} r7={1d,2u} r12={6d} r13={1d,5u} r14={4d} r15={3d} r16={4d} r17={4d} r18={4d} r19={4d} r20={4d} r21={4d} r22={4d} r23={4d} r24={4d} r25={4d} r26={4d} r27={4d} r28={4d} r29={4d} r30={4d} r31={4d} r48={3d} r49={3d} r50={3d} r51={3d} r52={3d} r53={3d} r54={3d} r55={3d} r56={3d} r57={3d} r58={3d} r59={3d} r60={3d} r61={3d} r62={3d} r63={3d} r64={3d} r65={3d} r66={3d} r67={3d} r68={3d} r69={3d} r70={3d} r71={3d} r72={3d} r73={3d} r74={3d} r75={3d} r76={3d} r77={3d} r78={3d} r79={3d} r80={3d} r81={3d} r82={3d} r83={3d} r84={3d} r85={3d} r86={3d} r87={3d} r88={3d} r89={3d} r90={3d} r91={3d} r92={3d} r93={3d} r94={3d} r95={3d} r96={3d} r97={3d} r98={3d} r99={3d} r100={4d} r101={3d} r102={1d,2u} r103={1d,2u} r104={3d} r105={3d} r106={3d} r114={1d,2u} r115={1d,2u} r116={1d,1u} r117={1d,1u} r118={1d,2u} r119={1d,2u} r120={1d,1u} r121={1d,1u} r122={1d,1u} r123={1d,1u} r124={1d,1u} r125={1d,2u} 
+;;    total ref usage 328{288d,40u,0e} in 30{27 regular + 3 call} insns.
+(note 1 0 8 NOTE_INSN_DELETED)
+(note 8 1 7 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 7 8 13 2 NOTE_INSN_FUNCTION_BEG)
+(note 13 7 10 2 NOTE_INSN_DELETED)
+(debug_insn 10 13 36 2 (debug_marker) "../System/lcd.c":71:2 -1
+     (nil))
+(insn 36 10 37 2 (set (reg:SI 123)
+        (reg:SI 2 r2 [ w ])) "../System/lcd.c":70:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [ w ])
+        (nil)))
+(insn 37 36 35 2 (set (reg:SI 124)
+        (reg:SI 3 r3 [ h ])) "../System/lcd.c":70:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [ h ])
+        (nil)))
+(insn 35 37 4 2 (set (reg:SI 122)
+        (reg:SI 1 r1 [ y ])) "../System/lcd.c":70:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [ y ])
+        (nil)))
+(insn 4 35 5 2 (set (reg/v:SI 118 [ w ])
+        (reg:SI 123)) "../System/lcd.c":70:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 123)
+        (nil)))
+(insn 5 4 34 2 (set (reg/v:SI 119 [ h ])
+        (reg:SI 124)) "../System/lcd.c":70:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 124)
+        (nil)))
+(insn 34 5 6 2 (set (reg:SI 121)
+        (reg:SI 0 r0 [ x ])) "../System/lcd.c":70:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [ x ])
+        (nil)))
+(insn 6 34 2 2 (set (reg/v:SI 120 [ c ])
+        (zero_extend:SI (mem/c:HI (reg/f:SI 103 afp) [1 c+0 S2 A64]))) "../System/lcd.c":70:1 1005 {*thumb2_zero_extendhisi2_v6}
+     (nil))
+(insn 2 6 3 2 (set (reg/v:SI 116 [ x ])
+        (reg:SI 121)) "../System/lcd.c":70:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 121)
+        (nil)))
+(insn 3 2 11 2 (set (reg/v:SI 117 [ y ])
+        (reg:SI 122)) "../System/lcd.c":70:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 122)
+        (nil)))
+(insn 11 3 12 2 (set (reg:SI 0 r0)
+        (const_int 2 [0x2])) "../System/lcd.c":71:25 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 12 11 38 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("ILI9341_GetParam") [flags 0x41]  <function_decl 0000000006c72f00 ILI9341_GetParam>) [0 ILI9341_GetParam S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":71:25 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_GetParam") [flags 0x41]  <function_decl 0000000006c72f00 ILI9341_GetParam>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(insn 38 12 14 2 (set (reg:SI 125)
+        (reg:SI 0 r0)) "../System/lcd.c":71:25 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+(debug_insn 14 38 15 2 (var_location:SI max_count (reg:SI 125)) "../System/lcd.c":71:25 -1
+     (nil))
+(debug_insn 15 14 24 2 (debug_marker) "../System/lcd.c":72:2 -1
+     (nil))
+(insn 24 15 25 2 (set (reg:SI 1 r1)
+        (reg/v:SI 117 [ y ])) "../System/lcd.c":78:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 117 [ y ])
+        (nil)))
+(insn 25 24 16 2 (set (reg:SI 0 r0)
+        (reg/v:SI 116 [ x ])) "../System/lcd.c":78:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 116 [ x ])
+        (nil)))
+(insn 16 25 17 2 (set (reg/v:SI 114 [ pixel_count ])
+        (mult:SI (reg/v:SI 119 [ h ])
+            (reg/v:SI 118 [ w ]))) "../System/lcd.c":72:11 56 {*mul}
+     (nil))
+(debug_insn 17 16 18 2 (var_location:SI pixel_count (reg/v:SI 114 [ pixel_count ])) "../System/lcd.c":72:11 -1
+     (nil))
+(debug_insn 18 17 19 2 (debug_marker) "../System/lcd.c":74:2 -1
+     (nil))
+(insn 19 18 20 2 (parallel [
+            (set (reg/v:SI 115 [ pixel_count ])
+                (umin:SI (reg:SI 125)
+                    (reg/v:SI 114 [ pixel_count ])))
+            (clobber (reg:CC 100 cc))
+        ]) 973 {*thumb2_uminsi3}
+     (expr_list:REG_DEAD (reg:SI 125)
+        (expr_list:REG_DEAD (reg/v:SI 114 [ pixel_count ])
+            (expr_list:REG_UNUSED (reg:CC 100 cc)
+                (nil)))))
+(debug_insn 20 19 21 2 (var_location:SI pixel_count (reg/v:SI 115 [ pixel_count ])) -1
+     (nil))
+(debug_insn 21 20 22 2 (debug_marker) "../System/lcd.c":78:2 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:SI 3 r3)
+        (reg/v:SI 119 [ h ])) "../System/lcd.c":78:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 119 [ h ])
+        (nil)))
+(insn 23 22 26 2 (set (reg:SI 2 r2)
+        (reg/v:SI 118 [ w ])) "../System/lcd.c":78:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 118 [ w ])
+        (nil)))
+(call_insn 26 23 27 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("ILI9341_SetDisplayWindow") [flags 0x41]  <function_decl 0000000006c72600 ILI9341_SetDisplayWindow>) [0 ILI9341_SetDisplayWindow S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":78:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 3 r3)
+        (expr_list:REG_DEAD (reg:SI 2 r2)
+            (expr_list:REG_DEAD (reg:SI 1 r1)
+                (expr_list:REG_DEAD (reg:SI 0 r0)
+                    (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_SetDisplayWindow") [flags 0x41]  <function_decl 0000000006c72600 ILI9341_SetDisplayWindow>)
+                        (nil))))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (expr_list:SI (use (reg:SI 2 r2))
+                    (expr_list:SI (use (reg:SI 3 r3))
+                        (nil)))))))
+(debug_insn 27 26 28 2 (debug_marker) "../System/lcd.c":79:2 -1
+     (nil))
+(insn 28 27 29 2 (set (reg:SI 1 r1)
+        (reg/v:SI 115 [ pixel_count ])) "../System/lcd.c":79:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 115 [ pixel_count ])
+        (nil)))
+(insn 29 28 30 2 (set (reg:SI 0 r0)
+        (reg/v:SI 120 [ c ])) "../System/lcd.c":79:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 120 [ c ])
+        (nil)))
+(call_insn/j 30 29 31 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("ILI9341_SendRepeatedData") [flags 0x41]  <function_decl 0000000006c72300 ILI9341_SendRepeatedData>) [0 ILI9341_SendRepeatedData S4 A32])
+                    (const_int 0 [0])))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../System/lcd.c":79:2 293 {*sibcall_value_insn}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_SendRepeatedData") [flags 0x41]  <function_decl 0000000006c72300 ILI9341_SendRepeatedData>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:HI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(barrier 31 30 0)
+
+;; Function LCD_Init (LCD_Init, funcdef_no=865, decl_uid=11871, cgraph_uid=869, symbol_order=875)
+
+Starting decreasing number of live ranges...
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Reg 118: local to bb 2 def dominates all uses has unique first use
+Reg 119 uninteresting
+Reg 122: local to bb 2 def dominates all uses has unique first use
+Reg 113: local to bb 2 def dominates all uses has unique first use
+Reg 123 uninteresting
+Reg 114: local to bb 2 def dominates all uses has unique first use
+Reg 124: local to bb 2 def dominates all uses has unique first use
+Reg 116: local to bb 2 def dominates all uses has unique first use
+Examining insn 32, def for 113
+  all ok
+Examining insn 35, def for 114
+  all ok
+Examining insn 48, def for 116
+  all ok
+Ignoring reg 118 with equiv init insn
+Found def insn 77 for 122 to be not moveable
+Found def insn 79 for 124 to be not moveable
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+init_insns for 118: (insn_list:REG_DEP_TRUE 8 (nil))
+init_insns for 119: (insn_list:REG_DEP_TRUE 9 (nil))
+
+Pass 1 for finding pseudo/allocno costs
+
+    r124: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r123: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r122: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r119: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r118: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r117: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r116: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r114: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r113: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+
+  a0(r117,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a1(r116,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:20000,20000
+  a2(r124,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a3(r113,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:60000,60000 VFP_LO_REGS:60000,60000 ALL_REGS:45000,45000 MEM:40000,40000
+  a4(r114,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:60000,60000 VFP_LO_REGS:60000,60000 ALL_REGS:45000,45000 MEM:40000,40000
+  a5(r123,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a6(r122,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a7(r118,l0) costs: LO_REGS:0,0 HI_REGS:2000,2000 CALLER_SAVE_REGS:2000,2000 EVEN_REG:2000,2000 GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:45000,45000 MEM:30000,30000
+  a8(r119,l0) costs: LO_REGS:0,0 HI_REGS:4000,4000 CALLER_SAVE_REGS:4000,4000 EVEN_REG:4000,4000 GENERAL_REGS:4000,4000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:45000,45000 MEM:30000,30000
+
+   Insn 73(l0): point = 0
+   Insn 71(l0): point = 2
+   Insn 62(l0): point = 4
+   Insn 61(l0): point = 6
+   Insn 60(l0): point = 8
+   Insn 58(l0): point = 10
+   Insn 57(l0): point = 12
+   Insn 56(l0): point = 14
+   Insn 51(l0): point = 16
+   Insn 55(l0): point = 18
+   Insn 54(l0): point = 20
+   Insn 48(l0): point = 22
+   Insn 79(l0): point = 24
+   Insn 44(l0): point = 26
+   Insn 43(l0): point = 28
+   Insn 35(l0): point = 30
+   Insn 78(l0): point = 32
+   Insn 34(l0): point = 34
+   Insn 32(l0): point = 36
+   Insn 33(l0): point = 38
+   Insn 77(l0): point = 40
+   Insn 31(l0): point = 42
+   Insn 30(l0): point = 44
+   Insn 26(l0): point = 46
+   Insn 24(l0): point = 48
+   Insn 23(l0): point = 50
+   Insn 22(l0): point = 52
+   Insn 20(l0): point = 54
+   Insn 19(l0): point = 56
+   Insn 17(l0): point = 58
+   Insn 13(l0): point = 60
+   Insn 12(l0): point = 62
+   Insn 10(l0): point = 64
+   Insn 9(l0): point = 66
+   Insn 8(l0): point = 68
+ a0(r117): [9..16]
+ a1(r116): [17..22]
+ a2(r124): [17..24]
+ a3(r113): [19..36]
+ a4(r114): [21..30]
+ a5(r123): [31..32]
+ a6(r122): [37..40]
+ a7(r118): [59..68]
+ a8(r119): [59..66]
+Compressing live ranges: from 71 to 10 - 14%
+Ranges after the compression:
+ a0(r117): [0..1]
+ a1(r116): [2..3]
+ a2(r124): [2..3]
+ a3(r113): [2..5]
+ a4(r114): [2..3]
+ a5(r123): [4..5]
+ a6(r122): [6..7]
+ a7(r118): [8..9]
+ a8(r119): [8..9]
++++Allocating 56 bytes for conflict table (uncompressed size 72)
+;; a0(r117,l0) conflicts:
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a1(r116,l0) conflicts: a2(r124,l0) a4(r114,l0) a3(r113,l0)
+;;     total conflict hard regs: 2-3
+;;     conflict hard regs: 2-3
+
+;; a2(r124,l0) conflicts: a1(r116,l0) a4(r114,l0) a3(r113,l0)
+;;     total conflict hard regs: 2-3
+;;     conflict hard regs: 2-3
+
+;; a3(r113,l0) conflicts: a1(r116,l0) a2(r124,l0) a4(r114,l0) a5(r123,l0)
+;;     total conflict hard regs: 0 3 12 14
+;;     conflict hard regs: 0 3 12 14
+
+;; a4(r114,l0) conflicts: a1(r116,l0) a2(r124,l0) a3(r113,l0)
+;;     total conflict hard regs: 0 12 14
+;;     conflict hard regs: 0 12 14
+
+;; a5(r123,l0) conflicts: a3(r113,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a6(r122,l0) conflicts:
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a7(r118,l0) conflicts: a8(r119,l0)
+;;     total conflict hard regs: 0 12 14
+;;     conflict hard regs: 0 12 14
+
+;; a8(r119,l0) conflicts: a7(r118,l0)
+;;     total conflict hard regs: 0 12 14
+;;     conflict hard regs: 0 12 14
+
+
+  cp0:a3(r113)<->a6(r122)@1000:move
+  cp1:a4(r114)<->a5(r123)@1000:move
+  cp2:a0(r117)<->a2(r124)@1000:constraint
+  cp3:a0(r117)<->a1(r116)@1000:constraint
+  pref0:a6(r122)<-hr0@2000
+  pref1:a5(r123)<-hr0@2000
+  pref2:a2(r124)<-hr0@2000
+  pref3:a4(r114)<-hr3@2000
+  pref4:a3(r113)<-hr2@2000
+  pref5:a0(r117)<-hr1@2000
+  regions=1, blocks=3, points=10
+    allocnos=9 (big 0), copies=4, conflicts=0, ranges=9
+
+**** Allocnos coloring:
+
+
+  Loop 0 (parent -1, header bb2, depth 0)
+    bbs: 2
+    all: 0r117 1r116 2r124 3r113 4r114 5r123 6r122 7r118 8r119
+    modified regnos: 113 114 116 117 118 119 122 123 124
+    border:
+    Pressure: GENERAL_REGS=7
+ Removing pref5:hr1@2000
+ Removing pref0:hr0@2000
+    Hard reg set forest:
+      0:( 0-12 14 16-47)@0
+        1:( 0-12 14)@116000
+          2:( 1-11)@196000
+            3:( 1-2 4-11)@76000
+              4:( 4-11)@116000
+      Allocno a0r117 of ALL_REGS(46) has 8 avail. regs  4-11, node:  4-11 (confl regs =  0-3 12-15 48-106)
+      Allocno a1r116 of GENERAL_REGS(14) has 12 avail. regs  0-1 4-12 14, ^node:  0-12 14 (confl regs =  2-3 13 15-106)
+      Allocno a2r124 of ALL_REGS(46) has 12 avail. regs  0-1 4-12 14, ^node:  0-12 14 (confl regs =  2-3 13 15 48-106)
+      Allocno a3r113 of GENERAL_REGS(14) has 10 avail. regs  1-2 4-11, node:  1-2 4-11 (confl regs =  0 3 12-106)
+      Allocno a4r114 of GENERAL_REGS(14) has 11 avail. regs  1-11, node:  1-11 (confl regs =  0 12-106)
+      Allocno a5r123 of ALL_REGS(46) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15 48-106)
+      Allocno a6r122 of ALL_REGS(46) has 13 avail. regs  1-12 14, ^node:  0-12 14 (confl regs =  0 13 15 48-106)
+      Allocno a7r118 of GENERAL_REGS(14) has 11 avail. regs  1-11, node:  1-11 (confl regs =  0 12-106)
+      Allocno a8r119 of GENERAL_REGS(14) has 11 avail. regs  1-11, node:  1-11 (confl regs =  0 12-106)
+      Forming thread by copy 0:a3r113-a6r122 (freq=1000):
+        Result (freq=5000): a3r113(3000) a6r122(2000)
+      Forming thread by copy 1:a4r114-a5r123 (freq=1000):
+        Result (freq=5000): a4r114(3000) a5r123(2000)
+      Forming thread by copy 2:a0r117-a2r124 (freq=1000):
+        Result (freq=4000): a0r117(2000) a2r124(2000)
+      Pushing a1(r116,l0)(cost 0)
+      Pushing a8(r119,l0)(cost 0)
+      Pushing a7(r118,l0)(cost 0)
+      Pushing a2(r124,l0)(cost 0)
+      Pushing a0(r117,l0)(cost 0)
+      Pushing a5(r123,l0)(cost 0)
+      Pushing a4(r114,l0)(cost 0)
+      Pushing a6(r122,l0)(cost 0)
+      Pushing a3(r113,l0)(cost 0)
+      Popping a3(r113,l0)  -- assign reg 4
+      Popping a6(r122,l0)  -- assign reg 4
+      Popping a4(r114,l0)  -- assign reg 5
+      Popping a5(r123,l0)  -- assign reg 0
+      Popping a0(r117,l0)  -- assign reg 4
+      Popping a2(r124,l0)  -- assign reg 0
+      Popping a7(r118,l0)  -- assign reg 4
+      Popping a8(r119,l0)  -- assign reg 5
+      Popping a1(r116,l0)  -- assign reg 1
+Disposition:
+    3:r113 l0     4    4:r114 l0     5    1:r116 l0     1    0:r117 l0     4
+    7:r118 l0     4    8:r119 l0     5    6:r122 l0     4    5:r123 l0     0
+    2:r124 l0     0
+New iteration of spill/restore move
++++Costs: overall -48000, reg -48000, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+LCD_Init
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={20d,11u} r1={15d,4u} r2={13d,1u} r3={13d,1u} r7={1d,2u} r12={22d} r13={1d,13u} r14={12d} r15={11d} r16={12d} r17={12d} r18={12d} r19={12d} r20={12d} r21={12d} r22={12d} r23={12d} r24={12d} r25={12d} r26={12d} r27={12d} r28={12d} r29={12d} r30={12d} r31={12d} r48={11d} r49={11d} r50={11d} r51={11d} r52={11d} r53={11d} r54={11d} r55={11d} r56={11d} r57={11d} r58={11d} r59={11d} r60={11d} r61={11d} r62={11d} r63={11d} r64={11d} r65={11d} r66={11d} r67={11d} r68={11d} r69={11d} r70={11d} r71={11d} r72={11d} r73={11d} r74={11d} r75={11d} r76={11d} r77={11d} r78={11d} r79={11d} r80={11d} r81={11d} r82={11d} r83={11d} r84={11d} r85={11d} r86={11d} r87={11d} r88={11d} r89={11d} r90={11d} r91={11d} r92={11d} r93={11d} r94={11d} r95={11d} r96={11d} r97={11d} r98={11d} r99={11d} r100={12d} r101={11d} r102={1d,2u} r103={1d,1u} r104={11d} r105={11d} r106={11d} r113={1d,3u} r114={1d,3u} r116={1d,2u} r117={1d,2u} r118={1d,2u} r119={1d,2u} r122={1d,1u} r123={1d,1u} r124={1d,2u} 
+;;    total ref usage 992{939d,53u,0e} in 69{58 regular + 11 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 45 2 NOTE_INSN_FUNCTION_BEG)
+(note 45 2 5 2 NOTE_INSN_DELETED)
+(debug_insn 5 45 6 2 (debug_marker) "../System/lcd.c":95:2 -1
+     (nil))
+(debug_insn 6 5 7 2 (debug_marker:BLK) "../System/lcd.c":49:13 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker) "../System/lcd.c":51:2 -1
+     (nil))
+(insn 8 7 9 2 (set (reg/f:SI 118)
+        (const_int 1207962624 [0x48000c00])) "../System/lcd.c":51:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1207962624 [0x48000c00])
+        (nil)))
+(insn 9 8 10 2 (set (reg:SI 119)
+        (const_int 8 [0x8])) "../System/lcd.c":51:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 8 [0x8])
+        (nil)))
+(insn 10 9 11 2 (set (mem/v:SI (plus:SI (reg/f:SI 118)
+                (const_int 40 [0x28])) [7 MEM[(struct GPIO_TypeDef *)1207962624B].BRR+0 S4 A64])
+        (reg:SI 119)) "../System/lcd.c":51:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "../System/lcd.c":52:2 -1
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 0 r0)
+        (const_int 120 [0x78])) "../System/lcd.c":52:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 13 12 14 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006b59e00 HAL_Delay>) [0 HAL_Delay S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":52:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006b59e00 HAL_Delay>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 14 13 17 2 (debug_marker) "../System/lcd.c":53:2 -1
+     (nil))
+(insn 17 14 18 2 (set (mem/v:SI (plus:SI (reg/f:SI 118)
+                (const_int 24 [0x18])) [7 MEM[(struct GPIO_TypeDef *)1207962624B].BSRR+0 S4 A64])
+        (reg:SI 119)) "../System/lcd.c":53:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 119)
+        (expr_list:REG_DEAD (reg/f:SI 118)
+            (nil))))
+(debug_insn 18 17 19 2 (debug_marker) "../System/lcd.c":54:2 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:SI 0 r0)
+        (const_int 120 [0x78])) "../System/lcd.c":54:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 20 19 21 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006b59e00 HAL_Delay>) [0 HAL_Delay S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":54:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006b59e00 HAL_Delay>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 21 20 22 2 (debug_marker) "../System/lcd.c":98:2 -1
+     (nil))
+(insn 22 21 23 2 (set (reg:SI 1 r1)
+        (const_int 3 [0x3])) "../System/lcd.c":98:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 23 22 24 2 (set (reg:SI 0 r0)
+        (const_int 85 [0x55])) "../System/lcd.c":98:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 24 23 25 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("ILI9341_Init") [flags 0x41]  <function_decl 0000000006c72700 ILI9341_Init>) [0 ILI9341_Init S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":98:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_DEAD (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_Init") [flags 0x41]  <function_decl 0000000006c72700 ILI9341_Init>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 25 24 26 2 (debug_marker) "../System/lcd.c":99:2 -1
+     (nil))
+(call_insn 26 25 27 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("ILI9341_DisplayOn") [flags 0x41]  <function_decl 0000000006c72900 ILI9341_DisplayOn>) [0 ILI9341_DisplayOn S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":99:2 290 {*call_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_DisplayOn") [flags 0x41]  <function_decl 0000000006c72900 ILI9341_DisplayOn>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(debug_insn 27 26 28 2 (debug_marker) "../System/lcd.c":101:2 -1
+     (nil))
+(debug_insn 28 27 29 2 (debug_marker:BLK) "../System/lcd.c":118:6 -1
+     (nil))
+(debug_insn 29 28 30 2 (debug_marker) "../System/lcd.c":120:5 -1
+     (nil))
+(insn 30 29 31 2 (set (reg:SI 0 r0)
+        (const_int 0 [0])) "../System/lcd.c":120:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 31 30 77 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("ILI9341_GetParam") [flags 0x41]  <function_decl 0000000006c72f00 ILI9341_GetParam>) [0 ILI9341_GetParam S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":120:5 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_GetParam") [flags 0x41]  <function_decl 0000000006c72f00 ILI9341_GetParam>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(insn 77 31 33 2 (set (reg:SI 122)
+        (reg:SI 0 r0)) "../System/lcd.c":120:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+(insn 33 77 32 2 (set (reg:SI 0 r0)
+        (const_int 1 [0x1])) "../System/lcd.c":120:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 32 33 34 2 (set (reg:SI 113 [ _8 ])
+        (reg:SI 122)) "../System/lcd.c":120:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 122)
+        (nil)))
+(call_insn 34 32 78 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("ILI9341_GetParam") [flags 0x41]  <function_decl 0000000006c72f00 ILI9341_GetParam>) [0 ILI9341_GetParam S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":120:5 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_GetParam") [flags 0x41]  <function_decl 0000000006c72f00 ILI9341_GetParam>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(insn 78 34 35 2 (set (reg:SI 123)
+        (reg:SI 0 r0)) "../System/lcd.c":120:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+(insn 35 78 36 2 (set (reg:SI 114 [ _9 ])
+        (reg:SI 123)) "../System/lcd.c":120:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 123)
+        (nil)))
+(debug_insn 36 35 37 2 (var_location:SI x (const_int 0 [0])) "../System/lcd.c":120:5 -1
+     (nil))
+(debug_insn 37 36 38 2 (var_location:SI y (const_int 0 [0])) "../System/lcd.c":120:5 -1
+     (nil))
+(debug_insn 38 37 39 2 (var_location:SI w (reg:SI 113 [ _8 ])) "../System/lcd.c":120:5 -1
+     (nil))
+(debug_insn 39 38 40 2 (var_location:SI h (reg:SI 114 [ _9 ])) "../System/lcd.c":120:5 -1
+     (nil))
+(debug_insn 40 39 41 2 (var_location:HI c (const_int 0 [0])) "../System/lcd.c":120:5 -1
+     (nil))
+(debug_insn 41 40 42 2 (debug_marker:BLK) "../System/lcd.c":69:6 -1
+     (nil))
+(debug_insn 42 41 43 2 (debug_marker) "../System/lcd.c":71:2 -1
+     (nil))
+(insn 43 42 44 2 (set (reg:SI 0 r0)
+        (const_int 2 [0x2])) "../System/lcd.c":71:25 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 44 43 79 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("ILI9341_GetParam") [flags 0x41]  <function_decl 0000000006c72f00 ILI9341_GetParam>) [0 ILI9341_GetParam S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":71:25 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_GetParam") [flags 0x41]  <function_decl 0000000006c72f00 ILI9341_GetParam>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(insn 79 44 46 2 (set (reg:SI 124)
+        (reg:SI 0 r0)) "../System/lcd.c":71:25 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+(debug_insn 46 79 47 2 (var_location:SI max_count (reg:SI 124)) "../System/lcd.c":71:25 -1
+     (nil))
+(debug_insn 47 46 48 2 (debug_marker) "../System/lcd.c":72:2 -1
+     (nil))
+(insn 48 47 49 2 (set (reg/v:SI 116 [ pixel_count ])
+        (mult:SI (reg:SI 114 [ _9 ])
+            (reg:SI 113 [ _8 ]))) "../System/lcd.c":72:11 56 {*mul}
+     (nil))
+(debug_insn 49 48 50 2 (var_location:SI pixel_count (reg/v:SI 116 [ pixel_count ])) "../System/lcd.c":72:11 -1
+     (nil))
+(debug_insn 50 49 54 2 (debug_marker) "../System/lcd.c":74:2 -1
+     (nil))
+(insn 54 50 55 2 (set (reg:SI 3 r3)
+        (reg:SI 114 [ _9 ])) "../System/lcd.c":78:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 114 [ _9 ])
+        (nil)))
+(insn 55 54 51 2 (set (reg:SI 2 r2)
+        (reg:SI 113 [ _8 ])) "../System/lcd.c":78:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 113 [ _8 ])
+        (nil)))
+(insn 51 55 52 2 (parallel [
+            (set (reg/v:SI 117 [ pixel_count ])
+                (umin:SI (reg:SI 124)
+                    (reg/v:SI 116 [ pixel_count ])))
+            (clobber (reg:CC 100 cc))
+        ]) 973 {*thumb2_uminsi3}
+     (expr_list:REG_DEAD (reg:SI 124)
+        (expr_list:REG_DEAD (reg/v:SI 116 [ pixel_count ])
+            (expr_list:REG_UNUSED (reg:CC 100 cc)
+                (nil)))))
+(debug_insn 52 51 53 2 (var_location:SI pixel_count (reg/v:SI 117 [ pixel_count ])) -1
+     (nil))
+(debug_insn 53 52 56 2 (debug_marker) "../System/lcd.c":78:2 -1
+     (nil))
+(insn 56 53 57 2 (set (reg:SI 1 r1)
+        (const_int 0 [0])) "../System/lcd.c":78:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 57 56 58 2 (set (reg:SI 0 r0)
+        (reg:SI 1 r1)) "../System/lcd.c":78:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(call_insn 58 57 59 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("ILI9341_SetDisplayWindow") [flags 0x41]  <function_decl 0000000006c72600 ILI9341_SetDisplayWindow>) [0 ILI9341_SetDisplayWindow S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":78:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 3 r3)
+        (expr_list:REG_DEAD (reg:SI 2 r2)
+            (expr_list:REG_DEAD (reg:SI 1 r1)
+                (expr_list:REG_DEAD (reg:SI 0 r0)
+                    (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_SetDisplayWindow") [flags 0x41]  <function_decl 0000000006c72600 ILI9341_SetDisplayWindow>)
+                        (nil))))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (expr_list:SI (use (reg:SI 2 r2))
+                    (expr_list:SI (use (reg:SI 3 r3))
+                        (nil)))))))
+(debug_insn 59 58 60 2 (debug_marker) "../System/lcd.c":79:2 -1
+     (nil))
+(insn 60 59 61 2 (set (reg:SI 1 r1)
+        (reg/v:SI 117 [ pixel_count ])) "../System/lcd.c":79:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 117 [ pixel_count ])
+        (nil)))
+(insn 61 60 62 2 (set (reg:SI 0 r0)
+        (const_int 0 [0])) "../System/lcd.c":79:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 62 61 63 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("ILI9341_SendRepeatedData") [flags 0x41]  <function_decl 0000000006c72300 ILI9341_SendRepeatedData>) [0 ILI9341_SendRepeatedData S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":79:2 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_SendRepeatedData") [flags 0x41]  <function_decl 0000000006c72300 ILI9341_SendRepeatedData>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:HI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 63 62 64 2 (var_location:SI x (clobber (const_int 0 [0]))) "../System/lcd.c":120:5 -1
+     (nil))
+(debug_insn 64 63 65 2 (var_location:SI y (clobber (const_int 0 [0]))) "../System/lcd.c":120:5 -1
+     (nil))
+(debug_insn 65 64 66 2 (var_location:SI w (clobber (const_int 0 [0]))) "../System/lcd.c":120:5 -1
+     (nil))
+(debug_insn 66 65 67 2 (var_location:SI h (clobber (const_int 0 [0]))) "../System/lcd.c":120:5 -1
+     (nil))
+(debug_insn 67 66 68 2 (var_location:HI c (clobber (const_int 0 [0]))) "../System/lcd.c":120:5 -1
+     (nil))
+(debug_insn 68 67 69 2 (var_location:SI max_count (clobber (const_int 0 [0]))) "../System/lcd.c":120:5 -1
+     (nil))
+(debug_insn 69 68 70 2 (var_location:SI pixel_count (clobber (const_int 0 [0]))) "../System/lcd.c":120:5 -1
+     (nil))
+(debug_insn 70 69 71 2 (debug_marker) "../System/lcd.c":105:2 -1
+     (nil))
+(call_insn 71 70 72 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("ILI9341_WaitTransfer") [flags 0x41]  <function_decl 0000000006c72800 ILI9341_WaitTransfer>) [0 ILI9341_WaitTransfer S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":105:2 290 {*call_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_WaitTransfer") [flags 0x41]  <function_decl 0000000006c72800 ILI9341_WaitTransfer>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(debug_insn 72 71 73 2 (debug_marker) "../System/lcd.c":108:2 -1
+     (nil))
+(call_insn/j 73 72 74 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("LCD_BKLT_init") [flags 0x41]  <function_decl 0000000006e51700 LCD_BKLT_init>) [0 LCD_BKLT_init S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../System/lcd.c":108:2 292 {*sibcall_insn}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("LCD_BKLT_init") [flags 0x41]  <function_decl 0000000006e51700 LCD_BKLT_init>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(barrier 74 73 0)
+
+;; Function LCD_ClearScreen (LCD_ClearScreen, funcdef_no=866, decl_uid=11872, cgraph_uid=870, symbol_order=876)
+
+Starting decreasing number of live ranges...
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Reg 118: local to bb 2 def dominates all uses has unique first use
+Reg 113: local to bb 2 def dominates all uses has unique first use
+Reg 119 uninteresting
+Reg 114: local to bb 2 def dominates all uses has unique first use
+Reg 120: local to bb 2 def dominates all uses has unique first use
+Reg 116 uninteresting
+Examining insn 8, def for 113
+  all ok
+Examining insn 11, def for 114
+  all ok
+Found def insn 42 for 118 to be not moveable
+Found def insn 44 for 120 to be not moveable
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+Pass 1 for finding pseudo/allocno costs
+
+    r120: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r119: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r118: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r117: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r116: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r114: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r113: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+
+  a0(r117,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a1(r113,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:60000,60000 VFP_LO_REGS:60000,60000 ALL_REGS:45000,45000 MEM:40000,40000
+  a2(r114,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:60000,60000 VFP_LO_REGS:60000,60000 ALL_REGS:45000,45000 MEM:40000,40000
+  a3(r116,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:20000,20000
+  a4(r120,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a5(r119,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a6(r118,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+
+   Insn 38(l0): point = 0
+   Insn 37(l0): point = 2
+   Insn 36(l0): point = 4
+   Insn 34(l0): point = 6
+   Insn 31(l0): point = 8
+   Insn 30(l0): point = 10
+   Insn 33(l0): point = 12
+   Insn 32(l0): point = 14
+   Insn 27(l0): point = 16
+   Insn 24(l0): point = 18
+   Insn 44(l0): point = 20
+   Insn 20(l0): point = 22
+   Insn 19(l0): point = 24
+   Insn 11(l0): point = 26
+   Insn 43(l0): point = 28
+   Insn 10(l0): point = 30
+   Insn 8(l0): point = 32
+   Insn 9(l0): point = 34
+   Insn 42(l0): point = 36
+   Insn 7(l0): point = 38
+   Insn 6(l0): point = 40
+ a0(r117): [5..16]
+ a1(r113): [9..32]
+ a2(r114): [11..26]
+ a3(r116): [17..18]
+ a4(r120): [17..20]
+ a5(r119): [27..28]
+ a6(r118): [33..36]
+Compressing live ranges: from 43 to 8 - 18%
+Ranges after the compression:
+ a0(r117): [0..1]
+ a1(r113): [0..5]
+ a2(r114): [0..3]
+ a3(r116): [2..3]
+ a4(r120): [2..3]
+ a5(r119): [4..5]
+ a6(r118): [6..7]
++++Allocating 48 bytes for conflict table (uncompressed size 56)
+;; a0(r117,l0) conflicts: a2(r114,l0) a1(r113,l0)
+;;     total conflict hard regs: 0-3 12 14
+;;     conflict hard regs: 0-3 12 14
+
+;; a1(r113,l0) conflicts: a0(r117,l0) a2(r114,l0) a3(r116,l0) a4(r120,l0) a5(r119,l0)
+;;     total conflict hard regs: 0-1 3 12 14
+;;     conflict hard regs: 0-1 3 12 14
+
+;; a2(r114,l0) conflicts: a0(r117,l0) a1(r113,l0) a3(r116,l0) a4(r120,l0)
+;;     total conflict hard regs: 0-1 12 14
+;;     conflict hard regs: 0-1 12 14
+
+;; a3(r116,l0) conflicts: a2(r114,l0) a1(r113,l0) a4(r120,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a4(r120,l0) conflicts: a2(r114,l0) a1(r113,l0) a3(r116,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a5(r119,l0) conflicts: a1(r113,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a6(r118,l0) conflicts:
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+
+  cp0:a1(r113)<->a6(r118)@1000:move
+  cp1:a2(r114)<->a5(r119)@1000:move
+  cp2:a0(r117)<->a4(r120)@1000:constraint
+  cp3:a0(r117)<->a3(r116)@1000:constraint
+  pref0:a6(r118)<-hr0@2000
+  pref1:a5(r119)<-hr0@2000
+  pref2:a4(r120)<-hr0@2000
+  pref3:a2(r114)<-hr3@2000
+  pref4:a1(r113)<-hr2@2000
+  pref5:a0(r117)<-hr1@2000
+  regions=1, blocks=3, points=8
+    allocnos=7 (big 0), copies=4, conflicts=0, ranges=7
+
+**** Allocnos coloring:
+
+
+  Loop 0 (parent -1, header bb2, depth 0)
+    bbs: 2
+    all: 0r117 1r113 2r114 3r116 4r120 5r119 6r118
+    modified regnos: 113 114 116 117 118 119 120
+    border:
+    Pressure: GENERAL_REGS=7
+ Removing pref5:hr1@2000
+ Removing pref0:hr0@2000
+    Hard reg set forest:
+      0:( 0-12 14 16-47)@0
+        1:( 0-12 14)@272000
+          2:( 1-12 14)@116000
+            3:( 2-11)@76000
+              4:( 2 4-11)@76000
+                5:( 4-11)@116000
+      Allocno a0r117 of ALL_REGS(46) has 8 avail. regs  4-11, node:  4-11 (confl regs =  0-3 12-15 48-106)
+      Allocno a1r113 of GENERAL_REGS(14) has 9 avail. regs  2 4-11, node:  2 4-11 (confl regs =  0-1 3 12-106)
+      Allocno a2r114 of GENERAL_REGS(14) has 10 avail. regs  2-11, node:  2-11 (confl regs =  0-1 12-106)
+      Allocno a3r116 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a4r120 of ALL_REGS(46) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15 48-106)
+      Allocno a5r119 of ALL_REGS(46) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15 48-106)
+      Allocno a6r118 of ALL_REGS(46) has 13 avail. regs  1-12 14, node:  1-12 14 (confl regs =  0 13 15 48-106)
+      Forming thread by copy 0:a1r113-a6r118 (freq=1000):
+        Result (freq=5000): a1r113(3000) a6r118(2000)
+      Forming thread by copy 1:a2r114-a5r119 (freq=1000):
+        Result (freq=5000): a2r114(3000) a5r119(2000)
+      Forming thread by copy 2:a0r117-a4r120 (freq=1000):
+        Result (freq=4000): a0r117(2000) a4r120(2000)
+      Pushing a3(r116,l0)(cost 0)
+      Pushing a4(r120,l0)(cost 0)
+      Pushing a0(r117,l0)(cost 0)
+      Pushing a5(r119,l0)(cost 0)
+      Pushing a2(r114,l0)(cost 0)
+      Pushing a6(r118,l0)(cost 0)
+      Pushing a1(r113,l0)(cost 0)
+      Popping a1(r113,l0)  -- assign reg 4
+      Popping a6(r118,l0)  -- assign reg 4
+      Popping a2(r114,l0)  -- assign reg 5
+      Popping a5(r119,l0)  -- assign reg 0
+      Popping a0(r117,l0)  -- assign reg 6
+      Popping a4(r120,l0)  -- assign reg 0
+      Popping a3(r116,l0)  -- assign reg 6
+Disposition:
+    1:r113 l0     4    2:r114 l0     5    3:r116 l0     6    0:r117 l0     6
+    6:r118 l0     4    5:r119 l0     0    4:r120 l0     0
+New iteration of spill/restore move
++++Costs: overall -48000, reg -48000, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+LCD_ClearScreen
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={11d,8u} r1={8d,3u} r2={7d,1u} r3={7d,1u} r7={1d,2u} r12={10d} r13={1d,7u} r14={6d} r15={5d} r16={6d} r17={6d} r18={6d} r19={6d} r20={6d} r21={6d} r22={6d} r23={6d} r24={6d} r25={6d} r26={6d} r27={6d} r28={6d} r29={6d} r30={6d} r31={6d} r48={5d} r49={5d} r50={5d} r51={5d} r52={5d} r53={5d} r54={5d} r55={5d} r56={5d} r57={5d} r58={5d} r59={5d} r60={5d} r61={5d} r62={5d} r63={5d} r64={5d} r65={5d} r66={5d} r67={5d} r68={5d} r69={5d} r70={5d} r71={5d} r72={5d} r73={5d} r74={5d} r75={5d} r76={5d} r77={5d} r78={5d} r79={5d} r80={5d} r81={5d} r82={5d} r83={5d} r84={5d} r85={5d} r86={5d} r87={5d} r88={5d} r89={5d} r90={5d} r91={5d} r92={5d} r93={5d} r94={5d} r95={5d} r96={5d} r97={5d} r98={5d} r99={5d} r100={6d} r101={5d} r102={1d,2u} r103={1d,1u} r104={5d} r105={5d} r106={5d} r113={1d,3u} r114={1d,3u} r116={1d,2u} r117={1d,2u} r118={1d,1u} r119={1d,1u} r120={1d,2u} 
+;;    total ref usage 486{447d,39u,0e} in 36{31 regular + 5 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 21 2 NOTE_INSN_FUNCTION_BEG)
+(note 21 2 5 2 NOTE_INSN_DELETED)
+(debug_insn 5 21 6 2 (debug_marker) "../System/lcd.c":120:5 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:SI 0 r0)
+        (const_int 0 [0])) "../System/lcd.c":120:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 7 6 42 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("ILI9341_GetParam") [flags 0x41]  <function_decl 0000000006c72f00 ILI9341_GetParam>) [0 ILI9341_GetParam S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":120:5 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_GetParam") [flags 0x41]  <function_decl 0000000006c72f00 ILI9341_GetParam>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(insn 42 7 9 2 (set (reg:SI 118)
+        (reg:SI 0 r0)) "../System/lcd.c":120:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+(insn 9 42 8 2 (set (reg:SI 0 r0)
+        (const_int 1 [0x1])) "../System/lcd.c":120:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 8 9 10 2 (set (reg:SI 113 [ _1 ])
+        (reg:SI 118)) "../System/lcd.c":120:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 118)
+        (nil)))
+(call_insn 10 8 43 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("ILI9341_GetParam") [flags 0x41]  <function_decl 0000000006c72f00 ILI9341_GetParam>) [0 ILI9341_GetParam S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":120:5 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_GetParam") [flags 0x41]  <function_decl 0000000006c72f00 ILI9341_GetParam>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(insn 43 10 11 2 (set (reg:SI 119)
+        (reg:SI 0 r0)) "../System/lcd.c":120:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+(insn 11 43 12 2 (set (reg:SI 114 [ _2 ])
+        (reg:SI 119)) "../System/lcd.c":120:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 119)
+        (nil)))
+(debug_insn 12 11 13 2 (var_location:SI x (const_int 0 [0])) "../System/lcd.c":120:5 -1
+     (nil))
+(debug_insn 13 12 14 2 (var_location:SI y (const_int 0 [0])) "../System/lcd.c":120:5 -1
+     (nil))
+(debug_insn 14 13 15 2 (var_location:SI w (reg:SI 113 [ _1 ])) "../System/lcd.c":120:5 -1
+     (nil))
+(debug_insn 15 14 16 2 (var_location:SI h (reg:SI 114 [ _2 ])) "../System/lcd.c":120:5 -1
+     (nil))
+(debug_insn 16 15 17 2 (var_location:HI c (const_int 0 [0])) "../System/lcd.c":120:5 -1
+     (nil))
+(debug_insn 17 16 18 2 (debug_marker:BLK) "../System/lcd.c":69:6 -1
+     (nil))
+(debug_insn 18 17 19 2 (debug_marker) "../System/lcd.c":71:2 -1
+     (nil))
+(insn 19 18 20 2 (set (reg:SI 0 r0)
+        (const_int 2 [0x2])) "../System/lcd.c":71:25 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 20 19 44 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("ILI9341_GetParam") [flags 0x41]  <function_decl 0000000006c72f00 ILI9341_GetParam>) [0 ILI9341_GetParam S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":71:25 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_GetParam") [flags 0x41]  <function_decl 0000000006c72f00 ILI9341_GetParam>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(insn 44 20 22 2 (set (reg:SI 120)
+        (reg:SI 0 r0)) "../System/lcd.c":71:25 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+(debug_insn 22 44 23 2 (var_location:SI max_count (reg:SI 120)) "../System/lcd.c":71:25 -1
+     (nil))
+(debug_insn 23 22 24 2 (debug_marker) "../System/lcd.c":72:2 -1
+     (nil))
+(insn 24 23 25 2 (set (reg/v:SI 116 [ pixel_count ])
+        (mult:SI (reg:SI 114 [ _2 ])
+            (reg:SI 113 [ _1 ]))) "../System/lcd.c":72:11 56 {*mul}
+     (nil))
+(debug_insn 25 24 26 2 (var_location:SI pixel_count (reg/v:SI 116 [ pixel_count ])) "../System/lcd.c":72:11 -1
+     (nil))
+(debug_insn 26 25 27 2 (debug_marker) "../System/lcd.c":74:2 -1
+     (nil))
+(insn 27 26 28 2 (parallel [
+            (set (reg/v:SI 117 [ pixel_count ])
+                (umin:SI (reg:SI 120)
+                    (reg/v:SI 116 [ pixel_count ])))
+            (clobber (reg:CC 100 cc))
+        ]) 973 {*thumb2_uminsi3}
+     (expr_list:REG_DEAD (reg:SI 120)
+        (expr_list:REG_DEAD (reg/v:SI 116 [ pixel_count ])
+            (expr_list:REG_UNUSED (reg:CC 100 cc)
+                (nil)))))
+(debug_insn 28 27 29 2 (var_location:SI pixel_count (reg/v:SI 117 [ pixel_count ])) -1
+     (nil))
+(debug_insn 29 28 32 2 (debug_marker) "../System/lcd.c":78:2 -1
+     (nil))
+(insn 32 29 33 2 (set (reg:SI 1 r1)
+        (const_int 0 [0])) "../System/lcd.c":78:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 33 32 30 2 (set (reg:SI 0 r0)
+        (reg:SI 1 r1)) "../System/lcd.c":78:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(insn 30 33 31 2 (set (reg:SI 3 r3)
+        (reg:SI 114 [ _2 ])) "../System/lcd.c":78:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 114 [ _2 ])
+        (nil)))
+(insn 31 30 34 2 (set (reg:SI 2 r2)
+        (reg:SI 113 [ _1 ])) "../System/lcd.c":78:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 113 [ _1 ])
+        (nil)))
+(call_insn 34 31 35 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("ILI9341_SetDisplayWindow") [flags 0x41]  <function_decl 0000000006c72600 ILI9341_SetDisplayWindow>) [0 ILI9341_SetDisplayWindow S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":78:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 3 r3)
+        (expr_list:REG_DEAD (reg:SI 2 r2)
+            (expr_list:REG_DEAD (reg:SI 1 r1)
+                (expr_list:REG_DEAD (reg:SI 0 r0)
+                    (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_SetDisplayWindow") [flags 0x41]  <function_decl 0000000006c72600 ILI9341_SetDisplayWindow>)
+                        (nil))))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (expr_list:SI (use (reg:SI 2 r2))
+                    (expr_list:SI (use (reg:SI 3 r3))
+                        (nil)))))))
+(debug_insn 35 34 36 2 (debug_marker) "../System/lcd.c":79:2 -1
+     (nil))
+(insn 36 35 37 2 (set (reg:SI 1 r1)
+        (reg/v:SI 117 [ pixel_count ])) "../System/lcd.c":79:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 117 [ pixel_count ])
+        (nil)))
+(insn 37 36 38 2 (set (reg:SI 0 r0)
+        (const_int 0 [0])) "../System/lcd.c":79:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn/j 38 37 39 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("ILI9341_SendRepeatedData") [flags 0x41]  <function_decl 0000000006c72300 ILI9341_SendRepeatedData>) [0 ILI9341_SendRepeatedData S4 A32])
+                    (const_int 0 [0])))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../System/lcd.c":79:2 293 {*sibcall_value_insn}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_SendRepeatedData") [flags 0x41]  <function_decl 0000000006c72300 ILI9341_SendRepeatedData>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:HI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(barrier 39 38 0)
+
+;; Function LCD_demo_simple (LCD_demo_simple, funcdef_no=867, decl_uid=11879, cgraph_uid=871, symbol_order=877)
+
+Starting decreasing number of live ranges...
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4
+;;
+;; Loop 1
+;;  header 3, latch 3
+;;  depth 1, outer 0
+;;  nodes: 3
+;; 2 succs { 3 }
+;; 3 succs { 3 4 }
+;; 4 succs { 1 }
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Reg 115: local to bb 2 def dominates all uses has unique first use
+Reg 117: def dominates all uses has unique first use
+Ignoring reg 115 with equiv init insn
+Reg 117 not local to one basic block
+;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4
+;;
+;; Loop 1
+;;  header 3, latch 3
+;;  depth 1, outer 0
+;;  nodes: 3
+;; 2 succs { 3 }
+;; 3 succs { 3 4 }
+;; 4 succs { 1 }
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+init_insns for 115: (insn_list:REG_DEP_TRUE 7 (nil))
+init_insns for 117: (insn_list:REG_DEP_TRUE 38 (nil))
+Reg 117 has equivalence, initial gains 40
+
+Pass 1 for finding pseudo/allocno costs
+
+    r117: preferred NO_REGS, alternative NO_REGS, allocno NO_REGS
+    a4 (r117,l1) best NO_REGS, allocno NO_REGS
+    a0 (r117,l0) best NO_REGS, allocno NO_REGS
+    r115: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r113: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+
+  a0(r117,l0) costs: GENERAL_REGS:20,2000 VFP_D0_D7_REGS:170,29870 VFP_LO_REGS:170,29870 ALL_REGS:170,15020 MEM:120,19920
+  a1(r113,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:150,29850 VFP_LO_REGS:150,29850 ALL_REGS:150,29850 MEM:100,19900
+  a2(r115,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:300,300 VFP_LO_REGS:300,300 ALL_REGS:300,300 MEM:200,200
+  a3(r113,l1) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:29700,29700 VFP_LO_REGS:29700,29700 ALL_REGS:29700,29700 MEM:19800,19800
+  a4(r117,l1) costs: GENERAL_REGS:1980,1980 VFP_D0_D7_REGS:29700,29700 VFP_LO_REGS:29700,29700 ALL_REGS:14850,14850 MEM:19800,19800
+
+   Insn 38(l0): point = 1
+   Insn 3(l0): point = 3
+   Insn 15(l0): point = 5
+   Insn 9(l0): point = 7
+   Insn 14(l0): point = 9
+   Insn 12(l0): point = 11
+   Insn 11(l0): point = 13
+   Insn 7(l0): point = 15
+   Insn 13(l0): point = 17
+   Insn 33(l1): point = 20
+   Insn 32(l1): point = 22
+   Insn 26(l1): point = 24
+   Insn 25(l1): point = 26
+   Insn 41(l1): point = 28
+ a0(r117): [1..1]
+ a1(r113): [1..3]
+ a2(r115): [8..15]
+ a3(r113): [20..30]
+ a4(r117): [20..30]
+      Moving ranges of a4r117 to a0r117:  [20..30]
+      Moving ranges of a3r113 to a1r113:  [20..30]
+Compressing live ranges: from 31 to 6 - 19%
+Ranges after the compression:
+ a0(r117): [4..5] [0..0]
+ a1(r113): [4..5] [0..1]
+ a2(r115): [2..3]
++++Allocating 24 bytes for conflict table (uncompressed size 40)
+;; a0(r117,l0) conflicts:
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a1(r113,l0) conflicts:
+;;     total conflict hard regs: 0-1 12 14
+;;     conflict hard regs: 0-1 12 14
+
+;; a2(r115,l0) conflicts:
+;;     total conflict hard regs: 0-3
+;;     conflict hard regs: 0-3
+
+
+  regions=2, blocks=5, points=6
+    allocnos=5 (big 0), copies=0, conflicts=0, ranges=5
+
+**** Allocnos coloring:
+
+
+  Loop 0 (parent -1, header bb2, depth 0)
+    bbs: 4 3 2
+    all: 0r117 1r113 2r115
+    modified regnos: 113 115 117
+    border:
+    Pressure: GENERAL_REGS=6
+    Hard reg set forest:
+      0:( 0-12 14 16-47)@0
+        1:( 2-11)@39800
+      Spill a0(r117,l0)
+      Allocno a1r113 of GENERAL_REGS(14) has 10 avail. regs  2-11, node:  2-11 (confl regs =  0-1 12-106)
+      Allocno a2r115 of GENERAL_REGS(14) has 10 avail. regs  4-12 14, ^node:  0-12 14 16-47 (confl regs =  0-3 13 15-106)
+      Pushing a2(r115,l0)(cost 0)
+      Pushing a1(r113,l0)(cost 0)
+      Popping a1(r113,l0)  -- assign reg 4
+      Popping a2(r115,l0)  -- assign reg 4
+Disposition:
+    1:r113 l0     4    2:r115 l0     4    0:r117 l0   mem
+New iteration of spill/restore move
++++Costs: overall 19920, reg 0, mem 19920, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+LCD_demo_simple
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={5d,2u} r1={5d,3u} r2={4d,1u} r3={4d,1u} r7={1d,4u} r12={4d} r13={1d,6u} r14={3d} r15={2d} r16={3d} r17={3d} r18={3d} r19={3d} r20={3d} r21={3d} r22={3d} r23={3d} r24={3d} r25={3d} r26={3d} r27={3d} r28={3d} r29={3d} r30={3d} r31={3d} r48={2d} r49={2d} r50={2d} r51={2d} r52={2d} r53={2d} r54={2d} r55={2d} r56={2d} r57={2d} r58={2d} r59={2d} r60={2d} r61={2d} r62={2d} r63={2d} r64={2d} r65={2d} r66={2d} r67={2d} r68={2d} r69={2d} r70={2d} r71={2d} r72={2d} r73={2d} r74={2d} r75={2d} r76={2d} r77={2d} r78={2d} r79={2d} r80={2d} r81={2d} r82={2d} r83={2d} r84={2d} r85={2d} r86={2d} r87={2d} r88={2d} r89={2d} r90={2d} r91={2d} r92={2d} r93={2d} r94={2d} r95={2d} r96={2d} r97={2d} r98={2d} r99={2d} r100={3d,1u} r101={2d} r102={1d,6u,2e} r103={1d,3u} r104={2d} r105={2d} r106={2d} r113={2d,2u} r115={1d,1u} r117={1d,1u} 
+;;    total ref usage 231{198d,31u,2e} in 25{23 regular + 2 call} insns.
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 4 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 2 13 2 (debug_marker) "../System/lcd.c":138:2 -1
+     (nil))
+(insn 13 6 7 2 (set (reg:SI 1 r1)
+        (const_int 0 [0])) "../System/lcd.c":142:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 7 13 11 2 (set (reg:SI 115)
+        (const_int 63488 [0xf800])) "../System/lcd.c":138:11 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 63488 [0xf800])
+        (nil)))
+(insn 11 7 12 2 (set (reg:SI 3 r3)
+        (const_int 240 [0xf0])) "../System/lcd.c":142:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 12 11 14 2 (set (reg:SI 2 r2)
+        (const_int 320 [0x140])) "../System/lcd.c":142:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 14 12 9 2 (set (reg:SI 0 r0)
+        (reg:SI 1 r1)) "../System/lcd.c":142:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(insn 9 14 10 2 (set (mem/c:HI (plus:SI (reg/f:SI 102 sfp)
+                (const_int -2 [0xfffffffffffffffe])) [1 color+0 S2 A16])
+        (subreg:HI (reg:SI 115) 0)) "../System/lcd.c":138:11 724 {*thumb2_movhi_vfp}
+     (expr_list:REG_DEAD (reg:SI 115)
+        (nil)))
+(debug_insn 10 9 15 2 (debug_marker) "../System/lcd.c":142:2 -1
+     (nil))
+(call_insn 15 10 16 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("ILI9341_SetDisplayWindow") [flags 0x41]  <function_decl 0000000006c72600 ILI9341_SetDisplayWindow>) [0 ILI9341_SetDisplayWindow S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":142:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 3 r3)
+        (expr_list:REG_DEAD (reg:SI 2 r2)
+            (expr_list:REG_DEAD (reg:SI 1 r1)
+                (expr_list:REG_DEAD (reg:SI 0 r0)
+                    (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_SetDisplayWindow") [flags 0x41]  <function_decl 0000000006c72600 ILI9341_SetDisplayWindow>)
+                        (nil))))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (expr_list:SI (use (reg:SI 2 r2))
+                    (expr_list:SI (use (reg:SI 3 r3))
+                        (nil)))))))
+(debug_insn 16 15 17 2 (debug_marker) "../System/lcd.c":145:2 -1
+     (nil))
+(debug_insn 17 16 18 2 (debug_marker) "../System/lcd.c":145:7 -1
+     (nil))
+(debug_insn 18 17 19 2 (var_location:SI i (const_int 0 [0])) -1
+     (nil))
+(debug_insn 19 18 3 2 (debug_marker) "../System/lcd.c":145:21 -1
+     (nil))
+(insn 3 19 38 2 (set (reg:SI 113 [ ivtmp_1 ])
+        (const_int 76800 [0x12c00])) "../System/lcd.c":142:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 76800 [0x12c00])
+        (nil)))
+(insn 38 3 31 2 (set (reg/f:SI 117)
+        (plus:SI (reg/f:SI 102 sfp)
+            (const_int -2 [0xfffffffffffffffe]))) 7 {*arm_addsi3}
+     (expr_list:REG_EQUIV (plus:SI (reg/f:SI 102 sfp)
+            (const_int -2 [0xfffffffffffffffe]))
+        (nil)))
+(code_label 31 38 20 3 21 (nil) [1 uses])
+(note 20 31 30 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 30 20 21 3 NOTE_INSN_DELETED)
+(debug_insn 21 30 22 3 (var_location:SI i (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 22 21 41 3 (debug_marker) "../System/lcd.c":148:3 -1
+     (nil))
+(insn 41 22 25 3 (set (reg:SI 1 r1)
+        (const_int 1 [0x1])) "../System/lcd.c":148:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 25 41 26 3 (set (reg:SI 0 r0)
+        (reg/f:SI 117)) "../System/lcd.c":148:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (plus:SI (reg/f:SI 102 sfp)
+            (const_int -2 [0xfffffffffffffffe]))
+        (nil)))
+(call_insn 26 25 27 3 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("ILI9341_SendData") [flags 0x41]  <function_decl 0000000006c72200 ILI9341_SendData>) [0 ILI9341_SendData S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":148:3 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_SendData") [flags 0x41]  <function_decl 0000000006c72200 ILI9341_SendData>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 27 26 28 3 (debug_marker) "../System/lcd.c":145:32 -1
+     (nil))
+(debug_insn 28 27 29 3 (var_location:SI i (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 29 28 32 3 (debug_marker) "../System/lcd.c":145:21 -1
+     (nil))
+(insn 32 29 33 3 (parallel [
+            (set (reg:CC_NZ 100 cc)
+                (compare:CC_NZ (plus:SI (reg:SI 113 [ ivtmp_1 ])
+                        (const_int -1 [0xffffffffffffffff]))
+                    (const_int 0 [0])))
+            (set (reg:SI 113 [ ivtmp_1 ])
+                (plus:SI (reg:SI 113 [ ivtmp_1 ])
+                    (const_int -1 [0xffffffffffffffff])))
+        ]) "../System/lcd.c":145:2 1019 {thumb2_addsi3_compare0}
+     (nil))
+(jump_insn 33 32 34 3 (set (pc)
+        (if_then_else (ne (reg:CC_NZ 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 31)
+            (pc))) "../System/lcd.c":145:2 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC_NZ 100 cc)
+        (int_list:REG_BR_PROB 1062895956 (nil)))
+ -> 31)
+(note 34 33 42 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 42 34 0 NOTE_INSN_DELETED)
+
+;; Function LCD_uGUI_init (LCD_uGUI_init, funcdef_no=870, decl_uid=11881, cgraph_uid=874, symbol_order=880)
+
+Starting decreasing number of live ranges...
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Reg 121 uninteresting
+Reg 113: local to bb 2 def dominates all uses has unique first use
+Reg 122 uninteresting
+Examining insn 8, def for 113
+  all ok
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+Pass 1 for finding pseudo/allocno costs
+
+    r122: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r121: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r113: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+
+  a0(r113,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a1(r122,l0) costs: GENERAL_REGS:4000,4000 VFP_D0_D7_REGS:60000,60000 VFP_LO_REGS:60000,60000 ALL_REGS:30000,30000 MEM:40000,40000
+  a2(r121,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+
+   Insn 36(l0): point = 0
+   Insn 35(l0): point = 2
+   Insn 33(l0): point = 4
+   Insn 31(l0): point = 6
+   Insn 32(l0): point = 8
+   Insn 28(l0): point = 10
+   Insn 27(l0): point = 12
+   Insn 25(l0): point = 14
+   Insn 24(l0): point = 16
+   Insn 22(l0): point = 18
+   Insn 21(l0): point = 20
+   Insn 18(l0): point = 22
+   Insn 17(l0): point = 24
+   Insn 16(l0): point = 26
+   Insn 15(l0): point = 28
+   Insn 14(l0): point = 30
+   Insn 41(l0): point = 32
+   Insn 10(l0): point = 34
+   Insn 9(l0): point = 36
+   Insn 8(l0): point = 38
+   Insn 40(l0): point = 40
+   Insn 7(l0): point = 42
+   Insn 6(l0): point = 44
+ a0(r113): [29..38]
+ a1(r122): [31..32]
+ a2(r121): [39..40]
+Compressing live ranges: from 47 to 4 - 8%
+Ranges after the compression:
+ a0(r113): [0..1]
+ a1(r122): [0..1]
+ a2(r121): [2..3]
++++Allocating 16 bytes for conflict table (uncompressed size 24)
+;; a0(r113,l0) conflicts: a1(r122,l0)
+;;     total conflict hard regs: 0 3 12 14
+;;     conflict hard regs: 0 3 12 14
+
+;; a1(r122,l0) conflicts: a0(r113,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a2(r121,l0) conflicts:
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+
+  cp0:a0(r113)<->a2(r121)@1000:move
+  pref0:a2(r121)<-hr0@2000
+  pref1:a1(r122)<-hr0@2000
+  pref2:a1(r122)<-hr3@2000
+  pref3:a0(r113)<-hr2@2000
+  regions=1, blocks=3, points=4
+    allocnos=3 (big 0), copies=1, conflicts=0, ranges=3
+
+**** Allocnos coloring:
+
+
+  Loop 0 (parent -1, header bb2, depth 0)
+    bbs: 2
+    all: 0r113 1r122 2r121
+    modified regnos: 113 121 122
+    border:
+    Pressure: GENERAL_REGS=6
+    Hard reg set forest:
+      0:( 0-12 14 16-47)@0
+        1:( 0-12 14)@248000
+          2:( 1-2 4-11)@76000
+      Allocno a0r113 of ALL_REGS(46) has 10 avail. regs  1-2 4-11, node:  1-2 4-11 (confl regs =  0 3 12-15 48-106)
+      Allocno a1r122 of ALL_REGS(46) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15 48-106)
+      Allocno a2r121 of ALL_REGS(46) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15 48-106)
+      Forming thread by copy 0:a0r113-a2r121 (freq=1000):
+        Result (freq=4000): a0r113(2000) a2r121(2000)
+      Pushing a1(r122,l0)(cost 0)
+      Pushing a2(r121,l0)(cost 0)
+      Pushing a0(r113,l0)(cost 0)
+      Popping a0(r113,l0)  -- assign reg 2
+      Popping a2(r121,l0)  -- assign reg 0
+      Popping a1(r122,l0)  -- assign reg 3
+Disposition:
+    0:r113 l0     2    2:r121 l0     0    1:r122 l0     3
+New iteration of spill/restore move
++++Costs: overall -62000, reg -62000, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+LCD_uGUI_init
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 13 [sp] 14 [lr]
+;;  ref usage 	r0={17d,10u} r1={11d,2u} r2={10d,1u} r3={10d,1u} r7={1d,2u} r12={16d} r13={1d,10u} r14={9d} r15={8d} r16={9d} r17={9d} r18={9d} r19={9d} r20={9d} r21={9d} r22={9d} r23={9d} r24={9d} r25={9d} r26={9d} r27={9d} r28={9d} r29={9d} r30={9d} r31={9d} r48={8d} r49={8d} r50={8d} r51={8d} r52={8d} r53={8d} r54={8d} r55={8d} r56={8d} r57={8d} r58={8d} r59={8d} r60={8d} r61={8d} r62={8d} r63={8d} r64={8d} r65={8d} r66={8d} r67={8d} r68={8d} r69={8d} r70={8d} r71={8d} r72={8d} r73={8d} r74={8d} r75={8d} r76={8d} r77={8d} r78={8d} r79={8d} r80={8d} r81={8d} r82={8d} r83={8d} r84={8d} r85={8d} r86={8d} r87={8d} r88={8d} r89={8d} r90={8d} r91={8d} r92={8d} r93={8d} r94={8d} r95={8d} r96={8d} r97={8d} r98={8d} r99={8d} r100={8d} r101={8d} r102={1d,2u} r103={1d,1u} r104={8d} r105={8d} r106={8d} r113={1d,1u} r121={1d,1u} r122={1d,1u} 
+;;    total ref usage 720{688d,32u,0e} in 29{21 regular + 8 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 11 2 NOTE_INSN_FUNCTION_BEG)
+(note 11 2 12 2 NOTE_INSN_DELETED)
+(note 12 11 13 2 NOTE_INSN_DELETED)
+(note 13 12 20 2 NOTE_INSN_DELETED)
+(note 20 13 30 2 NOTE_INSN_DELETED)
+(note 30 20 5 2 NOTE_INSN_DELETED)
+(debug_insn 5 30 6 2 (debug_marker) "../System/lcd.c":206:2 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:SI 0 r0)
+        (const_int 0 [0])) "../System/lcd.c":206:38 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 7 6 40 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("ILI9341_GetParam") [flags 0x41]  <function_decl 0000000006c72f00 ILI9341_GetParam>) [0 ILI9341_GetParam S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":206:38 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_GetParam") [flags 0x41]  <function_decl 0000000006c72f00 ILI9341_GetParam>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(insn 40 7 8 2 (set (reg:SI 121)
+        (reg:SI 0 r0)) "../System/lcd.c":206:38 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+(insn 8 40 9 2 (set (reg:SI 113 [ _1 ])
+        (reg:SI 121)) "../System/lcd.c":206:38 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 121)
+        (nil)))
+(insn 9 8 10 2 (set (reg:SI 0 r0)
+        (const_int 1 [0x1])) "../System/lcd.c":206:67 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 10 9 41 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("ILI9341_GetParam") [flags 0x41]  <function_decl 0000000006c72f00 ILI9341_GetParam>) [0 ILI9341_GetParam S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":206:67 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_GetParam") [flags 0x41]  <function_decl 0000000006c72f00 ILI9341_GetParam>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(insn 41 10 14 2 (set (reg:SI 122)
+        (reg:SI 0 r0)) "../System/lcd.c":206:67 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+(insn 14 41 15 2 (set (reg:SI 3 r3)
+        (reg:SI 122)) "../System/lcd.c":206:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 122)
+        (nil)))
+(insn 15 14 16 2 (set (reg:SI 2 r2)
+        (reg:SI 113 [ _1 ])) "../System/lcd.c":206:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 113 [ _1 ])
+        (nil)))
+(insn 16 15 17 2 (set (reg:SI 1 r1)
+        (symbol_ref:SI ("UserPixelSetFunction") [flags 0x3]  <function_decl 000000000702df00 UserPixelSetFunction>)) "../System/lcd.c":206:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (symbol_ref:SI ("UserPixelSetFunction") [flags 0x3]  <function_decl 000000000702df00 UserPixelSetFunction>)
+        (nil)))
+(insn 17 16 18 2 (set (reg:SI 0 r0)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd.c":206:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(call_insn 18 17 19 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("UG_Init") [flags 0x41]  <function_decl 0000000006e51d00 UG_Init>) [0 UG_Init S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":206:2 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 3 r3)
+        (expr_list:REG_DEAD (reg:SI 2 r2)
+            (expr_list:REG_DEAD (reg:SI 1 r1)
+                (expr_list:REG_UNUSED (reg:SI 0 r0)
+                    (expr_list:REG_CALL_DECL (symbol_ref:SI ("UG_Init") [flags 0x41]  <function_decl 0000000006e51d00 UG_Init>)
+                        (nil))))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (expr_list:SI (use (reg:SI 2 r2))
+                    (expr_list:SI (use (reg:SI 3 r3))
+                        (nil)))))))
+(debug_insn 19 18 21 2 (debug_marker) "../System/lcd.c":209:2 -1
+     (nil))
+(insn 21 19 22 2 (set (reg:SI 0 r0)
+        (symbol_ref:SI ("FONT_8X12") [flags 0xc0]  <var_decl 0000000006db8630 FONT_8X12>)) "../System/lcd.c":209:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (symbol_ref:SI ("FONT_8X12") [flags 0xc0]  <var_decl 0000000006db8630 FONT_8X12>)
+        (nil)))
+(call_insn 22 21 23 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("UG_FontSelect") [flags 0x41]  <function_decl 0000000006e51f00 UG_FontSelect>) [0 UG_FontSelect S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":209:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("UG_FontSelect") [flags 0x41]  <function_decl 0000000006e51f00 UG_FontSelect>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 23 22 24 2 (debug_marker) "../System/lcd.c":210:2 -1
+     (nil))
+(insn 24 23 25 2 (set (reg:SI 0 r0)
+        (const_int 65535 [0xffff])) "../System/lcd.c":210:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 25 24 26 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("UG_SetForecolor") [flags 0x41]  <function_decl 0000000006cb5100 UG_SetForecolor>) [0 UG_SetForecolor S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":210:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("UG_SetForecolor") [flags 0x41]  <function_decl 0000000006cb5100 UG_SetForecolor>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 26 25 27 2 (debug_marker) "../System/lcd.c":211:2 -1
+     (nil))
+(insn 27 26 28 2 (set (reg:SI 0 r0)
+        (const_int 0 [0])) "../System/lcd.c":211:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 28 27 29 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("UG_SetBackcolor") [flags 0x41]  <function_decl 0000000006cb5200 UG_SetBackcolor>) [0 UG_SetBackcolor S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":211:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("UG_SetBackcolor") [flags 0x41]  <function_decl 0000000006cb5200 UG_SetBackcolor>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 29 28 32 2 (debug_marker) "../System/lcd.c":214:2 -1
+     (nil))
+(insn 32 29 31 2 (set (reg:SI 0 r0)
+        (const_int 1 [0x1])) "../System/lcd.c":214:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 31 32 33 2 (set (reg:SI 1 r1)
+        (symbol_ref:SI ("_HW_FillFrame_") [flags 0x3]  <function_decl 0000000007031000 _HW_FillFrame_>)) "../System/lcd.c":214:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (symbol_ref:SI ("_HW_FillFrame_") [flags 0x3]  <function_decl 0000000007031000 _HW_FillFrame_>)
+        (nil)))
+(call_insn 33 31 34 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("UG_DriverRegister") [flags 0x41]  <function_decl 0000000006cb5b00 UG_DriverRegister>) [0 UG_DriverRegister S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":214:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_DEAD (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("UG_DriverRegister") [flags 0x41]  <function_decl 0000000006cb5b00 UG_DriverRegister>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 34 33 35 2 (debug_marker) "../System/lcd.c":215:2 -1
+     (nil))
+(insn 35 34 36 2 (set (reg:SI 0 r0)
+        (const_int 1 [0x1])) "../System/lcd.c":215:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn/j 36 35 37 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("UG_DriverEnable") [flags 0x41]  <function_decl 0000000006cb5c00 UG_DriverEnable>) [0 UG_DriverEnable S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../System/lcd.c":215:2 292 {*sibcall_insn}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("UG_DriverEnable") [flags 0x41]  <function_decl 0000000006cb5c00 UG_DriverEnable>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(barrier 37 36 0)
+
+;; Function LCD_uGUI_demo_Misko3 (LCD_uGUI_demo_Misko3, funcdef_no=871, decl_uid=11883, cgraph_uid=875, symbol_order=881)
+
+Starting decreasing number of live ranges...
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+Pass 1 for finding pseudo/allocno costs
+
+
+
+   Insn 81(l0): point = 0
+   Insn 80(l0): point = 2
+   Insn 79(l0): point = 4
+   Insn 78(l0): point = 6
+   Insn 75(l0): point = 8
+   Insn 74(l0): point = 10
+   Insn 71(l0): point = 12
+   Insn 70(l0): point = 14
+   Insn 68(l0): point = 16
+   Insn 67(l0): point = 18
+   Insn 66(l0): point = 20
+   Insn 65(l0): point = 22
+   Insn 62(l0): point = 24
+   Insn 61(l0): point = 26
+   Insn 59(l0): point = 28
+   Insn 58(l0): point = 30
+   Insn 57(l0): point = 32
+   Insn 56(l0): point = 34
+   Insn 53(l0): point = 36
+   Insn 52(l0): point = 38
+   Insn 50(l0): point = 40
+   Insn 49(l0): point = 42
+   Insn 48(l0): point = 44
+   Insn 47(l0): point = 46
+   Insn 44(l0): point = 48
+   Insn 43(l0): point = 50
+   Insn 41(l0): point = 52
+   Insn 40(l0): point = 54
+   Insn 39(l0): point = 56
+   Insn 38(l0): point = 58
+   Insn 35(l0): point = 60
+   Insn 34(l0): point = 62
+   Insn 32(l0): point = 64
+   Insn 31(l0): point = 66
+   Insn 30(l0): point = 68
+   Insn 29(l0): point = 70
+   Insn 26(l0): point = 72
+   Insn 25(l0): point = 74
+   Insn 23(l0): point = 76
+   Insn 22(l0): point = 78
+   Insn 21(l0): point = 80
+   Insn 20(l0): point = 82
+   Insn 17(l0): point = 84
+   Insn 16(l0): point = 86
+   Insn 14(l0): point = 88
+   Insn 13(l0): point = 90
+   Insn 7(l0): point = 92
+   Insn 6(l0): point = 94
+Compressing live ranges: from 97 to 0 - 0%
+Ranges after the compression:
++++Allocating 0 bytes for conflict table (uncompressed size 0)
+
+  regions=1, blocks=3, points=0
+    allocnos=0 (big 0), copies=0, conflicts=0, ranges=0
+
+**** Allocnos coloring:
+
+
+  Loop 0 (parent -1, header bb2, depth 0)
+    bbs: 2
+    all:
+    modified regnos:
+    border:
+    Pressure: GENERAL_REGS=5
+    Hard reg set forest:
+      0:( 0-12 14 16-47)@0
+Disposition:
+New iteration of spill/restore move
++++Costs: overall 0, reg 0, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+LCD_uGUI_demo_Misko3
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 12 [ip] 13 [sp] 14 [lr]
+;;  ref usage 	r0={35d,17u} r1={25d,7u} r2={25d,7u} r3={18d} r7={1d,2u} r12={34d} r13={1d,19u} r14={18d} r15={17d} r16={18d} r17={18d} r18={18d} r19={18d} r20={18d} r21={18d} r22={18d} r23={18d} r24={18d} r25={18d} r26={18d} r27={18d} r28={18d} r29={18d} r30={18d} r31={18d} r48={17d} r49={17d} r50={17d} r51={17d} r52={17d} r53={17d} r54={17d} r55={17d} r56={17d} r57={17d} r58={17d} r59={17d} r60={17d} r61={17d} r62={17d} r63={17d} r64={17d} r65={17d} r66={17d} r67={17d} r68={17d} r69={17d} r70={17d} r71={17d} r72={17d} r73={17d} r74={17d} r75={17d} r76={17d} r77={17d} r78={17d} r79={17d} r80={17d} r81={17d} r82={17d} r83={17d} r84={17d} r85={17d} r86={17d} r87={17d} r88={17d} r89={17d} r90={17d} r91={17d} r92={17d} r93={17d} r94={17d} r95={17d} r96={17d} r97={17d} r98={17d} r99={17d} r100={17d} r101={17d} r102={1d,2u} r103={1d,1u} r104={17d} r105={17d} r106={17d} 
+;;    total ref usage 1488{1433d,55u,0e} in 68{51 regular + 17 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 12 2 NOTE_INSN_FUNCTION_BEG)
+(note 12 2 19 2 NOTE_INSN_DELETED)
+(note 19 12 28 2 NOTE_INSN_DELETED)
+(note 28 19 37 2 NOTE_INSN_DELETED)
+(note 37 28 46 2 NOTE_INSN_DELETED)
+(note 46 37 55 2 NOTE_INSN_DELETED)
+(note 55 46 64 2 NOTE_INSN_DELETED)
+(note 64 55 73 2 NOTE_INSN_DELETED)
+(note 73 64 77 2 NOTE_INSN_DELETED)
+(note 77 73 5 2 NOTE_INSN_DELETED)
+(debug_insn 5 77 6 2 (debug_marker) "../System/lcd.c":229:2 -1
+     (nil))
+(insn 6 5 7 2 (set (reg:SI 0 r0)
+        (const_int 0 [0])) "../System/lcd.c":229:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 7 6 8 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("UG_FillScreen") [flags 0x41]  <function_decl 0000000006cb1000 UG_FillScreen>) [0 UG_FillScreen S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":229:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("UG_FillScreen") [flags 0x41]  <function_decl 0000000006cb1000 UG_FillScreen>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 8 7 9 2 (debug_marker) "../System/lcd.c":231:2 -1
+     (nil))
+(debug_insn 9 8 10 2 (var_location:HI pozicija_y (const_int 135 [0x87])) "../System/lcd.c":231:11 -1
+     (nil))
+(debug_insn 10 9 11 2 (var_location:HI pozicija_x (const_int 150 [0x96])) "../System/lcd.c":231:27 -1
+     (nil))
+(debug_insn 11 10 13 2 (debug_marker) "../System/lcd.c":233:2 -1
+     (nil))
+(insn 13 11 14 2 (set (reg:SI 0 r0)
+        (symbol_ref:SI ("FONT_32X53") [flags 0xc0]  <var_decl 0000000006db8750 FONT_32X53>)) "../System/lcd.c":233:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (symbol_ref:SI ("FONT_32X53") [flags 0xc0]  <var_decl 0000000006db8750 FONT_32X53>)
+        (nil)))
+(call_insn 14 13 15 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("UG_FontSelect") [flags 0x41]  <function_decl 0000000006e51f00 UG_FontSelect>) [0 UG_FontSelect S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":233:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("UG_FontSelect") [flags 0x41]  <function_decl 0000000006e51f00 UG_FontSelect>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 15 14 16 2 (debug_marker) "../System/lcd.c":234:2 -1
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 0 r0)
+        (const_int 60445 [0xec1d])) "../System/lcd.c":234:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 17 16 18 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("UG_SetForecolor") [flags 0x41]  <function_decl 0000000006cb5100 UG_SetForecolor>) [0 UG_SetForecolor S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":234:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("UG_SetForecolor") [flags 0x41]  <function_decl 0000000006cb5100 UG_SetForecolor>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 18 17 20 2 (debug_marker) "../System/lcd.c":235:2 -1
+     (nil))
+(insn 20 18 21 2 (set (reg:SI 2 r2)
+        (symbol_ref/v/f:SI ("*.LC0") [flags 0x82]  <var_decl 0000000007275900 *.LC0>)) "../System/lcd.c":235:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (symbol_ref/v/f:SI ("*.LC0") [flags 0x82]  <var_decl 0000000007275900 *.LC0>)
+        (nil)))
+(insn 21 20 22 2 (set (reg:SI 1 r1)
+        (const_int 135 [0x87])) "../System/lcd.c":235:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 22 21 23 2 (set (reg:SI 0 r0)
+        (const_int 60 [0x3c])) "../System/lcd.c":235:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 23 22 24 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("UG_PutString") [flags 0x41]  <function_decl 0000000006cb1b00 UG_PutString>) [0 UG_PutString S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":235:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 2 r2)
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_DEAD (reg:SI 0 r0)
+                (expr_list:REG_CALL_DECL (symbol_ref:SI ("UG_PutString") [flags 0x41]  <function_decl 0000000006cb1b00 UG_PutString>)
+                    (nil)))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (expr_list:SI (use (reg:SI 2 r2))
+                    (nil))))))
+(debug_insn 24 23 25 2 (debug_marker) "../System/lcd.c":237:2 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:SI 0 r0)
+        (const_int 31 [0x1f])) "../System/lcd.c":237:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 26 25 27 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("UG_SetForecolor") [flags 0x41]  <function_decl 0000000006cb5100 UG_SetForecolor>) [0 UG_SetForecolor S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":237:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("UG_SetForecolor") [flags 0x41]  <function_decl 0000000006cb5100 UG_SetForecolor>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 27 26 29 2 (debug_marker) "../System/lcd.c":238:2 -1
+     (nil))
+(insn 29 27 30 2 (set (reg:SI 2 r2)
+        (symbol_ref/v/f:SI ("*.LC1") [flags 0x82]  <var_decl 0000000007275990 *.LC1>)) "../System/lcd.c":238:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (symbol_ref/v/f:SI ("*.LC1") [flags 0x82]  <var_decl 0000000007275990 *.LC1>)
+        (nil)))
+(insn 30 29 31 2 (set (reg:SI 1 r1)
+        (const_int 135 [0x87])) "../System/lcd.c":238:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 31 30 32 2 (set (reg:SI 0 r0)
+        (const_int 90 [0x5a])) "../System/lcd.c":238:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 32 31 33 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("UG_PutString") [flags 0x41]  <function_decl 0000000006cb1b00 UG_PutString>) [0 UG_PutString S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":238:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 2 r2)
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_DEAD (reg:SI 0 r0)
+                (expr_list:REG_CALL_DECL (symbol_ref:SI ("UG_PutString") [flags 0x41]  <function_decl 0000000006cb1b00 UG_PutString>)
+                    (nil)))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (expr_list:SI (use (reg:SI 2 r2))
+                    (nil))))))
+(debug_insn 33 32 34 2 (debug_marker) "../System/lcd.c":240:2 -1
+     (nil))
+(insn 34 33 35 2 (set (reg:SI 0 r0)
+        (const_int 2047 [0x7ff])) "../System/lcd.c":240:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 35 34 36 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("UG_SetForecolor") [flags 0x41]  <function_decl 0000000006cb5100 UG_SetForecolor>) [0 UG_SetForecolor S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":240:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("UG_SetForecolor") [flags 0x41]  <function_decl 0000000006cb5100 UG_SetForecolor>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 36 35 38 2 (debug_marker) "../System/lcd.c":241:2 -1
+     (nil))
+(insn 38 36 39 2 (set (reg:SI 2 r2)
+        (symbol_ref/v/f:SI ("*.LC2") [flags 0x82]  <var_decl 0000000007275a20 *.LC2>)) "../System/lcd.c":241:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (symbol_ref/v/f:SI ("*.LC2") [flags 0x82]  <var_decl 0000000007275a20 *.LC2>)
+        (nil)))
+(insn 39 38 40 2 (set (reg:SI 1 r1)
+        (const_int 135 [0x87])) "../System/lcd.c":241:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 40 39 41 2 (set (reg:SI 0 r0)
+        (const_int 120 [0x78])) "../System/lcd.c":241:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 41 40 42 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("UG_PutString") [flags 0x41]  <function_decl 0000000006cb1b00 UG_PutString>) [0 UG_PutString S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":241:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 2 r2)
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_DEAD (reg:SI 0 r0)
+                (expr_list:REG_CALL_DECL (symbol_ref:SI ("UG_PutString") [flags 0x41]  <function_decl 0000000006cb1b00 UG_PutString>)
+                    (nil)))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (expr_list:SI (use (reg:SI 2 r2))
+                    (nil))))))
+(debug_insn 42 41 43 2 (debug_marker) "../System/lcd.c":243:2 -1
+     (nil))
+(insn 43 42 44 2 (set (reg:SI 0 r0)
+        (const_int 2016 [0x7e0])) "../System/lcd.c":243:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 44 43 45 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("UG_SetForecolor") [flags 0x41]  <function_decl 0000000006cb5100 UG_SetForecolor>) [0 UG_SetForecolor S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":243:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("UG_SetForecolor") [flags 0x41]  <function_decl 0000000006cb5100 UG_SetForecolor>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 45 44 47 2 (debug_marker) "../System/lcd.c":244:2 -1
+     (nil))
+(insn 47 45 48 2 (set (reg:SI 2 r2)
+        (symbol_ref/v/f:SI ("*.LC3") [flags 0x82]  <var_decl 0000000007275ab0 *.LC3>)) "../System/lcd.c":244:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (symbol_ref/v/f:SI ("*.LC3") [flags 0x82]  <var_decl 0000000007275ab0 *.LC3>)
+        (nil)))
+(insn 48 47 49 2 (set (reg:SI 1 r1)
+        (const_int 135 [0x87])) "../System/lcd.c":244:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 49 48 50 2 (set (reg:SI 0 r0)
+        (const_int 150 [0x96])) "../System/lcd.c":244:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 50 49 51 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("UG_PutString") [flags 0x41]  <function_decl 0000000006cb1b00 UG_PutString>) [0 UG_PutString S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":244:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 2 r2)
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_DEAD (reg:SI 0 r0)
+                (expr_list:REG_CALL_DECL (symbol_ref:SI ("UG_PutString") [flags 0x41]  <function_decl 0000000006cb1b00 UG_PutString>)
+                    (nil)))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (expr_list:SI (use (reg:SI 2 r2))
+                    (nil))))))
+(debug_insn 51 50 52 2 (debug_marker) "../System/lcd.c":246:2 -1
+     (nil))
+(insn 52 51 53 2 (set (reg:SI 0 r0)
+        (const_int 65504 [0xffe0])) "../System/lcd.c":246:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 53 52 54 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("UG_SetForecolor") [flags 0x41]  <function_decl 0000000006cb5100 UG_SetForecolor>) [0 UG_SetForecolor S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":246:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("UG_SetForecolor") [flags 0x41]  <function_decl 0000000006cb5100 UG_SetForecolor>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 54 53 56 2 (debug_marker) "../System/lcd.c":247:2 -1
+     (nil))
+(insn 56 54 57 2 (set (reg:SI 2 r2)
+        (symbol_ref/v/f:SI ("*.LC4") [flags 0x82]  <var_decl 0000000007275b40 *.LC4>)) "../System/lcd.c":247:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (symbol_ref/v/f:SI ("*.LC4") [flags 0x82]  <var_decl 0000000007275b40 *.LC4>)
+        (nil)))
+(insn 57 56 58 2 (set (reg:SI 1 r1)
+        (const_int 135 [0x87])) "../System/lcd.c":247:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 58 57 59 2 (set (reg:SI 0 r0)
+        (const_int 180 [0xb4])) "../System/lcd.c":247:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 59 58 60 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("UG_PutString") [flags 0x41]  <function_decl 0000000006cb1b00 UG_PutString>) [0 UG_PutString S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":247:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 2 r2)
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_DEAD (reg:SI 0 r0)
+                (expr_list:REG_CALL_DECL (symbol_ref:SI ("UG_PutString") [flags 0x41]  <function_decl 0000000006cb1b00 UG_PutString>)
+                    (nil)))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (expr_list:SI (use (reg:SI 2 r2))
+                    (nil))))))
+(debug_insn 60 59 61 2 (debug_marker) "../System/lcd.c":249:2 -1
+     (nil))
+(insn 61 60 62 2 (set (reg:SI 0 r0)
+        (const_int 63488 [0xf800])) "../System/lcd.c":249:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 62 61 63 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("UG_SetForecolor") [flags 0x41]  <function_decl 0000000006cb5100 UG_SetForecolor>) [0 UG_SetForecolor S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":249:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("UG_SetForecolor") [flags 0x41]  <function_decl 0000000006cb5100 UG_SetForecolor>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 63 62 65 2 (debug_marker) "../System/lcd.c":250:2 -1
+     (nil))
+(insn 65 63 66 2 (set (reg:SI 2 r2)
+        (symbol_ref/v/f:SI ("*.LC5") [flags 0x82]  <var_decl 0000000007275bd0 *.LC5>)) "../System/lcd.c":250:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (symbol_ref/v/f:SI ("*.LC5") [flags 0x82]  <var_decl 0000000007275bd0 *.LC5>)
+        (nil)))
+(insn 66 65 67 2 (set (reg:SI 1 r1)
+        (const_int 135 [0x87])) "../System/lcd.c":250:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 67 66 68 2 (set (reg:SI 0 r0)
+        (const_int 220 [0xdc])) "../System/lcd.c":250:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 68 67 69 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("UG_PutString") [flags 0x41]  <function_decl 0000000006cb1b00 UG_PutString>) [0 UG_PutString S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":250:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 2 r2)
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_DEAD (reg:SI 0 r0)
+                (expr_list:REG_CALL_DECL (symbol_ref:SI ("UG_PutString") [flags 0x41]  <function_decl 0000000006cb1b00 UG_PutString>)
+                    (nil)))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (expr_list:SI (use (reg:SI 2 r2))
+                    (nil))))))
+(debug_insn 69 68 70 2 (debug_marker) "../System/lcd.c":252:2 -1
+     (nil))
+(insn 70 69 71 2 (set (reg:SI 0 r0)
+        (const_int 65535 [0xffff])) "../System/lcd.c":252:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 71 70 72 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("UG_SetForecolor") [flags 0x41]  <function_decl 0000000006cb5100 UG_SetForecolor>) [0 UG_SetForecolor S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":252:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("UG_SetForecolor") [flags 0x41]  <function_decl 0000000006cb5100 UG_SetForecolor>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 72 71 74 2 (debug_marker) "../System/lcd.c":253:2 -1
+     (nil))
+(insn 74 72 75 2 (set (reg:SI 0 r0)
+        (symbol_ref:SI ("FONT_16X26") [flags 0xc0]  <var_decl 0000000006db86c0 FONT_16X26>)) "../System/lcd.c":253:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (symbol_ref:SI ("FONT_16X26") [flags 0xc0]  <var_decl 0000000006db86c0 FONT_16X26>)
+        (nil)))
+(call_insn 75 74 76 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("UG_FontSelect") [flags 0x41]  <function_decl 0000000006e51f00 UG_FontSelect>) [0 UG_FontSelect S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":253:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("UG_FontSelect") [flags 0x41]  <function_decl 0000000006e51f00 UG_FontSelect>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 76 75 78 2 (debug_marker) "../System/lcd.c":254:2 -1
+     (nil))
+(insn 78 76 79 2 (set (reg:SI 2 r2)
+        (symbol_ref/v/f:SI ("*.LC6") [flags 0x82]  <var_decl 0000000007275c60 *.LC6>)) "../System/lcd.c":254:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (symbol_ref/v/f:SI ("*.LC6") [flags 0x82]  <var_decl 0000000007275c60 *.LC6>)
+        (nil)))
+(insn 79 78 80 2 (set (reg:SI 1 r1)
+        (const_int 185 [0xb9])) "../System/lcd.c":254:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 80 79 81 2 (set (reg:SI 0 r0)
+        (const_int 5 [0x5])) "../System/lcd.c":254:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn/j 81 80 82 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("UG_PutString") [flags 0x41]  <function_decl 0000000006cb1b00 UG_PutString>) [0 UG_PutString S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../System/lcd.c":254:2 292 {*sibcall_insn}
+     (expr_list:REG_DEAD (reg:SI 2 r2)
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_DEAD (reg:SI 0 r0)
+                (expr_list:REG_CALL_DECL (symbol_ref:SI ("UG_PutString") [flags 0x41]  <function_decl 0000000006cb1b00 UG_PutString>)
+                    (nil)))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (expr_list:SI (use (reg:SI 2 r2))
+                    (nil))))))
+(barrier 82 81 0)
+
+;; Function LCD_TCH_demo (LCD_TCH_demo, funcdef_no=872, decl_uid=11885, cgraph_uid=876, symbol_order=882)
+
+Starting decreasing number of live ranges...
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4
+;; 2 succs { 3 4 }
+;; 3 succs { 4 }
+;; 4 succs { 1 }
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Reg 123: local to bb 2 def dominates all uses has unique first use
+Reg 135 uninteresting
+Ignoring reg 123 with equiv init insn
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4
+;; 2 succs { 3 4 }
+;; 3 succs { 4 }
+;; 4 succs { 1 }
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+init_insns for 123: (insn_list:REG_DEP_TRUE 6 (nil))
+
+Pass 1 for finding pseudo/allocno costs
+
+    r135: preferred LO_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r123: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+
+  a0(r135,l0) costs: LO_REGS:2000,2000 HI_REGS:6000,6000 CALLER_SAVE_REGS:6000,6000 EVEN_REG:6000,6000 GENERAL_REGS:4000,4000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a1(r123,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:45000,45000 MEM:30000,30000
+
+   Insn 47(l0): point = 0
+   Insn 46(l0): point = 2
+   Insn 42(l0): point = 5
+   Insn 41(l0): point = 7
+   Insn 40(l0): point = 9
+   Insn 36(l0): point = 11
+   Insn 35(l0): point = 13
+   Insn 34(l0): point = 15
+   Insn 30(l0): point = 17
+   Insn 27(l0): point = 19
+   Insn 26(l0): point = 21
+   Insn 29(l0): point = 23
+   Insn 28(l0): point = 25
+   Insn 21(l0): point = 28
+   Insn 56(l0): point = 30
+   Insn 17(l0): point = 32
+   Insn 11(l0): point = 34
+   Insn 8(l0): point = 36
+   Insn 16(l0): point = 38
+   Insn 15(l0): point = 40
+   Insn 6(l0): point = 42
+ a0(r135): [29..30]
+ a1(r123): [35..42]
+Compressing live ranges: from 45 to 4 - 8%
+Ranges after the compression:
+ a0(r135): [0..1]
+ a1(r123): [2..3]
++++Allocating 0 bytes for conflict table (uncompressed size 16)
+;; a0(r135,l0) conflicts:
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a1(r123,l0) conflicts:
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+
+  pref0:a0(r135)<-hr0@2000
+  regions=1, blocks=5, points=4
+    allocnos=2 (big 0), copies=0, conflicts=0, ranges=2
+
+**** Allocnos coloring:
+
+
+  Loop 0 (parent -1, header bb2, depth 0)
+    bbs: 4 3 2
+    all: 0r135 1r123
+    modified regnos: 123 135
+    border:
+    Pressure: GENERAL_REGS=6
+    Hard reg set forest:
+      0:( 0-12 14 16-47)@0
+        1:( 0-12 14)@116000
+          2:( 2-12 14)@60000
+      Allocno a0r135 of ALL_REGS(46) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15 48-106)
+      Allocno a1r123 of GENERAL_REGS(14) has 12 avail. regs  2-12 14, node:  2-12 14 (confl regs =  0-1 13 15-106)
+      Pushing a0(r135,l0)(cost 0)
+      Pushing a1(r123,l0)(cost 0)
+      Popping a1(r123,l0)  -- assign reg 3
+      Popping a0(r135,l0)  -- assign reg 0
+Disposition:
+    1:r123 l0     3    0:r135 l0     0
+New iteration of spill/restore move
++++Costs: overall -28000, reg -28000, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+LCD_TCH_demo
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={11d,6u} r1={10d,4u} r2={7d,1u} r3={7d,1u} r7={1d,4u} r12={10d} r13={1d,9u} r14={6d} r15={5d} r16={6d} r17={6d} r18={6d} r19={6d} r20={6d} r21={6d} r22={6d} r23={6d} r24={6d} r25={6d} r26={6d} r27={6d} r28={6d} r29={6d} r30={6d} r31={6d} r48={5d} r49={5d} r50={5d} r51={5d} r52={5d} r53={5d} r54={5d} r55={5d} r56={5d} r57={5d} r58={5d} r59={5d} r60={5d} r61={5d} r62={5d} r63={5d} r64={5d} r65={5d} r66={5d} r67={5d} r68={5d} r69={5d} r70={5d} r71={5d} r72={5d} r73={5d} r74={5d} r75={5d} r76={5d} r77={5d} r78={5d} r79={5d} r80={5d} r81={5d} r82={5d} r83={5d} r84={5d} r85={5d} r86={5d} r87={5d} r88={5d} r89={5d} r90={5d} r91={5d} r92={5d} r93={5d} r94={5d} r95={5d} r96={5d} r97={5d} r98={5d} r99={5d} r100={6d} r101={5d} r102={1d,12u} r103={1d,3u} r104={5d} r105={5d} r106={5d} r123={1d,2u} r135={1d,1u} 
+;;    total ref usage 487{444d,43u,0e} in 27{22 regular + 5 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 13 2 NOTE_INSN_FUNCTION_BEG)
+(note 13 2 14 2 NOTE_INSN_DELETED)
+(note 14 13 18 2 NOTE_INSN_DELETED)
+(note 18 14 20 2 NOTE_INSN_DELETED)
+(note 20 18 5 2 NOTE_INSN_DELETED)
+(debug_insn 5 20 6 2 (debug_marker) "../System/lcd.c":277:2 -1
+     (nil))
+(insn 6 5 15 2 (set (reg:SI 123)
+        (const_int 0 [0])) "../System/lcd.c":277:11 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 0 [0])
+        (nil)))
+(insn 15 6 16 2 (set (reg:SI 1 r1)
+        (plus:SI (reg/f:SI 102 sfp)
+            (const_int -2 [0xfffffffffffffffe]))) "../System/lcd.c":282:7 7 {*arm_addsi3}
+     (nil))
+(insn 16 15 8 2 (set (reg:SI 0 r0)
+        (plus:SI (reg/f:SI 102 sfp)
+            (const_int -4 [0xfffffffffffffffc]))) "../System/lcd.c":282:7 7 {*arm_addsi3}
+     (nil))
+(insn 8 16 11 2 (set (mem/c:HI (plus:SI (reg/f:SI 102 sfp)
+                (const_int -4 [0xfffffffffffffffc])) [1 x+0 S2 A32])
+        (subreg:HI (reg:SI 123) 0)) "../System/lcd.c":277:11 724 {*thumb2_movhi_vfp}
+     (nil))
+(insn 11 8 12 2 (set (mem/c:HI (plus:SI (reg/f:SI 102 sfp)
+                (const_int -2 [0xfffffffffffffffe])) [1 y+0 S2 A16])
+        (subreg:HI (reg:SI 123) 0)) "../System/lcd.c":277:18 724 {*thumb2_movhi_vfp}
+     (expr_list:REG_DEAD (reg:SI 123)
+        (nil)))
+(debug_insn 12 11 17 2 (debug_marker) "../System/lcd.c":282:2 -1
+     (nil))
+(call_insn 17 12 56 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("XPT2046_touch_get_coordinates_if_pressed") [flags 0x41]  <function_decl 0000000006e76700 XPT2046_touch_get_coordinates_if_pressed>) [0 XPT2046_touch_get_coordinates_if_pressed S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":282:7 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("XPT2046_touch_get_coordinates_if_pressed") [flags 0x41]  <function_decl 0000000006e76700 XPT2046_touch_get_coordinates_if_pressed>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 56 17 21 2 (set (reg:SI 135)
+        (reg:SI 0 r0)) "../System/lcd.c":282:7 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+(jump_insn 21 56 22 2 (parallel [
+            (set (pc)
+                (if_then_else (eq (reg:SI 135)
+                        (const_int 0 [0]))
+                    (label_ref:SI 43)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../System/lcd.c":282:5 1024 {*thumb2_cbz}
+     (expr_list:REG_DEAD (reg:SI 135)
+        (expr_list:REG_UNUSED (reg:CC 100 cc)
+            (int_list:REG_BR_PROB 719407028 (nil))))
+ -> 43)
+(note 22 21 24 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 24 22 25 3 NOTE_INSN_DELETED)
+(note 25 24 32 3 NOTE_INSN_DELETED)
+(note 32 25 38 3 NOTE_INSN_DELETED)
+(note 38 32 23 3 NOTE_INSN_DELETED)
+(debug_insn 23 38 28 3 (debug_marker) "../System/lcd.c":286:3 -1
+     (nil))
+(insn 28 23 29 3 (set (reg:SI 1 r1)
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 102 sfp)
+                    (const_int -2 [0xfffffffffffffffe])) [1 y+0 S2 A16]))) "../System/lcd.c":286:3 1005 {*thumb2_zero_extendhisi2_v6}
+     (nil))
+(insn 29 28 26 3 (set (reg:SI 0 r0)
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 102 sfp)
+                    (const_int -4 [0xfffffffffffffffc])) [1 x+0 S2 A32]))) "../System/lcd.c":286:3 1005 {*thumb2_zero_extendhisi2_v6}
+     (nil))
+(insn 26 29 27 3 (set (reg:SI 3 r3)
+        (const_int 2016 [0x7e0])) "../System/lcd.c":286:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 27 26 30 3 (set (reg:SI 2 r2)
+        (const_int 2 [0x2])) "../System/lcd.c":286:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 30 27 31 3 (parallel [
+            (call (mem:SI (symbol_ref:SI ("UG_FillCircle") [flags 0x41]  <function_decl 0000000006cb1800 UG_FillCircle>) [0 UG_FillCircle S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":286:3 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 3 r3)
+        (expr_list:REG_DEAD (reg:SI 2 r2)
+            (expr_list:REG_DEAD (reg:SI 1 r1)
+                (expr_list:REG_DEAD (reg:SI 0 r0)
+                    (expr_list:REG_CALL_DECL (symbol_ref:SI ("UG_FillCircle") [flags 0x41]  <function_decl 0000000006cb1800 UG_FillCircle>)
+                        (nil))))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (expr_list:SI (use (reg:SI 2 r2))
+                    (expr_list:SI (use (reg:SI 3 r3))
+                        (nil)))))))
+(debug_insn 31 30 34 3 (debug_marker) "../System/lcd.c":289:3 -1
+     (nil))
+(insn 34 31 35 3 (set (reg:SI 1 r1)
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 102 sfp)
+                    (const_int -4 [0xfffffffffffffffc])) [1 x+0 S2 A32]))) "../System/lcd.c":289:3 1005 {*thumb2_zero_extendhisi2_v6}
+     (nil))
+(insn 35 34 36 3 (set (reg:SI 0 r0)
+        (symbol_ref/v/f:SI ("*.LC7") [flags 0x82]  <var_decl 0000000007275ea0 *.LC7>)) "../System/lcd.c":289:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 36 35 37 3 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000005aa0b00 printf>) [0 __builtin_printf S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":289:3 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000005aa0b00 printf>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 37 36 40 3 (debug_marker) "../System/lcd.c":290:3 -1
+     (nil))
+(insn 40 37 41 3 (set (reg:SI 1 r1)
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 102 sfp)
+                    (const_int -2 [0xfffffffffffffffe])) [1 y+0 S2 A16]))) "../System/lcd.c":290:3 1005 {*thumb2_zero_extendhisi2_v6}
+     (nil))
+(insn 41 40 42 3 (set (reg:SI 0 r0)
+        (symbol_ref/v/f:SI ("*.LC8") [flags 0x82]  <var_decl 0000000007275f30 *.LC8>)) "../System/lcd.c":290:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 42 41 43 3 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000005aa0b00 printf>) [0 __builtin_printf S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":290:3 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000005aa0b00 printf>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(code_label 43 42 44 4 33 (nil) [1 uses])
+(note 44 43 45 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 45 44 46 4 (debug_marker) "../System/lcd.c":296:2 -1
+     (nil))
+(insn 46 45 47 4 (set (reg:SI 0 r0)
+        (const_int 30 [0x1e])) "../System/lcd.c":296:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 47 46 57 4 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006b59e00 HAL_Delay>) [0 HAL_Delay S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":296:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006b59e00 HAL_Delay>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(note 57 47 0 NOTE_INSN_DELETED)

@@ -1,0 +1,1122 @@
+
+;; Function initialise_monitor_handles (initialise_monitor_handles, funcdef_no=25, decl_uid=7480, cgraph_uid=26, symbol_order=27)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 0 2 (debug_marker) "../Core/Src/syscalls.c":46:1 -1
+     (nil))
+
+;; Function _getpid (_getpid, funcdef_no=26, decl_uid=7483, cgraph_uid=27, symbol_order=28)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 7.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../Core/Src/syscalls.c":50:2 -1
+     (nil))
+(insn 6 5 10 2 (set (reg:SI 113 [ <retval> ])
+        (const_int 1 [0x1])) "../Core/Src/syscalls.c":50:9 -1
+     (nil))
+(insn 10 6 11 2 (set (reg/i:SI 0 r0)
+        (reg:SI 113 [ <retval> ])) "../Core/Src/syscalls.c":51:1 -1
+     (nil))
+(insn 11 10 0 2 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":51:1 -1
+     (nil))
+
+;; Function _kill (_kill, funcdef_no=27, decl_uid=7487, cgraph_uid=28, symbol_order=29)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 14.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v:SI 115 [ pid ])
+        (reg:SI 0 r0 [ pid ])) "../Core/Src/syscalls.c":54:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v:SI 116 [ sig ])
+        (reg:SI 1 r1 [ sig ])) "../Core/Src/syscalls.c":54:1 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 4 8 2 (debug_marker) "../Core/Src/syscalls.c":55:2 -1
+     (nil))
+(call_insn 8 7 9 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000006aa3000 __errno>) [0 __errno S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/syscalls.c":55:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000006aa3000 __errno>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 9 8 10 2 (set (reg/f:SI 113 [ _1 ])
+        (reg:SI 0 r0)) "../Core/Src/syscalls.c":55:2 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 117)
+        (const_int 22 [0x16])) "../Core/Src/syscalls.c":55:8 -1
+     (nil))
+(insn 11 10 12 2 (set (mem:SI (reg/f:SI 113 [ _1 ]) [1 *_1+0 S4 A32])
+        (reg:SI 117)) "../Core/Src/syscalls.c":55:8 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "../Core/Src/syscalls.c":56:2 -1
+     (nil))
+(insn 13 12 17 2 (set (reg:SI 114 [ <retval> ])
+        (const_int -1 [0xffffffffffffffff])) "../Core/Src/syscalls.c":56:9 -1
+     (nil))
+(insn 17 13 18 2 (set (reg/i:SI 0 r0)
+        (reg:SI 114 [ <retval> ])) "../Core/Src/syscalls.c":57:1 -1
+     (nil))
+(insn 18 17 0 2 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":57:1 -1
+     (nil))
+
+;; Function _exit (_exit, funcdef_no=28, decl_uid=1156, cgraph_uid=29, symbol_order=30) (executed once)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+deleting block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 114 [ status ])
+        (reg:SI 0 r0 [ status ])) "../Core/Src/syscalls.c":60:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Core/Src/syscalls.c":61:2 -1
+     (nil))
+(debug_insn 7 6 8 2 (var_location:SI pid (entry_value:SI (reg:SI 0 r0 [ status ]))) "../Core/Src/syscalls.c":61:2 -1
+     (nil))
+(debug_insn 8 7 9 2 (var_location:SI sig (const_int -1 [0xffffffffffffffff])) "../Core/Src/syscalls.c":61:2 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker:BLK) "../Core/Src/syscalls.c":53:5 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "../Core/Src/syscalls.c":55:2 -1
+     (nil))
+(call_insn 11 10 12 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000006aa3000 __errno>) [0 __errno S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/syscalls.c":55:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000006aa3000 __errno>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 12 11 13 2 (set (reg/f:SI 113 [ _3 ])
+        (reg:SI 0 r0)) "../Core/Src/syscalls.c":55:2 -1
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 115)
+        (const_int 22 [0x16])) "../Core/Src/syscalls.c":55:8 -1
+     (nil))
+(insn 14 13 15 2 (set (mem:SI (reg/f:SI 113 [ _3 ]) [1 *_3+0 S4 A32])
+        (reg:SI 115)) "../Core/Src/syscalls.c":55:8 -1
+     (nil))
+(debug_insn 15 14 22 2 (debug_marker) "../Core/Src/syscalls.c":56:2 -1
+     (nil))
+(code_label 22 15 16 4 7 (nil) [1 uses])
+(note 16 22 17 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 17 16 18 4 (var_location:SI pid (clobber (const_int 0 [0]))) "../Core/Src/syscalls.c":61:2 -1
+     (nil))
+(debug_insn 18 17 19 4 (var_location:SI sig (clobber (const_int 0 [0]))) "../Core/Src/syscalls.c":61:2 -1
+     (nil))
+(debug_insn 19 18 20 4 (debug_marker) "../Core/Src/syscalls.c":62:2 -1
+     (nil))
+(debug_insn 20 19 21 4 (debug_marker) "../Core/Src/syscalls.c":62:13 -1
+     (nil))
+(debug_insn 21 20 23 4 (debug_marker) "../Core/Src/syscalls.c":62:8 -1
+     (nil))
+(jump_insn 23 21 24 4 (set (pc)
+        (label_ref 22)) "../Core/Src/syscalls.c":56:9 -1
+     (nil)
+ -> 22)
+(barrier 24 23 0)
+
+;; Function _read (_read, funcdef_no=29, decl_uid=7496, cgraph_uid=30, symbol_order=31)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 40.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (reg/v:SI 118 [ file ])
+        (reg:SI 0 r0 [ file ])) "../Core/Src/syscalls.c":66:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:SI 119 [ ptr ])
+        (reg:SI 1 r1 [ ptr ])) "../Core/Src/syscalls.c":66:1 -1
+     (nil))
+(insn 4 3 5 2 (set (reg/v:SI 120 [ len ])
+        (reg:SI 2 r2 [ len ])) "../Core/Src/syscalls.c":66:1 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 8 5 9 2 (debug_marker) "../Core/Src/syscalls.c":67:2 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "../Core/Src/syscalls.c":69:2 -1
+     (nil))
+(debug_insn 10 9 11 2 (var_location:SI DataIdx (const_int 0 [0])) -1
+     (nil))
+(debug_insn 11 10 12 2 (var_location:SI ptr (reg/v/f:SI 119 [ ptr ])) -1
+     (nil))
+(debug_insn 12 11 15 2 (debug_marker) "../Core/Src/syscalls.c":69:20 -1
+     (nil))
+(insn 15 12 16 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 120 [ len ])
+            (const_int 0 [0]))) "../Core/Src/syscalls.c":69:2 -1
+     (nil))
+(jump_insn 16 15 17 2 (set (pc)
+        (if_then_else (le (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 36)
+            (pc))) "../Core/Src/syscalls.c":69:2 -1
+     (int_list:REG_BR_PROB 118111604 (nil))
+ -> 36)
+(note 17 16 18 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 33 4 (set (reg/f:SI 115 [ _4 ])
+        (plus:SI (reg/v/f:SI 119 [ ptr ])
+            (reg/v:SI 120 [ len ]))) -1
+     (nil))
+(code_label 33 18 19 5 11 (nil) [1 uses])
+(note 19 33 20 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 20 19 21 5 (var_location:SI DataIdx (const_int 0 [0])) -1
+     (nil))
+(debug_insn 21 20 22 5 (var_location:SI ptr (reg/v/f:SI 119 [ ptr ])) -1
+     (nil))
+(debug_insn 22 21 23 5 (debug_marker) "../Core/Src/syscalls.c":71:3 -1
+     (nil))
+(call_insn 23 22 24 5 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref/i:SI ("__io_getchar") [flags 0x41]  <function_decl 0000000006b8ee00 __io_getchar>) [0 __io_getchar S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/syscalls.c":71:12 -1
+     (expr_list:REG_CALL_DECL (symbol_ref/i:SI ("__io_getchar") [flags 0x41]  <function_decl 0000000006b8ee00 __io_getchar>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 24 23 25 5 (set (reg:SI 113 [ _1 ])
+        (reg:SI 0 r0)) "../Core/Src/syscalls.c":71:12 -1
+     (nil))
+(insn 25 24 26 5 (set (reg/v/f:SI 119 [ ptr ])
+        (plus:SI (reg/v/f:SI 119 [ ptr ])
+            (const_int 1 [0x1]))) "../Core/Src/syscalls.c":71:7 -1
+     (nil))
+(debug_insn 26 25 27 5 (var_location:SI ptr (reg/v/f:SI 119 [ ptr ])) "../Core/Src/syscalls.c":71:7 -1
+     (nil))
+(insn 27 26 28 5 (set (reg:QI 121)
+        (subreg:QI (reg:SI 113 [ _1 ]) 0)) "../Core/Src/syscalls.c":71:10 -1
+     (nil))
+(insn 28 27 29 5 (set (mem:QI (plus:SI (reg/v/f:SI 119 [ ptr ])
+                (const_int -1 [0xffffffffffffffff])) [0 MEM[base: ptr_10, offset: 4294967295B]+0 S1 A8])
+        (reg:QI 121)) "../Core/Src/syscalls.c":71:10 -1
+     (nil))
+(debug_insn 29 28 30 5 (debug_marker) "../Core/Src/syscalls.c":69:35 -1
+     (nil))
+(debug_insn 30 29 31 5 (var_location:SI DataIdx (const_int 0 [0])) -1
+     (nil))
+(debug_insn 31 30 32 5 (var_location:SI ptr (reg/v/f:SI 119 [ ptr ])) -1
+     (nil))
+(debug_insn 32 31 34 5 (debug_marker) "../Core/Src/syscalls.c":69:20 -1
+     (nil))
+(insn 34 32 35 5 (set (reg:CC 100 cc)
+        (compare:CC (reg/f:SI 115 [ _4 ])
+            (reg/v/f:SI 119 [ ptr ]))) "../Core/Src/syscalls.c":69:2 -1
+     (nil))
+(jump_insn 35 34 36 5 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 33)
+            (pc))) "../Core/Src/syscalls.c":69:2 -1
+     (int_list:REG_BR_PROB 955630228 (nil))
+ -> 33)
+(code_label 36 35 37 6 10 (nil) [1 uses])
+(note 37 36 38 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 38 37 39 6 (debug_marker) "../Core/Src/syscalls.c":74:1 -1
+     (nil))
+(insn 39 38 43 6 (set (reg:SI 117 [ <retval> ])
+        (reg/v:SI 120 [ len ])) "../Core/Src/syscalls.c":74:8 -1
+     (nil))
+(insn 43 39 44 6 (set (reg/i:SI 0 r0)
+        (reg:SI 117 [ <retval> ])) "../Core/Src/syscalls.c":75:1 -1
+     (nil))
+(insn 44 43 0 6 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":75:1 -1
+     (nil))
+
+;; Function _write (_write, funcdef_no=30, decl_uid=7505, cgraph_uid=31, symbol_order=32)
+
+
+;; Generating RTL for gimple basic block 2
+
+;; Generating RTL for gimple basic block 3
+
+;; Generating RTL for gimple basic block 4
+
+;; Generating RTL for gimple basic block 5
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 39.
+Merging block 7 into block 6...
+Merged blocks 6 and 7.
+Merged 6 and 7 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (reg/v:SI 118 [ file ])
+        (reg:SI 0 r0 [ file ])) "../Core/Src/syscalls.c":78:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:SI 119 [ ptr ])
+        (reg:SI 1 r1 [ ptr ])) "../Core/Src/syscalls.c":78:1 -1
+     (nil))
+(insn 4 3 5 2 (set (reg/v:SI 120 [ len ])
+        (reg:SI 2 r2 [ len ])) "../Core/Src/syscalls.c":78:1 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 8 5 9 2 (debug_marker) "../Core/Src/syscalls.c":79:2 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "../Core/Src/syscalls.c":81:2 -1
+     (nil))
+(debug_insn 10 9 11 2 (var_location:SI DataIdx (const_int 0 [0])) -1
+     (nil))
+(debug_insn 11 10 12 2 (var_location:SI ptr (reg/v/f:SI 119 [ ptr ])) -1
+     (nil))
+(debug_insn 12 11 15 2 (debug_marker) "../Core/Src/syscalls.c":81:20 -1
+     (nil))
+(insn 15 12 16 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 120 [ len ])
+            (const_int 0 [0]))) "../Core/Src/syscalls.c":81:2 -1
+     (nil))
+(jump_insn 16 15 17 2 (set (pc)
+        (if_then_else (le (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 35)
+            (pc))) "../Core/Src/syscalls.c":81:2 -1
+     (int_list:REG_BR_PROB 118111604 (nil))
+ -> 35)
+(note 17 16 18 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 32 4 (set (reg/f:SI 115 [ _14 ])
+        (plus:SI (reg/v/f:SI 119 [ ptr ])
+            (reg/v:SI 120 [ len ]))) -1
+     (nil))
+(code_label 32 18 19 5 16 (nil) [1 uses])
+(note 19 32 20 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 20 19 21 5 (var_location:SI DataIdx (const_int 0 [0])) -1
+     (nil))
+(debug_insn 21 20 22 5 (var_location:SI ptr (reg/v/f:SI 119 [ ptr ])) -1
+     (nil))
+(debug_insn 22 21 23 5 (debug_marker) "../Core/Src/syscalls.c":83:3 -1
+     (nil))
+(insn 23 22 24 5 (set (reg/v/f:SI 119 [ ptr ])
+        (plus:SI (reg/v/f:SI 119 [ ptr ])
+            (const_int 1 [0x1]))) "../Core/Src/syscalls.c":83:20 -1
+     (nil))
+(debug_insn 24 23 25 5 (var_location:SI ptr (reg/v/f:SI 119 [ ptr ])) "../Core/Src/syscalls.c":83:20 -1
+     (nil))
+(insn 25 24 26 5 (set (reg:SI 121)
+        (zero_extend:SI (mem:QI (plus:SI (reg/v/f:SI 119 [ ptr ])
+                    (const_int -1 [0xffffffffffffffff])) [0 MEM[base: ptr_9, offset: 4294967295B]+0 S1 A8]))) "../Core/Src/syscalls.c":83:3 -1
+     (nil))
+(insn 26 25 27 5 (set (reg:SI 0 r0)
+        (reg:SI 121)) "../Core/Src/syscalls.c":83:3 -1
+     (nil))
+(call_insn 27 26 28 5 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref/i:SI ("__io_putchar") [flags 0x41]  <function_decl 0000000006b8ed00 __io_putchar>) [0 __io_putchar S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/syscalls.c":83:3 -1
+     (expr_list:REG_CALL_DECL (symbol_ref/i:SI ("__io_putchar") [flags 0x41]  <function_decl 0000000006b8ed00 __io_putchar>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 28 27 29 5 (debug_marker) "../Core/Src/syscalls.c":81:35 -1
+     (nil))
+(debug_insn 29 28 30 5 (var_location:SI DataIdx (const_int 0 [0])) -1
+     (nil))
+(debug_insn 30 29 31 5 (var_location:SI ptr (reg/v/f:SI 119 [ ptr ])) -1
+     (nil))
+(debug_insn 31 30 33 5 (debug_marker) "../Core/Src/syscalls.c":81:20 -1
+     (nil))
+(insn 33 31 34 5 (set (reg:CC 100 cc)
+        (compare:CC (reg/v/f:SI 119 [ ptr ])
+            (reg/f:SI 115 [ _14 ]))) "../Core/Src/syscalls.c":81:2 -1
+     (nil))
+(jump_insn 34 33 35 5 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 32)
+            (pc))) "../Core/Src/syscalls.c":81:2 -1
+     (int_list:REG_BR_PROB 955630228 (nil))
+ -> 32)
+(code_label 35 34 36 6 15 (nil) [1 uses])
+(note 36 35 37 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 37 36 38 6 (debug_marker) "../Core/Src/syscalls.c":85:2 -1
+     (nil))
+(insn 38 37 42 6 (set (reg:SI 117 [ <retval> ])
+        (reg/v:SI 120 [ len ])) "../Core/Src/syscalls.c":85:9 -1
+     (nil))
+(insn 42 38 43 6 (set (reg/i:SI 0 r0)
+        (reg:SI 117 [ <retval> ])) "../Core/Src/syscalls.c":86:1 -1
+     (nil))
+(insn 43 42 0 6 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":86:1 -1
+     (nil))
+
+;; Function _close (_close, funcdef_no=31, decl_uid=7512, cgraph_uid=32, symbol_order=33)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 8.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 114 [ file ])
+        (reg:SI 0 r0 [ file ])) "../Core/Src/syscalls.c":89:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Core/Src/syscalls.c":90:2 -1
+     (nil))
+(insn 7 6 11 2 (set (reg:SI 113 [ <retval> ])
+        (const_int -1 [0xffffffffffffffff])) "../Core/Src/syscalls.c":90:9 -1
+     (nil))
+(insn 11 7 12 2 (set (reg/i:SI 0 r0)
+        (reg:SI 113 [ <retval> ])) "../Core/Src/syscalls.c":91:1 -1
+     (nil))
+(insn 12 11 0 2 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":91:1 -1
+     (nil))
+
+;; Function _fstat (_fstat, funcdef_no=32, decl_uid=7516, cgraph_uid=33, symbol_order=34)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 12.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v:SI 114 [ file ])
+        (reg:SI 0 r0 [ file ])) "../Core/Src/syscalls.c":95:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:SI 115 [ st ])
+        (reg:SI 1 r1 [ st ])) "../Core/Src/syscalls.c":95:1 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 4 8 2 (debug_marker) "../Core/Src/syscalls.c":96:2 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 116)
+        (const_int 8192 [0x2000])) "../Core/Src/syscalls.c":96:14 -1
+     (nil))
+(insn 9 8 10 2 (set (mem:SI (plus:SI (reg/v/f:SI 115 [ st ])
+                (const_int 4 [0x4])) [2 st_2(D)->st_mode+0 S4 A32])
+        (reg:SI 116)) "../Core/Src/syscalls.c":96:14 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "../Core/Src/syscalls.c":97:2 -1
+     (nil))
+(insn 11 10 15 2 (set (reg:SI 113 [ <retval> ])
+        (const_int 0 [0])) "../Core/Src/syscalls.c":97:9 -1
+     (nil))
+(insn 15 11 16 2 (set (reg/i:SI 0 r0)
+        (reg:SI 113 [ <retval> ])) "../Core/Src/syscalls.c":98:1 -1
+     (nil))
+(insn 16 15 0 2 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":98:1 -1
+     (nil))
+
+;; Function _isatty (_isatty, funcdef_no=33, decl_uid=7519, cgraph_uid=34, symbol_order=35)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 8.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 114 [ file ])
+        (reg:SI 0 r0 [ file ])) "../Core/Src/syscalls.c":101:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Core/Src/syscalls.c":102:2 -1
+     (nil))
+(insn 7 6 11 2 (set (reg:SI 113 [ <retval> ])
+        (const_int 1 [0x1])) "../Core/Src/syscalls.c":102:9 -1
+     (nil))
+(insn 11 7 12 2 (set (reg/i:SI 0 r0)
+        (reg:SI 113 [ <retval> ])) "../Core/Src/syscalls.c":103:1 -1
+     (nil))
+(insn 12 11 0 2 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":103:1 -1
+     (nil))
+
+;; Function _lseek (_lseek, funcdef_no=34, decl_uid=7524, cgraph_uid=35, symbol_order=36)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 10.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (reg/v:SI 114 [ file ])
+        (reg:SI 0 r0 [ file ])) "../Core/Src/syscalls.c":106:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v:SI 115 [ ptr ])
+        (reg:SI 1 r1 [ ptr ])) "../Core/Src/syscalls.c":106:1 -1
+     (nil))
+(insn 4 3 5 2 (set (reg/v:SI 116 [ dir ])
+        (reg:SI 2 r2 [ dir ])) "../Core/Src/syscalls.c":106:1 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 8 5 9 2 (debug_marker) "../Core/Src/syscalls.c":107:2 -1
+     (nil))
+(insn 9 8 13 2 (set (reg:SI 113 [ <retval> ])
+        (const_int 0 [0])) "../Core/Src/syscalls.c":107:9 -1
+     (nil))
+(insn 13 9 14 2 (set (reg/i:SI 0 r0)
+        (reg:SI 113 [ <retval> ])) "../Core/Src/syscalls.c":108:1 -1
+     (nil))
+(insn 14 13 0 2 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":108:1 -1
+     (nil))
+
+;; Function _open (_open, funcdef_no=35, decl_uid=7528, cgraph_uid=36, symbol_order=37)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 9.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v/f:SI 114 [ path ])
+        (reg:SI 0 r0 [ path ])) "../Core/Src/syscalls.c":111:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v:SI 115 [ flags ])
+        (mem/c:SI (reg/f:SI 107 virtual-incoming-args) [1 flags+0 S4 A64])) "../Core/Src/syscalls.c":111:1 -1
+     (expr_list:REG_EQUIV (mem/c:SI (reg/f:SI 107 virtual-incoming-args) [1 flags+0 S4 A64])
+        (nil)))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 4 8 2 (debug_marker) "../Core/Src/syscalls.c":113:2 -1
+     (nil))
+(insn 8 7 12 2 (set (reg:SI 113 [ <retval> ])
+        (const_int -1 [0xffffffffffffffff])) "../Core/Src/syscalls.c":113:9 -1
+     (nil))
+(insn 12 8 13 2 (set (reg/i:SI 0 r0)
+        (reg:SI 113 [ <retval> ])) "../Core/Src/syscalls.c":114:1 -1
+     (nil))
+(insn 13 12 0 2 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":114:1 -1
+     (nil))
+
+;; Function _wait (_wait, funcdef_no=36, decl_uid=7531, cgraph_uid=37, symbol_order=38)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 13.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:SI 115 [ status ])
+        (reg:SI 0 r0 [ status ])) "../Core/Src/syscalls.c":117:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Core/Src/syscalls.c":118:2 -1
+     (nil))
+(call_insn 7 6 8 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000006aa3000 __errno>) [0 __errno S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/syscalls.c":118:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000006aa3000 __errno>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 8 7 9 2 (set (reg/f:SI 113 [ _1 ])
+        (reg:SI 0 r0)) "../Core/Src/syscalls.c":118:2 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 116)
+        (const_int 10 [0xa])) "../Core/Src/syscalls.c":118:8 -1
+     (nil))
+(insn 10 9 11 2 (set (mem:SI (reg/f:SI 113 [ _1 ]) [1 *_1+0 S4 A32])
+        (reg:SI 116)) "../Core/Src/syscalls.c":118:8 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "../Core/Src/syscalls.c":119:2 -1
+     (nil))
+(insn 12 11 16 2 (set (reg:SI 114 [ <retval> ])
+        (const_int -1 [0xffffffffffffffff])) "../Core/Src/syscalls.c":119:9 -1
+     (nil))
+(insn 16 12 17 2 (set (reg/i:SI 0 r0)
+        (reg:SI 114 [ <retval> ])) "../Core/Src/syscalls.c":120:1 -1
+     (nil))
+(insn 17 16 0 2 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":120:1 -1
+     (nil))
+
+;; Function _unlink (_unlink, funcdef_no=37, decl_uid=7534, cgraph_uid=38, symbol_order=39)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 13.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:SI 115 [ name ])
+        (reg:SI 0 r0 [ name ])) "../Core/Src/syscalls.c":123:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Core/Src/syscalls.c":124:2 -1
+     (nil))
+(call_insn 7 6 8 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000006aa3000 __errno>) [0 __errno S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/syscalls.c":124:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000006aa3000 __errno>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 8 7 9 2 (set (reg/f:SI 113 [ _1 ])
+        (reg:SI 0 r0)) "../Core/Src/syscalls.c":124:2 -1
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 116)
+        (const_int 2 [0x2])) "../Core/Src/syscalls.c":124:8 -1
+     (nil))
+(insn 10 9 11 2 (set (mem:SI (reg/f:SI 113 [ _1 ]) [1 *_1+0 S4 A32])
+        (reg:SI 116)) "../Core/Src/syscalls.c":124:8 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "../Core/Src/syscalls.c":125:2 -1
+     (nil))
+(insn 12 11 16 2 (set (reg:SI 114 [ <retval> ])
+        (const_int -1 [0xffffffffffffffff])) "../Core/Src/syscalls.c":125:9 -1
+     (nil))
+(insn 16 12 17 2 (set (reg/i:SI 0 r0)
+        (reg:SI 114 [ <retval> ])) "../Core/Src/syscalls.c":126:1 -1
+     (nil))
+(insn 17 16 0 2 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":126:1 -1
+     (nil))
+
+;; Function _times (_times, funcdef_no=38, decl_uid=7537, cgraph_uid=39, symbol_order=40)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 8.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:SI 114 [ buf ])
+        (reg:SI 0 r0 [ buf ])) "../Core/Src/syscalls.c":129:1 -1
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Core/Src/syscalls.c":130:2 -1
+     (nil))
+(insn 7 6 11 2 (set (reg:SI 113 [ <retval> ])
+        (const_int -1 [0xffffffffffffffff])) "../Core/Src/syscalls.c":130:9 -1
+     (nil))
+(insn 11 7 12 2 (set (reg/i:SI 0 r0)
+        (reg:SI 113 [ <retval> ])) "../Core/Src/syscalls.c":131:1 -1
+     (nil))
+(insn 12 11 0 2 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":131:1 -1
+     (nil))
+
+;; Function _stat (_stat, funcdef_no=39, decl_uid=7541, cgraph_uid=40, symbol_order=41)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 12.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v/f:SI 114 [ file ])
+        (reg:SI 0 r0 [ file ])) "../Core/Src/syscalls.c":134:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:SI 115 [ st ])
+        (reg:SI 1 r1 [ st ])) "../Core/Src/syscalls.c":134:1 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 4 8 2 (debug_marker) "../Core/Src/syscalls.c":135:2 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 116)
+        (const_int 8192 [0x2000])) "../Core/Src/syscalls.c":135:14 -1
+     (nil))
+(insn 9 8 10 2 (set (mem:SI (plus:SI (reg/v/f:SI 115 [ st ])
+                (const_int 4 [0x4])) [2 st_2(D)->st_mode+0 S4 A32])
+        (reg:SI 116)) "../Core/Src/syscalls.c":135:14 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "../Core/Src/syscalls.c":136:2 -1
+     (nil))
+(insn 11 10 15 2 (set (reg:SI 113 [ <retval> ])
+        (const_int 0 [0])) "../Core/Src/syscalls.c":136:9 -1
+     (nil))
+(insn 15 11 16 2 (set (reg/i:SI 0 r0)
+        (reg:SI 113 [ <retval> ])) "../Core/Src/syscalls.c":137:1 -1
+     (nil))
+(insn 16 15 0 2 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":137:1 -1
+     (nil))
+
+;; Function _link (_link, funcdef_no=40, decl_uid=7545, cgraph_uid=41, symbol_order=42)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 14.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v/f:SI 115 [ old ])
+        (reg:SI 0 r0 [ old ])) "../Core/Src/syscalls.c":140:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:SI 116 [ new ])
+        (reg:SI 1 r1 [ new ])) "../Core/Src/syscalls.c":140:1 -1
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 4 8 2 (debug_marker) "../Core/Src/syscalls.c":141:2 -1
+     (nil))
+(call_insn 8 7 9 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000006aa3000 __errno>) [0 __errno S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/syscalls.c":141:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000006aa3000 __errno>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 9 8 10 2 (set (reg/f:SI 113 [ _1 ])
+        (reg:SI 0 r0)) "../Core/Src/syscalls.c":141:2 -1
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 117)
+        (const_int 31 [0x1f])) "../Core/Src/syscalls.c":141:8 -1
+     (nil))
+(insn 11 10 12 2 (set (mem:SI (reg/f:SI 113 [ _1 ]) [1 *_1+0 S4 A32])
+        (reg:SI 117)) "../Core/Src/syscalls.c":141:8 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "../Core/Src/syscalls.c":142:2 -1
+     (nil))
+(insn 13 12 17 2 (set (reg:SI 114 [ <retval> ])
+        (const_int -1 [0xffffffffffffffff])) "../Core/Src/syscalls.c":142:9 -1
+     (nil))
+(insn 17 13 18 2 (set (reg/i:SI 0 r0)
+        (reg:SI 114 [ <retval> ])) "../Core/Src/syscalls.c":143:1 -1
+     (nil))
+(insn 18 17 0 2 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":143:1 -1
+     (nil))
+
+;; Function _fork (_fork, funcdef_no=41, decl_uid=7548, cgraph_uid=42, symbol_order=43)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 12.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../Core/Src/syscalls.c":147:2 -1
+     (nil))
+(call_insn 6 5 7 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000006aa3000 __errno>) [0 __errno S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/syscalls.c":147:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000006aa3000 __errno>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 7 6 8 2 (set (reg/f:SI 113 [ _1 ])
+        (reg:SI 0 r0)) "../Core/Src/syscalls.c":147:2 -1
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 115)
+        (const_int 11 [0xb])) "../Core/Src/syscalls.c":147:8 -1
+     (nil))
+(insn 9 8 10 2 (set (mem:SI (reg/f:SI 113 [ _1 ]) [1 *_1+0 S4 A32])
+        (reg:SI 115)) "../Core/Src/syscalls.c":147:8 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "../Core/Src/syscalls.c":148:2 -1
+     (nil))
+(insn 11 10 15 2 (set (reg:SI 114 [ <retval> ])
+        (const_int -1 [0xffffffffffffffff])) "../Core/Src/syscalls.c":148:9 -1
+     (nil))
+(insn 15 11 16 2 (set (reg/i:SI 0 r0)
+        (reg:SI 114 [ <retval> ])) "../Core/Src/syscalls.c":149:1 -1
+     (nil))
+(insn 16 15 0 2 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":149:1 -1
+     (nil))
+
+;; Function _execve (_execve, funcdef_no=42, decl_uid=7553, cgraph_uid=43, symbol_order=44)
+
+
+;; Generating RTL for gimple basic block 2
+
+
+try_optimize_cfg iteration 1
+
+Merging block 3 into block 2...
+Merged blocks 2 and 3.
+Merged 2 and 3 without moving.
+Removing jump 15.
+Merging block 4 into block 2...
+Merged blocks 2 and 4.
+Merged 2 and 4 without moving.
+
+
+try_optimize_cfg iteration 2
+
+
+
+;;
+;; Full RTL generated for this function:
+;;
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (reg/v/f:SI 115 [ name ])
+        (reg:SI 0 r0 [ name ])) "../Core/Src/syscalls.c":152:1 -1
+     (nil))
+(insn 3 2 4 2 (set (reg/v/f:SI 116 [ argv ])
+        (reg:SI 1 r1 [ argv ])) "../Core/Src/syscalls.c":152:1 -1
+     (nil))
+(insn 4 3 5 2 (set (reg/v/f:SI 117 [ env ])
+        (reg:SI 2 r2 [ env ])) "../Core/Src/syscalls.c":152:1 -1
+     (nil))
+(note 5 4 8 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 8 5 9 2 (debug_marker) "../Core/Src/syscalls.c":153:2 -1
+     (nil))
+(call_insn 9 8 10 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000006aa3000 __errno>) [0 __errno S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/syscalls.c":153:2 -1
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000006aa3000 __errno>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 10 9 11 2 (set (reg/f:SI 113 [ _1 ])
+        (reg:SI 0 r0)) "../Core/Src/syscalls.c":153:2 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 118)
+        (const_int 12 [0xc])) "../Core/Src/syscalls.c":153:8 -1
+     (nil))
+(insn 12 11 13 2 (set (mem:SI (reg/f:SI 113 [ _1 ]) [1 *_1+0 S4 A32])
+        (reg:SI 118)) "../Core/Src/syscalls.c":153:8 -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker) "../Core/Src/syscalls.c":154:2 -1
+     (nil))
+(insn 14 13 18 2 (set (reg:SI 114 [ <retval> ])
+        (const_int -1 [0xffffffffffffffff])) "../Core/Src/syscalls.c":154:9 -1
+     (nil))
+(insn 18 14 19 2 (set (reg/i:SI 0 r0)
+        (reg:SI 114 [ <retval> ])) "../Core/Src/syscalls.c":155:1 -1
+     (nil))
+(insn 19 18 0 2 (use (reg/i:SI 0 r0)) "../Core/Src/syscalls.c":155:1 -1
+     (nil))

@@ -1,0 +1,486 @@
+
+;; Function _sbrk (_sbrk, funcdef_no=0, decl_uid=5911, cgraph_uid=1, symbol_order=1)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 8 n_edges 9 count 8 (    1)
+
+
+_sbrk
+
+Dataflow summary:
+def_info->table_size = 121, use_info->table_size = 51
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={3d,4u} r1={2d} r2={2d} r3={2d} r7={1d,7u} r12={2d} r13={1d,8u} r14={2d} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={3d,1u} r101={1d} r102={1d,7u} r103={1d,6u} r104={1d} r105={1d} r106={1d} r116={1d,2u} r119={1d,2u} r120={3d,3u} r121={1d,1u} r122={1d,1u} r123={1d,1u} r126={1d,2u} r127={1d,1u} r130={1d,3u} r131={1d,1u} r132={1d,1u} 
+;;    total ref usage 173{122d,51u,0e} in 41{40 regular + 1 call} insns.
+
+( )->[0]->( 2 )
+;; bb 0 artificial_defs: { d2(0){ }d4(1){ }d6(2){ }d8(3){ }d9(7){ }d12(13){ }d14(14){ }d17(16){ }d19(17){ }d21(18){ }d23(19){ }d25(20){ }d27(21){ }d29(22){ }d31(23){ }d33(24){ }d35(25){ }d37(26){ }d39(27){ }d41(28){ }d43(29){ }d45(30){ }d47(31){ }d104(102){ }d105(103){ }}
+;; bb 0 artificial_uses: { }
+;; lr  in  	
+;; lr  use 	
+;; lr  def 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;; live  in  	
+;; live  gen 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;; live  kill	
+;; lr  out 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  out 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+
+( 0 )->[2]->( 3 4 )
+;; bb 2 artificial_defs: { }
+;; bb 2 artificial_uses: { u0(7){ }u1(13){ }u2(102){ }u3(103){ }}
+;; lr  in  	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  use 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  def 	 100 [cc] 119 120 121 122 123 130 131
+;; live  in  	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  gen 	 119 120 121 122 123 130 131
+;; live  kill	 100 [cc]
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 119 120 121 130
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 119 120 121 130
+
+( 2 )->[3]->( 4 )
+;; bb 3 artificial_defs: { }
+;; bb 3 artificial_uses: { u11(7){ }u12(13){ }u13(102){ }u14(103){ }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 119 121 130
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 130
+;; lr  def 	 120 126
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 119 121 130
+;; live  gen 	 120 126
+;; live  kill	
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 119 120 121 130
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 119 120 121 130
+
+( 3 2 )->[4]->( 5 6 )
+;; bb 4 artificial_defs: { }
+;; bb 4 artificial_uses: { u18(7){ }u19(13){ }u20(102){ }u21(103){ }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 119 120 121 130
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 119 120 121
+;; lr  def 	 100 [cc] 116
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 119 120 121 130
+;; live  gen 	 100 [cc] 116
+;; live  kill	
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 116 120 130
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 116 120 130
+
+( 4 )->[5]->( 7 )
+;; bb 5 artificial_defs: { }
+;; bb 5 artificial_uses: { u27(7){ }u28(13){ }u29(102){ }u30(103){ }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  def 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0] 120 127 132
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  gen 	 0 [r0] 120 127 132
+;; live  kill	 12 [ip] 14 [lr]
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 120
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 120
+
+( 4 )->[6]->( 7 )
+;; bb 6 artificial_defs: { }
+;; bb 6 artificial_uses: { u35(7){ }u36(13){ }u37(102){ }u38(103){ }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 116 120 130
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 116 130
+;; lr  def 	
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 116 120 130
+;; live  gen 	
+;; live  kill	
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 120
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 120
+
+( 6 5 )->[7]->( 1 )
+;; bb 7 artificial_defs: { }
+;; bb 7 artificial_uses: { u41(7){ }u42(13){ }u43(102){ }u44(103){ }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 120
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 120
+;; lr  def 	 0 [r0]
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 120
+;; live  gen 	 0 [r0]
+;; live  kill	
+;; lr  out 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  out 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+
+( 7 )->[1]->( )
+;; bb 1 artificial_defs: { }
+;; bb 1 artificial_uses: { u47(0){ }u48(7){ }u49(13){ }u50(102){ }}
+;; lr  in  	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;; lr  use 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;; lr  def 	
+;; live  in  	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;; live  gen 	
+;; live  kill	
+;; lr  out 	
+;; live  out 	
+
+Finding needed instructions:
+  Adding insn 23 to worklist
+  Adding insn 28 to worklist
+  Adding insn 35 to worklist
+  Adding insn 89 to worklist
+  Adding insn 41 to worklist
+  Adding insn 38 to worklist
+  Adding insn 51 to worklist
+  Adding insn 59 to worklist
+Finished finding needed instructions:
+processing block 7 lr out =  0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+  Adding insn 58 to worklist
+processing block 5 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp] 120
+  Adding insn 5 to worklist
+  Adding insn 40 to worklist
+  Adding insn 88 to worklist
+processing block 6 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp] 120
+processing block 4 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp] 116 120 130
+  Adding insn 34 to worklist
+  Adding insn 33 to worklist
+processing block 3 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp] 119 120 121 130
+  Adding insn 4 to worklist
+  Adding insn 27 to worklist
+processing block 2 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp] 119 120 121 130
+  Adding insn 21 to worklist
+  Adding insn 20 to worklist
+  Adding insn 16 to worklist
+  Adding insn 15 to worklist
+  Adding insn 14 to worklist
+  Adding insn 2 to worklist
+  Adding insn 87 to worklist
+df_worklist_dataflow_doublequeue: n_basic_blocks 8 n_edges 9 count 8 (    1)
+
+Pass 0 for finding pseudo/allocno costs
+
+
+  r132 costs: LO_REGS:404 HI_REGS:404 CALLER_SAVE_REGS:404 EVEN_REG:404 GENERAL_REGS:404 VFP_D0_D7_REGS:6060 VFP_LO_REGS:6060 ALL_REGS:6060 MEM:4040
+  r131 costs: LO_REGS:2000 HI_REGS:2000 CALLER_SAVE_REGS:2000 EVEN_REG:2000 GENERAL_REGS:2000 VFP_D0_D7_REGS:25000 VFP_LO_REGS:25000 ALL_REGS:25000 MEM:11000
+  r130 costs: LO_REGS:0 HI_REGS:2000 CALLER_SAVE_REGS:2000 EVEN_REG:2000 GENERAL_REGS:2000 VFP_D0_D7_REGS:45455 VFP_LO_REGS:45455 ALL_REGS:45455 MEM:25970
+  r127 costs: LO_REGS:0 HI_REGS:404 CALLER_SAVE_REGS:404 EVEN_REG:404 GENERAL_REGS:404 VFP_D0_D7_REGS:5858 VFP_LO_REGS:5858 ALL_REGS:5858 MEM:3030
+  r126 costs: LO_REGS:0 HI_REGS:1200 CALLER_SAVE_REGS:1200 EVEN_REG:1200 GENERAL_REGS:1200 VFP_D0_D7_REGS:11700 VFP_LO_REGS:11700 ALL_REGS:11700 MEM:4800
+  r123 costs: LO_REGS:0 HI_REGS:2000 CALLER_SAVE_REGS:2000 EVEN_REG:2000 GENERAL_REGS:2000 VFP_D0_D7_REGS:29000 VFP_LO_REGS:29000 ALL_REGS:29000 MEM:15000
+  r122 costs: LO_REGS:0 HI_REGS:2000 CALLER_SAVE_REGS:2000 EVEN_REG:2000 GENERAL_REGS:2000 VFP_D0_D7_REGS:29000 VFP_LO_REGS:29000 ALL_REGS:29000 MEM:15000
+  r121 costs: LO_REGS:0 HI_REGS:0 CALLER_SAVE_REGS:0 EVEN_REG:0 GENERAL_REGS:0 VFP_D0_D7_REGS:25000 VFP_LO_REGS:25000 ALL_REGS:25000 MEM:11000
+  r120 costs: LO_REGS:2000 HI_REGS:6000 CALLER_SAVE_REGS:6000 EVEN_REG:6000 GENERAL_REGS:6000 VFP_D0_D7_REGS:65828 VFP_LO_REGS:65828 ALL_REGS:65828 MEM:41310
+  r119 costs: LO_REGS:0 HI_REGS:0 CALLER_SAVE_REGS:0 EVEN_REG:0 GENERAL_REGS:0 VFP_D0_D7_REGS:30000 VFP_LO_REGS:30000 ALL_REGS:30000 MEM:20000
+  r116 costs: LO_REGS:0 HI_REGS:1594 CALLER_SAVE_REGS:1594 EVEN_REG:1594 GENERAL_REGS:1594 VFP_D0_D7_REGS:41955 VFP_LO_REGS:41955 ALL_REGS:41955 MEM:27970
+
+
+Pass 1 for finding pseudo/allocno costs
+
+    r132: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r131: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r130: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r129: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r128: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r127: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r126: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r125: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r124: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r123: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r122: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r121: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r120: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r119: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r118: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r117: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r116: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r115: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r114: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r113: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r112: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r111: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r110: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r109: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r108: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r107: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+
+  r132 costs: GENERAL_REGS:404 VFP_D0_D7_REGS:9090 VFP_LO_REGS:9090 ALL_REGS:6060 MEM:6060
+  r131 costs: GENERAL_REGS:2000 VFP_D0_D7_REGS:45000 VFP_LO_REGS:45000 ALL_REGS:30000 MEM:30000
+  r130 costs: LO_REGS:0 HI_REGS:2000 CALLER_SAVE_REGS:2000 EVEN_REG:2000 GENERAL_REGS:2000 VFP_D0_D7_REGS:46455 VFP_LO_REGS:46455 ALL_REGS:46455 MEM:30970
+  r127 costs: LO_REGS:0 HI_REGS:404 CALLER_SAVE_REGS:404 EVEN_REG:404 GENERAL_REGS:404 VFP_D0_D7_REGS:6060 VFP_LO_REGS:6060 ALL_REGS:6060 MEM:4040
+  r126 costs: LO_REGS:0 HI_REGS:1200 CALLER_SAVE_REGS:1200 EVEN_REG:1200 GENERAL_REGS:1200 VFP_D0_D7_REGS:13500 VFP_LO_REGS:13500 ALL_REGS:13500 MEM:9000
+  r123 costs: LO_REGS:0 HI_REGS:2000 CALLER_SAVE_REGS:2000 EVEN_REG:2000 GENERAL_REGS:2000 VFP_D0_D7_REGS:30000 VFP_LO_REGS:30000 ALL_REGS:30000 MEM:20000
+  r122 costs: LO_REGS:0 HI_REGS:2000 CALLER_SAVE_REGS:2000 EVEN_REG:2000 GENERAL_REGS:2000 VFP_D0_D7_REGS:30000 VFP_LO_REGS:30000 ALL_REGS:30000 MEM:20000
+  r121 costs: GENERAL_REGS:0 VFP_D0_D7_REGS:30000 VFP_LO_REGS:30000 ALL_REGS:30000 MEM:20000
+  r120 costs: LO_REGS:2000 HI_REGS:8000 CALLER_SAVE_REGS:8000 EVEN_REG:8000 GENERAL_REGS:6000 VFP_D0_D7_REGS:82530 VFP_LO_REGS:82530 ALL_REGS:67530 MEM:55020
+  r119 costs: GENERAL_REGS:0 VFP_D0_D7_REGS:30000 VFP_LO_REGS:30000 ALL_REGS:30000 MEM:20000
+  r116 costs: LO_REGS:0 HI_REGS:1594 CALLER_SAVE_REGS:1594 EVEN_REG:1594 GENERAL_REGS:1594 VFP_D0_D7_REGS:41955 VFP_LO_REGS:41955 ALL_REGS:41955 MEM:27970
+
+;;   ======================================================
+;;   -- basic block 2 from 87 to 23 -- before reload
+;;   ======================================================
+
+;;	  0--> b  0: i   8 debug_marker                            :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  0--> b  0: i   9 debug_marker                            :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  0--> b  0: i  10 debug_marker                            :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  0--> b  0: i  11 debug_marker                            :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  0--> b  0: i  12 loc `_estack'-`_Min_Stack_Size'         :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  0--> b  0: i  13 debug_marker                            :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  0--> b  0: i  20 r130=`*.LANCHOR0'                       :cortex_m4_a,cortex_m4_b:GENERAL_REGS+1(1)VFP_LO_REGS+0(0)
+;;	  1--> b  0: i  14 r122=`_estack'                          :cortex_m4_a,cortex_m4_b:@GENERAL_REGS+1(1)@VFP_LO_REGS+0(0)
+;;	  2--> b  0: i  15 r123=`_Min_Stack_Size'                  :cortex_m4_a,cortex_m4_b:GENERAL_REGS+1(1)VFP_LO_REGS+0(0)
+;;	  3--> b  0: i  21 r120=[r130]                             :cortex_m4_a,cortex_m4_b:GENERAL_REGS+1(1)VFP_LO_REGS+0(0)
+;;	  4--> b  0: i  87 r131=r0                                 :cortex_m4_ex:@GENERAL_REGS+1(0)@VFP_LO_REGS+0(0)
+;;	  5--> b  0: i   2 r121=r131                               :cortex_m4_ex:GENERAL_REGS+1(0)VFP_LO_REGS+0(0)
+;;	  6--> b  0: i  16 r119=r122-r123                          :cortex_m4_ex:GENERAL_REGS+1(-1)VFP_LO_REGS+0(0)
+;;	  6--> b  0: i  17 loc r119                                :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  6--> b  0: i  18 debug_marker                            :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  6--> b  0: i  19 debug_marker                            :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  7--> b  0: i  23 {pc={(r120!=0)?L29:pc};clobber cc;}     :cortex_m4_ex*3:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	Ready list (final):  
+;;   total time = 7
+;;   new head = 8
+;;   new tail = 23
+
+;;   ======================================================
+;;   -- basic block 3 from 25 to 4 -- before reload
+;;   ======================================================
+
+;;	  0--> b  0: i  25 debug_marker                            :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  0--> b  0: i  27 r126=`_end'                             :cortex_m4_a,cortex_m4_b:GENERAL_REGS+1(1)VFP_LO_REGS+0(0)
+;;	  1--> b  0: i  28 [r130]=r126                             :cortex_m4_a:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  2--> b  0: i   4 r120=r126                               :cortex_m4_ex:GENERAL_REGS+1(0)VFP_LO_REGS+0(0)
+;;	Ready list (final):  
+;;   total time = 2
+;;   new head = 25
+;;   new tail = 4
+
+;;   ======================================================
+;;   -- basic block 4 from 31 to 35 -- before reload
+;;   ======================================================
+
+;;	  0--> b  0: i  31 debug_marker                            :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  0--> b  0: i  32 loc [`__sbrk_heap_end']                 :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  0--> b  0: i  33 r116=r120+r121                          :cortex_m4_ex:GENERAL_REGS+1(0)VFP_LO_REGS+0(0)
+;;	  1--> b  0: i  34 cc=cmp(r116,r119)                       :cortex_m4_ex:GENERAL_REGS+0(-1)VFP_LO_REGS+0(0)
+;;	  2--> b  0: i  35 pc={(leu(cc,0))?L45:pc}                 :cortex_m4_ex*3:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	Ready list (final):  
+;;   total time = 2
+;;   new head = 31
+;;   new tail = 35
+
+;;   ======================================================
+;;   -- basic block 5 from 37 to 89 -- before reload
+;;   ======================================================
+
+;;	  0--> b  0: i  37 debug_marker                            :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  0--> b  0: i  38 {r0=call [`__errno'];use 0;clobber lr;} :cortex_m4_ex*3:GENERAL_REGS+1(1)VFP_LO_REGS+0(0)
+;;	  1--> b  0: i  88 r132=r0                                 :cortex_m4_ex:GENERAL_REGS+1(0)VFP_LO_REGS+0(0)
+;;	  2--> b  0: i  40 r127=0xc                                :cortex_m4_ex:GENERAL_REGS+1(1)VFP_LO_REGS+0(0)
+;;	  3--> b  0: i  41 [r132]=r127                             :cortex_m4_a:GENERAL_REGS+0(-2)VFP_LO_REGS+0(0)
+;;	  3--> b  0: i  42 debug_marker                            :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  4--> b  0: i   5 r120=0xffffffffffffffff                 :cortex_m4_ex:GENERAL_REGS+1(1)VFP_LO_REGS+0(0)
+;;	  5--> b  0: i  89 pc=L57                                  :cortex_m4_ex*3:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	Ready list (final):  
+;;   total time = 5
+;;   new head = 37
+;;   new tail = 89
+
+;;   ======================================================
+;;   -- basic block 6 from 47 to 52 -- before reload
+;;   ======================================================
+
+;;	  0--> b  0: i  47 debug_marker                            :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  0--> b  0: i  48 loc D#1                                 :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  0--> b  0: i  49 debug_marker                            :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  0--> b  0: i  51 [r130]=r116                             :cortex_m4_a:GENERAL_REGS+0(-2)VFP_LO_REGS+0(0)
+;;	  0--> b  0: i  52 debug_marker                            :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	Ready list (final):  
+;;   total time = 0
+;;   new head = 47
+;;   new tail = 52
+
+;;   ======================================================
+;;   -- basic block 7 from 58 to 59 -- before reload
+;;   ======================================================
+
+;;	  0--> b  0: i  58 r0=r120                                 :cortex_m4_ex:GENERAL_REGS+1(0)VFP_LO_REGS+0(0)
+;;	  1--> b  0: i  59 use r0                                  :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	Ready list (final):  
+;;   total time = 1
+;;   new head = 58
+;;   new tail = 59
+
+
+;; Procedure interblock/speculative motions == 0/0 
+
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+_sbrk
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={3d,4u} r1={2d} r2={2d} r3={2d} r7={1d,7u} r12={2d} r13={1d,8u} r14={2d} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={3d,1u} r101={1d} r102={1d,7u} r103={1d,6u} r104={1d} r105={1d} r106={1d} r116={1d,2u} r119={1d,2u} r120={3d,3u} r121={1d,1u} r122={1d,1u} r123={1d,1u} r126={1d,2u} r127={1d,1u} r130={1d,3u} r131={1d,1u} r132={1d,1u} 
+;;    total ref usage 173{122d,51u,0e} in 41{40 regular + 1 call} insns.
+(note 1 0 6 NOTE_INSN_DELETED)
+(note 6 1 3 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 3 6 22 2 NOTE_INSN_FUNCTION_BEG)
+(note 22 3 8 2 NOTE_INSN_DELETED)
+(debug_insn 8 22 9 2 (debug_marker) "../Core/Src/sysmem.c":55:3 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "../Core/Src/sysmem.c":56:3 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "../Core/Src/sysmem.c":57:3 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "../Core/Src/sysmem.c":58:3 -1
+     (nil))
+(debug_insn 12 11 13 2 (var_location:SI stack_limit (minus:SI (symbol_ref:SI ("_estack") [flags 0xc0]  <var_decl 0000000002864a20 _estack>)
+        (symbol_ref:SI ("_Min_Stack_Size") [flags 0xc0]  <var_decl 0000000002864ab0 _Min_Stack_Size>))) "../Core/Src/sysmem.c":58:18 -1
+     (nil))
+(debug_insn 13 12 20 2 (debug_marker) "../Core/Src/sysmem.c":59:3 -1
+     (nil))
+(insn 20 13 14 2 (set (reg/f:SI 130)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../Core/Src/sysmem.c":63:12 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 14 20 15 2 (set (reg/f:SI 122)
+        (symbol_ref:SI ("_estack") [flags 0xc0]  <var_decl 0000000002864a20 _estack>)) "../Core/Src/sysmem.c":58:18 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 15 14 21 2 (set (reg/f:SI 123)
+        (symbol_ref:SI ("_Min_Stack_Size") [flags 0xc0]  <var_decl 0000000002864ab0 _Min_Stack_Size>)) "../Core/Src/sysmem.c":58:18 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 21 15 87 2 (set (reg/f:SI 120 [ <retval> ])
+        (mem/f/c:SI (reg/f:SI 130) [1 __sbrk_heap_end+0 S4 A32])) "../Core/Src/sysmem.c":63:12 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (mem/f/c:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]) [1 __sbrk_heap_end+0 S4 A32])
+        (nil)))
+(insn 87 21 2 2 (set (reg:SI 131)
+        (reg:SI 0 r0 [ incr ])) "../Core/Src/sysmem.c":54:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [ incr ])
+        (nil)))
+(insn 2 87 16 2 (set (reg/v:SI 121 [ incr ])
+        (reg:SI 131)) "../Core/Src/sysmem.c":54:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 131)
+        (nil)))
+(insn 16 2 17 2 (set (reg/v/f:SI 119 [ max_heap ])
+        (minus:SI (reg/f:SI 122)
+            (reg/f:SI 123))) "../Core/Src/sysmem.c":58:18 45 {*arm_subsi3_insn}
+     (expr_list:REG_DEAD (reg/f:SI 123)
+        (expr_list:REG_DEAD (reg/f:SI 122)
+            (expr_list:REG_EQUAL (minus:SI (symbol_ref:SI ("_estack") [flags 0xc0]  <var_decl 0000000002864a20 _estack>)
+                    (symbol_ref:SI ("_Min_Stack_Size") [flags 0xc0]  <var_decl 0000000002864ab0 _Min_Stack_Size>))
+                (nil)))))
+(debug_insn 17 16 18 2 (var_location:SI max_heap (reg/v/f:SI 119 [ max_heap ])) "../Core/Src/sysmem.c":59:18 -1
+     (nil))
+(debug_insn 18 17 19 2 (debug_marker) "../Core/Src/sysmem.c":60:3 -1
+     (nil))
+(debug_insn 19 18 23 2 (debug_marker) "../Core/Src/sysmem.c":63:3 -1
+     (nil))
+(jump_insn 23 19 24 2 (parallel [
+            (set (pc)
+                (if_then_else (ne (reg/f:SI 120 [ <retval> ])
+                        (const_int 0 [0]))
+                    (label_ref 29)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../Core/Src/sysmem.c":63:6 1025 {*thumb2_cbnz}
+     (expr_list:REG_UNUSED (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 751619284 (nil)))
+ -> 29)
+(note 24 23 25 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 25 24 27 3 (debug_marker) "../Core/Src/sysmem.c":65:5 -1
+     (nil))
+(insn 27 25 28 3 (set (reg/f:SI 126)
+        (symbol_ref:SI ("_end") [flags 0xc0]  <var_decl 0000000002864990 _end>)) "../Core/Src/sysmem.c":65:21 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 28 27 4 3 (set (mem/f/c:SI (reg/f:SI 130) [1 __sbrk_heap_end+0 S4 A32])
+        (reg/f:SI 126)) "../Core/Src/sysmem.c":65:21 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 4 28 29 3 (set (reg/f:SI 120 [ <retval> ])
+        (reg/f:SI 126)) "../Core/Src/sysmem.c":65:21 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 126)
+        (expr_list:REG_EQUAL (symbol_ref:SI ("_end") [flags 0xc0]  <var_decl 0000000002864990 _end>)
+            (nil))))
+(code_label 29 4 30 4 2 (nil) [1 uses])
+(note 30 29 31 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 31 30 32 4 (debug_marker) "../Core/Src/sysmem.c":69:3 -1
+     (nil))
+(debug_insn 32 31 33 4 (var_location:SI D#1 (mem/f/c:SI (symbol_ref:SI ("__sbrk_heap_end") [flags 0x82]  <var_decl 0000000002864900 __sbrk_heap_end>) [1 __sbrk_heap_end+0 S4 A32])) "../Core/Src/sysmem.c":69:23 -1
+     (nil))
+(insn 33 32 34 4 (set (reg/f:SI 116 [ _6 ])
+        (plus:SI (reg/f:SI 120 [ <retval> ])
+            (reg/v:SI 121 [ incr ]))) "../Core/Src/sysmem.c":69:23 7 {*arm_addsi3}
+     (expr_list:REG_DEAD (reg/v:SI 121 [ incr ])
+        (nil)))
+(insn 34 33 35 4 (set (reg:CC 100 cc)
+        (compare:CC (reg/f:SI 116 [ _6 ])
+            (reg/v/f:SI 119 [ max_heap ]))) "../Core/Src/sysmem.c":69:6 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg/v/f:SI 119 [ max_heap ])
+        (nil)))
+(jump_insn 35 34 36 4 (set (pc)
+        (if_then_else (leu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 45)
+            (pc))) "../Core/Src/sysmem.c":69:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 856416484 (nil)))
+ -> 45)
+(note 36 35 39 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(note 39 36 37 5 NOTE_INSN_DELETED)
+(debug_insn 37 39 38 5 (debug_marker) "../Core/Src/sysmem.c":71:5 -1
+     (nil))
+(call_insn 38 37 88 5 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000005e25700 __errno>) [0 __errno S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/sysmem.c":71:5 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000005e25700 __errno>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 88 38 40 5 (set (reg:SI 132)
+        (reg:SI 0 r0)) "../Core/Src/sysmem.c":71:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+(insn 40 88 41 5 (set (reg:SI 127)
+        (const_int 12 [0xc])) "../Core/Src/sysmem.c":71:11 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 41 40 42 5 (set (mem:SI (reg:SI 132) [2 *_7+0 S4 A32])
+        (reg:SI 127)) "../Core/Src/sysmem.c":71:11 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 132)
+        (expr_list:REG_DEAD (reg:SI 127)
+            (nil))))
+(debug_insn 42 41 5 5 (debug_marker) "../Core/Src/sysmem.c":72:5 -1
+     (nil))
+(insn 5 42 89 5 (set (reg/f:SI 120 [ <retval> ])
+        (const_int -1 [0xffffffffffffffff])) "../Core/Src/sysmem.c":72:12 728 {*thumb2_movsi_vfp}
+     (nil))
+(jump_insn 89 5 90 5 (set (pc)
+        (label_ref 57)) "../Core/Src/sysmem.c":72:12 284 {*arm_jump}
+     (nil)
+ -> 57)
+(barrier 90 89 45)
+(code_label 45 90 46 6 3 (nil) [1 uses])
+(note 46 45 47 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 47 46 48 6 (debug_marker) "../Core/Src/sysmem.c":75:3 -1
+     (nil))
+(debug_insn 48 47 49 6 (var_location:SI prev_heap_end (debug_expr:SI D#1)) "../Core/Src/sysmem.c":75:17 -1
+     (nil))
+(debug_insn 49 48 51 6 (debug_marker) "../Core/Src/sysmem.c":76:3 -1
+     (nil))
+(insn 51 49 52 6 (set (mem/f/c:SI (reg/f:SI 130) [1 __sbrk_heap_end+0 S4 A32])
+        (reg/f:SI 116 [ _6 ])) "../Core/Src/sysmem.c":76:19 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 130)
+        (expr_list:REG_DEAD (reg/f:SI 116 [ _6 ])
+            (nil))))
+(debug_insn 52 51 57 6 (debug_marker) "../Core/Src/sysmem.c":78:3 -1
+     (nil))
+(code_label 57 52 60 7 1 (nil) [1 uses])
+(note 60 57 58 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 58 60 59 7 (set (reg/i:SI 0 r0)
+        (reg/f:SI 120 [ <retval> ])) "../Core/Src/sysmem.c":79:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 120 [ <retval> ])
+        (nil)))
+(insn 59 58 91 7 (use (reg/i:SI 0 r0)) "../Core/Src/sysmem.c":79:1 -1
+     (nil))
+(note 91 59 0 NOTE_INSN_DELETED)

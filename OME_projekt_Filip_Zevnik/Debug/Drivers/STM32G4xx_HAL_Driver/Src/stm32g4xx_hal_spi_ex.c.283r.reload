@@ -1,0 +1,716 @@
+
+;; Function HAL_SPIEx_FlushRxFifo (HAL_SPIEx_FlushRxFifo, funcdef_no=329, decl_uid=9048, cgraph_uid=333, symbol_order=332)
+
+
+********** Local #1: **********
+
+	   Spilling non-eliminable hard regs: 13
+New elimination table:
+Can eliminate 103 to 13 (offset=8, prev_offset=0)
+Can't eliminate 103 to 102 (offset=0, prev_offset=0)
+Can't eliminate 103 to 11 (offset=0, prev_offset=0)
+Can eliminate 103 to 7 (offset=8, prev_offset=0)
+Can eliminate 102 to 13 (offset=8, prev_offset=0)
+Can't eliminate 102 to 11 (offset=0, prev_offset=0)
+Can eliminate 102 to 7 (offset=8, prev_offset=0)
+            1 Non-pseudo reload: reject+=2
+            1 Non input pseudo reload: reject++
+            Cycle danger: overall += LRA_MAX_REJECT
+          alt=0,overall=609,losers=1,rld_nregs=1
+            alt=1: Bad operand -- refuse
+            alt=2: Bad operand -- refuse
+            alt=3: Bad operand -- refuse
+            alt=4: Bad operand -- refuse
+          alt=5,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 5 in insn 15:  (0) l  (1) mi {*thumb2_movsi_vfp}
+            1 Non-pseudo reload: reject+=2
+            1 Non input pseudo reload: reject++
+            Cycle danger: overall += LRA_MAX_REJECT
+          alt=0,overall=609,losers=1,rld_nregs=1
+            alt=1: Bad operand -- refuse
+            alt=2: Bad operand -- refuse
+            alt=3: Bad operand -- refuse
+            alt=4: Bad operand -- refuse
+          alt=5,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 5 in insn 18:  (0) l  (1) mi {*thumb2_movsi_vfp}
+          alt=0,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 0 in insn 20:  (0) =r  (1) r  (2) I {*andsi3_compare0}
+            1 Non-pseudo reload: reject+=2
+            1 Non input pseudo reload: reject++
+            Cycle danger: overall += LRA_MAX_REJECT
+          alt=0,overall=609,losers=1,rld_nregs=1
+            alt=1: Bad operand -- refuse
+            alt=2: Bad operand -- refuse
+            alt=3: Bad operand -- refuse
+            alt=4: Bad operand -- refuse
+          alt=5,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 5 in insn 26:  (0) l  (1) mi {*thumb2_movsi_vfp}
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            Cycle danger: overall += LRA_MAX_REJECT
+          alt=0,overall=609,losers=1,rld_nregs=1
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            alt=1: Bad operand -- refuse
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            alt=2: Bad operand -- refuse
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            alt=3: Bad operand -- refuse
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            alt=4: Bad operand -- refuse
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            1 Spill pseudo into memory: reject+=3
+            Using memory insn operand 1: reject+=3
+          alt=5,overall=21,losers=2,rld_nregs=1
+            0 Costly loser: reject++
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            1 Spill pseudo into memory: reject+=3
+            Using memory insn operand 1: reject+=3
+            alt=6,overall=22,losers=2 -- refuse
+          alt=7,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 7 in insn 27:  (0) m  (1) l {*thumb2_movsi_vfp}
+            1 Non-pseudo reload: reject+=2
+            1 Non input pseudo reload: reject++
+            Cycle danger: overall += LRA_MAX_REJECT
+          alt=0,overall=609,losers=1,rld_nregs=1
+            alt=1: Bad operand -- refuse
+            alt=2: Bad operand -- refuse
+            alt=3: Bad operand -- refuse
+            alt=4: Bad operand -- refuse
+          alt=5,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 5 in insn 29:  (0) l  (1) mi {*thumb2_movsi_vfp}
+            1 Non-pseudo reload: reject+=2
+            1 Non input pseudo reload: reject++
+            Cycle danger: overall += LRA_MAX_REJECT
+          alt=0,overall=609,losers=1,rld_nregs=1
+            alt=1: Bad operand -- refuse
+            alt=2: Bad operand -- refuse
+            alt=3: Bad operand -- refuse
+            alt=4: Bad operand -- refuse
+          alt=5,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 5 in insn 33:  (0) l  (1) mi {*thumb2_movsi_vfp}
+          alt=0,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 0 in insn 35:  (0) =r  (1) r  (2) I {*andsi3_compare0}
+            1 Non-pseudo reload: reject+=2
+            1 Non input pseudo reload: reject++
+            Cycle danger: overall += LRA_MAX_REJECT
+          alt=0,overall=609,losers=1,rld_nregs=1
+            alt=1: Bad operand -- refuse
+            alt=2: Bad operand -- refuse
+            alt=3: Bad operand -- refuse
+            alt=4: Bad operand -- refuse
+          alt=5,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 5 in insn 41:  (0) l  (1) mi {*thumb2_movsi_vfp}
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            Cycle danger: overall += LRA_MAX_REJECT
+          alt=0,overall=609,losers=1,rld_nregs=1
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            alt=1: Bad operand -- refuse
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            alt=2: Bad operand -- refuse
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            alt=3: Bad operand -- refuse
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            alt=4: Bad operand -- refuse
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            1 Spill pseudo into memory: reject+=3
+            Using memory insn operand 1: reject+=3
+          alt=5,overall=21,losers=2,rld_nregs=1
+            0 Costly loser: reject++
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            1 Spill pseudo into memory: reject+=3
+            Using memory insn operand 1: reject+=3
+            alt=6,overall=22,losers=2 -- refuse
+          alt=7,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 7 in insn 42:  (0) m  (1) l {*thumb2_movsi_vfp}
+            1 Non-pseudo reload: reject+=2
+            1 Non input pseudo reload: reject++
+            Cycle danger: overall += LRA_MAX_REJECT
+          alt=0,overall=609,losers=1,rld_nregs=1
+            alt=1: Bad operand -- refuse
+            alt=2: Bad operand -- refuse
+            alt=3: Bad operand -- refuse
+            alt=4: Bad operand -- refuse
+          alt=5,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 5 in insn 44:  (0) l  (1) mi {*thumb2_movsi_vfp}
+            1 Non-pseudo reload: reject+=2
+            1 Non input pseudo reload: reject++
+            Cycle danger: overall += LRA_MAX_REJECT
+          alt=0,overall=609,losers=1,rld_nregs=1
+            alt=1: Bad operand -- refuse
+            alt=2: Bad operand -- refuse
+            alt=3: Bad operand -- refuse
+            alt=4: Bad operand -- refuse
+          alt=5,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 5 in insn 48:  (0) l  (1) mi {*thumb2_movsi_vfp}
+          alt=0,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 0 in insn 50:  (0) =r  (1) r  (2) I {*andsi3_compare0}
+            1 Non-pseudo reload: reject+=2
+            1 Non input pseudo reload: reject++
+            Cycle danger: overall += LRA_MAX_REJECT
+          alt=0,overall=609,losers=1,rld_nregs=1
+            alt=1: Bad operand -- refuse
+            alt=2: Bad operand -- refuse
+            alt=3: Bad operand -- refuse
+            alt=4: Bad operand -- refuse
+          alt=5,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 5 in insn 56:  (0) l  (1) mi {*thumb2_movsi_vfp}
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            Cycle danger: overall += LRA_MAX_REJECT
+          alt=0,overall=609,losers=1,rld_nregs=1
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            alt=1: Bad operand -- refuse
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            alt=2: Bad operand -- refuse
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            alt=3: Bad operand -- refuse
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            alt=4: Bad operand -- refuse
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            1 Spill pseudo into memory: reject+=3
+            Using memory insn operand 1: reject+=3
+          alt=5,overall=21,losers=2,rld_nregs=1
+            0 Costly loser: reject++
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            1 Spill pseudo into memory: reject+=3
+            Using memory insn operand 1: reject+=3
+            alt=6,overall=22,losers=2 -- refuse
+          alt=7,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 7 in insn 57:  (0) m  (1) l {*thumb2_movsi_vfp}
+            1 Non-pseudo reload: reject+=2
+            1 Non input pseudo reload: reject++
+            Cycle danger: overall += LRA_MAX_REJECT
+          alt=0,overall=609,losers=1,rld_nregs=1
+            alt=1: Bad operand -- refuse
+            alt=2: Bad operand -- refuse
+            alt=3: Bad operand -- refuse
+            alt=4: Bad operand -- refuse
+          alt=5,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 5 in insn 59:  (0) l  (1) mi {*thumb2_movsi_vfp}
+            1 Non-pseudo reload: reject+=2
+            1 Non input pseudo reload: reject++
+            Cycle danger: overall += LRA_MAX_REJECT
+          alt=0,overall=609,losers=1,rld_nregs=1
+            alt=1: Bad operand -- refuse
+            alt=2: Bad operand -- refuse
+            alt=3: Bad operand -- refuse
+            alt=4: Bad operand -- refuse
+          alt=5,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 5 in insn 63:  (0) l  (1) mi {*thumb2_movsi_vfp}
+          alt=0,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 0 in insn 65:  (0) =r  (1) r  (2) I {*andsi3_compare0}
+            1 Non-pseudo reload: reject+=2
+            1 Non input pseudo reload: reject++
+            Cycle danger: overall += LRA_MAX_REJECT
+          alt=0,overall=609,losers=1,rld_nregs=1
+            alt=1: Bad operand -- refuse
+            alt=2: Bad operand -- refuse
+            alt=3: Bad operand -- refuse
+            alt=4: Bad operand -- refuse
+          alt=5,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 5 in insn 71:  (0) l  (1) mi {*thumb2_movsi_vfp}
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            Cycle danger: overall += LRA_MAX_REJECT
+          alt=0,overall=609,losers=1,rld_nregs=1
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            alt=1: Bad operand -- refuse
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            alt=2: Bad operand -- refuse
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            alt=3: Bad operand -- refuse
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            alt=4: Bad operand -- refuse
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            1 Spill pseudo into memory: reject+=3
+            Using memory insn operand 1: reject+=3
+          alt=5,overall=21,losers=2,rld_nregs=1
+            0 Costly loser: reject++
+            0 Non-pseudo reload: reject+=2
+            0 Non input pseudo reload: reject++
+            1 Spill pseudo into memory: reject+=3
+            Using memory insn operand 1: reject+=3
+            alt=6,overall=22,losers=2 -- refuse
+          alt=7,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 7 in insn 72:  (0) m  (1) l {*thumb2_movsi_vfp}
+            1 Non-pseudo reload: reject+=2
+            1 Non input pseudo reload: reject++
+            Cycle danger: overall += LRA_MAX_REJECT
+          alt=0,overall=609,losers=1,rld_nregs=1
+            alt=1: Bad operand -- refuse
+            alt=2: Bad operand -- refuse
+            alt=3: Bad operand -- refuse
+            alt=4: Bad operand -- refuse
+          alt=5,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 5 in insn 74:  (0) l  (1) mi {*thumb2_movsi_vfp}
+            1 Non-pseudo reload: reject+=2
+            1 Non input pseudo reload: reject++
+            Cycle danger: overall += LRA_MAX_REJECT
+          alt=0,overall=609,losers=1,rld_nregs=1
+          alt=1,overall=0,losers=0,rld_nregs=0
+	 Choosing alt 1 in insn 4:  (0) r  (1) I {*thumb2_movsi_vfp}
+	   Spilling non-eliminable hard regs: 13
+
+********** Inheritance #1: **********
+
+EBB 2 3 4 5 6
+EBB 7
+EBB 8
+EBB 9
+EBB 10
+EBB 11
+
+********** Pseudo live ranges #1: **********
+
+  BB 11
+   Insn 83: point = 0, n_alt = -1
+   Insn 82: point = 0, n_alt = -2
+  BB 9
+   Insn 132: point = 2, n_alt = -1
+   Insn 5: point = 2, n_alt = -2
+  BB 6
+   Insn 126: point = 5, n_alt = -1
+   Insn 4: point = 5, n_alt = 1
+   Insn 74: point = 6, n_alt = 5
+   Insn 72: point = 7, n_alt = 7
+   Insn 71: point = 8, n_alt = 5
+  BB 8
+   Insn 130: point = 11, n_alt = -1
+   Insn 7: point = 11, n_alt = -2
+  BB 7
+   Insn 128: point = 14, n_alt = -1
+   Insn 6: point = 14, n_alt = -2
+  BB 10
+   Insn 8: point = 17, n_alt = -2
+  BB 5
+   Insn 66: point = 20, n_alt = -1
+   Insn 65: point = 20, n_alt = 0
+   Insn 63: point = 22, n_alt = 5
+   Insn 59: point = 23, n_alt = 5
+   Insn 57: point = 24, n_alt = 7
+   Insn 56: point = 25, n_alt = 5
+  BB 4
+   Insn 51: point = 27, n_alt = -1
+   Insn 50: point = 27, n_alt = 0
+   Insn 48: point = 29, n_alt = 5
+   Insn 44: point = 30, n_alt = 5
+   Insn 42: point = 31, n_alt = 7
+   Insn 41: point = 32, n_alt = 5
+  BB 3
+   Insn 36: point = 34, n_alt = -1
+   Insn 35: point = 34, n_alt = 0
+   Insn 33: point = 36, n_alt = 5
+   Insn 29: point = 37, n_alt = 5
+   Insn 27: point = 38, n_alt = 7
+   Insn 26: point = 39, n_alt = 5
+  BB 2
+   Insn 21: point = 41, n_alt = -1
+   Insn 20: point = 41, n_alt = 0
+   Insn 18: point = 43, n_alt = 5
+   Insn 15: point = 44, n_alt = 5
+   Insn 125: point = 46, n_alt = -2
+ r113: [7..8]
+ r114: [20..44] [9..10]
+ r115: [21..22]
+ r117: [6..6]
+ r118: [42..43]
+ r120: [38..39]
+ r121: [37..37]
+ r122: [35..36]
+ r124: [31..32]
+ r125: [30..30]
+ r126: [28..29]
+ r128: [24..25]
+ r129: [23..23]
+ r130: [17..17] [14..14] [11..11] [5..5] [0..2]
+ r132: [41..41] [15..16]
+ r133: [34..34] [12..13]
+ r134: [27..27] [3..4]
+ r135: [18..20]
+ r137: [45..46]
+Compressing live ranges: from 47 to 41 - 87%
+Ranges after the compression:
+ r113: [6..7]
+ r114: [18..38] [8..9]
+ r115: [19..20]
+ r117: [5..5]
+ r118: [37..38]
+ r120: [34..35]
+ r121: [33..33]
+ r122: [31..32]
+ r124: [28..29]
+ r125: [27..27]
+ r126: [25..26]
+ r128: [22..23]
+ r129: [21..21]
+ r130: [16..16] [13..13] [10..10] [4..4] [0..1]
+ r132: [36..36] [14..15]
+ r133: [30..30] [11..12]
+ r134: [24..24] [2..3]
+ r135: [17..18]
+ r137: [39..40]
+
+********** Assignment #1: **********
+
+
+********** Undoing inheritance #1: **********
+
+
+********** Local #2: **********
+
+	   Spilling non-eliminable hard regs: 13
+	   Spilling non-eliminable hard regs: 13
+New elimination table:
+Can eliminate 103 to 13 (offset=8, prev_offset=8)
+Can't eliminate 103 to 102 (offset=0, prev_offset=0)
+Can't eliminate 103 to 11 (offset=0, prev_offset=0)
+Can eliminate 103 to 7 (offset=8, prev_offset=0)
+Can eliminate 102 to 13 (offset=8, prev_offset=8)
+Can't eliminate 102 to 11 (offset=0, prev_offset=0)
+Can eliminate 102 to 7 (offset=8, prev_offset=0)
+changing reg in insn 71
+changing reg in insn 72
+changing reg in insn 15
+changing reg in insn 71
+changing reg in insn 63
+changing reg in insn 56
+changing reg in insn 48
+changing reg in insn 41
+changing reg in insn 33
+changing reg in insn 26
+changing reg in insn 18
+changing reg in insn 63
+changing reg in insn 65
+changing reg in insn 65
+changing reg in insn 74
+changing reg in insn 18
+changing reg in insn 20
+changing reg in insn 20
+changing reg in insn 26
+changing reg in insn 27
+changing reg in insn 29
+changing reg in insn 33
+changing reg in insn 35
+changing reg in insn 35
+changing reg in insn 41
+changing reg in insn 42
+changing reg in insn 44
+changing reg in insn 48
+changing reg in insn 50
+changing reg in insn 50
+changing reg in insn 56
+changing reg in insn 57
+changing reg in insn 59
+changing reg in insn 8
+changing reg in insn 7
+changing reg in insn 6
+changing reg in insn 5
+changing reg in insn 4
+changing reg in insn 82
+changing reg in insn 20
+changing reg in insn 6
+changing reg in insn 35
+changing reg in insn 7
+changing reg in insn 50
+changing reg in insn 5
+changing reg in insn 65
+changing reg in insn 8
+changing reg in insn 125
+changing reg in insn 15
+deleting insn with uid = 125.
+deleting insn with uid = 6.
+deleting insn with uid = 7.
+deleting insn with uid = 5.
+deleting insn with uid = 8.
+deleting insn with uid = 82.
+
+
+try_optimize_cfg iteration 1
+
+Edge 2->7 redirected to 11
+Edge 3->8 redirected to 11
+Edge 4->9 redirected to 11
+Edge 5->10 redirected to 11
+deleting insn with uid = 128.
+deleting block 7
+deleting insn with uid = 130.
+deleting block 8
+deleting insn with uid = 132.
+deleting block 9
+deleting block 10
+Removing jump 126.
+deleting insn with uid = 126.
+
+
+try_optimize_cfg iteration 2
+
+
+
+try_optimize_cfg iteration 1
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 8 n_edges 11 count 8 (    1)
+df_worklist_dataflow_doublequeue: n_basic_blocks 8 n_edges 11 count 8 (    1)
+
+
+HAL_SPIEx_FlushRxFifo
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp]
+;;  regs ever live 	 0 [r0] 2 [r2] 3 [r3] 13 [sp] 100 [cc]
+;;  ref usage 	r0={10d,11u} r1={1d} r2={7d,3u} r3={4d,9u} r13={1d,15u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={4d,4u} 
+;;    total ref usage 86{44d,42u,0e} in 59{59 regular + 0 call} insns.
+(note 1 0 9 NOTE_INSN_DELETED)
+(note 9 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 9 3 2 NOTE_INSN_DELETED)
+(note 3 2 19 2 NOTE_INSN_FUNCTION_BEG)
+(note 19 3 11 2 NOTE_INSN_DELETED)
+(debug_insn 11 19 12 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":81:3 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":82:3 -1
+     (nil))
+(debug_insn 13 12 14 2 (var_location:QI count (const_int 0 [0])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":82:12 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:3 -1
+     (nil))
+(insn 15 14 16 2 (set (reg/f:SI 3 r3 [orig:114 _2 ] [114])
+        (mem/f:SI (reg:SI 0 r0 [137]) [1 hspi_10(D)->Instance+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:15 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 16 15 17 2 (var_location:QI count (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 17 16 18 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:9 -1
+     (nil))
+(insn 18 17 20 2 (set (reg:SI 0 r0 [orig:118 _16 ] [118])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [orig:114 _2 ] [114])
+                (const_int 8 [0x8])) [2 _2->SR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:25 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 20 18 21 2 (parallel [
+            (set (reg:CC_NZ 100 cc)
+                (compare:CC_NZ (and:SI (reg:SI 0 r0 [orig:118 _16 ] [118])
+                        (const_int 1536 [0x600]))
+                    (const_int 0 [0])))
+            (set (reg:SI 0 r0 [132])
+                (and:SI (reg:SI 0 r0 [orig:118 _16 ] [118])
+                    (const_int 1536 [0x600])))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:9 91 {*andsi3_compare0}
+     (nil))
+(jump_insn 21 20 22 2 (set (pc)
+        (if_then_else (eq (reg:CC_NZ 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 76)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:9 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 59055804 (nil))
+ -> 76)
+(note 22 21 34 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 34 22 23 3 NOTE_INSN_DELETED)
+(debug_insn 23 34 24 3 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":85:5 -1
+     (nil))
+(debug_insn 24 23 25 3 (var_location:QI count (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":85:10 -1
+     (nil))
+(debug_insn 25 24 26 3 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":86:5 -1
+     (nil))
+(insn 26 25 27 3 (set (reg:SI 2 r2 [orig:120 _18 ] [120])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [orig:114 _2 ] [114])
+                (const_int 12 [0xc])) [2 _2->DR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":86:28 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 27 26 28 3 (set (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [2 tmpreg+0 S4 A32])
+        (reg:SI 2 r2 [orig:120 _18 ] [120])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":86:12 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 28 27 29 3 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":87:5 -1
+     (nil))
+(insn 29 28 30 3 (set (reg:SI 2 r2 [orig:121 vol.1_20 ] [121])
+        (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [2 tmpreg+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":87:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 30 29 31 3 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":88:5 -1
+     (nil))
+(debug_insn 31 30 32 3 (var_location:QI count (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 32 31 33 3 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:9 -1
+     (nil))
+(insn 33 32 35 3 (set (reg:SI 0 r0 [orig:122 _24 ] [122])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [orig:114 _2 ] [114])
+                (const_int 8 [0x8])) [2 _2->SR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:25 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 35 33 36 3 (parallel [
+            (set (reg:CC_NZ 100 cc)
+                (compare:CC_NZ (and:SI (reg:SI 0 r0 [orig:122 _24 ] [122])
+                        (const_int 1536 [0x600]))
+                    (const_int 0 [0])))
+            (set (reg:SI 0 r0 [133])
+                (and:SI (reg:SI 0 r0 [orig:122 _24 ] [122])
+                    (const_int 1536 [0x600])))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:9 91 {*andsi3_compare0}
+     (nil))
+(jump_insn 36 35 37 3 (set (pc)
+        (if_then_else (eq (reg:CC_NZ 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 76)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:9 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 59055804 (nil))
+ -> 76)
+(note 37 36 49 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 49 37 38 4 NOTE_INSN_DELETED)
+(debug_insn 38 49 39 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":85:5 -1
+     (nil))
+(debug_insn 39 38 40 4 (var_location:QI count (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":85:10 -1
+     (nil))
+(debug_insn 40 39 41 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":86:5 -1
+     (nil))
+(insn 41 40 42 4 (set (reg:SI 2 r2 [orig:124 _26 ] [124])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [orig:114 _2 ] [114])
+                (const_int 12 [0xc])) [2 _2->DR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":86:28 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 42 41 43 4 (set (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [2 tmpreg+0 S4 A32])
+        (reg:SI 2 r2 [orig:124 _26 ] [124])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":86:12 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 43 42 44 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":87:5 -1
+     (nil))
+(insn 44 43 45 4 (set (reg:SI 2 r2 [orig:125 vol.1_28 ] [125])
+        (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [2 tmpreg+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":87:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 45 44 46 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":88:5 -1
+     (nil))
+(debug_insn 46 45 47 4 (var_location:QI count (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 47 46 48 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:9 -1
+     (nil))
+(insn 48 47 50 4 (set (reg:SI 0 r0 [orig:126 _32 ] [126])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [orig:114 _2 ] [114])
+                (const_int 8 [0x8])) [2 _2->SR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:25 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 50 48 51 4 (parallel [
+            (set (reg:CC_NZ 100 cc)
+                (compare:CC_NZ (and:SI (reg:SI 0 r0 [orig:126 _32 ] [126])
+                        (const_int 1536 [0x600]))
+                    (const_int 0 [0])))
+            (set (reg:SI 0 r0 [134])
+                (and:SI (reg:SI 0 r0 [orig:126 _32 ] [126])
+                    (const_int 1536 [0x600])))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:9 91 {*andsi3_compare0}
+     (nil))
+(jump_insn 51 50 52 4 (set (pc)
+        (if_then_else (eq (reg:CC_NZ 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 76)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:9 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 59055804 (nil))
+ -> 76)
+(note 52 51 64 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(note 64 52 53 5 NOTE_INSN_DELETED)
+(debug_insn 53 64 54 5 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":85:5 -1
+     (nil))
+(debug_insn 54 53 55 5 (var_location:QI count (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":85:10 -1
+     (nil))
+(debug_insn 55 54 56 5 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":86:5 -1
+     (nil))
+(insn 56 55 57 5 (set (reg:SI 2 r2 [orig:128 _34 ] [128])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [orig:114 _2 ] [114])
+                (const_int 12 [0xc])) [2 _2->DR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":86:28 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 57 56 58 5 (set (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [2 tmpreg+0 S4 A32])
+        (reg:SI 2 r2 [orig:128 _34 ] [128])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":86:12 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 58 57 59 5 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":87:5 -1
+     (nil))
+(insn 59 58 60 5 (set (reg:SI 2 r2 [orig:129 vol.1_36 ] [129])
+        (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [2 tmpreg+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":87:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 60 59 61 5 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":88:5 -1
+     (nil))
+(debug_insn 61 60 62 5 (var_location:QI count (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 62 61 63 5 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:9 -1
+     (nil))
+(insn 63 62 65 5 (set (reg:SI 0 r0 [orig:115 _3 ] [115])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [orig:114 _2 ] [114])
+                (const_int 8 [0x8])) [2 _2->SR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:25 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 65 63 66 5 (parallel [
+            (set (reg:CC_NZ 100 cc)
+                (compare:CC_NZ (and:SI (reg:SI 0 r0 [orig:115 _3 ] [115])
+                        (const_int 1536 [0x600]))
+                    (const_int 0 [0])))
+            (set (reg:SI 0 r0 [135])
+                (and:SI (reg:SI 0 r0 [orig:115 _3 ] [115])
+                    (const_int 1536 [0x600])))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:9 91 {*andsi3_compare0}
+     (nil))
+(jump_insn 66 65 67 5 (set (pc)
+        (if_then_else (eq (reg:CC_NZ 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 76)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":83:9 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 59055804 (nil))
+ -> 76)
+(note 67 66 68 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 68 67 69 6 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":85:5 -1
+     (nil))
+(debug_insn 69 68 70 6 (var_location:QI count (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":85:10 -1
+     (nil))
+(debug_insn 70 69 71 6 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":86:5 -1
+     (nil))
+(insn 71 70 72 6 (set (reg:SI 3 r3 [orig:113 _1 ] [113])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [orig:114 _2 ] [114])
+                (const_int 12 [0xc])) [2 _2->DR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":86:28 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 72 71 73 6 (set (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [2 tmpreg+0 S4 A32])
+        (reg:SI 3 r3 [orig:113 _1 ] [113])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":86:12 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 73 72 74 6 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":87:5 -1
+     (nil))
+(insn 74 73 75 6 (set (reg:SI 3 r3 [orig:117 vol.1_13 ] [117])
+        (mem/v/c:SI (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])) [2 tmpreg+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":87:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 75 74 4 6 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":88:5 -1
+     (nil))
+(insn 4 75 76 6 (set (reg:SI 0 r0 [orig:130 <retval> ] [130])
+        (const_int 3 [0x3])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":90:14 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 3 [0x3])
+        (nil)))
+(code_label 76 4 77 11 2 (nil) [4 uses])
+(note 77 76 83 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 83 77 134 11 (use (reg/i:SI 0 r0)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_spi_ex.c":94:1 -1
+     (nil))
+(note 134 83 135 NOTE_INSN_DELETED)
+(note 135 134 0 NOTE_INSN_DELETED)

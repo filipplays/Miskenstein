@@ -1,0 +1,2589 @@
+
+;; Function HAL_NVIC_SetPriorityGrouping (HAL_NVIC_SetPriorityGrouping, funcdef_no=329, decl_uid=7656, cgraph_uid=333, symbol_order=332)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; SImode fixup for i14; addr 0, range (0,1018): 0xffffffffe000ed00
+;; Emitting minipool after insn 70; address 38; align 4 (bytes)
+;;  Offset 0, min -65536, max 1018 0xffffffffe000ed00
+
+
+HAL_NVIC_SetPriorityGrouping
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3]
+;;  ref usage 	r0={2d,2u} r1={2d,2u} r2={3d,2u,1e} r3={6d,5u} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 46{31d,14u,1e} in 11{11 regular + 0 call} insns.
+(note 1 0 85 NOTE_INSN_DELETED)
+(note 85 1 4 (var_location PriorityGroup (reg:SI 0 r0 [ PriorityGroup ])) NOTE_INSN_VAR_LOCATION)
+(note 4 85 67 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 67 4 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 67 3 2 NOTE_INSN_DELETED)
+(note 3 2 25 2 NOTE_INSN_FUNCTION_BEG)
+(note 25 3 76 2 NOTE_INSN_DELETED)
+(note 76 25 77 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:166 NOTE_INSN_BEGIN_STMT)
+(note 77 76 14 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:169 NOTE_INSN_BEGIN_STMT)
+(insn 14 77 86 2 (set (reg/f:SI 1 r1 [120])
+        (mem:SI (label_ref 99) [0  S4 A32])) "../Drivers/CMSIS/Include/core_cm4.h":1653:14 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int -536810240 [0xffffffffe000ed00])
+        (nil)))
+(note 86 14 78 2 (var_location PriorityGroup (reg:SI 0 r0 [ PriorityGroup ])) NOTE_INSN_VAR_LOCATION)
+(note 78 86 79 2 ../Drivers/CMSIS/Include/core_cm4.h:1648 NOTE_INSN_INLINE_ENTRY)
+(note 79 78 80 2 ../Drivers/CMSIS/Include/core_cm4.h:1650 NOTE_INSN_BEGIN_STMT)
+(note 80 79 87 2 ../Drivers/CMSIS/Include/core_cm4.h:1651 NOTE_INSN_BEGIN_STMT)
+(note 87 80 81 2 (var_location PriorityGroupTmp (and:SI (reg:SI 0 r0 [ PriorityGroup ])
+    (const_int 7 [0x7]))) NOTE_INSN_VAR_LOCATION)
+(note 81 87 15 2 ../Drivers/CMSIS/Include/core_cm4.h:1653 NOTE_INSN_BEGIN_STMT)
+(insn 15 81 88 2 (set (reg/v:SI 2 r2 [orig:113 reg_value ] [113])
+        (mem/v:SI (plus:SI (reg/f:SI 1 r1 [120])
+                (const_int 12 [0xc])) [1 MEM[(struct SCB_Type *)3758157056B].AIRCR+0 S4 A32])) "../Drivers/CMSIS/Include/core_cm4.h":1653:14 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 88 15 82 2 (var_location reg_value (reg/v:SI 2 r2 [orig:113 reg_value ] [113])) NOTE_INSN_VAR_LOCATION)
+(note 82 88 89 2 ../Drivers/CMSIS/Include/core_cm4.h:1654 NOTE_INSN_BEGIN_STMT)
+(note 89 82 83 2 (var_location reg_value (and:SI (reg/v:SI 2 r2 [orig:113 reg_value ] [113])
+    (const_int 63743 [0xf8ff]))) NOTE_INSN_VAR_LOCATION)
+(note 83 89 20 2 ../Drivers/CMSIS/Include/core_cm4.h:1655 NOTE_INSN_BEGIN_STMT)
+(insn 20 83 22 2 (parallel [
+            (set (reg:SI 3 r3 [121])
+                (ashift:SI (reg:SI 0 r0 [127])
+                    (const_int 8 [0x8])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1657:35 1013 {*thumb2_shiftsi3_short}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [127])
+        (nil)))
+(insn 22 20 90 2 (set (reg:SI 0 r0 [123])
+        (const_int 63743 [0xf8ff])) "../Drivers/CMSIS/Include/core_cm4.h":1654:13 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 63743 [0xf8ff])
+        (nil)))
+(note 90 22 91 2 (var_location PriorityGroup (entry_value:SI (reg:SI 0 r0 [ PriorityGroup ]))) NOTE_INSN_VAR_LOCATION)
+(note 91 90 92 2 (var_location PriorityGroup (entry_value:SI (reg:SI 0 r0 [ PriorityGroup ]))) NOTE_INSN_VAR_LOCATION)
+(note 92 91 21 2 (var_location PriorityGroupTmp (and:SI (entry_value:SI (reg:SI 0 r0 [ PriorityGroup ]))
+    (const_int 7 [0x7]))) NOTE_INSN_VAR_LOCATION)
+(insn 21 92 23 2 (set (reg:SI 3 r3 [122])
+        (and:SI (reg:SI 3 r3 [121])
+            (const_int 1792 [0x700]))) "../Drivers/CMSIS/Include/core_cm4.h":1657:35 90 {*arm_andsi3_insn}
+     (nil))
+(insn 23 21 93 2 (parallel [
+            (set (reg:SI 2 r2 [orig:124 reg_value ] [124])
+                (and:SI (reg/v:SI 2 r2 [orig:113 reg_value ] [113])
+                    (reg:SI 0 r0 [123])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1654:13 1012 {*thumb2_alusi3_short}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [123])
+        (expr_list:REG_EQUAL (and:SI (reg/v:SI 2 r2 [orig:113 reg_value ] [113])
+                (const_int 63743 [0xf8ff]))
+            (nil))))
+(note 93 23 24 2 (var_location reg_value (reg:SI 2 r2 [orig:124 reg_value ] [124])) NOTE_INSN_VAR_LOCATION)
+(insn 24 93 38 2 (parallel [
+            (set (reg:SI 3 r3 [orig:117 _7 ] [117])
+                (ior:SI (reg:SI 3 r3 [122])
+                    (reg:SI 2 r2 [orig:124 reg_value ] [124])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1656:62 1012 {*thumb2_alusi3_short}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:124 reg_value ] [124])
+        (nil)))
+(insn 38 24 39 2 (set (reg/v:SI 3 r3 [orig:118 reg_value ] [118])
+        (ior:SI (reg:SI 3 r3 [orig:117 _7 ] [117])
+            (const_int 100139008 [0x5f80000]))) "../Drivers/CMSIS/Include/core_cm4.h":1655:14 106 {*iorsi3_insn}
+     (nil))
+(insn 39 38 94 2 (set (reg/v:SI 3 r3 [orig:118 reg_value ] [118])
+        (ior:SI (reg/v:SI 3 r3 [orig:118 reg_value ] [118])
+            (const_int 131072 [0x20000]))) "../Drivers/CMSIS/Include/core_cm4.h":1655:14 106 {*iorsi3_insn}
+     (nil))
+(note 94 39 84 2 (var_location reg_value (reg/v:SI 3 r3 [orig:118 reg_value ] [118])) NOTE_INSN_VAR_LOCATION)
+(note 84 94 30 2 ../Drivers/CMSIS/Include/core_cm4.h:1658 NOTE_INSN_BEGIN_STMT)
+(insn 30 84 95 2 (set (mem/v:SI (plus:SI (reg/f:SI 1 r1 [120])
+                (const_int 12 [0xc])) [1 MEM[(struct SCB_Type *)3758157056B].AIRCR+0 S4 A32])
+        (reg/v:SI 3 r3 [orig:118 reg_value ] [118])) "../Drivers/CMSIS/Include/core_cm4.h":1658:14 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 3 r3 [orig:118 reg_value ] [118])
+        (expr_list:REG_DEAD (reg/f:SI 1 r1 [120])
+            (nil))))
+(note 95 30 96 2 (var_location PriorityGroup (nil)) NOTE_INSN_VAR_LOCATION)
+(note 96 95 75 2 (var_location reg_value (nil)) NOTE_INSN_VAR_LOCATION)
+(note 75 96 69 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 69 75 70 2 (simple_return) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":170:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 70 69 97)
+(code_label 97 70 98 4 (nil) [0 uses])
+(insn 98 97 99 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) -1
+     (nil))
+(code_label 99 98 100 3 (nil) [0 uses])
+(insn 100 99 101 (unspec_volatile [
+            (const_int -536810240 [0xffffffffe000ed00])
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 101 100 102 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) -1
+     (nil))
+(barrier 102 101 40)
+(note 40 102 41 NOTE_INSN_DELETED)
+(note 41 40 0 NOTE_INSN_DELETED)
+
+;; Function HAL_NVIC_SetPriority (HAL_NVIC_SetPriority, funcdef_no=330, decl_uid=7660, cgraph_uid=334, symbol_order=333)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 8 n_edges 9 count 8 (    1)
+df_worklist_dataflow_doublequeue: n_basic_blocks 8 n_edges 9 count 8 (    1)
+;; SImode fixup for i16; addr 0, range (0,1018): 0xffffffffe000ed00
+;; SImode fixup for i119; addr 112, range (0,1018): 0xffffffffe000ecfc
+;; Emitting minipool after insn 143; address 134; align 4 (bytes)
+;;  Offset 0, min -65536, max 1018 0xffffffffe000ed00
+;;  Offset 4, min -65536, max 1130 0xffffffffe000ecfc
+
+
+HAL_NVIC_SetPriority
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 13 [sp] 14 [lr] 15 [pc] 100 [cc]
+;;  ref usage 	r0={4d,6u} r1={8d,9u} r2={3d,3u} r3={8d,9u,1e} r12={5d,5u} r13={4d,11u} r14={3d,5u,1e} r15={2d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={3d,3u} 
+;;    total ref usage 109{56d,51u,2e} in 37{37 regular + 0 call} insns.
+(note 1 0 168 NOTE_INSN_DELETED)
+(note 168 1 169 (var_location IRQn (reg:QI 0 r0 [ IRQn ])) NOTE_INSN_VAR_LOCATION)
+(note 169 168 170 (var_location SubPriority (reg:SI 2 r2 [ SubPriority ])) NOTE_INSN_VAR_LOCATION)
+(note 170 169 8 (var_location PreemptPriority (reg:SI 1 r1 [ PreemptPriority ])) NOTE_INSN_VAR_LOCATION)
+(note 8 170 5 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 5 8 18 2 NOTE_INSN_FUNCTION_BEG)
+(note 18 5 150 2 NOTE_INSN_DELETED)
+(note 150 18 151 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:187 NOTE_INSN_BEGIN_STMT)
+(note 151 150 152 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:190 NOTE_INSN_BEGIN_STMT)
+(note 152 151 153 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:191 NOTE_INSN_BEGIN_STMT)
+(note 153 152 154 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:193 NOTE_INSN_BEGIN_STMT)
+(note 154 153 155 2 ../Drivers/CMSIS/Include/core_cm4.h:1667 NOTE_INSN_INLINE_ENTRY)
+(note 155 154 16 2 ../Drivers/CMSIS/Include/core_cm4.h:1669 NOTE_INSN_BEGIN_STMT)
+(insn 16 155 17 2 (set (reg/f:SI 3 r3 [140])
+        (mem:SI (label_ref 234) [0  S4 A32])) "../Drivers/CMSIS/Include/core_cm4.h":1669:26 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int -536810240 [0xffffffffe000ed00])
+        (nil)))
+(insn 17 16 19 2 (set (reg:SI 3 r3 [orig:131 _27 ] [131])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [140])
+                (const_int 12 [0xc])) [1 MEM[(struct SCB_Type *)3758157056B].AIRCR+0 S4 A32])) "../Drivers/CMSIS/Include/core_cm4.h":1669:26 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 19 17 171 2 (set (reg:SI 3 r3 [orig:133 _29 ] [133])
+        (zero_extract:SI (reg:SI 3 r3 [orig:131 _27 ] [131])
+            (const_int 3 [0x3])
+            (const_int 8 [0x8]))) "../Drivers/CMSIS/Include/core_cm4.h":1669:11 161 {extzv_t2}
+     (nil))
+(note 171 19 156 2 (var_location prioritygroup (reg:SI 3 r3 [orig:133 _29 ] [133])) NOTE_INSN_VAR_LOCATION)
+(note 156 171 172 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:195 NOTE_INSN_BEGIN_STMT)
+(note 172 156 131 2 (var_location PriorityGroup (reg:SI 3 r3 [orig:133 _29 ] [133])) NOTE_INSN_VAR_LOCATION)
+(insn/f 131 172 132 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -4 [0xfffffffffffffffc]))) [6  A8])
+                (unspec:BLK [
+                        (reg:SI 14 lr)
+                    ] UNSPEC_PUSH_MULT))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":186:1 378 {*push_multi}
+     (expr_list:REG_DEAD (reg:SI 14 lr)
+        (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                    (set/f (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -4 [0xfffffffffffffffc])))
+                    (set/f (mem/c:SI (reg/f:SI 13 sp) [6  S4 A32])
+                        (reg:SI 14 lr))
+                ])
+            (nil))))
+(note 132 131 31 2 NOTE_INSN_PROLOGUE_END)
+(insn 31 132 173 2 (set (reg/v:SI 14 lr [orig:123 PreemptPriorityBits ] [123])
+        (minus:SI (const_int 7 [0x7])
+            (reg:SI 3 r3 [orig:133 _29 ] [133]))) "../Drivers/CMSIS/Include/core_cm4.h":1862:31 45 {*arm_subsi3_insn}
+     (nil))
+(note 173 31 174 2 (var_location PreemptPriority (reg:SI 1 r1 [ PreemptPriority ])) NOTE_INSN_VAR_LOCATION)
+(note 174 173 157 2 (var_location SubPriority (reg:SI 2 r2 [ SubPriority ])) NOTE_INSN_VAR_LOCATION)
+(note 157 174 158 2 ../Drivers/CMSIS/Include/core_cm4.h:1856 NOTE_INSN_INLINE_ENTRY)
+(note 158 157 175 2 ../Drivers/CMSIS/Include/core_cm4.h:1858 NOTE_INSN_BEGIN_STMT)
+(note 175 158 159 2 (var_location PriorityGroupTmp (reg:SI 3 r3 [orig:133 _29 ] [133])) NOTE_INSN_VAR_LOCATION)
+(note 159 175 160 2 ../Drivers/CMSIS/Include/core_cm4.h:1859 NOTE_INSN_BEGIN_STMT)
+(note 160 159 161 2 ../Drivers/CMSIS/Include/core_cm4.h:1860 NOTE_INSN_BEGIN_STMT)
+(note 161 160 129 2 ../Drivers/CMSIS/Include/core_cm4.h:1862 NOTE_INSN_BEGIN_STMT)
+(insn 129 161 35 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 14 lr [orig:123 PreemptPriorityBits ] [123])
+            (const_int 4 [0x4]))) "../Drivers/CMSIS/Include/core_cm4.h":1862:23 268 {*arm_cmpsi_insn}
+     (nil))
+(insn 35 129 130 2 (set (reg:SI 12 ip [142])
+        (plus:SI (reg:SI 3 r3 [orig:133 _29 ] [133])
+            (const_int 4 [0x4]))) "../Drivers/CMSIS/Include/core_cm4.h":1863:44 7 {*arm_addsi3}
+     (nil))
+(insn 130 35 176 2 (cond_exec (geu:SI (reg:CC 100 cc)
+            (const_int 0 [0]))
+        (set (reg/v:SI 14 lr [orig:123 PreemptPriorityBits ] [123])
+            (const_int 4 [0x4]))) "../Drivers/CMSIS/Include/core_cm4.h":1862:23 6567 {*p *thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (nil)))
+(note 176 130 162 2 (var_location PreemptPriorityBits (reg/v:SI 14 lr [orig:123 PreemptPriorityBits ] [123])) NOTE_INSN_VAR_LOCATION)
+(note 162 176 38 2 ../Drivers/CMSIS/Include/core_cm4.h:1863 NOTE_INSN_BEGIN_STMT)
+(insn 38 162 39 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 12 ip [142])
+            (const_int 6 [0x6]))) "../Drivers/CMSIS/Include/core_cm4.h":1863:109 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 12 ip [142])
+        (nil)))
+(jump_insn 39 38 40 2 (set (pc)
+        (if_then_else (leu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 106)
+            (pc))) "../Drivers/CMSIS/Include/core_cm4.h":1863:109 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 106)
+(note 40 39 44 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 44 40 41 3 NOTE_INSN_DELETED)
+(insn 41 44 177 3 (parallel [
+            (set (reg:SI 3 r3 [orig:125 iftmp.0_17 ] [125])
+                (plus:SI (reg:SI 3 r3 [orig:133 _29 ] [133])
+                    (const_int -3 [0xfffffffffffffffd])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1863:109 1017 {*thumb2_addsi_short}
+     (nil))
+(note 177 41 178 3 (var_location PriorityGroupTmp (plus:SI (reg:SI 3 r3 [orig:125 iftmp.0_17 ] [125])
+    (const_int 3 [0x3]))) NOTE_INSN_VAR_LOCATION)
+(note 178 177 179 3 (var_location prioritygroup (plus:SI (reg:SI 3 r3 [orig:125 iftmp.0_17 ] [125])
+    (const_int 3 [0x3]))) NOTE_INSN_VAR_LOCATION)
+(note 179 178 42 3 (var_location PriorityGroup (plus:SI (reg:SI 3 r3 [orig:125 iftmp.0_17 ] [125])
+    (const_int 3 [0x3]))) NOTE_INSN_VAR_LOCATION)
+(insn 42 179 43 3 (set (reg:SI 12 ip [144])
+        (const_int -1 [0xffffffffffffffff])) "../Drivers/CMSIS/Include/core_cm4.h":1867:30 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int -1 [0xffffffffffffffff])
+        (nil)))
+(insn 43 42 45 3 (set (reg:SI 12 ip [143])
+        (ashift:SI (reg:SI 12 ip [144])
+            (reg:SI 3 r3 [orig:125 iftmp.0_17 ] [125]))) "../Drivers/CMSIS/Include/core_cm4.h":1867:30 147 {*arm_shiftsi3}
+     (expr_list:REG_EQUAL (ashift:SI (const_int -1 [0xffffffffffffffff])
+            (reg:SI 3 r3 [orig:125 iftmp.0_17 ] [125]))
+        (nil)))
+(insn 45 43 180 3 (set (reg:SI 2 r2 [orig:136 _46 ] [136])
+        (and:SI (not:SI (reg:SI 12 ip [143]))
+            (reg/v:SI 2 r2 [orig:139 SubPriority ] [139]))) "../Drivers/CMSIS/Include/core_cm4.h":1867:30 100 {andsi_notsi_si}
+     (expr_list:REG_DEAD (reg:SI 12 ip [143])
+        (nil)))
+(note 180 45 181 (var_location SubPriority (entry_value:SI (reg:SI 2 r2 [ SubPriority ]))) NOTE_INSN_VAR_LOCATION)
+(note 181 180 182 (var_location SubPriority (entry_value:SI (reg:SI 2 r2 [ SubPriority ]))) NOTE_INSN_VAR_LOCATION)
+(note 182 181 183 (var_location PriorityGroupTmp (nil)) NOTE_INSN_VAR_LOCATION)
+(note 183 182 184 (var_location prioritygroup (nil)) NOTE_INSN_VAR_LOCATION)
+(note 184 183 46 (var_location PriorityGroup (nil)) NOTE_INSN_VAR_LOCATION)
+(code_label 46 184 47 4 6 (nil) [1 uses])
+(note 47 46 52 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 52 47 185 4 NOTE_INSN_DELETED)
+(note 185 52 163 4 (var_location SubPriorityBits (reg:SI 3 r3 [orig:125 iftmp.0_17 ] [125])) NOTE_INSN_VAR_LOCATION)
+(note 163 185 50 4 ../Drivers/CMSIS/Include/core_cm4.h:1865 NOTE_INSN_BEGIN_STMT)
+(insn 50 163 51 4 (set (reg:SI 12 ip [147])
+        (const_int -1 [0xffffffffffffffff])) "../Drivers/CMSIS/Include/core_cm4.h":1866:30 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int -1 [0xffffffffffffffff])
+        (nil)))
+(insn 51 50 53 4 (set (reg:SI 12 ip [146])
+        (ashift:SI (reg:SI 12 ip [147])
+            (reg/v:SI 14 lr [orig:123 PreemptPriorityBits ] [123]))) "../Drivers/CMSIS/Include/core_cm4.h":1866:30 147 {*arm_shiftsi3}
+     (expr_list:REG_EQUAL (ashift:SI (const_int -1 [0xffffffffffffffff])
+            (reg/v:SI 14 lr [orig:123 PreemptPriorityBits ] [123]))
+        (nil)))
+(insn 53 51 186 4 (set (reg:SI 1 r1 [149])
+        (and:SI (not:SI (reg:SI 12 ip [146]))
+            (reg/v:SI 1 r1 [orig:138 PreemptPriority ] [138]))) "../Drivers/CMSIS/Include/core_cm4.h":1866:30 100 {andsi_notsi_si}
+     (expr_list:REG_DEAD (reg:SI 12 ip [146])
+        (nil)))
+(note 186 53 187 4 (var_location PreemptPriority (entry_value:SI (reg:SI 1 r1 [ PreemptPriority ]))) NOTE_INSN_VAR_LOCATION)
+(note 187 186 54 4 (var_location PreemptPriority (entry_value:SI (reg:SI 1 r1 [ PreemptPriority ]))) NOTE_INSN_VAR_LOCATION)
+(insn 54 187 69 4 (parallel [
+            (set (reg:SI 1 r1 [150])
+                (ashift:SI (reg:SI 1 r1 [149])
+                    (reg:SI 3 r3 [orig:125 iftmp.0_17 ] [125])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1866:82 1013 {*thumb2_shiftsi3_short}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:125 iftmp.0_17 ] [125])
+        (nil)))
+(insn 69 54 55 4 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 0 r0 [orig:137 IRQn ] [137])
+            (const_int 0 [0]))) "../Drivers/CMSIS/Include/core_cm4.h":1811:6 268 {*arm_cmpsi_insn}
+     (nil))
+(insn 55 69 188 4 (set (reg:SI 1 r1 [orig:130 _26 ] [130])
+        (ior:SI (reg:SI 1 r1 [150])
+            (reg:SI 2 r2 [orig:136 _46 ] [136]))) "../Drivers/CMSIS/Include/core_cm4.h":1866:102 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:136 _46 ] [136])
+        (nil)))
+(note 188 55 189 4 (var_location PriorityGroup (nil)) NOTE_INSN_VAR_LOCATION)
+(note 189 188 190 4 (var_location PreemptPriority (nil)) NOTE_INSN_VAR_LOCATION)
+(note 190 189 191 4 (var_location SubPriority (nil)) NOTE_INSN_VAR_LOCATION)
+(note 191 190 192 4 (var_location PreemptPriorityBits (nil)) NOTE_INSN_VAR_LOCATION)
+(note 192 191 193 4 (var_location PriorityGroupTmp (nil)) NOTE_INSN_VAR_LOCATION)
+(note 193 192 194 4 (var_location IRQn (reg:QI 0 r0 [ IRQn ])) NOTE_INSN_VAR_LOCATION)
+(note 194 193 164 4 (var_location priority (reg:SI 1 r1 [orig:130 _26 ] [130])) NOTE_INSN_VAR_LOCATION)
+(note 164 194 165 4 ../Drivers/CMSIS/Include/core_cm4.h:1809 NOTE_INSN_INLINE_ENTRY)
+(note 165 164 70 4 ../Drivers/CMSIS/Include/core_cm4.h:1811 NOTE_INSN_BEGIN_STMT)
+(jump_insn 70 165 71 4 (set (pc)
+        (if_then_else (lt (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 83)
+            (pc))) "../Drivers/CMSIS/Include/core_cm4.h":1811:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 440234148 (nil)))
+ -> 83)
+(note 71 70 77 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(note 77 71 166 5 NOTE_INSN_DELETED)
+(note 166 77 122 5 ../Drivers/CMSIS/Include/core_cm4.h:1813 NOTE_INSN_BEGIN_STMT)
+(insn 122 166 195 5 (set (reg/f:SI 0 r0 [156])
+        (plus:SI (reg/v:SI 0 r0 [orig:137 IRQn ] [137])
+            (const_int -536870912 [0xffffffffe0000000]))) "../Drivers/CMSIS/Include/core_cm4.h":1813:46 7 {*arm_addsi3}
+     (nil))
+(note 195 122 196 5 (var_location IRQn (entry_value:QI (reg:QI 0 r0 [ IRQn ]))) NOTE_INSN_VAR_LOCATION)
+(note 196 195 75 5 (var_location IRQn (entry_value:QI (reg:QI 0 r0 [ IRQn ]))) NOTE_INSN_VAR_LOCATION)
+(insn 75 196 197 5 (parallel [
+            (set (reg:SI 1 r1 [154])
+                (ashift:SI (reg:SI 1 r1 [orig:130 _26 ] [130])
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1813:48 1013 {*thumb2_shiftsi3_short}
+     (nil))
+(note 197 75 123 5 (var_location priority (ior:SI (ashift:SI (and:SI (not:SI (reg:SI 12 ip [146]))
+            (entry_value:SI (reg:SI 1 r1 [ PreemptPriority ])))
+        (reg:SI 3 r3 [orig:125 iftmp.0_17 ] [125]))
+    (reg:SI 2 r2 [orig:136 _46 ] [136]))) NOTE_INSN_VAR_LOCATION)
+(insn 123 197 76 5 (set (reg/f:SI 0 r0 [156])
+        (plus:SI (reg/f:SI 0 r0 [156])
+            (const_int 57600 [0xe100]))) "../Drivers/CMSIS/Include/core_cm4.h":1813:46 7 {*arm_addsi3}
+     (nil))
+(insn 76 123 80 5 (set (reg:SI 1 r1 [orig:115 _7 ] [115])
+        (zero_extend:SI (reg:QI 1 r1 [154]))) "../Drivers/CMSIS/Include/core_cm4.h":1813:48 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 80 76 148 5 (set (mem/v:QI (plus:SI (reg/f:SI 0 r0 [156])
+                (const_int 768 [0x300])) [0 MEM[(struct NVIC_Type *)3758153984B].IP[_6]+0 S1 A8])
+        (reg:QI 1 r1 [orig:115 _7 ] [115])) "../Drivers/CMSIS/Include/core_cm4.h":1813:46 263 {*arm_movqi_insn}
+     (expr_list:REG_DEAD (reg:QI 1 r1 [orig:115 _7 ] [115])
+        (expr_list:REG_DEAD (reg/f:SI 0 r0 [156])
+            (nil))))
+(note 148 80 134 5 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 134 148 137 5 (parallel [
+            (return)
+            (set/f (reg:SI 15 pc)
+                (mem:SI (post_inc:SI (reg/f:SI 13 sp)) [6  S4 A32]))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":196:1 383 {*ldr_with_return}
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (nil))
+ -> return)
+(barrier 137 134 198)
+(note 198 137 199 (var_location PriorityGroupTmp (reg:SI 3 r3 [orig:133 _29 ] [133])) NOTE_INSN_VAR_LOCATION)
+(note 199 198 200 (var_location IRQn (nil)) NOTE_INSN_VAR_LOCATION)
+(note 200 199 201 (var_location PriorityGroup (reg:SI 3 r3 [orig:133 _29 ] [133])) NOTE_INSN_VAR_LOCATION)
+(note 201 200 202 (var_location PreemptPriority (reg:SI 1 r1 [ PreemptPriority ])) NOTE_INSN_VAR_LOCATION)
+(note 202 201 203 (var_location SubPriority (reg:SI 2 r2 [ SubPriority ])) NOTE_INSN_VAR_LOCATION)
+(note 203 202 204 (var_location PreemptPriorityBits (reg/v:SI 14 lr [orig:123 PreemptPriorityBits ] [123])) NOTE_INSN_VAR_LOCATION)
+(note 204 203 205 (var_location SubPriorityBits (nil)) NOTE_INSN_VAR_LOCATION)
+(note 205 204 206 (var_location IRQn (reg:QI 0 r0 [ IRQn ])) NOTE_INSN_VAR_LOCATION)
+(note 206 205 207 (var_location PreemptPriority (reg:SI 1 r1 [ PreemptPriority ])) NOTE_INSN_VAR_LOCATION)
+(note 207 206 208 (var_location SubPriority (reg:SI 2 r2 [ SubPriority ])) NOTE_INSN_VAR_LOCATION)
+(note 208 207 209 (var_location prioritygroup (reg:SI 3 r3 [orig:133 _29 ] [133])) NOTE_INSN_VAR_LOCATION)
+(note 209 208 106 (var_location priority (nil)) NOTE_INSN_VAR_LOCATION)
+(code_label 106 209 105 6 9 (nil) [1 uses])
+(note 105 106 6 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 6 105 210 6 (parallel [
+            (set (reg:SI 2 r2 [orig:136 _46 ] [136])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) 1016 {*thumb2_movsi_shortim}
+     (nil))
+(note 210 6 211 6 (var_location SubPriority (entry_value:SI (reg:SI 2 r2 [ SubPriority ]))) NOTE_INSN_VAR_LOCATION)
+(note 211 210 7 6 (var_location SubPriority (entry_value:SI (reg:SI 2 r2 [ SubPriority ]))) NOTE_INSN_VAR_LOCATION)
+(insn 7 211 212 6 (set (reg:SI 3 r3 [orig:125 iftmp.0_17 ] [125])
+        (reg:SI 2 r2 [orig:136 _46 ] [136])) "../Drivers/CMSIS/Include/core_cm4.h":1863:109 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(note 212 7 213 6 (var_location PriorityGroupTmp (plus:SI (reg:SI 12 ip [142])
+    (const_int -4 [0xfffffffffffffffc]))) NOTE_INSN_VAR_LOCATION)
+(note 213 212 214 6 (var_location PriorityGroup (plus:SI (reg:SI 12 ip [142])
+    (const_int -4 [0xfffffffffffffffc]))) NOTE_INSN_VAR_LOCATION)
+(note 214 213 144 6 (var_location prioritygroup (plus:SI (reg:SI 12 ip [142])
+    (const_int -4 [0xfffffffffffffffc]))) NOTE_INSN_VAR_LOCATION)
+(jump_insn 144 214 145 6 (set (pc)
+        (label_ref 46)) 284 {*arm_jump}
+     (nil)
+ -> 46)
+(barrier 145 144 215)
+(note 215 145 216 (var_location PreemptPriorityBits (nil)) NOTE_INSN_VAR_LOCATION)
+(note 216 215 217 (var_location SubPriorityBits (reg:SI 3 r3 [orig:125 iftmp.0_17 ] [125])) NOTE_INSN_VAR_LOCATION)
+(note 217 216 218 (var_location IRQn (reg:QI 0 r0 [ IRQn ])) NOTE_INSN_VAR_LOCATION)
+(note 218 217 219 (var_location PreemptPriority (entry_value:SI (reg:SI 1 r1 [ PreemptPriority ]))) NOTE_INSN_VAR_LOCATION)
+(note 219 218 220 (var_location prioritygroup (nil)) NOTE_INSN_VAR_LOCATION)
+(note 220 219 221 (var_location SubPriority (nil)) NOTE_INSN_VAR_LOCATION)
+(note 221 220 222 (var_location IRQn (reg:QI 0 r0 [ IRQn ])) NOTE_INSN_VAR_LOCATION)
+(note 222 221 223 (var_location priority (reg:SI 1 r1 [orig:130 _26 ] [130])) NOTE_INSN_VAR_LOCATION)
+(note 223 222 224 (var_location PriorityGroup (nil)) NOTE_INSN_VAR_LOCATION)
+(note 224 223 225 (var_location PreemptPriority (nil)) NOTE_INSN_VAR_LOCATION)
+(note 225 224 83 (var_location PriorityGroupTmp (nil)) NOTE_INSN_VAR_LOCATION)
+(code_label 83 225 84 7 7 (nil) [1 uses])
+(note 84 83 87 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(note 87 84 89 7 NOTE_INSN_DELETED)
+(note 89 87 93 7 NOTE_INSN_DELETED)
+(note 93 89 167 7 NOTE_INSN_DELETED)
+(note 167 93 119 7 ../Drivers/CMSIS/Include/core_cm4.h:1817 NOTE_INSN_BEGIN_STMT)
+(insn 119 167 226 7 (set (reg/f:SI 3 r3 [164])
+        (mem:SI (const:SI (plus:SI (label_ref 234)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../Drivers/CMSIS/Include/core_cm4.h":1817:46 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int -536810244 [0xffffffffe000ecfc])
+        (nil)))
+(note 226 119 88 7 (var_location SubPriorityBits (nil)) NOTE_INSN_VAR_LOCATION)
+(insn 88 226 227 7 (set (reg:SI 0 r0 [160])
+        (and:SI (reg/v:SI 0 r0 [orig:137 IRQn ] [137])
+            (const_int 15 [0xf]))) "../Drivers/CMSIS/Include/core_cm4.h":1817:32 90 {*arm_andsi3_insn}
+     (nil))
+(note 227 88 228 7 (var_location IRQn (entry_value:QI (reg:QI 0 r0 [ IRQn ]))) NOTE_INSN_VAR_LOCATION)
+(note 228 227 91 7 (var_location IRQn (entry_value:QI (reg:QI 0 r0 [ IRQn ]))) NOTE_INSN_VAR_LOCATION)
+(insn 91 228 229 7 (parallel [
+            (set (reg:SI 1 r1 [162])
+                (ashift:SI (reg:SI 1 r1 [orig:130 _26 ] [130])
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1817:48 1013 {*thumb2_shiftsi3_short}
+     (nil))
+(note 229 91 120 7 (var_location priority (nil)) NOTE_INSN_VAR_LOCATION)
+(insn 120 229 92 7 (set (reg/f:SI 3 r3 [164])
+        (plus:SI (reg/f:SI 3 r3 [164])
+            (reg:SI 0 r0 [160]))) "../Drivers/CMSIS/Include/core_cm4.h":1817:46 7 {*arm_addsi3}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [160])
+        (nil)))
+(insn 92 120 96 7 (set (reg:SI 1 r1 [orig:121 _13 ] [121])
+        (zero_extend:SI (reg:QI 1 r1 [162]))) "../Drivers/CMSIS/Include/core_cm4.h":1817:48 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 96 92 230 7 (set (mem/v:QI (plus:SI (reg/f:SI 3 r3 [164])
+                (const_int 24 [0x18])) [0 MEM[(struct SCB_Type *)3758157056B].SHP[_12]+0 S1 A8])
+        (reg:QI 1 r1 [orig:121 _13 ] [121])) "../Drivers/CMSIS/Include/core_cm4.h":1817:46 263 {*arm_movqi_insn}
+     (expr_list:REG_DEAD (reg/f:SI 3 r3 [164])
+        (expr_list:REG_DEAD (reg:QI 1 r1 [orig:121 _13 ] [121])
+            (nil))))
+(note 230 96 231 7 (var_location IRQn (nil)) NOTE_INSN_VAR_LOCATION)
+(note 231 230 149 7 (var_location priority (nil)) NOTE_INSN_VAR_LOCATION)
+(note 149 231 140 7 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 140 149 143 7 (parallel [
+            (return)
+            (set/f (reg:SI 15 pc)
+                (mem:SI (post_inc:SI (reg/f:SI 13 sp)) [6  S4 A32]))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":196:1 383 {*ldr_with_return}
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (nil))
+ -> return)
+(barrier 143 140 232)
+(code_label 232 143 233 12 (nil) [0 uses])
+(insn 233 232 234 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) -1
+     (nil))
+(code_label 234 233 235 11 (nil) [0 uses])
+(insn 235 234 236 (unspec_volatile [
+            (const_int -536810240 [0xffffffffe000ed00])
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 236 235 237 (unspec_volatile [
+            (const_int -536810244 [0xffffffffe000ecfc])
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 237 236 238 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) -1
+     (nil))
+(barrier 238 237 125)
+(note 125 238 126 NOTE_INSN_DELETED)
+(note 126 125 0 NOTE_INSN_DELETED)
+
+;; Function HAL_NVIC_EnableIRQ (HAL_NVIC_EnableIRQ, funcdef_no=331, decl_uid=7662, cgraph_uid=335, symbol_order=334)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; SImode fixup for i27; addr 8, range (0,1018): 0xffffffffe000e100
+;; Emitting minipool after insn 44; address 32; align 4 (bytes)
+;;  Offset 0, min -65536, max 1026 0xffffffffe000e100
+
+
+HAL_NVIC_EnableIRQ
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 100 [cc]
+;;  ref usage 	r0={4d,6u,1e} r1={2d,1u} r2={2d,1u} r3={2d,1u} r13={1d,4u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={1d,1u} 
+;;    total ref usage 45{29d,15u,1e} in 11{11 regular + 0 call} insns.
+(note 1 0 53 NOTE_INSN_DELETED)
+(note 53 1 4 (var_location IRQn (reg:QI 0 r0 [ IRQn ])) NOTE_INSN_VAR_LOCATION)
+(note 4 53 41 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 41 4 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 41 3 2 NOTE_INSN_DELETED)
+(note 3 2 46 2 NOTE_INSN_FUNCTION_BEG)
+(note 46 3 47 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:210 NOTE_INSN_BEGIN_STMT)
+(note 47 46 54 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:213 NOTE_INSN_BEGIN_STMT)
+(note 54 47 48 2 (var_location IRQn (reg:QI 0 r0 [ IRQn ])) NOTE_INSN_VAR_LOCATION)
+(note 48 54 49 2 ../Drivers/CMSIS/Include/core_cm4.h:1679 NOTE_INSN_INLINE_ENTRY)
+(note 49 48 15 2 ../Drivers/CMSIS/Include/core_cm4.h:1681 NOTE_INSN_BEGIN_STMT)
+(insn 15 49 55 2 (parallel [
+            (set (reg:CC 100 cc)
+                (compare:CC (reg:SI 0 r0 [127])
+                    (const_int 0 [0])))
+            (set (reg/v:SI 0 r0 [orig:119 IRQn ] [119])
+                (reg:SI 0 r0 [127]))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1681:6 260 {*movsi_compare0}
+     (nil))
+(note 55 15 56 2 (var_location IRQn (entry_value:QI (reg:QI 0 r0 [ IRQn ]))) NOTE_INSN_VAR_LOCATION)
+(note 56 55 16 2 (var_location IRQn (entry_value:QI (reg:QI 0 r0 [ IRQn ]))) NOTE_INSN_VAR_LOCATION)
+(jump_insn 16 56 17 2 (set (pc)
+        (if_then_else (lt (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 34)
+            (pc))) "../Drivers/CMSIS/Include/core_cm4.h":1681:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 440234148 (nil)))
+ -> 34)
+(note 17 16 23 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 23 17 50 3 NOTE_INSN_DELETED)
+(note 50 23 19 3 ../Drivers/CMSIS/Include/core_cm4.h:1683 NOTE_INSN_BEGIN_STMT)
+(insn 19 50 51 3 (parallel [
+            (asm_operands/v ("") ("") 0 []
+                 []
+                 [] ../Drivers/CMSIS/Include/core_cm4.h:1683)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1683:5 -1
+     (nil))
+(note 51 19 27 3 ../Drivers/CMSIS/Include/core_cm4.h:1684 NOTE_INSN_BEGIN_STMT)
+(insn 27 51 21 3 (set (reg/f:SI 2 r2 [126])
+        (mem:SI (label_ref 60) [0  S4 A32])) "../Drivers/CMSIS/Include/core_cm4.h":1684:43 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int -536813312 [0xffffffffe000e100])
+        (nil)))
+(insn 21 27 25 3 (parallel [
+            (set (reg:SI 1 r1 [orig:117 _7 ] [117])
+                (lshiftrt:SI (reg/v:SI 0 r0 [orig:119 IRQn ] [119])
+                    (const_int 5 [0x5])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1684:34 1013 {*thumb2_shiftsi3_short}
+     (nil))
+(insn 25 21 24 3 (parallel [
+            (set (reg:SI 3 r3 [125])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1684:45 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUIV (const_int 1 [0x1])
+        (nil)))
+(insn 24 25 26 3 (set (reg:SI 0 r0 [124])
+        (and:SI (reg/v:SI 0 r0 [orig:119 IRQn ] [119])
+            (const_int 31 [0x1f]))) "../Drivers/CMSIS/Include/core_cm4.h":1684:81 90 {*arm_andsi3_insn}
+     (nil))
+(insn 26 24 28 3 (set (reg:SI 0 r0 [orig:118 _8 ] [118])
+        (ashift:SI (reg:SI 3 r3 [125])
+            (reg:SI 0 r0 [124]))) "../Drivers/CMSIS/Include/core_cm4.h":1684:45 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [125])
+        (expr_list:REG_EQUAL (ashift:SI (const_int 1 [0x1])
+                (reg:SI 0 r0 [124]))
+            (nil))))
+(insn 28 26 52 3 (set (mem/v:SI (plus:SI (mult:SI (reg:SI 1 r1 [orig:117 _7 ] [117])
+                    (const_int 4 [0x4]))
+                (reg/f:SI 2 r2 [126])) [1 MEM[(struct NVIC_Type *)3758153984B].ISER[_7]+0 S4 A32])
+        (reg:SI 0 r0 [orig:118 _8 ] [118])) "../Drivers/CMSIS/Include/core_cm4.h":1684:43 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 2 r2 [126])
+        (expr_list:REG_DEAD (reg:SI 1 r1 [orig:117 _7 ] [117])
+            (expr_list:REG_DEAD (reg:SI 0 r0 [orig:118 _8 ] [118])
+                (nil)))))
+(note 52 28 30 3 ../Drivers/CMSIS/Include/core_cm4.h:1685 NOTE_INSN_BEGIN_STMT)
+(insn 30 52 57 3 (parallel [
+            (asm_operands/v ("") ("") 0 []
+                 []
+                 [] ../Drivers/CMSIS/Include/core_cm4.h:1685)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1685:5 -1
+     (nil))
+(note 57 30 34 (var_location IRQn (nil)) NOTE_INSN_VAR_LOCATION)
+(code_label 34 57 35 4 13 (nil) [1 uses])
+(note 35 34 42 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 42 35 43 4 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 43 42 44 4 (simple_return) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":214:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 44 43 58)
+(code_label 58 44 59 16 (nil) [0 uses])
+(insn 59 58 60 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) -1
+     (nil))
+(code_label 60 59 61 15 (nil) [0 uses])
+(insn 61 60 62 (unspec_volatile [
+            (const_int -536813312 [0xffffffffe000e100])
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 62 61 63 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) -1
+     (nil))
+(barrier 63 62 38)
+(note 38 63 39 NOTE_INSN_DELETED)
+(note 39 38 0 NOTE_INSN_DELETED)
+
+;; Function HAL_NVIC_DisableIRQ (HAL_NVIC_DisableIRQ, funcdef_no=332, decl_uid=7664, cgraph_uid=336, symbol_order=335)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; SImode fixup for i25; addr 10, range (0,1018): 0xffffffffe000e100
+;; Emitting minipool after insn 49; address 42; align 4 (bytes)
+;;  Offset 0, min -65536, max 1028 0xffffffffe000e100
+
+
+HAL_NVIC_DisableIRQ
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 100 [cc]
+;;  ref usage 	r0={4d,6u,1e} r1={2d,1u} r2={2d,1u} r3={3d,2u} r13={1d,4u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={1d,1u} 
+;;    total ref usage 47{30d,16u,1e} in 12{12 regular + 0 call} insns.
+(note 1 0 62 NOTE_INSN_DELETED)
+(note 62 1 4 (var_location IRQn (reg:QI 0 r0 [ IRQn ])) NOTE_INSN_VAR_LOCATION)
+(note 4 62 46 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 46 4 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 46 3 2 NOTE_INSN_DELETED)
+(note 3 2 51 2 NOTE_INSN_FUNCTION_BEG)
+(note 51 3 52 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:226 NOTE_INSN_BEGIN_STMT)
+(note 52 51 63 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:229 NOTE_INSN_BEGIN_STMT)
+(note 63 52 53 2 (var_location IRQn (reg:QI 0 r0 [ IRQn ])) NOTE_INSN_VAR_LOCATION)
+(note 53 63 54 2 ../Drivers/CMSIS/Include/core_cm4.h:1717 NOTE_INSN_INLINE_ENTRY)
+(note 54 53 15 2 ../Drivers/CMSIS/Include/core_cm4.h:1719 NOTE_INSN_BEGIN_STMT)
+(insn 15 54 64 2 (parallel [
+            (set (reg:CC 100 cc)
+                (compare:CC (reg:SI 0 r0 [128])
+                    (const_int 0 [0])))
+            (set (reg/v:SI 0 r0 [orig:119 IRQn ] [119])
+                (reg:SI 0 r0 [128]))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1719:6 260 {*movsi_compare0}
+     (nil))
+(note 64 15 65 2 (var_location IRQn (entry_value:QI (reg:QI 0 r0 [ IRQn ]))) NOTE_INSN_VAR_LOCATION)
+(note 65 64 16 2 (var_location IRQn (entry_value:QI (reg:QI 0 r0 [ IRQn ]))) NOTE_INSN_VAR_LOCATION)
+(jump_insn 16 65 17 2 (set (pc)
+        (if_then_else (lt (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 39)
+            (pc))) "../Drivers/CMSIS/Include/core_cm4.h":1719:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 440234148 (nil)))
+ -> 39)
+(note 17 16 21 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 21 17 55 3 NOTE_INSN_DELETED)
+(note 55 21 19 3 ../Drivers/CMSIS/Include/core_cm4.h:1721 NOTE_INSN_BEGIN_STMT)
+(insn 19 55 25 3 (parallel [
+            (set (reg:SI 3 r3 [orig:117 _7 ] [117])
+                (lshiftrt:SI (reg/v:SI 0 r0 [orig:119 IRQn ] [119])
+                    (const_int 5 [0x5])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1721:34 1013 {*thumb2_shiftsi3_short}
+     (nil))
+(insn 25 19 23 3 (set (reg/f:SI 1 r1 [126])
+        (mem:SI (label_ref 69) [0  S4 A32])) "../Drivers/CMSIS/Include/core_cm4.h":1721:43 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int -536813312 [0xffffffffe000e100])
+        (nil)))
+(insn 23 25 26 3 (parallel [
+            (set (reg:SI 2 r2 [125])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1721:45 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUIV (const_int 1 [0x1])
+        (nil)))
+(insn 26 23 22 3 (parallel [
+            (set (reg:SI 3 r3 [127])
+                (plus:SI (reg:SI 3 r3 [orig:117 _7 ] [117])
+                    (const_int 32 [0x20])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1721:43 1017 {*thumb2_addsi_short}
+     (nil))
+(insn 22 26 24 3 (set (reg:SI 0 r0 [124])
+        (and:SI (reg/v:SI 0 r0 [orig:119 IRQn ] [119])
+            (const_int 31 [0x1f]))) "../Drivers/CMSIS/Include/core_cm4.h":1721:81 90 {*arm_andsi3_insn}
+     (nil))
+(insn 24 22 27 3 (set (reg:SI 0 r0 [orig:118 _8 ] [118])
+        (ashift:SI (reg:SI 2 r2 [125])
+            (reg:SI 0 r0 [124]))) "../Drivers/CMSIS/Include/core_cm4.h":1721:45 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [125])
+        (expr_list:REG_EQUAL (ashift:SI (const_int 1 [0x1])
+                (reg:SI 0 r0 [124]))
+            (nil))))
+(insn 27 24 56 3 (set (mem/v:SI (plus:SI (mult:SI (reg:SI 3 r3 [127])
+                    (const_int 4 [0x4]))
+                (reg/f:SI 1 r1 [126])) [1 MEM[(struct NVIC_Type *)3758153984B].ICER[_7]+0 S4 A32])
+        (reg:SI 0 r0 [orig:118 _8 ] [118])) "../Drivers/CMSIS/Include/core_cm4.h":1721:43 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [127])
+        (expr_list:REG_DEAD (reg/f:SI 1 r1 [126])
+            (expr_list:REG_DEAD (reg:SI 0 r0 [orig:118 _8 ] [118])
+                (nil)))))
+(note 56 27 57 3 ../Drivers/CMSIS/Include/core_cm4.h:1722 NOTE_INSN_BEGIN_STMT)
+(note 57 56 58 3 ../Drivers/CMSIS/Include/cmsis_gcc.h:944 NOTE_INSN_INLINE_ENTRY)
+(note 58 57 31 3 ../Drivers/CMSIS/Include/cmsis_gcc.h:946 NOTE_INSN_BEGIN_STMT)
+(insn 31 58 59 3 (parallel [
+            (asm_operands/v ("dsb 0xF") ("") 0 []
+                 []
+                 [] ../Drivers/CMSIS/Include/cmsis_gcc.h:946)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "../Drivers/CMSIS/Include/cmsis_gcc.h":946:3 -1
+     (nil))
+(note 59 31 60 3 ../Drivers/CMSIS/Include/core_cm4.h:1723 NOTE_INSN_BEGIN_STMT)
+(note 60 59 61 3 ../Drivers/CMSIS/Include/cmsis_gcc.h:933 NOTE_INSN_INLINE_ENTRY)
+(note 61 60 35 3 ../Drivers/CMSIS/Include/cmsis_gcc.h:935 NOTE_INSN_BEGIN_STMT)
+(insn 35 61 66 3 (parallel [
+            (asm_operands/v ("isb 0xF") ("") 0 []
+                 []
+                 [] ../Drivers/CMSIS/Include/cmsis_gcc.h:935)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "../Drivers/CMSIS/Include/cmsis_gcc.h":935:3 -1
+     (nil))
+(note 66 35 39 (var_location IRQn (nil)) NOTE_INSN_VAR_LOCATION)
+(code_label 39 66 40 4 17 (nil) [1 uses])
+(note 40 39 47 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 47 40 48 4 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 48 47 49 4 (simple_return) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":230:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 49 48 67)
+(code_label 67 49 68 20 (nil) [0 uses])
+(insn 68 67 69 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) -1
+     (nil))
+(code_label 69 68 70 19 (nil) [0 uses])
+(insn 70 69 71 (unspec_volatile [
+            (const_int -536813312 [0xffffffffe000e100])
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 71 70 72 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) -1
+     (nil))
+(barrier 72 71 43)
+(note 43 72 44 NOTE_INSN_DELETED)
+(note 44 43 0 NOTE_INSN_DELETED)
+
+;; Function HAL_NVIC_SystemReset (HAL_NVIC_SystemReset, funcdef_no=333, decl_uid=7666, cgraph_uid=337, symbol_order=336) (executed once)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; SImode fixup for i12; addr 4, range (0,1018): 0xffffffffe000ed00
+;; SImode fixup for i37; addr 8, range (0,1018): 0x5fa0004
+;; Emitting minipool after insn 47; address 38; align 4 (bytes)
+;;  Offset 0, min -65536, max 1022 0xffffffffe000ed00
+;;  Offset 4, min -65536, max 1026 0x5fa0004
+
+
+HAL_NVIC_SystemReset
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 1 [r1] 2 [r2] 3 [r3]
+;;  ref usage 	r0={1d} r1={2d,2u} r2={3d,2u} r3={3d,2u} r13={1d,3u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 37{27d,10u,0e} in 10{10 regular + 0 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 43 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 43 3 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 43 15 2 NOTE_INSN_FUNCTION_BEG)
+(note 15 2 50 2 NOTE_INSN_DELETED)
+(note 50 15 51 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:239 NOTE_INSN_BEGIN_STMT)
+(note 51 50 52 2 ../Drivers/CMSIS/Include/core_cm4.h:1933 NOTE_INSN_INLINE_ENTRY)
+(note 52 51 53 2 ../Drivers/CMSIS/Include/core_cm4.h:1935 NOTE_INSN_BEGIN_STMT)
+(note 53 52 54 2 ../Drivers/CMSIS/Include/cmsis_gcc.h:944 NOTE_INSN_INLINE_ENTRY)
+(note 54 53 10 2 ../Drivers/CMSIS/Include/cmsis_gcc.h:946 NOTE_INSN_BEGIN_STMT)
+(insn 10 54 55 2 (parallel [
+            (asm_operands/v ("dsb 0xF") ("") 0 []
+                 []
+                 [] ../Drivers/CMSIS/Include/cmsis_gcc.h:946)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "../Drivers/CMSIS/Include/cmsis_gcc.h":946:3 -1
+     (nil))
+(note 55 10 12 2 ../Drivers/CMSIS/Include/core_cm4.h:1937 NOTE_INSN_BEGIN_STMT)
+(insn 12 55 37 2 (set (reg/f:SI 1 r1 [116])
+        (mem:SI (label_ref 64) [0  S4 A32])) "../Drivers/CMSIS/Include/core_cm4.h":1938:32 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int -536810240 [0xffffffffe000ed00])
+        (nil)))
+(insn 37 12 13 2 (set (reg:SI 3 r3 [orig:115 _4 ] [115])
+        (mem:SI (const:SI (plus:SI (label_ref 64)
+                    (const_int 4 [0x4]))) [0  S4 A32])) "../Drivers/CMSIS/Include/core_cm4.h":1937:17 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 100270084 [0x5fa0004])
+        (nil)))
+(insn 13 37 14 2 (set (reg:SI 2 r2 [orig:113 _2 ] [113])
+        (mem/v:SI (plus:SI (reg/f:SI 1 r1 [116])
+                (const_int 12 [0xc])) [1 MEM[(struct SCB_Type *)3758157056B].AIRCR+0 S4 A32])) "../Drivers/CMSIS/Include/core_cm4.h":1938:32 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 14 13 38 2 (set (reg:SI 2 r2 [117])
+        (and:SI (reg:SI 2 r2 [orig:113 _2 ] [113])
+            (const_int 1792 [0x700]))) "../Drivers/CMSIS/Include/core_cm4.h":1938:40 90 {*arm_andsi3_insn}
+     (nil))
+(insn 38 14 18 2 (parallel [
+            (set (reg:SI 3 r3 [orig:115 _4 ] [115])
+                (ior:SI (reg:SI 3 r3 [orig:115 _4 ] [115])
+                    (reg:SI 2 r2 [117])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1937:17 1012 {*thumb2_alusi3_short}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [117])
+        (nil)))
+(insn 18 38 56 2 (set (mem/v:SI (plus:SI (reg/f:SI 1 r1 [116])
+                (const_int 12 [0xc])) [1 MEM[(struct SCB_Type *)3758157056B].AIRCR+0 S4 A32])
+        (reg:SI 3 r3 [orig:115 _4 ] [115])) "../Drivers/CMSIS/Include/core_cm4.h":1937:15 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:115 _4 ] [115])
+        (expr_list:REG_DEAD (reg/f:SI 1 r1 [116])
+            (nil))))
+(note 56 18 57 2 ../Drivers/CMSIS/Include/core_cm4.h:1940 NOTE_INSN_BEGIN_STMT)
+(note 57 56 58 2 ../Drivers/CMSIS/Include/cmsis_gcc.h:944 NOTE_INSN_INLINE_ENTRY)
+(note 58 57 22 2 ../Drivers/CMSIS/Include/cmsis_gcc.h:946 NOTE_INSN_BEGIN_STMT)
+(insn 22 58 28 2 (parallel [
+            (asm_operands/v ("dsb 0xF") ("") 0 []
+                 []
+                 [] ../Drivers/CMSIS/Include/cmsis_gcc.h:946)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "../Drivers/CMSIS/Include/cmsis_gcc.h":946:3 -1
+     (nil))
+(code_label 28 22 23 3 22 (nil) [1 uses])
+(note 23 28 59 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 59 23 60 3 ../Drivers/CMSIS/Include/core_cm4.h:1942 NOTE_INSN_BEGIN_STMT)
+(note 60 59 26 3 ../Drivers/CMSIS/Include/core_cm4.h:1944 NOTE_INSN_BEGIN_STMT)
+(insn 26 60 61 3 (parallel [
+            (asm_input/v ("nop") ../Drivers/CMSIS/Include/core_cm4.h:1944)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1944:5 -1
+     (nil))
+(note 61 26 46 3 ../Drivers/CMSIS/Include/core_cm4.h:1942 NOTE_INSN_BEGIN_STMT)
+(jump_insn 46 61 47 3 (set (pc)
+        (label_ref 28)) 284 {*arm_jump}
+     (nil)
+ -> 28)
+(barrier 47 46 62)
+(code_label 62 47 63 24 (nil) [0 uses])
+(insn 63 62 64 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) -1
+     (nil))
+(code_label 64 63 65 23 (nil) [0 uses])
+(insn 65 64 66 (unspec_volatile [
+            (const_int -536810240 [0xffffffffe000ed00])
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 66 65 67 (unspec_volatile [
+            (const_int 100270084 [0x5fa0004])
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 67 66 68 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) -1
+     (nil))
+(barrier 68 67 40)
+(note 40 68 0 NOTE_INSN_DELETED)
+
+;; Function HAL_SYSTICK_Config (HAL_SYSTICK_Config, funcdef_no=334, decl_uid=7668, cgraph_uid=338, symbol_order=337)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 5 n_edges 5 count 5 (    1)
+df_worklist_dataflow_doublequeue: n_basic_blocks 5 n_edges 5 count 5 (    1)
+;; SImode fixup for i27; addr 18, range (0,1018): 0xffffffffe000ed00
+;; Emitting minipool after insn 74; address 62; align 4 (bytes)
+;;  Offset 0, min -65536, max 1036 0xffffffffe000ed00
+
+
+HAL_SYSTICK_Config
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 4 [r4] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 100 [cc]
+;;  ref usage 	r0={4d,6u} r1={2d,1u} r2={2d,2u} r3={2d,3u} r4={3d,3u} r12={1d,1u} r13={3d,7u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={1d,1u} 
+;;    total ref usage 60{35d,25u,0e} in 20{20 regular + 0 call} insns.
+(note 1 0 99 NOTE_INSN_DELETED)
+(note 99 1 6 (var_location TicksNumb (reg:SI 0 r0 [ TicksNumb ])) NOTE_INSN_VAR_LOCATION)
+(note 6 99 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 6 3 2 NOTE_INSN_DELETED)
+(note 3 2 88 2 NOTE_INSN_FUNCTION_BEG)
+(note 88 3 100 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:251 NOTE_INSN_BEGIN_STMT)
+(note 100 88 89 2 (var_location ticks (reg:SI 0 r0 [ TicksNumb ])) NOTE_INSN_VAR_LOCATION)
+(note 89 100 90 2 ../Drivers/CMSIS/Include/core_cm4.h:2017 NOTE_INSN_INLINE_ENTRY)
+(note 90 89 12 2 ../Drivers/CMSIS/Include/core_cm4.h:2019 NOTE_INSN_BEGIN_STMT)
+(insn 12 90 101 2 (parallel [
+            (set (reg:SI 0 r0 [orig:113 _3 ] [113])
+                (plus:SI (reg:SI 0 r0 [125])
+                    (const_int -1 [0xffffffffffffffff])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":2019:14 1017 {*thumb2_addsi_short}
+     (nil))
+(note 101 12 102 2 (var_location TicksNumb (plus:SI (reg:SI 0 r0 [orig:113 _3 ] [113])
+    (const_int 1 [0x1]))) NOTE_INSN_VAR_LOCATION)
+(note 102 101 15 2 (var_location ticks (plus:SI (reg:SI 0 r0 [orig:113 _3 ] [113])
+    (const_int 1 [0x1]))) NOTE_INSN_VAR_LOCATION)
+(insn 15 102 16 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 0 r0 [orig:113 _3 ] [113])
+            (const_int 16777216 [0x1000000]))) "../Drivers/CMSIS/Include/core_cm4.h":2019:6 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 16 15 17 2 (set (pc)
+        (if_then_else (geu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 54)
+            (pc))) "../Drivers/CMSIS/Include/core_cm4.h":2019:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 365072228 (nil)))
+ -> 54)
+(note 17 16 91 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 91 17 62 3 ../Drivers/CMSIS/Include/core_cm4.h:2024 NOTE_INSN_BEGIN_STMT)
+(insn/f 62 91 63 3 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -4 [0xfffffffffffffffc]))) [6  A8])
+                (unspec:BLK [
+                        (reg:SI 4 r4)
+                    ] UNSPEC_PUSH_MULT))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":250:1 378 {*push_multi}
+     (expr_list:REG_DEAD (reg:SI 4 r4)
+        (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                    (set/f (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -4 [0xfffffffffffffffc])))
+                    (set/f (mem/c:SI (reg/f:SI 13 sp) [6  S4 A32])
+                        (reg:SI 4 r4))
+                ])
+            (nil))))
+(note 63 62 19 3 NOTE_INSN_PROLOGUE_END)
+(insn 19 63 27 3 (set (reg/f:SI 3 r3 [116])
+        (const_int -536813568 [0xffffffffe000e000])) "../Drivers/CMSIS/Include/core_cm4.h":2024:18 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int -536813568 [0xffffffffe000e000])
+        (nil)))
+(insn 27 19 20 3 (set (reg/f:SI 4 r4 [117])
+        (mem:SI (label_ref 112) [0  S4 A32])) "../Drivers/CMSIS/Include/core_cm4.h":1817:46 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int -536810240 [0xffffffffe000ed00])
+        (nil)))
+(insn 20 27 92 3 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [116])
+                (const_int 20 [0x14])) [1 MEM[(struct SysTick_Type *)3758153744B].LOAD+0 S4 A32])
+        (reg:SI 0 r0 [orig:113 _3 ] [113])) "../Drivers/CMSIS/Include/core_cm4.h":2024:18 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [orig:113 _3 ] [113])
+        (nil)))
+(note 92 20 103 3 ../Drivers/CMSIS/Include/core_cm4.h:2025 NOTE_INSN_BEGIN_STMT)
+(note 103 92 104 3 (var_location IRQn (const_int -1 [0xffffffffffffffff])) NOTE_INSN_VAR_LOCATION)
+(note 104 103 93 3 (var_location priority (const_int 15 [0xf])) NOTE_INSN_VAR_LOCATION)
+(note 93 104 94 3 ../Drivers/CMSIS/Include/core_cm4.h:1809 NOTE_INSN_INLINE_ENTRY)
+(note 94 93 95 3 ../Drivers/CMSIS/Include/core_cm4.h:1811 NOTE_INSN_BEGIN_STMT)
+(note 95 94 28 3 ../Drivers/CMSIS/Include/core_cm4.h:1817 NOTE_INSN_BEGIN_STMT)
+(insn 28 95 30 3 (set (reg:SI 12 ip [118])
+        (const_int 240 [0xf0])) "../Drivers/CMSIS/Include/core_cm4.h":1817:46 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 240 [0xf0])
+        (nil)))
+(insn 30 28 105 3 (set (mem/v:QI (plus:SI (reg/f:SI 4 r4 [117])
+                (const_int 35 [0x23])) [0 MEM[(struct SCB_Type *)3758157056B].SHP[11]+0 S1 A8])
+        (reg:QI 12 ip [118])) "../Drivers/CMSIS/Include/core_cm4.h":1817:46 263 {*arm_movqi_insn}
+     (expr_list:REG_DEAD (reg:QI 12 ip [118])
+        (expr_list:REG_DEAD (reg/f:SI 4 r4 [117])
+            (nil))))
+(note 105 30 106 3 (var_location IRQn (nil)) NOTE_INSN_VAR_LOCATION)
+(note 106 105 96 3 (var_location priority (nil)) NOTE_INSN_VAR_LOCATION)
+(note 96 106 35 3 ../Drivers/CMSIS/Include/core_cm4.h:2026 NOTE_INSN_BEGIN_STMT)
+(insn 35 96 39 3 (parallel [
+            (set (reg:SI 2 r2 [121])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":2026:18 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUIV (const_int 0 [0])
+        (nil)))
+(insn 39 35 4 3 (parallel [
+            (set (reg:SI 1 r1 [123])
+                (const_int 7 [0x7]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":2027:18 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUIV (const_int 7 [0x7])
+        (nil)))
+(insn 4 39 107 3 (set (reg:SI 0 r0 [orig:114 <retval> ] [114])
+        (reg:SI 2 r2 [121])) "../Drivers/CMSIS/Include/core_cm4.h":2030:10 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(note 107 4 108 3 (var_location TicksNumb (entry_value:SI (reg:SI 0 r0 [ TicksNumb ]))) NOTE_INSN_VAR_LOCATION)
+(note 108 107 36 3 (var_location ticks (entry_value:SI (reg:SI 0 r0 [ TicksNumb ]))) NOTE_INSN_VAR_LOCATION)
+(insn 36 108 97 3 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [116])
+                (const_int 24 [0x18])) [1 MEM[(struct SysTick_Type *)3758153744B].VAL+0 S4 A64])
+        (reg:SI 2 r2 [121])) "../Drivers/CMSIS/Include/core_cm4.h":2026:18 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [121])
+        (nil)))
+(note 97 36 87 3 ../Drivers/CMSIS/Include/core_cm4.h:2027 NOTE_INSN_BEGIN_STMT)
+(note 87 97 65 3 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 65 87 40 3 (set (reg:SI 4 r4)
+        (mem:SI (post_inc:SI (reg/f:SI 13 sp)) [6  S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":252:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])))
+        (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+            (nil))))
+(insn 40 65 98 3 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [116])
+                (const_int 16 [0x10])) [1 MEM[(struct SysTick_Type *)3758153744B].CTRL+0 S4 A64])
+        (reg:SI 1 r1 [123])) "../Drivers/CMSIS/Include/core_cm4.h":2027:18 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 3 r3 [116])
+        (expr_list:REG_DEAD (reg:SI 1 r1 [123])
+            (nil))))
+(note 98 40 49 3 ../Drivers/CMSIS/Include/core_cm4.h:2030 NOTE_INSN_BEGIN_STMT)
+(insn 49 98 66 3 (use (reg/i:SI 0 r0)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":252:1 -1
+     (nil))
+(jump_insn 66 49 57 3 (simple_return) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":252:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 57 66 54)
+(code_label 54 57 53 4 27 (nil) [1 uses])
+(note 53 54 5 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 5 53 109 4 (parallel [
+            (set (reg:SI 0 r0 [orig:114 <retval> ] [114])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":2021:12 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUAL (const_int 1 [0x1])
+        (nil)))
+(note 109 5 70 4 (var_location ticks (nil)) NOTE_INSN_VAR_LOCATION)
+(insn 70 109 75 4 (use (reg/i:SI 0 r0)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":252:1 -1
+     (nil))
+(jump_insn 75 70 74 4 (simple_return) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":252:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 74 75 110)
+(code_label 110 74 111 33 (nil) [0 uses])
+(insn 111 110 112 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) -1
+     (nil))
+(code_label 112 111 113 32 (nil) [0 uses])
+(insn 113 112 114 (unspec_volatile [
+            (const_int -536810240 [0xffffffffe000ed00])
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 114 113 115 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) -1
+     (nil))
+(barrier 115 114 59)
+(note 59 115 60 NOTE_INSN_DELETED)
+(note 60 59 0 NOTE_INSN_DELETED)
+
+;; Function HAL_NVIC_GetPriorityGrouping (HAL_NVIC_GetPriorityGrouping, funcdef_no=335, decl_uid=7670, cgraph_uid=339, symbol_order=338)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; SImode fixup for i8; addr 0, range (0,1018): 0xffffffffe000ed00
+;; Emitting minipool after insn 26; address 16; align 4 (bytes)
+;;  Offset 0, min -65536, max 1018 0xffffffffe000ed00
+
+
+HAL_NVIC_GetPriorityGrouping
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 3 [r3]
+;;  ref usage 	r0={3d,3u} r1={1d} r2={1d} r3={2d,1u} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 32{25d,7u,0e} in 5{5 regular + 0 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 23 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 23 3 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 23 10 2 NOTE_INSN_FUNCTION_BEG)
+(note 10 2 11 2 NOTE_INSN_DELETED)
+(note 11 10 29 2 NOTE_INSN_DELETED)
+(note 29 11 30 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:280 NOTE_INSN_BEGIN_STMT)
+(note 30 29 31 2 ../Drivers/CMSIS/Include/core_cm4.h:1667 NOTE_INSN_INLINE_ENTRY)
+(note 31 30 8 2 ../Drivers/CMSIS/Include/core_cm4.h:1669 NOTE_INSN_BEGIN_STMT)
+(insn 8 31 9 2 (set (reg/f:SI 3 r3 [116])
+        (mem:SI (label_ref 34) [0  S4 A32])) "../Drivers/CMSIS/Include/core_cm4.h":1669:26 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int -536810240 [0xffffffffe000ed00])
+        (nil)))
+(insn 9 8 16 2 (set (reg:SI 0 r0 [orig:113 _2 ] [113])
+        (mem/v:SI (plus:SI (reg/f:SI 3 r3 [116])
+                (const_int 12 [0xc])) [1 MEM[(struct SCB_Type *)3758157056B].AIRCR+0 S4 A32])) "../Drivers/CMSIS/Include/core_cm4.h":1669:26 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 3 r3 [116])
+        (nil)))
+(insn 16 9 17 2 (set (reg/i:SI 0 r0)
+        (zero_extract:SI (reg:SI 0 r0 [orig:113 _2 ] [113])
+            (const_int 3 [0x3])
+            (const_int 8 [0x8]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":281:1 161 {extzv_t2}
+     (nil))
+(insn 17 16 28 2 (use (reg/i:SI 0 r0)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":281:1 -1
+     (nil))
+(note 28 17 25 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 25 28 26 2 (simple_return) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":281:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 26 25 32)
+(code_label 32 26 33 36 (nil) [0 uses])
+(insn 33 32 34 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) -1
+     (nil))
+(code_label 34 33 35 35 (nil) [0 uses])
+(insn 35 34 36 (unspec_volatile [
+            (const_int -536810240 [0xffffffffe000ed00])
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 36 35 37 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) -1
+     (nil))
+(barrier 37 36 20)
+(note 20 37 21 NOTE_INSN_DELETED)
+(note 21 20 0 NOTE_INSN_DELETED)
+
+;; Function HAL_NVIC_GetPriority (HAL_NVIC_GetPriority, funcdef_no=336, decl_uid=7675, cgraph_uid=340, symbol_order=339)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 9 n_edges 10 count 9 (    1)
+df_worklist_dataflow_doublequeue: n_basic_blocks 9 n_edges 10 count 9 (    1)
+;; SImode fixup for i123; addr 102, range (0,1018): 0xffffffffe000ecfc
+;; Emitting minipool after insn 144; address 122; align 4 (bytes)
+;;  Offset 0, min -65536, max 1120 0xffffffffe000ecfc
+
+
+HAL_NVIC_GetPriority
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 4 [r4] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 100 [cc]
+;;  ref usage 	r0={11d,13u} r1={5d,8u,1e} r2={1d,1u,1e} r3={1d,1u} r4={9d,8u} r12={2d,3u,1e} r13={3d,11u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={3d,3u} 
+;;    total ref usage 104{52d,49u,3e} in 34{34 regular + 0 call} insns.
+(note 1 0 161 NOTE_INSN_DELETED)
+(note 161 1 162 (var_location IRQn (reg:QI 0 r0 [ IRQn ])) NOTE_INSN_VAR_LOCATION)
+(note 162 161 163 (var_location PriorityGroup (reg:SI 1 r1 [ PriorityGroup ])) NOTE_INSN_VAR_LOCATION)
+(note 163 162 164 (var_location pPreemptPriority (reg:SI 2 r2 [ pPreemptPriority ])) NOTE_INSN_VAR_LOCATION)
+(note 164 163 9 (var_location pSubPriority (reg:SI 3 r3 [ pSubPriority ])) NOTE_INSN_VAR_LOCATION)
+(note 9 164 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 9 6 2 NOTE_INSN_DELETED)
+(note 6 2 147 2 NOTE_INSN_FUNCTION_BEG)
+(note 147 6 148 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:307 NOTE_INSN_BEGIN_STMT)
+(note 148 147 165 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:309 NOTE_INSN_BEGIN_STMT)
+(note 165 148 149 2 (var_location IRQn (reg:QI 0 r0 [ IRQn ])) NOTE_INSN_VAR_LOCATION)
+(note 149 165 150 2 ../Drivers/CMSIS/Include/core_cm4.h:1831 NOTE_INSN_INLINE_ENTRY)
+(note 150 149 20 2 ../Drivers/CMSIS/Include/core_cm4.h:1834 NOTE_INSN_BEGIN_STMT)
+(insn 20 150 166 2 (parallel [
+            (set (reg:CC 100 cc)
+                (compare:CC (reg:SI 0 r0 [164])
+                    (const_int 0 [0])))
+            (set (reg/v:SI 0 r0 [orig:135 IRQn ] [135])
+                (reg:SI 0 r0 [164]))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1834:6 260 {*movsi_compare0}
+     (nil))
+(note 166 20 167 2 (var_location IRQn (entry_value:QI (reg:QI 0 r0 [ IRQn ]))) NOTE_INSN_VAR_LOCATION)
+(note 167 166 133 2 (var_location IRQn (entry_value:QI (reg:QI 0 r0 [ IRQn ]))) NOTE_INSN_VAR_LOCATION)
+(insn/f 133 167 134 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -4 [0xfffffffffffffffc]))) [6  A8])
+                (unspec:BLK [
+                        (reg:SI 4 r4)
+                    ] UNSPEC_PUSH_MULT))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":305:1 378 {*push_multi}
+     (expr_list:REG_DEAD (reg:SI 4 r4)
+        (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                    (set/f (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -4 [0xfffffffffffffffc])))
+                    (set/f (mem/c:SI (reg/f:SI 13 sp) [6  S4 A32])
+                        (reg:SI 4 r4))
+                ])
+            (nil))))
+(note 134 133 21 2 NOTE_INSN_PROLOGUE_END)
+(jump_insn 21 134 22 2 (set (pc)
+        (if_then_else (lt (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 35)
+            (pc))) "../Drivers/CMSIS/Include/core_cm4.h":1834:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 440234148 (nil)))
+ -> 35)
+(note 22 21 25 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 25 22 30 3 NOTE_INSN_DELETED)
+(note 30 25 31 3 NOTE_INSN_DELETED)
+(note 31 30 151 3 NOTE_INSN_DELETED)
+(note 151 31 126 3 ../Drivers/CMSIS/Include/core_cm4.h:1836 NOTE_INSN_BEGIN_STMT)
+(insn 126 151 127 3 (set (reg/f:SI 0 r0 [142])
+        (plus:SI (reg/v:SI 0 r0 [orig:135 IRQn ] [135])
+            (const_int -536870912 [0xffffffffe0000000]))) "../Drivers/CMSIS/Include/core_cm4.h":1836:31 7 {*arm_addsi3}
+     (nil))
+(insn 127 126 28 3 (set (reg/f:SI 0 r0 [142])
+        (plus:SI (reg/f:SI 0 r0 [142])
+            (const_int 57600 [0xe100]))) "../Drivers/CMSIS/Include/core_cm4.h":1836:31 7 {*arm_addsi3}
+     (nil))
+(insn 28 127 32 3 (set (reg:SI 0 r0 [orig:145 MEM[(struct NVIC_Type *)3758153984B].IP[_19] ] [145])
+        (zero_extend:SI (mem/v:QI (plus:SI (reg/f:SI 0 r0 [142])
+                    (const_int 768 [0x300])) [0 MEM[(struct NVIC_Type *)3758153984B].IP[_19]+0 S1 A8]))) "../Drivers/CMSIS/Include/core_cm4.h":1836:31 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 32 28 50 3 (parallel [
+            (set (reg:SI 0 r0 [orig:130 _30 ] [130])
+                (lshiftrt:SI (reg:SI 0 r0 [orig:145 MEM[(struct NVIC_Type *)3758153984B].IP[_19] ] [145])
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1836:64 1013 {*thumb2_shiftsi3_short}
+     (nil))
+(code_label 50 32 51 4 39 (nil) [1 uses])
+(note 51 50 168 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 168 51 169 4 (var_location IRQn (nil)) NOTE_INSN_VAR_LOCATION)
+(note 169 168 170 4 (var_location Priority (reg:SI 0 r0 [orig:130 _30 ] [130])) NOTE_INSN_VAR_LOCATION)
+(note 170 169 171 4 (var_location PriorityGroup (reg:SI 1 r1 [ PriorityGroup ])) NOTE_INSN_VAR_LOCATION)
+(note 171 170 172 4 (var_location pPreemptPriority (reg:SI 2 r2 [ pPreemptPriority ])) NOTE_INSN_VAR_LOCATION)
+(note 172 171 152 4 (var_location pSubPriority (reg:SI 3 r3 [ pSubPriority ])) NOTE_INSN_VAR_LOCATION)
+(note 152 172 153 4 ../Drivers/CMSIS/Include/core_cm4.h:1883 NOTE_INSN_INLINE_ENTRY)
+(note 153 152 59 4 ../Drivers/CMSIS/Include/core_cm4.h:1885 NOTE_INSN_BEGIN_STMT)
+(insn 59 153 173 4 (set (reg/v:SI 1 r1 [orig:113 PriorityGroupTmp ] [113])
+        (and:SI (reg/v:SI 1 r1 [orig:136 PriorityGroup ] [136])
+            (const_int 7 [0x7]))) "../Drivers/CMSIS/Include/core_cm4.h":1885:12 90 {*arm_andsi3_insn}
+     (nil))
+(note 173 59 174 4 (var_location PriorityGroup (entry_value:SI (reg:SI 1 r1 [ PriorityGroup ]))) NOTE_INSN_VAR_LOCATION)
+(note 174 173 175 4 (var_location PriorityGroup (entry_value:SI (reg:SI 1 r1 [ PriorityGroup ]))) NOTE_INSN_VAR_LOCATION)
+(note 175 174 154 4 (var_location PriorityGroupTmp (reg/v:SI 1 r1 [orig:113 PriorityGroupTmp ] [113])) NOTE_INSN_VAR_LOCATION)
+(note 154 175 155 4 ../Drivers/CMSIS/Include/core_cm4.h:1886 NOTE_INSN_BEGIN_STMT)
+(note 155 154 156 4 ../Drivers/CMSIS/Include/core_cm4.h:1887 NOTE_INSN_BEGIN_STMT)
+(note 156 155 64 4 ../Drivers/CMSIS/Include/core_cm4.h:1889 NOTE_INSN_BEGIN_STMT)
+(insn 64 156 130 4 (set (reg/v:SI 12 ip [orig:115 PreemptPriorityBits ] [115])
+        (minus:SI (const_int 7 [0x7])
+            (reg/v:SI 1 r1 [orig:113 PriorityGroupTmp ] [113]))) "../Drivers/CMSIS/Include/core_cm4.h":1889:31 45 {*arm_subsi3_insn}
+     (nil))
+(insn 130 64 68 4 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 12 ip [orig:115 PreemptPriorityBits ] [115])
+            (const_int 4 [0x4]))) "../Drivers/CMSIS/Include/core_cm4.h":1889:23 268 {*arm_cmpsi_insn}
+     (nil))
+(insn 68 130 131 4 (set (reg:SI 4 r4 [156])
+        (plus:SI (reg/v:SI 1 r1 [orig:113 PriorityGroupTmp ] [113])
+            (const_int 4 [0x4]))) "../Drivers/CMSIS/Include/core_cm4.h":1890:44 7 {*arm_addsi3}
+     (nil))
+(insn 131 68 176 4 (cond_exec (geu:SI (reg:CC 100 cc)
+            (const_int 0 [0]))
+        (set (reg/v:SI 12 ip [orig:115 PreemptPriorityBits ] [115])
+            (const_int 4 [0x4]))) "../Drivers/CMSIS/Include/core_cm4.h":1889:23 6567 {*p *thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (nil)))
+(note 176 131 157 4 (var_location PreemptPriorityBits (reg/v:SI 12 ip [orig:115 PreemptPriorityBits ] [115])) NOTE_INSN_VAR_LOCATION)
+(note 157 176 71 4 ../Drivers/CMSIS/Include/core_cm4.h:1890 NOTE_INSN_BEGIN_STMT)
+(insn 71 157 72 4 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 4 r4 [156])
+            (const_int 6 [0x6]))) "../Drivers/CMSIS/Include/core_cm4.h":1890:109 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 4 r4 [156])
+        (nil)))
+(jump_insn 72 71 73 4 (set (pc)
+        (if_then_else (leu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 102)
+            (pc))) "../Drivers/CMSIS/Include/core_cm4.h":1890:109 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 102)
+(note 73 72 75 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(note 75 73 78 5 NOTE_INSN_DELETED)
+(note 78 75 74 5 NOTE_INSN_DELETED)
+(insn 74 78 177 5 (parallel [
+            (set (reg:SI 1 r1 [orig:117 iftmp.5_10 ] [117])
+                (plus:SI (reg/v:SI 1 r1 [orig:113 PriorityGroupTmp ] [113])
+                    (const_int -3 [0xfffffffffffffffd])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1890:109 1017 {*thumb2_addsi_short}
+     (nil))
+(note 177 74 76 5 (var_location PriorityGroupTmp (plus:SI (reg:SI 1 r1 [orig:117 iftmp.5_10 ] [117])
+    (const_int 3 [0x3]))) NOTE_INSN_VAR_LOCATION)
+(insn 76 177 77 5 (set (reg:SI 4 r4 [158])
+        (const_int -1 [0xffffffffffffffff])) "../Drivers/CMSIS/Include/core_cm4.h":1893:53 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int -1 [0xffffffffffffffff])
+        (nil)))
+(insn 77 76 79 5 (parallel [
+            (set (reg:SI 4 r4 [157])
+                (ashift:SI (reg:SI 4 r4 [158])
+                    (reg:SI 1 r1 [orig:117 iftmp.5_10 ] [117])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1893:53 1013 {*thumb2_shiftsi3_short}
+     (expr_list:REG_EQUAL (ashift:SI (const_int -1 [0xffffffffffffffff])
+            (reg:SI 1 r1 [orig:117 iftmp.5_10 ] [117]))
+        (nil)))
+(insn 79 77 7 5 (set (reg:SI 4 r4 [orig:134 _43 ] [134])
+        (and:SI (not:SI (reg:SI 4 r4 [157]))
+            (reg:SI 0 r0 [orig:130 _30 ] [130]))) "../Drivers/CMSIS/Include/core_cm4.h":1893:53 100 {andsi_notsi_si}
+     (nil))
+(insn 7 79 178 5 (parallel [
+            (set (reg:SI 0 r0 [orig:130 _30 ] [130])
+                (lshiftrt:SI (reg:SI 0 r0 [orig:130 _30 ] [130])
+                    (reg:SI 1 r1 [orig:117 iftmp.5_10 ] [117])))
+            (clobber (reg:CC 100 cc))
+        ]) 1013 {*thumb2_shiftsi3_short}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [orig:117 iftmp.5_10 ] [117])
+        (nil)))
+(note 178 7 179 (var_location Priority (nil)) NOTE_INSN_VAR_LOCATION)
+(note 179 178 180 (var_location PriorityGroup (entry_value:SI (reg:SI 1 r1 [ PriorityGroup ]))) NOTE_INSN_VAR_LOCATION)
+(note 180 179 181 (var_location pPreemptPriority (reg:SI 2 r2 [ pPreemptPriority ])) NOTE_INSN_VAR_LOCATION)
+(note 181 180 182 (var_location pSubPriority (reg:SI 3 r3 [ pSubPriority ])) NOTE_INSN_VAR_LOCATION)
+(note 182 181 80 (var_location PriorityGroupTmp (and:SI (entry_value:SI (reg:SI 1 r1 [ PriorityGroup ]))
+    (const_int 7 [0x7]))) NOTE_INSN_VAR_LOCATION)
+(code_label 80 182 81 6 40 (nil) [1 uses])
+(note 81 80 86 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(note 86 81 158 6 NOTE_INSN_DELETED)
+(note 158 86 84 6 ../Drivers/CMSIS/Include/core_cm4.h:1892 NOTE_INSN_BEGIN_STMT)
+(insn 84 158 85 6 (set (reg:SI 1 r1 [161])
+        (const_int -1 [0xffffffffffffffff])) "../Drivers/CMSIS/Include/core_cm4.h":1892:53 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int -1 [0xffffffffffffffff])
+        (nil)))
+(insn 85 84 87 6 (set (reg:SI 1 r1 [160])
+        (ashift:SI (reg:SI 1 r1 [161])
+            (reg/v:SI 12 ip [orig:115 PreemptPriorityBits ] [115]))) "../Drivers/CMSIS/Include/core_cm4.h":1892:53 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg/v:SI 12 ip [orig:115 PreemptPriorityBits ] [115])
+        (expr_list:REG_EQUAL (ashift:SI (const_int -1 [0xffffffffffffffff])
+                (reg/v:SI 12 ip [orig:115 PreemptPriorityBits ] [115]))
+            (nil))))
+(insn 87 85 88 6 (set (reg:SI 0 r0 [163])
+        (and:SI (not:SI (reg:SI 1 r1 [160]))
+            (reg:SI 0 r0 [orig:130 _30 ] [130]))) "../Drivers/CMSIS/Include/core_cm4.h":1892:53 100 {andsi_notsi_si}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [160])
+        (expr_list:REG_EQUIV (mem:SI (reg/v/f:SI 2 r2 [orig:137 pPreemptPriority ] [137]) [1 *pPreemptPriority_4(D)+0 S4 A32])
+            (nil))))
+(insn 88 87 159 6 (set (mem:SI (reg/v/f:SI 2 r2 [orig:137 pPreemptPriority ] [137]) [1 *pPreemptPriority_4(D)+0 S4 A32])
+        (reg:SI 0 r0 [163])) "../Drivers/CMSIS/Include/core_cm4.h":1892:21 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v/f:SI 2 r2 [orig:137 pPreemptPriority ] [137])
+        (expr_list:REG_DEAD (reg:SI 0 r0 [163])
+            (nil))))
+(note 159 88 90 6 ../Drivers/CMSIS/Include/core_cm4.h:1893 NOTE_INSN_BEGIN_STMT)
+(insn 90 159 183 6 (set (mem:SI (reg/v/f:SI 3 r3 [orig:138 pSubPriority ] [138]) [1 *pSubPriority_5(D)+0 S4 A32])
+        (reg:SI 4 r4 [orig:134 _43 ] [134])) "../Drivers/CMSIS/Include/core_cm4.h":1893:21 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 4 r4 [orig:134 _43 ] [134])
+        (expr_list:REG_DEAD (reg/v/f:SI 3 r3 [orig:138 pSubPriority ] [138])
+            (nil))))
+(note 183 90 184 6 (var_location Priority (nil)) NOTE_INSN_VAR_LOCATION)
+(note 184 183 185 6 (var_location PriorityGroup (nil)) NOTE_INSN_VAR_LOCATION)
+(note 185 184 186 6 (var_location pPreemptPriority (nil)) NOTE_INSN_VAR_LOCATION)
+(note 186 185 187 6 (var_location pSubPriority (nil)) NOTE_INSN_VAR_LOCATION)
+(note 187 186 188 6 (var_location PreemptPriorityBits (nil)) NOTE_INSN_VAR_LOCATION)
+(note 188 187 146 6 (var_location PriorityGroupTmp (nil)) NOTE_INSN_VAR_LOCATION)
+(note 146 188 136 6 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 136 146 137 6 (set (reg:SI 4 r4)
+        (mem:SI (post_inc:SI (reg/f:SI 13 sp)) [6  S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":310:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 4 [0x4])))
+        (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+            (nil))))
+(jump_insn 137 136 140 6 (simple_return) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":310:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 140 137 189)
+(note 189 140 190 (var_location pPreemptPriority (reg:SI 2 r2 [ pPreemptPriority ])) NOTE_INSN_VAR_LOCATION)
+(note 190 189 191 (var_location pSubPriority (reg:SI 3 r3 [ pSubPriority ])) NOTE_INSN_VAR_LOCATION)
+(note 191 190 192 (var_location Priority (reg:SI 0 r0 [orig:130 _30 ] [130])) NOTE_INSN_VAR_LOCATION)
+(note 192 191 193 (var_location PriorityGroup (entry_value:SI (reg:SI 1 r1 [ PriorityGroup ]))) NOTE_INSN_VAR_LOCATION)
+(note 193 192 194 (var_location pSubPriority (reg:SI 3 r3 [ pSubPriority ])) NOTE_INSN_VAR_LOCATION)
+(note 194 193 195 (var_location PriorityGroupTmp (reg/v:SI 1 r1 [orig:113 PriorityGroupTmp ] [113])) NOTE_INSN_VAR_LOCATION)
+(note 195 194 196 (var_location PreemptPriorityBits (reg/v:SI 12 ip [orig:115 PreemptPriorityBits ] [115])) NOTE_INSN_VAR_LOCATION)
+(note 196 195 102 (var_location pPreemptPriority (reg:SI 2 r2 [ pPreemptPriority ])) NOTE_INSN_VAR_LOCATION)
+(code_label 102 196 101 7 41 (nil) [1 uses])
+(note 101 102 8 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 8 101 141 7 (parallel [
+            (set (reg:SI 4 r4 [orig:134 _43 ] [134])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) 1016 {*thumb2_movsi_shortim}
+     (nil))
+(jump_insn 141 8 142 7 (set (pc)
+        (label_ref 80)) 284 {*arm_jump}
+     (nil)
+ -> 80)
+(barrier 142 141 197)
+(note 197 142 198 (var_location pPreemptPriority (reg:SI 2 r2 [ pPreemptPriority ])) NOTE_INSN_VAR_LOCATION)
+(note 198 197 199 (var_location IRQn (entry_value:QI (reg:QI 0 r0 [ IRQn ]))) NOTE_INSN_VAR_LOCATION)
+(note 199 198 200 (var_location pSubPriority (reg:SI 3 r3 [ pSubPriority ])) NOTE_INSN_VAR_LOCATION)
+(note 200 199 201 (var_location PriorityGroup (nil)) NOTE_INSN_VAR_LOCATION)
+(note 201 200 202 (var_location pPreemptPriority (nil)) NOTE_INSN_VAR_LOCATION)
+(note 202 201 203 (var_location pSubPriority (nil)) NOTE_INSN_VAR_LOCATION)
+(note 203 202 204 (var_location PriorityGroupTmp (nil)) NOTE_INSN_VAR_LOCATION)
+(note 204 203 205 (var_location PreemptPriorityBits (nil)) NOTE_INSN_VAR_LOCATION)
+(note 205 204 206 (var_location Priority (nil)) NOTE_INSN_VAR_LOCATION)
+(note 206 205 35 (var_location PriorityGroup (reg:SI 1 r1 [ PriorityGroup ])) NOTE_INSN_VAR_LOCATION)
+(code_label 35 206 36 8 38 (nil) [1 uses])
+(note 36 35 39 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(note 39 36 41 8 NOTE_INSN_DELETED)
+(note 41 39 42 8 NOTE_INSN_DELETED)
+(note 42 41 47 8 NOTE_INSN_DELETED)
+(note 47 42 48 8 NOTE_INSN_DELETED)
+(note 48 47 160 8 NOTE_INSN_DELETED)
+(note 160 48 123 8 ../Drivers/CMSIS/Include/core_cm4.h:1840 NOTE_INSN_BEGIN_STMT)
+(insn 123 160 40 8 (set (reg/f:SI 4 r4 [151])
+        (mem:SI (label_ref 209) [0  S4 A32])) "../Drivers/CMSIS/Include/core_cm4.h":1840:31 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int -536810244 [0xffffffffe000ecfc])
+        (nil)))
+(insn 40 123 124 8 (set (reg:SI 0 r0 [149])
+        (and:SI (reg/v:SI 0 r0 [orig:135 IRQn ] [135])
+            (const_int 15 [0xf]))) "../Drivers/CMSIS/Include/core_cm4.h":1840:50 90 {*arm_andsi3_insn}
+     (nil))
+(insn 124 40 45 8 (set (reg/f:SI 4 r4 [151])
+        (plus:SI (reg/f:SI 4 r4 [151])
+            (reg:SI 0 r0 [149]))) "../Drivers/CMSIS/Include/core_cm4.h":1840:31 7 {*arm_addsi3}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [149])
+        (nil)))
+(insn 45 124 49 8 (set (reg:SI 0 r0 [orig:154 MEM[(struct SCB_Type *)3758157056B].SHP[_26] ] [154])
+        (zero_extend:SI (mem/v:QI (plus:SI (reg/f:SI 4 r4 [151])
+                    (const_int 24 [0x18])) [0 MEM[(struct SCB_Type *)3758157056B].SHP[_26]+0 S1 A8]))) "../Drivers/CMSIS/Include/core_cm4.h":1840:31 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_DEAD (reg/f:SI 4 r4 [151])
+        (nil)))
+(insn 49 45 143 8 (parallel [
+            (set (reg:SI 0 r0 [orig:130 _30 ] [130])
+                (lshiftrt:SI (reg:SI 0 r0 [orig:154 MEM[(struct SCB_Type *)3758157056B].SHP[_26] ] [154])
+                    (const_int 4 [0x4])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1840:64 1013 {*thumb2_shiftsi3_short}
+     (nil))
+(jump_insn 143 49 144 8 (set (pc)
+        (label_ref 50)) "../Drivers/CMSIS/Include/core_cm4.h":1840:64 284 {*arm_jump}
+     (nil)
+ -> 50)
+(barrier 144 143 207)
+(code_label 207 144 208 44 (nil) [0 uses])
+(insn 208 207 209 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) -1
+     (nil))
+(code_label 209 208 210 43 (nil) [0 uses])
+(insn 210 209 211 (unspec_volatile [
+            (const_int -536810244 [0xffffffffe000ecfc])
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 211 210 212 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) -1
+     (nil))
+(barrier 212 211 128)
+(note 128 212 129 NOTE_INSN_DELETED)
+(note 129 128 0 NOTE_INSN_DELETED)
+
+;; Function HAL_NVIC_SetPendingIRQ (HAL_NVIC_SetPendingIRQ, funcdef_no=337, decl_uid=7679, cgraph_uid=341, symbol_order=340)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; SImode fixup for i25; addr 10, range (0,1018): 0xffffffffe000e100
+;; Emitting minipool after insn 41; address 34; align 4 (bytes)
+;;  Offset 0, min -65536, max 1028 0xffffffffe000e100
+
+
+HAL_NVIC_SetPendingIRQ
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 100 [cc]
+;;  ref usage 	r0={4d,6u,1e} r1={2d,1u} r2={2d,1u} r3={3d,2u} r13={1d,4u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={1d,1u} 
+;;    total ref usage 47{30d,16u,1e} in 10{10 regular + 0 call} insns.
+(note 1 0 48 NOTE_INSN_DELETED)
+(note 48 1 4 (var_location IRQn (reg:QI 0 r0 [ IRQn ])) NOTE_INSN_VAR_LOCATION)
+(note 4 48 38 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 38 4 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 38 3 2 NOTE_INSN_DELETED)
+(note 3 2 43 2 NOTE_INSN_FUNCTION_BEG)
+(note 43 3 44 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:322 NOTE_INSN_BEGIN_STMT)
+(note 44 43 49 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:325 NOTE_INSN_BEGIN_STMT)
+(note 49 44 45 2 (var_location IRQn (reg:QI 0 r0 [ IRQn ])) NOTE_INSN_VAR_LOCATION)
+(note 45 49 46 2 ../Drivers/CMSIS/Include/core_cm4.h:1755 NOTE_INSN_INLINE_ENTRY)
+(note 46 45 15 2 ../Drivers/CMSIS/Include/core_cm4.h:1757 NOTE_INSN_BEGIN_STMT)
+(insn 15 46 50 2 (parallel [
+            (set (reg:CC 100 cc)
+                (compare:CC (reg:SI 0 r0 [128])
+                    (const_int 0 [0])))
+            (set (reg/v:SI 0 r0 [orig:119 IRQn ] [119])
+                (reg:SI 0 r0 [128]))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1757:6 260 {*movsi_compare0}
+     (nil))
+(note 50 15 51 2 (var_location IRQn (entry_value:QI (reg:QI 0 r0 [ IRQn ]))) NOTE_INSN_VAR_LOCATION)
+(note 51 50 16 2 (var_location IRQn (entry_value:QI (reg:QI 0 r0 [ IRQn ]))) NOTE_INSN_VAR_LOCATION)
+(jump_insn 16 51 17 2 (set (pc)
+        (if_then_else (lt (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 31)
+            (pc))) "../Drivers/CMSIS/Include/core_cm4.h":1757:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 440234148 (nil)))
+ -> 31)
+(note 17 16 21 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 21 17 47 3 NOTE_INSN_DELETED)
+(note 47 21 19 3 ../Drivers/CMSIS/Include/core_cm4.h:1759 NOTE_INSN_BEGIN_STMT)
+(insn 19 47 25 3 (parallel [
+            (set (reg:SI 3 r3 [orig:117 _7 ] [117])
+                (lshiftrt:SI (reg/v:SI 0 r0 [orig:119 IRQn ] [119])
+                    (const_int 5 [0x5])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1759:34 1013 {*thumb2_shiftsi3_short}
+     (nil))
+(insn 25 19 22 3 (set (reg/f:SI 1 r1 [126])
+        (mem:SI (label_ref 55) [0  S4 A32])) "../Drivers/CMSIS/Include/core_cm4.h":1759:43 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int -536813312 [0xffffffffe000e100])
+        (nil)))
+(insn 22 25 23 3 (set (reg:SI 0 r0 [124])
+        (and:SI (reg/v:SI 0 r0 [orig:119 IRQn ] [119])
+            (const_int 31 [0x1f]))) "../Drivers/CMSIS/Include/core_cm4.h":1759:81 90 {*arm_andsi3_insn}
+     (nil))
+(insn 23 22 26 3 (parallel [
+            (set (reg:SI 2 r2 [125])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1759:45 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUIV (const_int 1 [0x1])
+        (nil)))
+(insn 26 23 24 3 (parallel [
+            (set (reg:SI 3 r3 [127])
+                (plus:SI (reg:SI 3 r3 [orig:117 _7 ] [117])
+                    (const_int 64 [0x40])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1759:43 1017 {*thumb2_addsi_short}
+     (nil))
+(insn 24 26 27 3 (set (reg:SI 0 r0 [orig:118 _8 ] [118])
+        (ashift:SI (reg:SI 2 r2 [125])
+            (reg:SI 0 r0 [124]))) "../Drivers/CMSIS/Include/core_cm4.h":1759:45 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [125])
+        (expr_list:REG_EQUAL (ashift:SI (const_int 1 [0x1])
+                (reg:SI 0 r0 [124]))
+            (nil))))
+(insn 27 24 52 3 (set (mem/v:SI (plus:SI (mult:SI (reg:SI 3 r3 [127])
+                    (const_int 4 [0x4]))
+                (reg/f:SI 1 r1 [126])) [1 MEM[(struct NVIC_Type *)3758153984B].ISPR[_7]+0 S4 A32])
+        (reg:SI 0 r0 [orig:118 _8 ] [118])) "../Drivers/CMSIS/Include/core_cm4.h":1759:43 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [127])
+        (expr_list:REG_DEAD (reg/f:SI 1 r1 [126])
+            (expr_list:REG_DEAD (reg:SI 0 r0 [orig:118 _8 ] [118])
+                (nil)))))
+(note 52 27 31 (var_location IRQn (nil)) NOTE_INSN_VAR_LOCATION)
+(code_label 31 52 32 4 45 (nil) [1 uses])
+(note 32 31 39 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 39 32 40 4 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 40 39 41 4 (simple_return) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":326:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 41 40 53)
+(code_label 53 41 54 48 (nil) [0 uses])
+(insn 54 53 55 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) -1
+     (nil))
+(code_label 55 54 56 47 (nil) [0 uses])
+(insn 56 55 57 (unspec_volatile [
+            (const_int -536813312 [0xffffffffe000e100])
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 57 56 58 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) -1
+     (nil))
+(barrier 58 57 35)
+(note 35 58 36 NOTE_INSN_DELETED)
+(note 36 35 0 NOTE_INSN_DELETED)
+
+;; Function HAL_NVIC_GetPendingIRQ (HAL_NVIC_GetPendingIRQ, funcdef_no=338, decl_uid=7677, cgraph_uid=342, symbol_order=341)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; SImode fixup for i21; addr 10, range (0,1018): 0xffffffffe000e100
+;; Emitting minipool after insn 52; address 42; align 4 (bytes)
+;;  Offset 0, min -65536, max 1028 0xffffffffe000e100
+
+
+HAL_NVIC_GetPendingIRQ
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 2 [r2] 3 [r3] 100 [cc]
+;;  ref usage 	r0={6d,9u} r1={1d} r2={2d,1u} r3={4d,3u} r13={1d,4u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={1d,1u} 
+;;    total ref usage 51{32d,19u,0e} in 14{14 regular + 0 call} insns.
+(note 1 0 61 NOTE_INSN_DELETED)
+(note 61 1 5 (var_location IRQn (reg:QI 0 r0 [ IRQn ])) NOTE_INSN_VAR_LOCATION)
+(note 5 61 49 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 49 5 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 49 3 2 NOTE_INSN_DELETED)
+(note 3 2 56 2 NOTE_INSN_FUNCTION_BEG)
+(note 56 3 57 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:340 NOTE_INSN_BEGIN_STMT)
+(note 57 56 62 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:343 NOTE_INSN_BEGIN_STMT)
+(note 62 57 58 2 (var_location IRQn (reg:QI 0 r0 [ IRQn ])) NOTE_INSN_VAR_LOCATION)
+(note 58 62 59 2 ../Drivers/CMSIS/Include/core_cm4.h:1736 NOTE_INSN_INLINE_ENTRY)
+(note 59 58 16 2 ../Drivers/CMSIS/Include/core_cm4.h:1738 NOTE_INSN_BEGIN_STMT)
+(insn 16 59 63 2 (parallel [
+            (set (reg:CC 100 cc)
+                (compare:CC (reg:SI 0 r0 [131])
+                    (const_int 0 [0])))
+            (set (reg/v:SI 0 r0 [orig:121 IRQn ] [121])
+                (reg:SI 0 r0 [131]))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1738:6 260 {*movsi_compare0}
+     (nil))
+(note 63 16 64 2 (var_location IRQn (entry_value:QI (reg:QI 0 r0 [ IRQn ]))) NOTE_INSN_VAR_LOCATION)
+(note 64 63 17 2 (var_location IRQn (entry_value:QI (reg:QI 0 r0 [ IRQn ]))) NOTE_INSN_VAR_LOCATION)
+(jump_insn 17 64 18 2 (set (pc)
+        (if_then_else (lt (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 41)
+            (pc))) "../Drivers/CMSIS/Include/core_cm4.h":1738:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 440234148 (nil)))
+ -> 41)
+(note 18 17 25 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 25 18 60 3 NOTE_INSN_DELETED)
+(note 60 25 20 3 ../Drivers/CMSIS/Include/core_cm4.h:1740 NOTE_INSN_BEGIN_STMT)
+(insn 20 60 21 3 (parallel [
+            (set (reg:SI 3 r3 [orig:114 _4 ] [114])
+                (lshiftrt:SI (reg/v:SI 0 r0 [orig:121 IRQn ] [121])
+                    (const_int 5 [0x5])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1740:54 1013 {*thumb2_shiftsi3_short}
+     (nil))
+(insn 21 20 22 3 (set (reg/f:SI 2 r2 [124])
+        (mem:SI (label_ref 68) [0  S4 A32])) "../Drivers/CMSIS/Include/core_cm4.h":1740:35 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int -536813312 [0xffffffffe000e100])
+        (nil)))
+(insn 22 21 26 3 (parallel [
+            (set (reg:SI 3 r3 [125])
+                (plus:SI (reg:SI 3 r3 [orig:114 _4 ] [114])
+                    (const_int 64 [0x40])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1740:35 1017 {*thumb2_addsi_short}
+     (nil))
+(insn 26 22 23 3 (set (reg:SI 0 r0 [128])
+        (and:SI (reg/v:SI 0 r0 [orig:121 IRQn ] [121])
+            (const_int 31 [0x1f]))) "../Drivers/CMSIS/Include/core_cm4.h":1740:91 90 {*arm_andsi3_insn}
+     (nil))
+(insn 23 26 27 3 (set (reg:SI 3 r3 [orig:115 _5 ] [115])
+        (mem/v:SI (plus:SI (mult:SI (reg:SI 3 r3 [125])
+                    (const_int 4 [0x4]))
+                (reg/f:SI 2 r2 [124])) [1 MEM[(struct NVIC_Type *)3758153984B].ISPR[_4]+0 S4 A32])) "../Drivers/CMSIS/Include/core_cm4.h":1740:35 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 2 r2 [124])
+        (nil)))
+(insn 27 23 28 3 (set (reg:SI 0 r0 [129])
+        (lshiftrt:SI (reg:SI 3 r3 [orig:115 _5 ] [115])
+            (reg:SI 0 r0 [128]))) "../Drivers/CMSIS/Include/core_cm4.h":1740:103 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:115 _5 ] [115])
+        (nil)))
+(insn 28 27 53 3 (set (reg:SI 0 r0 [orig:120 <retval> ] [120])
+        (and:SI (reg:SI 0 r0 [129])
+            (const_int 1 [0x1]))) "../Drivers/CMSIS/Include/core_cm4.h":1740:12 90 {*arm_andsi3_insn}
+     (nil))
+(insn 53 28 43 3 (use (reg/i:SI 0 r0)) -1
+     (nil))
+(jump_insn 43 53 44 3 (simple_return) "../Drivers/CMSIS/Include/core_cm4.h":1740:12 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 44 43 41)
+(code_label 41 44 40 4 51 (nil) [1 uses])
+(note 40 41 4 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 4 40 65 4 (parallel [
+            (set (reg:SI 0 r0 [orig:120 <retval> ] [120])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1744:11 1016 {*thumb2_movsi_shortim}
+     (nil))
+(note 65 4 36 4 (var_location IRQn (nil)) NOTE_INSN_VAR_LOCATION)
+(insn 36 65 55 4 (use (reg/i:SI 0 r0)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":344:1 -1
+     (nil))
+(note 55 36 51 4 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 51 55 52 4 (simple_return) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":344:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 52 51 66)
+(code_label 66 52 67 53 (nil) [0 uses])
+(insn 67 66 68 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) -1
+     (nil))
+(code_label 68 67 69 52 (nil) [0 uses])
+(insn 69 68 70 (unspec_volatile [
+            (const_int -536813312 [0xffffffffe000e100])
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 70 69 71 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) -1
+     (nil))
+(barrier 71 70 46)
+(note 46 71 47 NOTE_INSN_DELETED)
+(note 47 46 0 NOTE_INSN_DELETED)
+
+;; Function HAL_NVIC_ClearPendingIRQ (HAL_NVIC_ClearPendingIRQ, funcdef_no=339, decl_uid=7681, cgraph_uid=343, symbol_order=342)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; SImode fixup for i25; addr 10, range (0,1018): 0xffffffffe000e100
+;; Emitting minipool after insn 41; address 34; align 4 (bytes)
+;;  Offset 0, min -65536, max 1028 0xffffffffe000e100
+
+
+HAL_NVIC_ClearPendingIRQ
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 100 [cc]
+;;  ref usage 	r0={4d,6u,1e} r1={2d,1u} r2={2d,1u} r3={3d,2u} r13={1d,4u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={1d,1u} 
+;;    total ref usage 47{30d,16u,1e} in 10{10 regular + 0 call} insns.
+(note 1 0 48 NOTE_INSN_DELETED)
+(note 48 1 4 (var_location IRQn (reg:QI 0 r0 [ IRQn ])) NOTE_INSN_VAR_LOCATION)
+(note 4 48 38 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 38 4 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 38 3 2 NOTE_INSN_DELETED)
+(note 3 2 43 2 NOTE_INSN_FUNCTION_BEG)
+(note 43 3 44 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:356 NOTE_INSN_BEGIN_STMT)
+(note 44 43 49 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:359 NOTE_INSN_BEGIN_STMT)
+(note 49 44 45 2 (var_location IRQn (reg:QI 0 r0 [ IRQn ])) NOTE_INSN_VAR_LOCATION)
+(note 45 49 46 2 ../Drivers/CMSIS/Include/core_cm4.h:1770 NOTE_INSN_INLINE_ENTRY)
+(note 46 45 15 2 ../Drivers/CMSIS/Include/core_cm4.h:1772 NOTE_INSN_BEGIN_STMT)
+(insn 15 46 50 2 (parallel [
+            (set (reg:CC 100 cc)
+                (compare:CC (reg:SI 0 r0 [128])
+                    (const_int 0 [0])))
+            (set (reg/v:SI 0 r0 [orig:119 IRQn ] [119])
+                (reg:SI 0 r0 [128]))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1772:6 260 {*movsi_compare0}
+     (nil))
+(note 50 15 51 2 (var_location IRQn (entry_value:QI (reg:QI 0 r0 [ IRQn ]))) NOTE_INSN_VAR_LOCATION)
+(note 51 50 16 2 (var_location IRQn (entry_value:QI (reg:QI 0 r0 [ IRQn ]))) NOTE_INSN_VAR_LOCATION)
+(jump_insn 16 51 17 2 (set (pc)
+        (if_then_else (lt (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 31)
+            (pc))) "../Drivers/CMSIS/Include/core_cm4.h":1772:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 440234148 (nil)))
+ -> 31)
+(note 17 16 21 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 21 17 47 3 NOTE_INSN_DELETED)
+(note 47 21 19 3 ../Drivers/CMSIS/Include/core_cm4.h:1774 NOTE_INSN_BEGIN_STMT)
+(insn 19 47 25 3 (parallel [
+            (set (reg:SI 3 r3 [orig:117 _7 ] [117])
+                (lshiftrt:SI (reg/v:SI 0 r0 [orig:119 IRQn ] [119])
+                    (const_int 5 [0x5])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1774:34 1013 {*thumb2_shiftsi3_short}
+     (nil))
+(insn 25 19 22 3 (set (reg/f:SI 1 r1 [126])
+        (mem:SI (label_ref 55) [0  S4 A32])) "../Drivers/CMSIS/Include/core_cm4.h":1774:43 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int -536813312 [0xffffffffe000e100])
+        (nil)))
+(insn 22 25 23 3 (set (reg:SI 0 r0 [124])
+        (and:SI (reg/v:SI 0 r0 [orig:119 IRQn ] [119])
+            (const_int 31 [0x1f]))) "../Drivers/CMSIS/Include/core_cm4.h":1774:81 90 {*arm_andsi3_insn}
+     (nil))
+(insn 23 22 26 3 (parallel [
+            (set (reg:SI 2 r2 [125])
+                (const_int 1 [0x1]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1774:45 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUIV (const_int 1 [0x1])
+        (nil)))
+(insn 26 23 24 3 (parallel [
+            (set (reg:SI 3 r3 [127])
+                (plus:SI (reg:SI 3 r3 [orig:117 _7 ] [117])
+                    (const_int 96 [0x60])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1774:43 1017 {*thumb2_addsi_short}
+     (nil))
+(insn 24 26 27 3 (set (reg:SI 0 r0 [orig:118 _8 ] [118])
+        (ashift:SI (reg:SI 2 r2 [125])
+            (reg:SI 0 r0 [124]))) "../Drivers/CMSIS/Include/core_cm4.h":1774:45 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [125])
+        (expr_list:REG_EQUAL (ashift:SI (const_int 1 [0x1])
+                (reg:SI 0 r0 [124]))
+            (nil))))
+(insn 27 24 52 3 (set (mem/v:SI (plus:SI (mult:SI (reg:SI 3 r3 [127])
+                    (const_int 4 [0x4]))
+                (reg/f:SI 1 r1 [126])) [1 MEM[(struct NVIC_Type *)3758153984B].ICPR[_7]+0 S4 A32])
+        (reg:SI 0 r0 [orig:118 _8 ] [118])) "../Drivers/CMSIS/Include/core_cm4.h":1774:43 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [127])
+        (expr_list:REG_DEAD (reg/f:SI 1 r1 [126])
+            (expr_list:REG_DEAD (reg:SI 0 r0 [orig:118 _8 ] [118])
+                (nil)))))
+(note 52 27 31 (var_location IRQn (nil)) NOTE_INSN_VAR_LOCATION)
+(code_label 31 52 32 4 54 (nil) [1 uses])
+(note 32 31 39 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 39 32 40 4 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 40 39 41 4 (simple_return) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":360:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 41 40 53)
+(code_label 53 41 54 57 (nil) [0 uses])
+(insn 54 53 55 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) -1
+     (nil))
+(code_label 55 54 56 56 (nil) [0 uses])
+(insn 56 55 57 (unspec_volatile [
+            (const_int -536813312 [0xffffffffe000e100])
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 57 56 58 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) -1
+     (nil))
+(barrier 58 57 35)
+(note 35 58 36 NOTE_INSN_DELETED)
+(note 36 35 0 NOTE_INSN_DELETED)
+
+;; Function HAL_NVIC_GetActive (HAL_NVIC_GetActive, funcdef_no=340, decl_uid=7683, cgraph_uid=344, symbol_order=343)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; SImode fixup for i20; addr 10, range (0,1018): 0xffffffffe000e100
+;; Emitting minipool after insn 51; address 42; align 4 (bytes)
+;;  Offset 0, min -65536, max 1028 0xffffffffe000e100
+
+
+HAL_NVIC_GetActive
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 2 [r2] 3 [r3] 100 [cc]
+;;  ref usage 	r0={6d,9u} r1={1d} r2={2d,1u} r3={4d,3u} r13={1d,4u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={1d,1u} 
+;;    total ref usage 51{32d,19u,0e} in 14{14 regular + 0 call} insns.
+(note 1 0 59 NOTE_INSN_DELETED)
+(note 59 1 5 (var_location IRQn (reg:QI 0 r0 [ IRQn ])) NOTE_INSN_VAR_LOCATION)
+(note 5 59 48 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 48 5 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 48 3 2 NOTE_INSN_DELETED)
+(note 3 2 55 2 NOTE_INSN_FUNCTION_BEG)
+(note 55 3 60 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:373 NOTE_INSN_BEGIN_STMT)
+(note 60 55 56 2 (var_location IRQn (reg:QI 0 r0 [ IRQn ])) NOTE_INSN_VAR_LOCATION)
+(note 56 60 57 2 ../Drivers/CMSIS/Include/core_cm4.h:1787 NOTE_INSN_INLINE_ENTRY)
+(note 57 56 15 2 ../Drivers/CMSIS/Include/core_cm4.h:1789 NOTE_INSN_BEGIN_STMT)
+(insn 15 57 61 2 (parallel [
+            (set (reg:CC 100 cc)
+                (compare:CC (reg:SI 0 r0 [131])
+                    (const_int 0 [0])))
+            (set (reg/v:SI 0 r0 [orig:121 IRQn ] [121])
+                (reg:SI 0 r0 [131]))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1789:6 260 {*movsi_compare0}
+     (nil))
+(note 61 15 62 2 (var_location IRQn (entry_value:QI (reg:QI 0 r0 [ IRQn ]))) NOTE_INSN_VAR_LOCATION)
+(note 62 61 16 2 (var_location IRQn (entry_value:QI (reg:QI 0 r0 [ IRQn ]))) NOTE_INSN_VAR_LOCATION)
+(jump_insn 16 62 17 2 (set (pc)
+        (if_then_else (lt (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 40)
+            (pc))) "../Drivers/CMSIS/Include/core_cm4.h":1789:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 440234148 (nil)))
+ -> 40)
+(note 17 16 24 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 24 17 58 3 NOTE_INSN_DELETED)
+(note 58 24 19 3 ../Drivers/CMSIS/Include/core_cm4.h:1791 NOTE_INSN_BEGIN_STMT)
+(insn 19 58 20 3 (parallel [
+            (set (reg:SI 3 r3 [orig:114 _4 ] [114])
+                (lshiftrt:SI (reg/v:SI 0 r0 [orig:121 IRQn ] [121])
+                    (const_int 5 [0x5])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1791:54 1013 {*thumb2_shiftsi3_short}
+     (nil))
+(insn 20 19 21 3 (set (reg/f:SI 2 r2 [124])
+        (mem:SI (label_ref 66) [0  S4 A32])) "../Drivers/CMSIS/Include/core_cm4.h":1791:35 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int -536813312 [0xffffffffe000e100])
+        (nil)))
+(insn 21 20 25 3 (parallel [
+            (set (reg:SI 3 r3 [125])
+                (plus:SI (reg:SI 3 r3 [orig:114 _4 ] [114])
+                    (const_int 128 [0x80])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1791:35 1017 {*thumb2_addsi_short}
+     (nil))
+(insn 25 21 22 3 (set (reg:SI 0 r0 [128])
+        (and:SI (reg/v:SI 0 r0 [orig:121 IRQn ] [121])
+            (const_int 31 [0x1f]))) "../Drivers/CMSIS/Include/core_cm4.h":1791:91 90 {*arm_andsi3_insn}
+     (nil))
+(insn 22 25 26 3 (set (reg:SI 3 r3 [orig:115 _5 ] [115])
+        (mem/v:SI (plus:SI (mult:SI (reg:SI 3 r3 [125])
+                    (const_int 4 [0x4]))
+                (reg/f:SI 2 r2 [124])) [1 MEM[(struct NVIC_Type *)3758153984B].IABR[_4]+0 S4 A32])) "../Drivers/CMSIS/Include/core_cm4.h":1791:35 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 2 r2 [124])
+        (nil)))
+(insn 26 22 27 3 (set (reg:SI 0 r0 [129])
+        (lshiftrt:SI (reg:SI 3 r3 [orig:115 _5 ] [115])
+            (reg:SI 0 r0 [128]))) "../Drivers/CMSIS/Include/core_cm4.h":1791:103 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:115 _5 ] [115])
+        (nil)))
+(insn 27 26 52 3 (set (reg:SI 0 r0 [orig:120 <retval> ] [120])
+        (and:SI (reg:SI 0 r0 [129])
+            (const_int 1 [0x1]))) "../Drivers/CMSIS/Include/core_cm4.h":1791:12 90 {*arm_andsi3_insn}
+     (nil))
+(insn 52 27 42 3 (use (reg/i:SI 0 r0)) -1
+     (nil))
+(jump_insn 42 52 43 3 (simple_return) "../Drivers/CMSIS/Include/core_cm4.h":1791:12 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 43 42 40)
+(code_label 40 43 39 4 60 (nil) [1 uses])
+(note 39 40 4 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 4 39 63 4 (parallel [
+            (set (reg:SI 0 r0 [orig:120 <retval> ] [120])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/CMSIS/Include/core_cm4.h":1795:11 1016 {*thumb2_movsi_shortim}
+     (nil))
+(note 63 4 35 4 (var_location IRQn (nil)) NOTE_INSN_VAR_LOCATION)
+(insn 35 63 54 4 (use (reg/i:SI 0 r0)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":374:1 -1
+     (nil))
+(note 54 35 50 4 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 50 54 51 4 (simple_return) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":374:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 51 50 64)
+(code_label 64 51 65 62 (nil) [0 uses])
+(insn 65 64 66 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) -1
+     (nil))
+(code_label 66 65 67 61 (nil) [0 uses])
+(insn 67 66 68 (unspec_volatile [
+            (const_int -536813312 [0xffffffffe000e100])
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 68 67 69 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) -1
+     (nil))
+(barrier 69 68 45)
+(note 45 69 46 NOTE_INSN_DELETED)
+(note 46 45 0 NOTE_INSN_DELETED)
+
+;; Function HAL_SYSTICK_CLKSourceConfig (HAL_SYSTICK_CLKSourceConfig, funcdef_no=341, decl_uid=7685, cgraph_uid=345, symbol_order=344)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+
+HAL_SYSTICK_CLKSourceConfig
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 2 [r2] 3 [r3] 100 [cc]
+;;  ref usage 	r0={1d,1u} r1={1d} r2={2d,2u} r3={4d,5u} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={1d,2u} 
+;;    total ref usage 40{27d,13u,0e} in 7{7 regular + 0 call} insns.
+(note 1 0 45 NOTE_INSN_DELETED)
+(note 45 1 4 (var_location CLKSource (reg:SI 0 r0 [ CLKSource ])) NOTE_INSN_VAR_LOCATION)
+(note 4 45 36 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 36 4 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 36 3 2 NOTE_INSN_DELETED)
+(note 3 2 41 2 NOTE_INSN_FUNCTION_BEG)
+(note 41 3 42 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:387 NOTE_INSN_BEGIN_STMT)
+(note 42 41 12 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:388 NOTE_INSN_BEGIN_STMT)
+(insn 12 42 8 2 (set (reg/f:SI 2 r2 [118])
+        (const_int -536813568 [0xffffffffe000e000])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":390:19 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int -536813568 [0xffffffffe000e000])
+        (nil)))
+(insn 8 12 43 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 0 r0 [122])
+            (const_int 4 [0x4]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":388:6 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [122])
+        (nil)))
+(note 43 8 13 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:390 NOTE_INSN_BEGIN_STMT)
+(insn 13 43 14 2 (set (reg:SI 3 r3 [orig:113 _1 ] [113])
+        (mem/v:SI (plus:SI (reg/f:SI 2 r2 [118])
+                (const_int 16 [0x10])) [1  S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":390:19 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 14 13 44 2 (cond_exec (eq (reg:CC 100 cc)
+            (const_int 0 [0]))
+        (set (reg:SI 3 r3 [orig:114 _2 ] [114])
+            (ior:SI (reg:SI 3 r3 [orig:113 _1 ] [113])
+                (const_int 4 [0x4])))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":390:19 6135 {*p *iorsi3_insn}
+     (nil))
+(note 44 14 24 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:394 NOTE_INSN_BEGIN_STMT)
+(insn 24 44 26 2 (cond_exec (ne (reg:CC 100 cc)
+            (const_int 0 [0]))
+        (set (reg:SI 3 r3 [orig:116 _4 ] [116])
+            (and:SI (reg:SI 3 r3 [orig:115 _3 ] [115])
+                (const_int -5 [0xfffffffffffffffb])))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":394:19 6127 {*p *arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (nil)))
+(insn 26 24 40 2 (set (mem/v:SI (plus:SI (reg/f:SI 2 r2 [120])
+                (const_int 16 [0x10])) [1  S4 A64])
+        (reg:SI 3 r3 [orig:116 _4 ] [116])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":394:19 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:116 _4 ] [116])
+        (expr_list:REG_DEAD (reg/f:SI 2 r2 [120])
+            (nil))))
+(note 40 26 38 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 38 40 39 2 (simple_return) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":396:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 39 38 34)
+(note 34 39 35 NOTE_INSN_DELETED)
+(note 35 34 0 NOTE_INSN_DELETED)
+
+;; Function HAL_SYSTICK_Callback (HAL_SYSTICK_Callback, funcdef_no=343, decl_uid=7689, cgraph_uid=347, symbol_order=346)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 3 n_edges 2 count 3 (    1)
+df_worklist_dataflow_doublequeue: n_basic_blocks 3 n_edges 2 count 3 (    1)
+
+
+HAL_SYSTICK_Callback
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 25{22d,3u,0e} in 1{1 regular + 0 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 10 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 10 3 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 10 14 2 NOTE_INSN_FUNCTION_BEG)
+(note 14 2 11 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:416 NOTE_INSN_BEGIN_STMT)
+(note 11 14 12 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 12 11 13 2 (simple_return) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":416:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 13 12 8)
+(note 8 13 9 NOTE_INSN_DELETED)
+(note 9 8 0 NOTE_INSN_DELETED)
+
+;; Function HAL_SYSTICK_IRQHandler (HAL_SYSTICK_IRQHandler, funcdef_no=342, decl_uid=7687, cgraph_uid=346, symbol_order=345)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 3 n_edges 2 count 3 (    1)
+df_worklist_dataflow_doublequeue: n_basic_blocks 3 n_edges 2 count 3 (    1)
+
+
+HAL_SYSTICK_IRQHandler
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 3 [r3] 12 [ip] 13 [sp] 14 [lr] 15 [pc]
+;;  ref usage 	r0={2d} r1={2d} r2={2d} r3={3d,1u} r12={2d} r13={3d,9u} r14={2d,2u} r15={2d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 119{107d,12u,0e} in 3{2 regular + 1 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 19 2 NOTE_INSN_FUNCTION_BEG)
+(note 19 2 11 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:404 NOTE_INSN_BEGIN_STMT)
+(insn/f 11 19 12 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [6  A8])
+                (unspec:BLK [
+                        (reg:SI 3 r3)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 14 lr))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":403:1 378 {*push_multi}
+     (expr_list:REG_DEAD (reg:SI 14 lr)
+        (expr_list:REG_DEAD (reg:SI 3 r3)
+            (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                        (set/f (reg/f:SI 13 sp)
+                            (plus:SI (reg/f:SI 13 sp)
+                                (const_int -8 [0xfffffffffffffff8])))
+                        (set/f (mem/c:SI (reg/f:SI 13 sp) [6  S4 A32])
+                            (reg:SI 3 r3))
+                        (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                    (const_int 4 [0x4])) [6  S4 A32])
+                            (reg:SI 14 lr))
+                    ])
+                (nil)))))
+(note 12 11 6 2 NOTE_INSN_PROLOGUE_END)
+(call_insn 6 12 18 2 (parallel [
+            (call (mem:SI (symbol_ref/i:SI ("HAL_SYSTICK_Callback") [flags 0x3]  <function_decl 00000000074e4300 HAL_SYSTICK_Callback>) [0 HAL_SYSTICK_Callback S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":404:3 290 {*call_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (nil)
+        (expr_list:REG_CALL_DECL (symbol_ref/i:SI ("HAL_SYSTICK_Callback") [flags 0x3]  <function_decl 00000000074e4300 HAL_SYSTICK_Callback>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(note 18 6 14 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 14 18 17 2 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg:SI 3 r3)
+                (mem/c:SI (reg/f:SI 13 sp) [6  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [6  S4 A32]))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":405:1 381 {*pop_multiple_with_writeback_and_return}
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (expr_list:REG_UNUSED (reg:SI 3 r3)
+            (expr_list:REG_CFA_RESTORE (reg:SI 3 r3)
+                (nil))))
+ -> return)
+(barrier 17 14 9)
+(note 9 17 10 NOTE_INSN_DELETED)
+(note 10 9 0 NOTE_INSN_DELETED)
+
+;; Function HAL_MPU_Enable (HAL_MPU_Enable, funcdef_no=344, decl_uid=7691, cgraph_uid=348, symbol_order=347)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; SImode fixup for i8; addr 0, range (0,1018): 0xffffffffe000ed00
+;; Emitting minipool after insn 28; address 24; align 4 (bytes)
+;;  Offset 0, min -65536, max 1018 0xffffffffe000ed00
+
+
+HAL_MPU_Enable
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 3 [r3]
+;;  ref usage 	r0={2d,2u} r1={1d} r2={1d} r3={2d,1u} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 30{24d,6u,0e} in 6{6 regular + 0 call} insns.
+(note 1 0 38 NOTE_INSN_DELETED)
+(note 38 1 4 (var_location MPU_Control (reg:SI 0 r0 [ MPU_Control ])) NOTE_INSN_VAR_LOCATION)
+(note 4 38 25 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 25 4 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 25 3 2 NOTE_INSN_DELETED)
+(note 3 2 31 2 NOTE_INSN_FUNCTION_BEG)
+(note 31 3 8 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:433 NOTE_INSN_BEGIN_STMT)
+(insn 8 31 7 2 (set (reg/f:SI 3 r3 [115])
+        (mem:SI (label_ref 42) [0  S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":433:13 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int -536810240 [0xffffffffe000ed00])
+        (nil)))
+(insn 7 8 39 2 (set (reg:SI 0 r0 [orig:113 _1 ] [113])
+        (ior:SI (reg:SI 0 r0 [116])
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":433:28 106 {*iorsi3_insn}
+     (nil))
+(note 39 7 9 2 (var_location MPU_Control (entry_value:SI (reg:SI 0 r0 [ MPU_Control ]))) NOTE_INSN_VAR_LOCATION)
+(insn 9 39 32 2 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [115])
+                (const_int 148 [0x94])) [1 MEM[(struct MPU_Type *)3758157200B].CTRL+0 S4 A32])
+        (reg:SI 0 r0 [orig:113 _1 ] [113])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":433:13 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 3 r3 [115])
+        (expr_list:REG_DEAD (reg:SI 0 r0 [orig:113 _1 ] [113])
+            (nil))))
+(note 32 9 33 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:436 NOTE_INSN_BEGIN_STMT)
+(note 33 32 34 2 ../Drivers/CMSIS/Include/cmsis_gcc.h:944 NOTE_INSN_INLINE_ENTRY)
+(note 34 33 13 2 ../Drivers/CMSIS/Include/cmsis_gcc.h:946 NOTE_INSN_BEGIN_STMT)
+(insn 13 34 35 2 (parallel [
+            (asm_operands/v ("dsb 0xF") ("") 0 []
+                 []
+                 [] ../Drivers/CMSIS/Include/cmsis_gcc.h:946)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "../Drivers/CMSIS/Include/cmsis_gcc.h":946:3 -1
+     (nil))
+(note 35 13 36 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:437 NOTE_INSN_BEGIN_STMT)
+(note 36 35 37 2 ../Drivers/CMSIS/Include/cmsis_gcc.h:933 NOTE_INSN_INLINE_ENTRY)
+(note 37 36 17 2 ../Drivers/CMSIS/Include/cmsis_gcc.h:935 NOTE_INSN_BEGIN_STMT)
+(insn 17 37 30 2 (parallel [
+            (asm_operands/v ("isb 0xF") ("") 0 []
+                 []
+                 [] ../Drivers/CMSIS/Include/cmsis_gcc.h:935)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "../Drivers/CMSIS/Include/cmsis_gcc.h":935:3 -1
+     (nil))
+(note 30 17 27 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 27 30 28 2 (simple_return) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":438:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 28 27 40)
+(code_label 40 28 41 71 (nil) [0 uses])
+(insn 41 40 42 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) -1
+     (nil))
+(code_label 42 41 43 70 (nil) [0 uses])
+(insn 43 42 44 (unspec_volatile [
+            (const_int -536810240 [0xffffffffe000ed00])
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 44 43 45 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) -1
+     (nil))
+(barrier 45 44 22)
+(note 22 45 23 NOTE_INSN_DELETED)
+(note 23 22 0 NOTE_INSN_DELETED)
+
+;; Function HAL_MPU_Disable (HAL_MPU_Disable, funcdef_no=345, decl_uid=7693, cgraph_uid=349, symbol_order=348)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; SImode fixup for i10; addr 4, range (0,1018): 0xffffffffe000ed00
+;; Emitting minipool after insn 22; address 18; align 4 (bytes)
+;;  Offset 0, min -65536, max 1022 0xffffffffe000ed00
+
+
+HAL_MPU_Disable
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 2 [r2] 3 [r3]
+;;  ref usage 	r0={1d} r1={1d} r2={2d,1u} r3={2d,1u} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 29{24d,5u,0e} in 5{5 regular + 0 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 19 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 19 3 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 19 25 2 NOTE_INSN_FUNCTION_BEG)
+(note 25 2 26 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:448 NOTE_INSN_BEGIN_STMT)
+(note 26 25 27 2 ../Drivers/CMSIS/Include/cmsis_gcc.h:955 NOTE_INSN_INLINE_ENTRY)
+(note 27 26 8 2 ../Drivers/CMSIS/Include/cmsis_gcc.h:957 NOTE_INSN_BEGIN_STMT)
+(insn 8 27 28 2 (parallel [
+            (asm_operands/v ("dmb 0xF") ("") 0 []
+                 []
+                 [] ../Drivers/CMSIS/Include/cmsis_gcc.h:957)
+            (clobber (mem:BLK (scratch) [0  A8]))
+        ]) "../Drivers/CMSIS/Include/cmsis_gcc.h":957:3 -1
+     (nil))
+(note 28 8 10 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:451 NOTE_INSN_BEGIN_STMT)
+(insn 10 28 11 2 (set (reg/f:SI 3 r3 [113])
+        (mem:SI (label_ref 31) [0  S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":451:14 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int -536810240 [0xffffffffe000ed00])
+        (nil)))
+(insn 11 10 12 2 (parallel [
+            (set (reg:SI 2 r2 [114])
+                (const_int 0 [0]))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":451:14 1016 {*thumb2_movsi_shortim}
+     (expr_list:REG_EQUIV (const_int 0 [0])
+        (nil)))
+(insn 12 11 24 2 (set (mem/v:SI (plus:SI (reg/f:SI 3 r3 [113])
+                (const_int 148 [0x94])) [1 MEM[(struct MPU_Type *)3758157200B].CTRL+0 S4 A32])
+        (reg:SI 2 r2 [114])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":451:14 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 3 r3 [113])
+        (expr_list:REG_DEAD (reg:SI 2 r2 [114])
+            (nil))))
+(note 24 12 21 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 21 24 22 2 (simple_return) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":452:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 22 21 29)
+(code_label 29 22 30 74 (nil) [0 uses])
+(insn 30 29 31 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) -1
+     (nil))
+(code_label 31 30 32 73 (nil) [0 uses])
+(insn 32 31 33 (unspec_volatile [
+            (const_int -536810240 [0xffffffffe000ed00])
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 33 32 34 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) -1
+     (nil))
+(barrier 34 33 16)
+(note 16 34 17 NOTE_INSN_DELETED)
+(note 17 16 0 NOTE_INSN_DELETED)
+
+;; Function HAL_MPU_ConfigRegion (HAL_MPU_ConfigRegion, funcdef_no=346, decl_uid=7695, cgraph_uid=350, symbol_order=349)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 5 n_edges 5 count 5 (    1)
+df_worklist_dataflow_doublequeue: n_basic_blocks 5 n_edges 5 count 5 (    1)
+;; SImode fixup for i10; addr 0, range (0,1018): 0xffffffffe000ed00
+;; Emitting minipool after insn 89; address 118; align 4 (bytes)
+;;  Offset 0, min -65536, max 1018 0xffffffffe000ed00
+
+
+HAL_MPU_ConfigRegion
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 13 [sp] 14 [lr] 15 [pc] 100 [cc]
+;;  ref usage 	r0={1d,11u,1e} r1={2d,5u} r2={4d,6u} r3={13d,12u} r12={4d,4u} r13={3d,7u} r14={2d,3u} r15={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={1d} 
+;;    total ref usage 96{47d,48u,1e} in 30{30 regular + 0 call} insns.
+(note 1 0 119 NOTE_INSN_DELETED)
+(note 119 1 4 (var_location MPU_Init (reg:SI 0 r0 [ MPU_Init ])) NOTE_INSN_VAR_LOCATION)
+(note 4 119 3 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 3 4 14 2 NOTE_INSN_FUNCTION_BEG)
+(note 14 3 103 2 NOTE_INSN_DELETED)
+(note 103 14 104 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:464 NOTE_INSN_BEGIN_STMT)
+(note 104 103 105 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:465 NOTE_INSN_BEGIN_STMT)
+(note 105 104 10 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:468 NOTE_INSN_BEGIN_STMT)
+(insn 10 105 9 2 (set (reg/f:SI 1 r1 [151])
+        (mem:SI (label_ref 122) [0  S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":468:12 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int -536810240 [0xffffffffe000ed00])
+        (nil)))
+(insn 9 10 11 2 (set (reg:SI 3 r3 [orig:114 _2 ] [114])
+        (zero_extend:SI (mem:QI (plus:SI (reg/v/f:SI 0 r0 [orig:150 MPU_Init ] [150])
+                    (const_int 1 [0x1])) [0 MPU_Init_40(D)->Number+0 S1 A8]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":468:22 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 11 9 106 2 (set (mem/v:SI (plus:SI (reg/f:SI 1 r1 [151])
+                (const_int 152 [0x98])) [1 MEM[(struct MPU_Type *)3758157200B].RNR+0 S4 A64])
+        (reg:SI 3 r3 [orig:114 _2 ] [114])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":468:12 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:114 _2 ] [114])
+        (nil)))
+(note 106 11 13 2 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:470 NOTE_INSN_BEGIN_STMT)
+(insn 13 106 15 2 (set (reg:SI 2 r2 [orig:115 _3 ] [115])
+        (zero_extend:SI (mem:QI (reg/v/f:SI 0 r0 [orig:150 MPU_Init ] [150]) [0 MPU_Init_40(D)->Enable+0 S1 A32]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":470:16 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(jump_insn 15 13 16 2 (parallel [
+            (set (pc)
+                (if_then_else (eq (reg:SI 2 r2 [orig:115 _3 ] [115])
+                        (const_int 0 [0]))
+                    (label_ref 58)
+                    (pc)))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":470:6 1024 {*thumb2_cbz}
+     (expr_list:REG_UNUSED (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 58)
+(note 16 15 31 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 31 16 37 3 NOTE_INSN_DELETED)
+(note 37 31 40 3 NOTE_INSN_DELETED)
+(note 40 37 43 3 NOTE_INSN_DELETED)
+(note 43 40 46 3 NOTE_INSN_DELETED)
+(note 46 43 49 3 NOTE_INSN_DELETED)
+(note 49 46 52 3 NOTE_INSN_DELETED)
+(note 52 49 107 3 NOTE_INSN_DELETED)
+(note 107 52 108 3 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:473 NOTE_INSN_BEGIN_STMT)
+(note 108 107 109 3 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:474 NOTE_INSN_BEGIN_STMT)
+(note 109 108 110 3 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:475 NOTE_INSN_BEGIN_STMT)
+(note 110 109 111 3 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:476 NOTE_INSN_BEGIN_STMT)
+(note 111 110 112 3 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:477 NOTE_INSN_BEGIN_STMT)
+(note 112 111 113 3 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:478 NOTE_INSN_BEGIN_STMT)
+(note 113 112 114 3 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:479 NOTE_INSN_BEGIN_STMT)
+(note 114 113 115 3 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:480 NOTE_INSN_BEGIN_STMT)
+(note 115 114 26 3 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:482 NOTE_INSN_BEGIN_STMT)
+(insn 26 115 79 3 (set (reg:SI 3 r3 [orig:116 _4 ] [116])
+        (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:150 MPU_Init ] [150])
+                (const_int 4 [0x4])) [1 MPU_Init_40(D)->BaseAddress+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":482:25 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 0 r0 [orig:150 MPU_Init ] [150])
+                (const_int 4 [0x4])) [1 MPU_Init_40(D)->BaseAddress+0 S4 A32])
+        (nil)))
+(insn/f 79 26 80 3 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -4 [0xfffffffffffffffc]))) [6  A8])
+                (unspec:BLK [
+                        (reg:SI 14 lr)
+                    ] UNSPEC_PUSH_MULT))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":462:1 378 {*push_multi}
+     (expr_list:REG_DEAD (reg:SI 14 lr)
+        (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                    (set/f (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -4 [0xfffffffffffffffc])))
+                    (set/f (mem/c:SI (reg/f:SI 13 sp) [6  S4 A32])
+                        (reg:SI 14 lr))
+                ])
+            (nil))))
+(note 80 79 28 3 NOTE_INSN_PROLOGUE_END)
+(insn 28 80 116 3 (set (mem/v:SI (plus:SI (reg/f:SI 1 r1 [151])
+                (const_int 156 [0x9c])) [1 MEM[(struct MPU_Type *)3758157200B].RBAR+0 S4 A32])
+        (reg:SI 3 r3 [orig:116 _4 ] [116])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":482:15 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:116 _4 ] [116])
+        (nil)))
+(note 116 28 32 3 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:483 NOTE_INSN_BEGIN_STMT)
+(insn 32 116 30 3 (set (reg:SI 3 r3 [orig:155 MPU_Init_40(D)->AccessPermission ] [155])
+        (zero_extend:SI (mem:QI (plus:SI (reg/v/f:SI 0 r0 [orig:150 MPU_Init ] [150])
+                    (const_int 11 [0xb])) [0 MPU_Init_40(D)->AccessPermission+0 S1 A8]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":484:18 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 30 32 45 3 (set (reg:SI 12 ip [orig:153 MPU_Init_40(D)->DisableExec ] [153])
+        (zero_extend:SI (mem:QI (plus:SI (reg/v/f:SI 0 r0 [orig:150 MPU_Init ] [150])
+                    (const_int 12 [0xc])) [0 MPU_Init_40(D)->DisableExec+0 S1 A32]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":483:18 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 45 30 33 3 (set (reg:SI 14 lr [orig:168 MPU_Init_40(D)->IsBufferable ] [168])
+        (zero_extend:SI (mem:QI (plus:SI (reg/v/f:SI 0 r0 [orig:150 MPU_Init ] [150])
+                    (const_int 15 [0xf])) [0 MPU_Init_40(D)->IsBufferable+0 S1 A8]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":488:18 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 33 45 34 3 (parallel [
+            (set (reg:SI 3 r3 [156])
+                (ashift:SI (reg:SI 3 r3 [orig:155 MPU_Init_40(D)->AccessPermission ] [155])
+                    (const_int 24 [0x18])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":484:57 1013 {*thumb2_shiftsi3_short}
+     (nil))
+(insn 34 33 36 3 (set (reg:SI 3 r3 [157])
+        (ior:SI (ashift:SI (reg:SI 12 ip [orig:153 MPU_Init_40(D)->DisableExec ] [153])
+                (const_int 28 [0x1c]))
+            (reg:SI 3 r3 [156]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":483:79 320 {*orr_shiftsi}
+     (expr_list:REG_DEAD (reg:SI 12 ip [orig:153 MPU_Init_40(D)->DisableExec ] [153])
+        (nil)))
+(insn 36 34 35 3 (set (reg:SI 12 ip [orig:159 MPU_Init_40(D)->TypeExtField ] [159])
+        (zero_extend:SI (mem:QI (plus:SI (reg/v/f:SI 0 r0 [orig:150 MPU_Init ] [150])
+                    (const_int 10 [0xa])) [0 MPU_Init_40(D)->TypeExtField+0 S1 A16]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":485:18 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 35 36 38 3 (parallel [
+            (set (reg:SI 3 r3 [158])
+                (ior:SI (reg:SI 3 r3 [157])
+                    (reg:SI 2 r2 [orig:115 _3 ] [115])))
+            (clobber (reg:CC 100 cc))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":490:79 1012 {*thumb2_alusi3_short}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:115 _3 ] [115])
+        (nil)))
+(insn 38 35 39 3 (set (reg:SI 3 r3 [161])
+        (ior:SI (ashift:SI (reg:SI 12 ip [orig:159 MPU_Init_40(D)->TypeExtField ] [159])
+                (const_int 19 [0x13]))
+            (reg:SI 3 r3 [158]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":490:79 320 {*orr_shiftsi}
+     (expr_list:REG_DEAD (reg:SI 12 ip [orig:159 MPU_Init_40(D)->TypeExtField ] [159])
+        (nil)))
+(insn 39 38 42 3 (set (reg:SI 12 ip [orig:162 MPU_Init_40(D)->IsShareable ] [162])
+        (zero_extend:SI (mem:QI (plus:SI (reg/v/f:SI 0 r0 [orig:150 MPU_Init ] [150])
+                    (const_int 13 [0xd])) [0 MPU_Init_40(D)->IsShareable+0 S1 A8]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":486:18 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 42 39 41 3 (set (reg:SI 2 r2 [orig:165 MPU_Init_40(D)->IsCacheable ] [165])
+        (zero_extend:SI (mem:QI (plus:SI (reg/v/f:SI 0 r0 [orig:150 MPU_Init ] [150])
+                    (const_int 14 [0xe])) [0 MPU_Init_40(D)->IsCacheable+0 S1 A16]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":487:18 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 41 42 44 3 (set (reg:SI 3 r3 [164])
+        (ior:SI (ashift:SI (reg:SI 12 ip [orig:162 MPU_Init_40(D)->IsShareable ] [162])
+                (const_int 18 [0x12]))
+            (reg:SI 3 r3 [161]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":490:79 320 {*orr_shiftsi}
+     (expr_list:REG_DEAD (reg:SI 12 ip [orig:162 MPU_Init_40(D)->IsShareable ] [162])
+        (nil)))
+(insn 44 41 48 3 (set (reg:SI 3 r3 [167])
+        (ior:SI (ashift:SI (reg:SI 2 r2 [orig:165 MPU_Init_40(D)->IsCacheable ] [165])
+                (const_int 17 [0x11]))
+            (reg:SI 3 r3 [164]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":490:79 320 {*orr_shiftsi}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:165 MPU_Init_40(D)->IsCacheable ] [165])
+        (nil)))
+(insn 48 44 51 3 (set (reg:SI 12 ip [orig:171 MPU_Init_40(D)->SubRegionDisable ] [171])
+        (zero_extend:SI (mem:QI (plus:SI (reg/v/f:SI 0 r0 [orig:150 MPU_Init ] [150])
+                    (const_int 9 [0x9])) [0 MPU_Init_40(D)->SubRegionDisable+0 S1 A8]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":489:18 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 51 48 47 3 (set (reg:SI 2 r2 [orig:174 MPU_Init_40(D)->Size ] [174])
+        (zero_extend:SI (mem:QI (plus:SI (reg/v/f:SI 0 r0 [orig:150 MPU_Init ] [150])
+                    (const_int 8 [0x8])) [0 MPU_Init_40(D)->Size+0 S1 A32]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":490:18 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_DEAD (reg/v/f:SI 0 r0 [orig:150 MPU_Init ] [150])
+        (nil)))
+(insn 47 51 50 3 (set (reg:SI 3 r3 [170])
+        (ior:SI (ashift:SI (reg:SI 14 lr [orig:168 MPU_Init_40(D)->IsBufferable ] [168])
+                (const_int 16 [0x10]))
+            (reg:SI 3 r3 [167]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":490:79 320 {*orr_shiftsi}
+     (nil))
+(insn 50 47 53 3 (set (reg:SI 3 r3 [173])
+        (ior:SI (ashift:SI (reg:SI 12 ip [orig:171 MPU_Init_40(D)->SubRegionDisable ] [171])
+                (const_int 8 [0x8]))
+            (reg:SI 3 r3 [170]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":490:79 320 {*orr_shiftsi}
+     (expr_list:REG_DEAD (reg:SI 12 ip [orig:171 MPU_Init_40(D)->SubRegionDisable ] [171])
+        (nil)))
+(insn 53 50 55 3 (set (reg:SI 3 r3 [orig:143 _37 ] [143])
+        (ior:SI (ashift:SI (reg:SI 2 r2 [orig:174 MPU_Init_40(D)->Size ] [174])
+                (const_int 1 [0x1]))
+            (reg:SI 3 r3 [173]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":490:79 320 {*orr_shiftsi}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:174 MPU_Init_40(D)->Size ] [174])
+        (nil)))
+(insn 55 53 102 3 (set (mem/v:SI (plus:SI (reg/f:SI 1 r1 [151])
+                (const_int 160 [0xa0])) [1 MEM[(struct MPU_Type *)3758157200B].RASR+0 S4 A64])
+        (reg:SI 3 r3 [orig:143 _37 ] [143])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":483:15 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [orig:143 _37 ] [143])
+        (expr_list:REG_DEAD (reg/f:SI 1 r1 [151])
+            (nil))))
+(note 102 55 82 3 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 82 102 74 3 (parallel [
+            (return)
+            (set/f (reg:SI 15 pc)
+                (mem:SI (post_inc:SI (reg/f:SI 13 sp)) [6  S4 A32]))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":498:1 383 {*ldr_with_return}
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (nil))
+ -> return)
+(barrier 74 82 58)
+(code_label 58 74 59 4 76 (nil) [1 uses])
+(note 59 58 117 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 117 59 63 4 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:495 NOTE_INSN_BEGIN_STMT)
+(insn 63 117 118 4 (set (mem/v:SI (plus:SI (reg/f:SI 1 r1 [151])
+                (const_int 156 [0x9c])) [1 MEM[(struct MPU_Type *)3758157200B].RBAR+0 S4 A32])
+        (reg:SI 2 r2 [orig:115 _3 ] [115])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":495:15 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 118 63 67 4 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c:496 NOTE_INSN_BEGIN_STMT)
+(insn 67 118 90 4 (set (mem/v:SI (plus:SI (reg/f:SI 1 r1 [151])
+                (const_int 160 [0xa0])) [1 MEM[(struct MPU_Type *)3758157200B].RASR+0 S4 A64])
+        (reg:SI 2 r2 [orig:115 _3 ] [115])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_cortex.c":496:15 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [orig:115 _3 ] [115])
+        (expr_list:REG_DEAD (reg/f:SI 1 r1 [151])
+            (nil))))
+(jump_insn 90 67 89 4 (simple_return) 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 89 90 120)
+(code_label 120 89 121 83 (nil) [0 uses])
+(insn 121 120 122 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_ALIGN) -1
+     (nil))
+(code_label 122 121 123 82 (nil) [0 uses])
+(insn 123 122 124 (unspec_volatile [
+            (const_int -536810240 [0xffffffffe000ed00])
+        ] VUNSPEC_POOL_4) -1
+     (nil))
+(insn 124 123 125 (unspec_volatile [
+            (const_int 0 [0])
+        ] VUNSPEC_POOL_END) -1
+     (nil))
+(barrier 125 124 76)
+(note 76 125 77 NOTE_INSN_DELETED)
+(note 77 76 0 NOTE_INSN_DELETED)

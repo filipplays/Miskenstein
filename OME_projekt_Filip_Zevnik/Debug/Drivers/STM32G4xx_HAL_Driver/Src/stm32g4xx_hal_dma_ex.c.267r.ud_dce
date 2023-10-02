@@ -1,0 +1,2340 @@
+
+;; Function HAL_DMAEx_ConfigMuxSync (HAL_DMAEx_ConfigMuxSync, funcdef_no=329, decl_uid=7603, cgraph_uid=333, symbol_order=332)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 8 n_edges 9 count 8 (    1)
+
+
+HAL_DMAEx_ConfigMuxSync
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 100 [cc]
+;;  ref usage 	r0={2d,3u} r1={1d,1u} r2={1d} r3={1d} r7={1d,7u} r13={1d,7u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={2d,2u} r102={1d,7u} r103={1d,6u} r113={1d,1u} r115={1d,2u} r116={1d,1u} r133={1d,1u} r135={3d,1u} r136={1d,4u} r137={1d,5u} r140={1d,1u} r141={1d,1u} r142={1d,1u} r143={1d,1u} r144={1d,1u} r145={1d,1u} r146={1d,1u} r147={1d,1u} r148={1d,1u} r149={1d,1u} r150={1d,1u} r151={1d,1u} r152={1d,1u} r153={1d,1u} r154={1d,1u} r155={1d,1u} r156={1d,1u} r157={1d,2u} 
+;;    total ref usage 122{55d,67u,0e} in 51{51 regular + 0 call} insns.
+;; Reaching defs:
+;;  sparse invalidated 	
+;;  dense invalidated 	0, 1, 2, 3, 4, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25
+;;  reg->defs[] map:	0[0,1] 1[2,2] 2[3,3] 3[4,4] 7[5,5] 13[6,6] 14[7,7] 16[8,8] 17[9,9] 18[10,10] 19[11,11] 20[12,12] 21[13,13] 22[14,14] 23[15,15] 24[16,16] 25[17,17] 26[18,18] 27[19,19] 28[20,20] 29[21,21] 30[22,22] 31[23,23] 100[24,25] 102[26,26] 103[27,27] 113[28,28] 115[29,29] 116[30,30] 133[31,31] 135[32,34] 136[35,35] 137[36,36] 140[37,37] 141[38,38] 142[39,39] 143[40,40] 144[41,41] 145[42,42] 146[43,43] 147[44,44] 148[45,45] 149[46,46] 150[47,47] 151[48,48] 152[49,49] 153[50,50] 154[51,51] 155[52,52] 156[53,53] 157[54,54] 
+
+( )->[0]->( 2 )
+;; bb 0 artificial_defs: { d1(0){ }d2(1){ }d3(2){ }d4(3){ }d5(7){ }d6(13){ }d7(14){ }d8(16){ }d9(17){ }d10(18){ }d11(19){ }d12(20){ }d13(21){ }d14(22){ }d15(23){ }d16(24){ }d17(25){ }d18(26){ }d19(27){ }d20(28){ }d21(29){ }d22(30){ }d23(31){ }d26(102){ }d27(103){ }}
+;; bb 0 artificial_uses: { }
+;; lr  in  	
+;; lr  use 	
+;; lr  def 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;; live  in  	
+;; live  gen 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;; live  kill	
+;; rd  in  	(0) 
+;; rd  gen 	(25) 0[1],1[2],2[3],3[4],7[5],13[6],14[7],16[8],17[9],18[10],19[11],20[12],21[13],22[14],23[15],24[16],25[17],26[18],27[19],28[20],29[21],30[22],31[23],102[26],103[27]
+;; rd  kill	(26) 0[0,1],1[2],2[3],3[4],7[5],13[6],14[7],16[8],17[9],18[10],19[11],20[12],21[13],22[14],23[15],24[16],25[17],26[18],27[19],28[20],29[21],30[22],31[23],102[26],103[27]
+;;  UD chains for artificial uses at top
+;; lr  out 	 0 [r0] 1 [r1] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  out 	 0 [r0] 1 [r1] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; rd  out 	(6) 0[1],1[2],7[5],13[6],102[26],103[27]
+;;  UD chains for artificial uses at bottom
+
+( 0 )->[2]->( 3 5 )
+;; bb 2 artificial_defs: { }
+;; bb 2 artificial_uses: { u0(7){ d5(bb 0 insn -1) }u1(13){ d6(bb 0 insn -1) }u2(102){ d26(bb 0 insn -1) }u3(103){ d27(bb 0 insn -1) }}
+;; lr  in  	 0 [r0] 1 [r1] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  use 	 0 [r0] 1 [r1] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  def 	 100 [cc] 113 136 137 140
+;; live  in  	 0 [r0] 1 [r1] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  gen 	 100 [cc] 113 136 137 140
+;; live  kill	
+;; rd  in  	(6) 0[1],1[2],7[5],13[6],102[26],103[27]
+;; rd  gen 	(5) 100[25],113[28],136[35],137[36],140[37]
+;; rd  kill	(6) 100[24,25],113[28],136[35],137[36],140[37]
+;;  UD chains for artificial uses at top
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 136 137
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 136 137
+;; rd  out 	(6) 7[5],13[6],102[26],103[27],136[35],137[36]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d26(bb 0 insn -1) }
+;;   reg 103 { d27(bb 0 insn -1) }
+
+( 2 )->[3]->( 6 4 )
+;; bb 3 artificial_defs: { }
+;; bb 3 artificial_uses: { u10(7){ d5(bb 0 insn -1) }u11(13){ d6(bb 0 insn -1) }u12(102){ d26(bb 0 insn -1) }u13(103){ d27(bb 0 insn -1) }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 136 137
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 136
+;; lr  def 	 100 [cc] 141
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 136 137
+;; live  gen 	 100 [cc] 141
+;; live  kill	
+;; rd  in  	(6) 7[5],13[6],102[26],103[27],136[35],137[36]
+;; rd  gen 	(2) 100[24],141[38]
+;; rd  kill	(3) 100[24,25],141[38]
+;;  UD chains for artificial uses at top
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 136 137
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 136 137
+;; rd  out 	(6) 7[5],13[6],102[26],103[27],136[35],137[36]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d26(bb 0 insn -1) }
+;;   reg 103 { d27(bb 0 insn -1) }
+
+( 3 )->[4]->( 7 )
+;; bb 4 artificial_defs: { }
+;; bb 4 artificial_uses: { u17(7){ d5(bb 0 insn -1) }u18(13){ d6(bb 0 insn -1) }u19(102){ d26(bb 0 insn -1) }u20(103){ d27(bb 0 insn -1) }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 136 137
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 136 137
+;; lr  def 	 115 116 133 135 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 136 137
+;; live  gen 	 115 116 133 135 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157
+;; live  kill	
+;; rd  in  	(6) 7[5],13[6],102[26],103[27],136[35],137[36]
+;; rd  gen 	(20) 115[29],116[30],133[31],135[32],142[39],143[40],144[41],145[42],146[43],147[44],148[45],149[46],150[47],151[48],152[49],153[50],154[51],155[52],156[53],157[54]
+;; rd  kill	(22) 115[29],116[30],133[31],135[32,33,34],142[39],143[40],144[41],145[42],146[43],147[44],148[45],149[46],150[47],151[48],152[49],153[50],154[51],155[52],156[53],157[54]
+;;  UD chains for artificial uses at top
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 135
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 135
+;; rd  out 	(5) 7[5],13[6],102[26],103[27],135[32]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d26(bb 0 insn -1) }
+;;   reg 103 { d27(bb 0 insn -1) }
+
+( 2 )->[5]->( 7 )
+;; bb 5 artificial_defs: { }
+;; bb 5 artificial_uses: { u49(7){ d5(bb 0 insn -1) }u50(13){ d6(bb 0 insn -1) }u51(102){ d26(bb 0 insn -1) }u52(103){ d27(bb 0 insn -1) }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  def 	 135
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  gen 	 135
+;; live  kill	
+;; rd  in  	(6) 7[5],13[6],102[26],103[27],136[35],137[36]
+;; rd  gen 	(1) 135[34]
+;; rd  kill	(3) 135[32,33,34]
+;;  UD chains for artificial uses at top
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 135
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 135
+;; rd  out 	(5) 7[5],13[6],102[26],103[27],135[34]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d26(bb 0 insn -1) }
+;;   reg 103 { d27(bb 0 insn -1) }
+
+( 3 )->[6]->( 7 )
+;; bb 6 artificial_defs: { }
+;; bb 6 artificial_uses: { u53(7){ d5(bb 0 insn -1) }u54(13){ d6(bb 0 insn -1) }u55(102){ d26(bb 0 insn -1) }u56(103){ d27(bb 0 insn -1) }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  def 	 135
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  gen 	 135
+;; live  kill	
+;; rd  in  	(6) 7[5],13[6],102[26],103[27],136[35],137[36]
+;; rd  gen 	(1) 135[33]
+;; rd  kill	(3) 135[32,33,34]
+;;  UD chains for artificial uses at top
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 135
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 135
+;; rd  out 	(5) 7[5],13[6],102[26],103[27],135[33]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d26(bb 0 insn -1) }
+;;   reg 103 { d27(bb 0 insn -1) }
+
+( 4 6 5 )->[7]->( 1 )
+;; bb 7 artificial_defs: { }
+;; bb 7 artificial_uses: { u57(7){ d5(bb 0 insn -1) }u58(13){ d6(bb 0 insn -1) }u59(102){ d26(bb 0 insn -1) }u60(103){ d27(bb 0 insn -1) }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 135
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 135
+;; lr  def 	 0 [r0]
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 135
+;; live  gen 	 0 [r0]
+;; live  kill	
+;; rd  in  	(7) 7[5],13[6],102[26],103[27],135[32,33,34]
+;; rd  gen 	(1) 0[0]
+;; rd  kill	(2) 0[0,1]
+;;  UD chains for artificial uses at top
+;; lr  out 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  out 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; rd  out 	(5) 0[0],7[5],13[6],102[26],103[27]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d26(bb 0 insn -1) }
+;;   reg 103 { d27(bb 0 insn -1) }
+
+( 7 )->[1]->( )
+;; bb 1 artificial_defs: { }
+;; bb 1 artificial_uses: { u63(0){ d0(bb 7 insn 65) }u64(7){ d5(bb 0 insn -1) }u65(13){ d6(bb 0 insn -1) }u66(102){ d26(bb 0 insn -1) }}
+;; lr  in  	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;; lr  use 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;; lr  def 	
+;; live  in  	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;; live  gen 	
+;; live  kill	
+;; rd  in  	(5) 0[0],7[5],13[6],102[26],103[27]
+;; rd  gen 	(0) 
+;; rd  kill	(0) 
+;;  UD chains for artificial uses at top
+;; lr  out 	
+;; live  out 	
+;; rd  out 	(0) 
+;;  UD chains for artificial uses at bottom
+;;   reg 0 { d0(bb 7 insn 65) }
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d26(bb 0 insn -1) }
+
+Finding needed instructions:
+  Adding insn 22 to worklist
+  Adding insn 18 to worklist
+  Adding insn 28 to worklist
+  Adding insn 56 to worklist
+  Adding insn 51 to worklist
+  Adding insn 34 to worklist
+  Adding insn 66 to worklist
+Finished finding needed instructions:
+  Adding insn 65 to worklist
+Processing use of (reg 135 [ <retval> ]) in insn 65:
+  Adding insn 5 to worklist
+  Adding insn 7 to worklist
+  Adding insn 6 to worklist
+Processing use of (reg 157) in insn 6:
+  Adding insn 54 to worklist
+Processing use of (reg 0 r0) in insn 66:
+Processing use of (reg 115 [ _3 ]) in insn 34:
+  Adding insn 33 to worklist
+Processing use of (reg 136 [ hdma ]) in insn 33:
+  Adding insn 2 to worklist
+Processing use of (reg 0 r0) in insn 2:
+Processing use of (reg 115 [ _3 ]) in insn 51:
+Processing use of (reg 133 [ _22 ]) in insn 51:
+  Adding insn 50 to worklist
+Processing use of (reg 155) in insn 50:
+  Adding insn 48 to worklist
+Processing use of (reg 156 [ _4 ]) in insn 50:
+  Adding insn 49 to worklist
+Processing use of (subreg (reg 116 [ _4 ]) 0) in insn 49:
+Processing use of (reg 152) in insn 48:
+  Adding insn 45 to worklist
+Processing use of (reg 154) in insn 48:
+  Adding insn 47 to worklist
+Processing use of (reg 153 [ pSyncConfig_27(D)->EventEnable ]) in insn 47:
+  Adding insn 46 to worklist
+Processing use of (reg 137 [ pSyncConfig ]) in insn 46:
+  Adding insn 3 to worklist
+Processing use of (reg 1 r1) in insn 3:
+Processing use of (reg 149) in insn 45:
+  Adding insn 42 to worklist
+Processing use of (reg 151) in insn 45:
+  Adding insn 44 to worklist
+Processing use of (reg 150 [ pSyncConfig_27(D)->SyncEnable ]) in insn 44:
+  Adding insn 43 to worklist
+Processing use of (reg 137 [ pSyncConfig ]) in insn 43:
+Processing use of (reg 144) in insn 42:
+  Adding insn 38 to worklist
+Processing use of (reg 148) in insn 42:
+  Adding insn 41 to worklist
+Processing use of (reg 146) in insn 41:
+  Adding insn 40 to worklist
+Processing use of (reg 147 [ pSyncConfig_27(D)->RequestNumber ]) in insn 40:
+  Adding insn 39 to worklist
+Processing use of (reg 137 [ pSyncConfig ]) in insn 39:
+Processing use of (reg 142) in insn 38:
+  Adding insn 36 to worklist
+Processing use of (reg 145 [ pSyncConfig_27(D)->SyncPolarity ]) in insn 38:
+  Adding insn 37 to worklist
+Processing use of (reg 137 [ pSyncConfig ]) in insn 37:
+Processing use of (reg 143 [ pSyncConfig_27(D)->SyncSignalID ]) in insn 36:
+  Adding insn 35 to worklist
+Processing use of (reg 137 [ pSyncConfig ]) in insn 35:
+Processing use of (reg 136 [ hdma ]) in insn 56:
+Processing use of (subreg (reg 157) 0) in insn 56:
+Processing use of (reg 100 cc) in insn 28:
+  Adding insn 27 to worklist
+Processing use of (reg 141 [ hdma_26(D)->Lock ]) in insn 27:
+  Adding insn 26 to worklist
+Processing use of (reg 136 [ hdma ]) in insn 26:
+Processing use of (reg 136 [ hdma ]) in insn 18:
+Processing use of (reg 100 cc) in insn 22:
+  Adding insn 21 to worklist
+Processing use of (reg 113 [ _1 ]) in insn 21:
+  Adding insn 20 to worklist
+Processing use of (subreg (reg 140 [ hdma_26(D)->State ]) 0) in insn 20:
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+HAL_DMAEx_ConfigMuxSync
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 100 [cc]
+;;  ref usage 	r0={2d,3u} r1={1d,1u} r2={1d} r3={1d} r7={1d,7u} r13={1d,7u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={2d,2u} r102={1d,7u} r103={1d,6u} r113={1d,1u} r115={1d,2u} r116={1d,1u} r133={1d,1u} r135={3d,1u} r136={1d,4u} r137={1d,5u} r140={1d,1u} r141={1d,1u} r142={1d,1u} r143={1d,1u} r144={1d,1u} r145={1d,1u} r146={1d,1u} r147={1d,1u} r148={1d,1u} r149={1d,1u} r150={1d,1u} r151={1d,1u} r152={1d,1u} r153={1d,1u} r154={1d,1u} r155={1d,1u} r156={1d,1u} r157={1d,2u} 
+;;    total ref usage 122{55d,67u,0e} in 51{51 regular + 0 call} insns.
+(note 8 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 8 3 2 (set (reg/v/f:SI 136 [ hdma ])
+        (reg:SI 0 r0 [ hdma ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":96:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [ hdma ])
+        (nil)))
+(insn 3 2 4 2 (set (reg/v/f:SI 137 [ pSyncConfig ])
+        (reg:SI 1 r1 [ pSyncConfig ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":96:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [ pSyncConfig ])
+        (nil)))
+(note 4 3 10 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 10 4 11 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":98:3 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":100:3 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":102:3 -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":103:3 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":104:3 -1
+     (nil))
+(debug_insn 15 14 16 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":105:3 -1
+     (nil))
+(debug_insn 16 15 18 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":108:3 -1
+     (nil))
+(insn 18 16 20 2 (set (reg:SI 140 [ hdma_26(D)->State ])
+        (zero_extend:SI (mem/v:QI (plus:SI (reg/v/f:SI 136 [ hdma ])
+                    (const_int 37 [0x25])) [0 hdma_26(D)->State+0 S1 A8]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":108:11 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 20 18 21 2 (set (reg:SI 113 [ _1 ])
+        (zero_extend:SI (subreg:QI (reg:SI 140 [ hdma_26(D)->State ]) 0))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":108:11 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_DEAD (reg:SI 140 [ hdma_26(D)->State ])
+        (nil)))
+(insn 21 20 22 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 113 [ _1 ])
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":108:6 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 113 [ _1 ])
+        (nil)))
+(jump_insn 22 21 23 2 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 71)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":108:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 71)
+(note 23 22 24 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 24 23 25 3 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":111:5 -1
+     (nil))
+(debug_insn 25 24 26 3 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":111:5 -1
+     (nil))
+(insn 26 25 27 3 (set (reg:SI 141 [ hdma_26(D)->Lock ])
+        (zero_extend:SI (mem:QI (plus:SI (reg/v/f:SI 136 [ hdma ])
+                    (const_int 36 [0x24])) [0 hdma_26(D)->Lock+0 S1 A32]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":111:5 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 27 26 28 3 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 141 [ hdma_26(D)->Lock ])
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":111:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 141 [ hdma_26(D)->Lock ])
+        (nil)))
+(jump_insn 28 27 29 3 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 75)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":111:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 233216732 (nil)))
+ -> 75)
+(note 29 28 30 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 30 29 31 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":111:5 -1
+     (nil))
+(debug_insn 31 30 32 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":111:5 -1
+     (nil))
+(debug_insn 32 31 33 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":114:5 -1
+     (nil))
+(insn 33 32 34 4 (set (reg/f:SI 115 [ _3 ])
+        (mem/f:SI (plus:SI (reg/v/f:SI 136 [ hdma ])
+                (const_int 72 [0x48])) [1 hdma_26(D)->DMAmuxChannel+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":114:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 34 33 35 4 (set (reg:SI 116 [ _4 ])
+        (mem/v:SI (reg/f:SI 115 [ _3 ]) [5 _3->CCR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":114:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 35 34 36 4 (set (reg:SI 143 [ pSyncConfig_27(D)->SyncSignalID ])
+        (mem:SI (reg/v/f:SI 137 [ pSyncConfig ]) [5 pSyncConfig_27(D)->SyncSignalID+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":114:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 36 35 37 4 (set (reg:SI 142)
+        (ashift:SI (reg:SI 143 [ pSyncConfig_27(D)->SyncSignalID ])
+            (const_int 24 [0x18]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":114:5 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 143 [ pSyncConfig_27(D)->SyncSignalID ])
+        (nil)))
+(insn 37 36 38 4 (set (reg:SI 145 [ pSyncConfig_27(D)->SyncPolarity ])
+        (mem:SI (plus:SI (reg/v/f:SI 137 [ pSyncConfig ])
+                (const_int 4 [0x4])) [5 pSyncConfig_27(D)->SyncPolarity+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":114:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 38 37 39 4 (set (reg:SI 144)
+        (ior:SI (reg:SI 142)
+            (reg:SI 145 [ pSyncConfig_27(D)->SyncPolarity ]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":114:5 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 145 [ pSyncConfig_27(D)->SyncPolarity ])
+        (expr_list:REG_DEAD (reg:SI 142)
+            (nil))))
+(insn 39 38 40 4 (set (reg:SI 147 [ pSyncConfig_27(D)->RequestNumber ])
+        (mem:SI (plus:SI (reg/v/f:SI 137 [ pSyncConfig ])
+                (const_int 12 [0xc])) [5 pSyncConfig_27(D)->RequestNumber+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":114:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 40 39 41 4 (set (reg:SI 146)
+        (plus:SI (reg:SI 147 [ pSyncConfig_27(D)->RequestNumber ])
+            (const_int -1 [0xffffffffffffffff]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":114:5 7 {*arm_addsi3}
+     (expr_list:REG_DEAD (reg:SI 147 [ pSyncConfig_27(D)->RequestNumber ])
+        (nil)))
+(insn 41 40 42 4 (set (reg:SI 148)
+        (ashift:SI (reg:SI 146)
+            (const_int 19 [0x13]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":114:5 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 146)
+        (nil)))
+(insn 42 41 43 4 (set (reg:SI 149)
+        (ior:SI (reg:SI 144)
+            (reg:SI 148))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":114:5 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 148)
+        (expr_list:REG_DEAD (reg:SI 144)
+            (nil))))
+(insn 43 42 44 4 (set (reg:SI 150 [ pSyncConfig_27(D)->SyncEnable ])
+        (zero_extend:SI (mem:QI (plus:SI (reg/v/f:SI 137 [ pSyncConfig ])
+                    (const_int 8 [0x8])) [0 pSyncConfig_27(D)->SyncEnable+0 S1 A32]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":114:5 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 44 43 45 4 (set (reg:SI 151)
+        (ashift:SI (reg:SI 150 [ pSyncConfig_27(D)->SyncEnable ])
+            (const_int 16 [0x10]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":114:5 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 150 [ pSyncConfig_27(D)->SyncEnable ])
+        (nil)))
+(insn 45 44 46 4 (set (reg:SI 152)
+        (ior:SI (reg:SI 149)
+            (reg:SI 151))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":114:5 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 151)
+        (expr_list:REG_DEAD (reg:SI 149)
+            (nil))))
+(insn 46 45 47 4 (set (reg:SI 153 [ pSyncConfig_27(D)->EventEnable ])
+        (zero_extend:SI (mem:QI (plus:SI (reg/v/f:SI 137 [ pSyncConfig ])
+                    (const_int 9 [0x9])) [0 pSyncConfig_27(D)->EventEnable+0 S1 A8]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":114:5 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_DEAD (reg/v/f:SI 137 [ pSyncConfig ])
+        (nil)))
+(insn 47 46 48 4 (set (reg:SI 154)
+        (ashift:SI (reg:SI 153 [ pSyncConfig_27(D)->EventEnable ])
+            (const_int 9 [0x9]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":114:5 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 153 [ pSyncConfig_27(D)->EventEnable ])
+        (nil)))
+(insn 48 47 49 4 (set (reg:SI 155)
+        (ior:SI (reg:SI 152)
+            (reg:SI 154))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":114:5 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 154)
+        (expr_list:REG_DEAD (reg:SI 152)
+            (nil))))
+(insn 49 48 50 4 (set (reg:SI 156 [ _4 ])
+        (zero_extend:SI (subreg:QI (reg:SI 116 [ _4 ]) 0))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":114:5 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_DEAD (reg:SI 116 [ _4 ])
+        (nil)))
+(insn 50 49 51 4 (set (reg:SI 133 [ _22 ])
+        (ior:SI (reg:SI 155)
+            (reg:SI 156 [ _4 ]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":114:5 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 156 [ _4 ])
+        (expr_list:REG_DEAD (reg:SI 155)
+            (nil))))
+(insn 51 50 52 4 (set (mem/v:SI (reg/f:SI 115 [ _3 ]) [5 _3->CCR+0 S4 A32])
+        (reg:SI 133 [ _22 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":114:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 133 [ _22 ])
+        (expr_list:REG_DEAD (reg/f:SI 115 [ _3 ])
+            (nil))))
+(debug_insn 52 51 53 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":121:5 -1
+     (nil))
+(debug_insn 53 52 54 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":121:5 -1
+     (nil))
+(insn 54 53 56 4 (set (reg:SI 157)
+        (const_int 0 [0])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":121:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 56 54 57 4 (set (mem:QI (plus:SI (reg/v/f:SI 136 [ hdma ])
+                (const_int 36 [0x24])) [0 hdma_26(D)->Lock+0 S1 A32])
+        (subreg:QI (reg:SI 157) 0)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":121:5 263 {*arm_movqi_insn}
+     (expr_list:REG_DEAD (reg/v/f:SI 136 [ hdma ])
+        (nil)))
+(debug_insn 57 56 58 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":121:5 -1
+     (nil))
+(debug_insn 58 57 6 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":123:5 -1
+     (nil))
+(insn 6 58 71 4 (set (reg:SI 135 [ <retval> ])
+        (reg:SI 157)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":123:12 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 157)
+        (expr_list:REG_EQUAL (const_int 0 [0])
+            (nil))))
+      ; pc falls through to BB 7
+(code_label 71 6 70 5 3 (nil) [1 uses])
+(note 70 71 5 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 5 70 75 5 (set (reg:SI 135 [ <retval> ])
+        (const_int 1 [0x1])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":128:12 728 {*thumb2_movsi_vfp}
+     (nil))
+      ; pc falls through to BB 7
+(code_label 75 5 74 6 4 (nil) [1 uses])
+(note 74 75 7 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 7 74 59 6 (set (reg:SI 135 [ <retval> ])
+        (const_int 2 [0x2])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":111:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(code_label 59 7 60 7 2 (nil) [0 uses])
+(note 60 59 65 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 65 60 66 7 (set (reg/i:SI 0 r0)
+        (reg:SI 135 [ <retval> ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":130:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 135 [ <retval> ])
+        (nil)))
+(insn 66 65 0 7 (use (reg/i:SI 0 r0)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":130:1 -1
+     (nil))
+
+;; Function HAL_DMAEx_ConfigMuxRequestGenerator (HAL_DMAEx_ConfigMuxRequestGenerator, funcdef_no=330, decl_uid=7596, cgraph_uid=334, symbol_order=333)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 11 n_edges 14 count 11 (    1)
+
+
+HAL_DMAEx_ConfigMuxRequestGenerator
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 100 [cc]
+;;  ref usage 	r0={2d,3u} r1={1d,1u} r2={1d} r3={1d} r7={1d,10u} r13={1d,10u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={4d,4u} r102={1d,10u} r103={1d,9u} r113={1d,2u} r115={1d,1u} r118={1d,1u} r119={1d,1u} r123={2d,2u} r124={4d,2u} r125={1d,4u} r126={1d,3u} r129={1d,1u} r130={1d,1u} r131={1d,1u} r132={1d,4u} r133={1d,1u} r134={1d,1u} r135={1d,1u} r136={1d,2u} 
+;;    total ref usage 125{50d,75u,0e} in 59{59 regular + 0 call} insns.
+;; Reaching defs:
+;;  sparse invalidated 	
+;;  dense invalidated 	0, 1, 2, 3, 4, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27
+;;  reg->defs[] map:	0[0,1] 1[2,2] 2[3,3] 3[4,4] 7[5,5] 13[6,6] 14[7,7] 16[8,8] 17[9,9] 18[10,10] 19[11,11] 20[12,12] 21[13,13] 22[14,14] 23[15,15] 24[16,16] 25[17,17] 26[18,18] 27[19,19] 28[20,20] 29[21,21] 30[22,22] 31[23,23] 100[24,27] 102[28,28] 103[29,29] 113[30,30] 115[31,31] 118[32,32] 119[33,33] 123[34,35] 124[36,39] 125[40,40] 126[41,41] 129[42,42] 130[43,43] 131[44,44] 132[45,45] 133[46,46] 134[47,47] 135[48,48] 136[49,49] 
+
+( )->[0]->( 2 )
+;; bb 0 artificial_defs: { d1(0){ }d2(1){ }d3(2){ }d4(3){ }d5(7){ }d6(13){ }d7(14){ }d8(16){ }d9(17){ }d10(18){ }d11(19){ }d12(20){ }d13(21){ }d14(22){ }d15(23){ }d16(24){ }d17(25){ }d18(26){ }d19(27){ }d20(28){ }d21(29){ }d22(30){ }d23(31){ }d28(102){ }d29(103){ }}
+;; bb 0 artificial_uses: { }
+;; lr  in  	
+;; lr  use 	
+;; lr  def 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;; live  in  	
+;; live  gen 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;; live  kill	
+;; rd  in  	(0) 
+;; rd  gen 	(25) 0[1],1[2],2[3],3[4],7[5],13[6],14[7],16[8],17[9],18[10],19[11],20[12],21[13],22[14],23[15],24[16],25[17],26[18],27[19],28[20],29[21],30[22],31[23],102[28],103[29]
+;; rd  kill	(26) 0[0,1],1[2],2[3],3[4],7[5],13[6],14[7],16[8],17[9],18[10],19[11],20[12],21[13],22[14],23[15],24[16],25[17],26[18],27[19],28[20],29[21],30[22],31[23],102[28],103[29]
+;;  UD chains for artificial uses at top
+;; lr  out 	 0 [r0] 1 [r1] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  out 	 0 [r0] 1 [r1] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; rd  out 	(6) 0[1],1[2],7[5],13[6],102[28],103[29]
+;;  UD chains for artificial uses at bottom
+
+( 0 )->[2]->( 3 8 )
+;; bb 2 artificial_defs: { }
+;; bb 2 artificial_uses: { u0(7){ d5(bb 0 insn -1) }u1(13){ d6(bb 0 insn -1) }u2(102){ d28(bb 0 insn -1) }u3(103){ d29(bb 0 insn -1) }}
+;; lr  in  	 0 [r0] 1 [r1] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  use 	 0 [r0] 1 [r1] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  def 	 100 [cc] 124 125 126 129
+;; live  in  	 0 [r0] 1 [r1] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  gen 	 100 [cc] 124 125 126 129
+;; live  kill	
+;; rd  in  	(6) 0[1],1[2],7[5],13[6],102[28],103[29]
+;; rd  gen 	(5) 100[27],124[37],125[40],126[41],129[42]
+;; rd  kill	(11) 100[24,25,26,27],124[36,37,38,39],125[40],126[41],129[42]
+;;  UD chains for artificial uses at top
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 124 125 126
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 124 125 126
+;; rd  out 	(7) 7[5],13[6],102[28],103[29],124[37],125[40],126[41]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d28(bb 0 insn -1) }
+;;   reg 103 { d29(bb 0 insn -1) }
+
+( 2 )->[3]->( 4 10 )
+;; bb 3 artificial_defs: { }
+;; bb 3 artificial_uses: { u10(7){ d5(bb 0 insn -1) }u11(13){ d6(bb 0 insn -1) }u12(102){ d28(bb 0 insn -1) }u13(103){ d29(bb 0 insn -1) }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 124 125 126
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 125
+;; lr  def 	 100 [cc] 113
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 124 125 126
+;; live  gen 	 100 [cc] 113
+;; live  kill	
+;; rd  in  	(7) 7[5],13[6],102[28],103[29],124[37],125[40],126[41]
+;; rd  gen 	(2) 100[26],113[30]
+;; rd  kill	(5) 100[24,25,26,27],113[30]
+;;  UD chains for artificial uses at top
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 113 124 125 126
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 113 124 125 126
+;; rd  out 	(8) 7[5],13[6],102[28],103[29],113[30],124[37],125[40],126[41]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d28(bb 0 insn -1) }
+;;   reg 103 { d29(bb 0 insn -1) }
+
+( 3 )->[4]->( 9 5 )
+;; bb 4 artificial_defs: { }
+;; bb 4 artificial_uses: { u17(7){ d5(bb 0 insn -1) }u18(13){ d6(bb 0 insn -1) }u19(102){ d28(bb 0 insn -1) }u20(103){ d29(bb 0 insn -1) }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 113 125 126
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 125
+;; lr  def 	 100 [cc] 130
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 113 125 126
+;; live  gen 	 100 [cc] 130
+;; live  kill	
+;; rd  in  	(8) 7[5],13[6],102[28],103[29],113[30],124[37],125[40],126[41]
+;; rd  gen 	(2) 100[25],130[43]
+;; rd  kill	(5) 100[24,25,26,27],130[43]
+;;  UD chains for artificial uses at top
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 113 125 126
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 113 125 126
+;; rd  out 	(7) 7[5],13[6],102[28],103[29],113[30],125[40],126[41]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d28(bb 0 insn -1) }
+;;   reg 103 { d29(bb 0 insn -1) }
+
+( 4 )->[5]->( 7 6 )
+;; bb 5 artificial_defs: { }
+;; bb 5 artificial_uses: { u24(7){ d5(bb 0 insn -1) }u25(13){ d6(bb 0 insn -1) }u26(102){ d28(bb 0 insn -1) }u27(103){ d29(bb 0 insn -1) }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 113 125 126
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 126
+;; lr  def 	 100 [cc] 115 123 131 132 133
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 113 125 126
+;; live  gen 	 100 [cc] 115 123 131 132 133
+;; live  kill	
+;; rd  in  	(7) 7[5],13[6],102[28],103[29],113[30],125[40],126[41]
+;; rd  gen 	(6) 100[24],115[31],123[35],131[44],132[45],133[46]
+;; rd  kill	(10) 100[24,25,26,27],115[31],123[34,35],131[44],132[45],133[46]
+;;  UD chains for artificial uses at top
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 113 115 123 125 126 132
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 113 115 123 125 126 132
+;; rd  out 	(10) 7[5],13[6],102[28],103[29],113[30],115[31],123[35],125[40],126[41],132[45]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d28(bb 0 insn -1) }
+;;   reg 103 { d29(bb 0 insn -1) }
+
+( 5 )->[6]->( 7 )
+;; bb 6 artificial_defs: { }
+;; bb 6 artificial_uses: { u36(7){ d5(bb 0 insn -1) }u37(13){ d6(bb 0 insn -1) }u38(102){ d28(bb 0 insn -1) }u39(103){ d29(bb 0 insn -1) }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 113 115 123 125 126 132
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 123 132
+;; lr  def 	 119 123
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 113 115 123 125 126 132
+;; live  gen 	 119 123
+;; live  kill	
+;; rd  in  	(10) 7[5],13[6],102[28],103[29],113[30],115[31],123[35],125[40],126[41],132[45]
+;; rd  gen 	(2) 119[33],123[34]
+;; rd  kill	(3) 119[33],123[34,35]
+;;  UD chains for artificial uses at top
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 113 115 123 125 126
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 113 115 123 125 126
+;; rd  out 	(9) 7[5],13[6],102[28],103[29],113[30],115[31],123[34],125[40],126[41]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d28(bb 0 insn -1) }
+;;   reg 103 { d29(bb 0 insn -1) }
+
+( 6 5 )->[7]->( 10 )
+;; bb 7 artificial_defs: { }
+;; bb 7 artificial_uses: { u43(7){ d5(bb 0 insn -1) }u44(13){ d6(bb 0 insn -1) }u45(102){ d28(bb 0 insn -1) }u46(103){ d29(bb 0 insn -1) }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 113 115 123 125 126
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 113 115 123 125 126
+;; lr  def 	 118 124 134 135 136
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 113 115 123 125 126
+;; live  gen 	 118 124 134 135 136
+;; live  kill	
+;; rd  in  	(11) 7[5],13[6],102[28],103[29],113[30],115[31],123[34,35],125[40],126[41],132[45]
+;; rd  gen 	(5) 118[32],124[36],134[47],135[48],136[49]
+;; rd  kill	(8) 118[32],124[36,37,38,39],134[47],135[48],136[49]
+;;  UD chains for artificial uses at top
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 124
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 124
+;; rd  out 	(5) 7[5],13[6],102[28],103[29],124[36]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d28(bb 0 insn -1) }
+;;   reg 103 { d29(bb 0 insn -1) }
+
+( 2 )->[8]->( 10 )
+;; bb 8 artificial_defs: { }
+;; bb 8 artificial_uses: { u57(7){ d5(bb 0 insn -1) }u58(13){ d6(bb 0 insn -1) }u59(102){ d28(bb 0 insn -1) }u60(103){ d29(bb 0 insn -1) }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  def 	 124
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  gen 	 124
+;; live  kill	
+;; rd  in  	(7) 7[5],13[6],102[28],103[29],124[37],125[40],126[41]
+;; rd  gen 	(1) 124[39]
+;; rd  kill	(4) 124[36,37,38,39]
+;;  UD chains for artificial uses at top
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 124
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 124
+;; rd  out 	(5) 7[5],13[6],102[28],103[29],124[39]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d28(bb 0 insn -1) }
+;;   reg 103 { d29(bb 0 insn -1) }
+
+( 4 )->[9]->( 10 )
+;; bb 9 artificial_defs: { }
+;; bb 9 artificial_uses: { u61(7){ d5(bb 0 insn -1) }u62(13){ d6(bb 0 insn -1) }u63(102){ d28(bb 0 insn -1) }u64(103){ d29(bb 0 insn -1) }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  def 	 124
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  gen 	 124
+;; live  kill	
+;; rd  in  	(7) 7[5],13[6],102[28],103[29],113[30],125[40],126[41]
+;; rd  gen 	(1) 124[38]
+;; rd  kill	(4) 124[36,37,38,39]
+;;  UD chains for artificial uses at top
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 124
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 124
+;; rd  out 	(5) 7[5],13[6],102[28],103[29],124[38]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d28(bb 0 insn -1) }
+;;   reg 103 { d29(bb 0 insn -1) }
+
+( 3 9 7 8 )->[10]->( 1 )
+;; bb 10 artificial_defs: { }
+;; bb 10 artificial_uses: { u65(7){ d5(bb 0 insn -1) }u66(13){ d6(bb 0 insn -1) }u67(102){ d28(bb 0 insn -1) }u68(103){ d29(bb 0 insn -1) }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 124
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 124
+;; lr  def 	 0 [r0]
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 124
+;; live  gen 	 0 [r0]
+;; live  kill	
+;; rd  in  	(11) 7[5],13[6],102[28],103[29],113[30],124[36,37,38,39],125[40],126[41]
+;; rd  gen 	(1) 0[0]
+;; rd  kill	(2) 0[0,1]
+;;  UD chains for artificial uses at top
+;; lr  out 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  out 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; rd  out 	(5) 0[0],7[5],13[6],102[28],103[29]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d28(bb 0 insn -1) }
+;;   reg 103 { d29(bb 0 insn -1) }
+
+( 10 )->[1]->( )
+;; bb 1 artificial_defs: { }
+;; bb 1 artificial_uses: { u71(0){ d0(bb 10 insn 78) }u72(7){ d5(bb 0 insn -1) }u73(13){ d6(bb 0 insn -1) }u74(102){ d28(bb 0 insn -1) }}
+;; lr  in  	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;; lr  use 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;; lr  def 	
+;; live  in  	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;; live  gen 	
+;; live  kill	
+;; rd  in  	(5) 0[0],7[5],13[6],102[28],103[29]
+;; rd  gen 	(0) 
+;; rd  kill	(0) 
+;;  UD chains for artificial uses at top
+;; lr  out 	
+;; live  out 	
+;; rd  out 	(0) 
+;;  UD chains for artificial uses at bottom
+;;   reg 0 { d0(bb 10 insn 78) }
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d28(bb 0 insn -1) }
+
+Finding needed instructions:
+  Adding insn 20 to worklist
+  Adding insn 16 to worklist
+  Adding insn 24 to worklist
+  Adding insn 30 to worklist
+  Adding insn 53 to worklist
+  Adding insn 44 to worklist
+  Adding insn 69 to worklist
+  Adding insn 64 to worklist
+  Adding insn 79 to worklist
+Finished finding needed instructions:
+  Adding insn 78 to worklist
+Processing use of (reg 124 [ <retval> ]) in insn 78:
+  Adding insn 6 to worklist
+  Adding insn 7 to worklist
+  Adding insn 18 to worklist
+  Adding insn 5 to worklist
+Processing use of (reg 136) in insn 5:
+  Adding insn 67 to worklist
+Processing use of (subreg (reg 129 [ hdma_15(D)->State ]) 0) in insn 18:
+Processing use of (reg 0 r0) in insn 79:
+Processing use of (reg 113 [ _2 ]) in insn 64:
+  Adding insn 22 to worklist
+Processing use of (reg 118 [ _11 ]) in insn 64:
+  Adding insn 63 to worklist
+Processing use of (reg 123 [ _28 ]) in insn 63:
+  Adding insn 37 to worklist
+  Adding insn 57 to worklist
+Processing use of (reg 134) in insn 63:
+  Adding insn 62 to worklist
+Processing use of (reg 115 [ _4 ]) in insn 62:
+  Adding insn 35 to worklist
+Processing use of (reg 135 [ pRequestGeneratorConfig_16(D)->Polarity ]) in insn 62:
+  Adding insn 61 to worklist
+Processing use of (reg 126 [ pRequestGeneratorConfig ]) in insn 61:
+  Adding insn 3 to worklist
+Processing use of (reg 1 r1) in insn 3:
+Processing use of (reg 126 [ pRequestGeneratorConfig ]) in insn 35:
+Processing use of (reg 119 [ _17 ]) in insn 57:
+  Adding insn 56 to worklist
+Processing use of (reg 123 [ _28 ]) in insn 57:
+Processing use of (reg 132 [ result ]) in insn 56:
+Processing use of (reg 131 [ pRequestGeneratorConfig_16(D)->RequestNumber ]) in insn 37:
+  Adding insn 36 to worklist
+Processing use of (reg 126 [ pRequestGeneratorConfig ]) in insn 36:
+Processing use of (reg 125 [ hdma ]) in insn 22:
+  Adding insn 2 to worklist
+Processing use of (reg 0 r0) in insn 2:
+Processing use of (reg 125 [ hdma ]) in insn 69:
+Processing use of (subreg (reg 136) 0) in insn 69:
+Processing use of (reg 133) in insn 44:
+  Adding insn 43 to worklist
+Processing use of (reg 100 cc) in insn 53:
+  Adding insn 52 to worklist
+Processing use of (reg 132 [ result ]) in insn 52:
+Processing use of (reg 100 cc) in insn 30:
+  Adding insn 29 to worklist
+Processing use of (reg 130 [ hdma_15(D)->Lock ]) in insn 29:
+  Adding insn 28 to worklist
+Processing use of (reg 125 [ hdma ]) in insn 28:
+Processing use of (reg 100 cc) in insn 24:
+  Adding insn 23 to worklist
+Processing use of (reg 113 [ _2 ]) in insn 23:
+Processing use of (reg 125 [ hdma ]) in insn 16:
+Processing use of (reg 100 cc) in insn 20:
+  Adding insn 19 to worklist
+Processing use of (reg 124 [ <retval> ]) in insn 19:
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+HAL_DMAEx_ConfigMuxRequestGenerator
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 100 [cc]
+;;  ref usage 	r0={2d,3u} r1={1d,1u} r2={1d} r3={1d} r7={1d,10u} r13={1d,10u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={4d,4u} r102={1d,10u} r103={1d,9u} r113={1d,2u} r115={1d,1u} r118={1d,1u} r119={1d,1u} r123={2d,2u} r124={4d,2u} r125={1d,4u} r126={1d,3u} r129={1d,1u} r130={1d,1u} r131={1d,1u} r132={1d,4u} r133={1d,1u} r134={1d,1u} r135={1d,1u} r136={1d,2u} 
+;;    total ref usage 125{50d,75u,0e} in 59{59 regular + 0 call} insns.
+(note 8 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 8 3 2 (set (reg/v/f:SI 125 [ hdma ])
+        (reg:SI 0 r0 [ hdma ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":143:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [ hdma ])
+        (nil)))
+(insn 3 2 4 2 (set (reg/v/f:SI 126 [ pRequestGeneratorConfig ])
+        (reg:SI 1 r1 [ pRequestGeneratorConfig ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":143:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [ pRequestGeneratorConfig ])
+        (nil)))
+(note 4 3 10 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 10 4 11 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":145:3 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":147:3 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":149:3 -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":150:3 -1
+     (nil))
+(debug_insn 14 13 16 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":155:3 -1
+     (nil))
+(insn 16 14 18 2 (set (reg:SI 129 [ hdma_15(D)->State ])
+        (zero_extend:SI (mem/v:QI (plus:SI (reg/v/f:SI 125 [ hdma ])
+                    (const_int 37 [0x25])) [0 hdma_15(D)->State+0 S1 A8]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":155:12 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 18 16 19 2 (set (reg:SI 124 [ <retval> ])
+        (zero_extend:SI (subreg:QI (reg:SI 129 [ hdma_15(D)->State ]) 0))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":155:12 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_DEAD (reg:SI 129 [ hdma_15(D)->State ])
+        (nil)))
+(insn 19 18 20 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 124 [ <retval> ])
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":155:6 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 20 19 21 2 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 84)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":155:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 84)
+(note 21 20 22 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 22 21 23 3 (set (reg/f:SI 113 [ _2 ])
+        (mem/f:SI (plus:SI (reg/v/f:SI 125 [ hdma ])
+                (const_int 84 [0x54])) [10 hdma_15(D)->DMAmuxRequestGen+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":155:52 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 23 22 24 3 (set (reg:CC 100 cc)
+        (compare:CC (reg/f:SI 113 [ _2 ])
+            (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":155:44 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 24 23 25 3 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 72)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":155:44 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 194239900 (nil)))
+ -> 72)
+(note 25 24 26 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 26 25 27 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":158:5 -1
+     (nil))
+(debug_insn 27 26 28 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":158:5 -1
+     (nil))
+(insn 28 27 29 4 (set (reg:SI 130 [ hdma_15(D)->Lock ])
+        (zero_extend:SI (mem:QI (plus:SI (reg/v/f:SI 125 [ hdma ])
+                    (const_int 36 [0x24])) [0 hdma_15(D)->Lock+0 S1 A32]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":158:5 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 29 28 30 4 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 130 [ hdma_15(D)->Lock ])
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":158:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 130 [ hdma_15(D)->Lock ])
+        (nil)))
+(jump_insn 30 29 31 4 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 88)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":158:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 233216732 (nil)))
+ -> 88)
+(note 31 30 32 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 32 31 33 5 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":158:5 -1
+     (nil))
+(debug_insn 33 32 34 5 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":158:5 -1
+     (nil))
+(debug_insn 34 33 35 5 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":161:5 -1
+     (nil))
+(insn 35 34 36 5 (set (reg:SI 115 [ _4 ])
+        (mem:SI (reg/v/f:SI 126 [ pRequestGeneratorConfig ]) [5 pRequestGeneratorConfig_16(D)->SignalID+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":161:59 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 36 35 37 5 (set (reg:SI 131 [ pRequestGeneratorConfig_16(D)->RequestNumber ])
+        (mem:SI (plus:SI (reg/v/f:SI 126 [ pRequestGeneratorConfig ])
+                (const_int 8 [0x8])) [5 pRequestGeneratorConfig_16(D)->RequestNumber+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":162:77 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 37 36 38 5 (set (reg:SI 123 [ _28 ])
+        (plus:SI (reg:SI 131 [ pRequestGeneratorConfig_16(D)->RequestNumber ])
+            (const_int -1 [0xffffffffffffffff]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":162:77 7 {*arm_addsi3}
+     (expr_list:REG_DEAD (reg:SI 131 [ pRequestGeneratorConfig_16(D)->RequestNumber ])
+        (nil)))
+(debug_insn 38 37 39 5 (var_location:SI value (const_int 16252928 [0xf80000])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":162:77 -1
+     (nil))
+(debug_insn 39 38 40 5 (debug_marker:BLK) "../Drivers/CMSIS/Include/cmsis_gcc.h":1048:31 -1
+     (nil))
+(debug_insn 40 39 41 5 (debug_marker) "../Drivers/CMSIS/Include/cmsis_gcc.h":1050:3 -1
+     (nil))
+(debug_insn 41 40 43 5 (debug_marker) "../Drivers/CMSIS/Include/cmsis_gcc.h":1055:4 -1
+     (nil))
+(insn 43 41 44 5 (set (reg:SI 133)
+        (const_int 16252928 [0xf80000])) "../Drivers/CMSIS/Include/cmsis_gcc.h":1055:4 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 44 43 45 5 (set (reg:SI 132 [ result ])
+        (asm_operands/v:SI ("rbit %0, %1") ("=r") 0 [
+                (reg:SI 133)
+            ]
+             [
+                (asm_input:SI ("r") ../Drivers/CMSIS/Include/cmsis_gcc.h:1055)
+            ]
+             [] ../Drivers/CMSIS/Include/cmsis_gcc.h:1055)) "../Drivers/CMSIS/Include/cmsis_gcc.h":1055:4 -1
+     (expr_list:REG_DEAD (reg:SI 133)
+        (nil)))
+(debug_insn 45 44 46 5 (var_location:SI result (reg:SI 132 [ result ])) "../Drivers/CMSIS/Include/cmsis_gcc.h":1055:4 -1
+     (nil))
+(debug_insn 46 45 47 5 (debug_marker) "../Drivers/CMSIS/Include/cmsis_gcc.h":1068:3 -1
+     (nil))
+(debug_insn 47 46 48 5 (var_location:SI value (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":162:87 -1
+     (nil))
+(debug_insn 48 47 49 5 (var_location:SI result (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":162:87 -1
+     (nil))
+(debug_insn 49 48 50 5 (var_location:SI value (reg:SI 132 [ result ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":162:87 -1
+     (nil))
+(debug_insn 50 49 51 5 (debug_marker:BLK) "../Drivers/CMSIS/Include/cmsis_gcc.h":1078:30 -1
+     (nil))
+(debug_insn 51 50 52 5 (debug_marker) "../Drivers/CMSIS/Include/cmsis_gcc.h":1089:3 -1
+     (nil))
+(insn 52 51 53 5 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 132 [ result ])
+            (const_int 0 [0]))) "../Drivers/CMSIS/Include/cmsis_gcc.h":1089:6 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 53 52 54 5 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 58)
+            (pc))) "../Drivers/CMSIS/Include/cmsis_gcc.h":1089:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 233216732 (nil)))
+ -> 58)
+(note 54 53 55 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 55 54 56 6 (debug_marker) "../Drivers/CMSIS/Include/cmsis_gcc.h":1093:3 -1
+     (nil))
+(insn 56 55 57 6 (set (reg:SI 119 [ _17 ])
+        (clz:SI (reg:SI 132 [ result ]))) "../Drivers/CMSIS/Include/cmsis_gcc.h":1093:10 393 {clzsi2}
+     (expr_list:REG_DEAD (reg:SI 132 [ result ])
+        (nil)))
+(insn 57 56 58 6 (set (reg:SI 123 [ _28 ])
+        (ashift:SI (reg:SI 123 [ _28 ])
+            (reg:SI 119 [ _17 ]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":162:83 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 119 [ _17 ])
+        (nil)))
+(code_label 58 57 59 7 12 (nil) [1 uses])
+(note 59 58 60 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 60 59 61 7 (var_location:SI value (clobber (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":162:87 -1
+     (nil))
+(insn 61 60 62 7 (set (reg:SI 135 [ pRequestGeneratorConfig_16(D)->Polarity ])
+        (mem:SI (plus:SI (reg/v/f:SI 126 [ pRequestGeneratorConfig ])
+                (const_int 4 [0x4])) [5 pRequestGeneratorConfig_16(D)->Polarity+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":162:131 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v/f:SI 126 [ pRequestGeneratorConfig ])
+        (nil)))
+(insn 62 61 63 7 (set (reg:SI 134)
+        (ior:SI (reg:SI 115 [ _4 ])
+            (reg:SI 135 [ pRequestGeneratorConfig_16(D)->Polarity ]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":162:131 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 135 [ pRequestGeneratorConfig_16(D)->Polarity ])
+        (expr_list:REG_DEAD (reg:SI 115 [ _4 ])
+            (nil))))
+(insn 63 62 64 7 (set (reg:SI 118 [ _11 ])
+        (ior:SI (reg:SI 134)
+            (reg:SI 123 [ _28 ]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":162:131 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 134)
+        (expr_list:REG_DEAD (reg:SI 123 [ _28 ])
+            (nil))))
+(insn 64 63 65 7 (set (mem/v:SI (reg/f:SI 113 [ _2 ]) [5 _2->RGCR+0 S4 A32])
+        (reg:SI 118 [ _11 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":161:34 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 118 [ _11 ])
+        (expr_list:REG_DEAD (reg/f:SI 113 [ _2 ])
+            (nil))))
+(debug_insn 65 64 66 7 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":165:5 -1
+     (nil))
+(debug_insn 66 65 67 7 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":165:5 -1
+     (nil))
+(insn 67 66 69 7 (set (reg:SI 136)
+        (const_int 0 [0])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":165:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 69 67 70 7 (set (mem:QI (plus:SI (reg/v/f:SI 125 [ hdma ])
+                (const_int 36 [0x24])) [0 hdma_15(D)->Lock+0 S1 A32])
+        (subreg:QI (reg:SI 136) 0)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":165:5 263 {*arm_movqi_insn}
+     (expr_list:REG_DEAD (reg/v/f:SI 125 [ hdma ])
+        (nil)))
+(debug_insn 70 69 71 7 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":165:5 -1
+     (nil))
+(debug_insn 71 70 5 7 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":167:5 -1
+     (nil))
+(insn 5 71 84 7 (set (reg:SI 124 [ <retval> ])
+        (reg:SI 136)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":167:12 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 136)
+        (expr_list:REG_EQUAL (const_int 0 [0])
+            (nil))))
+      ; pc falls through to BB 10
+(code_label 84 5 83 8 13 (nil) [1 uses])
+(note 83 84 6 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 6 83 88 8 (set (reg:SI 124 [ <retval> ])
+        (const_int 1 [0x1])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":171:12 728 {*thumb2_movsi_vfp}
+     (nil))
+      ; pc falls through to BB 10
+(code_label 88 6 87 9 14 (nil) [1 uses])
+(note 87 88 7 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(insn 7 87 72 9 (set (reg:SI 124 [ <retval> ])
+        (const_int 2 [0x2])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":158:5 728 {*thumb2_movsi_vfp}
+     (nil))
+(code_label 72 7 73 10 11 (nil) [1 uses])
+(note 73 72 78 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 78 73 79 10 (set (reg/i:SI 0 r0)
+        (reg:SI 124 [ <retval> ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":173:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 124 [ <retval> ])
+        (nil)))
+(insn 79 78 0 10 (use (reg/i:SI 0 r0)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":173:1 -1
+     (nil))
+
+;; Function HAL_DMAEx_EnableMuxRequestGenerator (HAL_DMAEx_EnableMuxRequestGenerator, funcdef_no=331, decl_uid=7598, cgraph_uid=335, symbol_order=334)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 8 n_edges 9 count 8 (    1)
+
+
+HAL_DMAEx_EnableMuxRequestGenerator
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 100 [cc]
+;;  ref usage 	r0={2d,3u} r1={1d} r2={1d} r3={1d} r7={1d,7u} r13={1d,7u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={2d,2u} r102={1d,7u} r103={1d,6u} r113={1d,1u} r114={1d,3u} r115={1d,1u} r116={1d,1u} r117={3d,1u} r118={1d,2u} r121={1d,1u} 
+;;    total ref usage 79{37d,42u,0e} in 20{20 regular + 0 call} insns.
+;; Reaching defs:
+;;  sparse invalidated 	
+;;  dense invalidated 	0, 1, 2, 3, 4, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25
+;;  reg->defs[] map:	0[0,1] 1[2,2] 2[3,3] 3[4,4] 7[5,5] 13[6,6] 14[7,7] 16[8,8] 17[9,9] 18[10,10] 19[11,11] 20[12,12] 21[13,13] 22[14,14] 23[15,15] 24[16,16] 25[17,17] 26[18,18] 27[19,19] 28[20,20] 29[21,21] 30[22,22] 31[23,23] 100[24,25] 102[26,26] 103[27,27] 113[28,28] 114[29,29] 115[30,30] 116[31,31] 117[32,34] 118[35,35] 121[36,36] 
+
+( )->[0]->( 2 )
+;; bb 0 artificial_defs: { d1(0){ }d2(1){ }d3(2){ }d4(3){ }d5(7){ }d6(13){ }d7(14){ }d8(16){ }d9(17){ }d10(18){ }d11(19){ }d12(20){ }d13(21){ }d14(22){ }d15(23){ }d16(24){ }d17(25){ }d18(26){ }d19(27){ }d20(28){ }d21(29){ }d22(30){ }d23(31){ }d26(102){ }d27(103){ }}
+;; bb 0 artificial_uses: { }
+;; lr  in  	
+;; lr  use 	
+;; lr  def 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;; live  in  	
+;; live  gen 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;; live  kill	
+;; rd  in  	(0) 
+;; rd  gen 	(25) 0[1],1[2],2[3],3[4],7[5],13[6],14[7],16[8],17[9],18[10],19[11],20[12],21[13],22[14],23[15],24[16],25[17],26[18],27[19],28[20],29[21],30[22],31[23],102[26],103[27]
+;; rd  kill	(26) 0[0,1],1[2],2[3],3[4],7[5],13[6],14[7],16[8],17[9],18[10],19[11],20[12],21[13],22[14],23[15],24[16],25[17],26[18],27[19],28[20],29[21],30[22],31[23],102[26],103[27]
+;;  UD chains for artificial uses at top
+;; lr  out 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  out 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; rd  out 	(5) 0[1],7[5],13[6],102[26],103[27]
+;;  UD chains for artificial uses at bottom
+
+( 0 )->[2]->( 3 5 )
+;; bb 2 artificial_defs: { }
+;; bb 2 artificial_uses: { u0(7){ d5(bb 0 insn -1) }u1(13){ d6(bb 0 insn -1) }u2(102){ d26(bb 0 insn -1) }u3(103){ d27(bb 0 insn -1) }}
+;; lr  in  	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  use 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  def 	 100 [cc] 113 118 121
+;; live  in  	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  gen 	 100 [cc] 113 118 121
+;; live  kill	
+;; rd  in  	(5) 0[1],7[5],13[6],102[26],103[27]
+;; rd  gen 	(4) 100[25],113[28],118[35],121[36]
+;; rd  kill	(5) 100[24,25],113[28],118[35],121[36]
+;;  UD chains for artificial uses at top
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 118
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 118
+;; rd  out 	(5) 7[5],13[6],102[26],103[27],118[35]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d26(bb 0 insn -1) }
+;;   reg 103 { d27(bb 0 insn -1) }
+
+( 2 )->[3]->( 4 6 )
+;; bb 3 artificial_defs: { }
+;; bb 3 artificial_uses: { u9(7){ d5(bb 0 insn -1) }u10(13){ d6(bb 0 insn -1) }u11(102){ d26(bb 0 insn -1) }u12(103){ d27(bb 0 insn -1) }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 118
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 118
+;; lr  def 	 100 [cc] 114
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 118
+;; live  gen 	 100 [cc] 114
+;; live  kill	
+;; rd  in  	(5) 7[5],13[6],102[26],103[27],118[35]
+;; rd  gen 	(2) 100[24],114[29]
+;; rd  kill	(3) 100[24,25],114[29]
+;;  UD chains for artificial uses at top
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 114
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 114
+;; rd  out 	(5) 7[5],13[6],102[26],103[27],114[29]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d26(bb 0 insn -1) }
+;;   reg 103 { d27(bb 0 insn -1) }
+
+( 3 )->[4]->( 7 )
+;; bb 4 artificial_defs: { }
+;; bb 4 artificial_uses: { u16(7){ d5(bb 0 insn -1) }u17(13){ d6(bb 0 insn -1) }u18(102){ d26(bb 0 insn -1) }u19(103){ d27(bb 0 insn -1) }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 114
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 114
+;; lr  def 	 115 116 117
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 114
+;; live  gen 	 115 116 117
+;; live  kill	
+;; rd  in  	(5) 7[5],13[6],102[26],103[27],114[29]
+;; rd  gen 	(3) 115[30],116[31],117[34]
+;; rd  kill	(5) 115[30],116[31],117[32,33,34]
+;;  UD chains for artificial uses at top
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 117
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 117
+;; rd  out 	(5) 7[5],13[6],102[26],103[27],117[34]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d26(bb 0 insn -1) }
+;;   reg 103 { d27(bb 0 insn -1) }
+
+( 2 )->[5]->( 7 )
+;; bb 5 artificial_defs: { }
+;; bb 5 artificial_uses: { u24(7){ d5(bb 0 insn -1) }u25(13){ d6(bb 0 insn -1) }u26(102){ d26(bb 0 insn -1) }u27(103){ d27(bb 0 insn -1) }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  def 	 117
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  gen 	 117
+;; live  kill	
+;; rd  in  	(5) 7[5],13[6],102[26],103[27],118[35]
+;; rd  gen 	(1) 117[33]
+;; rd  kill	(3) 117[32,33,34]
+;;  UD chains for artificial uses at top
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 117
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 117
+;; rd  out 	(5) 7[5],13[6],102[26],103[27],117[33]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d26(bb 0 insn -1) }
+;;   reg 103 { d27(bb 0 insn -1) }
+
+( 3 )->[6]->( 7 )
+;; bb 6 artificial_defs: { }
+;; bb 6 artificial_uses: { u28(7){ d5(bb 0 insn -1) }u29(13){ d6(bb 0 insn -1) }u30(102){ d26(bb 0 insn -1) }u31(103){ d27(bb 0 insn -1) }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  def 	 117
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  gen 	 117
+;; live  kill	
+;; rd  in  	(5) 7[5],13[6],102[26],103[27],114[29]
+;; rd  gen 	(1) 117[32]
+;; rd  kill	(3) 117[32,33,34]
+;;  UD chains for artificial uses at top
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 117
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 117
+;; rd  out 	(5) 7[5],13[6],102[26],103[27],117[32]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d26(bb 0 insn -1) }
+;;   reg 103 { d27(bb 0 insn -1) }
+
+( 6 4 5 )->[7]->( 1 )
+;; bb 7 artificial_defs: { }
+;; bb 7 artificial_uses: { u32(7){ d5(bb 0 insn -1) }u33(13){ d6(bb 0 insn -1) }u34(102){ d26(bb 0 insn -1) }u35(103){ d27(bb 0 insn -1) }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 117
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 117
+;; lr  def 	 0 [r0]
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 117
+;; live  gen 	 0 [r0]
+;; live  kill	
+;; rd  in  	(7) 7[5],13[6],102[26],103[27],117[32,33,34]
+;; rd  gen 	(1) 0[0]
+;; rd  kill	(2) 0[0,1]
+;;  UD chains for artificial uses at top
+;; lr  out 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  out 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; rd  out 	(5) 0[0],7[5],13[6],102[26],103[27]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d26(bb 0 insn -1) }
+;;   reg 103 { d27(bb 0 insn -1) }
+
+( 7 )->[1]->( )
+;; bb 1 artificial_defs: { }
+;; bb 1 artificial_uses: { u38(0){ d0(bb 7 insn 33) }u39(7){ d5(bb 0 insn -1) }u40(13){ d6(bb 0 insn -1) }u41(102){ d26(bb 0 insn -1) }}
+;; lr  in  	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;; lr  use 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;; lr  def 	
+;; live  in  	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;; live  gen 	
+;; live  kill	
+;; rd  in  	(5) 0[0],7[5],13[6],102[26],103[27]
+;; rd  gen 	(0) 
+;; rd  kill	(0) 
+;;  UD chains for artificial uses at top
+;; lr  out 	
+;; live  out 	
+;; rd  out 	(0) 
+;;  UD chains for artificial uses at bottom
+;;   reg 0 { d0(bb 7 insn 33) }
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d26(bb 0 insn -1) }
+
+Finding needed instructions:
+  Adding insn 16 to worklist
+  Adding insn 12 to worklist
+  Adding insn 20 to worklist
+  Adding insn 25 to worklist
+  Adding insn 23 to worklist
+  Adding insn 34 to worklist
+Finished finding needed instructions:
+  Adding insn 33 to worklist
+Processing use of (reg 117 [ <retval> ]) in insn 33:
+  Adding insn 4 to worklist
+  Adding insn 5 to worklist
+  Adding insn 6 to worklist
+Processing use of (reg 0 r0) in insn 34:
+Processing use of (reg 114 [ _2 ]) in insn 23:
+  Adding insn 18 to worklist
+Processing use of (reg 118 [ hdma ]) in insn 18:
+  Adding insn 2 to worklist
+Processing use of (reg 0 r0) in insn 2:
+Processing use of (reg 114 [ _2 ]) in insn 25:
+Processing use of (reg 116 [ _4 ]) in insn 25:
+  Adding insn 24 to worklist
+Processing use of (reg 115 [ _3 ]) in insn 24:
+Processing use of (reg 100 cc) in insn 20:
+  Adding insn 19 to worklist
+Processing use of (reg 114 [ _2 ]) in insn 19:
+Processing use of (reg 118 [ hdma ]) in insn 12:
+Processing use of (reg 100 cc) in insn 16:
+  Adding insn 15 to worklist
+Processing use of (reg 113 [ _1 ]) in insn 15:
+  Adding insn 14 to worklist
+Processing use of (subreg (reg 121 [ hdma_8(D)->State ]) 0) in insn 14:
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+HAL_DMAEx_EnableMuxRequestGenerator
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 100 [cc]
+;;  ref usage 	r0={2d,3u} r1={1d} r2={1d} r3={1d} r7={1d,7u} r13={1d,7u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={2d,2u} r102={1d,7u} r103={1d,6u} r113={1d,1u} r114={1d,3u} r115={1d,1u} r116={1d,1u} r117={3d,1u} r118={1d,2u} r121={1d,1u} 
+;;    total ref usage 79{37d,42u,0e} in 20{20 regular + 0 call} insns.
+(note 7 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 3 2 (set (reg/v/f:SI 118 [ hdma ])
+        (reg:SI 0 r0 [ hdma ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":182:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [ hdma ])
+        (nil)))
+(note 3 2 9 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 9 3 10 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":184:3 -1
+     (nil))
+(debug_insn 10 9 12 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":189:3 -1
+     (nil))
+(insn 12 10 14 2 (set (reg:SI 121 [ hdma_8(D)->State ])
+        (zero_extend:SI (mem/v:QI (plus:SI (reg/v/f:SI 118 [ hdma ])
+                    (const_int 37 [0x25])) [0 hdma_8(D)->State+0 S1 A8]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":189:12 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 14 12 15 2 (set (reg:SI 113 [ _1 ])
+        (zero_extend:SI (subreg:QI (reg:SI 121 [ hdma_8(D)->State ]) 0))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":189:12 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_DEAD (reg:SI 121 [ hdma_8(D)->State ])
+        (nil)))
+(insn 15 14 16 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 113 [ _1 ])
+            (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":189:6 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 113 [ _1 ])
+        (nil)))
+(jump_insn 16 15 17 2 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 39)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":189:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 365072228 (nil)))
+ -> 39)
+(note 17 16 18 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 3 (set (reg/f:SI 114 [ _2 ])
+        (mem/f:SI (plus:SI (reg/v/f:SI 118 [ hdma ])
+                (const_int 84 [0x54])) [10 hdma_8(D)->DMAmuxRequestGen+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":189:52 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v/f:SI 118 [ hdma ])
+        (nil)))
+(insn 19 18 20 3 (set (reg:CC 100 cc)
+        (compare:CC (reg/f:SI 114 [ _2 ])
+            (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":189:44 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 20 19 21 3 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 43)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":189:44 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 322122548 (nil)))
+ -> 43)
+(note 21 20 22 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 22 21 23 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":193:5 -1
+     (nil))
+(insn 23 22 24 4 (set (reg:SI 115 [ _3 ])
+        (mem/v:SI (reg/f:SI 114 [ _2 ]) [5 _2->RGCR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":193:34 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 24 23 25 4 (set (reg:SI 116 [ _4 ])
+        (ior:SI (reg:SI 115 [ _3 ])
+            (const_int 65536 [0x10000]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":193:34 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 115 [ _3 ])
+        (nil)))
+(insn 25 24 26 4 (set (mem/v:SI (reg/f:SI 114 [ _2 ]) [5 _2->RGCR+0 S4 A32])
+        (reg:SI 116 [ _4 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":193:34 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 116 [ _4 ])
+        (expr_list:REG_DEAD (reg/f:SI 114 [ _2 ])
+            (nil))))
+(debug_insn 26 25 4 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":195:5 -1
+     (nil))
+(insn 4 26 39 4 (set (reg:SI 117 [ <retval> ])
+        (const_int 0 [0])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":195:12 728 {*thumb2_movsi_vfp}
+     (nil))
+      ; pc falls through to BB 7
+(code_label 39 4 38 5 27 (nil) [1 uses])
+(note 38 39 5 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 5 38 43 5 (set (reg:SI 117 [ <retval> ])
+        (const_int 1 [0x1])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":199:12 728 {*thumb2_movsi_vfp}
+     (nil))
+      ; pc falls through to BB 7
+(code_label 43 5 42 6 28 (nil) [1 uses])
+(note 42 43 6 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 6 42 27 6 (set (reg:SI 117 [ <retval> ])
+        (const_int 1 [0x1])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":199:12 728 {*thumb2_movsi_vfp}
+     (nil))
+(code_label 27 6 28 7 26 (nil) [0 uses])
+(note 28 27 33 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 33 28 34 7 (set (reg/i:SI 0 r0)
+        (reg:SI 117 [ <retval> ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":201:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 117 [ <retval> ])
+        (nil)))
+(insn 34 33 0 7 (use (reg/i:SI 0 r0)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":201:1 -1
+     (nil))
+
+;; Function HAL_DMAEx_DisableMuxRequestGenerator (HAL_DMAEx_DisableMuxRequestGenerator, funcdef_no=332, decl_uid=7600, cgraph_uid=336, symbol_order=335)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 8 n_edges 9 count 8 (    1)
+
+
+HAL_DMAEx_DisableMuxRequestGenerator
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 100 [cc]
+;;  ref usage 	r0={2d,3u} r1={1d} r2={1d} r3={1d} r7={1d,7u} r13={1d,7u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={2d,2u} r102={1d,7u} r103={1d,6u} r113={1d,1u} r114={1d,3u} r115={1d,1u} r116={1d,1u} r117={3d,1u} r118={1d,2u} r121={1d,1u} 
+;;    total ref usage 79{37d,42u,0e} in 20{20 regular + 0 call} insns.
+;; Reaching defs:
+;;  sparse invalidated 	
+;;  dense invalidated 	0, 1, 2, 3, 4, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25
+;;  reg->defs[] map:	0[0,1] 1[2,2] 2[3,3] 3[4,4] 7[5,5] 13[6,6] 14[7,7] 16[8,8] 17[9,9] 18[10,10] 19[11,11] 20[12,12] 21[13,13] 22[14,14] 23[15,15] 24[16,16] 25[17,17] 26[18,18] 27[19,19] 28[20,20] 29[21,21] 30[22,22] 31[23,23] 100[24,25] 102[26,26] 103[27,27] 113[28,28] 114[29,29] 115[30,30] 116[31,31] 117[32,34] 118[35,35] 121[36,36] 
+
+( )->[0]->( 2 )
+;; bb 0 artificial_defs: { d1(0){ }d2(1){ }d3(2){ }d4(3){ }d5(7){ }d6(13){ }d7(14){ }d8(16){ }d9(17){ }d10(18){ }d11(19){ }d12(20){ }d13(21){ }d14(22){ }d15(23){ }d16(24){ }d17(25){ }d18(26){ }d19(27){ }d20(28){ }d21(29){ }d22(30){ }d23(31){ }d26(102){ }d27(103){ }}
+;; bb 0 artificial_uses: { }
+;; lr  in  	
+;; lr  use 	
+;; lr  def 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;; live  in  	
+;; live  gen 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;; live  kill	
+;; rd  in  	(0) 
+;; rd  gen 	(25) 0[1],1[2],2[3],3[4],7[5],13[6],14[7],16[8],17[9],18[10],19[11],20[12],21[13],22[14],23[15],24[16],25[17],26[18],27[19],28[20],29[21],30[22],31[23],102[26],103[27]
+;; rd  kill	(26) 0[0,1],1[2],2[3],3[4],7[5],13[6],14[7],16[8],17[9],18[10],19[11],20[12],21[13],22[14],23[15],24[16],25[17],26[18],27[19],28[20],29[21],30[22],31[23],102[26],103[27]
+;;  UD chains for artificial uses at top
+;; lr  out 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  out 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; rd  out 	(5) 0[1],7[5],13[6],102[26],103[27]
+;;  UD chains for artificial uses at bottom
+
+( 0 )->[2]->( 3 5 )
+;; bb 2 artificial_defs: { }
+;; bb 2 artificial_uses: { u0(7){ d5(bb 0 insn -1) }u1(13){ d6(bb 0 insn -1) }u2(102){ d26(bb 0 insn -1) }u3(103){ d27(bb 0 insn -1) }}
+;; lr  in  	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  use 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  def 	 100 [cc] 113 118 121
+;; live  in  	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  gen 	 100 [cc] 113 118 121
+;; live  kill	
+;; rd  in  	(5) 0[1],7[5],13[6],102[26],103[27]
+;; rd  gen 	(4) 100[25],113[28],118[35],121[36]
+;; rd  kill	(5) 100[24,25],113[28],118[35],121[36]
+;;  UD chains for artificial uses at top
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 118
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 118
+;; rd  out 	(5) 7[5],13[6],102[26],103[27],118[35]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d26(bb 0 insn -1) }
+;;   reg 103 { d27(bb 0 insn -1) }
+
+( 2 )->[3]->( 4 6 )
+;; bb 3 artificial_defs: { }
+;; bb 3 artificial_uses: { u9(7){ d5(bb 0 insn -1) }u10(13){ d6(bb 0 insn -1) }u11(102){ d26(bb 0 insn -1) }u12(103){ d27(bb 0 insn -1) }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 118
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 118
+;; lr  def 	 100 [cc] 114
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 118
+;; live  gen 	 100 [cc] 114
+;; live  kill	
+;; rd  in  	(5) 7[5],13[6],102[26],103[27],118[35]
+;; rd  gen 	(2) 100[24],114[29]
+;; rd  kill	(3) 100[24,25],114[29]
+;;  UD chains for artificial uses at top
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 114
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 114
+;; rd  out 	(5) 7[5],13[6],102[26],103[27],114[29]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d26(bb 0 insn -1) }
+;;   reg 103 { d27(bb 0 insn -1) }
+
+( 3 )->[4]->( 7 )
+;; bb 4 artificial_defs: { }
+;; bb 4 artificial_uses: { u16(7){ d5(bb 0 insn -1) }u17(13){ d6(bb 0 insn -1) }u18(102){ d26(bb 0 insn -1) }u19(103){ d27(bb 0 insn -1) }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 114
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 114
+;; lr  def 	 115 116 117
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 114
+;; live  gen 	 115 116 117
+;; live  kill	
+;; rd  in  	(5) 7[5],13[6],102[26],103[27],114[29]
+;; rd  gen 	(3) 115[30],116[31],117[34]
+;; rd  kill	(5) 115[30],116[31],117[32,33,34]
+;;  UD chains for artificial uses at top
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 117
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 117
+;; rd  out 	(5) 7[5],13[6],102[26],103[27],117[34]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d26(bb 0 insn -1) }
+;;   reg 103 { d27(bb 0 insn -1) }
+
+( 2 )->[5]->( 7 )
+;; bb 5 artificial_defs: { }
+;; bb 5 artificial_uses: { u24(7){ d5(bb 0 insn -1) }u25(13){ d6(bb 0 insn -1) }u26(102){ d26(bb 0 insn -1) }u27(103){ d27(bb 0 insn -1) }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  def 	 117
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  gen 	 117
+;; live  kill	
+;; rd  in  	(5) 7[5],13[6],102[26],103[27],118[35]
+;; rd  gen 	(1) 117[33]
+;; rd  kill	(3) 117[32,33,34]
+;;  UD chains for artificial uses at top
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 117
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 117
+;; rd  out 	(5) 7[5],13[6],102[26],103[27],117[33]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d26(bb 0 insn -1) }
+;;   reg 103 { d27(bb 0 insn -1) }
+
+( 3 )->[6]->( 7 )
+;; bb 6 artificial_defs: { }
+;; bb 6 artificial_uses: { u28(7){ d5(bb 0 insn -1) }u29(13){ d6(bb 0 insn -1) }u30(102){ d26(bb 0 insn -1) }u31(103){ d27(bb 0 insn -1) }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  def 	 117
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  gen 	 117
+;; live  kill	
+;; rd  in  	(5) 7[5],13[6],102[26],103[27],114[29]
+;; rd  gen 	(1) 117[32]
+;; rd  kill	(3) 117[32,33,34]
+;;  UD chains for artificial uses at top
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 117
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 117
+;; rd  out 	(5) 7[5],13[6],102[26],103[27],117[32]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d26(bb 0 insn -1) }
+;;   reg 103 { d27(bb 0 insn -1) }
+
+( 6 4 5 )->[7]->( 1 )
+;; bb 7 artificial_defs: { }
+;; bb 7 artificial_uses: { u32(7){ d5(bb 0 insn -1) }u33(13){ d6(bb 0 insn -1) }u34(102){ d26(bb 0 insn -1) }u35(103){ d27(bb 0 insn -1) }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 117
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 117
+;; lr  def 	 0 [r0]
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 117
+;; live  gen 	 0 [r0]
+;; live  kill	
+;; rd  in  	(7) 7[5],13[6],102[26],103[27],117[32,33,34]
+;; rd  gen 	(1) 0[0]
+;; rd  kill	(2) 0[0,1]
+;;  UD chains for artificial uses at top
+;; lr  out 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  out 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; rd  out 	(5) 0[0],7[5],13[6],102[26],103[27]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d26(bb 0 insn -1) }
+;;   reg 103 { d27(bb 0 insn -1) }
+
+( 7 )->[1]->( )
+;; bb 1 artificial_defs: { }
+;; bb 1 artificial_uses: { u38(0){ d0(bb 7 insn 33) }u39(7){ d5(bb 0 insn -1) }u40(13){ d6(bb 0 insn -1) }u41(102){ d26(bb 0 insn -1) }}
+;; lr  in  	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;; lr  use 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;; lr  def 	
+;; live  in  	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;; live  gen 	
+;; live  kill	
+;; rd  in  	(5) 0[0],7[5],13[6],102[26],103[27]
+;; rd  gen 	(0) 
+;; rd  kill	(0) 
+;;  UD chains for artificial uses at top
+;; lr  out 	
+;; live  out 	
+;; rd  out 	(0) 
+;;  UD chains for artificial uses at bottom
+;;   reg 0 { d0(bb 7 insn 33) }
+;;   reg 7 { d5(bb 0 insn -1) }
+;;   reg 13 { d6(bb 0 insn -1) }
+;;   reg 102 { d26(bb 0 insn -1) }
+
+Finding needed instructions:
+  Adding insn 16 to worklist
+  Adding insn 12 to worklist
+  Adding insn 20 to worklist
+  Adding insn 25 to worklist
+  Adding insn 23 to worklist
+  Adding insn 34 to worklist
+Finished finding needed instructions:
+  Adding insn 33 to worklist
+Processing use of (reg 117 [ <retval> ]) in insn 33:
+  Adding insn 4 to worklist
+  Adding insn 5 to worklist
+  Adding insn 6 to worklist
+Processing use of (reg 0 r0) in insn 34:
+Processing use of (reg 114 [ _2 ]) in insn 23:
+  Adding insn 18 to worklist
+Processing use of (reg 118 [ hdma ]) in insn 18:
+  Adding insn 2 to worklist
+Processing use of (reg 0 r0) in insn 2:
+Processing use of (reg 114 [ _2 ]) in insn 25:
+Processing use of (reg 116 [ _4 ]) in insn 25:
+  Adding insn 24 to worklist
+Processing use of (reg 115 [ _3 ]) in insn 24:
+Processing use of (reg 100 cc) in insn 20:
+  Adding insn 19 to worklist
+Processing use of (reg 114 [ _2 ]) in insn 19:
+Processing use of (reg 118 [ hdma ]) in insn 12:
+Processing use of (reg 100 cc) in insn 16:
+  Adding insn 15 to worklist
+Processing use of (reg 113 [ _1 ]) in insn 15:
+  Adding insn 14 to worklist
+Processing use of (subreg (reg 121 [ hdma_8(D)->State ]) 0) in insn 14:
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+HAL_DMAEx_DisableMuxRequestGenerator
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 100 [cc]
+;;  ref usage 	r0={2d,3u} r1={1d} r2={1d} r3={1d} r7={1d,7u} r13={1d,7u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={2d,2u} r102={1d,7u} r103={1d,6u} r113={1d,1u} r114={1d,3u} r115={1d,1u} r116={1d,1u} r117={3d,1u} r118={1d,2u} r121={1d,1u} 
+;;    total ref usage 79{37d,42u,0e} in 20{20 regular + 0 call} insns.
+(note 7 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 7 3 2 (set (reg/v/f:SI 118 [ hdma ])
+        (reg:SI 0 r0 [ hdma ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":210:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [ hdma ])
+        (nil)))
+(note 3 2 9 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 9 3 10 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":212:3 -1
+     (nil))
+(debug_insn 10 9 12 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":217:3 -1
+     (nil))
+(insn 12 10 14 2 (set (reg:SI 121 [ hdma_8(D)->State ])
+        (zero_extend:SI (mem/v:QI (plus:SI (reg/v/f:SI 118 [ hdma ])
+                    (const_int 37 [0x25])) [0 hdma_8(D)->State+0 S1 A8]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":217:12 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 14 12 15 2 (set (reg:SI 113 [ _1 ])
+        (zero_extend:SI (subreg:QI (reg:SI 121 [ hdma_8(D)->State ]) 0))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":217:12 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_DEAD (reg:SI 121 [ hdma_8(D)->State ])
+        (nil)))
+(insn 15 14 16 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 113 [ _1 ])
+            (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":217:6 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 113 [ _1 ])
+        (nil)))
+(jump_insn 16 15 17 2 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 39)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":217:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 365072228 (nil)))
+ -> 39)
+(note 17 16 18 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 3 (set (reg/f:SI 114 [ _2 ])
+        (mem/f:SI (plus:SI (reg/v/f:SI 118 [ hdma ])
+                (const_int 84 [0x54])) [10 hdma_8(D)->DMAmuxRequestGen+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":217:52 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v/f:SI 118 [ hdma ])
+        (nil)))
+(insn 19 18 20 3 (set (reg:CC 100 cc)
+        (compare:CC (reg/f:SI 114 [ _2 ])
+            (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":217:44 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 20 19 21 3 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 43)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":217:44 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 322122548 (nil)))
+ -> 43)
+(note 21 20 22 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 22 21 23 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":221:5 -1
+     (nil))
+(insn 23 22 24 4 (set (reg:SI 115 [ _3 ])
+        (mem/v:SI (reg/f:SI 114 [ _2 ]) [5 _2->RGCR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":221:34 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 24 23 25 4 (set (reg:SI 116 [ _4 ])
+        (and:SI (reg:SI 115 [ _3 ])
+            (const_int -65537 [0xfffffffffffeffff]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":221:34 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 115 [ _3 ])
+        (nil)))
+(insn 25 24 26 4 (set (mem/v:SI (reg/f:SI 114 [ _2 ]) [5 _2->RGCR+0 S4 A32])
+        (reg:SI 116 [ _4 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":221:34 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 116 [ _4 ])
+        (expr_list:REG_DEAD (reg/f:SI 114 [ _2 ])
+            (nil))))
+(debug_insn 26 25 4 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":223:5 -1
+     (nil))
+(insn 4 26 39 4 (set (reg:SI 117 [ <retval> ])
+        (const_int 0 [0])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":223:12 728 {*thumb2_movsi_vfp}
+     (nil))
+      ; pc falls through to BB 7
+(code_label 39 4 38 5 31 (nil) [1 uses])
+(note 38 39 5 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 5 38 43 5 (set (reg:SI 117 [ <retval> ])
+        (const_int 1 [0x1])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":227:12 728 {*thumb2_movsi_vfp}
+     (nil))
+      ; pc falls through to BB 7
+(code_label 43 5 42 6 32 (nil) [1 uses])
+(note 42 43 6 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 6 42 27 6 (set (reg:SI 117 [ <retval> ])
+        (const_int 1 [0x1])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":227:12 728 {*thumb2_movsi_vfp}
+     (nil))
+(code_label 27 6 28 7 30 (nil) [0 uses])
+(note 28 27 33 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 33 28 34 7 (set (reg/i:SI 0 r0)
+        (reg:SI 117 [ <retval> ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":229:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 117 [ <retval> ])
+        (nil)))
+(insn 34 33 0 7 (use (reg/i:SI 0 r0)) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":229:1 -1
+     (nil))
+
+;; Function HAL_DMAEx_MUX_IRQHandler (HAL_DMAEx_MUX_IRQHandler, funcdef_no=333, decl_uid=7605, cgraph_uid=337, symbol_order=336)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 10 n_edges 14 count 10 (    1)
+
+
+HAL_DMAEx_MUX_IRQHandler
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={4d,3u} r1={3d} r2={3d} r3={3d} r7={1d,9u} r12={4d} r13={1d,11u} r14={3d} r15={2d} r16={3d} r17={3d} r18={3d} r19={3d} r20={3d} r21={3d} r22={3d} r23={3d} r24={3d} r25={3d} r26={3d} r27={3d} r28={3d} r29={3d} r30={3d} r31={3d} r48={2d} r49={2d} r50={2d} r51={2d} r52={2d} r53={2d} r54={2d} r55={2d} r56={2d} r57={2d} r58={2d} r59={2d} r60={2d} r61={2d} r62={2d} r63={2d} r64={2d} r65={2d} r66={2d} r67={2d} r68={2d} r69={2d} r70={2d} r71={2d} r72={2d} r73={2d} r74={2d} r75={2d} r76={2d} r77={2d} r78={2d} r79={2d} r80={2d} r81={2d} r82={2d} r83={2d} r84={2d} r85={2d} r86={2d} r87={2d} r88={2d} r89={2d} r90={2d} r91={2d} r92={2d} r93={2d} r94={2d} r95={2d} r96={2d} r97={2d} r98={2d} r99={2d} r100={7d,5u} r101={2d} r102={1d,9u} r103={1d,8u} r104={2d} r105={2d} r106={2d} r113={1d,2u} r114={1d,1u} r115={1d,2u} r117={1d,2u} r118={1d,1u} r119={1d,1u} r120={1d,1u} r121={1d,1u} r122={1d,2u} r123={1d,3u} r124={1d,2u} r125={1d,1u} r126={1d,2u} r128={1d,1u} r129={1d,1u} r130={1d,1u} r131={1d,1u} r132={1d,2u} r133={1d,13u} r134={1d,1u} r135={1d,1u} 
+;;    total ref usage 301{214d,87u,0e} in 53{51 regular + 2 call} insns.
+;; Reaching defs:
+;;  sparse invalidated 	
+;;  dense invalidated 	0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 15, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 187, 188, 189, 190, 191, 192
+;;  reg->defs[] map:	0[0,3] 1[4,6] 2[7,9] 3[10,12] 7[13,13] 12[14,17] 13[18,18] 14[19,21] 15[22,23] 16[24,26] 17[27,29] 18[30,32] 19[33,35] 20[36,38] 21[39,41] 22[42,44] 23[45,47] 24[48,50] 25[51,53] 26[54,56] 27[57,59] 28[60,62] 29[63,65] 30[66,68] 31[69,71] 48[72,73] 49[74,75] 50[76,77] 51[78,79] 52[80,81] 53[82,83] 54[84,85] 55[86,87] 56[88,89] 57[90,91] 58[92,93] 59[94,95] 60[96,97] 61[98,99] 62[100,101] 63[102,103] 64[104,105] 65[106,107] 66[108,109] 67[110,111] 68[112,113] 69[114,115] 70[116,117] 71[118,119] 72[120,121] 73[122,123] 74[124,125] 75[126,127] 76[128,129] 77[130,131] 78[132,133] 79[134,135] 80[136,137] 81[138,139] 82[140,141] 83[142,143] 84[144,145] 85[146,147] 86[148,149] 87[150,151] 88[152,153] 89[154,155] 90[156,157] 91[158,159] 92[160,161] 93[162,163] 94[164,165] 95[166,167] 96[168,169] 97[170,171] 98[172,173] 99[174,175] 100[176,182] 101[183,184] 102[185,185] 103[186,186] 104[187,188] 105[189,190] 106[191,192] 113[193,193] 114[194,194] 115[195,195] 117[196,196] 118[197,197] 119[198,198] 120[199,199] 121[200,200] 122[201,201] 123[202,202] 124[203,203] 125[204,204] 126[205,205] 128[206,206] 129[207,207] 130[208,208] 131[209,209] 132[210,210] 133[211,211] 134[212,212] 135[213,213] 
+
+( )->[0]->( 2 )
+;; bb 0 artificial_defs: { d3(0){ }d6(1){ }d9(2){ }d12(3){ }d13(7){ }d18(13){ }d21(14){ }d26(16){ }d29(17){ }d32(18){ }d35(19){ }d38(20){ }d41(21){ }d44(22){ }d47(23){ }d50(24){ }d53(25){ }d56(26){ }d59(27){ }d62(28){ }d65(29){ }d68(30){ }d71(31){ }d185(102){ }d186(103){ }}
+;; bb 0 artificial_uses: { }
+;; lr  in  	
+;; lr  use 	
+;; lr  def 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;; live  in  	
+;; live  gen 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;; live  kill	
+;; rd  in  	(0) 
+;; rd  gen 	(25) 0[3],1[6],2[9],3[12],7[13],13[18],14[21],16[26],17[29],18[32],19[35],20[38],21[41],22[44],23[47],24[50],25[53],26[56],27[59],28[62],29[65],30[68],31[71],102[185],103[186]
+;; rd  kill	(68) 0[0,1,2,3],1[4,5,6],2[7,8,9],3[10,11,12],7[13],13[18],14[19,20,21],16[24,25,26],17[27,28,29],18[30,31,32],19[33,34,35],20[36,37,38],21[39,40,41],22[42,43,44],23[45,46,47],24[48,49,50],25[51,52,53],26[54,55,56],27[57,58,59],28[60,61,62],29[63,64,65],30[66,67,68],31[69,70,71],102[185],103[186]
+;;  UD chains for artificial uses at top
+;; lr  out 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  out 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; rd  out 	(5) 0[3],7[13],13[18],102[185],103[186]
+;;  UD chains for artificial uses at bottom
+
+( 0 )->[2]->( 3 5 )
+;; bb 2 artificial_defs: { }
+;; bb 2 artificial_uses: { u0(7){ d13(bb 0 insn -1) }u1(13){ d18(bb 0 insn -1) }u2(102){ d185(bb 0 insn -1) }u3(103){ d186(bb 0 insn -1) }}
+;; lr  in  	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  use 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  def 	 100 [cc] 113 114 115 133 134
+;; live  in  	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  gen 	 100 [cc] 113 114 115 133 134
+;; live  kill	
+;; rd  in  	(5) 0[3],7[13],13[18],102[185],103[186]
+;; rd  gen 	(6) 100[182],113[193],114[194],115[195],133[211],134[212]
+;; rd  kill	(12) 100[176,177,178,179,180,181,182],113[193],114[194],115[195],133[211],134[212]
+;;  UD chains for artificial uses at top
+;; lr  out 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 113 115 133
+;; live  out 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 113 115 133
+;; rd  out 	(8) 0[3],7[13],13[18],102[185],103[186],113[193],115[195],133[211]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d13(bb 0 insn -1) }
+;;   reg 13 { d18(bb 0 insn -1) }
+;;   reg 102 { d185(bb 0 insn -1) }
+;;   reg 103 { d186(bb 0 insn -1) }
+
+( 2 )->[3]->( 4 5 )
+;; bb 3 artificial_defs: { }
+;; bb 3 artificial_uses: { u12(7){ d13(bb 0 insn -1) }u13(13){ d18(bb 0 insn -1) }u14(102){ d185(bb 0 insn -1) }u15(103){ d186(bb 0 insn -1) }}
+;; lr  in  	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 113 115 133
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 113 115 133
+;; lr  def 	 100 [cc] 117 118 119 120 121 122
+;; live  in  	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 113 115 133
+;; live  gen 	 100 [cc] 117 118 119 120 121 122
+;; live  kill	
+;; rd  in  	(8) 0[3],7[13],13[18],102[185],103[186],113[193],115[195],133[211]
+;; rd  gen 	(7) 100[181],117[196],118[197],119[198],120[199],121[200],122[201]
+;; rd  kill	(13) 100[176,177,178,179,180,181,182],117[196],118[197],119[198],120[199],121[200],122[201]
+;;  UD chains for artificial uses at top
+;; lr  out 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 122 133
+;; live  out 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 122 133
+;; rd  out 	(7) 0[3],7[13],13[18],102[185],103[186],122[201],133[211]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d13(bb 0 insn -1) }
+;;   reg 13 { d18(bb 0 insn -1) }
+;;   reg 102 { d185(bb 0 insn -1) }
+;;   reg 103 { d186(bb 0 insn -1) }
+
+( 3 )->[4]->( 5 )
+;; bb 4 artificial_defs: { }
+;; bb 4 artificial_uses: { u30(7){ d13(bb 0 insn -1) }u31(13){ d18(bb 0 insn -1) }u32(102){ d185(bb 0 insn -1) }u33(103){ d186(bb 0 insn -1) }}
+;; lr  in  	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 122 133
+;; lr  use 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 122
+;; lr  def 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;; live  in  	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 122 133
+;; live  gen 	
+;; live  kill	 12 [ip] 14 [lr]
+;; rd  in  	(7) 0[3],7[13],13[18],102[185],103[186],122[201],133[211]
+;; rd  gen 	(0) 
+;; rd  kill	(3) 14[19,20,21]
+;;  UD chains for artificial uses at top
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 133
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 133
+;; rd  out 	(5) 7[13],13[18],102[185],103[186],133[211]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d13(bb 0 insn -1) }
+;;   reg 13 { d18(bb 0 insn -1) }
+;;   reg 102 { d185(bb 0 insn -1) }
+;;   reg 103 { d186(bb 0 insn -1) }
+
+( 4 2 3 )->[5]->( 6 9 )
+;; bb 5 artificial_defs: { }
+;; bb 5 artificial_uses: { u37(7){ d13(bb 0 insn -1) }u38(13){ d18(bb 0 insn -1) }u39(102){ d185(bb 0 insn -1) }u40(103){ d186(bb 0 insn -1) }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 133
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 133
+;; lr  def 	 100 [cc] 123
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 133
+;; live  gen 	 100 [cc] 123
+;; live  kill	
+;; rd  in  	(9) 0[3],7[13],13[18],102[185],103[186],113[193],115[195],122[201],133[211]
+;; rd  gen 	(2) 100[179],123[202]
+;; rd  kill	(8) 100[176,177,178,179,180,181,182],123[202]
+;;  UD chains for artificial uses at top
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 123 133
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 123 133
+;; rd  out 	(6) 7[13],13[18],102[185],103[186],123[202],133[211]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d13(bb 0 insn -1) }
+;;   reg 13 { d18(bb 0 insn -1) }
+;;   reg 102 { d185(bb 0 insn -1) }
+;;   reg 103 { d186(bb 0 insn -1) }
+
+( 5 )->[6]->( 7 9 )
+;; bb 6 artificial_defs: { }
+;; bb 6 artificial_uses: { u44(7){ d13(bb 0 insn -1) }u45(13){ d18(bb 0 insn -1) }u46(102){ d185(bb 0 insn -1) }u47(103){ d186(bb 0 insn -1) }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 123 133
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 133
+;; lr  def 	 100 [cc] 124 125 126 135
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 123 133
+;; live  gen 	 100 [cc] 124 125 126 135
+;; live  kill	
+;; rd  in  	(6) 7[13],13[18],102[185],103[186],123[202],133[211]
+;; rd  gen 	(5) 100[178],124[203],125[204],126[205],135[213]
+;; rd  kill	(11) 100[176,177,178,179,180,181,182],124[203],125[204],126[205],135[213]
+;;  UD chains for artificial uses at top
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 123 124 126 133
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 123 124 126 133
+;; rd  out 	(8) 7[13],13[18],102[185],103[186],123[202],124[203],126[205],133[211]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d13(bb 0 insn -1) }
+;;   reg 13 { d18(bb 0 insn -1) }
+;;   reg 102 { d185(bb 0 insn -1) }
+;;   reg 103 { d186(bb 0 insn -1) }
+
+( 6 )->[7]->( 8 9 )
+;; bb 7 artificial_defs: { }
+;; bb 7 artificial_uses: { u55(7){ d13(bb 0 insn -1) }u56(13){ d18(bb 0 insn -1) }u57(102){ d185(bb 0 insn -1) }u58(103){ d186(bb 0 insn -1) }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 123 124 126 133
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 123 124 126 133
+;; lr  def 	 100 [cc] 128 129 130 131 132
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 123 124 126 133
+;; live  gen 	 100 [cc] 128 129 130 131 132
+;; live  kill	
+;; rd  in  	(8) 7[13],13[18],102[185],103[186],123[202],124[203],126[205],133[211]
+;; rd  gen 	(6) 100[177],128[206],129[207],130[208],131[209],132[210]
+;; rd  kill	(12) 100[176,177,178,179,180,181,182],128[206],129[207],130[208],131[209],132[210]
+;;  UD chains for artificial uses at top
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 132 133
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 132 133
+;; rd  out 	(6) 7[13],13[18],102[185],103[186],132[210],133[211]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d13(bb 0 insn -1) }
+;;   reg 13 { d18(bb 0 insn -1) }
+;;   reg 102 { d185(bb 0 insn -1) }
+;;   reg 103 { d186(bb 0 insn -1) }
+
+( 7 )->[8]->( 1 )
+;; bb 8 artificial_defs: { }
+;; bb 8 artificial_uses: { u72(7){ d13(bb 0 insn -1) }u73(13){ d18(bb 0 insn -1) }u74(102){ d185(bb 0 insn -1) }u75(103){ d186(bb 0 insn -1) }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 132 133
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 132 133
+;; lr  def 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 132 133
+;; live  gen 	 0 [r0]
+;; live  kill	 12 [ip]
+;; rd  in  	(6) 7[13],13[18],102[185],103[186],132[210],133[211]
+;; rd  gen 	(0) 
+;; rd  kill	(0) 
+;;  UD chains for artificial uses at top
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; rd  out 	(4) 7[13],13[18],102[185],103[186]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d13(bb 0 insn -1) }
+;;   reg 13 { d18(bb 0 insn -1) }
+;;   reg 102 { d185(bb 0 insn -1) }
+;;   reg 103 { d186(bb 0 insn -1) }
+
+( 7 5 6 )->[9]->( 1 )
+;; bb 9 artificial_defs: { }
+;; bb 9 artificial_uses: { u80(7){ d13(bb 0 insn -1) }u81(13){ d18(bb 0 insn -1) }u82(102){ d185(bb 0 insn -1) }u83(103){ d186(bb 0 insn -1) }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  def 	
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  gen 	
+;; live  kill	
+;; rd  in  	(9) 7[13],13[18],102[185],103[186],123[202],124[203],126[205],132[210],133[211]
+;; rd  gen 	(0) 
+;; rd  kill	(0) 
+;;  UD chains for artificial uses at top
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; rd  out 	(4) 7[13],13[18],102[185],103[186]
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d13(bb 0 insn -1) }
+;;   reg 13 { d18(bb 0 insn -1) }
+;;   reg 102 { d185(bb 0 insn -1) }
+;;   reg 103 { d186(bb 0 insn -1) }
+
+( 8 9 )->[1]->( )
+;; bb 1 artificial_defs: { }
+;; bb 1 artificial_uses: { u84(7){ d13(bb 0 insn -1) }u85(13){ d18(bb 0 insn -1) }u86(102){ d185(bb 0 insn -1) }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp]
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp]
+;; lr  def 	
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp]
+;; live  gen 	
+;; live  kill	
+;; rd  in  	(4) 7[13],13[18],102[185],103[186]
+;; rd  gen 	(0) 
+;; rd  kill	(0) 
+;;  UD chains for artificial uses at top
+;; lr  out 	
+;; live  out 	
+;; rd  out 	(0) 
+;;  UD chains for artificial uses at bottom
+;;   reg 7 { d13(bb 0 insn -1) }
+;;   reg 13 { d18(bb 0 insn -1) }
+;;   reg 102 { d185(bb 0 insn -1) }
+
+Finding needed instructions:
+  Adding insn 12 to worklist
+  Adding insn 8 to worklist
+  Adding insn 33 to worklist
+  Adding insn 28 to worklist
+  Adding insn 26 to worklist
+  Adding insn 24 to worklist
+  Adding insn 22 to worklist
+  Adding insn 20 to worklist
+  Adding insn 37 to worklist
+  Adding insn 43 to worklist
+  Adding insn 56 to worklist
+  Adding insn 51 to worklist
+  Adding insn 71 to worklist
+  Adding insn 67 to worklist
+  Adding insn 65 to worklist
+  Adding insn 63 to worklist
+  Adding insn 61 to worklist
+  Adding insn 59 to worklist
+  Adding insn 75 to worklist
+Finished finding needed instructions:
+Processing use of (reg 13 sp) in insn 75:
+Processing use of (reg 0 r0) in insn 75:
+  Adding insn 74 to worklist
+Processing use of (reg 132 [ _20 ]) in insn 75:
+  Adding insn 69 to worklist
+Processing use of (reg 133 [ hdma ]) in insn 69:
+  Adding insn 2 to worklist
+Processing use of (reg 0 r0) in insn 2:
+Processing use of (reg 133 [ hdma ]) in insn 74:
+Processing use of (reg 123 [ _11 ]) in insn 59:
+  Adding insn 41 to worklist
+Processing use of (reg 133 [ hdma ]) in insn 41:
+Processing use of (reg 123 [ _11 ]) in insn 61:
+Processing use of (reg 129 [ _17 ]) in insn 61:
+  Adding insn 60 to worklist
+Processing use of (reg 128 [ _16 ]) in insn 60:
+Processing use of (reg 124 [ _12 ]) in insn 63:
+  Adding insn 50 to worklist
+Processing use of (reg 126 [ _14 ]) in insn 63:
+  Adding insn 52 to worklist
+Processing use of (reg 133 [ hdma ]) in insn 52:
+Processing use of (reg 133 [ hdma ]) in insn 50:
+Processing use of (reg 133 [ hdma ]) in insn 65:
+Processing use of (reg 131 [ _19 ]) in insn 67:
+  Adding insn 66 to worklist
+Processing use of (reg 133 [ hdma ]) in insn 67:
+Processing use of (reg 130 [ _18 ]) in insn 66:
+Processing use of (reg 100 cc) in insn 71:
+  Adding insn 70 to worklist
+Processing use of (reg 132 [ _20 ]) in insn 70:
+Processing use of (reg 124 [ _12 ]) in insn 51:
+Processing use of (reg 100 cc) in insn 56:
+  Adding insn 55 to worklist
+Processing use of (reg 135) in insn 55:
+  Adding insn 54 to worklist
+Processing use of (reg 125 [ _13 ]) in insn 54:
+Processing use of (reg 126 [ _14 ]) in insn 54:
+Processing use of (reg 100 cc) in insn 43:
+  Adding insn 42 to worklist
+Processing use of (reg 123 [ _11 ]) in insn 42:
+Processing use of (reg 13 sp) in insn 37:
+Processing use of (reg 0 r0) in insn 37:
+Processing use of (reg 122 [ _10 ]) in insn 37:
+  Adding insn 30 to worklist
+Processing use of (reg 133 [ hdma ]) in insn 30:
+Processing use of (reg 117 [ _5 ]) in insn 20:
+  Adding insn 19 to worklist
+Processing use of (reg 133 [ hdma ]) in insn 19:
+Processing use of (reg 117 [ _5 ]) in insn 22:
+Processing use of (reg 119 [ _7 ]) in insn 22:
+  Adding insn 21 to worklist
+Processing use of (reg 118 [ _6 ]) in insn 21:
+Processing use of (reg 113 [ _1 ]) in insn 24:
+  Adding insn 7 to worklist
+Processing use of (reg 115 [ _3 ]) in insn 24:
+  Adding insn 9 to worklist
+Processing use of (reg 133 [ hdma ]) in insn 9:
+Processing use of (reg 133 [ hdma ]) in insn 7:
+Processing use of (reg 133 [ hdma ]) in insn 26:
+Processing use of (reg 121 [ _9 ]) in insn 28:
+  Adding insn 27 to worklist
+Processing use of (reg 133 [ hdma ]) in insn 28:
+Processing use of (reg 120 [ _8 ]) in insn 27:
+Processing use of (reg 100 cc) in insn 33:
+  Adding insn 32 to worklist
+Processing use of (reg 122 [ _10 ]) in insn 32:
+Processing use of (reg 113 [ _1 ]) in insn 8:
+Processing use of (reg 100 cc) in insn 12:
+  Adding insn 11 to worklist
+Processing use of (reg 134) in insn 11:
+  Adding insn 10 to worklist
+Processing use of (reg 114 [ _2 ]) in insn 10:
+Processing use of (reg 115 [ _3 ]) in insn 10:
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+HAL_DMAEx_MUX_IRQHandler
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={4d,3u} r1={3d} r2={3d} r3={3d} r7={1d,9u} r12={4d} r13={1d,11u} r14={3d} r15={2d} r16={3d} r17={3d} r18={3d} r19={3d} r20={3d} r21={3d} r22={3d} r23={3d} r24={3d} r25={3d} r26={3d} r27={3d} r28={3d} r29={3d} r30={3d} r31={3d} r48={2d} r49={2d} r50={2d} r51={2d} r52={2d} r53={2d} r54={2d} r55={2d} r56={2d} r57={2d} r58={2d} r59={2d} r60={2d} r61={2d} r62={2d} r63={2d} r64={2d} r65={2d} r66={2d} r67={2d} r68={2d} r69={2d} r70={2d} r71={2d} r72={2d} r73={2d} r74={2d} r75={2d} r76={2d} r77={2d} r78={2d} r79={2d} r80={2d} r81={2d} r82={2d} r83={2d} r84={2d} r85={2d} r86={2d} r87={2d} r88={2d} r89={2d} r90={2d} r91={2d} r92={2d} r93={2d} r94={2d} r95={2d} r96={2d} r97={2d} r98={2d} r99={2d} r100={7d,5u} r101={2d} r102={1d,9u} r103={1d,8u} r104={2d} r105={2d} r106={2d} r113={1d,2u} r114={1d,1u} r115={1d,2u} r117={1d,2u} r118={1d,1u} r119={1d,1u} r120={1d,1u} r121={1d,1u} r122={1d,2u} r123={1d,3u} r124={1d,2u} r125={1d,1u} r126={1d,2u} r128={1d,1u} r129={1d,1u} r130={1d,1u} r131={1d,1u} r132={1d,2u} r133={1d,13u} r134={1d,1u} r135={1d,1u} 
+;;    total ref usage 301{214d,87u,0e} in 53{51 regular + 2 call} insns.
+(note 4 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:SI 133 [ hdma ])
+        (reg:SI 0 r0 [ hdma ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":238:1 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":240:3 -1
+     (nil))
+(insn 7 6 8 2 (set (reg/f:SI 113 [ _1 ])
+        (mem/f:SI (plus:SI (reg/v/f:SI 133 [ hdma ])
+                (const_int 76 [0x4c])) [9 hdma_24(D)->DMAmuxChannelStatus+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":240:12 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 114 [ _2 ])
+        (mem/v:SI (reg/f:SI 113 [ _1 ]) [5 _1->CSR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":240:33 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 9 8 10 2 (set (reg:SI 115 [ _3 ])
+        (mem:SI (plus:SI (reg/v/f:SI 133 [ hdma ])
+                (const_int 80 [0x50])) [5 hdma_24(D)->DMAmuxChannelStatusMask+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":240:45 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 134)
+        (and:SI (reg:SI 114 [ _2 ])
+            (reg:SI 115 [ _3 ]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":240:39 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 114 [ _2 ])
+        (nil)))
+(insn 11 10 12 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 134)
+            (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":240:6 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 134)
+        (nil)))
+(jump_insn 12 11 16 2 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 16)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":240:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 16)
+      ; pc falls through to BB 5
+(code_label 16 12 17 3 34 (nil) [1 uses])
+(note 17 16 18 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 18 17 19 3 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":243:5 -1
+     (nil))
+(insn 19 18 20 3 (set (reg/f:SI 117 [ _5 ])
+        (mem/f:SI (plus:SI (reg/v/f:SI 133 [ hdma ])
+                (const_int 72 [0x48])) [1 hdma_24(D)->DMAmuxChannel+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":243:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 20 19 21 3 (set (reg:SI 118 [ _6 ])
+        (mem/v:SI (reg/f:SI 117 [ _5 ]) [5 _5->CCR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":243:30 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 21 20 22 3 (set (reg:SI 119 [ _7 ])
+        (and:SI (reg:SI 118 [ _6 ])
+            (const_int -257 [0xfffffffffffffeff]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":243:30 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 118 [ _6 ])
+        (nil)))
+(insn 22 21 23 3 (set (mem/v:SI (reg/f:SI 117 [ _5 ]) [5 _5->CCR+0 S4 A32])
+        (reg:SI 119 [ _7 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":243:30 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 119 [ _7 ])
+        (expr_list:REG_DEAD (reg/f:SI 117 [ _5 ])
+            (nil))))
+(debug_insn 23 22 24 3 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":246:5 -1
+     (nil))
+(insn 24 23 25 3 (set (mem/v:SI (plus:SI (reg/f:SI 113 [ _1 ])
+                (const_int 4 [0x4])) [5 _1->CFR+0 S4 A32])
+        (reg:SI 115 [ _3 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":246:36 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 115 [ _3 ])
+        (expr_list:REG_DEAD (reg/f:SI 113 [ _1 ])
+            (nil))))
+(debug_insn 25 24 26 3 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":249:5 -1
+     (nil))
+(insn 26 25 27 3 (set (reg:SI 120 [ _8 ])
+        (mem/v:SI (plus:SI (reg/v/f:SI 133 [ hdma ])
+                (const_int 60 [0x3c])) [5 hdma_24(D)->ErrorCode+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":249:21 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 27 26 28 3 (set (reg:SI 121 [ _9 ])
+        (ior:SI (reg:SI 120 [ _8 ])
+            (const_int 512 [0x200]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":249:21 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 120 [ _8 ])
+        (nil)))
+(insn 28 27 29 3 (set (mem/v:SI (plus:SI (reg/v/f:SI 133 [ hdma ])
+                (const_int 60 [0x3c])) [5 hdma_24(D)->ErrorCode+0 S4 A32])
+        (reg:SI 121 [ _9 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":249:21 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 121 [ _9 ])
+        (nil)))
+(debug_insn 29 28 30 3 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":251:5 -1
+     (nil))
+(insn 30 29 32 3 (set (reg/f:SI 122 [ _10 ])
+        (mem/f:SI (plus:SI (reg/v/f:SI 133 [ hdma ])
+                (const_int 52 [0x34])) [7 hdma_24(D)->XferErrorCallback+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":251:13 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 32 30 33 3 (set (reg:CC 100 cc)
+        (compare:CC (reg/f:SI 122 [ _10 ])
+            (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":251:8 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 33 32 34 3 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 38)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":251:8 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 322122548 (nil)))
+ -> 38)
+(note 34 33 35 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 35 34 37 4 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":254:7 -1
+     (nil))
+(call_insn 37 35 38 4 (parallel [
+            (call (mem:SI (reg/f:SI 122 [ _10 ]) [0 *_10 S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":254:7 988 {*call_reg_thumb2}
+     (expr_list:REG_DEAD (reg/f:SI 122 [ _10 ])
+        (expr_list:REG_DEAD (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (nil)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(code_label 38 37 39 5 35 (nil) [1 uses])
+(note 39 38 40 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 40 39 41 5 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":258:3 -1
+     (nil))
+(insn 41 40 42 5 (set (reg/f:SI 123 [ _11 ])
+        (mem/f:SI (plus:SI (reg/v/f:SI 133 [ hdma ])
+                (const_int 84 [0x54])) [10 hdma_24(D)->DMAmuxRequestGen+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":258:11 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 42 41 43 5 (set (reg:CC 100 cc)
+        (compare:CC (reg/f:SI 123 [ _11 ])
+            (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":258:6 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 43 42 47 5 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 47)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":258:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 751619284 (nil)))
+ -> 47)
+      ; pc falls through to BB 9
+(code_label 47 43 48 6 37 (nil) [1 uses])
+(note 48 47 49 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 49 48 50 6 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":261:5 -1
+     (nil))
+(insn 50 49 51 6 (set (reg/f:SI 124 [ _12 ])
+        (mem/f:SI (plus:SI (reg/v/f:SI 133 [ hdma ])
+                (const_int 88 [0x58])) [11 hdma_24(D)->DMAmuxRequestGenStatus+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":261:14 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 51 50 52 6 (set (reg:SI 125 [ _13 ])
+        (mem/v:SI (reg/f:SI 124 [ _12 ]) [5 _12->RGSR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":261:38 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 52 51 54 6 (set (reg:SI 126 [ _14 ])
+        (mem:SI (plus:SI (reg/v/f:SI 133 [ hdma ])
+                (const_int 92 [0x5c])) [5 hdma_24(D)->DMAmuxRequestGenStatusMask+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":261:51 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 54 52 55 6 (set (reg:SI 135)
+        (and:SI (reg:SI 125 [ _13 ])
+            (reg:SI 126 [ _14 ]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":261:45 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 125 [ _13 ])
+        (nil)))
+(insn 55 54 56 6 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 135)
+            (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":261:8 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 135)
+        (nil)))
+(jump_insn 56 55 57 6 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 79)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":261:8 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 79)
+(note 57 56 58 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 58 57 59 7 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":264:7 -1
+     (nil))
+(insn 59 58 60 7 (set (reg:SI 128 [ _16 ])
+        (mem/v:SI (reg/f:SI 123 [ _11 ]) [5 _11->RGCR+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":264:36 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 60 59 61 7 (set (reg:SI 129 [ _17 ])
+        (and:SI (reg:SI 128 [ _16 ])
+            (const_int -257 [0xfffffffffffffeff]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":264:36 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 128 [ _16 ])
+        (nil)))
+(insn 61 60 62 7 (set (mem/v:SI (reg/f:SI 123 [ _11 ]) [5 _11->RGCR+0 S4 A32])
+        (reg:SI 129 [ _17 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":264:36 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 129 [ _17 ])
+        (expr_list:REG_DEAD (reg/f:SI 123 [ _11 ])
+            (nil))))
+(debug_insn 62 61 63 7 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":267:7 -1
+     (nil))
+(insn 63 62 64 7 (set (mem/v:SI (plus:SI (reg/f:SI 124 [ _12 ])
+                (const_int 4 [0x4])) [5 _12->RGCFR+0 S4 A32])
+        (reg:SI 126 [ _14 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":267:43 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 126 [ _14 ])
+        (expr_list:REG_DEAD (reg/f:SI 124 [ _12 ])
+            (nil))))
+(debug_insn 64 63 65 7 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":270:7 -1
+     (nil))
+(insn 65 64 66 7 (set (reg:SI 130 [ _18 ])
+        (mem/v:SI (plus:SI (reg/v/f:SI 133 [ hdma ])
+                (const_int 60 [0x3c])) [5 hdma_24(D)->ErrorCode+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":270:23 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 66 65 67 7 (set (reg:SI 131 [ _19 ])
+        (ior:SI (reg:SI 130 [ _18 ])
+            (const_int 1024 [0x400]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":270:23 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 130 [ _18 ])
+        (nil)))
+(insn 67 66 68 7 (set (mem/v:SI (plus:SI (reg/v/f:SI 133 [ hdma ])
+                (const_int 60 [0x3c])) [5 hdma_24(D)->ErrorCode+0 S4 A32])
+        (reg:SI 131 [ _19 ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":270:23 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 131 [ _19 ])
+        (nil)))
+(debug_insn 68 67 69 7 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":272:7 -1
+     (nil))
+(insn 69 68 70 7 (set (reg/f:SI 132 [ _20 ])
+        (mem/f:SI (plus:SI (reg/v/f:SI 133 [ hdma ])
+                (const_int 52 [0x34])) [7 hdma_24(D)->XferErrorCallback+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":272:15 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 70 69 71 7 (set (reg:CC 100 cc)
+        (compare:CC (reg/f:SI 132 [ _20 ])
+            (const_int 0 [0]))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":272:10 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 71 70 72 7 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 79)
+            (pc))) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":272:10 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 322122548 (nil)))
+ -> 79)
+(note 72 71 73 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 73 72 74 8 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":275:9 -1
+     (nil))
+(insn 74 73 75 8 (set (reg:SI 0 r0)
+        (reg/v/f:SI 133 [ hdma ])) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":275:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v/f:SI 133 [ hdma ])
+        (nil)))
+(call_insn/j 75 74 79 8 (parallel [
+            (call (mem:SI (reg/f:SI 132 [ _20 ]) [0 *_20 S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dma_ex.c":275:9 292 {*sibcall_insn}
+     (expr_list:REG_DEAD (reg/f:SI 132 [ _20 ])
+        (expr_list:REG_DEAD (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (nil)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(code_label 79 75 80 9 33 (nil) [2 uses])
+(note 80 79 0 9 [bb 9] NOTE_INSN_BASIC_BLOCK)

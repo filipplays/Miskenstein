@@ -1,0 +1,1022 @@
+
+;; Function TIMUT_stopwatch_set_time_mark (TIMUT_stopwatch_set_time_mark, funcdef_no=352, decl_uid=5687, cgraph_uid=356, symbol_order=355)
+
+
+
+try_optimize_cfg iteration 1
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Attempting shrink-wrapping optimization.
+Block 2 needs the prologue.
+After wrapping required blocks, PRO is now 2
+Avoiding non-duplicatable blocks, PRO is now 2
+Bumping back to anticipatable blocks, PRO is now 2
+scanning new insn with uid = 42.
+scanning new insn with uid = 39.
+verify found no changes in insn with uid = 7.
+
+
+try_optimize_cfg iteration 1
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+TIMUT_stopwatch_set_time_mark
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 4 [r4] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 4 [r4] 12 [ip] 13 [sp] 14 [lr]
+;;  ref usage 	r0={2d,2u} r1={2d} r2={2d} r3={2d} r4={3d,3u} r12={2d} r13={3d,9u} r14={2d,2u} r15={2d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 125{109d,16u,0e} in 6{5 regular + 1 call} insns.
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 39 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 39 4 40 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [3  A8])
+                (unspec:BLK [
+                        (reg:SI 4 r4)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":57:1 -1
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -8 [0xfffffffffffffff8])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [3  S4 A32])
+                    (reg:SI 4 r4))
+                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                            (const_int 4 [0x4])) [3  S4 A32])
+                    (reg:SI 14 lr))
+            ])
+        (nil)))
+(note 40 39 3 2 NOTE_INSN_PROLOGUE_END)
+(note 3 40 8 2 NOTE_INSN_FUNCTION_BEG)
+(note 8 3 6 2 NOTE_INSN_DELETED)
+(debug_insn 6 8 2 2 (debug_marker) "../System/timing_utils.c":58:2 -1
+     (nil))
+(insn 2 6 7 2 (set (reg/v/f:SI 4 r4 [orig:114 stopwatch ] [114])
+        (reg:SI 0 r0 [115])) "../System/timing_utils.c":57:1 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 7 2 9 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":58:25 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 9 7 41 2 (set (mem:SI (reg/v/f:SI 4 r4 [orig:114 stopwatch ] [114]) [1 stopwatch_4(D)->time_mark+0 S4 A32])
+        (reg:SI 0 r0 [116])) "../System/timing_utils.c":58:23 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 41 9 42 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 42 41 45 2 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg:SI 4 r4)
+                (mem/c:SI (reg/f:SI 13 sp) [3  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [3  S4 A32]))
+        ]) "../System/timing_utils.c":59:1 -1
+     (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+        (nil))
+ -> return)
+(barrier 45 42 14)
+(note 14 45 15 NOTE_INSN_DELETED)
+(note 15 14 0 NOTE_INSN_DELETED)
+
+;; Function TIMUT_stopwatch_update (TIMUT_stopwatch_update, funcdef_no=353, decl_uid=5689, cgraph_uid=357, symbol_order=356)
+
+
+
+try_optimize_cfg iteration 1
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Attempting shrink-wrapping optimization.
+Block 2 needs the prologue.
+After wrapping required blocks, PRO is now 2
+Avoiding non-duplicatable blocks, PRO is now 2
+Bumping back to anticipatable blocks, PRO is now 2
+scanning new insn with uid = 21.
+scanning new insn with uid = 18.
+verify found no changes in insn with uid = 7.
+
+
+try_optimize_cfg iteration 1
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+TIMUT_stopwatch_update
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 4 [r4] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr]
+;;  ref usage 	r0={3d,3u} r1={2d} r2={2d} r3={3d,1u} r4={3d,4u,2e} r12={2d} r13={3d,9u} r14={2d,2u} r15={2d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 132{111d,19u,2e} in 8{7 regular + 1 call} insns.
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 18 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 18 4 19 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [3  A8])
+                (unspec:BLK [
+                        (reg:SI 4 r4)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":66:1 -1
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -8 [0xfffffffffffffff8])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [3  S4 A32])
+                    (reg:SI 4 r4))
+                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                            (const_int 4 [0x4])) [3  S4 A32])
+                    (reg:SI 14 lr))
+            ])
+        (nil)))
+(note 19 18 3 2 NOTE_INSN_PROLOGUE_END)
+(note 3 19 8 2 NOTE_INSN_FUNCTION_BEG)
+(note 8 3 6 2 NOTE_INSN_DELETED)
+(debug_insn 6 8 2 2 (debug_marker) "../System/timing_utils.c":67:2 -1
+     (nil))
+(insn 2 6 7 2 (set (reg/v/f:SI 4 r4 [orig:116 stopwatch ] [116])
+        (reg:SI 0 r0 [119])) "../System/timing_utils.c":66:1 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 7 2 9 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":67:28 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 9 7 10 2 (set (reg:SI 3 r3 [orig:118 stopwatch_6(D)->time_mark ] [118])
+        (mem:SI (reg/v/f:SI 4 r4 [orig:116 stopwatch ] [116]) [1 stopwatch_6(D)->time_mark+0 S4 A32])) "../System/timing_utils.c":67:42 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (reg/v/f:SI 4 r4 [orig:116 stopwatch ] [116]) [1 stopwatch_6(D)->time_mark+0 S4 A32])
+        (nil)))
+(insn 10 9 11 2 (set (reg:SI 0 r0 [117])
+        (minus:SI (reg:SI 0 r0 [120])
+            (reg:SI 3 r3 [orig:118 stopwatch_6(D)->time_mark ] [118]))) "../System/timing_utils.c":67:42 45 {*arm_subsi3_insn}
+     (expr_list:REG_EQUIV (mem:SI (plus:SI (reg/v/f:SI 4 r4 [orig:116 stopwatch ] [116])
+                (const_int 4 [0x4])) [1 stopwatch_6(D)->elapsed_time+0 S4 A32])
+        (nil)))
+(insn 11 10 20 2 (set (mem:SI (plus:SI (reg/v/f:SI 4 r4 [orig:116 stopwatch ] [116])
+                (const_int 4 [0x4])) [1 stopwatch_6(D)->elapsed_time+0 S4 A32])
+        (reg:SI 0 r0 [117])) "../System/timing_utils.c":67:26 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 20 11 21 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 21 20 24 2 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg:SI 4 r4)
+                (mem/c:SI (reg/f:SI 13 sp) [3  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [3  S4 A32]))
+        ]) "../System/timing_utils.c":68:1 -1
+     (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+        (nil))
+ -> return)
+(barrier 24 21 16)
+(note 16 24 17 NOTE_INSN_DELETED)
+(note 17 16 0 NOTE_INSN_DELETED)
+
+;; Function TIMUT_stopwatch_has_X_ms_passed (TIMUT_stopwatch_has_X_ms_passed, funcdef_no=354, decl_uid=5692, cgraph_uid=358, symbol_order=357)
+
+
+
+try_optimize_cfg iteration 1
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 3 n_edges 2 count 3 (    1)
+df_worklist_dataflow_doublequeue: n_basic_blocks 3 n_edges 2 count 3 (    1)
+Attempting shrink-wrapping optimization.
+Block 2 needs the prologue.
+After wrapping required blocks, PRO is now 2
+Avoiding non-duplicatable blocks, PRO is now 2
+Bumping back to anticipatable blocks, PRO is now 2
+scanning new insn with uid = 40.
+scanning new insn with uid = 37.
+verify found no changes in insn with uid = 11.
+
+
+try_optimize_cfg iteration 1
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+TIMUT_stopwatch_has_X_ms_passed
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 5 [r5] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 4 [r4] 5 [r5] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 3 [r3] 4 [r4] 5 [r5] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={5d,8u} r1={2d,1u} r2={2d} r3={4d,2u} r4={3d,5u,1e} r5={3d,3u} r12={2d} r13={3d,11u} r14={2d,2u} r15={2d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={2d,2u} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 153{118d,34u,1e} in 18{17 regular + 1 call} insns.
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 37 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 37 5 38 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -16 [0xfffffffffffffff0]))) [3  A8])
+                (unspec:BLK [
+                        (reg:SI 3 r3)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 4 r4))
+            (use (reg:SI 5 r5))
+            (use (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":76:1 -1
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -16 [0xfffffffffffffff0])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [3  S4 A32])
+                    (reg:SI 3 r3))
+                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                            (const_int 4 [0x4])) [3  S4 A32])
+                    (reg:SI 4 r4))
+                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                            (const_int 8 [0x8])) [3  S4 A32])
+                    (reg:SI 5 r5))
+                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                            (const_int 12 [0xc])) [3  S4 A32])
+                    (reg:SI 14 lr))
+            ])
+        (nil)))
+(note 38 37 4 2 NOTE_INSN_PROLOGUE_END)
+(note 4 38 12 2 NOTE_INSN_FUNCTION_BEG)
+(note 12 4 18 2 NOTE_INSN_DELETED)
+(note 18 12 19 2 NOTE_INSN_DELETED)
+(note 19 18 21 2 NOTE_INSN_DELETED)
+(note 21 19 7 2 NOTE_INSN_DELETED)
+(debug_insn 7 21 2 2 (debug_marker) "../System/timing_utils.c":81:2 -1
+     (nil))
+(insn 2 7 8 2 (set (reg/v/f:SI 4 r4 [orig:118 stopwatch ] [118])
+        (reg:SI 0 r0 [124])) "../System/timing_utils.c":76:1 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 8 2 9 2 (var_location:SI stopwatch (reg/v/f:SI 4 r4 [orig:118 stopwatch ] [118])) "../System/timing_utils.c":81:2 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker:BLK) "../System/timing_utils.c":65:6 -1
+     (nil))
+(debug_insn 10 9 3 2 (debug_marker) "../System/timing_utils.c":67:2 -1
+     (nil))
+(insn 3 10 11 2 (set (reg/v:SI 5 r5 [orig:119 x ] [119])
+        (reg:SI 1 r1 [125])) "../System/timing_utils.c":76:1 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 11 3 13 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":67:28 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 13 11 14 2 (set (reg:SI 3 r3 [orig:120 stopwatch_3(D)->time_mark ] [120])
+        (mem:SI (reg/v/f:SI 4 r4 [orig:118 stopwatch ] [118]) [1 stopwatch_3(D)->time_mark+0 S4 A32])) "../System/timing_utils.c":67:42 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem:SI (reg/v/f:SI 4 r4 [orig:118 stopwatch ] [118]) [1 stopwatch_3(D)->time_mark+0 S4 A32])
+        (nil)))
+(insn 14 13 15 2 (set (reg:SI 0 r0 [orig:115 _7 ] [115])
+        (minus:SI (reg:SI 0 r0 [126])
+            (reg:SI 3 r3 [orig:120 stopwatch_3(D)->time_mark ] [120]))) "../System/timing_utils.c":67:42 45 {*arm_subsi3_insn}
+     (nil))
+(insn 15 14 16 2 (set (mem:SI (plus:SI (reg/v/f:SI 4 r4 [orig:118 stopwatch ] [118])
+                (const_int 4 [0x4])) [1 stopwatch_3(D)->elapsed_time+0 S4 A32])
+        (reg:SI 0 r0 [orig:115 _7 ] [115])) "../System/timing_utils.c":67:26 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 16 15 17 2 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":81:2 -1
+     (nil))
+(debug_insn 17 16 34 2 (debug_marker) "../System/timing_utils.c":84:2 -1
+     (nil))
+(insn 34 17 35 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 5 r5 [orig:119 x ] [119])
+            (reg:SI 0 r0 [orig:115 _7 ] [115]))) "../System/timing_utils.c":93:1 268 {*arm_cmpsi_insn}
+     (nil))
+(insn 35 34 36 2 (cond_exec (geu (reg:CC 100 cc)
+            (const_int 0 [0]))
+        (set (reg/i:SI 0 r0)
+            (const_int 0 [0]))) "../System/timing_utils.c":93:1 6567 {*p *thumb2_movsi_vfp}
+     (nil))
+(insn 36 35 27 2 (cond_exec (ltu (reg:CC 100 cc)
+            (const_int 0 [0]))
+        (set (reg/i:SI 0 r0)
+            (const_int 1 [0x1]))) "../System/timing_utils.c":93:1 6567 {*p *thumb2_movsi_vfp}
+     (nil))
+(insn 27 36 39 2 (use (reg/i:SI 0 r0)) "../System/timing_utils.c":93:1 -1
+     (nil))
+(note 39 27 40 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 40 39 43 2 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 16 [0x10])))
+            (set/f (reg:SI 3 r3)
+                (mem/c:SI (reg/f:SI 13 sp) [3  S4 A32]))
+            (set/f (reg:SI 4 r4)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [3  S4 A32]))
+            (set/f (reg:SI 5 r5)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 8 [0x8])) [3  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 12 [0xc])) [3  S4 A32]))
+        ]) "../System/timing_utils.c":93:1 -1
+     (expr_list:REG_CFA_RESTORE (reg:SI 5 r5)
+        (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+            (expr_list:REG_CFA_RESTORE (reg:SI 3 r3)
+                (nil))))
+ -> return)
+(barrier 43 40 32)
+(note 32 43 33 NOTE_INSN_DELETED)
+(note 33 32 0 NOTE_INSN_DELETED)
+
+;; Function TIMUT_stopwatch_has_another_X_ms_passed (TIMUT_stopwatch_has_another_X_ms_passed, funcdef_no=355, decl_uid=5695, cgraph_uid=359, symbol_order=358)
+
+
+
+try_optimize_cfg iteration 1
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+verify found no changes in insn with uid = 2.
+verify found no changes in insn with uid = 3.
+Attempting shrink-wrapping optimization.
+Block 2 needs the prologue.
+Block 4 needs the prologue.
+Block 5 needs the prologue.
+After wrapping required blocks, PRO is now 2
+Avoiding non-duplicatable blocks, PRO is now 2
+Bumping back to anticipatable blocks, PRO is now 2
+scanning new insn with uid = 81.
+scanning new insn with uid = 78.
+verify found no changes in insn with uid = 18.
+verify found no changes in insn with uid = 39.
+
+
+try_optimize_cfg iteration 1
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+TIMUT_stopwatch_has_another_X_ms_passed
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 5 [r5] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 4 [r4] 5 [r5] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 4 [r4] 5 [r5] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={7d,8u} r1={4d,3u} r2={3d} r3={4d,1u} r4={4d,7u} r5={3d,9u,1e} r12={4d} r13={3d,17u} r14={3d,2u} r15={3d} r16={3d} r17={3d} r18={3d} r19={3d} r20={3d} r21={3d} r22={3d} r23={3d} r24={3d} r25={3d} r26={3d} r27={3d} r28={3d} r29={3d} r30={3d} r31={3d} r48={2d} r49={2d} r50={2d} r51={2d} r52={2d} r53={2d} r54={2d} r55={2d} r56={2d} r57={2d} r58={2d} r59={2d} r60={2d} r61={2d} r62={2d} r63={2d} r64={2d} r65={2d} r66={2d} r67={2d} r68={2d} r69={2d} r70={2d} r71={2d} r72={2d} r73={2d} r74={2d} r75={2d} r76={2d} r77={2d} r78={2d} r79={2d} r80={2d} r81={2d} r82={2d} r83={2d} r84={2d} r85={2d} r86={2d} r87={2d} r88={2d} r89={2d} r90={2d} r91={2d} r92={2d} r93={2d} r94={2d} r95={2d} r96={2d} r97={2d} r98={2d} r99={2d} r100={4d,2u} r101={2d} r104={2d} r105={2d} r106={2d} 
+;;    total ref usage 252{202d,49u,1e} in 45{43 regular + 2 call} insns.
+(note 1 0 8 NOTE_INSN_DELETED)
+(note 8 1 78 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 78 8 79 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -16 [0xfffffffffffffff0]))) [3  A8])
+                (unspec:BLK [
+                        (reg:SI 3 r3)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 4 r4))
+            (use (reg:SI 5 r5))
+            (use (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":113:1 -1
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -16 [0xfffffffffffffff0])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [3  S4 A32])
+                    (reg:SI 3 r3))
+                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                            (const_int 4 [0x4])) [3  S4 A32])
+                    (reg:SI 4 r4))
+                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                            (const_int 8 [0x8])) [3  S4 A32])
+                    (reg:SI 5 r5))
+                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                            (const_int 12 [0xc])) [3  S4 A32])
+                    (reg:SI 14 lr))
+            ])
+        (nil)))
+(note 79 78 4 2 NOTE_INSN_PROLOGUE_END)
+(note 4 79 19 2 NOTE_INSN_FUNCTION_BEG)
+(note 19 4 10 2 NOTE_INSN_DELETED)
+(debug_insn 10 19 2 2 (debug_marker) "../System/timing_utils.c":116:2 -1
+     (nil))
+(insn 2 10 11 2 (set (reg/v/f:SI 5 r5 [orig:120 stopwatch ] [120])
+        (reg:SI 0 r0 [125])) "../System/timing_utils.c":113:1 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 11 2 3 2 (var_location:SI stopwatch (reg/v/f:SI 5 r5 [orig:120 stopwatch ] [120])) "../System/timing_utils.c":116:2 -1
+     (nil))
+(insn 3 11 12 2 (set (reg/v:SI 4 r4 [orig:121 x ] [121])
+        (reg:SI 1 r1 [126])) "../System/timing_utils.c":113:1 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 12 3 13 2 (var_location:SI x (reg/v:SI 4 r4 [orig:121 x ] [121])) "../System/timing_utils.c":116:2 -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker:BLK) "../System/timing_utils.c":75:9 -1
+     (nil))
+(debug_insn 14 13 15 2 (debug_marker) "../System/timing_utils.c":81:2 -1
+     (nil))
+(debug_insn 15 14 16 2 (var_location:SI stopwatch (reg/v/f:SI 5 r5 [orig:120 stopwatch ] [120])) "../System/timing_utils.c":81:2 -1
+     (nil))
+(debug_insn 16 15 17 2 (debug_marker:BLK) "../System/timing_utils.c":65:6 -1
+     (nil))
+(debug_insn 17 16 18 2 (debug_marker) "../System/timing_utils.c":67:2 -1
+     (nil))
+(call_insn 18 17 20 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":67:28 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 20 18 21 2 (set (reg:SI 1 r1 [orig:116 _10 ] [116])
+        (mem:SI (reg/v/f:SI 5 r5 [orig:120 stopwatch ] [120]) [1 stopwatch_6(D)->time_mark+0 S4 A32])) "../System/timing_utils.c":67:53 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 21 20 22 2 (set (reg:SI 0 r0 [orig:117 _11 ] [117])
+        (minus:SI (reg:SI 0 r0 [127])
+            (reg:SI 1 r1 [orig:116 _10 ] [116]))) "../System/timing_utils.c":67:42 45 {*arm_subsi3_insn}
+     (nil))
+(insn 22 21 23 2 (set (mem:SI (plus:SI (reg/v/f:SI 5 r5 [orig:120 stopwatch ] [120])
+                (const_int 4 [0x4])) [1 stopwatch_6(D)->elapsed_time+0 S4 A32])
+        (reg:SI 0 r0 [orig:117 _11 ] [117])) "../System/timing_utils.c":67:26 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 23 22 24 2 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":81:2 -1
+     (nil))
+(debug_insn 24 23 25 2 (debug_marker) "../System/timing_utils.c":84:2 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 4 r4 [orig:121 x ] [121])
+            (reg:SI 0 r0 [orig:117 _11 ] [117]))) "../System/timing_utils.c":84:5 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 26 25 27 2 (set (pc)
+        (if_then_else (geu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 66)
+            (pc))) "../System/timing_utils.c":84:5 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 66)
+(note 27 26 31 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 31 27 28 3 NOTE_INSN_DELETED)
+(debug_insn 28 31 29 3 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":116:7 -1
+     (nil))
+(debug_insn 29 28 30 3 (var_location:SI x (clobber (const_int 0 [0]))) "../System/timing_utils.c":116:7 -1
+     (nil))
+(debug_insn 30 29 32 3 (debug_marker) "../System/timing_utils.c":128:3 -1
+     (nil))
+(insn 32 30 33 3 (set (reg:CC_SWP 100 cc)
+        (compare:CC_SWP (ashift:SI (reg/v:SI 4 r4 [orig:121 x ] [121])
+                (const_int 1 [0x1]))
+            (reg:SI 0 r0 [orig:117 _11 ] [117]))) "../System/timing_utils.c":128:6 270 {*cmpsi_shiftsi_swp}
+     (nil))
+(jump_insn 33 32 34 3 (set (pc)
+        (if_then_else (geu (reg:CC_SWP 100 cc)
+                (const_int 0 [0]))
+            (label_ref 46)
+            (pc))) "../System/timing_utils.c":128:6 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 719407028 (nil))
+ -> 46)
+(note 34 33 40 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 40 34 35 4 NOTE_INSN_DELETED)
+(debug_insn 35 40 36 4 (debug_marker) "../System/timing_utils.c":134:4 -1
+     (nil))
+(debug_insn 36 35 37 4 (var_location:SI stopwatch (reg/v/f:SI 5 r5 [orig:120 stopwatch ] [120])) "../System/timing_utils.c":134:4 -1
+     (nil))
+(debug_insn 37 36 38 4 (debug_marker:BLK) "../System/timing_utils.c":56:6 -1
+     (nil))
+(debug_insn 38 37 39 4 (debug_marker) "../System/timing_utils.c":58:2 -1
+     (nil))
+(call_insn 39 38 41 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":58:25 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 41 39 42 4 (set (mem:SI (reg/v/f:SI 5 r5 [orig:120 stopwatch ] [120]) [1 stopwatch_6(D)->time_mark+0 S4 A32])
+        (reg:SI 0 r0 [128])) "../System/timing_utils.c":58:23 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 42 41 43 4 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":134:4 -1
+     (nil))
+(debug_insn 43 42 5 4 (debug_marker) "../System/timing_utils.c":137:4 -1
+     (nil))
+(insn 5 43 72 4 (set (reg:SI 0 r0 [orig:119 <retval> ] [119])
+        (const_int 1 [0x1])) "../System/timing_utils.c":137:11 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 1 [0x1])
+        (nil)))
+(jump_insn 72 5 73 4 (set (pc)
+        (label_ref 52)) "../System/timing_utils.c":137:11 284 {*arm_jump}
+     (nil)
+ -> 52)
+(barrier 73 72 46)
+(code_label 46 73 47 5 10 (nil) [1 uses])
+(note 47 46 48 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 48 47 49 5 (debug_marker) "../System/timing_utils.c":147:4 -1
+     (nil))
+(insn 49 48 50 5 (set (reg:SI 4 r4 [123])
+        (plus:SI (reg/v:SI 4 r4 [orig:121 x ] [121])
+            (reg:SI 1 r1 [orig:116 _10 ] [116]))) "../System/timing_utils.c":147:25 7 {*arm_addsi3}
+     (expr_list:REG_EQUIV (mem:SI (reg/v/f:SI 5 r5 [orig:120 stopwatch ] [120]) [1 stopwatch_6(D)->time_mark+0 S4 A32])
+        (nil)))
+(insn 50 49 51 5 (set (mem:SI (reg/v/f:SI 5 r5 [orig:120 stopwatch ] [120]) [1 stopwatch_6(D)->time_mark+0 S4 A32])
+        (reg:SI 4 r4 [123])) "../System/timing_utils.c":147:25 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 51 50 6 5 (debug_marker) "../System/timing_utils.c":150:4 -1
+     (nil))
+(insn 6 51 74 5 (set (reg:SI 0 r0 [orig:119 <retval> ] [119])
+        (const_int 1 [0x1])) "../System/timing_utils.c":150:11 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 1 [0x1])
+        (nil)))
+(jump_insn 74 6 75 5 (set (pc)
+        (label_ref 52)) "../System/timing_utils.c":150:11 284 {*arm_jump}
+     (nil)
+ -> 52)
+(barrier 75 74 66)
+(code_label 66 75 65 6 11 (nil) [1 uses])
+(note 65 66 7 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 7 65 52 6 (set (reg:SI 0 r0 [orig:119 <retval> ] [119])
+        (const_int 0 [0])) "../System/timing_utils.c":157:10 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(code_label 52 7 53 7 9 (nil) [2 uses])
+(note 53 52 54 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 54 53 55 7 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":116:7 -1
+     (nil))
+(debug_insn 55 54 61 7 (var_location:SI x (clobber (const_int 0 [0]))) "../System/timing_utils.c":116:7 -1
+     (nil))
+(insn 61 55 80 7 (use (reg/i:SI 0 r0)) "../System/timing_utils.c":160:1 -1
+     (nil))
+(note 80 61 81 7 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 81 80 84 7 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 16 [0x10])))
+            (set/f (reg:SI 3 r3)
+                (mem/c:SI (reg/f:SI 13 sp) [3  S4 A32]))
+            (set/f (reg:SI 4 r4)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [3  S4 A32]))
+            (set/f (reg:SI 5 r5)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 8 [0x8])) [3  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 12 [0xc])) [3  S4 A32]))
+        ]) "../System/timing_utils.c":160:1 -1
+     (expr_list:REG_CFA_RESTORE (reg:SI 5 r5)
+        (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+            (expr_list:REG_CFA_RESTORE (reg:SI 3 r3)
+                (nil))))
+ -> return)
+(barrier 84 81 76)
+(note 76 84 77 NOTE_INSN_DELETED)
+(note 77 76 0 NOTE_INSN_DELETED)
+
+;; Function TIMUT_stopwatch_demo (TIMUT_stopwatch_demo, funcdef_no=356, decl_uid=5697, cgraph_uid=360, symbol_order=359) (executed once)
+
+
+
+try_optimize_cfg iteration 1
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Attempting shrink-wrapping optimization.
+Block 2 needs the prologue.
+Block 3 needs the prologue.
+Block 4 needs the prologue.
+Block 5 needs the prologue.
+Block 7 needs the prologue.
+Block 8 needs the prologue.
+Block 9 needs the prologue.
+After wrapping required blocks, PRO is now 2
+Avoiding non-duplicatable blocks, PRO is now 2
+Bumping back to anticipatable blocks, PRO is now 2
+scanning new insn with uid = 144.
+verify found no changes in insn with uid = 8.
+verify found no changes in insn with uid = 13.
+verify found no changes in insn with uid = 28.
+verify found no changes in insn with uid = 44.
+verify found no changes in insn with uid = 49.
+verify found no changes in insn with uid = 74.
+verify found no changes in insn with uid = 97.
+verify found no changes in insn with uid = 123.
+
+
+try_optimize_cfg iteration 1
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+TIMUT_stopwatch_demo
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 4 [r4] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 3 [r3] 4 [r4] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={12d,8u} r1={9d} r2={9d} r3={11d,4u} r4={5d,9u} r12={16d} r13={2d,19u} r14={9d,2u} r15={8d} r16={9d} r17={9d} r18={9d} r19={9d} r20={9d} r21={9d} r22={9d} r23={9d} r24={9d} r25={9d} r26={9d} r27={9d} r28={9d} r29={9d} r30={9d} r31={9d} r48={8d} r49={8d} r50={8d} r51={8d} r52={8d} r53={8d} r54={8d} r55={8d} r56={8d} r57={8d} r58={8d} r59={8d} r60={8d} r61={8d} r62={8d} r63={8d} r64={8d} r65={8d} r66={8d} r67={8d} r68={8d} r69={8d} r70={8d} r71={8d} r72={8d} r73={8d} r74={8d} r75={8d} r76={8d} r77={8d} r78={8d} r79={8d} r80={8d} r81={8d} r82={8d} r83={8d} r84={8d} r85={8d} r86={8d} r87={8d} r88={8d} r89={8d} r90={8d} r91={8d} r92={8d} r93={8d} r94={8d} r95={8d} r96={8d} r97={8d} r98={8d} r99={8d} r100={11d,3u} r101={8d} r104={8d} r105={8d} r106={8d} 
+;;    total ref usage 729{684d,45u,0e} in 100{92 regular + 8 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 144 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn/f 144 3 145 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [3  A8])
+                (unspec:BLK [
+                        (reg:SI 3 r3)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":170:1 -1
+     (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                (set/f (reg/f:SI 13 sp)
+                    (plus:SI (reg/f:SI 13 sp)
+                        (const_int -8 [0xfffffffffffffff8])))
+                (set/f (mem/c:SI (reg/f:SI 13 sp) [3  S4 A32])
+                    (reg:SI 3 r3))
+                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                            (const_int 4 [0x4])) [3  S4 A32])
+                    (reg:SI 14 lr))
+            ])
+        (nil)))
+(note 145 144 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 145 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../System/timing_utils.c":174:2 -1
+     (nil))
+(debug_insn 6 5 7 2 (debug_marker) "../System/timing_utils.c":184:2 -1
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 0 r0)
+        (const_int 0 [0])) "../System/timing_utils.c":184:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 8 7 9 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("LED_on") [flags 0x41]  <function_decl 0000000006c2b600 LED_on>) [0 LED_on S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":184:2 290 {*call_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("LED_on") [flags 0x41]  <function_decl 0000000006c2b600 LED_on>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 9 8 10 2 (debug_marker) "../System/timing_utils.c":185:2 -1
+     (nil))
+(debug_insn 10 9 11 2 (var_location:SI stopwatch (debug_implicit_ptr:SI stopwatch)) "../System/timing_utils.c":185:2 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker:BLK) "../System/timing_utils.c":56:6 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker) "../System/timing_utils.c":58:2 -1
+     (nil))
+(call_insn 13 12 14 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":58:25 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 14 13 32 2 (set (reg:SI 4 r4 [orig:114 _10 ] [114])
+        (reg:SI 0 r0 [121])) "../System/timing_utils.c":58:25 728 {*thumb2_movsi_vfp}
+     (nil))
+(code_label 32 14 15 3 15 (nil) [1 uses])
+(note 15 32 29 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 29 15 16 3 NOTE_INSN_DELETED)
+(debug_insn 16 29 17 3 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":190:10 -1
+     (nil))
+(debug_insn 17 16 18 3 (var_location:SI x (clobber (const_int 0 [0]))) "../System/timing_utils.c":190:10 -1
+     (nil))
+(debug_insn 18 17 19 3 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":185:2 -1
+     (nil))
+(debug_insn 19 18 20 3 (debug_marker) "../System/timing_utils.c":195:2 -1
+     (nil))
+(debug_insn 20 19 21 3 (debug_marker) "../System/timing_utils.c":190:8 -1
+     (nil))
+(debug_insn 21 20 22 3 (var_location:SI stopwatch (debug_implicit_ptr:SI stopwatch)) "../System/timing_utils.c":190:8 -1
+     (nil))
+(debug_insn 22 21 23 3 (var_location:SI x (const_int 1000 [0x3e8])) "../System/timing_utils.c":190:8 -1
+     (nil))
+(debug_insn 23 22 24 3 (debug_marker:BLK) "../System/timing_utils.c":75:9 -1
+     (nil))
+(debug_insn 24 23 25 3 (debug_marker) "../System/timing_utils.c":81:2 -1
+     (nil))
+(debug_insn 25 24 26 3 (var_location:SI stopwatch (debug_implicit_ptr:SI stopwatch)) "../System/timing_utils.c":81:2 -1
+     (nil))
+(debug_insn 26 25 27 3 (debug_marker:BLK) "../System/timing_utils.c":65:6 -1
+     (nil))
+(debug_insn 27 26 28 3 (debug_marker) "../System/timing_utils.c":67:2 -1
+     (nil))
+(call_insn 28 27 30 3 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":67:28 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(debug_insn 30 28 31 3 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":81:2 -1
+     (nil))
+(debug_insn 31 30 33 3 (debug_marker) "../System/timing_utils.c":84:2 -1
+     (nil))
+(insn 33 31 36 3 (set (reg:SI 3 r3 [119])
+        (minus:SI (reg:SI 0 r0 [122])
+            (reg:SI 4 r4 [orig:114 _10 ] [114]))) "../System/timing_utils.c":67:42 45 {*arm_subsi3_insn}
+     (nil))
+(insn 36 33 37 3 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [119])
+            (const_int 1000 [0x3e8]))) "../System/timing_utils.c":84:5 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 37 36 38 3 (set (pc)
+        (if_then_else (gtu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 32)
+            (pc))) "../System/timing_utils.c":84:5 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 32)
+(note 38 37 39 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 39 38 40 4 (debug_marker) "../System/timing_utils.c":90:3 -1
+     (nil))
+(debug_insn 40 39 41 4 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":190:10 -1
+     (nil))
+(debug_insn 41 40 42 4 (var_location:SI x (clobber (const_int 0 [0]))) "../System/timing_utils.c":190:10 -1
+     (nil))
+(debug_insn 42 41 43 4 (debug_marker) "../System/timing_utils.c":201:2 -1
+     (nil))
+(insn 43 42 44 4 (set (reg:SI 0 r0)
+        (const_int 0 [0])) "../System/timing_utils.c":201:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 44 43 45 4 (parallel [
+            (call (mem:SI (symbol_ref:SI ("LED_off") [flags 0x41]  <function_decl 0000000006c2b700 LED_off>) [0 LED_off S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":201:2 290 {*call_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("LED_off") [flags 0x41]  <function_decl 0000000006c2b700 LED_off>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 45 44 46 4 (debug_marker) "../System/timing_utils.c":216:2 -1
+     (nil))
+(debug_insn 46 45 47 4 (var_location:SI stopwatch (debug_implicit_ptr:SI stopwatch)) "../System/timing_utils.c":216:2 -1
+     (nil))
+(debug_insn 47 46 48 4 (debug_marker:BLK) "../System/timing_utils.c":56:6 -1
+     (nil))
+(debug_insn 48 47 49 4 (debug_marker) "../System/timing_utils.c":58:2 -1
+     (nil))
+(call_insn 49 48 50 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":58:25 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 50 49 51 4 (set (reg:SI 4 r4 [orig:113 stopwatch$time_mark ] [113])
+        (reg:SI 0 r0 [123])) "../System/timing_utils.c":58:25 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 51 50 79 4 (var_location:SI stopwatch$time_mark (reg:SI 4 r4 [orig:113 stopwatch$time_mark ] [113])) "../System/timing_utils.c":58:23 -1
+     (nil))
+(code_label 79 51 54 5 16 (nil) [2 uses])
+(note 54 79 75 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(note 75 54 55 5 NOTE_INSN_DELETED)
+(debug_insn 55 75 56 5 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":116:7 -1
+     (nil))
+(debug_insn 56 55 57 5 (var_location:SI x (clobber (const_int 0 [0]))) "../System/timing_utils.c":116:7 -1
+     (nil))
+(debug_insn 57 56 58 5 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":223:8 -1
+     (nil))
+(debug_insn 58 57 59 5 (var_location:SI x (clobber (const_int 0 [0]))) "../System/timing_utils.c":223:8 -1
+     (nil))
+(debug_insn 59 58 60 5 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":216:2 -1
+     (nil))
+(debug_insn 60 59 61 5 (debug_marker) "../System/timing_utils.c":221:2 -1
+     (nil))
+(debug_insn 61 60 62 5 (debug_marker) "../System/timing_utils.c":223:3 -1
+     (nil))
+(debug_insn 62 61 63 5 (var_location:SI D#1 (const_int 1000 [0x3e8])) "../System/timing_utils.c":223:8 -1
+     (nil))
+(debug_insn 63 62 64 5 (var_location:SI stopwatch (debug_implicit_ptr:SI stopwatch)) "../System/timing_utils.c":223:8 -1
+     (nil))
+(debug_insn 64 63 65 5 (debug_marker:BLK) "../System/timing_utils.c":112:9 -1
+     (nil))
+(debug_insn 65 64 66 5 (var_location:SI x (const_int 1000 [0x3e8])) -1
+     (nil))
+(debug_insn 66 65 67 5 (debug_marker) "../System/timing_utils.c":116:2 -1
+     (nil))
+(debug_insn 67 66 68 5 (var_location:SI stopwatch (debug_implicit_ptr:SI stopwatch)) "../System/timing_utils.c":116:2 -1
+     (nil))
+(debug_insn 68 67 69 5 (var_location:SI x (const_int 1000 [0x3e8])) "../System/timing_utils.c":116:2 -1
+     (nil))
+(debug_insn 69 68 70 5 (debug_marker:BLK) "../System/timing_utils.c":75:9 -1
+     (nil))
+(debug_insn 70 69 71 5 (debug_marker) "../System/timing_utils.c":81:2 -1
+     (nil))
+(debug_insn 71 70 72 5 (var_location:SI stopwatch (debug_implicit_ptr:SI stopwatch)) "../System/timing_utils.c":81:2 -1
+     (nil))
+(debug_insn 72 71 73 5 (debug_marker:BLK) "../System/timing_utils.c":65:6 -1
+     (nil))
+(debug_insn 73 72 74 5 (debug_marker) "../System/timing_utils.c":67:2 -1
+     (nil))
+(call_insn 74 73 85 5 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":67:28 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(debug_insn 85 74 86 5 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":116:7 -1
+     (nil))
+(debug_insn 86 85 87 5 (var_location:SI x (clobber (const_int 0 [0]))) "../System/timing_utils.c":116:7 -1
+     (nil))
+(debug_insn 87 86 76 5 (debug_marker) "../System/timing_utils.c":128:3 -1
+     (nil))
+(insn 76 87 77 5 (set (reg:SI 3 r3 [orig:118 _23 ] [118])
+        (minus:SI (reg:SI 0 r0 [124])
+            (reg:SI 4 r4 [orig:113 stopwatch$time_mark ] [113]))) "../System/timing_utils.c":67:42 45 {*arm_subsi3_insn}
+     (nil))
+(debug_insn 77 76 78 5 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":81:2 -1
+     (nil))
+(debug_insn 78 77 82 5 (debug_marker) "../System/timing_utils.c":84:2 -1
+     (nil))
+(insn 82 78 83 5 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:118 _23 ] [118])
+            (const_int 1000 [0x3e8]))) "../System/timing_utils.c":84:5 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 83 82 84 5 (set (pc)
+        (if_then_else (leu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 79)
+            (pc))) "../System/timing_utils.c":84:5 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 536870916 (nil))
+ -> 79)
+(note 84 83 110 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 110 84 90 6 (debug_marker) "../System/timing_utils.c":147:4 -1
+     (nil))
+(insn 90 110 91 6 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 3 r3 [orig:118 _23 ] [118])
+            (const_int 2000 [0x7d0]))) "../System/timing_utils.c":128:6 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 91 90 92 6 (set (pc)
+        (if_then_else (leu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 108)
+            (pc))) "../System/timing_utils.c":128:6 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 719407028 (nil))
+ -> 108)
+(note 92 91 93 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 93 92 94 7 (debug_marker) "../System/timing_utils.c":134:4 -1
+     (nil))
+(debug_insn 94 93 95 7 (var_location:SI stopwatch (debug_implicit_ptr:SI stopwatch)) "../System/timing_utils.c":134:4 -1
+     (nil))
+(debug_insn 95 94 96 7 (debug_marker:BLK) "../System/timing_utils.c":56:6 -1
+     (nil))
+(debug_insn 96 95 97 7 (debug_marker) "../System/timing_utils.c":58:2 -1
+     (nil))
+(call_insn 97 96 98 7 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>) [0 HAL_GetTick S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":58:25 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_GetTick") [flags 0x41]  <function_decl 0000000006b12400 HAL_GetTick>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 98 97 99 7 (set (reg:SI 4 r4 [orig:113 stopwatch$time_mark ] [113])
+        (reg:SI 0 r0 [125])) "../System/timing_utils.c":58:25 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 99 98 100 7 (var_location:SI stopwatch$time_mark (reg:SI 4 r4 [orig:113 stopwatch$time_mark ] [113])) "../System/timing_utils.c":58:23 -1
+     (nil))
+(debug_insn 100 99 101 7 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":134:4 -1
+     (nil))
+(debug_insn 101 100 102 7 (debug_marker) "../System/timing_utils.c":137:4 -1
+     (nil))
+(debug_insn 102 101 103 7 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":116:7 -1
+     (nil))
+(debug_insn 103 102 104 7 (var_location:SI x (clobber (const_int 0 [0]))) "../System/timing_utils.c":116:7 -1
+     (nil))
+(debug_insn 104 103 105 7 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":223:8 -1
+     (nil))
+(debug_insn 105 104 139 7 (var_location:SI x (clobber (const_int 0 [0]))) "../System/timing_utils.c":223:8 -1
+     (nil))
+(jump_insn 139 105 140 7 (set (pc)
+        (label_ref 118)) 284 {*arm_jump}
+     (nil)
+ -> 118)
+(barrier 140 139 108)
+(code_label 108 140 109 8 17 (nil) [1 uses])
+(note 109 108 111 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(insn 111 109 112 8 (set (reg:SI 4 r4 [orig:113 stopwatch$time_mark ] [113])
+        (plus:SI (reg:SI 4 r4 [orig:113 stopwatch$time_mark ] [113])
+            (const_int 1000 [0x3e8]))) "../System/timing_utils.c":147:25 7 {*arm_addsi3}
+     (nil))
+(debug_insn 112 111 113 8 (var_location:SI stopwatch$time_mark (reg:SI 4 r4 [orig:113 stopwatch$time_mark ] [113])) "../System/timing_utils.c":147:25 -1
+     (nil))
+(debug_insn 113 112 114 8 (debug_marker) "../System/timing_utils.c":150:4 -1
+     (nil))
+(debug_insn 114 113 115 8 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":116:7 -1
+     (nil))
+(debug_insn 115 114 116 8 (var_location:SI x (clobber (const_int 0 [0]))) "../System/timing_utils.c":116:7 -1
+     (nil))
+(debug_insn 116 115 117 8 (var_location:SI stopwatch (clobber (const_int 0 [0]))) "../System/timing_utils.c":223:8 -1
+     (nil))
+(debug_insn 117 116 118 8 (var_location:SI x (clobber (const_int 0 [0]))) "../System/timing_utils.c":223:8 -1
+     (nil))
+(code_label 118 117 119 9 18 (nil) [1 uses])
+(note 119 118 120 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 120 119 121 9 (var_location:SI stopwatch$time_mark (reg:SI 4 r4 [orig:113 stopwatch$time_mark ] [113])) -1
+     (nil))
+(debug_insn 121 120 133 9 (debug_marker) "../System/timing_utils.c":227:4 -1
+     (nil))
+(insn 133 121 123 9 (set (reg:SI 0 r0)
+        (const_int 1 [0x1])) "../System/timing_utils.c":227:4 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 123 133 53 9 (parallel [
+            (call (mem:SI (symbol_ref:SI ("LED_toggle") [flags 0x41]  <function_decl 0000000006c2b800 LED_toggle>) [0 LED_toggle S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/timing_utils.c":227:4 290 {*call_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("LED_toggle") [flags 0x41]  <function_decl 0000000006c2b800 LED_toggle>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 53 123 141 9 (var_location:SI stopwatch$time_mark (reg:SI 4 r4 [orig:113 stopwatch$time_mark ] [113])) -1
+     (nil))
+(jump_insn 141 53 142 9 (set (pc)
+        (label_ref 79)) 284 {*arm_jump}
+     (nil)
+ -> 79)
+(barrier 142 141 143)
+(note 143 142 0 NOTE_INSN_DELETED)

@@ -1,0 +1,1019 @@
+
+;; Function LL_TIM_OC_SetCompareCH1 (LL_TIM_OC_SetCompareCH1, funcdef_no=387, decl_uid=10290, cgraph_uid=391, symbol_order=395)
+
+
+
+LL_TIM_OC_SetCompareCH1
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1]
+;;  ref usage 	r0={1d,1u} r1={1d,1u} r2={1d} r3={1d} r7={1d,2u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r102={1d,2u} r103={1d,1u} r113={1d,1u} r114={1d,1u} 
+;;    total ref usage 38{27d,11u,0e} in 4{4 regular + 0 call} insns.
+(note 5 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 5 3 2 (set (reg/v/f:SI 113 [ TIMx ])
+        (reg:SI 0 r0 [ TIMx ])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3197:1 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 3 2 4 2 (set (reg/v:SI 114 [ CompareValue ])
+        (reg:SI 1 r1 [ CompareValue ])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3197:1 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 4 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 4 8 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3198:3 -1
+     (nil))
+(insn 8 7 0 2 (set (mem/v:SI (plus:SI (reg/v/f:SI 113 [ TIMx ])
+                (const_int 52 [0x34])) [4 TIMx_2(D)->CCR1+0 S4 A32])
+        (reg/v:SI 114 [ CompareValue ])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3198:3 728 {*thumb2_movsi_vfp}
+     (nil))
+
+;; Function LL_TIM_OC_GetCompareCH1 (LL_TIM_OC_GetCompareCH1, funcdef_no=393, decl_uid=10313, cgraph_uid=397, symbol_order=401)
+
+
+
+LL_TIM_OC_GetCompareCH1
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0]
+;;  ref usage 	r0={2d,3u} r1={1d} r2={1d} r3={1d} r7={1d,2u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r102={1d,2u} r103={1d,1u} r113={1d,1u} r114={1d,1u} 
+;;    total ref usage 40{28d,12u,0e} in 5{5 regular + 0 call} insns.
+(note 4 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v/f:SI 114 [ TIMx ])
+        (reg:SI 0 r0 [ TIMx ])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3298:1 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3299:3 -1
+     (nil))
+(insn 7 6 11 2 (set (reg:SI 113 [ <retval> ])
+        (mem/v:SI (plus:SI (reg/v/f:SI 114 [ TIMx ])
+                (const_int 52 [0x34])) [4 TIMx_2(D)->CCR1+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3299:10 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 11 7 12 2 (set (reg/i:SI 0 r0)
+        (reg:SI 113 [ <retval> ])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3300:1 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 12 11 0 2 (use (reg/i:SI 0 r0)) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3300:1 -1
+     (nil))
+
+;; Function LCD_BKLT_init (LCD_BKLT_init, funcdef_no=862, decl_uid=11008, cgraph_uid=866, symbol_order=872)
+
+
+
+LCD_BKLT_init
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r7={1d,2u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r102={1d,2u} r103={1d,1u} r113={1d,1u} r114={1d,1u} r115={1d,1u} r116={1d,1u} r117={1d,1u} r118={1d,1u} r119={1d,1u} r120={1d,1u} r121={1d,1u} r122={1d,1u} r123={1d,1u} r124={1d,1u} r125={1d,1u} r126={1d,1u} r127={1d,1u} r128={1d,1u} r129={1d,1u} r130={1d,1u} r131={1d,1u} r132={1d,1u} r133={1d,1u} 
+;;    total ref usage 74{46d,28u,0e} in 59{59 regular + 0 call} insns.
+(note 3 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../System/lcd_backlight.c":137:3 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 117)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":137:23 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 118)
+        (const_int 1073743872 [0x40000800])) "../System/lcd_backlight.c":137:23 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 8 7 9 2 (set (mem/f/c:SI (reg/f:SI 117) [3 LCD_backlight.timer+0 S4 A32])
+        (reg:SI 118)) "../System/lcd_backlight.c":137:23 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "../System/lcd_backlight.c":138:3 -1
+     (nil))
+(insn 10 9 11 2 (set (reg/f:SI 119)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":138:31 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 120)
+        (const_int 1 [0x1])) "../System/lcd_backlight.c":138:31 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 12 11 13 2 (set (mem/c:SI (plus:SI (reg/f:SI 119)
+                (const_int 4 [0x4])) [4 LCD_backlight.timer_channel+0 S4 A32])
+        (reg:SI 120)) "../System/lcd_backlight.c":138:31 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker) "../System/lcd_backlight.c":146:3 -1
+     (nil))
+(insn 14 13 15 2 (set (reg/f:SI 121)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":146:28 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 15 14 16 2 (set (reg/f:SI 122)
+        (symbol_ref:SI ("LL_TIM_OC_SetCompareCH1") [flags 0x3]  <function_decl 0000000006dd9500 LL_TIM_OC_SetCompareCH1>)) "../System/lcd_backlight.c":146:28 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 16 15 17 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 121)
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])
+        (reg/f:SI 122)) "../System/lcd_backlight.c":146:28 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 17 16 18 2 (debug_marker) "../System/lcd_backlight.c":147:3 -1
+     (nil))
+(insn 18 17 19 2 (set (reg/f:SI 123)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":147:28 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 19 18 20 2 (set (reg/f:SI 124)
+        (symbol_ref:SI ("LL_TIM_OC_GetCompareCH1") [flags 0x3]  <function_decl 0000000006de3100 LL_TIM_OC_GetCompareCH1>)) "../System/lcd_backlight.c":147:28 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 20 19 21 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 123)
+                (const_int 12 [0xc])) [1 LCD_backlight.GetCompare+0 S4 A32])
+        (reg/f:SI 124)) "../System/lcd_backlight.c":147:28 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 21 20 22 2 (debug_marker) "../System/lcd_backlight.c":152:3 -1
+     (nil))
+(insn 22 21 23 2 (set (reg/f:SI 125)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":152:36 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 23 22 24 2 (set (reg:SI 126)
+        (const_int 100 [0x64])) "../System/lcd_backlight.c":152:36 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 24 23 25 2 (set (reg:QI 127)
+        (subreg:QI (reg:SI 126) 0)) "../System/lcd_backlight.c":152:36 263 {*arm_movqi_insn}
+     (nil))
+(insn 25 24 26 2 (set (mem/c:QI (plus:SI (reg/f:SI 125)
+                (const_int 16 [0x10])) [0 LCD_backlight.default_brightness+0 S1 A32])
+        (reg:QI 127)) "../System/lcd_backlight.c":152:36 263 {*arm_movqi_insn}
+     (nil))
+(debug_insn 26 25 27 2 (debug_marker) "../System/lcd_backlight.c":163:3 -1
+     (nil))
+(debug_insn 27 26 28 2 (var_location:SI TIMx (const_int 1073743872 [0x40000800])) "../System/lcd_backlight.c":163:3 -1
+     (nil))
+(debug_insn 28 27 29 2 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2013:22 -1
+     (nil))
+(debug_insn 29 28 30 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2015:3 -1
+     (nil))
+(insn 30 29 31 2 (set (reg/f:SI 128)
+        (const_int 1073743872 [0x40000800])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2015:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 31 30 32 2 (set (reg:SI 115 [ _11 ])
+        (mem/v:SI (reg/f:SI 128) [4 MEM[(struct TIM_TypeDef *)1073743872B].CR1+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2015:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 32 31 33 2 (set (reg:SI 116 [ _12 ])
+        (ior:SI (reg:SI 115 [ _11 ])
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2015:3 106 {*iorsi3_insn}
+     (nil))
+(insn 33 32 34 2 (set (reg/f:SI 129)
+        (const_int 1073743872 [0x40000800])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2015:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 34 33 35 2 (set (mem/v:SI (reg/f:SI 129) [4 MEM[(struct TIM_TypeDef *)1073743872B].CR1+0 S4 A64])
+        (reg:SI 116 [ _12 ])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2015:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 35 34 36 2 (var_location:SI TIMx (clobber (const_int 0 [0]))) "../System/lcd_backlight.c":163:3 -1
+     (nil))
+(debug_insn 36 35 37 2 (debug_marker) "../System/lcd_backlight.c":172:3 -1
+     (nil))
+(debug_insn 37 36 38 2 (debug_marker:BLK) "../System/lcd_backlight.c":250:6 -1
+     (nil))
+(debug_insn 38 37 39 2 (debug_marker) "../System/lcd_backlight.c":253:2 -1
+     (nil))
+(debug_insn 39 38 40 2 (var_location:QI brightness (const_int 100 [0x64])) "../System/lcd_backlight.c":253:2 -1
+     (nil))
+(debug_insn 40 39 41 2 (debug_marker:BLK) "../System/lcd_backlight.c":222:6 -1
+     (nil))
+(debug_insn 41 40 42 2 (debug_marker) "../System/lcd_backlight.c":231:2 -1
+     (nil))
+(debug_insn 42 41 43 2 (var_location:SI TIMx (const_int 1073743872 [0x40000800])) "../System/lcd_backlight.c":231:2 -1
+     (nil))
+(debug_insn 43 42 44 2 (var_location:SI CompareValue (const_int 100 [0x64])) "../System/lcd_backlight.c":231:2 -1
+     (nil))
+(debug_insn 44 43 45 2 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3196:22 -1
+     (nil))
+(debug_insn 45 44 46 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3198:3 -1
+     (nil))
+(insn 46 45 47 2 (set (reg/f:SI 130)
+        (const_int 1073743872 [0x40000800])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3198:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 47 46 48 2 (set (reg:SI 131)
+        (const_int 100 [0x64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3198:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 48 47 49 2 (set (mem/v:SI (plus:SI (reg/f:SI 130)
+                (const_int 52 [0x34])) [4 MEM[(struct TIM_TypeDef *)1073743872B].CCR1+0 S4 A32])
+        (reg:SI 131)) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3198:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 49 48 50 2 (var_location:SI TIMx (clobber (const_int 0 [0]))) "../System/lcd_backlight.c":231:9 -1
+     (nil))
+(debug_insn 50 49 51 2 (var_location:SI CompareValue (clobber (const_int 0 [0]))) "../System/lcd_backlight.c":231:9 -1
+     (nil))
+(debug_insn 51 50 52 2 (var_location:QI brightness (clobber (const_int 0 [0]))) "../System/lcd_backlight.c":253:2 -1
+     (nil))
+(debug_insn 52 51 53 2 (debug_marker) "../System/lcd_backlight.c":184:3 -1
+     (nil))
+(debug_insn 53 52 54 2 (var_location:SI TIMx (const_int 1073743872 [0x40000800])) "../System/lcd_backlight.c":184:3 -1
+     (nil))
+(debug_insn 54 53 55 2 (var_location:SI Channels (const_int 1 [0x1])) "../System/lcd_backlight.c":184:3 -1
+     (nil))
+(debug_insn 55 54 56 2 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2583:22 -1
+     (nil))
+(debug_insn 56 55 57 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2585:3 -1
+     (nil))
+(insn 57 56 58 2 (set (reg/f:SI 132)
+        (const_int 1073743872 [0x40000800])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2585:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 58 57 59 2 (set (reg:SI 113 [ _9 ])
+        (mem/v:SI (plus:SI (reg/f:SI 132)
+                (const_int 32 [0x20])) [4 MEM[(struct TIM_TypeDef *)1073743872B].CCER+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2585:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 59 58 60 2 (set (reg:SI 114 [ _10 ])
+        (ior:SI (reg:SI 113 [ _9 ])
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2585:3 106 {*iorsi3_insn}
+     (nil))
+(insn 60 59 61 2 (set (reg/f:SI 133)
+        (const_int 1073743872 [0x40000800])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2585:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 61 60 62 2 (set (mem/v:SI (plus:SI (reg/f:SI 133)
+                (const_int 32 [0x20])) [4 MEM[(struct TIM_TypeDef *)1073743872B].CCER+0 S4 A64])
+        (reg:SI 114 [ _10 ])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2585:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 62 61 63 2 (var_location:SI TIMx (clobber (const_int 0 [0]))) "../System/lcd_backlight.c":184:3 -1
+     (nil))
+(debug_insn 63 62 0 2 (var_location:SI Channels (clobber (const_int 0 [0]))) "../System/lcd_backlight.c":184:3 -1
+     (nil))
+
+;; Function LCD_BKLT_get_brightness (LCD_BKLT_get_brightness, funcdef_no=863, decl_uid=11012, cgraph_uid=867, symbol_order=873)
+
+verify found no changes in insn with uid = 11.
+
+
+LCD_BKLT_get_brightness
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 12 [ip] 13 [sp] 14 [lr]
+;;  ref usage 	r0={4d,4u} r1={2d} r2={2d} r3={2d} r7={1d,2u} r12={2d} r13={1d,3u} r14={2d} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r102={1d,2u} r103={1d,1u} r104={1d} r105={1d} r106={1d} r115={1d,1u} r116={1d,1u} r117={1d,1u} r118={1d,1u} r119={1d,1u} r120={1d,1u} r121={1d,1u} r122={1d,1u} 
+;;    total ref usage 136{116d,20u,0e} in 13{12 regular + 1 call} insns.
+(note 3 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../System/lcd_backlight.c":207:2 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 117)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 118)
+        (mem/f/c:SI (reg/f:SI 117) [3 LCD_backlight.timer+0 S4 A32])) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 8 7 9 2 (set (reg/f:SI 119)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":207:22 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 9 8 10 2 (set (reg/f:SI 120)
+        (mem/f/c:SI (plus:SI (reg/f:SI 119)
+                (const_int 12 [0xc])) [1 LCD_backlight.GetCompare+0 S4 A32])) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 0 r0)
+        (reg:SI 118)) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 11 10 12 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (reg/f:SI 120) [0 *_1 S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":207:9 991 {*call_value_reg_thumb2}
+     (expr_list:REG_CALL_DECL (nil)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(insn 12 11 13 2 (set (reg:SI 115 [ _3 ])
+        (reg:SI 0 r0)) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 13 12 14 2 (set (reg:QI 121)
+        (subreg:QI (reg:SI 115 [ _3 ]) 0)) "../System/lcd_backlight.c":207:9 263 {*arm_movqi_insn}
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 122)
+        (zero_extend:SI (reg:QI 121))) "../System/lcd_backlight.c":207:9 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 15 14 19 2 (set (reg:SI 116 [ <retval> ])
+        (reg:SI 122)) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 19 15 20 2 (set (reg/i:SI 0 r0)
+        (reg:SI 116 [ <retval> ])) "../System/lcd_backlight.c":208:1 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 20 19 0 2 (use (reg/i:SI 0 r0)) "../System/lcd_backlight.c":208:1 -1
+     (nil))
+
+;; Function LCD_BKLT_set_brightness (LCD_BKLT_set_brightness, funcdef_no=864, decl_uid=11010, cgraph_uid=868, symbol_order=874)
+
+verify found no changes in insn with uid = 13.
+
+
+LCD_BKLT_set_brightness
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 12 [ip] 13 [sp]
+;;  ref usage 	r0={3d,2u} r1={3d,1u} r2={2d} r3={2d} r7={1d,2u} r12={2d} r13={1d,3u} r14={2d} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r102={1d,2u} r103={1d,1u} r104={1d} r105={1d} r106={1d} r116={1d,1u} r117={1d,1u} r118={1d,1u} r119={1d,1u} r120={1d,1u} 
+;;    total ref usage 129{113d,16u,0e} in 9{8 regular + 1 call} insns.
+(note 4 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 4 3 2 (set (reg/v:SI 116 [ brightness ])
+        (reg:SI 0 r0 [ brightness ])) "../System/lcd_backlight.c":223:1 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 3 2 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 7 2 (debug_marker) "../System/lcd_backlight.c":231:2 -1
+     (nil))
+(insn 7 6 8 2 (set (reg/f:SI 117)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 118)
+        (mem/f/c:SI (reg/f:SI 117) [3 LCD_backlight.timer+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 9 8 10 2 (set (reg/f:SI 119)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":231:22 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 10 9 11 2 (set (reg/f:SI 120)
+        (mem/f/c:SI (plus:SI (reg/f:SI 119)
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 1 r1)
+        (reg/v:SI 116 [ brightness ])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 0 r0)
+        (reg:SI 118)) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn/j 13 12 0 2 (parallel [
+            (call (mem:SI (reg/f:SI 120) [0 *_1 S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../System/lcd_backlight.c":231:9 292 {*sibcall_insn}
+     (expr_list:REG_CALL_DECL (nil)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+
+;; Function LCD_BKLT_on (LCD_BKLT_on, funcdef_no=865, decl_uid=11014, cgraph_uid=869, symbol_order=875)
+
+verify found no changes in insn with uid = 17.
+
+
+LCD_BKLT_on
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 12 [ip] 13 [sp]
+;;  ref usage 	r0={3d,1u} r1={3d,1u} r2={2d} r3={2d} r7={1d,2u} r12={2d} r13={1d,3u} r14={2d} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r102={1d,2u} r103={1d,1u} r104={1d} r105={1d} r106={1d} r117={1d,1u} r118={1d,1u} r119={1d,1u} r120={1d,1u} r121={1d,1u} r122={1d,1u} 
+;;    total ref usage 130{114d,16u,0e} in 13{12 regular + 1 call} insns.
+(note 3 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../System/lcd_backlight.c":253:2 -1
+     (nil))
+(debug_insn 6 5 7 2 (var_location:QI brightness (mem/c:QI (const:SI (plus:SI (symbol_ref:SI ("LCD_backlight") [flags 0x82]  <var_decl 0000000006fb5ab0 LCD_backlight>)
+                (const_int 16 [0x10]))) [0 LCD_backlight.default_brightness+0 S1 A32])) "../System/lcd_backlight.c":253:2 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker:BLK) "../System/lcd_backlight.c":222:6 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "../System/lcd_backlight.c":231:2 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/f:SI 117)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":253:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 118)
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 117)
+                    (const_int 16 [0x10])) [0 LCD_backlight.default_brightness+0 S1 A32]))) "../System/lcd_backlight.c":231:9 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 11 10 12 2 (set (reg/f:SI 119)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 120)
+        (mem/f/c:SI (reg/f:SI 119) [3 LCD_backlight.timer+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 13 12 14 2 (set (reg/f:SI 121)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":231:22 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 14 13 15 2 (set (reg/f:SI 122)
+        (mem/f/c:SI (plus:SI (reg/f:SI 121)
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 1 r1)
+        (reg:SI 118)) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 0 r0)
+        (reg:SI 120)) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn/j 17 16 0 2 (parallel [
+            (call (mem:SI (reg/f:SI 122) [0 *_3 S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../System/lcd_backlight.c":231:9 292 {*sibcall_insn}
+     (expr_list:REG_CALL_DECL (nil)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+
+;; Function LCD_BKLT_off (LCD_BKLT_off, funcdef_no=866, decl_uid=11016, cgraph_uid=870, symbol_order=876)
+
+verify found no changes in insn with uid = 15.
+
+
+LCD_BKLT_off
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 12 [ip] 13 [sp]
+;;  ref usage 	r0={3d,1u} r1={3d,1u} r2={2d} r3={2d} r7={1d,2u} r12={2d} r13={1d,3u} r14={2d} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r102={1d,2u} r103={1d,1u} r104={1d} r105={1d} r106={1d} r115={1d,1u} r116={1d,1u} r117={1d,1u} r118={1d,1u} 
+;;    total ref usage 126{112d,14u,0e} in 11{10 regular + 1 call} insns.
+(note 3 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../System/lcd_backlight.c":261:2 -1
+     (nil))
+(debug_insn 6 5 7 2 (var_location:QI brightness (const_int 0 [0])) "../System/lcd_backlight.c":261:2 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker:BLK) "../System/lcd_backlight.c":222:6 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "../System/lcd_backlight.c":231:2 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/f:SI 115)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 116)
+        (mem/f/c:SI (reg/f:SI 115) [3 LCD_backlight.timer+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 11 10 12 2 (set (reg/f:SI 117)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":231:22 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 12 11 13 2 (set (reg/f:SI 118)
+        (mem/f/c:SI (plus:SI (reg/f:SI 117)
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 1 r1)
+        (const_int 0 [0])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 0 r0)
+        (reg:SI 116)) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn/j 15 14 0 2 (parallel [
+            (call (mem:SI (reg/f:SI 118) [0 *_2 S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../System/lcd_backlight.c":231:9 292 {*sibcall_insn}
+     (expr_list:REG_CALL_DECL (nil)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+
+;; Function LCD_BKLT_demo (LCD_BKLT_demo, funcdef_no=867, decl_uid=11018, cgraph_uid=871, symbol_order=877) (executed once)
+
+verify found no changes in insn with uid = 22.
+verify found no changes in insn with uid = 26.
+verify found no changes in insn with uid = 39.
+verify found no changes in insn with uid = 43.
+verify found no changes in insn with uid = 64.
+verify found no changes in insn with uid = 74.
+verify found no changes in insn with uid = 82.
+verify found no changes in insn with uid = 85.
+verify found no changes in insn with uid = 96.
+verify found no changes in insn with uid = 115.
+verify found no changes in insn with uid = 125.
+verify found no changes in insn with uid = 133.
+verify found no changes in insn with uid = 136.
+verify found no changes in insn with uid = 147.
+
+
+LCD_BKLT_demo
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={29d,16u} r1={21d,6u} r2={15d} r3={15d} r7={1d,7u} r12={28d} r13={1d,21u} r14={15d} r15={14d} r16={15d} r17={15d} r18={15d} r19={15d} r20={15d} r21={15d} r22={15d} r23={15d} r24={15d} r25={15d} r26={15d} r27={15d} r28={15d} r29={15d} r30={15d} r31={15d} r48={14d} r49={14d} r50={14d} r51={14d} r52={14d} r53={14d} r54={14d} r55={14d} r56={14d} r57={14d} r58={14d} r59={14d} r60={14d} r61={14d} r62={14d} r63={14d} r64={14d} r65={14d} r66={14d} r67={14d} r68={14d} r69={14d} r70={14d} r71={14d} r72={14d} r73={14d} r74={14d} r75={14d} r76={14d} r77={14d} r78={14d} r79={14d} r80={14d} r81={14d} r82={14d} r83={14d} r84={14d} r85={14d} r86={14d} r87={14d} r88={14d} r89={14d} r90={14d} r91={14d} r92={14d} r93={14d} r94={14d} r95={14d} r96={14d} r97={14d} r98={14d} r99={14d} r100={16d,2u} r101={14d} r102={1d,7u} r103={1d,6u} r104={14d} r105={14d} r106={14d} r117={2d,6u} r118={2d,6u} r127={1d,2u} r132={1d,2u} r137={1d,1u} r138={1d,1u} r139={1d,1u} r140={1d,1u} r141={1d,1u} r142={1d,1u} r143={1d,1u} r144={1d,1u} r145={1d,1u} r146={1d,1u} r147={1d,1u} r148={1d,1u} r149={1d,1u} r150={1d,1u} r151={1d,1u} r152={1d,1u} r153={1d,1u} r154={1d,1u} r155={1d,1u} r156={1d,1u} r157={1d,1u} r158={1d,1u} r159={1d,1u} r160={1d,1u} r161={1d,1u} r162={1d,1u} r163={1d,1u} r164={1d,1u} r165={1d,1u} r166={1d,1u} 
+;;    total ref usage 1328{1217d,111u,0e} in 137{123 regular + 14 call} insns.
+(note 5 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 5 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 2 8 2 (debug_marker) "../System/lcd_backlight.c":279:2 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "../System/lcd_backlight.c":283:2 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker:BLK) "../System/lcd_backlight.c":250:6 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "../System/lcd_backlight.c":253:2 -1
+     (nil))
+(debug_insn 11 10 12 2 (var_location:QI brightness (mem/c:QI (const:SI (plus:SI (symbol_ref:SI ("LCD_backlight") [flags 0x82]  <var_decl 0000000006fb5ab0 LCD_backlight>)
+                (const_int 16 [0x10]))) [0 LCD_backlight.default_brightness+0 S1 A32])) "../System/lcd_backlight.c":253:2 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker:BLK) "../System/lcd_backlight.c":222:6 -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker) "../System/lcd_backlight.c":231:2 -1
+     (nil))
+(insn 14 13 15 2 (set (reg/f:SI 137)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":253:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 138)
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 137)
+                    (const_int 16 [0x10])) [0 LCD_backlight.default_brightness+0 S1 A32]))) "../System/lcd_backlight.c":231:9 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 16 15 17 2 (set (reg/f:SI 139)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 17 16 18 2 (set (reg:SI 140)
+        (mem/f/c:SI (reg/f:SI 139) [3 LCD_backlight.timer+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 18 17 19 2 (set (reg/f:SI 141)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":231:22 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 19 18 20 2 (set (reg/f:SI 142)
+        (mem/f/c:SI (plus:SI (reg/f:SI 141)
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 20 19 21 2 (set (reg:SI 1 r1)
+        (reg:SI 138)) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 21 20 22 2 (set (reg:SI 0 r0)
+        (reg:SI 140)) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 22 21 23 2 (parallel [
+            (call (mem:SI (reg/f:SI 142) [0 *_25 S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":231:9 988 {*call_reg_thumb2}
+     (expr_list:REG_CALL_DECL (nil)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 23 22 24 2 (var_location:QI brightness (clobber (const_int 0 [0]))) "../System/lcd_backlight.c":253:2 -1
+     (nil))
+(debug_insn 24 23 25 2 (debug_marker) "../System/lcd_backlight.c":284:2 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:SI 0 r0)
+        (const_int 2000 [0x7d0])) "../System/lcd_backlight.c":284:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 26 25 27 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>) [0 HAL_Delay S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":284:2 290 {*call_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 27 26 28 2 (debug_marker) "../System/lcd_backlight.c":286:2 -1
+     (nil))
+(debug_insn 28 27 29 2 (debug_marker:BLK) "../System/lcd_backlight.c":258:6 -1
+     (nil))
+(debug_insn 29 28 30 2 (debug_marker) "../System/lcd_backlight.c":261:2 -1
+     (nil))
+(debug_insn 30 29 31 2 (var_location:QI brightness (const_int 0 [0])) "../System/lcd_backlight.c":261:2 -1
+     (nil))
+(debug_insn 31 30 32 2 (debug_marker:BLK) "../System/lcd_backlight.c":222:6 -1
+     (nil))
+(debug_insn 32 31 33 2 (debug_marker) "../System/lcd_backlight.c":231:2 -1
+     (nil))
+(insn 33 32 34 2 (set (reg/f:SI 143)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 34 33 35 2 (set (reg:SI 144)
+        (mem/f/c:SI (reg/f:SI 143) [3 LCD_backlight.timer+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 35 34 36 2 (set (reg/f:SI 145)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":231:22 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 36 35 37 2 (set (reg/f:SI 146)
+        (mem/f/c:SI (plus:SI (reg/f:SI 145)
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 37 36 38 2 (set (reg:SI 1 r1)
+        (const_int 0 [0])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 38 37 39 2 (set (reg:SI 0 r0)
+        (reg:SI 144)) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 39 38 40 2 (parallel [
+            (call (mem:SI (reg/f:SI 146) [0 *_22 S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":231:9 988 {*call_reg_thumb2}
+     (expr_list:REG_CALL_DECL (nil)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 40 39 41 2 (var_location:QI brightness (clobber (const_int 0 [0]))) "../System/lcd_backlight.c":261:2 -1
+     (nil))
+(debug_insn 41 40 42 2 (debug_marker) "../System/lcd_backlight.c":287:2 -1
+     (nil))
+(insn 42 41 43 2 (set (reg:SI 0 r0)
+        (const_int 2000 [0x7d0])) "../System/lcd_backlight.c":287:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 43 42 149 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>) [0 HAL_Delay S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":287:2 290 {*call_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(code_label 149 43 44 3 24 (nil) [0 uses])
+(note 44 149 45 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 45 44 46 3 (debug_marker) "../System/lcd_backlight.c":291:2 -1
+     (nil))
+(debug_insn 46 45 47 3 (debug_marker) "../System/lcd_backlight.c":295:3 -1
+     (nil))
+(debug_insn 47 46 48 3 (debug_marker) "../System/lcd_backlight.c":295:7 -1
+     (nil))
+(debug_insn 48 47 49 3 (var_location:SI val (const_int 0 [0])) -1
+     (nil))
+(debug_insn 49 48 3 3 (debug_marker) "../System/lcd_backlight.c":295:18 -1
+     (nil))
+(insn 3 49 90 3 (set (reg/v:SI 118 [ val ])
+        (const_int 0 [0])) "../System/lcd_backlight.c":295:11 728 {*thumb2_movsi_vfp}
+     (nil))
+(code_label 90 3 50 4 22 (nil) [1 uses])
+(note 50 90 51 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 51 50 52 4 (var_location:QI brightness (clobber (const_int 0 [0]))) "../System/lcd_backlight.c":298:4 -1
+     (nil))
+(debug_insn 52 51 53 4 (var_location:QI compare_value (clobber (const_int 0 [0]))) "../System/lcd_backlight.c":302:20 -1
+     (nil))
+(debug_insn 53 52 54 4 (var_location:SI val (reg/v:SI 118 [ val ])) -1
+     (nil))
+(debug_insn 54 53 55 4 (debug_marker) "../System/lcd_backlight.c":298:4 -1
+     (nil))
+(debug_insn 55 54 56 4 (var_location:QI brightness (subreg:QI (reg/v:SI 118 [ val ]) 0)) "../System/lcd_backlight.c":298:4 -1
+     (nil))
+(debug_insn 56 55 57 4 (debug_marker:BLK) "../System/lcd_backlight.c":222:6 -1
+     (nil))
+(debug_insn 57 56 58 4 (debug_marker) "../System/lcd_backlight.c":231:2 -1
+     (nil))
+(insn 58 57 59 4 (set (reg/f:SI 147)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 59 58 60 4 (set (reg:SI 148)
+        (mem/f/c:SI (reg/f:SI 147) [3 LCD_backlight.timer+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 60 59 61 4 (set (reg/f:SI 149)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":231:22 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 61 60 62 4 (set (reg/f:SI 150)
+        (mem/f/c:SI (plus:SI (reg/f:SI 149)
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 62 61 63 4 (set (reg:SI 1 r1)
+        (reg/v:SI 118 [ val ])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 63 62 64 4 (set (reg:SI 0 r0)
+        (reg:SI 148)) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 64 63 65 4 (parallel [
+            (call (mem:SI (reg/f:SI 150) [0 *_31 S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":231:9 988 {*call_reg_thumb2}
+     (expr_list:REG_CALL_DECL (nil)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 65 64 66 4 (var_location:QI brightness (clobber (const_int 0 [0]))) "../System/lcd_backlight.c":298:4 -1
+     (nil))
+(debug_insn 66 65 67 4 (debug_marker) "../System/lcd_backlight.c":302:4 -1
+     (nil))
+(debug_insn 67 66 68 4 (debug_marker:BLK) "../System/lcd_backlight.c":197:9 -1
+     (nil))
+(debug_insn 68 67 69 4 (debug_marker) "../System/lcd_backlight.c":207:2 -1
+     (nil))
+(insn 69 68 70 4 (set (reg/f:SI 151)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 70 69 71 4 (set (reg:SI 152)
+        (mem/f/c:SI (reg/f:SI 151) [3 LCD_backlight.timer+0 S4 A32])) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 71 70 72 4 (set (reg/f:SI 153)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":207:22 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 72 71 73 4 (set (reg/f:SI 154)
+        (mem/f/c:SI (plus:SI (reg/f:SI 153)
+                (const_int 12 [0xc])) [1 LCD_backlight.GetCompare+0 S4 A32])) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 73 72 74 4 (set (reg:SI 0 r0)
+        (reg:SI 152)) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 74 73 75 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (reg/f:SI 154) [0 *_28 S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":207:9 991 {*call_value_reg_thumb2}
+     (expr_list:REG_CALL_DECL (nil)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(insn 75 74 76 4 (set (reg:SI 127 [ _30 ])
+        (reg:SI 0 r0)) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 76 75 77 4 (var_location:QI compare_value (subreg:QI (reg:SI 127 [ _30 ]) 0)) "../System/lcd_backlight.c":302:20 -1
+     (nil))
+(debug_insn 77 76 78 4 (debug_marker) "../System/lcd_backlight.c":303:4 -1
+     (nil))
+(insn 78 77 79 4 (set (reg:SI 155)
+        (zero_extend:SI (subreg:QI (reg:SI 127 [ _30 ]) 0))) "../System/lcd_backlight.c":303:4 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 79 78 80 4 (set (reg:SI 156)
+        (symbol_ref/v/f:SI ("*.LC0") [flags 0x82]  <var_decl 00000000070bd5a0 *.LC0>)) "../System/lcd_backlight.c":303:4 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 80 79 81 4 (set (reg:SI 1 r1)
+        (reg:SI 155)) "../System/lcd_backlight.c":303:4 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 81 80 82 4 (set (reg:SI 0 r0)
+        (reg:SI 156)) "../System/lcd_backlight.c":303:4 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 82 81 83 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000005b49b00 printf>) [0 __builtin_printf S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":303:4 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000005b49b00 printf>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 83 82 84 4 (debug_marker) "../System/lcd_backlight.c":306:4 -1
+     (nil))
+(insn 84 83 85 4 (set (reg:SI 0 r0)
+        (const_int 10 [0xa])) "../System/lcd_backlight.c":306:4 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 85 84 86 4 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>) [0 HAL_Delay S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":306:4 290 {*call_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 86 85 87 4 (debug_marker) "../System/lcd_backlight.c":295:30 -1
+     (nil))
+(insn 87 86 88 4 (set (reg/v:SI 118 [ val ])
+        (plus:SI (reg/v:SI 118 [ val ])
+            (const_int 1 [0x1]))) "../System/lcd_backlight.c":295:33 7 {*arm_addsi3}
+     (nil))
+(debug_insn 88 87 89 4 (var_location:SI val (reg/v:SI 118 [ val ])) -1
+     (nil))
+(debug_insn 89 88 91 4 (debug_marker) "../System/lcd_backlight.c":295:18 -1
+     (nil))
+(insn 91 89 92 4 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 118 [ val ])
+            (const_int 101 [0x65]))) "../System/lcd_backlight.c":295:3 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 92 91 93 4 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 90)
+            (pc))) "../System/lcd_backlight.c":295:3 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 1062895956 (nil))
+ -> 90)
+(note 93 92 94 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 94 93 95 5 (debug_marker) "../System/lcd_backlight.c":311:3 -1
+     (nil))
+(insn 95 94 96 5 (set (reg:SI 0 r0)
+        (const_int 1000 [0x3e8])) "../System/lcd_backlight.c":311:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 96 95 97 5 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>) [0 HAL_Delay S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":311:3 290 {*call_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 97 96 98 5 (debug_marker) "../System/lcd_backlight.c":315:3 -1
+     (nil))
+(debug_insn 98 97 99 5 (debug_marker) "../System/lcd_backlight.c":315:7 -1
+     (nil))
+(debug_insn 99 98 100 5 (var_location:SI val (const_int 100 [0x64])) -1
+     (nil))
+(debug_insn 100 99 4 5 (debug_marker) "../System/lcd_backlight.c":315:20 -1
+     (nil))
+(insn 4 100 141 5 (set (reg/v:SI 117 [ val ])
+        (const_int 100 [0x64])) "../System/lcd_backlight.c":315:11 728 {*thumb2_movsi_vfp}
+     (nil))
+(code_label 141 4 101 6 23 (nil) [1 uses])
+(note 101 141 102 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 102 101 103 6 (var_location:QI brightness (clobber (const_int 0 [0]))) "../System/lcd_backlight.c":318:4 -1
+     (nil))
+(debug_insn 103 102 104 6 (var_location:QI compare_value (clobber (const_int 0 [0]))) "../System/lcd_backlight.c":322:20 -1
+     (nil))
+(debug_insn 104 103 105 6 (var_location:SI val (reg/v:SI 117 [ val ])) -1
+     (nil))
+(debug_insn 105 104 106 6 (debug_marker) "../System/lcd_backlight.c":318:4 -1
+     (nil))
+(debug_insn 106 105 107 6 (var_location:QI brightness (subreg:QI (reg/v:SI 117 [ val ]) 0)) "../System/lcd_backlight.c":318:4 -1
+     (nil))
+(debug_insn 107 106 108 6 (debug_marker:BLK) "../System/lcd_backlight.c":222:6 -1
+     (nil))
+(debug_insn 108 107 109 6 (debug_marker) "../System/lcd_backlight.c":231:2 -1
+     (nil))
+(insn 109 108 110 6 (set (reg/f:SI 157)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 110 109 111 6 (set (reg:SI 158)
+        (mem/f/c:SI (reg/f:SI 157) [3 LCD_backlight.timer+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 111 110 112 6 (set (reg/f:SI 159)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":231:22 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 112 111 113 6 (set (reg/f:SI 160)
+        (mem/f/c:SI (plus:SI (reg/f:SI 159)
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 113 112 114 6 (set (reg:SI 1 r1)
+        (reg/v:SI 117 [ val ])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 114 113 115 6 (set (reg:SI 0 r0)
+        (reg:SI 158)) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 115 114 116 6 (parallel [
+            (call (mem:SI (reg/f:SI 160) [0 *_37 S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":231:9 988 {*call_reg_thumb2}
+     (expr_list:REG_CALL_DECL (nil)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 116 115 117 6 (var_location:QI brightness (clobber (const_int 0 [0]))) "../System/lcd_backlight.c":318:4 -1
+     (nil))
+(debug_insn 117 116 118 6 (debug_marker) "../System/lcd_backlight.c":322:4 -1
+     (nil))
+(debug_insn 118 117 119 6 (debug_marker:BLK) "../System/lcd_backlight.c":197:9 -1
+     (nil))
+(debug_insn 119 118 120 6 (debug_marker) "../System/lcd_backlight.c":207:2 -1
+     (nil))
+(insn 120 119 121 6 (set (reg/f:SI 161)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 121 120 122 6 (set (reg:SI 162)
+        (mem/f/c:SI (reg/f:SI 161) [3 LCD_backlight.timer+0 S4 A32])) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 122 121 123 6 (set (reg/f:SI 163)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":207:22 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 123 122 124 6 (set (reg/f:SI 164)
+        (mem/f/c:SI (plus:SI (reg/f:SI 163)
+                (const_int 12 [0xc])) [1 LCD_backlight.GetCompare+0 S4 A32])) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 124 123 125 6 (set (reg:SI 0 r0)
+        (reg:SI 162)) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 125 124 126 6 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (reg/f:SI 164) [0 *_34 S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":207:9 991 {*call_value_reg_thumb2}
+     (expr_list:REG_CALL_DECL (nil)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(insn 126 125 127 6 (set (reg:SI 132 [ _36 ])
+        (reg:SI 0 r0)) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 127 126 128 6 (var_location:QI compare_value (subreg:QI (reg:SI 132 [ _36 ]) 0)) "../System/lcd_backlight.c":322:20 -1
+     (nil))
+(debug_insn 128 127 129 6 (debug_marker) "../System/lcd_backlight.c":323:4 -1
+     (nil))
+(insn 129 128 130 6 (set (reg:SI 165)
+        (zero_extend:SI (subreg:QI (reg:SI 132 [ _36 ]) 0))) "../System/lcd_backlight.c":323:4 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 130 129 131 6 (set (reg:SI 166)
+        (symbol_ref/v/f:SI ("*.LC0") [flags 0x82]  <var_decl 00000000070bd5a0 *.LC0>)) "../System/lcd_backlight.c":323:4 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 131 130 132 6 (set (reg:SI 1 r1)
+        (reg:SI 165)) "../System/lcd_backlight.c":323:4 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 132 131 133 6 (set (reg:SI 0 r0)
+        (reg:SI 166)) "../System/lcd_backlight.c":323:4 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 133 132 134 6 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000005b49b00 printf>) [0 __builtin_printf S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":323:4 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000005b49b00 printf>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 134 133 135 6 (debug_marker) "../System/lcd_backlight.c":326:4 -1
+     (nil))
+(insn 135 134 136 6 (set (reg:SI 0 r0)
+        (const_int 10 [0xa])) "../System/lcd_backlight.c":326:4 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 136 135 137 6 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>) [0 HAL_Delay S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":326:4 290 {*call_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 137 136 138 6 (debug_marker) "../System/lcd_backlight.c":315:30 -1
+     (nil))
+(insn 138 137 139 6 (set (reg/v:SI 117 [ val ])
+        (plus:SI (reg/v:SI 117 [ val ])
+            (const_int -1 [0xffffffffffffffff]))) "../System/lcd_backlight.c":315:33 7 {*arm_addsi3}
+     (nil))
+(debug_insn 139 138 140 6 (var_location:SI val (reg/v:SI 117 [ val ])) -1
+     (nil))
+(debug_insn 140 139 142 6 (debug_marker) "../System/lcd_backlight.c":315:20 -1
+     (nil))
+(insn 142 140 143 6 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 117 [ val ])
+            (const_int -1 [0xffffffffffffffff]))) "../System/lcd_backlight.c":315:3 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 143 142 144 6 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 141)
+            (pc))) "../System/lcd_backlight.c":315:3 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 1062895956 (nil))
+ -> 141)
+(note 144 143 145 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 145 144 146 7 (debug_marker) "../System/lcd_backlight.c":330:3 -1
+     (nil))
+(insn 146 145 147 7 (set (reg:SI 0 r0)
+        (const_int 1000 [0x3e8])) "../System/lcd_backlight.c":330:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 147 146 148 7 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>) [0 HAL_Delay S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":330:3 290 {*call_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 148 147 0 7 (debug_marker) "../System/lcd_backlight.c":291:7 -1
+     (nil))

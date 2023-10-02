@@ -1,0 +1,1587 @@
+
+;; Function LL_TIM_OC_SetCompareCH1 (LL_TIM_OC_SetCompareCH1, funcdef_no=387, decl_uid=10290, cgraph_uid=391, symbol_order=395)
+
+deleting insn with uid = 7.
+8: (mem/v:SI (value/u:SI 7:4394 @00000000071adc58/000000000718dcc8) [4 TIMx_2(D)->CCR1+0 S4 A32]) evaluates to (value/u:SI 5:5 @00000000071adc38/000000000718dc78)
+1: (value/u:SI 6:247 @00000000071adc48/000000000718dca0)
+1: (entry_value:SI (reg:SI 1 r1 [ CompareValue ]))
+BB 2: in 7 (was 0), out 7 (was 0), rem 0 + 0, tsz 0
+8: (mem/v:SI (value/u:SI 7:4394 @00000000071adc58/000000000718dcc8) [4 TIMx_2(D)->CCR1+0 S4 A32]) evaluates to (value/u:SI 5:5 @00000000071adc38/000000000718dc78)
+1: (value/u:SI 6:247 @00000000071adc48/000000000718dca0)
+1: (entry_value:SI (reg:SI 1 r1 [ CompareValue ]))
+
+
+LL_TIM_OC_SetCompareCH1
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1]
+;;  ref usage 	r0={1d,1u} r1={1d,1u} r2={1d} r3={1d} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 27{22d,5u,0e} in 2{2 regular + 0 call} insns.
+(note 1 0 46 NOTE_INSN_DELETED)
+(note 46 1 47 (var_location CompareValue (reg:SI 1 r1 [ CompareValue ])) NOTE_INSN_VAR_LOCATION)
+(note 47 46 5 (var_location TIMx (reg:SI 0 r0 [ TIMx ])) NOTE_INSN_VAR_LOCATION)
+(note 5 47 38 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 38 5 4 2 NOTE_INSN_PROLOGUE_END)
+(note 4 38 45 2 NOTE_INSN_FUNCTION_BEG)
+(note 45 4 8 2 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h:3198 NOTE_INSN_BEGIN_STMT)
+(insn 8 45 44 2 (set (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:113 TIMx ] [113])
+                (const_int 52 [0x34])) [4 TIMx_2(D)->CCR1+0 S4 A32])
+        (reg/v:SI 1 r1 [orig:114 CompareValue ] [114])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3198:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 1 r1 [orig:114 CompareValue ] [114])
+        (expr_list:REG_DEAD (reg/v/f:SI 0 r0 [orig:113 TIMx ] [113])
+            (nil))))
+(note 44 8 40 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 40 44 41 2 (simple_return) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3199:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 41 40 13)
+(note 13 41 14 NOTE_INSN_DELETED)
+(note 14 13 0 NOTE_INSN_DELETED)
+
+;; Function LL_TIM_OC_GetCompareCH1 (LL_TIM_OC_GetCompareCH1, funcdef_no=393, decl_uid=10313, cgraph_uid=397, symbol_order=401)
+
+deleting insn with uid = 6.
+BB 2: in 7 (was 0), out 7 (was 0), rem 0 + 0, tsz 0
+
+
+LL_TIM_OC_GetCompareCH1
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0]
+;;  ref usage 	r0={2d,3u} r1={1d} r2={1d} r3={1d} r13={1d,2u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 29{23d,6u,0e} in 3{3 regular + 0 call} insns.
+(note 1 0 23 NOTE_INSN_DELETED)
+(note 23 1 4 (var_location TIMx (reg:SI 0 r0 [ TIMx ])) NOTE_INSN_VAR_LOCATION)
+(note 4 23 17 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 17 4 3 2 NOTE_INSN_PROLOGUE_END)
+(note 3 17 22 2 NOTE_INSN_FUNCTION_BEG)
+(note 22 3 7 2 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h:3299 NOTE_INSN_BEGIN_STMT)
+(insn 7 22 24 2 (set (reg:SI 0 r0 [orig:113 <retval> ] [113])
+        (mem/v:SI (plus:SI (reg/v/f:SI 0 r0 [orig:114 TIMx ] [114])
+                (const_int 52 [0x34])) [4 TIMx_2(D)->CCR1+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3299:10 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 24 7 12 2 (var_location TIMx (entry_value:SI (reg:SI 0 r0 [ TIMx ]))) NOTE_INSN_VAR_LOCATION)
+(insn 12 24 21 2 (use (reg/i:SI 0 r0)) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3300:1 -1
+     (nil))
+(note 21 12 19 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 19 21 20 2 (simple_return) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3300:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 20 19 15)
+(note 15 20 16 NOTE_INSN_DELETED)
+(note 16 15 0 NOTE_INSN_DELETED)
+
+;; Function LCD_BKLT_init (LCD_BKLT_init, funcdef_no=862, decl_uid=11008, cgraph_uid=866, symbol_order=872)
+
+deleting insn with uid = 5.
+deleting insn with uid = 9.
+deleting insn with uid = 13.
+deleting insn with uid = 17.
+deleting insn with uid = 21.
+deleting insn with uid = 26.
+deleting insn with uid = 28.
+deleting insn with uid = 29.
+deleting insn with uid = 36.
+deleting insn with uid = 37.
+deleting insn with uid = 38.
+deleting insn with uid = 40.
+deleting insn with uid = 41.
+deleting insn with uid = 44.
+deleting insn with uid = 45.
+deleting insn with uid = 52.
+deleting insn with uid = 55.
+deleting insn with uid = 56.
+7: (reg:SI 3 r3 [118]) evaluates to (value/u:SI 3:1073748129 @0000000007108b78/000000000719dc38)
+7: (const_int 1073743872 [0x40000800])
+6: (reg/f:SI 2 r2 [117]) evaluates to (value/u:SI 4:1018530525 @0000000007108b88/000000000719dc60)
+6: (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+70: (reg/f:SI 13 sp) evaluates to (value/u:SI 5:4332 @0000000007108b98/000000000719dc88)
+70: (plus:SI (value/u:SI 1:1 @0000000007108b58/000000000719dbe8)
+    (const_int -8 [0xfffffffffffffff8]))
+23: (reg:SI 0 r0 [126]) evaluates to (value/u:SI 8:4357 @0000000007108bc8/000000000719dd00)
+23: (const_int 100 [0x64])
+32: (reg:SI 1 r1 [orig:116 _12 ] [116]) evaluates to (value/u:SI 10:4362 @0000000007108be8/000000000719dd50)
+32: (ior:SI (value/u:SI 9:9 @0000000007108bd8/000000000719dd28)
+    (const_int 1 [0x1]))
+8: (mem/f/c:SI (value/u:SI 4:1018530525 @0000000007108b88/000000000719dc60) [3 LCD_backlight.timer+0 S4 A32]) evaluates to (value/u:SI 3:1073748129 @0000000007108b78/000000000719dc38)
+7: (const_int 1073743872 [0x40000800])
+34: (mem/v:SI (value/u:SI 3:1073748129 @0000000007108b78/000000000719dc38) [4 MEM[(struct TIM_TypeDef *)1073743872B].CR1+0 S4 A64]) evaluates to (value/u:SI 10:4362 @0000000007108be8/000000000719dd50)
+32: (ior:SI (value/u:SI 9:9 @0000000007108bd8/000000000719dd28)
+    (const_int 1 [0x1]))
+48: (mem/v:SI (value/u:SI 11:1073752520 @0000000007108bf8/000000000719dd78) [4 MEM[(struct TIM_TypeDef *)1073743872B].CCR1+0 S4 A32]) evaluates to (value/u:SI 8:4357 @0000000007108bc8/000000000719dd00)
+23: (const_int 100 [0x64])
+15: (reg/f:SI 4 r4 [122]) evaluates to (value/u:SI 12:318352174 @0000000007108c08/000000000719dda0)
+15: (symbol_ref:SI ("LL_TIM_OC_SetCompareCH1") [flags 0x3]  <function_decl 0000000006dd9500 LL_TIM_OC_SetCompareCH1>)
+16: (mem/f/c:SI (value/u:SI 13:1018534872 @0000000007108c18/000000000719ddc8) [5 LCD_backlight.SetCompare+0 S4 A32]) evaluates to (value/u:SI 12:318352174 @0000000007108c08/000000000719dda0)
+15: (symbol_ref:SI ("LL_TIM_OC_SetCompareCH1") [flags 0x3]  <function_decl 0000000006dd9500 LL_TIM_OC_SetCompareCH1>)
+11: (reg:SI 5 r5 [120]) evaluates to (value/u:SI 14:4258 @0000000007108c28/000000000719ddf0)
+11: (const_int 1 [0x1])
+19: (reg/f:SI 4 r4 [124]) evaluates to (value/u:SI 15:2285069090 @0000000007108c38/000000000719de18)
+19: (symbol_ref:SI ("LL_TIM_OC_GetCompareCH1") [flags 0x3]  <function_decl 0000000006de3100 LL_TIM_OC_GetCompareCH1>)
+25: (mem/c:QI (value/u:SI 17:1018534880 @0000000007108c58/000000000719de68) [0 LCD_backlight.default_brightness+0 S1 A32]) evaluates to (value/u:QI 16:16 @0000000007108c48/000000000719de40)
+25: (subreg:QI (value/u:SI 8:4357 @0000000007108bc8/000000000719dd00) 0)
+59: (reg:SI 1 r1 [orig:114 _10 ] [114]) evaluates to (value/u:SI 19:4371 @0000000007108c78/000000000719deb8)
+59: (ior:SI (value/u:SI 18:18 @0000000007108c68/000000000719de90)
+    (value/u:SI 14:4258 @0000000007108c28/000000000719ddf0))
+12: (mem/c:SI (value/u:SI 20:1018534868 @0000000007108c88/000000000719dee0) [4 LCD_backlight.timer_channel+0 S4 A32]) evaluates to (value/u:SI 14:4258 @0000000007108c28/000000000719ddf0)
+11: (const_int 1 [0x1])
+20: (mem/f/c:SI (value/u:SI 21:1018534876 @0000000007108c98/000000000719df08) [1 LCD_backlight.GetCompare+0 S4 A32]) evaluates to (value/u:SI 15:2285069090 @0000000007108c38/000000000719de18)
+19: (symbol_ref:SI ("LL_TIM_OC_GetCompareCH1") [flags 0x3]  <function_decl 0000000006de3100 LL_TIM_OC_GetCompareCH1>)
+73: (reg:SI 5 r5) evaluates to (value/u:SI 24:24 @0000000007108cc8/000000000719df80)
+73: (reg:SI 4 r4) evaluates to (value/u:SI 25:25 @0000000007108cd8/000000000719dfa8)
+73: (reg/f:SI 13 sp) evaluates to (value/u:SI 1:1 @0000000007108b58/000000000719dbe8)
+1: (value/u/c:SI 2:2 @0000000007108b68/000000000719dc10)
+1: (reg/f:SI 103 afp)
+61: (mem/v:SI (value/u:SI 26:1073752500 @0000000007108ce8/000000000719dfd0) [4 MEM[(struct TIM_TypeDef *)1073743872B].CCER+0 S4 A64]) evaluates to (value/u:SI 19:4371 @0000000007108c78/000000000719deb8)
+59: (ior:SI (value/u:SI 18:18 @0000000007108c68/000000000719de90)
+    (value/u:SI 14:4258 @0000000007108c28/000000000719ddf0))
+BB 2: in 7 (was 0), out 31 (was 0), rem 0 + 0, tsz 24
+7: (reg:SI 3 r3 [118]) evaluates to (value/u:SI 3:1073748129 @0000000007108b78/000000000719dc38)
+7: (const_int 1073743872 [0x40000800])
+6: (reg/f:SI 2 r2 [117]) evaluates to (value/u:SI 4:1018530525 @0000000007108b88/000000000719dc60)
+6: (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+70: (reg/f:SI 13 sp) evaluates to (value/u:SI 5:4332 @0000000007108b98/000000000719dc88)
+70: (plus:SI (value/u:SI 1:1 @0000000007108b58/000000000719dbe8)
+    (const_int -8 [0xfffffffffffffff8]))
+23: (reg:SI 0 r0 [126]) evaluates to (value/u:SI 8:4357 @0000000007108bc8/000000000719dd00)
+23: (const_int 100 [0x64])
+32: (reg:SI 1 r1 [orig:116 _12 ] [116]) evaluates to (value/u:SI 10:4362 @0000000007108be8/000000000719dd50)
+32: (ior:SI (value/u/f:SI 9:9 @0000000007108bd8/000000000719dd28)
+    (const_int 1 [0x1]))
+8: (mem/f/c:SI (value/u/f:SI 4:1018530525 @0000000007108b88/000000000719dc60) [3 LCD_backlight.timer+0 S4 A32]) evaluates to (value/u/f:SI 3:1073748129 @0000000007108b78/000000000719dc38)
+7: (const_int 1073743872 [0x40000800])
+34: (mem/v:SI (value/u/f:SI 3:1073748129 @0000000007108b78/000000000719dc38) [4 MEM[(struct TIM_TypeDef *)1073743872B].CR1+0 S4 A64]) evaluates to (value/u/f:SI 10:4362 @0000000007108be8/000000000719dd50)
+32: (ior:SI (value/u/f:SI 9:9 @0000000007108bd8/000000000719dd28)
+    (const_int 1 [0x1]))
+48: (mem/v:SI (value/u:SI 11:1073752520 @0000000007108bf8/000000000719dd78) [4 MEM[(struct TIM_TypeDef *)1073743872B].CCR1+0 S4 A32]) evaluates to (value/u/f:SI 8:4357 @0000000007108bc8/000000000719dd00)
+23: (const_int 100 [0x64])
+15: (reg/f:SI 4 r4 [122]) evaluates to (value/u:SI 12:318352174 @0000000007108c08/000000000719dda0)
+15: (symbol_ref:SI ("LL_TIM_OC_SetCompareCH1") [flags 0x3]  <function_decl 0000000006dd9500 LL_TIM_OC_SetCompareCH1>)
+16: (mem/f/c:SI (value/u:SI 13:1018534872 @0000000007108c18/000000000719ddc8) [5 LCD_backlight.SetCompare+0 S4 A32]) evaluates to (value/u/f:SI 12:318352174 @0000000007108c08/000000000719dda0)
+15: (symbol_ref:SI ("LL_TIM_OC_SetCompareCH1") [flags 0x3]  <function_decl 0000000006dd9500 LL_TIM_OC_SetCompareCH1>)
+11: (reg:SI 5 r5 [120]) evaluates to (value/u:SI 14:4258 @0000000007108c28/000000000719ddf0)
+11: (const_int 1 [0x1])
+19: (reg/f:SI 4 r4 [124]) evaluates to (value/u:SI 15:2285069090 @0000000007108c38/000000000719de18)
+19: (symbol_ref:SI ("LL_TIM_OC_GetCompareCH1") [flags 0x3]  <function_decl 0000000006de3100 LL_TIM_OC_GetCompareCH1>)
+25: (mem/c:QI (value/u:SI 17:1018534880 @0000000007108c58/000000000719de68) [0 LCD_backlight.default_brightness+0 S1 A32]) evaluates to (value/u/f:QI 16:16 @0000000007108c48/000000000719de40)
+25: (subreg:QI (value/u/f:SI 8:4357 @0000000007108bc8/000000000719dd00) 0)
+59: (reg:SI 1 r1 [orig:114 _10 ] [114]) evaluates to (value/u:SI 19:4371 @0000000007108c78/000000000719deb8)
+59: (ior:SI (value/u/f:SI 18:18 @0000000007108c68/000000000719de90)
+    (value/u/f:SI 14:4258 @0000000007108c28/000000000719ddf0))
+12: (mem/c:SI (value/u:SI 20:1018534868 @0000000007108c88/000000000719dee0) [4 LCD_backlight.timer_channel+0 S4 A32]) evaluates to (value/u/f:SI 14:4258 @0000000007108c28/000000000719ddf0)
+11: (const_int 1 [0x1])
+20: (mem/f/c:SI (value/u:SI 21:1018534876 @0000000007108c98/000000000719df08) [1 LCD_backlight.GetCompare+0 S4 A32]) evaluates to (value/u/f:SI 15:2285069090 @0000000007108c38/000000000719de18)
+19: (symbol_ref:SI ("LL_TIM_OC_GetCompareCH1") [flags 0x3]  <function_decl 0000000006de3100 LL_TIM_OC_GetCompareCH1>)
+73: (reg:SI 5 r5) evaluates to (value/u/f:SI 24:24 @0000000007108cc8/000000000719df80)
+73: (reg:SI 4 r4) evaluates to (value/u/f:SI 25:25 @0000000007108cd8/000000000719dfa8)
+73: (reg/f:SI 13 sp) evaluates to (value/u:SI 1:1 @0000000007108b58/000000000719dbe8)
+1: (value/u/c:SI 2:2 @0000000007108b68/000000000719dc10)
+1: (reg/f:SI 103 afp)
+61: (mem/v:SI (value/u:SI 26:1073752500 @0000000007108ce8/000000000719dfd0) [4 MEM[(struct TIM_TypeDef *)1073743872B].CCER+0 S4 A64]) evaluates to (value/u/f:SI 19:4371 @0000000007108c78/000000000719deb8)
+59: (ior:SI (value/u/f:SI 18:18 @0000000007108c68/000000000719de90)
+    (value/u/f:SI 14:4258 @0000000007108c28/000000000719ddf0))
+deleting insn with uid = 27.
+deleting insn with uid = 35.
+deleting insn with uid = 39.
+deleting insn with uid = 42.
+deleting insn with uid = 43.
+deleting insn with uid = 49.
+deleting insn with uid = 50.
+deleting insn with uid = 51.
+deleting insn with uid = 53.
+deleting insn with uid = 54.
+deleting insn with uid = 62.
+deleting insn with uid = 63.
+
+
+LCD_BKLT_init
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 5 [r5] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 4 [r4] 5 [r5] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 5 [r5] 13 [sp]
+;;  ref usage 	r0={2d,2u} r1={5d,4u} r2={2d,5u} r3={2d,6u} r4={4d,4u} r5={3d,4u} r13={3d,8u} r14={1d,1u} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} 
+;;    total ref usage 72{38d,34u,0e} in 21{21 regular + 0 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 80 2 NOTE_INSN_FUNCTION_BEG)
+(note 80 2 7 2 ../System/lcd_backlight.c:137 NOTE_INSN_BEGIN_STMT)
+(insn 7 80 6 2 (set (reg:SI 3 r3 [118])
+        (const_int 1073743872 [0x40000800])) "../System/lcd_backlight.c":137:23 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073743872 [0x40000800])
+        (nil)))
+(insn 6 7 31 2 (set (reg/f:SI 2 r2 [117])
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":137:23 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(insn 31 6 70 2 (set (reg:SI 1 r1 [orig:115 _11 ] [115])
+        (mem/v:SI (reg:SI 3 r3 [118]) [4 MEM[(struct TIM_TypeDef *)1073743872B].CR1+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2015:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn/f 70 31 71 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [7  A8])
+                (unspec:BLK [
+                        (reg:SI 4 r4)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 5 r5))
+        ]) "../System/lcd_backlight.c":119:1 378 {*push_multi}
+     (expr_list:REG_DEAD (reg:SI 5 r5)
+        (expr_list:REG_DEAD (reg:SI 4 r4)
+            (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                        (set/f (reg/f:SI 13 sp)
+                            (plus:SI (reg/f:SI 13 sp)
+                                (const_int -8 [0xfffffffffffffff8])))
+                        (set/f (mem/c:SI (reg/f:SI 13 sp) [7  S4 A32])
+                            (reg:SI 4 r4))
+                        (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                    (const_int 4 [0x4])) [7  S4 A32])
+                            (reg:SI 5 r5))
+                    ])
+                (nil)))))
+(note 71 70 23 2 NOTE_INSN_PROLOGUE_END)
+(insn 23 71 32 2 (set (reg:SI 0 r0 [126])
+        (const_int 100 [0x64])) "../System/lcd_backlight.c":152:36 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 100 [0x64])
+        (nil)))
+(insn 32 23 8 2 (set (reg:SI 1 r1 [orig:116 _12 ] [116])
+        (ior:SI (reg:SI 1 r1 [orig:115 _11 ] [115])
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2015:3 106 {*iorsi3_insn}
+     (nil))
+(insn 8 32 81 2 (set (mem/f/c:SI (reg/f:SI 2 r2 [117]) [3 LCD_backlight.timer+0 S4 A32])
+        (reg:SI 3 r3 [118])) "../System/lcd_backlight.c":137:23 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 81 8 34 2 ../System/lcd_backlight.c:138 NOTE_INSN_BEGIN_STMT)
+(insn 34 81 48 2 (set (mem/v:SI (reg:SI 3 r3 [118]) [4 MEM[(struct TIM_TypeDef *)1073743872B].CR1+0 S4 A64])
+        (reg:SI 1 r1 [orig:116 _12 ] [116])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2015:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [orig:116 _12 ] [116])
+        (nil)))
+(insn 48 34 58 2 (set (mem/v:SI (plus:SI (reg:SI 3 r3 [118])
+                (const_int 52 [0x34])) [4 MEM[(struct TIM_TypeDef *)1073743872B].CCR1+0 S4 A32])
+        (reg:SI 0 r0 [126])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3198:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 58 48 15 2 (set (reg:SI 1 r1 [orig:113 _9 ] [113])
+        (mem/v:SI (plus:SI (reg:SI 3 r3 [118])
+                (const_int 32 [0x20])) [4 MEM[(struct TIM_TypeDef *)1073743872B].CCER+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2585:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 15 58 16 2 (set (reg/f:SI 4 r4 [122])
+        (symbol_ref:SI ("LL_TIM_OC_SetCompareCH1") [flags 0x3]  <function_decl 0000000006dd9500 LL_TIM_OC_SetCompareCH1>)) "../System/lcd_backlight.c":146:28 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (symbol_ref:SI ("LL_TIM_OC_SetCompareCH1") [flags 0x3]  <function_decl 0000000006dd9500 LL_TIM_OC_SetCompareCH1>)
+        (nil)))
+(insn 16 15 11 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 2 r2 [117])
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])
+        (reg/f:SI 4 r4 [122])) "../System/lcd_backlight.c":146:28 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 4 r4 [122])
+        (nil)))
+(insn 11 16 19 2 (set (reg:SI 5 r5 [120])
+        (const_int 1 [0x1])) "../System/lcd_backlight.c":138:31 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1 [0x1])
+        (nil)))
+(insn 19 11 25 2 (set (reg/f:SI 4 r4 [124])
+        (symbol_ref:SI ("LL_TIM_OC_GetCompareCH1") [flags 0x3]  <function_decl 0000000006de3100 LL_TIM_OC_GetCompareCH1>)) "../System/lcd_backlight.c":147:28 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (symbol_ref:SI ("LL_TIM_OC_GetCompareCH1") [flags 0x3]  <function_decl 0000000006de3100 LL_TIM_OC_GetCompareCH1>)
+        (nil)))
+(insn 25 19 59 2 (set (mem/c:QI (plus:SI (reg/f:SI 2 r2 [117])
+                (const_int 16 [0x10])) [0 LCD_backlight.default_brightness+0 S1 A32])
+        (reg:QI 0 r0 [126])) "../System/lcd_backlight.c":152:36 263 {*arm_movqi_insn}
+     (expr_list:REG_DEAD (reg/f:SI 2 r2 [117])
+        (expr_list:REG_DEAD (reg:QI 0 r0 [126])
+            (nil))))
+(insn 59 25 12 2 (set (reg:SI 1 r1 [orig:114 _10 ] [114])
+        (ior:SI (reg:SI 1 r1 [orig:113 _9 ] [113])
+            (reg:SI 5 r5))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2585:3 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 5 r5)
+        (nil)))
+(insn 12 59 82 2 (set (mem/c:SI (plus:SI (reg/f:SI 2 r2 [117])
+                (const_int 4 [0x4])) [4 LCD_backlight.timer_channel+0 S4 A32])
+        (reg:SI 5 r5 [120])) "../System/lcd_backlight.c":138:31 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 82 12 83 2 ../System/lcd_backlight.c:146 NOTE_INSN_BEGIN_STMT)
+(note 83 82 20 2 ../System/lcd_backlight.c:147 NOTE_INSN_BEGIN_STMT)
+(insn 20 83 84 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 2 r2 [117])
+                (const_int 12 [0xc])) [1 LCD_backlight.GetCompare+0 S4 A32])
+        (reg/f:SI 4 r4 [124])) "../System/lcd_backlight.c":147:28 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 4 r4 [124])
+        (nil)))
+(note 84 20 85 2 ../System/lcd_backlight.c:152 NOTE_INSN_BEGIN_STMT)
+(note 85 84 98 2 ../System/lcd_backlight.c:163 NOTE_INSN_BEGIN_STMT)
+(note 98 85 86 2 (var_location TIMx (const_int 1073743872 [0x40000800])) NOTE_INSN_VAR_LOCATION)
+(note 86 98 87 2 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h:2013 NOTE_INSN_INLINE_ENTRY)
+(note 87 86 99 2 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h:2015 NOTE_INSN_BEGIN_STMT)
+(note 99 87 88 2 (var_location TIMx (nil)) NOTE_INSN_VAR_LOCATION)
+(note 88 99 89 2 ../System/lcd_backlight.c:172 NOTE_INSN_BEGIN_STMT)
+(note 89 88 90 2 ../System/lcd_backlight.c:250 NOTE_INSN_INLINE_ENTRY)
+(note 90 89 100 2 ../System/lcd_backlight.c:253 NOTE_INSN_BEGIN_STMT)
+(note 100 90 91 2 (var_location brightness (const_int 100 [0x64])) NOTE_INSN_VAR_LOCATION)
+(note 91 100 92 2 ../System/lcd_backlight.c:222 NOTE_INSN_INLINE_ENTRY)
+(note 92 91 101 2 ../System/lcd_backlight.c:231 NOTE_INSN_BEGIN_STMT)
+(note 101 92 102 2 (var_location TIMx (const_int 1073743872 [0x40000800])) NOTE_INSN_VAR_LOCATION)
+(note 102 101 93 2 (var_location CompareValue (const_int 100 [0x64])) NOTE_INSN_VAR_LOCATION)
+(note 93 102 94 2 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h:3196 NOTE_INSN_INLINE_ENTRY)
+(note 94 93 103 2 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h:3198 NOTE_INSN_BEGIN_STMT)
+(note 103 94 104 2 (var_location TIMx (nil)) NOTE_INSN_VAR_LOCATION)
+(note 104 103 105 2 (var_location CompareValue (nil)) NOTE_INSN_VAR_LOCATION)
+(note 105 104 95 2 (var_location brightness (nil)) NOTE_INSN_VAR_LOCATION)
+(note 95 105 106 2 ../System/lcd_backlight.c:184 NOTE_INSN_BEGIN_STMT)
+(note 106 95 107 2 (var_location TIMx (const_int 1073743872 [0x40000800])) NOTE_INSN_VAR_LOCATION)
+(note 107 106 96 2 (var_location Channels (const_int 1 [0x1])) NOTE_INSN_VAR_LOCATION)
+(note 96 107 97 2 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h:2583 NOTE_INSN_INLINE_ENTRY)
+(note 97 96 79 2 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h:2585 NOTE_INSN_BEGIN_STMT)
+(note 79 97 73 2 NOTE_INSN_EPILOGUE_BEG)
+(insn/f 73 79 61 2 (parallel [
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg:SI 4 r4)
+                (mem/c:SI (reg/f:SI 13 sp) [7  S4 A32]))
+            (set/f (reg:SI 5 r5)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [7  S4 A32]))
+        ]) "../System/lcd_backlight.c":186:1 380 {*load_multiple_with_writeback}
+     (expr_list:REG_CFA_ADJUST_CFA (set (reg/f:SI 13 sp)
+            (plus:SI (reg/f:SI 13 sp)
+                (const_int 8 [0x8])))
+        (expr_list:REG_CFA_RESTORE (reg:SI 5 r5)
+            (expr_list:REG_CFA_RESTORE (reg:SI 4 r4)
+                (nil)))))
+(insn 61 73 108 2 (set (mem/v:SI (plus:SI (reg:SI 3 r3 [118])
+                (const_int 32 [0x20])) [4 MEM[(struct TIM_TypeDef *)1073743872B].CCER+0 S4 A64])
+        (reg:SI 1 r1 [orig:114 _10 ] [114])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2585:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [118])
+        (expr_list:REG_DEAD (reg:SI 1 r1 [orig:114 _10 ] [114])
+            (nil))))
+(note 108 61 109 2 (var_location TIMx (nil)) NOTE_INSN_VAR_LOCATION)
+(note 109 108 74 2 (var_location Channels (nil)) NOTE_INSN_VAR_LOCATION)
+(jump_insn 74 109 77 2 (simple_return) "../System/lcd_backlight.c":186:1 1009 {*thumb2_return}
+     (nil)
+ -> simple_return)
+(barrier 77 74 67)
+(note 67 77 68 NOTE_INSN_DELETED)
+(note 68 67 0 NOTE_INSN_DELETED)
+
+;; Function LCD_BKLT_get_brightness (LCD_BKLT_get_brightness, funcdef_no=863, decl_uid=11012, cgraph_uid=867, symbol_order=873)
+
+deleting insn with uid = 5.
+25: (reg/f:SI 13 sp) evaluates to (value/u:SI 3:4332 @00000000072169f8/000000000717dc18)
+25: (plus:SI (value/u:SI 1:1 @00000000072169d8/000000000717dbc8)
+    (const_int -8 [0xfffffffffffffff8]))
+6: (reg/f:SI 3 r3 [117]) evaluates to (value/u:SI 6:1018530525 @0000000007216a28/000000000717dc90)
+6: (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+9: (reg/f:SI 2 r2 [orig:120 LCD_backlight.GetCompare ] [120]) evaluates to (value/u:SI 8:8 @0000000007216a48/000000000717dce0)
+10: (reg:SI 0 r0) evaluates to (value/u:SI 10:10 @0000000007216a68/000000000717dd30)
+19: (reg/i:SI 0 r0) evaluates to (value/u:SI 12:143 @0000000007216a88/000000000717dd80)
+19: (zero_extend:SI (value/u:QI 11:11 @0000000007216a78/000000000717dd58))
+28: (reg:SI 15 pc) evaluates to (value/u:SI 15:15 @0000000007216ab8/000000000717ddf8)
+28: (reg:SI 3 r3) evaluates to (value/u:SI 16:16 @0000000007216ac8/000000000717de20)
+28: (reg/f:SI 13 sp) evaluates to (value/u:SI 1:1 @00000000072169d8/000000000717dbc8)
+1: (value/u/c:SI 2:2 @00000000072169e8/000000000717dbf0)
+1: (reg/f:SI 103 afp)
+BB 2: in 7 (was 0), out 13 (was 0), rem 0 + 0, tsz 6
+25: (reg/f:SI 13 sp) evaluates to (value/u:SI 3:4332 @00000000072169f8/000000000717dc18)
+25: (plus:SI (value/u:SI 1:1 @00000000072169d8/000000000717dbc8)
+    (const_int -8 [0xfffffffffffffff8]))
+6: (reg/f:SI 3 r3 [117]) evaluates to (value/u:SI 6:1018530525 @0000000007216a28/000000000717dc90)
+6: (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+9: (reg/f:SI 2 r2 [orig:120 LCD_backlight.GetCompare ] [120]) evaluates to (value/u/f:SI 8:8 @0000000007216a48/000000000717dce0)
+10: (reg:SI 0 r0) evaluates to (value/u/f:SI 10:10 @0000000007216a68/000000000717dd30)
+19: (reg/i:SI 0 r0) evaluates to (value/u:SI 12:143 @0000000007216a88/000000000717dd80)
+19: (zero_extend:SI (value/u/f:QI 11:11 @0000000007216a78/000000000717dd58))
+28: (reg:SI 15 pc) evaluates to (value/u/f:SI 15:15 @0000000007216ab8/000000000717ddf8)
+28: (reg:SI 3 r3) evaluates to (value/u/f:SI 16:16 @0000000007216ac8/000000000717de20)
+28: (reg/f:SI 13 sp) evaluates to (value/u:SI 1:1 @00000000072169d8/000000000717dbc8)
+1: (value/u/c:SI 2:2 @00000000072169e8/000000000717dbf0)
+1: (reg/f:SI 103 afp)
+
+
+LCD_BKLT_get_brightness
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 0 [r0] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 2 [r2] 3 [r3] 12 [ip] 13 [sp] 14 [lr] 15 [pc]
+;;  ref usage 	r0={4d,4u} r1={2d} r2={3d,1u} r3={4d,3u} r12={2d} r13={3d,9u} r14={2d,2u} r15={2d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 130{111d,19u,0e} in 8{7 regular + 1 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(note 7 2 12 2 NOTE_INSN_DELETED)
+(note 12 7 14 2 NOTE_INSN_DELETED)
+(note 14 12 33 2 NOTE_INSN_DELETED)
+(note 33 14 25 2 ../System/lcd_backlight.c:207 NOTE_INSN_BEGIN_STMT)
+(insn/f 25 33 26 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -8 [0xfffffffffffffff8]))) [7  A8])
+                (unspec:BLK [
+                        (reg:SI 3 r3)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":198:1 378 {*push_multi}
+     (expr_list:REG_DEAD (reg:SI 14 lr)
+        (expr_list:REG_DEAD (reg:SI 3 r3)
+            (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                        (set/f (reg/f:SI 13 sp)
+                            (plus:SI (reg/f:SI 13 sp)
+                                (const_int -8 [0xfffffffffffffff8])))
+                        (set/f (mem/c:SI (reg/f:SI 13 sp) [7  S4 A32])
+                            (reg:SI 3 r3))
+                        (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                    (const_int 4 [0x4])) [7  S4 A32])
+                            (reg:SI 14 lr))
+                    ])
+                (nil)))))
+(note 26 25 6 2 NOTE_INSN_PROLOGUE_END)
+(insn 6 26 9 2 (set (reg/f:SI 3 r3 [117])
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(insn 9 6 10 2 (set (reg/f:SI 2 r2 [orig:120 LCD_backlight.GetCompare ] [120])
+        (mem/f/c:SI (plus:SI (reg/f:SI 3 r3 [117])
+                (const_int 12 [0xc])) [1 LCD_backlight.GetCompare+0 S4 A32])) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 0 r0)
+        (mem/f/c:SI (reg/f:SI 3 r3 [117]) [3 LCD_backlight.timer+0 S4 A32])) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 3 r3 [117])
+        (nil)))
+(call_insn 11 10 19 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (reg/f:SI 2 r2 [orig:120 LCD_backlight.GetCompare ] [120]) [0 *_1 S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":207:9 991 {*call_value_reg_thumb2}
+     (expr_list:REG_CALL_ARG_LOCATION (nil)
+        (expr_list:REG_DEAD (reg/f:SI 2 r2 [orig:120 LCD_backlight.GetCompare ] [120])
+            (expr_list:REG_CALL_DECL (nil)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(insn 19 11 20 2 (set (reg/i:SI 0 r0)
+        (zero_extend:SI (reg:QI 0 r0 [123]))) "../System/lcd_backlight.c":208:1 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 20 19 32 2 (use (reg/i:SI 0 r0)) "../System/lcd_backlight.c":208:1 -1
+     (nil))
+(note 32 20 28 2 NOTE_INSN_EPILOGUE_BEG)
+(jump_insn 28 32 31 2 (parallel [
+            (return)
+            (set/f (reg/f:SI 13 sp)
+                (plus:SI (reg/f:SI 13 sp)
+                    (const_int 8 [0x8])))
+            (set/f (reg:SI 3 r3)
+                (mem/c:SI (reg/f:SI 13 sp) [7  S4 A32]))
+            (set/f (reg:SI 15 pc)
+                (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                        (const_int 4 [0x4])) [7  S4 A32]))
+        ]) "../System/lcd_backlight.c":208:1 381 {*pop_multiple_with_writeback_and_return}
+     (expr_list:REG_UNUSED (reg:SI 15 pc)
+        (expr_list:REG_UNUSED (reg:SI 3 r3)
+            (expr_list:REG_CFA_RESTORE (reg:SI 3 r3)
+                (nil))))
+ -> return)
+(barrier 31 28 23)
+(note 23 31 24 NOTE_INSN_DELETED)
+(note 24 23 0 NOTE_INSN_DELETED)
+
+;; Function LCD_BKLT_set_brightness (LCD_BKLT_set_brightness, funcdef_no=864, decl_uid=11010, cgraph_uid=868, symbol_order=874)
+
+deleting insn with uid = 6.
+7: (reg/f:SI 3 r3 [117]) evaluates to (value/u:SI 5:1018530525 @0000000007062af8/0000000007206a68)
+7: (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+17: (reg:SI 1 r1 [121]) evaluates to (value/u:SI 6:6 @0000000007062b08/0000000007206a90)
+10: (reg/f:SI 2 r2 [orig:120 LCD_backlight.SetCompare ] [120]) evaluates to (value/u:SI 8:8 @0000000007062b28/0000000007206ae0)
+12: (reg:SI 0 r0) evaluates to (value/u:SI 10:10 @0000000007062b48/0000000007206b30)
+BB 2: in 7 (was 0), out 13 (was 0), rem 0 + 0, tsz 6
+7: (reg/f:SI 3 r3 [117]) evaluates to (value/u:SI 5:1018530525 @0000000007062af8/0000000007206a68)
+7: (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+17: (reg:SI 1 r1 [121]) evaluates to (value/u/f:SI 6:6 @0000000007062b08/0000000007206a90)
+10: (reg/f:SI 2 r2 [orig:120 LCD_backlight.SetCompare ] [120]) evaluates to (value/u/f:SI 8:8 @0000000007062b28/0000000007206ae0)
+12: (reg:SI 0 r0) evaluates to (value/u/f:SI 10:10 @0000000007062b48/0000000007206b30)
+
+
+LCD_BKLT_set_brightness
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 13 [sp]
+;;  ref usage 	r0={3d,2u} r1={3d,1u} r2={3d,1u} r3={3d,2u} r12={2d} r13={1d,3u} r14={1d,1u} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 116{106d,10u,0e} in 5{4 regular + 1 call} insns.
+(note 1 0 23 NOTE_INSN_DELETED)
+(note 23 1 4 (var_location brightness (reg:QI 0 r0 [ brightness ])) NOTE_INSN_VAR_LOCATION)
+(note 4 23 19 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 19 4 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 19 3 2 NOTE_INSN_DELETED)
+(note 3 2 8 2 NOTE_INSN_FUNCTION_BEG)
+(note 8 3 22 2 NOTE_INSN_DELETED)
+(note 22 8 7 2 ../System/lcd_backlight.c:231 NOTE_INSN_BEGIN_STMT)
+(insn 7 22 17 2 (set (reg/f:SI 3 r3 [117])
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(insn 17 7 10 2 (set (reg:SI 1 r1 [121])
+        (reg:SI 0 r0 [ brightness ])) "../System/lcd_backlight.c":223:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [ brightness ])
+        (nil)))
+(insn 10 17 12 2 (set (reg/f:SI 2 r2 [orig:120 LCD_backlight.SetCompare ] [120])
+        (mem/f/c:SI (plus:SI (reg/f:SI 3 r3 [117])
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 12 10 24 2 (set (reg:SI 0 r0)
+        (mem/f/c:SI (reg/f:SI 3 r3 [117]) [3 LCD_backlight.timer+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 3 r3 [117])
+        (nil)))
+(note 24 12 13 2 (var_location brightness (entry_value:QI (reg:QI 0 r0 [ brightness ]))) NOTE_INSN_VAR_LOCATION)
+(call_insn/j 13 24 14 2 (parallel [
+            (call (mem:SI (reg/f:SI 2 r2 [orig:120 LCD_backlight.SetCompare ] [120]) [0 *_1 S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../System/lcd_backlight.c":231:9 292 {*sibcall_insn}
+     (expr_list:REG_CALL_ARG_LOCATION (nil)
+        (expr_list:REG_DEAD (reg/f:SI 2 r2 [orig:120 LCD_backlight.SetCompare ] [120])
+            (expr_list:REG_DEAD (reg:SI 1 r1)
+                (expr_list:REG_DEAD (reg:SI 0 r0)
+                    (expr_list:REG_CALL_DECL (nil)
+                        (nil))))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(barrier 14 13 18)
+(note 18 14 0 NOTE_INSN_DELETED)
+
+;; Function LCD_BKLT_on (LCD_BKLT_on, funcdef_no=865, decl_uid=11014, cgraph_uid=869, symbol_order=875)
+
+deleting insn with uid = 5.
+deleting insn with uid = 7.
+deleting insn with uid = 8.
+9: (reg/f:SI 3 r3 [117]) evaluates to (value/u:SI 5:1018530525 @00000000071d5c68/0000000007108bf8)
+9: (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+14: (reg/f:SI 2 r2 [orig:122 LCD_backlight.SetCompare ] [122]) evaluates to (value/u:SI 7:7 @00000000071d5c88/0000000007108c48)
+15: (reg:SI 1 r1) evaluates to (value/u:SI 8:136 @00000000071d5c98/0000000007108c70)
+15: (zero_extend:SI (value/u:QI 4:4 @00000000071d5c58/0000000007108bd0))
+16: (reg:SI 0 r0) evaluates to (value/u:SI 11:11 @00000000071d5cc8/0000000007108ce8)
+BB 2: in 7 (was 0), out 13 (was 0), rem 0 + 0, tsz 6
+9: (reg/f:SI 3 r3 [117]) evaluates to (value/u:SI 5:1018530525 @00000000071d5c68/0000000007108bf8)
+9: (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+14: (reg/f:SI 2 r2 [orig:122 LCD_backlight.SetCompare ] [122]) evaluates to (value/u/f:SI 7:7 @00000000071d5c88/0000000007108c48)
+15: (reg:SI 1 r1) evaluates to (value/u:SI 8:136 @00000000071d5c98/0000000007108c70)
+15: (zero_extend:SI (value/u:QI 4:4 @00000000071d5c58/0000000007108bd0))
+16: (reg:SI 0 r0) evaluates to (value/u/f:SI 11:11 @00000000071d5cc8/0000000007108ce8)
+deleting insn with uid = 6.
+
+
+LCD_BKLT_on
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 13 [sp]
+;;  ref usage 	r0={3d,1u} r1={3d,1u} r2={3d,1u} r3={3d,3u} r12={2d} r13={1d,3u} r14={1d,1u} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 116{106d,10u,0e} in 5{4 regular + 1 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 22 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 22 3 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 22 10 2 NOTE_INSN_FUNCTION_BEG)
+(note 10 2 12 2 NOTE_INSN_DELETED)
+(note 12 10 25 2 NOTE_INSN_DELETED)
+(note 25 12 28 2 ../System/lcd_backlight.c:253 NOTE_INSN_BEGIN_STMT)
+(note 28 25 26 2 (var_location brightness (mem/c:QI (const:SI (plus:SI (symbol_ref:SI ("LCD_backlight") [flags 0x82]  <var_decl 0000000006fb5ab0 LCD_backlight>)
+            (const_int 16 [0x10]))) [0 LCD_backlight.default_brightness+0 S1 A32])) NOTE_INSN_VAR_LOCATION)
+(note 26 28 27 2 ../System/lcd_backlight.c:222 NOTE_INSN_INLINE_ENTRY)
+(note 27 26 9 2 ../System/lcd_backlight.c:231 NOTE_INSN_BEGIN_STMT)
+(insn 9 27 14 2 (set (reg/f:SI 3 r3 [117])
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":253:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(insn 14 9 15 2 (set (reg/f:SI 2 r2 [orig:122 LCD_backlight.SetCompare ] [122])
+        (mem/f/c:SI (plus:SI (reg/f:SI 3 r3 [117])
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 1 r1)
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 3 r3 [117])
+                    (const_int 16 [0x10])) [0 LCD_backlight.default_brightness+0 S1 A32]))) "../System/lcd_backlight.c":231:9 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 0 r0)
+        (mem/f/c:SI (reg/f:SI 3 r3 [117]) [3 LCD_backlight.timer+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 3 r3 [117])
+        (nil)))
+(call_insn/j 17 16 29 2 (parallel [
+            (call (mem:SI (reg/f:SI 2 r2 [orig:122 LCD_backlight.SetCompare ] [122]) [0 *_3 S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../System/lcd_backlight.c":231:9 292 {*sibcall_insn}
+     (expr_list:REG_CALL_ARG_LOCATION (nil)
+        (expr_list:REG_DEAD (reg/f:SI 2 r2 [orig:122 LCD_backlight.SetCompare ] [122])
+            (expr_list:REG_DEAD (reg:SI 1 r1)
+                (expr_list:REG_DEAD (reg:SI 0 r0)
+                    (expr_list:REG_CALL_DECL (nil)
+                        (nil))))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(note/c 29 17 18 (var_location brightness (nil)) NOTE_INSN_VAR_LOCATION)
+(barrier 18 29 21)
+(note 21 18 0 NOTE_INSN_DELETED)
+
+;; Function LCD_BKLT_off (LCD_BKLT_off, funcdef_no=866, decl_uid=11016, cgraph_uid=870, symbol_order=876)
+
+deleting insn with uid = 5.
+deleting insn with uid = 7.
+deleting insn with uid = 8.
+9: (reg/f:SI 3 r3 [115]) evaluates to (value/u:SI 4:1018530525 @000000000715dbd8/0000000007062b30)
+9: (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+13: (reg:SI 1 r1) evaluates to (value/u:SI 5:4257 @000000000715dbe8/0000000007062b58)
+13: (const_int 0 [0])
+12: (reg/f:SI 2 r2 [orig:118 LCD_backlight.SetCompare ] [118]) evaluates to (value/u:SI 7:7 @000000000715dc08/0000000007062ba8)
+14: (reg:SI 0 r0) evaluates to (value/u:SI 9:9 @000000000715dc28/0000000007062bf8)
+BB 2: in 7 (was 0), out 7 (was 0), rem 0 + 0, tsz 0
+9: (reg/f:SI 3 r3 [115]) evaluates to (value/u:SI 4:1018530525 @000000000715dbd8/0000000007062b30)
+9: (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+13: (reg:SI 1 r1) evaluates to (value/u:SI 5:4257 @000000000715dbe8/0000000007062b58)
+13: (const_int 0 [0])
+12: (reg/f:SI 2 r2 [orig:118 LCD_backlight.SetCompare ] [118]) evaluates to (value/u/f:SI 7:7 @000000000715dc08/0000000007062ba8)
+14: (reg:SI 0 r0) evaluates to (value/u/f:SI 9:9 @000000000715dc28/0000000007062bf8)
+deleting insn with uid = 6.
+
+
+LCD_BKLT_off
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 13 [sp]
+;;  ref usage 	r0={3d,1u} r1={3d,1u} r2={3d,1u} r3={3d,2u} r12={2d} r13={1d,3u} r14={1d,1u} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r104={1d} r105={1d} r106={1d} 
+;;    total ref usage 115{106d,9u,0e} in 5{4 regular + 1 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 20 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 20 3 2 2 NOTE_INSN_PROLOGUE_END)
+(note 2 20 10 2 NOTE_INSN_FUNCTION_BEG)
+(note 10 2 23 2 NOTE_INSN_DELETED)
+(note 23 10 26 2 ../System/lcd_backlight.c:261 NOTE_INSN_BEGIN_STMT)
+(note 26 23 24 2 (var_location brightness (const_int 0 [0])) NOTE_INSN_VAR_LOCATION)
+(note 24 26 25 2 ../System/lcd_backlight.c:222 NOTE_INSN_INLINE_ENTRY)
+(note 25 24 9 2 ../System/lcd_backlight.c:231 NOTE_INSN_BEGIN_STMT)
+(insn 9 25 13 2 (set (reg/f:SI 3 r3 [115])
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(insn 13 9 12 2 (set (reg:SI 1 r1)
+        (const_int 0 [0])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 12 13 14 2 (set (reg/f:SI 2 r2 [orig:118 LCD_backlight.SetCompare ] [118])
+        (mem/f/c:SI (plus:SI (reg/f:SI 3 r3 [115])
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 14 12 15 2 (set (reg:SI 0 r0)
+        (mem/f/c:SI (reg/f:SI 3 r3 [115]) [3 LCD_backlight.timer+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 3 r3 [115])
+        (nil)))
+(call_insn/j 15 14 16 2 (parallel [
+            (call (mem:SI (reg/f:SI 2 r2 [orig:118 LCD_backlight.SetCompare ] [118]) [0 *_2 S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../System/lcd_backlight.c":231:9 292 {*sibcall_insn}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 1 r1)
+                (const_int 0 [0]))
+            (nil))
+        (expr_list:REG_DEAD (reg/f:SI 2 r2 [orig:118 LCD_backlight.SetCompare ] [118])
+            (expr_list:REG_DEAD (reg:SI 1 r1)
+                (expr_list:REG_DEAD (reg:SI 0 r0)
+                    (expr_list:REG_CALL_DECL (nil)
+                        (nil))))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(barrier 16 15 19)
+(note 19 16 0 NOTE_INSN_DELETED)
+
+;; Function LCD_BKLT_demo (LCD_BKLT_demo, funcdef_no=867, decl_uid=11018, cgraph_uid=871, symbol_order=877) (executed once)
+
+deleting insn with uid = 7.
+deleting insn with uid = 8.
+deleting insn with uid = 9.
+deleting insn with uid = 10.
+deleting insn with uid = 12.
+deleting insn with uid = 13.
+deleting insn with uid = 24.
+deleting insn with uid = 27.
+deleting insn with uid = 28.
+deleting insn with uid = 29.
+deleting insn with uid = 31.
+deleting insn with uid = 32.
+deleting insn with uid = 41.
+deleting insn with uid = 45.
+deleting insn with uid = 46.
+deleting insn with uid = 47.
+deleting insn with uid = 49.
+deleting insn with uid = 54.
+deleting insn with uid = 56.
+deleting insn with uid = 57.
+deleting insn with uid = 66.
+deleting insn with uid = 67.
+deleting insn with uid = 68.
+deleting insn with uid = 77.
+deleting insn with uid = 83.
+deleting insn with uid = 86.
+deleting insn with uid = 89.
+deleting insn with uid = 94.
+deleting insn with uid = 97.
+deleting insn with uid = 98.
+deleting insn with uid = 100.
+deleting insn with uid = 105.
+deleting insn with uid = 107.
+deleting insn with uid = 108.
+deleting insn with uid = 117.
+deleting insn with uid = 118.
+deleting insn with uid = 119.
+deleting insn with uid = 128.
+deleting insn with uid = 134.
+deleting insn with uid = 137.
+deleting insn with uid = 140.
+deleting insn with uid = 145.
+deleting insn with uid = 148.
+175: (reg/f:SI 13 sp) evaluates to (value/u:SI 5:4324 @00000000071bdc48/000000000715dc48)
+175: (plus:SI (value/u:SI 1:1 @00000000071bdc08/000000000715dba8)
+    (const_int -16 [0xfffffffffffffff0]))
+14: (reg/f:SI 4 r4 [167]) evaluates to (value/u:SI 8:1018530525 @00000000071bdc78/000000000715dcc0)
+14: (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+81: (reg/f:SI 6 r6 [170]) evaluates to (value/u:SI 9:3140853989 @00000000071bdc88/000000000715dce8)
+81: (symbol_ref/v/f:SI ("*.LC0") [flags 0x82]  <var_decl 00000000070bd5a0 *.LC0>)
+20: (reg:SI 1 r1) evaluates to (value/u:SI 10:136 @00000000071bdc98/000000000715dd10)
+20: (zero_extend:SI (value/u:QI 4:4 @00000000071bdc38/000000000715dc20))
+19: (reg/f:SI 3 r3 [orig:142 LCD_backlight.SetCompare ] [142]) evaluates to (value/u:SI 13:13 @00000000071bdcc8/000000000715dd88)
+21: (reg:SI 0 r0) evaluates to (value/u:SI 15:15 @00000000071bdce8/000000000715ddd8)
+25: (reg:SI 0 r0) evaluates to (value/u:SI 16:6257 @00000000071bdcf8/000000000715de00)
+25: (const_int 2000 [0x7d0])
+38: (reg:SI 0 r0) evaluates to (value/u:SI 18:18 @00000000071bdd18/000000000715de50)
+36: (reg/f:SI 3 r3 [orig:146 LCD_backlight.SetCompare ] [146]) evaluates to (value/u:SI 19:19 @00000000071bdd28/000000000715de78)
+37: (reg:SI 1 r1) evaluates to (value/u:SI 20:4257 @00000000071bdd38/000000000715dea0)
+37: (const_int 0 [0])
+42: (reg:SI 0 r0) evaluates to (value/u:SI 16:6257 @00000000071bdcf8/000000000715de00)
+25: (const_int 2000 [0x7d0])
+BB 2: in 7 (was 0), out 13 (was 0), rem 5 + 0, tsz 6
+3: (reg/v:SI 5 r5 [orig:118 val ] [118]) evaluates to (value/u:SI 20:4257 @00000000071bdd38/000000000715dea0)
+37: (const_int 0 [0])
+BB 3: in 13 (was 0), out 7 (was 0), rem 4 + 0, tsz 12
+62: (reg:SI 1 r1) evaluates to (value/u:SI 22:22 @00000000071bdd58/000000000715def0)
+87: (value/u:SI 34:8700 @00000000071bde18/000000000715e0d0)
+87: (plus:SI (value/u:SI 33:4362 @00000000071bde08/000000000715e0a8)
+    (const_int -1 [0xffffffffffffffff]))
+63: (reg:SI 0 r0) evaluates to (value/u:SI 24:24 @00000000071bdd78/000000000715df40)
+61: (reg/f:SI 3 r3 [orig:150 LCD_backlight.SetCompare ] [150]) evaluates to (value/u:SI 25:25 @00000000071bdd88/000000000715df68)
+72: (reg/f:SI 3 r3 [orig:154 LCD_backlight.GetCompare ] [154]) evaluates to (value/u:SI 27:27 @00000000071bdda8/000000000715dfb8)
+73: (reg:SI 0 r0) evaluates to (value/u:SI 28:28 @00000000071bddb8/000000000715dfe0)
+80: (reg:SI 1 r1) evaluates to (value/u:SI 30:161 @00000000071bddd8/000000000715e030)
+80: (zero_extend:SI (value/u:QI 29:29 @00000000071bddc8/000000000715e008))
+164: (reg:SI 0 r0) evaluates to (value/u:SI 32:32 @00000000071bddf8/000000000715e080)
+87: (reg/v:SI 5 r5 [orig:118 val ] [118]) evaluates to (value/u:SI 33:4362 @00000000071bde08/000000000715e0a8)
+87: (plus:SI (value/u:SI 22:22 @00000000071bdd58/000000000715def0)
+    (const_int 1 [0x1]))
+165: (reg:SI 0 r0) evaluates to (value/u:SI 35:4267 @00000000071bde28/000000000715e0f8)
+165: (const_int 10 [0xa])
+91: (reg:CC 100 cc) evaluates to (value/u:CC 36:8775 @00000000071bde38/000000000715e120)
+91: (compare:CC (value/u:SI 33:4362 @00000000071bde08/000000000715e0a8)
+    (const_int 101 [0x65]))
+BB 4: in 7 (was 0), out 31 (was 0), rem 3 + 1, tsz 36
+166: (reg:SI 0 r0) evaluates to (value/u:SI 37:5257 @00000000071bde48/000000000715e148)
+166: (const_int 1000 [0x3e8])
+4: (reg/v:SI 5 r5 [orig:117 val ] [117]) evaluates to (value/u:SI 38:4357 @00000000071bde58/000000000715e170)
+4: (const_int 100 [0x64])
+BB 5: in 31 (was 0), out 31 (was 0), rem 2 + 1, tsz 84
+113: (reg:SI 1 r1) evaluates to (value/u:SI 39:39 @00000000071bde68/000000000715e198)
+138: (value/u:SI 50:8717 @00000000071bdf18/000000000715e350)
+138: (plus:SI (value/u:SI 49:4377 @00000000071bdf08/000000000715e328)
+    (const_int 1 [0x1]))
+114: (reg:SI 0 r0) evaluates to (value/u:SI 41:41 @00000000071bde88/000000000715e1e8)
+112: (reg/f:SI 3 r3 [orig:160 LCD_backlight.SetCompare ] [160]) evaluates to (value/u:SI 42:42 @00000000071bde98/000000000715e210)
+123: (reg/f:SI 3 r3 [orig:164 LCD_backlight.GetCompare ] [164]) evaluates to (value/u:SI 43:43 @00000000071bdea8/000000000715e238)
+124: (reg:SI 0 r0) evaluates to (value/u:SI 44:44 @00000000071bdeb8/000000000715e260)
+131: (reg:SI 1 r1) evaluates to (value/u:SI 46:177 @00000000071bded8/000000000715e2b0)
+131: (zero_extend:SI (value/u:QI 45:45 @00000000071bdec8/000000000715e288))
+162: (reg:SI 0 r0) evaluates to (value/u:SI 48:48 @00000000071bdef8/000000000715e300)
+138: (reg/v:SI 5 r5 [orig:117 val ] [117]) evaluates to (value/u:SI 49:4377 @00000000071bdf08/000000000715e328)
+181: (value/u:SI 52:13055 @00000000071bdf38/000000000715e3a0)
+181: (plus:SI (value/u:SI 50:8717 @00000000071bdf18/000000000715e350)
+    (const_int -1 [0xffffffffffffffff]))
+138: (plus:SI (value/u:SI 39:39 @00000000071bde68/000000000715e198)
+    (const_int -1 [0xffffffffffffffff]))
+163: (reg:SI 0 r0) evaluates to (value/u:SI 35:4267 @00000000071bde28/000000000715e0f8)
+165: (const_int 10 [0xa])
+181: (reg:SI 3 r3) evaluates to (value/u:SI 50:8717 @00000000071bdf18/000000000715e350)
+138: (value/u:SI 39:39 @00000000071bde68/000000000715e198)
+181: (reg:CC 100 cc) evaluates to (value/u:CC 51:8688 @00000000071bdf28/000000000715e378)
+181: (compare:CC (value/u:SI 49:4377 @00000000071bdf08/000000000715e328)
+    (const_int -1 [0xffffffffffffffff]))
+BB 6: in 31 (was 0), out 31 (was 0), rem 1 + 2, tsz 132
+169: (reg:SI 0 r0) evaluates to (value/u:SI 37:5257 @00000000071bde48/000000000715e148)
+166: (const_int 1000 [0x3e8])
+BB 7: in 31 (was 0), out 31 (was 0), rem 0 + 3, tsz 180
+3: (reg/v:SI 5 r5 [orig:118 val ] [118]) evaluates to (value/u:SI 20:4257 @00000000071bdd38/000000000715dea0)
+37: (const_int 0 [0])
+BB 3: in 13 (was 3), out 7 (was 5), rem 2 + 0, tsz 180
+62: (reg:SI 1 r1) evaluates to (value/u:SI 22:22 @00000000071bdd58/000000000715def0)
+87: (value/u:SI 34:8700 @00000000071bde18/000000000715e0d0)
+87: (plus:SI (value/u:SI 33:4362 @00000000071bde08/000000000715e0a8)
+    (const_int -1 [0xffffffffffffffff]))
+63: (reg:SI 0 r0) evaluates to (value/u:SI 24:24 @00000000071bdd78/000000000715df40)
+61: (reg/f:SI 3 r3 [orig:150 LCD_backlight.SetCompare ] [150]) evaluates to (value/u:SI 25:25 @00000000071bdd88/000000000715df68)
+72: (reg/f:SI 3 r3 [orig:154 LCD_backlight.GetCompare ] [154]) evaluates to (value/u:SI 27:27 @00000000071bdda8/000000000715dfb8)
+73: (reg:SI 0 r0) evaluates to (value/u:SI 28:28 @00000000071bddb8/000000000715dfe0)
+80: (reg:SI 1 r1) evaluates to (value/u:SI 30:161 @00000000071bddd8/000000000715e030)
+80: (zero_extend:SI (value/u:QI 29:29 @00000000071bddc8/000000000715e008))
+164: (reg:SI 0 r0) evaluates to (value/u:SI 32:32 @00000000071bddf8/000000000715e080)
+87: (reg/v:SI 5 r5 [orig:118 val ] [118]) evaluates to (value/u:SI 33:4362 @00000000071bde08/000000000715e0a8)
+87: (plus:SI (value/u:SI 22:22 @00000000071bdd58/000000000715def0)
+    (const_int 1 [0x1]))
+165: (reg:SI 0 r0) evaluates to (value/u:SI 35:4267 @00000000071bde28/000000000715e0f8)
+165: (const_int 10 [0xa])
+91: (reg:CC 100 cc) evaluates to (value/u:CC 36:8775 @00000000071bde38/000000000715e120)
+91: (compare:CC (value/u:SI 33:4362 @00000000071bde08/000000000715e0a8)
+    (const_int 101 [0x65]))
+BB 4: in 13 (was 5), out 31 (was 10), rem 2 + 1, tsz 186
+166: (reg:SI 0 r0) evaluates to (value/u:SI 37:5257 @00000000071bde48/000000000715e148)
+166: (const_int 1000 [0x3e8])
+4: (reg/v:SI 5 r5 [orig:117 val ] [117]) evaluates to (value/u:SI 38:4357 @00000000071bde58/000000000715e170)
+4: (const_int 100 [0x64])
+BB 5: in 31 (was 10), out 31 (was 10), rem 1 + 1, tsz 186
+113: (reg:SI 1 r1) evaluates to (value/u:SI 39:39 @00000000071bde68/000000000715e198)
+138: (value/u:SI 50:8717 @00000000071bdf18/000000000715e350)
+138: (plus:SI (value/u:SI 49:4377 @00000000071bdf08/000000000715e328)
+    (const_int 1 [0x1]))
+114: (reg:SI 0 r0) evaluates to (value/u:SI 41:41 @00000000071bde88/000000000715e1e8)
+112: (reg/f:SI 3 r3 [orig:160 LCD_backlight.SetCompare ] [160]) evaluates to (value/u:SI 42:42 @00000000071bde98/000000000715e210)
+123: (reg/f:SI 3 r3 [orig:164 LCD_backlight.GetCompare ] [164]) evaluates to (value/u:SI 43:43 @00000000071bdea8/000000000715e238)
+124: (reg:SI 0 r0) evaluates to (value/u:SI 44:44 @00000000071bdeb8/000000000715e260)
+131: (reg:SI 1 r1) evaluates to (value/u:SI 46:177 @00000000071bded8/000000000715e2b0)
+131: (zero_extend:SI (value/u:QI 45:45 @00000000071bdec8/000000000715e288))
+162: (reg:SI 0 r0) evaluates to (value/u:SI 48:48 @00000000071bdef8/000000000715e300)
+138: (reg/v:SI 5 r5 [orig:117 val ] [117]) evaluates to (value/u:SI 49:4377 @00000000071bdf08/000000000715e328)
+181: (value/u:SI 52:13055 @00000000071bdf38/000000000715e3a0)
+181: (plus:SI (value/u:SI 50:8717 @00000000071bdf18/000000000715e350)
+    (const_int -1 [0xffffffffffffffff]))
+138: (plus:SI (value/u:SI 39:39 @00000000071bde68/000000000715e198)
+    (const_int -1 [0xffffffffffffffff]))
+163: (reg:SI 0 r0) evaluates to (value/u:SI 35:4267 @00000000071bde28/000000000715e0f8)
+165: (const_int 10 [0xa])
+181: (reg:SI 3 r3) evaluates to (value/u:SI 50:8717 @00000000071bdf18/000000000715e350)
+138: (value/u:SI 39:39 @00000000071bde68/000000000715e198)
+181: (reg:CC 100 cc) evaluates to (value/u:CC 51:8688 @00000000071bdf28/000000000715e378)
+181: (compare:CC (value/u:SI 49:4377 @00000000071bdf08/000000000715e328)
+    (const_int -1 [0xffffffffffffffff]))
+BB 6: in 31 (was 10), out 31 (was 15), rem 1 + 2, tsz 186
+169: (reg:SI 0 r0) evaluates to (value/u:SI 37:5257 @00000000071bde48/000000000715e148)
+166: (const_int 1000 [0x3e8])
+BB 7: in 31 (was 15), out 31 (was 13), rem 0 + 3, tsz 186
+3: (reg/v:SI 5 r5 [orig:118 val ] [118]) evaluates to (value/u:SI 20:4257 @00000000071bdd38/000000000715dea0)
+37: (const_int 0 [0])
+BB 3: in 13 (was 3), out 7 (was 5), rem 2 + 0, tsz 186
+62: (reg:SI 1 r1) evaluates to (value/u:SI 22:22 @00000000071bdd58/000000000715def0)
+87: (value/u:SI 34:8700 @00000000071bde18/000000000715e0d0)
+87: (plus:SI (value/u:SI 33:4362 @00000000071bde08/000000000715e0a8)
+    (const_int -1 [0xffffffffffffffff]))
+63: (reg:SI 0 r0) evaluates to (value/u:SI 24:24 @00000000071bdd78/000000000715df40)
+61: (reg/f:SI 3 r3 [orig:150 LCD_backlight.SetCompare ] [150]) evaluates to (value/u:SI 25:25 @00000000071bdd88/000000000715df68)
+72: (reg/f:SI 3 r3 [orig:154 LCD_backlight.GetCompare ] [154]) evaluates to (value/u:SI 27:27 @00000000071bdda8/000000000715dfb8)
+73: (reg:SI 0 r0) evaluates to (value/u:SI 28:28 @00000000071bddb8/000000000715dfe0)
+80: (reg:SI 1 r1) evaluates to (value/u:SI 30:161 @00000000071bddd8/000000000715e030)
+80: (zero_extend:SI (value/u:QI 29:29 @00000000071bddc8/000000000715e008))
+164: (reg:SI 0 r0) evaluates to (value/u:SI 32:32 @00000000071bddf8/000000000715e080)
+87: (reg/v:SI 5 r5 [orig:118 val ] [118]) evaluates to (value/u:SI 33:4362 @00000000071bde08/000000000715e0a8)
+87: (plus:SI (value/u:SI 22:22 @00000000071bdd58/000000000715def0)
+    (const_int 1 [0x1]))
+165: (reg:SI 0 r0) evaluates to (value/u:SI 35:4267 @00000000071bde28/000000000715e0f8)
+165: (const_int 10 [0xa])
+91: (reg:CC 100 cc) evaluates to (value/u:CC 36:8775 @00000000071bde38/000000000715e120)
+91: (compare:CC (value/u:SI 33:4362 @00000000071bde08/000000000715e0a8)
+    (const_int 101 [0x65]))
+BB 4: in 13 (was 3), out 31 (was 8), rem 1 + 0, tsz 186
+113: (reg:SI 1 r1) evaluates to (value/u:SI 39:39 @00000000071bde68/000000000715e198)
+138: (value/u:SI 50:8717 @00000000071bdf18/000000000715e350)
+138: (plus:SI (value/u:SI 49:4377 @00000000071bdf08/000000000715e328)
+    (const_int 1 [0x1]))
+114: (reg:SI 0 r0) evaluates to (value/u:SI 41:41 @00000000071bde88/000000000715e1e8)
+112: (reg/f:SI 3 r3 [orig:160 LCD_backlight.SetCompare ] [160]) evaluates to (value/u:SI 42:42 @00000000071bde98/000000000715e210)
+123: (reg/f:SI 3 r3 [orig:164 LCD_backlight.GetCompare ] [164]) evaluates to (value/u:SI 43:43 @00000000071bdea8/000000000715e238)
+124: (reg:SI 0 r0) evaluates to (value/u:SI 44:44 @00000000071bdeb8/000000000715e260)
+131: (reg:SI 1 r1) evaluates to (value/u:SI 46:177 @00000000071bded8/000000000715e2b0)
+131: (zero_extend:SI (value/u:QI 45:45 @00000000071bdec8/000000000715e288))
+162: (reg:SI 0 r0) evaluates to (value/u:SI 48:48 @00000000071bdef8/000000000715e300)
+138: (reg/v:SI 5 r5 [orig:117 val ] [117]) evaluates to (value/u:SI 49:4377 @00000000071bdf08/000000000715e328)
+181: (value/u:SI 52:13055 @00000000071bdf38/000000000715e3a0)
+181: (plus:SI (value/u:SI 50:8717 @00000000071bdf18/000000000715e350)
+    (const_int -1 [0xffffffffffffffff]))
+138: (plus:SI (value/u:SI 39:39 @00000000071bde68/000000000715e198)
+    (const_int -1 [0xffffffffffffffff]))
+163: (reg:SI 0 r0) evaluates to (value/u:SI 35:4267 @00000000071bde28/000000000715e0f8)
+165: (const_int 10 [0xa])
+181: (reg:SI 3 r3) evaluates to (value/u:SI 50:8717 @00000000071bdf18/000000000715e350)
+138: (value/u:SI 39:39 @00000000071bde68/000000000715e198)
+181: (reg:CC 100 cc) evaluates to (value/u:CC 51:8688 @00000000071bdf28/000000000715e378)
+181: (compare:CC (value/u:SI 49:4377 @00000000071bdf08/000000000715e328)
+    (const_int -1 [0xffffffffffffffff]))
+BB 6: in 13 (was 5), out 31 (was 11), rem 0 + 0, tsz 168
+175: (reg/f:SI 13 sp) evaluates to (value/u:SI 5:4324 @00000000071bdc48/000000000715dc48)
+175: (plus:SI (value/u:SI 1:1 @00000000071bdc08/000000000715dba8)
+    (const_int -16 [0xfffffffffffffff0]))
+14: (reg/f:SI 4 r4 [167]) evaluates to (value/u:SI 8:1018530525 @00000000071bdc78/000000000715dcc0)
+14: (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+81: (reg/f:SI 6 r6 [170]) evaluates to (value/u:SI 9:3140853989 @00000000071bdc88/000000000715dce8)
+81: (symbol_ref/v/f:SI ("*.LC0") [flags 0x82]  <var_decl 00000000070bd5a0 *.LC0>)
+20: (reg:SI 1 r1) evaluates to (value/u:SI 10:136 @00000000071bdc98/000000000715dd10)
+20: (zero_extend:SI (value/u:QI 4:4 @00000000071bdc38/000000000715dc20))
+19: (reg/f:SI 3 r3 [orig:142 LCD_backlight.SetCompare ] [142]) evaluates to (value/u/f:SI 13:13 @00000000071bdcc8/000000000715dd88)
+21: (reg:SI 0 r0) evaluates to (value/u/f:SI 15:15 @00000000071bdce8/000000000715ddd8)
+25: (reg:SI 0 r0) evaluates to (value/u:SI 16:6257 @00000000071bdcf8/000000000715de00)
+25: (const_int 2000 [0x7d0])
+38: (reg:SI 0 r0) evaluates to (value/u/f:SI 18:18 @00000000071bdd18/000000000715de50)
+36: (reg/f:SI 3 r3 [orig:146 LCD_backlight.SetCompare ] [146]) evaluates to (value/u/f:SI 19:19 @00000000071bdd28/000000000715de78)
+37: (reg:SI 1 r1) evaluates to (value/u:SI 20:4257 @00000000071bdd38/000000000715dea0)
+37: (const_int 0 [0])
+42: (reg:SI 0 r0) evaluates to (value/u:SI 16:6257 @00000000071bdcf8/000000000715de00)
+25: (const_int 2000 [0x7d0])
+3: (reg/v:SI 5 r5 [orig:118 val ] [118]) evaluates to (value/u:SI 20:4257 @00000000071bdd38/000000000715dea0)
+37: (const_int 0 [0])
+62: (reg:SI 1 r1) evaluates to (value/u:SI 22:22 @00000000071bdd58/000000000715def0)
+87: (value/u:SI 34:8700 @00000000071bde18/000000000715e0d0)
+87: (plus:SI (value/u:SI 33:4362 @00000000071bde08/000000000715e0a8)
+    (const_int -1 [0xffffffffffffffff]))
+63: (reg:SI 0 r0) evaluates to (value/u/f:SI 24:24 @00000000071bdd78/000000000715df40)
+61: (reg/f:SI 3 r3 [orig:150 LCD_backlight.SetCompare ] [150]) evaluates to (value/u/f:SI 25:25 @00000000071bdd88/000000000715df68)
+72: (reg/f:SI 3 r3 [orig:154 LCD_backlight.GetCompare ] [154]) evaluates to (value/u/f:SI 27:27 @00000000071bdda8/000000000715dfb8)
+73: (reg:SI 0 r0) evaluates to (value/u/f:SI 28:28 @00000000071bddb8/000000000715dfe0)
+80: (reg:SI 1 r1) evaluates to (value/u:SI 30:161 @00000000071bddd8/000000000715e030)
+80: (zero_extend:SI (value/u:QI 29:29 @00000000071bddc8/000000000715e008))
+164: (reg:SI 0 r0) evaluates to (value/u/f:SI 32:32 @00000000071bddf8/000000000715e080)
+87: (reg/v:SI 5 r5 [orig:118 val ] [118]) evaluates to (value/u:SI 33:4362 @00000000071bde08/000000000715e0a8)
+87: (plus:SI (value/u:SI 22:22 @00000000071bdd58/000000000715def0)
+    (const_int 1 [0x1]))
+165: (reg:SI 0 r0) evaluates to (value/u:SI 35:4267 @00000000071bde28/000000000715e0f8)
+165: (const_int 10 [0xa])
+91: (reg:CC 100 cc) evaluates to (value/u:CC 36:8775 @00000000071bde38/000000000715e120)
+91: (compare:CC (value/u:SI 33:4362 @00000000071bde08/000000000715e0a8)
+    (const_int 101 [0x65]))
+166: (reg:SI 0 r0) evaluates to (value/u:SI 37:5257 @00000000071bde48/000000000715e148)
+166: (const_int 1000 [0x3e8])
+4: (reg/v:SI 5 r5 [orig:117 val ] [117]) evaluates to (value/u:SI 38:4357 @00000000071bde58/000000000715e170)
+4: (const_int 100 [0x64])
+113: (reg:SI 1 r1) evaluates to (value/u:SI 39:39 @00000000071bde68/000000000715e198)
+138: (value/u:SI 50:8717 @00000000071bdf18/000000000715e350)
+138: (plus:SI (value/u:SI 49:4377 @00000000071bdf08/000000000715e328)
+    (const_int 1 [0x1]))
+114: (reg:SI 0 r0) evaluates to (value/u/f:SI 41:41 @00000000071bde88/000000000715e1e8)
+112: (reg/f:SI 3 r3 [orig:160 LCD_backlight.SetCompare ] [160]) evaluates to (value/u/f:SI 42:42 @00000000071bde98/000000000715e210)
+123: (reg/f:SI 3 r3 [orig:164 LCD_backlight.GetCompare ] [164]) evaluates to (value/u/f:SI 43:43 @00000000071bdea8/000000000715e238)
+124: (reg:SI 0 r0) evaluates to (value/u/f:SI 44:44 @00000000071bdeb8/000000000715e260)
+131: (reg:SI 1 r1) evaluates to (value/u:SI 46:177 @00000000071bded8/000000000715e2b0)
+131: (zero_extend:SI (value/u:QI 45:45 @00000000071bdec8/000000000715e288))
+162: (reg:SI 0 r0) evaluates to (value/u/f:SI 48:48 @00000000071bdef8/000000000715e300)
+138: (reg/v:SI 5 r5 [orig:117 val ] [117]) evaluates to (value/u:SI 49:4377 @00000000071bdf08/000000000715e328)
+181: (value/u:SI 52:13055 @00000000071bdf38/000000000715e3a0)
+181: (plus:SI (value/u:SI 50:8717 @00000000071bdf18/000000000715e350)
+    (const_int -1 [0xffffffffffffffff]))
+138: (plus:SI (value/u:SI 39:39 @00000000071bde68/000000000715e198)
+    (const_int -1 [0xffffffffffffffff]))
+163: (reg:SI 0 r0) evaluates to (value/u:SI 35:4267 @00000000071bde28/000000000715e0f8)
+165: (const_int 10 [0xa])
+181: (reg:SI 3 r3) evaluates to (value/u/f:SI 50:8717 @00000000071bdf18/000000000715e350)
+138: (value/u:SI 39:39 @00000000071bde68/000000000715e198)
+181: (reg:CC 100 cc) evaluates to (value/u:CC 51:8688 @00000000071bdf28/000000000715e378)
+181: (compare:CC (value/u:SI 49:4377 @00000000071bdf08/000000000715e328)
+    (const_int -1 [0xffffffffffffffff]))
+169: (reg:SI 0 r0) evaluates to (value/u:SI 37:5257 @00000000071bde48/000000000715e148)
+166: (const_int 1000 [0x3e8])
+deleting insn with uid = 11.
+deleting insn with uid = 23.
+deleting insn with uid = 30.
+deleting insn with uid = 40.
+deleting insn with uid = 48.
+deleting insn with uid = 51.
+deleting insn with uid = 52.
+deleting insn with uid = 53.
+deleting insn with uid = 55.
+deleting insn with uid = 65.
+deleting insn with uid = 76.
+deleting insn with uid = 88.
+deleting insn with uid = 99.
+deleting insn with uid = 102.
+deleting insn with uid = 103.
+deleting insn with uid = 104.
+deleting insn with uid = 106.
+deleting insn with uid = 116.
+deleting insn with uid = 127.
+deleting insn with uid = 139.
+
+
+LCD_BKLT_demo
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp]
+;;  regular block artificial uses 	 13 [sp]
+;;  eh block artificial uses 	 13 [sp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 4 [r4] 5 [r5] 6 [r6] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15]
+;;  exit block uses 	 4 [r4] 5 [r5] 6 [r6] 13 [sp] 14 [lr]
+;;  regs ever live 	 0 [r0] 1 [r1] 3 [r3] 4 [r4] 5 [r5] 6 [r6] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={29d,16u} r1={21d,6u} r2={15d} r3={22d,6u} r4={2d,15u,6e} r5={5d,9u} r6={2d,4u} r12={28d} r13={2d,23u} r14={15d,2u} r15={14d} r16={15d} r17={15d} r18={15d} r19={15d} r20={15d} r21={15d} r22={15d} r23={15d} r24={15d} r25={15d} r26={15d} r27={15d} r28={15d} r29={15d} r30={15d} r31={15d} r48={14d} r49={14d} r50={14d} r51={14d} r52={14d} r53={14d} r54={14d} r55={14d} r56={14d} r57={14d} r58={14d} r59={14d} r60={14d} r61={14d} r62={14d} r63={14d} r64={14d} r65={14d} r66={14d} r67={14d} r68={14d} r69={14d} r70={14d} r71={14d} r72={14d} r73={14d} r74={14d} r75={14d} r76={14d} r77={14d} r78={14d} r79={14d} r80={14d} r81={14d} r82={14d} r83={14d} r84={14d} r85={14d} r86={14d} r87={14d} r88={14d} r89={14d} r90={14d} r91={14d} r92={14d} r93={14d} r94={14d} r95={14d} r96={14d} r97={14d} r98={14d} r99={14d} r100={16d,2u} r101={14d} r104={14d} r105={14d} r106={14d} 
+;;    total ref usage 1284{1195d,83u,6e} in 52{38 regular + 14 call} insns.
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 5 15 2 NOTE_INSN_FUNCTION_BEG)
+(note 15 2 17 2 NOTE_INSN_DELETED)
+(note 17 15 34 2 NOTE_INSN_DELETED)
+(note 34 17 184 2 NOTE_INSN_DELETED)
+(note 184 34 185 2 ../System/lcd_backlight.c:279 NOTE_INSN_BEGIN_STMT)
+(note 185 184 186 2 ../System/lcd_backlight.c:283 NOTE_INSN_BEGIN_STMT)
+(note 186 185 187 2 ../System/lcd_backlight.c:250 NOTE_INSN_INLINE_ENTRY)
+(note 187 186 227 2 ../System/lcd_backlight.c:253 NOTE_INSN_BEGIN_STMT)
+(note 227 187 188 2 (var_location brightness (mem/c:QI (const:SI (plus:SI (symbol_ref:SI ("LCD_backlight") [flags 0x82]  <var_decl 0000000006fb5ab0 LCD_backlight>)
+            (const_int 16 [0x10]))) [0 LCD_backlight.default_brightness+0 S1 A32])) NOTE_INSN_VAR_LOCATION)
+(note 188 227 189 2 ../System/lcd_backlight.c:222 NOTE_INSN_INLINE_ENTRY)
+(note 189 188 175 2 ../System/lcd_backlight.c:231 NOTE_INSN_BEGIN_STMT)
+(insn/f 175 189 176 2 (parallel [
+            (set (mem/c:BLK (pre_modify:SI (reg/f:SI 13 sp)
+                        (plus:SI (reg/f:SI 13 sp)
+                            (const_int -16 [0xfffffffffffffff0]))) [7  A8])
+                (unspec:BLK [
+                        (reg:SI 4 r4)
+                    ] UNSPEC_PUSH_MULT))
+            (use (reg:SI 5 r5))
+            (use (reg:SI 6 r6))
+            (use (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":278:1 378 {*push_multi}
+     (expr_list:REG_DEAD (reg:SI 14 lr)
+        (expr_list:REG_DEAD (reg:SI 6 r6)
+            (expr_list:REG_DEAD (reg:SI 5 r5)
+                (expr_list:REG_DEAD (reg:SI 4 r4)
+                    (expr_list:REG_FRAME_RELATED_EXPR (sequence [
+                                (set/f (reg/f:SI 13 sp)
+                                    (plus:SI (reg/f:SI 13 sp)
+                                        (const_int -16 [0xfffffffffffffff0])))
+                                (set/f (mem/c:SI (reg/f:SI 13 sp) [7  S4 A32])
+                                    (reg:SI 4 r4))
+                                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                            (const_int 4 [0x4])) [7  S4 A32])
+                                    (reg:SI 5 r5))
+                                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                            (const_int 8 [0x8])) [7  S4 A32])
+                                    (reg:SI 6 r6))
+                                (set/f (mem/c:SI (plus:SI (reg/f:SI 13 sp)
+                                            (const_int 12 [0xc])) [7  S4 A32])
+                                    (reg:SI 14 lr))
+                            ])
+                        (nil)))))))
+(note 176 175 14 2 NOTE_INSN_PROLOGUE_END)
+(insn 14 176 81 2 (set (reg/f:SI 4 r4 [167])
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":253:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(insn 81 14 20 2 (set (reg/f:SI 6 r6 [170])
+        (symbol_ref/v/f:SI ("*.LC0") [flags 0x82]  <var_decl 00000000070bd5a0 *.LC0>)) "../System/lcd_backlight.c":303:4 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (symbol_ref/v/f:SI ("*.LC0") [flags 0x82]  <var_decl 00000000070bd5a0 *.LC0>)
+        (nil)))
+(insn 20 81 19 2 (set (reg:SI 1 r1)
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 4 r4 [167])
+                    (const_int 16 [0x10])) [0 LCD_backlight.default_brightness+0 S1 A32]))) "../System/lcd_backlight.c":231:9 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 19 20 21 2 (set (reg/f:SI 3 r3 [orig:142 LCD_backlight.SetCompare ] [142])
+        (mem/f/c:SI (plus:SI (reg/f:SI 4 r4 [167])
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem/f/c:SI (plus:SI (reg/f:SI 4 r4 [167])
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])
+        (expr_list:REG_EQUAL (mem/f/c:SI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                        (const_int 8 [0x8]))) [5 LCD_backlight.SetCompare+0 S4 A32])
+            (nil))))
+(insn 21 19 22 2 (set (reg:SI 0 r0)
+        (mem/f/c:SI (reg/f:SI 4 r4 [167]) [3 LCD_backlight.timer+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 22 21 228 2 (parallel [
+            (call (mem:SI (reg/f:SI 3 r3 [orig:142 LCD_backlight.SetCompare ] [142]) [0 *_25 S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":231:9 988 {*call_reg_thumb2}
+     (expr_list:REG_CALL_ARG_LOCATION (nil)
+        (expr_list:REG_DEAD (reg/f:SI 3 r3 [orig:142 LCD_backlight.SetCompare ] [142])
+            (expr_list:REG_DEAD (reg:SI 1 r1)
+                (expr_list:REG_DEAD (reg:SI 0 r0)
+                    (expr_list:REG_CALL_DECL (nil)
+                        (nil))))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(note/c 228 22 229 2 (var_location brightness (nil)) NOTE_INSN_VAR_LOCATION)
+(note 229 228 190 2 (var_location brightness (nil)) NOTE_INSN_VAR_LOCATION)
+(note 190 229 25 2 ../System/lcd_backlight.c:284 NOTE_INSN_BEGIN_STMT)
+(insn 25 190 26 2 (set (reg:SI 0 r0)
+        (const_int 2000 [0x7d0])) "../System/lcd_backlight.c":284:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 26 25 191 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>) [0 HAL_Delay S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":284:2 290 {*call_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 0 r0)
+                (const_int 2000 [0x7d0]))
+            (nil))
+        (expr_list:REG_DEAD (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(note 191 26 192 2 ../System/lcd_backlight.c:286 NOTE_INSN_BEGIN_STMT)
+(note 192 191 193 2 ../System/lcd_backlight.c:258 NOTE_INSN_INLINE_ENTRY)
+(note 193 192 230 2 ../System/lcd_backlight.c:261 NOTE_INSN_BEGIN_STMT)
+(note 230 193 194 2 (var_location brightness (const_int 0 [0])) NOTE_INSN_VAR_LOCATION)
+(note 194 230 195 2 ../System/lcd_backlight.c:222 NOTE_INSN_INLINE_ENTRY)
+(note 195 194 38 2 ../System/lcd_backlight.c:231 NOTE_INSN_BEGIN_STMT)
+(insn 38 195 36 2 (set (reg:SI 0 r0)
+        (mem/f/c:SI (reg/f:SI 4 r4 [167]) [3 LCD_backlight.timer+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 36 38 37 2 (set (reg/f:SI 3 r3 [orig:146 LCD_backlight.SetCompare ] [146])
+        (mem/f/c:SI (plus:SI (reg/f:SI 4 r4 [167])
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem/f/c:SI (plus:SI (reg/f:SI 4 r4 [167])
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])
+        (expr_list:REG_EQUAL (mem/f/c:SI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                        (const_int 8 [0x8]))) [5 LCD_backlight.SetCompare+0 S4 A32])
+            (nil))))
+(insn 37 36 39 2 (set (reg:SI 1 r1)
+        (const_int 0 [0])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 39 37 231 2 (parallel [
+            (call (mem:SI (reg/f:SI 3 r3 [orig:146 LCD_backlight.SetCompare ] [146]) [0 *_22 S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":231:9 988 {*call_reg_thumb2}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 1 r1)
+                (const_int 0 [0]))
+            (nil))
+        (expr_list:REG_DEAD (reg/f:SI 3 r3 [orig:146 LCD_backlight.SetCompare ] [146])
+            (expr_list:REG_DEAD (reg:SI 1 r1)
+                (expr_list:REG_DEAD (reg:SI 0 r0)
+                    (expr_list:REG_CALL_DECL (nil)
+                        (nil))))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(note 231 39 196 2 (var_location brightness (nil)) NOTE_INSN_VAR_LOCATION)
+(note 196 231 42 2 ../System/lcd_backlight.c:287 NOTE_INSN_BEGIN_STMT)
+(insn 42 196 43 2 (set (reg:SI 0 r0)
+        (const_int 2000 [0x7d0])) "../System/lcd_backlight.c":287:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 43 42 149 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>) [0 HAL_Delay S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":287:2 290 {*call_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 0 r0)
+                (const_int 2000 [0x7d0]))
+            (nil))
+        (expr_list:REG_DEAD (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(code_label 149 43 44 3 24 (nil) [1 uses])
+(note 44 149 197 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(note 197 44 198 3 ../System/lcd_backlight.c:291 NOTE_INSN_BEGIN_STMT)
+(note 198 197 199 3 ../System/lcd_backlight.c:295 NOTE_INSN_BEGIN_STMT)
+(note 199 198 232 3 ../System/lcd_backlight.c:295 NOTE_INSN_BEGIN_STMT)
+(note 232 199 200 3 (var_location val (const_int 0 [0])) NOTE_INSN_VAR_LOCATION)
+(note 200 232 3 3 ../System/lcd_backlight.c:295 NOTE_INSN_BEGIN_STMT)
+(insn 3 200 233 3 (set (reg/v:SI 5 r5 [orig:118 val ] [118])
+        (const_int 0 [0])) "../System/lcd_backlight.c":295:11 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(note 233 3 90 (var_location val (nil)) NOTE_INSN_VAR_LOCATION)
+(code_label 90 233 50 4 22 (nil) [1 uses])
+(note 50 90 59 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 59 50 70 4 NOTE_INSN_DELETED)
+(note 70 59 75 4 NOTE_INSN_DELETED)
+(note 75 70 78 4 NOTE_INSN_DELETED)
+(note 78 75 234 4 NOTE_INSN_DELETED)
+(note 234 78 201 4 (var_location val (reg/v:SI 5 r5 [orig:118 val ] [118])) NOTE_INSN_VAR_LOCATION)
+(note 201 234 235 4 ../System/lcd_backlight.c:298 NOTE_INSN_BEGIN_STMT)
+(note 235 201 202 4 (var_location brightness (reg:QI 5 r5 [orig:118 val ] [118])) NOTE_INSN_VAR_LOCATION)
+(note 202 235 203 4 ../System/lcd_backlight.c:222 NOTE_INSN_INLINE_ENTRY)
+(note 203 202 62 4 ../System/lcd_backlight.c:231 NOTE_INSN_BEGIN_STMT)
+(insn 62 203 63 4 (set (reg:SI 1 r1)
+        (reg/v:SI 5 r5 [orig:118 val ] [118])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 63 62 61 4 (set (reg:SI 0 r0)
+        (mem/f/c:SI (reg/f:SI 4 r4 [167]) [3 LCD_backlight.timer+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 61 63 64 4 (set (reg/f:SI 3 r3 [orig:150 LCD_backlight.SetCompare ] [150])
+        (mem/f/c:SI (plus:SI (reg/f:SI 4 r4 [167])
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem/f/c:SI (plus:SI (reg/f:SI 4 r4 [167])
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])
+        (expr_list:REG_EQUAL (mem/f/c:SI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                        (const_int 8 [0x8]))) [5 LCD_backlight.SetCompare+0 S4 A32])
+            (nil))))
+(call_insn 64 61 236 4 (parallel [
+            (call (mem:SI (reg/f:SI 3 r3 [orig:150 LCD_backlight.SetCompare ] [150]) [0 *_31 S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":231:9 988 {*call_reg_thumb2}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 1 r1)
+                (reg/v:SI 5 r5 [orig:118 val ] [118]))
+            (nil))
+        (expr_list:REG_DEAD (reg/f:SI 3 r3 [orig:150 LCD_backlight.SetCompare ] [150])
+            (expr_list:REG_DEAD (reg:SI 1 r1)
+                (expr_list:REG_DEAD (reg:SI 0 r0)
+                    (expr_list:REG_CALL_DECL (nil)
+                        (nil))))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(note 236 64 204 4 (var_location brightness (nil)) NOTE_INSN_VAR_LOCATION)
+(note 204 236 205 4 ../System/lcd_backlight.c:302 NOTE_INSN_BEGIN_STMT)
+(note 205 204 206 4 ../System/lcd_backlight.c:197 NOTE_INSN_INLINE_ENTRY)
+(note 206 205 72 4 ../System/lcd_backlight.c:207 NOTE_INSN_BEGIN_STMT)
+(insn 72 206 73 4 (set (reg/f:SI 3 r3 [orig:154 LCD_backlight.GetCompare ] [154])
+        (mem/f/c:SI (plus:SI (reg/f:SI 4 r4 [167])
+                (const_int 12 [0xc])) [1 LCD_backlight.GetCompare+0 S4 A32])) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem/f/c:SI (plus:SI (reg/f:SI 4 r4 [167])
+                (const_int 12 [0xc])) [1 LCD_backlight.GetCompare+0 S4 A32])
+        (expr_list:REG_EQUAL (mem/f/c:SI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                        (const_int 12 [0xc]))) [1 LCD_backlight.GetCompare+0 S4 A32])
+            (nil))))
+(insn 73 72 74 4 (set (reg:SI 0 r0)
+        (mem/f/c:SI (reg/f:SI 4 r4 [167]) [3 LCD_backlight.timer+0 S4 A32])) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 74 73 237 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (reg/f:SI 3 r3 [orig:154 LCD_backlight.GetCompare ] [154]) [0 *_28 S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":207:9 991 {*call_value_reg_thumb2}
+     (expr_list:REG_CALL_ARG_LOCATION (nil)
+        (expr_list:REG_DEAD (reg/f:SI 3 r3 [orig:154 LCD_backlight.GetCompare ] [154])
+            (expr_list:REG_CALL_DECL (nil)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(note 237 74 207 4 (var_location compare_value (reg:QI 0 r0 [173])) NOTE_INSN_VAR_LOCATION)
+(note 207 237 80 4 ../System/lcd_backlight.c:303 NOTE_INSN_BEGIN_STMT)
+(insn 80 207 164 4 (set (reg:SI 1 r1)
+        (zero_extend:SI (reg:QI 0 r0 [173]))) "../System/lcd_backlight.c":303:4 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_DEAD (reg:QI 0 r0 [173])
+        (nil)))
+(insn 164 80 238 4 (set (reg:SI 0 r0)
+        (reg/f:SI 6 r6 [170])) "../System/lcd_backlight.c":303:4 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 238 164 82 4 (var_location compare_value (reg:QI 1 r1)) NOTE_INSN_VAR_LOCATION)
+(call_insn 82 238 239 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000005b49b00 printf>) [0 __builtin_printf S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":303:4 291 {*call_value_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 0 r0)
+                (reg/f:SI 6 r6 [170]))
+            (nil))
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_UNUSED (reg:SI 0 r0)
+                (expr_list:REG_CALL_DECL (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000005b49b00 printf>)
+                    (nil)))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(note/c 239 82 208 4 (var_location compare_value (nil)) NOTE_INSN_VAR_LOCATION)
+(note 208 239 87 4 ../System/lcd_backlight.c:306 NOTE_INSN_BEGIN_STMT)
+(insn 87 208 240 4 (set (reg/v:SI 5 r5 [orig:118 val ] [118])
+        (plus:SI (reg/v:SI 5 r5 [orig:118 val ] [118])
+            (const_int 1 [0x1]))) "../System/lcd_backlight.c":295:33 7 {*arm_addsi3}
+     (nil))
+(note 240 87 165 4 (var_location val (plus:SI (reg/v:SI 5 r5 [orig:118 val ] [118])
+    (const_int -1 [0xffffffffffffffff]))) NOTE_INSN_VAR_LOCATION)
+(insn 165 240 85 4 (set (reg:SI 0 r0)
+        (const_int 10 [0xa])) "../System/lcd_backlight.c":306:4 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 85 165 209 4 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>) [0 HAL_Delay S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":306:4 290 {*call_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 0 r0)
+                (const_int 10 [0xa]))
+            (nil))
+        (expr_list:REG_DEAD (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(note 209 85 241 4 ../System/lcd_backlight.c:295 NOTE_INSN_BEGIN_STMT)
+(note 241 209 210 4 (var_location val (reg/v:SI 5 r5 [orig:118 val ] [118])) NOTE_INSN_VAR_LOCATION)
+(note 210 241 91 4 ../System/lcd_backlight.c:295 NOTE_INSN_BEGIN_STMT)
+(insn 91 210 92 4 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 5 r5 [orig:118 val ] [118])
+            (const_int 101 [0x65]))) "../System/lcd_backlight.c":295:3 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 92 91 93 4 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 90)
+            (pc))) "../System/lcd_backlight.c":295:3 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 1062895956 (nil)))
+ -> 90)
+(note 93 92 211 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(note 211 93 166 5 ../System/lcd_backlight.c:311 NOTE_INSN_BEGIN_STMT)
+(insn 166 211 96 5 (set (reg:SI 0 r0)
+        (const_int 1000 [0x3e8])) "../System/lcd_backlight.c":311:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 96 166 212 5 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>) [0 HAL_Delay S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":311:3 290 {*call_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 0 r0)
+                (const_int 1000 [0x3e8]))
+            (nil))
+        (expr_list:REG_DEAD (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(note 212 96 213 5 ../System/lcd_backlight.c:315 NOTE_INSN_BEGIN_STMT)
+(note 213 212 242 5 ../System/lcd_backlight.c:315 NOTE_INSN_BEGIN_STMT)
+(note 242 213 214 5 (var_location val (const_int 100 [0x64])) NOTE_INSN_VAR_LOCATION)
+(note 214 242 4 5 ../System/lcd_backlight.c:315 NOTE_INSN_BEGIN_STMT)
+(insn 4 214 243 5 (set (reg/v:SI 5 r5 [orig:117 val ] [117])
+        (const_int 100 [0x64])) "../System/lcd_backlight.c":315:11 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 100 [0x64])
+        (nil)))
+(note 243 4 244 (var_location val (nil)) NOTE_INSN_VAR_LOCATION)
+(note 244 243 245 (var_location val (nil)) NOTE_INSN_VAR_LOCATION)
+(note 245 244 141 (var_location compare_value (nil)) NOTE_INSN_VAR_LOCATION)
+(code_label 141 245 101 6 23 (nil) [1 uses])
+(note 101 141 110 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(note 110 101 121 6 NOTE_INSN_DELETED)
+(note 121 110 126 6 NOTE_INSN_DELETED)
+(note 126 121 129 6 NOTE_INSN_DELETED)
+(note 129 126 246 6 NOTE_INSN_DELETED)
+(note 246 129 215 6 (var_location val (reg/v:SI 5 r5 [orig:117 val ] [117])) NOTE_INSN_VAR_LOCATION)
+(note 215 246 247 6 ../System/lcd_backlight.c:318 NOTE_INSN_BEGIN_STMT)
+(note 247 215 216 6 (var_location brightness (reg:QI 5 r5 [orig:117 val ] [117])) NOTE_INSN_VAR_LOCATION)
+(note 216 247 217 6 ../System/lcd_backlight.c:222 NOTE_INSN_INLINE_ENTRY)
+(note 217 216 113 6 ../System/lcd_backlight.c:231 NOTE_INSN_BEGIN_STMT)
+(insn 113 217 114 6 (set (reg:SI 1 r1)
+        (reg/v:SI 5 r5 [orig:117 val ] [117])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 114 113 112 6 (set (reg:SI 0 r0)
+        (mem/f/c:SI (reg/f:SI 4 r4 [167]) [3 LCD_backlight.timer+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 112 114 115 6 (set (reg/f:SI 3 r3 [orig:160 LCD_backlight.SetCompare ] [160])
+        (mem/f/c:SI (plus:SI (reg/f:SI 4 r4 [167])
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem/f/c:SI (plus:SI (reg/f:SI 4 r4 [167])
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])
+        (expr_list:REG_EQUAL (mem/f/c:SI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                        (const_int 8 [0x8]))) [5 LCD_backlight.SetCompare+0 S4 A32])
+            (nil))))
+(call_insn 115 112 248 6 (parallel [
+            (call (mem:SI (reg/f:SI 3 r3 [orig:160 LCD_backlight.SetCompare ] [160]) [0 *_37 S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":231:9 988 {*call_reg_thumb2}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 1 r1)
+                (reg/v:SI 5 r5 [orig:117 val ] [117]))
+            (nil))
+        (expr_list:REG_DEAD (reg/f:SI 3 r3 [orig:160 LCD_backlight.SetCompare ] [160])
+            (expr_list:REG_DEAD (reg:SI 1 r1)
+                (expr_list:REG_DEAD (reg:SI 0 r0)
+                    (expr_list:REG_CALL_DECL (nil)
+                        (nil))))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(note 248 115 218 6 (var_location brightness (nil)) NOTE_INSN_VAR_LOCATION)
+(note 218 248 219 6 ../System/lcd_backlight.c:322 NOTE_INSN_BEGIN_STMT)
+(note 219 218 220 6 ../System/lcd_backlight.c:197 NOTE_INSN_INLINE_ENTRY)
+(note 220 219 123 6 ../System/lcd_backlight.c:207 NOTE_INSN_BEGIN_STMT)
+(insn 123 220 124 6 (set (reg/f:SI 3 r3 [orig:164 LCD_backlight.GetCompare ] [164])
+        (mem/f/c:SI (plus:SI (reg/f:SI 4 r4 [167])
+                (const_int 12 [0xc])) [1 LCD_backlight.GetCompare+0 S4 A32])) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem/f/c:SI (plus:SI (reg/f:SI 4 r4 [167])
+                (const_int 12 [0xc])) [1 LCD_backlight.GetCompare+0 S4 A32])
+        (expr_list:REG_EQUAL (mem/f/c:SI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                        (const_int 12 [0xc]))) [1 LCD_backlight.GetCompare+0 S4 A32])
+            (nil))))
+(insn 124 123 125 6 (set (reg:SI 0 r0)
+        (mem/f/c:SI (reg/f:SI 4 r4 [167]) [3 LCD_backlight.timer+0 S4 A32])) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 125 124 249 6 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (reg/f:SI 3 r3 [orig:164 LCD_backlight.GetCompare ] [164]) [0 *_34 S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":207:9 991 {*call_value_reg_thumb2}
+     (expr_list:REG_CALL_ARG_LOCATION (nil)
+        (expr_list:REG_DEAD (reg/f:SI 3 r3 [orig:164 LCD_backlight.GetCompare ] [164])
+            (expr_list:REG_CALL_DECL (nil)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(note 249 125 221 6 (var_location compare_value (reg:QI 0 r0 [174])) NOTE_INSN_VAR_LOCATION)
+(note 221 249 131 6 ../System/lcd_backlight.c:323 NOTE_INSN_BEGIN_STMT)
+(insn 131 221 162 6 (set (reg:SI 1 r1)
+        (zero_extend:SI (reg:QI 0 r0 [174]))) "../System/lcd_backlight.c":323:4 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_DEAD (reg:QI 0 r0 [174])
+        (nil)))
+(insn 162 131 250 6 (set (reg:SI 0 r0)
+        (reg/f:SI 6 r6 [170])) "../System/lcd_backlight.c":323:4 728 {*thumb2_movsi_vfp}
+     (nil))
+(note 250 162 133 6 (var_location compare_value (reg:QI 1 r1)) NOTE_INSN_VAR_LOCATION)
+(call_insn 133 250 251 6 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000005b49b00 printf>) [0 __builtin_printf S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":323:4 291 {*call_value_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 0 r0)
+                (reg/f:SI 6 r6 [170]))
+            (nil))
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_UNUSED (reg:SI 0 r0)
+                (expr_list:REG_CALL_DECL (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000005b49b00 printf>)
+                    (nil)))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(note/c 251 133 222 6 (var_location compare_value (nil)) NOTE_INSN_VAR_LOCATION)
+(note 222 251 138 6 ../System/lcd_backlight.c:326 NOTE_INSN_BEGIN_STMT)
+(insn 138 222 252 6 (set (reg/v:SI 5 r5 [orig:117 val ] [117])
+        (plus:SI (reg/v:SI 5 r5 [orig:117 val ] [117])
+            (const_int -1 [0xffffffffffffffff]))) "../System/lcd_backlight.c":315:33 7 {*arm_addsi3}
+     (nil))
+(note 252 138 163 6 (var_location val (plus:SI (reg/v:SI 5 r5 [orig:117 val ] [117])
+    (const_int 1 [0x1]))) NOTE_INSN_VAR_LOCATION)
+(insn 163 252 136 6 (set (reg:SI 0 r0)
+        (const_int 10 [0xa])) "../System/lcd_backlight.c":326:4 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 136 163 223 6 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>) [0 HAL_Delay S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":326:4 290 {*call_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 0 r0)
+                (const_int 10 [0xa]))
+            (nil))
+        (expr_list:REG_DEAD (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(note 223 136 253 6 ../System/lcd_backlight.c:315 NOTE_INSN_BEGIN_STMT)
+(note 253 223 224 6 (var_location val (reg/v:SI 5 r5 [orig:117 val ] [117])) NOTE_INSN_VAR_LOCATION)
+(note 224 253 181 6 ../System/lcd_backlight.c:315 NOTE_INSN_BEGIN_STMT)
+(insn 181 224 143 6 (parallel [
+            (set (reg:CC 100 cc)
+                (compare:CC (reg/v:SI 5 r5 [orig:117 val ] [117])
+                    (const_int -1 [0xffffffffffffffff])))
+            (set (reg:SI 3 r3)
+                (plus:SI (reg/v:SI 5 r5 [orig:117 val ] [117])
+                    (const_int 1 [0x1])))
+        ]) "../System/lcd_backlight.c":315:3 16 {cmpsi2_addneg}
+     (expr_list:REG_UNUSED (reg:SI 3 r3)
+        (nil)))
+(jump_insn 143 181 144 6 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 141)
+            (pc))) "../System/lcd_backlight.c":315:3 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 1062895956 (nil)))
+ -> 141)
+(note 144 143 225 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(note 225 144 169 7 ../System/lcd_backlight.c:330 NOTE_INSN_BEGIN_STMT)
+(insn 169 225 147 7 (set (reg:SI 0 r0)
+        (const_int 1000 [0x3e8])) "../System/lcd_backlight.c":330:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 147 169 226 7 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>) [0 HAL_Delay S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":330:3 290 {*call_symbol}
+     (expr_list:REG_CALL_ARG_LOCATION (expr_list:REG_DEP_TRUE (concat:SI (reg:SI 0 r0)
+                (const_int 1000 [0x3e8]))
+            (nil))
+        (expr_list:REG_DEAD (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(note 226 147 182 7 ../System/lcd_backlight.c:291 NOTE_INSN_BEGIN_STMT)
+(jump_insn 182 226 183 7 (set (pc)
+        (label_ref 149)) "../System/lcd_backlight.c":295:3 284 {*arm_jump}
+     (nil)
+ -> 149)
+(barrier 183 182 174)
+(note 174 183 0 NOTE_INSN_DELETED)

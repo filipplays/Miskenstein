@@ -1,0 +1,2177 @@
+
+;; Function LL_TIM_OC_SetCompareCH1 (LL_TIM_OC_SetCompareCH1, funcdef_no=387, decl_uid=10290, cgraph_uid=391, symbol_order=395)
+
+Starting decreasing number of live ranges...
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Reg 115 uninteresting
+Reg 113: local to bb 2 def dominates all uses has unique first use
+Reg 116 uninteresting
+Reg 114 uninteresting
+Examining insn 2, def for 113
+  all ok
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+Pass 1 for finding pseudo/allocno costs
+
+    r116: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r115: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r114: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r113: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+
+  a0(r113,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:20000,20000
+  a1(r114,l0) costs: LO_REGS:0,0 HI_REGS:2000,2000 CALLER_SAVE_REGS:2000,2000 EVEN_REG:2000,2000 GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:20000,20000
+  a2(r116,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a3(r115,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+
+   Insn 8(l0): point = 0
+   Insn 3(l0): point = 2
+   Insn 12(l0): point = 4
+   Insn 2(l0): point = 6
+   Insn 11(l0): point = 8
+ a0(r113): [1..6]
+ a1(r114): [1..2]
+ a2(r116): [3..4]
+ a3(r115): [7..8]
+Compressing live ranges: from 11 to 6 - 54%
+Ranges after the compression:
+ a0(r113): [0..3]
+ a1(r114): [0..1]
+ a2(r116): [2..3]
+ a3(r115): [4..5]
++++Allocating 24 bytes for conflict table (uncompressed size 32)
+;; a0(r113,l0) conflicts: a1(r114,l0) a2(r116,l0)
+;;     total conflict hard regs: 1
+;;     conflict hard regs: 1
+
+;; a1(r114,l0) conflicts: a0(r113,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a2(r116,l0) conflicts: a0(r113,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a3(r115,l0) conflicts:
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+
+  cp0:a0(r113)<->a3(r115)@1000:move
+  cp1:a1(r114)<->a2(r116)@1000:move
+  pref0:a3(r115)<-hr0@2000
+  pref1:a2(r116)<-hr1@2000
+  regions=1, blocks=3, points=6
+    allocnos=4 (big 0), copies=2, conflicts=0, ranges=4
+
+**** Allocnos coloring:
+
+
+  Loop 0 (parent -1, header bb2, depth 0)
+    bbs: 2
+    all: 0r113 1r114 2r116 3r115
+    modified regnos: 113 114 115 116
+    border:
+    Pressure: GENERAL_REGS=2
+    Hard reg set forest:
+      0:( 0-12 14 16-47)@0
+        1:( 0-12 14)@156000
+          2:( 0 2-12 14)@156000
+      Allocno a0r113 of GENERAL_REGS(14) has 13 avail. regs  0 2-12 14, node:  0 2-12 14 (confl regs =  1 13 15-106)
+      Allocno a1r114 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a2r116 of ALL_REGS(46) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15 48-106)
+      Allocno a3r115 of ALL_REGS(46) has 13 avail. regs  0 2-12 14, node:  0 2-12 14 (confl regs =  1 13 15 48-106)
+      Forming thread by copy 0:a0r113-a3r115 (freq=1000):
+        Result (freq=4000): a0r113(2000) a3r115(2000)
+      Forming thread by copy 1:a1r114-a2r116 (freq=1000):
+        Result (freq=4000): a1r114(2000) a2r116(2000)
+      Pushing a2(r116,l0)(cost 0)
+      Pushing a1(r114,l0)(cost 0)
+      Pushing a3(r115,l0)(cost 0)
+      Pushing a0(r113,l0)(cost 0)
+      Popping a0(r113,l0)  -- assign reg 0
+      Popping a3(r115,l0)  -- assign reg 0
+      Popping a1(r114,l0)  -- assign reg 1
+      Popping a2(r116,l0)  -- assign reg 1
+Disposition:
+    0:r113 l0     0    1:r114 l0     1    3:r115 l0     0    2:r116 l0     1
+New iteration of spill/restore move
++++Costs: overall -56000, reg -56000, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+LL_TIM_OC_SetCompareCH1
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1]
+;;  ref usage 	r0={1d,1u} r1={1d,1u} r2={1d} r3={1d} r7={1d,2u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r102={1d,2u} r103={1d,1u} r113={1d,1u} r114={1d,1u} r115={1d,1u} r116={1d,1u} 
+;;    total ref usage 42{29d,13u,0e} in 6{6 regular + 0 call} insns.
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 4 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 4 5 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 4 11 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3198:3 -1
+     (nil))
+(insn 11 7 2 2 (set (reg:SI 115)
+        (reg:SI 0 r0 [ TIMx ])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3197:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [ TIMx ])
+        (nil)))
+(insn 2 11 12 2 (set (reg/v/f:SI 113 [ TIMx ])
+        (reg:SI 115)) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3197:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 115)
+        (nil)))
+(insn 12 2 3 2 (set (reg:SI 116)
+        (reg:SI 1 r1 [ CompareValue ])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3197:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [ CompareValue ])
+        (nil)))
+(insn 3 12 8 2 (set (reg/v:SI 114 [ CompareValue ])
+        (reg:SI 116)) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3197:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 116)
+        (nil)))
+(insn 8 3 13 2 (set (mem/v:SI (plus:SI (reg/v/f:SI 113 [ TIMx ])
+                (const_int 52 [0x34])) [4 TIMx_2(D)->CCR1+0 S4 A32])
+        (reg/v:SI 114 [ CompareValue ])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3198:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 114 [ CompareValue ])
+        (expr_list:REG_DEAD (reg/v/f:SI 113 [ TIMx ])
+            (nil))))
+(note 13 8 0 NOTE_INSN_DELETED)
+
+;; Function LL_TIM_OC_GetCompareCH1 (LL_TIM_OC_GetCompareCH1, funcdef_no=393, decl_uid=10313, cgraph_uid=397, symbol_order=401)
+
+Starting decreasing number of live ranges...
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Reg 116 uninteresting
+Reg 114 uninteresting
+Reg 113 uninteresting
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+Pass 1 for finding pseudo/allocno costs
+
+    r116: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r114: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r113: preferred LO_REGS, alternative ALL_REGS, allocno ALL_REGS
+
+  a0(r113,l0) costs: LO_REGS:2000,2000 HI_REGS:6000,6000 CALLER_SAVE_REGS:6000,6000 EVEN_REG:6000,6000 GENERAL_REGS:4000,4000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+  a1(r114,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:20000,20000
+  a2(r116,l0) costs: GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:30000,30000 MEM:30000,30000
+
+   Insn 12(l0): point = 0
+   Insn 11(l0): point = 2
+   Insn 7(l0): point = 4
+   Insn 2(l0): point = 6
+   Insn 14(l0): point = 8
+ a0(r113): [3..4]
+ a1(r114): [5..6]
+ a2(r116): [7..8]
+Compressing live ranges: from 11 to 6 - 54%
+Ranges after the compression:
+ a0(r113): [0..1]
+ a1(r114): [2..3]
+ a2(r116): [4..5]
++++Allocating 0 bytes for conflict table (uncompressed size 24)
+;; a0(r113,l0) conflicts:
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a1(r114,l0) conflicts:
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a2(r116,l0) conflicts:
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+
+  cp0:a1(r114)<->a2(r116)@1000:move
+  pref0:a2(r116)<-hr0@2000
+  pref1:a0(r113)<-hr0@2000
+  regions=1, blocks=3, points=6
+    allocnos=3 (big 0), copies=1, conflicts=0, ranges=3
+
+**** Allocnos coloring:
+
+
+  Loop 0 (parent -1, header bb2, depth 0)
+    bbs: 2
+    all: 0r113 1r114 2r116
+    modified regnos: 113 114 116
+    border:
+    Pressure: GENERAL_REGS=1
+    Hard reg set forest:
+      0:( 0-12 14 16-47)@0
+        1:( 0-12 14)@272000
+      Allocno a0r113 of ALL_REGS(46) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15 48-106)
+      Allocno a1r114 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a2r116 of ALL_REGS(46) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15 48-106)
+      Forming thread by copy 0:a1r114-a2r116 (freq=1000):
+        Result (freq=4000): a1r114(2000) a2r116(2000)
+      Pushing a0(r113,l0)(cost 0)
+      Pushing a2(r116,l0)(cost 0)
+      Pushing a1(r114,l0)(cost 0)
+      Popping a1(r114,l0)  -- assign reg 0
+      Popping a2(r116,l0)  -- assign reg 0
+      Popping a0(r113,l0)  -- assign reg 0
+Disposition:
+    0:r113 l0     0    1:r114 l0     0    2:r116 l0     0
+New iteration of spill/restore move
++++Costs: overall -56000, reg -56000, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+LL_TIM_OC_GetCompareCH1
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0]
+;;  ref usage 	r0={2d,3u} r1={1d} r2={1d} r3={1d} r7={1d,2u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r102={1d,2u} r103={1d,1u} r113={1d,1u} r114={1d,1u} r116={1d,1u} 
+;;    total ref usage 42{29d,13u,0e} in 6{6 regular + 0 call} insns.
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 3 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 3 4 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 3 14 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3299:3 -1
+     (nil))
+(insn 14 6 2 2 (set (reg:SI 116)
+        (reg:SI 0 r0 [ TIMx ])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3298:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [ TIMx ])
+        (nil)))
+(insn 2 14 7 2 (set (reg/v/f:SI 114 [ TIMx ])
+        (reg:SI 116)) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3298:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 116)
+        (nil)))
+(insn 7 2 11 2 (set (reg:SI 113 [ <retval> ])
+        (mem/v:SI (plus:SI (reg/v/f:SI 114 [ TIMx ])
+                (const_int 52 [0x34])) [4 TIMx_2(D)->CCR1+0 S4 A32])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3299:10 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v/f:SI 114 [ TIMx ])
+        (nil)))
+(insn 11 7 12 2 (set (reg/i:SI 0 r0)
+        (reg:SI 113 [ <retval> ])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3300:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 113 [ <retval> ])
+        (nil)))
+(insn 12 11 15 2 (use (reg/i:SI 0 r0)) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3300:1 -1
+     (nil))
+(note 15 12 0 NOTE_INSN_DELETED)
+
+;; Function LCD_BKLT_init (LCD_BKLT_init, funcdef_no=862, decl_uid=11008, cgraph_uid=866, symbol_order=872)
+
+Starting decreasing number of live ranges...
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Reg 117: local to bb 2 def dominates all uses has unique first use
+Reg 118 uninteresting
+Reg 115: local to bb 2 def dominates all uses has unique first use
+Reg 126: local to bb 2 def dominates all uses has unique first use
+Reg 116 uninteresting
+Reg 113: local to bb 2 def dominates all uses has unique first use
+Reg 122: local to bb 2 def dominates all uses has unique first use
+Reg 120 uninteresting
+Reg 114: local to bb 2 def dominates all uses has unique first use
+Reg 124 uninteresting
+Found def insn 58 for 113 to be not moveable
+Examining insn 59, def for 114
+  all ok
+Found def insn 31 for 115 to be not moveable
+Ignoring reg 117 with equiv init insn
+Ignoring reg 122 with equiv init insn
+Ignoring reg 126 with equiv init insn
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+init_insns for 117: (insn_list:REG_DEP_TRUE 6 (nil))
+init_insns for 118: (insn_list:REG_DEP_TRUE 7 (nil))
+init_insns for 120: (insn_list:REG_DEP_TRUE 11 (nil))
+init_insns for 122: (insn_list:REG_DEP_TRUE 15 (nil))
+init_insns for 124: (insn_list:REG_DEP_TRUE 19 (nil))
+init_insns for 126: (insn_list:REG_DEP_TRUE 23 (nil))
+
+Pass 1 for finding pseudo/allocno costs
+
+    r126: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r124: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r122: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r120: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r118: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r117: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r116: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r115: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r114: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r113: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+
+  a0(r118,l0) costs: LO_REGS:0,0 HI_REGS:4000,4000 CALLER_SAVE_REGS:4000,4000 EVEN_REG:4000,4000 GENERAL_REGS:4000,4000 VFP_D0_D7_REGS:105000,105000 VFP_LO_REGS:105000,105000 ALL_REGS:105000,105000 MEM:70000,70000
+  a1(r114,l0) costs: LO_REGS:0,0 HI_REGS:2000,2000 CALLER_SAVE_REGS:2000,2000 EVEN_REG:2000,2000 GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:20000,20000
+  a2(r117,l0) costs: LO_REGS:0,0 HI_REGS:2000,2000 CALLER_SAVE_REGS:2000,2000 EVEN_REG:2000,2000 GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:90000,90000 VFP_LO_REGS:90000,90000 ALL_REGS:90000,90000 MEM:60000,60000
+  a3(r126,l0) costs: LO_REGS:0,0 HI_REGS:2000,2000 CALLER_SAVE_REGS:2000,2000 EVEN_REG:2000,2000 GENERAL_REGS:2000,2000 MEM:30000,30000
+  a4(r124,l0) costs: LO_REGS:0,0 HI_REGS:4000,4000 CALLER_SAVE_REGS:4000,4000 EVEN_REG:4000,4000 GENERAL_REGS:4000,4000 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:20000,20000
+  a5(r122,l0) costs: LO_REGS:0,0 HI_REGS:4000,4000 CALLER_SAVE_REGS:4000,4000 EVEN_REG:4000,4000 GENERAL_REGS:4000,4000 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:20000,20000
+  a6(r113,l0) costs: LO_REGS:0,0 HI_REGS:2000,2000 CALLER_SAVE_REGS:2000,2000 EVEN_REG:2000,2000 GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:20000,20000
+  a7(r120,l0) costs: LO_REGS:0,0 HI_REGS:2000,2000 CALLER_SAVE_REGS:2000,2000 EVEN_REG:2000,2000 GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:20000,20000
+  a8(r116,l0) costs: LO_REGS:0,0 HI_REGS:2000,2000 CALLER_SAVE_REGS:2000,2000 EVEN_REG:2000,2000 GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:20000,20000
+  a9(r115,l0) costs: LO_REGS:0,0 HI_REGS:2000,2000 CALLER_SAVE_REGS:2000,2000 EVEN_REG:2000,2000 GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:20000,20000
+
+   Insn 61(l0): point = 0
+   Insn 25(l0): point = 2
+   Insn 20(l0): point = 4
+   Insn 19(l0): point = 6
+   Insn 16(l0): point = 8
+   Insn 59(l0): point = 10
+   Insn 12(l0): point = 12
+   Insn 11(l0): point = 14
+   Insn 15(l0): point = 16
+   Insn 58(l0): point = 18
+   Insn 48(l0): point = 20
+   Insn 34(l0): point = 22
+   Insn 32(l0): point = 24
+   Insn 23(l0): point = 26
+   Insn 31(l0): point = 28
+   Insn 8(l0): point = 30
+   Insn 7(l0): point = 32
+   Insn 6(l0): point = 34
+ a0(r118): [1..32]
+ a1(r114): [1..10]
+ a2(r117): [3..34]
+ a3(r126): [3..26]
+ a4(r124): [5..6]
+ a5(r122): [9..16]
+ a6(r113): [11..18]
+ a7(r120): [13..14]
+ a8(r116): [23..24]
+ a9(r115): [25..28]
+Compressing live ranges: from 37 to 10 - 27%
+Ranges after the compression:
+ a0(r118): [0..9]
+ a1(r114): [0..3]
+ a2(r117): [0..9]
+ a3(r126): [0..9]
+ a4(r124): [0..1]
+ a5(r122): [2..5]
+ a6(r113): [4..5]
+ a7(r120): [4..5]
+ a8(r116): [6..7]
+ a9(r115): [8..9]
++++Allocating 80 bytes for conflict table (uncompressed size 80)
+;; a0(r118,l0) conflicts: a4(r124,l0) a1(r114,l0) a2(r117,l0) a3(r126,l0) a5(r122,l0) a6(r113,l0) a7(r120,l0) a8(r116,l0) a9(r115,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a1(r114,l0) conflicts: a4(r124,l0) a0(r118,l0) a2(r117,l0) a3(r126,l0) a5(r122,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a2(r117,l0) conflicts: a4(r124,l0) a1(r114,l0) a0(r118,l0) a3(r126,l0) a5(r122,l0) a6(r113,l0) a7(r120,l0) a8(r116,l0) a9(r115,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a3(r126,l0) conflicts: a4(r124,l0) a1(r114,l0) a0(r118,l0) a2(r117,l0) a5(r122,l0) a6(r113,l0) a7(r120,l0) a8(r116,l0) a9(r115,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a4(r124,l0) conflicts: a1(r114,l0) a0(r118,l0) a2(r117,l0) a3(r126,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a5(r122,l0) conflicts: a1(r114,l0) a0(r118,l0) a2(r117,l0) a3(r126,l0) a6(r113,l0) a7(r120,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a6(r113,l0) conflicts: a0(r118,l0) a2(r117,l0) a3(r126,l0) a5(r122,l0) a7(r120,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a7(r120,l0) conflicts: a0(r118,l0) a2(r117,l0) a3(r126,l0) a5(r122,l0) a6(r113,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a8(r116,l0) conflicts: a0(r118,l0) a2(r117,l0) a3(r126,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a9(r115,l0) conflicts: a0(r118,l0) a2(r117,l0) a3(r126,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+
+  cp0:a8(r116)<->a9(r115)@125:shuffle
+  cp1:a1(r114)<->a6(r113)@125:shuffle
+  regions=1, blocks=3, points=10
+    allocnos=10 (big 0), copies=2, conflicts=0, ranges=10
+
+**** Allocnos coloring:
+
+
+  Loop 0 (parent -1, header bb2, depth 0)
+    bbs: 2
+    all: 0r118 1r114 2r117 3r126 4r124 5r122 6r113 7r120 8r116 9r115
+    modified regnos: 113 114 115 116 117 118 120 122 124 126
+    border:
+    Pressure: GENERAL_REGS=6
+    Hard reg set forest:
+      0:( 0-12 14 16-47)@0
+        1:( 0-12 14)@600000
+      Allocno a0r118 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a1r114 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a2r117 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a3r126 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a4r124 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a5r122 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a6r113 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a7r120 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a8r116 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a9r115 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Forming thread by copy 0:a8r116-a9r115 (freq=125):
+        Result (freq=4000): a8r116(2000) a9r115(2000)
+      Forming thread by copy 1:a1r114-a6r113 (freq=125):
+        Result (freq=4000): a1r114(2000) a6r113(2000)
+      Pushing a7(r120,l0)(cost 0)
+      Pushing a5(r122,l0)(cost 0)
+      Pushing a4(r124,l0)(cost 0)
+      Pushing a3(r126,l0)(cost 0)
+      Pushing a9(r115,l0)(cost 0)
+      Pushing a8(r116,l0)(cost 0)
+      Pushing a6(r113,l0)(cost 0)
+      Pushing a1(r114,l0)(cost 0)
+      Pushing a2(r117,l0)(cost 0)
+      Pushing a0(r118,l0)(cost 0)
+      Popping a0(r118,l0)  -- assign reg 3
+      Popping a2(r117,l0)  -- assign reg 2
+      Popping a1(r114,l0)  -- assign reg 1
+      Popping a6(r113,l0)  -- assign reg 1
+      Popping a8(r116,l0)  -- assign reg 1
+      Popping a9(r115,l0)  -- assign reg 1
+      Popping a3(r126,l0)  -- assign reg 0
+      Popping a4(r124,l0)  -- assign reg 4
+      Popping a5(r122,l0)  -- assign reg 4
+      Popping a7(r120,l0)  -- assign reg 5
+Disposition:
+    6:r113 l0     1    1:r114 l0     1    9:r115 l0     1    8:r116 l0     1
+    2:r117 l0     2    0:r118 l0     3    7:r120 l0     5    5:r122 l0     4
+    4:r124 l0     4    3:r126 l0     0
+New iteration of spill/restore move
++++Costs: overall 0, reg 0, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+LCD_BKLT_init
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r7={1d,2u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r102={1d,2u} r103={1d,1u} r113={1d,1u} r114={1d,1u} r115={1d,1u} r116={1d,1u} r117={1d,5u} r118={1d,6u} r120={1d,1u} r122={1d,1u} r124={1d,1u} r126={1d,2u} 
+;;    total ref usage 62{35d,27u,0e} in 48{48 regular + 0 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../System/lcd_backlight.c":137:3 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 117)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":137:23 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(insn 7 6 8 2 (set (reg:SI 118)
+        (const_int 1073743872 [0x40000800])) "../System/lcd_backlight.c":137:23 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073743872 [0x40000800])
+        (nil)))
+(insn 8 7 9 2 (set (mem/f/c:SI (reg/f:SI 117) [3 LCD_backlight.timer+0 S4 A32])
+        (reg:SI 118)) "../System/lcd_backlight.c":137:23 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 9 8 31 2 (debug_marker) "../System/lcd_backlight.c":138:3 -1
+     (nil))
+(insn 31 9 23 2 (set (reg:SI 115 [ _11 ])
+        (mem/v:SI (reg:SI 118) [4 MEM[(struct TIM_TypeDef *)1073743872B].CR1+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2015:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 23 31 32 2 (set (reg:SI 126)
+        (const_int 100 [0x64])) "../System/lcd_backlight.c":152:36 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 100 [0x64])
+        (nil)))
+(insn 32 23 34 2 (set (reg:SI 116 [ _12 ])
+        (ior:SI (reg:SI 115 [ _11 ])
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2015:3 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 115 [ _11 ])
+        (nil)))
+(insn 34 32 48 2 (set (mem/v:SI (reg:SI 118) [4 MEM[(struct TIM_TypeDef *)1073743872B].CR1+0 S4 A64])
+        (reg:SI 116 [ _12 ])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2015:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 116 [ _12 ])
+        (nil)))
+(insn 48 34 58 2 (set (mem/v:SI (plus:SI (reg:SI 118)
+                (const_int 52 [0x34])) [4 MEM[(struct TIM_TypeDef *)1073743872B].CCR1+0 S4 A32])
+        (reg:SI 126)) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3198:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 58 48 15 2 (set (reg:SI 113 [ _9 ])
+        (mem/v:SI (plus:SI (reg:SI 118)
+                (const_int 32 [0x20])) [4 MEM[(struct TIM_TypeDef *)1073743872B].CCER+0 S4 A64])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2585:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 15 58 11 2 (set (reg/f:SI 122)
+        (symbol_ref:SI ("LL_TIM_OC_SetCompareCH1") [flags 0x3]  <function_decl 0000000006dd9500 LL_TIM_OC_SetCompareCH1>)) "../System/lcd_backlight.c":146:28 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (symbol_ref:SI ("LL_TIM_OC_SetCompareCH1") [flags 0x3]  <function_decl 0000000006dd9500 LL_TIM_OC_SetCompareCH1>)
+        (nil)))
+(insn 11 15 12 2 (set (reg:SI 120)
+        (const_int 1 [0x1])) "../System/lcd_backlight.c":138:31 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1 [0x1])
+        (nil)))
+(insn 12 11 13 2 (set (mem/c:SI (plus:SI (reg/f:SI 117)
+                (const_int 4 [0x4])) [4 LCD_backlight.timer_channel+0 S4 A32])
+        (reg:SI 120)) "../System/lcd_backlight.c":138:31 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 120)
+        (nil)))
+(debug_insn 13 12 59 2 (debug_marker) "../System/lcd_backlight.c":146:3 -1
+     (nil))
+(insn 59 13 16 2 (set (reg:SI 114 [ _10 ])
+        (ior:SI (reg:SI 113 [ _9 ])
+            (const_int 1 [0x1]))) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2585:3 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 113 [ _9 ])
+        (nil)))
+(insn 16 59 17 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 117)
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])
+        (reg/f:SI 122)) "../System/lcd_backlight.c":146:28 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 122)
+        (nil)))
+(debug_insn 17 16 19 2 (debug_marker) "../System/lcd_backlight.c":147:3 -1
+     (nil))
+(insn 19 17 20 2 (set (reg/f:SI 124)
+        (symbol_ref:SI ("LL_TIM_OC_GetCompareCH1") [flags 0x3]  <function_decl 0000000006de3100 LL_TIM_OC_GetCompareCH1>)) "../System/lcd_backlight.c":147:28 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (symbol_ref:SI ("LL_TIM_OC_GetCompareCH1") [flags 0x3]  <function_decl 0000000006de3100 LL_TIM_OC_GetCompareCH1>)
+        (nil)))
+(insn 20 19 21 2 (set (mem/f/c:SI (plus:SI (reg/f:SI 117)
+                (const_int 12 [0xc])) [1 LCD_backlight.GetCompare+0 S4 A32])
+        (reg/f:SI 124)) "../System/lcd_backlight.c":147:28 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 124)
+        (nil)))
+(debug_insn 21 20 25 2 (debug_marker) "../System/lcd_backlight.c":152:3 -1
+     (nil))
+(insn 25 21 26 2 (set (mem/c:QI (plus:SI (reg/f:SI 117)
+                (const_int 16 [0x10])) [0 LCD_backlight.default_brightness+0 S1 A32])
+        (subreg:QI (reg:SI 126) 0)) "../System/lcd_backlight.c":152:36 263 {*arm_movqi_insn}
+     (expr_list:REG_DEAD (reg:SI 126)
+        (expr_list:REG_DEAD (reg/f:SI 117)
+            (nil))))
+(debug_insn 26 25 27 2 (debug_marker) "../System/lcd_backlight.c":163:3 -1
+     (nil))
+(debug_insn 27 26 28 2 (var_location:SI TIMx (const_int 1073743872 [0x40000800])) "../System/lcd_backlight.c":163:3 -1
+     (nil))
+(debug_insn 28 27 29 2 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2013:22 -1
+     (nil))
+(debug_insn 29 28 35 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2015:3 -1
+     (nil))
+(debug_insn 35 29 36 2 (var_location:SI TIMx (clobber (const_int 0 [0]))) "../System/lcd_backlight.c":163:3 -1
+     (nil))
+(debug_insn 36 35 37 2 (debug_marker) "../System/lcd_backlight.c":172:3 -1
+     (nil))
+(debug_insn 37 36 38 2 (debug_marker:BLK) "../System/lcd_backlight.c":250:6 -1
+     (nil))
+(debug_insn 38 37 39 2 (debug_marker) "../System/lcd_backlight.c":253:2 -1
+     (nil))
+(debug_insn 39 38 40 2 (var_location:QI brightness (const_int 100 [0x64])) "../System/lcd_backlight.c":253:2 -1
+     (nil))
+(debug_insn 40 39 41 2 (debug_marker:BLK) "../System/lcd_backlight.c":222:6 -1
+     (nil))
+(debug_insn 41 40 42 2 (debug_marker) "../System/lcd_backlight.c":231:2 -1
+     (nil))
+(debug_insn 42 41 43 2 (var_location:SI TIMx (const_int 1073743872 [0x40000800])) "../System/lcd_backlight.c":231:2 -1
+     (nil))
+(debug_insn 43 42 44 2 (var_location:SI CompareValue (const_int 100 [0x64])) "../System/lcd_backlight.c":231:2 -1
+     (nil))
+(debug_insn 44 43 45 2 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3196:22 -1
+     (nil))
+(debug_insn 45 44 49 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":3198:3 -1
+     (nil))
+(debug_insn 49 45 50 2 (var_location:SI TIMx (clobber (const_int 0 [0]))) "../System/lcd_backlight.c":231:9 -1
+     (nil))
+(debug_insn 50 49 51 2 (var_location:SI CompareValue (clobber (const_int 0 [0]))) "../System/lcd_backlight.c":231:9 -1
+     (nil))
+(debug_insn 51 50 52 2 (var_location:QI brightness (clobber (const_int 0 [0]))) "../System/lcd_backlight.c":253:2 -1
+     (nil))
+(debug_insn 52 51 53 2 (debug_marker) "../System/lcd_backlight.c":184:3 -1
+     (nil))
+(debug_insn 53 52 54 2 (var_location:SI TIMx (const_int 1073743872 [0x40000800])) "../System/lcd_backlight.c":184:3 -1
+     (nil))
+(debug_insn 54 53 55 2 (var_location:SI Channels (const_int 1 [0x1])) "../System/lcd_backlight.c":184:3 -1
+     (nil))
+(debug_insn 55 54 56 2 (debug_marker:BLK) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2583:22 -1
+     (nil))
+(debug_insn 56 55 61 2 (debug_marker) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2585:3 -1
+     (nil))
+(insn 61 56 62 2 (set (mem/v:SI (plus:SI (reg:SI 118)
+                (const_int 32 [0x20])) [4 MEM[(struct TIM_TypeDef *)1073743872B].CCER+0 S4 A64])
+        (reg:SI 114 [ _10 ])) "../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h":2585:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 118)
+        (expr_list:REG_DEAD (reg:SI 114 [ _10 ])
+            (nil))))
+(debug_insn 62 61 63 2 (var_location:SI TIMx (clobber (const_int 0 [0]))) "../System/lcd_backlight.c":184:3 -1
+     (nil))
+(debug_insn 63 62 67 2 (var_location:SI Channels (clobber (const_int 0 [0]))) "../System/lcd_backlight.c":184:3 -1
+     (nil))
+(note 67 63 0 NOTE_INSN_DELETED)
+
+;; Function LCD_BKLT_get_brightness (LCD_BKLT_get_brightness, funcdef_no=863, decl_uid=11012, cgraph_uid=867, symbol_order=873)
+
+Starting decreasing number of live ranges...
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Reg 117 uninteresting
+Reg 120: local to bb 2 def dominates all uses has unique first use
+Reg 123 uninteresting
+Found def insn 9 for 120 to be not moveable
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+init_insns for 117: (insn_list:REG_DEP_TRUE 6 (nil))
+
+Pass 1 for finding pseudo/allocno costs
+
+    r123: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r120: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r117: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+
+  a0(r123,l0) costs: GENERAL_REGS:2000,2000 MEM:30000,30000
+  a1(r120,l0) costs: LO_REGS:0,0 HI_REGS:4000,4000 CALLER_SAVE_REGS:4000,4000 EVEN_REG:4000,4000 GENERAL_REGS:4000,4000 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:20000,20000
+  a2(r117,l0) costs: LO_REGS:0,0 HI_REGS:2000,2000 CALLER_SAVE_REGS:2000,2000 EVEN_REG:2000,2000 GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:45000,45000 MEM:30000,30000
+
+   Insn 20(l0): point = 0
+   Insn 19(l0): point = 2
+   Insn 22(l0): point = 4
+   Insn 11(l0): point = 6
+   Insn 10(l0): point = 8
+   Insn 9(l0): point = 10
+   Insn 6(l0): point = 12
+ a0(r123): [3..4]
+ a1(r120): [7..10]
+ a2(r117): [9..12]
+Compressing live ranges: from 15 to 4 - 26%
+Ranges after the compression:
+ a0(r123): [0..1]
+ a1(r120): [2..3]
+ a2(r117): [2..3]
++++Allocating 16 bytes for conflict table (uncompressed size 24)
+;; a0(r123,l0) conflicts:
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a1(r120,l0) conflicts: a2(r117,l0)
+;;     total conflict hard regs: 0 12 14
+;;     conflict hard regs: 0 12 14
+
+;; a2(r117,l0) conflicts: a1(r120,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+
+  pref0:a0(r123)<-hr0@2125
+  regions=1, blocks=3, points=4
+    allocnos=3 (big 0), copies=0, conflicts=0, ranges=3
+
+**** Allocnos coloring:
+
+
+  Loop 0 (parent -1, header bb2, depth 0)
+    bbs: 2
+    all: 0r123 1r120 2r117
+    modified regnos: 117 120 123
+    border:
+    Pressure: GENERAL_REGS=4
+    Hard reg set forest:
+      0:( 0-12 14 16-47)@0
+        1:( 0-12 14)@124500
+          2:( 1-11)@40000
+      Allocno a0r123 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a1r120 of GENERAL_REGS(14) has 11 avail. regs  1-11, node:  1-11 (confl regs =  0 12-106)
+      Allocno a2r117 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Pushing a1(r120,l0)(cost 0)
+      Pushing a0(r123,l0)(cost 0)
+      Pushing a2(r117,l0)(cost 0)
+      Popping a2(r117,l0)  -- assign reg 3
+      Popping a0(r123,l0)  -- assign reg 0
+      Popping a1(r120,l0)  -- assign reg 2
+Disposition:
+    2:r117 l0     3    1:r120 l0     2    0:r123 l0     0
+New iteration of spill/restore move
++++Costs: overall -2250, reg -2250, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+LCD_BKLT_get_brightness
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 12 [ip] 13 [sp] 14 [lr]
+;;  ref usage 	r0={4d,4u} r1={2d} r2={2d} r3={2d} r7={1d,2u} r12={2d} r13={1d,3u} r14={2d} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r102={1d,2u} r103={1d,1u} r104={1d} r105={1d} r106={1d} r117={1d,2u} r120={1d,1u} r123={1d,1u} 
+;;    total ref usage 127{111d,16u,0e} in 8{7 regular + 1 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 7 2 NOTE_INSN_FUNCTION_BEG)
+(note 7 2 12 2 NOTE_INSN_DELETED)
+(note 12 7 14 2 NOTE_INSN_DELETED)
+(note 14 12 5 2 NOTE_INSN_DELETED)
+(debug_insn 5 14 6 2 (debug_marker) "../System/lcd_backlight.c":207:2 -1
+     (nil))
+(insn 6 5 9 2 (set (reg/f:SI 117)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(insn 9 6 10 2 (set (reg/f:SI 120 [ LCD_backlight.GetCompare ])
+        (mem/f/c:SI (plus:SI (reg/f:SI 117)
+                (const_int 12 [0xc])) [1 LCD_backlight.GetCompare+0 S4 A32])) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 0 r0)
+        (mem/f/c:SI (reg/f:SI 117) [3 LCD_backlight.timer+0 S4 A32])) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 117)
+        (nil)))
+(call_insn 11 10 22 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (reg/f:SI 120 [ LCD_backlight.GetCompare ]) [0 *_1 S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":207:9 991 {*call_value_reg_thumb2}
+     (expr_list:REG_DEAD (reg/f:SI 120 [ LCD_backlight.GetCompare ])
+        (expr_list:REG_CALL_DECL (nil)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(insn 22 11 19 2 (set (reg:SI 123)
+        (reg:SI 0 r0)) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+(insn 19 22 20 2 (set (reg/i:SI 0 r0)
+        (zero_extend:SI (subreg:QI (reg:SI 123) 0))) "../System/lcd_backlight.c":208:1 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_DEAD (reg:SI 123)
+        (nil)))
+(insn 20 19 23 2 (use (reg/i:SI 0 r0)) "../System/lcd_backlight.c":208:1 -1
+     (nil))
+(note 23 20 0 NOTE_INSN_DELETED)
+
+;; Function LCD_BKLT_set_brightness (LCD_BKLT_set_brightness, funcdef_no=864, decl_uid=11010, cgraph_uid=868, symbol_order=874)
+
+Starting decreasing number of live ranges...
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Reg 117: local to bb 2 def dominates all uses has unique first use
+Reg 121: local to bb 2 def dominates all uses has unique first use
+Reg 120: local to bb 2 def dominates all uses has unique first use
+Ignoring reg 117 with equiv init insn
+Found def insn 10 for 120 to be not moveable
+Found def insn 17 for 121 to be not moveable
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+init_insns for 117: (insn_list:REG_DEP_TRUE 7 (nil))
+
+Pass 1 for finding pseudo/allocno costs
+
+    r121: preferred GENERAL_REGS, alternative ALL_REGS, allocno ALL_REGS
+    r120: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r117: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+
+  a0(r120,l0) costs: LO_REGS:4000,4000 HI_REGS:6000,6000 CALLER_SAVE_REGS:4000,4000 EVEN_REG:6000,6000 GENERAL_REGS:6000,6000 VFP_D0_D7_REGS:32000,32000 VFP_LO_REGS:32000,32000 ALL_REGS:32000,32000 MEM:22000,22000
+  a1(r121,l0) costs: GENERAL_REGS:4000,4000 VFP_D0_D7_REGS:60000,60000 VFP_LO_REGS:60000,60000 ALL_REGS:30000,30000 MEM:40000,40000
+  a2(r117,l0) costs: LO_REGS:0,0 HI_REGS:2000,2000 CALLER_SAVE_REGS:2000,2000 EVEN_REG:2000,2000 GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:45000,45000 MEM:30000,30000
+
+   Insn 13(l0): point = 0
+   Insn 11(l0): point = 2
+   Insn 12(l0): point = 4
+   Insn 10(l0): point = 6
+   Insn 17(l0): point = 8
+   Insn 7(l0): point = 10
+ a0(r120): [1..6]
+ a1(r121): [3..8]
+ a2(r117): [5..10]
+Compressing live ranges: from 13 to 2 - 15%
+Ranges after the compression:
+ a0(r120): [0..1]
+ a1(r121): [0..1]
+ a2(r117): [0..1]
++++Allocating 24 bytes for conflict table (uncompressed size 24)
+;; a0(r120,l0) conflicts: a1(r121,l0) a2(r117,l0)
+;;     total conflict hard regs: 0-1 12
+;;     conflict hard regs: 0-1 12
+
+;; a1(r121,l0) conflicts: a0(r120,l0) a2(r117,l0)
+;;     total conflict hard regs: 0
+;;     conflict hard regs: 0
+
+;; a2(r117,l0) conflicts: a0(r120,l0) a1(r121,l0)
+;;     total conflict hard regs: 0
+;;     conflict hard regs: 0
+
+
+  pref0:a1(r121)<-hr0@2000
+  pref1:a1(r121)<-hr1@2000
+  regions=1, blocks=3, points=2
+    allocnos=3 (big 0), copies=0, conflicts=0, ranges=3
+
+**** Allocnos coloring:
+
+
+  Loop 0 (parent -1, header bb2, depth 0)
+    bbs: 2
+    all: 0r120 1r121 2r117
+    modified regnos: 117 120 121
+    border:
+    Pressure: GENERAL_REGS=4
+ Removing pref0:hr0@2000
+    Hard reg set forest:
+      0:( 0-12 14 16-47)@0
+        1:( 1-12 14)@192000
+          2:( 2-11 14)@36000
+      Allocno a0r120 of GENERAL_REGS(14) has 11 avail. regs  2-11 14, node:  2-11 14 (confl regs =  0-1 12-13 15-106)
+      Allocno a1r121 of ALL_REGS(46) has 13 avail. regs  1-12 14, node:  1-12 14 (confl regs =  0 13 15 48-106)
+      Allocno a2r117 of GENERAL_REGS(14) has 13 avail. regs  1-12 14, node:  1-12 14 (confl regs =  0 13 15-106)
+      Pushing a1(r121,l0)(cost 0)
+      Pushing a0(r120,l0)(cost 0)
+      Pushing a2(r117,l0)(cost 0)
+      Popping a2(r117,l0)  -- assign reg 3
+      Popping a0(r120,l0)  -- assign reg 2
+      Popping a1(r121,l0)  -- assign reg 1
+Disposition:
+    2:r117 l0     3    0:r120 l0     2    1:r121 l0     1
+New iteration of spill/restore move
++++Costs: overall -22000, reg -22000, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+LCD_BKLT_set_brightness
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 12 [ip] 13 [sp]
+;;  ref usage 	r0={3d,2u} r1={3d,1u} r2={2d} r3={2d} r7={1d,2u} r12={2d} r13={1d,3u} r14={2d} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r102={1d,2u} r103={1d,1u} r104={1d} r105={1d} r106={1d} r117={1d,2u} r120={1d,1u} r121={1d,1u} 
+;;    total ref usage 126{111d,15u,0e} in 7{6 regular + 1 call} insns.
+(note 1 0 4 NOTE_INSN_DELETED)
+(note 4 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 4 3 2 NOTE_INSN_DELETED)
+(note 3 2 8 2 NOTE_INSN_FUNCTION_BEG)
+(note 8 3 6 2 NOTE_INSN_DELETED)
+(debug_insn 6 8 7 2 (debug_marker) "../System/lcd_backlight.c":231:2 -1
+     (nil))
+(insn 7 6 17 2 (set (reg/f:SI 117)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(insn 17 7 10 2 (set (reg:SI 121)
+        (reg:SI 0 r0 [ brightness ])) "../System/lcd_backlight.c":223:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [ brightness ])
+        (nil)))
+(insn 10 17 12 2 (set (reg/f:SI 120 [ LCD_backlight.SetCompare ])
+        (mem/f/c:SI (plus:SI (reg/f:SI 117)
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 12 10 11 2 (set (reg:SI 0 r0)
+        (mem/f/c:SI (reg/f:SI 117) [3 LCD_backlight.timer+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 117)
+        (nil)))
+(insn 11 12 13 2 (set (reg:SI 1 r1)
+        (reg:SI 121)) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 121)
+        (nil)))
+(call_insn/j 13 11 14 2 (parallel [
+            (call (mem:SI (reg/f:SI 120 [ LCD_backlight.SetCompare ]) [0 *_1 S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../System/lcd_backlight.c":231:9 292 {*sibcall_insn}
+     (expr_list:REG_DEAD (reg/f:SI 120 [ LCD_backlight.SetCompare ])
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_DEAD (reg:SI 0 r0)
+                (expr_list:REG_CALL_DECL (nil)
+                    (nil)))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(barrier 14 13 0)
+
+;; Function LCD_BKLT_on (LCD_BKLT_on, funcdef_no=865, decl_uid=11014, cgraph_uid=869, symbol_order=875)
+
+Starting decreasing number of live ranges...
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Reg 117 uninteresting
+Reg 122: local to bb 2 def dominates all uses has unique first use
+Found def insn 14 for 122 to be not moveable
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+init_insns for 117: (insn_list:REG_DEP_TRUE 9 (nil))
+
+Pass 1 for finding pseudo/allocno costs
+
+    r122: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r117: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+
+  a0(r122,l0) costs: LO_REGS:4000,4000 HI_REGS:6000,6000 CALLER_SAVE_REGS:4000,4000 EVEN_REG:6000,6000 GENERAL_REGS:6000,6000 VFP_D0_D7_REGS:32000,32000 VFP_LO_REGS:32000,32000 ALL_REGS:32000,32000 MEM:22000,22000
+  a1(r117,l0) costs: LO_REGS:0,0 HI_REGS:2000,2000 CALLER_SAVE_REGS:2000,2000 EVEN_REG:2000,2000 GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:60000,60000 VFP_LO_REGS:60000,60000 ALL_REGS:60000,60000 MEM:40000,40000
+
+   Insn 17(l0): point = 0
+   Insn 16(l0): point = 2
+   Insn 15(l0): point = 4
+   Insn 14(l0): point = 6
+   Insn 9(l0): point = 8
+ a0(r122): [1..6]
+ a1(r117): [3..8]
+Compressing live ranges: from 11 to 2 - 18%
+Ranges after the compression:
+ a0(r122): [0..1]
+ a1(r117): [0..1]
++++Allocating 16 bytes for conflict table (uncompressed size 16)
+;; a0(r122,l0) conflicts: a1(r117,l0)
+;;     total conflict hard regs: 0-1 12
+;;     conflict hard regs: 0-1 12
+
+;; a1(r117,l0) conflicts: a0(r122,l0)
+;;     total conflict hard regs: 1
+;;     conflict hard regs: 1
+
+
+  regions=1, blocks=3, points=2
+    allocnos=2 (big 0), copies=0, conflicts=0, ranges=2
+
+**** Allocnos coloring:
+
+
+  Loop 0 (parent -1, header bb2, depth 0)
+    bbs: 2
+    all: 0r122 1r117
+    modified regnos: 117 122
+    border:
+    Pressure: GENERAL_REGS=4
+    Hard reg set forest:
+      0:( 0-12 14 16-47)@0
+        1:( 0 2-12 14)@80000
+          2:( 2-11 14)@36000
+      Allocno a0r122 of GENERAL_REGS(14) has 11 avail. regs  2-11 14, node:  2-11 14 (confl regs =  0-1 12-13 15-106)
+      Allocno a1r117 of GENERAL_REGS(14) has 13 avail. regs  0 2-12 14, node:  0 2-12 14 (confl regs =  1 13 15-106)
+      Pushing a0(r122,l0)(cost 0)
+      Pushing a1(r117,l0)(cost 0)
+      Popping a1(r117,l0)  -- assign reg 3
+      Popping a0(r122,l0)  -- assign reg 2
+Disposition:
+    1:r117 l0     3    0:r122 l0     2
+New iteration of spill/restore move
++++Costs: overall 4000, reg 4000, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+LCD_BKLT_on
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 12 [ip] 13 [sp]
+;;  ref usage 	r0={3d,1u} r1={3d,1u} r2={2d} r3={2d} r7={1d,2u} r12={2d} r13={1d,3u} r14={2d} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r102={1d,2u} r103={1d,1u} r104={1d} r105={1d} r106={1d} r117={1d,3u} r122={1d,1u} 
+;;    total ref usage 124{110d,14u,0e} in 9{8 regular + 1 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 10 2 NOTE_INSN_FUNCTION_BEG)
+(note 10 2 12 2 NOTE_INSN_DELETED)
+(note 12 10 5 2 NOTE_INSN_DELETED)
+(debug_insn 5 12 6 2 (debug_marker) "../System/lcd_backlight.c":253:2 -1
+     (nil))
+(debug_insn 6 5 7 2 (var_location:QI brightness (mem/c:QI (const:SI (plus:SI (symbol_ref:SI ("LCD_backlight") [flags 0x82]  <var_decl 0000000006fb5ab0 LCD_backlight>)
+                (const_int 16 [0x10]))) [0 LCD_backlight.default_brightness+0 S1 A32])) "../System/lcd_backlight.c":253:2 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker:BLK) "../System/lcd_backlight.c":222:6 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "../System/lcd_backlight.c":231:2 -1
+     (nil))
+(insn 9 8 14 2 (set (reg/f:SI 117)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":253:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(insn 14 9 15 2 (set (reg/f:SI 122 [ LCD_backlight.SetCompare ])
+        (mem/f/c:SI (plus:SI (reg/f:SI 117)
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 1 r1)
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 117)
+                    (const_int 16 [0x10])) [0 LCD_backlight.default_brightness+0 S1 A32]))) "../System/lcd_backlight.c":231:9 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 16 15 17 2 (set (reg:SI 0 r0)
+        (mem/f/c:SI (reg/f:SI 117) [3 LCD_backlight.timer+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 117)
+        (nil)))
+(call_insn/j 17 16 18 2 (parallel [
+            (call (mem:SI (reg/f:SI 122 [ LCD_backlight.SetCompare ]) [0 *_3 S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../System/lcd_backlight.c":231:9 292 {*sibcall_insn}
+     (expr_list:REG_DEAD (reg/f:SI 122 [ LCD_backlight.SetCompare ])
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_DEAD (reg:SI 0 r0)
+                (expr_list:REG_CALL_DECL (nil)
+                    (nil)))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(barrier 18 17 0)
+
+;; Function LCD_BKLT_off (LCD_BKLT_off, funcdef_no=866, decl_uid=11016, cgraph_uid=870, symbol_order=876)
+
+Starting decreasing number of live ranges...
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Reg 115: local to bb 2 def dominates all uses has unique first use
+Reg 118: local to bb 2 def dominates all uses has unique first use
+Ignoring reg 115 with equiv init insn
+Found def insn 12 for 118 to be not moveable
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+init_insns for 115: (insn_list:REG_DEP_TRUE 9 (nil))
+
+Pass 1 for finding pseudo/allocno costs
+
+    r118: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r115: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+
+  a0(r118,l0) costs: LO_REGS:4000,4000 HI_REGS:6000,6000 CALLER_SAVE_REGS:4000,4000 EVEN_REG:6000,6000 GENERAL_REGS:6000,6000 VFP_D0_D7_REGS:32000,32000 VFP_LO_REGS:32000,32000 ALL_REGS:32000,32000 MEM:22000,22000
+  a1(r115,l0) costs: LO_REGS:0,0 HI_REGS:2000,2000 CALLER_SAVE_REGS:2000,2000 EVEN_REG:2000,2000 GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:45000,45000 MEM:30000,30000
+
+   Insn 15(l0): point = 0
+   Insn 14(l0): point = 2
+   Insn 12(l0): point = 4
+   Insn 13(l0): point = 6
+   Insn 9(l0): point = 8
+ a0(r118): [1..4]
+ a1(r115): [3..8]
+Compressing live ranges: from 11 to 2 - 18%
+Ranges after the compression:
+ a0(r118): [0..1]
+ a1(r115): [0..1]
++++Allocating 16 bytes for conflict table (uncompressed size 16)
+;; a0(r118,l0) conflicts: a1(r115,l0)
+;;     total conflict hard regs: 0-1 12
+;;     conflict hard regs: 0-1 12
+
+;; a1(r115,l0) conflicts: a0(r118,l0)
+;;     total conflict hard regs: 1
+;;     conflict hard regs: 1
+
+
+  regions=1, blocks=3, points=2
+    allocnos=2 (big 0), copies=0, conflicts=0, ranges=2
+
+**** Allocnos coloring:
+
+
+  Loop 0 (parent -1, header bb2, depth 0)
+    bbs: 2
+    all: 0r118 1r115
+    modified regnos: 115 118
+    border:
+    Pressure: GENERAL_REGS=4
+    Hard reg set forest:
+      0:( 0-12 14 16-47)@0
+        1:( 0 2-12 14)@60000
+          2:( 2-11 14)@36000
+      Allocno a0r118 of GENERAL_REGS(14) has 11 avail. regs  2-11 14, node:  2-11 14 (confl regs =  0-1 12-13 15-106)
+      Allocno a1r115 of GENERAL_REGS(14) has 13 avail. regs  0 2-12 14, node:  0 2-12 14 (confl regs =  1 13 15-106)
+      Pushing a0(r118,l0)(cost 0)
+      Pushing a1(r115,l0)(cost 0)
+      Popping a1(r115,l0)  -- assign reg 3
+      Popping a0(r118,l0)  -- assign reg 2
+Disposition:
+    1:r115 l0     3    0:r118 l0     2
+New iteration of spill/restore move
++++Costs: overall 4000, reg 4000, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+LCD_BKLT_off
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 12 [ip] 13 [sp]
+;;  ref usage 	r0={3d,1u} r1={3d,1u} r2={2d} r3={2d} r7={1d,2u} r12={2d} r13={1d,3u} r14={2d} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={1d} r101={1d} r102={1d,2u} r103={1d,1u} r104={1d} r105={1d} r106={1d} r115={1d,2u} r118={1d,1u} 
+;;    total ref usage 123{110d,13u,0e} in 9{8 regular + 1 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 10 2 NOTE_INSN_FUNCTION_BEG)
+(note 10 2 5 2 NOTE_INSN_DELETED)
+(debug_insn 5 10 6 2 (debug_marker) "../System/lcd_backlight.c":261:2 -1
+     (nil))
+(debug_insn 6 5 7 2 (var_location:QI brightness (const_int 0 [0])) "../System/lcd_backlight.c":261:2 -1
+     (nil))
+(debug_insn 7 6 8 2 (debug_marker:BLK) "../System/lcd_backlight.c":222:6 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "../System/lcd_backlight.c":231:2 -1
+     (nil))
+(insn 9 8 13 2 (set (reg/f:SI 115)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(insn 13 9 12 2 (set (reg:SI 1 r1)
+        (const_int 0 [0])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 12 13 14 2 (set (reg/f:SI 118 [ LCD_backlight.SetCompare ])
+        (mem/f/c:SI (plus:SI (reg/f:SI 115)
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 14 12 15 2 (set (reg:SI 0 r0)
+        (mem/f/c:SI (reg/f:SI 115) [3 LCD_backlight.timer+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 115)
+        (nil)))
+(call_insn/j 15 14 16 2 (parallel [
+            (call (mem:SI (reg/f:SI 118 [ LCD_backlight.SetCompare ]) [0 *_2 S4 A32])
+                (const_int 0 [0]))
+            (return)
+            (use (const_int 0 [0]))
+        ]) "../System/lcd_backlight.c":231:9 292 {*sibcall_insn}
+     (expr_list:REG_DEAD (reg/f:SI 118 [ LCD_backlight.SetCompare ])
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_DEAD (reg:SI 0 r0)
+                (expr_list:REG_CALL_DECL (nil)
+                    (nil)))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(barrier 16 15 0)
+
+;; Function LCD_BKLT_demo (LCD_BKLT_demo, funcdef_no=867, decl_uid=11018, cgraph_uid=871, symbol_order=877) (executed once)
+
+Starting decreasing number of live ranges...
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; 4 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7
+;;
+;; Loop 1
+;;  header 3, latch 7
+;;  depth 1, outer 0
+;;  nodes: 3 7 6 5 4
+;;
+;; Loop 3
+;;  header 6, latch 6
+;;  depth 2, outer 1
+;;  nodes: 6
+;;
+;; Loop 2
+;;  header 4, latch 4
+;;  depth 2, outer 1
+;;  nodes: 4
+;; 2 succs { 3 }
+;; 3 succs { 4 }
+;; 4 succs { 4 5 }
+;; 5 succs { 6 }
+;; 6 succs { 6 7 }
+;; 7 succs { 3 }
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Reg 170: def dominates all uses has unique first use
+Ignoring reg 142, has equiv memory
+Ignoring reg 146, has equiv memory
+Ignoring reg 150, has equiv memory
+Ignoring reg 154, has equiv memory
+Reg 173 uninteresting
+Ignoring reg 160, has equiv memory
+Ignoring reg 164, has equiv memory
+Reg 174 uninteresting
+Reg 170 not local to one basic block
+;; 4 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7
+;;
+;; Loop 1
+;;  header 3, latch 7
+;;  depth 1, outer 0
+;;  nodes: 3 7 6 5 4
+;;
+;; Loop 3
+;;  header 6, latch 6
+;;  depth 2, outer 1
+;;  nodes: 6
+;;
+;; Loop 2
+;;  header 4, latch 4
+;;  depth 2, outer 1
+;;  nodes: 4
+;; 2 succs { 3 }
+;; 3 succs { 4 }
+;; 4 succs { 4 5 }
+;; 5 succs { 6 }
+;; 6 succs { 6 7 }
+;; 7 succs { 3 }
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+init_insns for 142: (insn_list:REG_DEP_TRUE 19 (nil))
+init_insns for 146: (insn_list:REG_DEP_TRUE 36 (nil))
+init_insns for 150: (insn_list:REG_DEP_TRUE 61 (nil))
+init_insns for 154: (insn_list:REG_DEP_TRUE 72 (nil))
+init_insns for 160: (insn_list:REG_DEP_TRUE 112 (nil))
+init_insns for 164: (insn_list:REG_DEP_TRUE 123 (nil))
+init_insns for 167: (insn_list:REG_DEP_TRUE 14 (nil))
+init_insns for 170: (insn_list:REG_DEP_TRUE 81 (nil))
+
+Pass 1 for finding pseudo/allocno costs
+
+    r174: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r173: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r170: preferred LO_REGS, alternative ALL_REGS, allocno ALL_REGS
+    a16 (r170,l2) best GENERAL_REGS, allocno ALL_REGS
+    a10 (r170,l3) best GENERAL_REGS, allocno ALL_REGS
+    a5 (r170,l1) best GENERAL_REGS, allocno ALL_REGS
+    r167: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    a15 (r167,l2) best GENERAL_REGS, allocno GENERAL_REGS
+    a9 (r167,l3) best GENERAL_REGS, allocno GENERAL_REGS
+    a4 (r167,l1) best GENERAL_REGS, allocno GENERAL_REGS
+    r164: preferred LO_REGS, alternative NO_REGS, allocno LO_REGS
+    r160: preferred LO_REGS, alternative NO_REGS, allocno LO_REGS
+    r154: preferred LO_REGS, alternative NO_REGS, allocno LO_REGS
+    r150: preferred LO_REGS, alternative NO_REGS, allocno LO_REGS
+    r146: preferred LO_REGS, alternative NO_REGS, allocno LO_REGS
+    r142: preferred LO_REGS, alternative NO_REGS, allocno LO_REGS
+    r118: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r117: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+
+  a0(r146,l0) costs: LO_REGS:0,0 HI_REGS:2,2 CALLER_SAVE_REGS:2,2 EVEN_REG:2,2 GENERAL_REGS:2,2 VFP_D0_D7_REGS:30,30 VFP_LO_REGS:30,30 ALL_REGS:30,30 MEM:0,0
+  a1(r167,l0) costs: LO_REGS:0,0 HI_REGS:2,2 CALLER_SAVE_REGS:2,2 EVEN_REG:2,2 GENERAL_REGS:2,2 VFP_D0_D7_REGS:120,178320 VFP_LO_REGS:120,178320 ALL_REGS:120,178320 MEM:80,118880
+  a2(r142,l0) costs: LO_REGS:0,0 HI_REGS:2,2 CALLER_SAVE_REGS:2,2 EVEN_REG:2,2 GENERAL_REGS:2,2 VFP_D0_D7_REGS:30,30 VFP_LO_REGS:30,30 ALL_REGS:30,30 MEM:0,0
+  a3(r170,l0) costs: LO_REGS:0,3960 HI_REGS:2,7922 CALLER_SAVE_REGS:2,7922 EVEN_REG:2,7922 GENERAL_REGS:2,3962 VFP_D0_D7_REGS:15,59415 VFP_LO_REGS:15,59415 ALL_REGS:15,29715 MEM:10,39610
+  a4(r167,l1) costs: LO_REGS:0,0 HI_REGS:0,0 CALLER_SAVE_REGS:0,0 EVEN_REG:0,0 GENERAL_REGS:0,0 VFP_D0_D7_REGS:0,178200 VFP_LO_REGS:0,178200 ALL_REGS:0,178200 MEM:0,118800
+  a5(r170,l1) costs: LO_REGS:0,3960 HI_REGS:0,7920 CALLER_SAVE_REGS:0,7920 EVEN_REG:0,7920 GENERAL_REGS:0,3960 VFP_D0_D7_REGS:0,59400 VFP_LO_REGS:0,59400 ALL_REGS:0,29700 MEM:0,39600
+  a6(r117,l1) costs: GENERAL_REGS:0,1980 VFP_D0_D7_REGS:150,74400 VFP_LO_REGS:150,74400 ALL_REGS:150,59550 MEM:100,49600
+  a7(r118,l1) costs: GENERAL_REGS:0,1980 VFP_D0_D7_REGS:150,74400 VFP_LO_REGS:150,74400 ALL_REGS:150,59550 MEM:100,49600
+  a8(r117,l3) costs: GENERAL_REGS:1980,1980 VFP_D0_D7_REGS:74250,74250 VFP_LO_REGS:74250,74250 ALL_REGS:59400,59400 MEM:49500,49500
+  a9(r167,l3) costs: LO_REGS:0,0 HI_REGS:0,0 CALLER_SAVE_REGS:0,0 EVEN_REG:0,0 GENERAL_REGS:0,0 VFP_D0_D7_REGS:89100,89100 VFP_LO_REGS:89100,89100 ALL_REGS:89100,89100 MEM:59400,59400
+  a10(r170,l3) costs: LO_REGS:1980,1980 HI_REGS:3960,3960 CALLER_SAVE_REGS:3960,3960 EVEN_REG:3960,3960 GENERAL_REGS:1980,1980 VFP_D0_D7_REGS:29700,29700 VFP_LO_REGS:29700,29700 ALL_REGS:14850,14850 MEM:19800,19800
+  a11(r174,l3) costs: GENERAL_REGS:1980,1980 MEM:29700,29700
+  a12(r164,l3) costs: LO_REGS:0,0 HI_REGS:3960,3960 CALLER_SAVE_REGS:3960,3960 EVEN_REG:3960,3960 GENERAL_REGS:3960,3960 VFP_D0_D7_REGS:29700,29700 VFP_LO_REGS:29700,29700 ALL_REGS:29700,29700 MEM:0,0
+  a13(r160,l3) costs: LO_REGS:0,0 HI_REGS:1980,1980 CALLER_SAVE_REGS:1980,1980 EVEN_REG:1980,1980 GENERAL_REGS:1980,1980 VFP_D0_D7_REGS:29700,29700 VFP_LO_REGS:29700,29700 ALL_REGS:29700,29700 MEM:0,0
+  a14(r118,l2) costs: GENERAL_REGS:1980,1980 VFP_D0_D7_REGS:74250,74250 VFP_LO_REGS:74250,74250 ALL_REGS:59400,59400 MEM:49500,49500
+  a15(r167,l2) costs: LO_REGS:0,0 HI_REGS:0,0 CALLER_SAVE_REGS:0,0 EVEN_REG:0,0 GENERAL_REGS:0,0 VFP_D0_D7_REGS:89100,89100 VFP_LO_REGS:89100,89100 ALL_REGS:89100,89100 MEM:59400,59400
+  a16(r170,l2) costs: LO_REGS:1980,1980 HI_REGS:3960,3960 CALLER_SAVE_REGS:3960,3960 EVEN_REG:3960,3960 GENERAL_REGS:1980,1980 VFP_D0_D7_REGS:29700,29700 VFP_LO_REGS:29700,29700 ALL_REGS:14850,14850 MEM:19800,19800
+  a17(r173,l2) costs: GENERAL_REGS:1980,1980 MEM:29700,29700
+  a18(r154,l2) costs: LO_REGS:0,0 HI_REGS:3960,3960 CALLER_SAVE_REGS:3960,3960 EVEN_REG:3960,3960 GENERAL_REGS:3960,3960 VFP_D0_D7_REGS:29700,29700 VFP_LO_REGS:29700,29700 ALL_REGS:29700,29700 MEM:0,0
+  a19(r150,l2) costs: LO_REGS:0,0 HI_REGS:1980,1980 CALLER_SAVE_REGS:1980,1980 EVEN_REG:1980,1980 GENERAL_REGS:1980,1980 VFP_D0_D7_REGS:29700,29700 VFP_LO_REGS:29700,29700 ALL_REGS:29700,29700 MEM:0,0
+
+   Insn 43(l0): point = 0
+   Insn 42(l0): point = 2
+   Insn 39(l0): point = 4
+   Insn 36(l0): point = 6
+   Insn 37(l0): point = 8
+   Insn 38(l0): point = 10
+   Insn 26(l0): point = 12
+   Insn 25(l0): point = 14
+   Insn 22(l0): point = 16
+   Insn 19(l0): point = 18
+   Insn 21(l0): point = 20
+   Insn 20(l0): point = 22
+   Insn 81(l0): point = 24
+   Insn 14(l0): point = 26
+   Insn 4(l1): point = 29
+   Insn 96(l1): point = 31
+   Insn 166(l1): point = 33
+   Insn 3(l1): point = 36
+   Insn 172(l1): point = 39
+   Insn 147(l1): point = 41
+   Insn 169(l1): point = 43
+   Insn 143(l3): point = 46
+   Insn 142(l3): point = 48
+   Insn 136(l3): point = 50
+   Insn 163(l3): point = 52
+   Insn 138(l3): point = 54
+   Insn 133(l3): point = 56
+   Insn 162(l3): point = 58
+   Insn 131(l3): point = 60
+   Insn 171(l3): point = 62
+   Insn 125(l3): point = 64
+   Insn 124(l3): point = 66
+   Insn 123(l3): point = 68
+   Insn 115(l3): point = 70
+   Insn 112(l3): point = 72
+   Insn 114(l3): point = 74
+   Insn 113(l3): point = 76
+   Insn 92(l2): point = 79
+   Insn 91(l2): point = 81
+   Insn 85(l2): point = 83
+   Insn 165(l2): point = 85
+   Insn 87(l2): point = 87
+   Insn 82(l2): point = 89
+   Insn 164(l2): point = 91
+   Insn 80(l2): point = 93
+   Insn 170(l2): point = 95
+   Insn 74(l2): point = 97
+   Insn 73(l2): point = 99
+   Insn 72(l2): point = 101
+   Insn 64(l2): point = 103
+   Insn 61(l2): point = 105
+   Insn 63(l2): point = 107
+   Insn 62(l2): point = 109
+ a0(r146): [5..6]
+ a1(r167): [0..26]
+ a2(r142): [17..18]
+ a3(r170): [0..24]
+ a4(r167): [29..45]
+ a5(r170): [29..45]
+ a6(r117): [29..29]
+ a7(r118): [36..36]
+ a8(r117): [46..78]
+ a9(r167): [46..78]
+ a10(r170): [46..78]
+ a11(r174): [61..62]
+ a12(r164): [65..68]
+ a13(r160): [71..72]
+ a14(r118): [79..111]
+ a15(r167): [79..111]
+ a16(r170): [79..111]
+ a17(r173): [94..95]
+ a18(r154): [98..101]
+ a19(r150): [104..105]
+ Rebuilding regno allocno list for 174
+ Rebuilding regno allocno list for 173
+      Moving ranges of a16r170 to a5r170:  [79..111]
+      Moving ranges of a10r170 to a5r170:  [46..78]
+      Moving ranges of a5r170 to a3r170:  [29..111]
+      Moving ranges of a15r167 to a4r167:  [79..111]
+      Moving ranges of a9r167 to a4r167:  [46..78]
+      Moving ranges of a4r167 to a1r167:  [29..111]
+ Rebuilding regno allocno list for 164
+ Rebuilding regno allocno list for 160
+ Rebuilding regno allocno list for 154
+ Rebuilding regno allocno list for 150
+      Moving ranges of a14r118 to a7r118:  [79..111]
+ Rebuilding regno allocno list for 118
+      Moving ranges of a8r117 to a6r117:  [46..78]
+ Rebuilding regno allocno list for 117
+Compressing live ranges: from 112 to 18 - 16%
+Ranges after the compression:
+ a0(r146): [0..1]
+ a1(r167): [0..17]
+ a2(r142): [2..3]
+ a3(r170): [0..17]
+ a6(r117): [6..11] [4..4]
+ a7(r118): [12..17] [5..5]
+ a11(r174): [6..7]
+ a12(r164): [8..9]
+ a13(r160): [10..11]
+ a17(r173): [12..13]
+ a18(r154): [14..15]
+ a19(r150): [16..17]
++++Allocating 96 bytes for conflict table (uncompressed size 160)
+;; a0(r146,l0) conflicts: a1(r167,l0) a3(r170,l0)
+;;     total conflict hard regs: 0-1
+;;     conflict hard regs: 0-1
+
+;; a1(r167,l0) conflicts: a0(r146,l0) a3(r170,l0) a2(r142,l0) a6(r117,l0) a7(r118,l0) a11(r174,l0) a12(r164,l0) a13(r160,l0) a17(r173,l0) a18(r154,l0) a19(r150,l0)
+;;     total conflict hard regs: 0-1 12 14
+;;     conflict hard regs: 0-1 12 14
+
+;; a2(r142,l0) conflicts: a1(r167,l0) a3(r170,l0)
+;;     total conflict hard regs: 0-1
+;;     conflict hard regs: 0-1
+
+;; a3(r170,l0) conflicts: a0(r146,l0) a1(r167,l0) a2(r142,l0) a6(r117,l0) a7(r118,l0) a11(r174,l0) a12(r164,l0) a13(r160,l0) a17(r173,l0) a18(r154,l0) a19(r150,l0)
+;;     total conflict hard regs: 0-1 12 14
+;;     conflict hard regs: 0-1 12 14
+
+;; a6(r117,l0) conflicts: a1(r167,l0) a3(r170,l0) a11(r174,l0) a12(r164,l0) a13(r160,l0)
+;;     total conflict hard regs: 0-1 12 14
+;;     conflict hard regs: 0-1 12 14
+
+;; a7(r118,l0) conflicts: a1(r167,l0) a3(r170,l0) a17(r173,l0) a18(r154,l0) a19(r150,l0)
+;;     total conflict hard regs: 0-1 12 14
+;;     conflict hard regs: 0-1 12 14
+
+;; a11(r174,l0) conflicts: a1(r167,l0) a3(r170,l0) a6(r117,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a12(r164,l0) conflicts: a1(r167,l0) a3(r170,l0) a6(r117,l0)
+;;     total conflict hard regs: 0
+;;     conflict hard regs: 0
+
+;; a13(r160,l0) conflicts: a1(r167,l0) a3(r170,l0) a6(r117,l0)
+;;     total conflict hard regs: 0-1
+;;     conflict hard regs: 0-1
+
+;; a17(r173,l0) conflicts: a1(r167,l0) a3(r170,l0) a7(r118,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a18(r154,l0) conflicts: a1(r167,l0) a3(r170,l0) a7(r118,l0)
+;;     total conflict hard regs: 0
+;;     conflict hard regs: 0
+
+;; a19(r150,l0) conflicts: a1(r167,l0) a3(r170,l0) a7(r118,l0)
+;;     total conflict hard regs: 0-1
+;;     conflict hard regs: 0-1
+
+
+  pref1:a6(r117)<-hr1@990
+  pref2:a11(r174)<-hr0@1980
+  pref5:a3(r170)<-hr0@1980
+  pref7:a7(r118)<-hr1@990
+  pref8:a17(r173)<-hr0@1980
+  pref10:a11(r174)<-hr1@123
+  pref11:a17(r173)<-hr1@123
+  regions=4, blocks=8, points=18
+    allocnos=20 (big 0), copies=0, conflicts=0, ranges=14
+
+**** Allocnos coloring:
+
+
+  Loop 0 (parent -1, header bb2, depth 0)
+    bbs: 7 6 5 4 3 2
+    all: 0r146 1r167 2r142 3r170 6r117 7r118 11r174 12r164 13r160 17r173 18r154 19r150
+    modified regnos: 117 118 142 146 150 154 160 164 167 170 173 174
+    border:
+    Pressure: GENERAL_REGS=8
+ Removing pref5:hr0@1980
+ Removing pref1:hr1@990
+ Removing pref7:hr1@990
+    Hard reg set forest:
+      0:( 0-12 14 16-47)@0
+        1:( 0-12 14)@126720
+          2:( 2-11)@428240
+            3:( 4-11)@71300
+      Allocno a0r146 of LO_REGS(8) has 6 avail. regs  2-7, ^node:  2-11 (confl regs =  0-1 8-106)
+      Allocno a1r167 of GENERAL_REGS(14) has 10 avail. regs  2-11, node:  2-11 (confl regs =  0-1 12-106)
+      Allocno a2r142 of LO_REGS(8) has 6 avail. regs  2-7, ^node:  2-11 (confl regs =  0-1 8-106)
+      Allocno a3r170 of ALL_REGS(46) has 8 avail. regs  4-11, node:  4-11 (confl regs =  0-1 12-15 48-106)
+      Allocno a6r117 of GENERAL_REGS(14) has 10 avail. regs  2-11, node:  2-11 (confl regs =  0-1 12-106)
+      Allocno a7r118 of GENERAL_REGS(14) has 10 avail. regs  2-11, node:  2-11 (confl regs =  0-1 12-106)
+      Allocno a11r174 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a12r164 of LO_REGS(8) has 7 avail. regs  1-7, ^node:  0-12 14 (confl regs =  0 8-106)
+      Allocno a13r160 of LO_REGS(8) has 6 avail. regs  2-7, ^node:  2-11 (confl regs =  0-1 8-106)
+      Allocno a17r173 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a18r154 of LO_REGS(8) has 7 avail. regs  1-7, ^node:  0-12 14 (confl regs =  0 8-106)
+      Allocno a19r150 of LO_REGS(8) has 6 avail. regs  2-7, ^node:  2-11 (confl regs =  0-1 8-106)
+      Pushing a2(r142,l0)(cost 0)
+      Pushing a0(r146,l0)(cost 0)
+        Making a1(r167,l0) colorable
+      Pushing a19(r150,l0)(cost 0)
+      Pushing a18(r154,l0)(cost 0)
+        Making a3(r170,l0) colorable
+      Pushing a17(r173,l0)(cost 0)
+      Pushing a13(r160,l0)(cost 0)
+      Pushing a12(r164,l0)(cost 0)
+      Pushing a11(r174,l0)(cost 0)
+      Pushing a3(r170,l0)(cost 35650)
+      Pushing a7(r118,l0)(cost 0)
+      Pushing a6(r117,l0)(cost 0)
+      Pushing a1(r167,l0)(cost 118880)
+      Popping a1(r167,l0)  -- assign reg 4
+      Popping a6(r117,l0)  -- assign reg 5
+      Popping a7(r118,l0)  -- assign reg 5
+      Popping a3(r170,l0)  -- assign reg 6
+      Popping a11(r174,l0)  -- assign reg 0
+      Popping a12(r164,l0)  -- assign reg 3
+      Popping a13(r160,l0)  -- assign reg 3
+      Popping a17(r173,l0)  -- assign reg 0
+      Popping a18(r154,l0)  -- assign reg 3
+      Popping a19(r150,l0)  -- assign reg 3
+      Popping a0(r146,l0)  -- assign reg 3
+      Popping a2(r142,l0)  -- assign reg 3
+Disposition:
+    6:r117 l0     5    7:r118 l0     5    2:r142 l0     3    0:r146 l0     3
+   19:r150 l0     3   18:r154 l0     3   13:r160 l0     3   12:r164 l0     3
+    1:r167 l0     4    3:r170 l0     6   17:r173 l0     0   11:r174 l0     0
+New iteration of spill/restore move
++++Costs: overall 3960, reg 3960, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+LCD_BKLT_demo
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={29d,16u} r1={21d,6u} r2={15d} r3={15d} r7={1d,7u} r12={28d} r13={1d,21u} r14={15d} r15={14d} r16={15d} r17={15d} r18={15d} r19={15d} r20={15d} r21={15d} r22={15d} r23={15d} r24={15d} r25={15d} r26={15d} r27={15d} r28={15d} r29={15d} r30={15d} r31={15d} r48={14d} r49={14d} r50={14d} r51={14d} r52={14d} r53={14d} r54={14d} r55={14d} r56={14d} r57={14d} r58={14d} r59={14d} r60={14d} r61={14d} r62={14d} r63={14d} r64={14d} r65={14d} r66={14d} r67={14d} r68={14d} r69={14d} r70={14d} r71={14d} r72={14d} r73={14d} r74={14d} r75={14d} r76={14d} r77={14d} r78={14d} r79={14d} r80={14d} r81={14d} r82={14d} r83={14d} r84={14d} r85={14d} r86={14d} r87={14d} r88={14d} r89={14d} r90={14d} r91={14d} r92={14d} r93={14d} r94={14d} r95={14d} r96={14d} r97={14d} r98={14d} r99={14d} r100={16d,2u} r101={14d} r102={1d,7u} r103={1d,6u} r104={14d} r105={14d} r106={14d} r117={2d,6u} r118={2d,6u} r142={1d,1u} r146={1d,1u} r150={1d,1u} r154={1d,1u} r160={1d,1u} r164={1d,1u} r167={1d,13u,6e} r170={1d,2u} r173={1d,2u} r174={1d,2u} 
+;;    total ref usage 1303{1195d,102u,6e} in 116{102 regular + 14 call} insns.
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 5 15 2 NOTE_INSN_FUNCTION_BEG)
+(note 15 2 17 2 NOTE_INSN_DELETED)
+(note 17 15 34 2 NOTE_INSN_DELETED)
+(note 34 17 7 2 NOTE_INSN_DELETED)
+(debug_insn 7 34 8 2 (debug_marker) "../System/lcd_backlight.c":279:2 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "../System/lcd_backlight.c":283:2 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker:BLK) "../System/lcd_backlight.c":250:6 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "../System/lcd_backlight.c":253:2 -1
+     (nil))
+(debug_insn 11 10 12 2 (var_location:QI brightness (mem/c:QI (const:SI (plus:SI (symbol_ref:SI ("LCD_backlight") [flags 0x82]  <var_decl 0000000006fb5ab0 LCD_backlight>)
+                (const_int 16 [0x10]))) [0 LCD_backlight.default_brightness+0 S1 A32])) "../System/lcd_backlight.c":253:2 -1
+     (nil))
+(debug_insn 12 11 13 2 (debug_marker:BLK) "../System/lcd_backlight.c":222:6 -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker) "../System/lcd_backlight.c":231:2 -1
+     (nil))
+(insn 14 13 81 2 (set (reg/f:SI 167)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../System/lcd_backlight.c":253:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(insn 81 14 20 2 (set (reg/f:SI 170)
+        (symbol_ref/v/f:SI ("*.LC0") [flags 0x82]  <var_decl 00000000070bd5a0 *.LC0>)) "../System/lcd_backlight.c":303:4 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (symbol_ref/v/f:SI ("*.LC0") [flags 0x82]  <var_decl 00000000070bd5a0 *.LC0>)
+        (nil)))
+(insn 20 81 21 2 (set (reg:SI 1 r1)
+        (zero_extend:SI (mem/c:QI (plus:SI (reg/f:SI 167)
+                    (const_int 16 [0x10])) [0 LCD_backlight.default_brightness+0 S1 A32]))) "../System/lcd_backlight.c":231:9 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 21 20 19 2 (set (reg:SI 0 r0)
+        (mem/f/c:SI (reg/f:SI 167) [3 LCD_backlight.timer+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 19 21 22 2 (set (reg/f:SI 142 [ LCD_backlight.SetCompare ])
+        (mem/f/c:SI (plus:SI (reg/f:SI 167)
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem/f/c:SI (plus:SI (reg/f:SI 167)
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])
+        (expr_list:REG_EQUAL (mem/f/c:SI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                        (const_int 8 [0x8]))) [5 LCD_backlight.SetCompare+0 S4 A32])
+            (nil))))
+(call_insn 22 19 23 2 (parallel [
+            (call (mem:SI (reg/f:SI 142 [ LCD_backlight.SetCompare ]) [0 *_25 S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":231:9 988 {*call_reg_thumb2}
+     (expr_list:REG_DEAD (reg/f:SI 142 [ LCD_backlight.SetCompare ])
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_DEAD (reg:SI 0 r0)
+                (expr_list:REG_CALL_DECL (nil)
+                    (nil)))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 23 22 24 2 (var_location:QI brightness (clobber (const_int 0 [0]))) "../System/lcd_backlight.c":253:2 -1
+     (nil))
+(debug_insn 24 23 25 2 (debug_marker) "../System/lcd_backlight.c":284:2 -1
+     (nil))
+(insn 25 24 26 2 (set (reg:SI 0 r0)
+        (const_int 2000 [0x7d0])) "../System/lcd_backlight.c":284:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 26 25 27 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>) [0 HAL_Delay S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":284:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 27 26 28 2 (debug_marker) "../System/lcd_backlight.c":286:2 -1
+     (nil))
+(debug_insn 28 27 29 2 (debug_marker:BLK) "../System/lcd_backlight.c":258:6 -1
+     (nil))
+(debug_insn 29 28 30 2 (debug_marker) "../System/lcd_backlight.c":261:2 -1
+     (nil))
+(debug_insn 30 29 31 2 (var_location:QI brightness (const_int 0 [0])) "../System/lcd_backlight.c":261:2 -1
+     (nil))
+(debug_insn 31 30 32 2 (debug_marker:BLK) "../System/lcd_backlight.c":222:6 -1
+     (nil))
+(debug_insn 32 31 38 2 (debug_marker) "../System/lcd_backlight.c":231:2 -1
+     (nil))
+(insn 38 32 37 2 (set (reg:SI 0 r0)
+        (mem/f/c:SI (reg/f:SI 167) [3 LCD_backlight.timer+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 37 38 36 2 (set (reg:SI 1 r1)
+        (const_int 0 [0])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 36 37 39 2 (set (reg/f:SI 146 [ LCD_backlight.SetCompare ])
+        (mem/f/c:SI (plus:SI (reg/f:SI 167)
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem/f/c:SI (plus:SI (reg/f:SI 167)
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])
+        (expr_list:REG_EQUAL (mem/f/c:SI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                        (const_int 8 [0x8]))) [5 LCD_backlight.SetCompare+0 S4 A32])
+            (nil))))
+(call_insn 39 36 40 2 (parallel [
+            (call (mem:SI (reg/f:SI 146 [ LCD_backlight.SetCompare ]) [0 *_22 S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":231:9 988 {*call_reg_thumb2}
+     (expr_list:REG_DEAD (reg/f:SI 146 [ LCD_backlight.SetCompare ])
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_DEAD (reg:SI 0 r0)
+                (expr_list:REG_CALL_DECL (nil)
+                    (nil)))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 40 39 41 2 (var_location:QI brightness (clobber (const_int 0 [0]))) "../System/lcd_backlight.c":261:2 -1
+     (nil))
+(debug_insn 41 40 42 2 (debug_marker) "../System/lcd_backlight.c":287:2 -1
+     (nil))
+(insn 42 41 43 2 (set (reg:SI 0 r0)
+        (const_int 2000 [0x7d0])) "../System/lcd_backlight.c":287:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 43 42 149 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>) [0 HAL_Delay S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":287:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(code_label 149 43 44 3 24 (nil) [1 uses])
+(note 44 149 45 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 45 44 46 3 (debug_marker) "../System/lcd_backlight.c":291:2 -1
+     (nil))
+(debug_insn 46 45 47 3 (debug_marker) "../System/lcd_backlight.c":295:3 -1
+     (nil))
+(debug_insn 47 46 48 3 (debug_marker) "../System/lcd_backlight.c":295:7 -1
+     (nil))
+(debug_insn 48 47 49 3 (var_location:SI val (const_int 0 [0])) -1
+     (nil))
+(debug_insn 49 48 3 3 (debug_marker) "../System/lcd_backlight.c":295:18 -1
+     (nil))
+(insn 3 49 90 3 (set (reg/v:SI 118 [ val ])
+        (const_int 0 [0])) "../System/lcd_backlight.c":295:11 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(code_label 90 3 50 4 22 (nil) [1 uses])
+(note 50 90 59 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(note 59 50 70 4 NOTE_INSN_DELETED)
+(note 70 59 75 4 NOTE_INSN_DELETED)
+(note 75 70 78 4 NOTE_INSN_DELETED)
+(note 78 75 51 4 NOTE_INSN_DELETED)
+(debug_insn 51 78 52 4 (var_location:QI brightness (clobber (const_int 0 [0]))) "../System/lcd_backlight.c":298:4 -1
+     (nil))
+(debug_insn 52 51 53 4 (var_location:QI compare_value (clobber (const_int 0 [0]))) "../System/lcd_backlight.c":302:20 -1
+     (nil))
+(debug_insn 53 52 54 4 (var_location:SI val (reg/v:SI 118 [ val ])) -1
+     (nil))
+(debug_insn 54 53 55 4 (debug_marker) "../System/lcd_backlight.c":298:4 -1
+     (nil))
+(debug_insn 55 54 56 4 (var_location:QI brightness (subreg:QI (reg/v:SI 118 [ val ]) 0)) "../System/lcd_backlight.c":298:4 -1
+     (nil))
+(debug_insn 56 55 57 4 (debug_marker:BLK) "../System/lcd_backlight.c":222:6 -1
+     (nil))
+(debug_insn 57 56 62 4 (debug_marker) "../System/lcd_backlight.c":231:2 -1
+     (nil))
+(insn 62 57 63 4 (set (reg:SI 1 r1)
+        (reg/v:SI 118 [ val ])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 63 62 61 4 (set (reg:SI 0 r0)
+        (mem/f/c:SI (reg/f:SI 167) [3 LCD_backlight.timer+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 61 63 64 4 (set (reg/f:SI 150 [ LCD_backlight.SetCompare ])
+        (mem/f/c:SI (plus:SI (reg/f:SI 167)
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem/f/c:SI (plus:SI (reg/f:SI 167)
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])
+        (expr_list:REG_EQUAL (mem/f/c:SI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                        (const_int 8 [0x8]))) [5 LCD_backlight.SetCompare+0 S4 A32])
+            (nil))))
+(call_insn 64 61 65 4 (parallel [
+            (call (mem:SI (reg/f:SI 150 [ LCD_backlight.SetCompare ]) [0 *_31 S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":231:9 988 {*call_reg_thumb2}
+     (expr_list:REG_DEAD (reg/f:SI 150 [ LCD_backlight.SetCompare ])
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_DEAD (reg:SI 0 r0)
+                (expr_list:REG_CALL_DECL (nil)
+                    (nil)))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 65 64 66 4 (var_location:QI brightness (clobber (const_int 0 [0]))) "../System/lcd_backlight.c":298:4 -1
+     (nil))
+(debug_insn 66 65 67 4 (debug_marker) "../System/lcd_backlight.c":302:4 -1
+     (nil))
+(debug_insn 67 66 68 4 (debug_marker:BLK) "../System/lcd_backlight.c":197:9 -1
+     (nil))
+(debug_insn 68 67 72 4 (debug_marker) "../System/lcd_backlight.c":207:2 -1
+     (nil))
+(insn 72 68 73 4 (set (reg/f:SI 154 [ LCD_backlight.GetCompare ])
+        (mem/f/c:SI (plus:SI (reg/f:SI 167)
+                (const_int 12 [0xc])) [1 LCD_backlight.GetCompare+0 S4 A32])) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem/f/c:SI (plus:SI (reg/f:SI 167)
+                (const_int 12 [0xc])) [1 LCD_backlight.GetCompare+0 S4 A32])
+        (expr_list:REG_EQUAL (mem/f/c:SI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                        (const_int 12 [0xc]))) [1 LCD_backlight.GetCompare+0 S4 A32])
+            (nil))))
+(insn 73 72 74 4 (set (reg:SI 0 r0)
+        (mem/f/c:SI (reg/f:SI 167) [3 LCD_backlight.timer+0 S4 A32])) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 74 73 170 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (reg/f:SI 154 [ LCD_backlight.GetCompare ]) [0 *_28 S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":207:9 991 {*call_value_reg_thumb2}
+     (expr_list:REG_DEAD (reg/f:SI 154 [ LCD_backlight.GetCompare ])
+        (expr_list:REG_CALL_DECL (nil)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(insn 170 74 76 4 (set (reg:SI 173)
+        (reg:SI 0 r0)) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+(debug_insn 76 170 77 4 (var_location:QI compare_value (subreg:QI (reg:SI 173) 0)) "../System/lcd_backlight.c":302:20 -1
+     (nil))
+(debug_insn 77 76 80 4 (debug_marker) "../System/lcd_backlight.c":303:4 -1
+     (nil))
+(insn 80 77 164 4 (set (reg:SI 1 r1)
+        (zero_extend:SI (subreg:QI (reg:SI 173) 0))) "../System/lcd_backlight.c":303:4 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_DEAD (reg:SI 173)
+        (nil)))
+(insn 164 80 82 4 (set (reg:SI 0 r0)
+        (reg/f:SI 170)) "../System/lcd_backlight.c":303:4 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 82 164 83 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000005b49b00 printf>) [0 __builtin_printf S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":303:4 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000005b49b00 printf>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 83 82 87 4 (debug_marker) "../System/lcd_backlight.c":306:4 -1
+     (nil))
+(insn 87 83 165 4 (set (reg/v:SI 118 [ val ])
+        (plus:SI (reg/v:SI 118 [ val ])
+            (const_int 1 [0x1]))) "../System/lcd_backlight.c":295:33 7 {*arm_addsi3}
+     (nil))
+(insn 165 87 85 4 (set (reg:SI 0 r0)
+        (const_int 10 [0xa])) "../System/lcd_backlight.c":306:4 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 85 165 86 4 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>) [0 HAL_Delay S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":306:4 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 86 85 88 4 (debug_marker) "../System/lcd_backlight.c":295:30 -1
+     (nil))
+(debug_insn 88 86 89 4 (var_location:SI val (reg/v:SI 118 [ val ])) -1
+     (nil))
+(debug_insn 89 88 91 4 (debug_marker) "../System/lcd_backlight.c":295:18 -1
+     (nil))
+(insn 91 89 92 4 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 118 [ val ])
+            (const_int 101 [0x65]))) "../System/lcd_backlight.c":295:3 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 92 91 93 4 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 90)
+            (pc))) "../System/lcd_backlight.c":295:3 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 1062895956 (nil)))
+ -> 90)
+(note 93 92 94 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 94 93 166 5 (debug_marker) "../System/lcd_backlight.c":311:3 -1
+     (nil))
+(insn 166 94 96 5 (set (reg:SI 0 r0)
+        (const_int 1000 [0x3e8])) "../System/lcd_backlight.c":311:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 96 166 97 5 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>) [0 HAL_Delay S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":311:3 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 97 96 98 5 (debug_marker) "../System/lcd_backlight.c":315:3 -1
+     (nil))
+(debug_insn 98 97 99 5 (debug_marker) "../System/lcd_backlight.c":315:7 -1
+     (nil))
+(debug_insn 99 98 100 5 (var_location:SI val (const_int 100 [0x64])) -1
+     (nil))
+(debug_insn 100 99 4 5 (debug_marker) "../System/lcd_backlight.c":315:20 -1
+     (nil))
+(insn 4 100 141 5 (set (reg/v:SI 117 [ val ])
+        (const_int 100 [0x64])) "../System/lcd_backlight.c":315:11 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 100 [0x64])
+        (nil)))
+(code_label 141 4 101 6 23 (nil) [1 uses])
+(note 101 141 110 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(note 110 101 121 6 NOTE_INSN_DELETED)
+(note 121 110 126 6 NOTE_INSN_DELETED)
+(note 126 121 129 6 NOTE_INSN_DELETED)
+(note 129 126 102 6 NOTE_INSN_DELETED)
+(debug_insn 102 129 103 6 (var_location:QI brightness (clobber (const_int 0 [0]))) "../System/lcd_backlight.c":318:4 -1
+     (nil))
+(debug_insn 103 102 104 6 (var_location:QI compare_value (clobber (const_int 0 [0]))) "../System/lcd_backlight.c":322:20 -1
+     (nil))
+(debug_insn 104 103 105 6 (var_location:SI val (reg/v:SI 117 [ val ])) -1
+     (nil))
+(debug_insn 105 104 106 6 (debug_marker) "../System/lcd_backlight.c":318:4 -1
+     (nil))
+(debug_insn 106 105 107 6 (var_location:QI brightness (subreg:QI (reg/v:SI 117 [ val ]) 0)) "../System/lcd_backlight.c":318:4 -1
+     (nil))
+(debug_insn 107 106 108 6 (debug_marker:BLK) "../System/lcd_backlight.c":222:6 -1
+     (nil))
+(debug_insn 108 107 113 6 (debug_marker) "../System/lcd_backlight.c":231:2 -1
+     (nil))
+(insn 113 108 114 6 (set (reg:SI 1 r1)
+        (reg/v:SI 117 [ val ])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 114 113 112 6 (set (reg:SI 0 r0)
+        (mem/f/c:SI (reg/f:SI 167) [3 LCD_backlight.timer+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 112 114 115 6 (set (reg/f:SI 160 [ LCD_backlight.SetCompare ])
+        (mem/f/c:SI (plus:SI (reg/f:SI 167)
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])) "../System/lcd_backlight.c":231:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem/f/c:SI (plus:SI (reg/f:SI 167)
+                (const_int 8 [0x8])) [5 LCD_backlight.SetCompare+0 S4 A32])
+        (expr_list:REG_EQUAL (mem/f/c:SI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                        (const_int 8 [0x8]))) [5 LCD_backlight.SetCompare+0 S4 A32])
+            (nil))))
+(call_insn 115 112 116 6 (parallel [
+            (call (mem:SI (reg/f:SI 160 [ LCD_backlight.SetCompare ]) [0 *_37 S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":231:9 988 {*call_reg_thumb2}
+     (expr_list:REG_DEAD (reg/f:SI 160 [ LCD_backlight.SetCompare ])
+        (expr_list:REG_DEAD (reg:SI 1 r1)
+            (expr_list:REG_DEAD (reg:SI 0 r0)
+                (expr_list:REG_CALL_DECL (nil)
+                    (nil)))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 116 115 117 6 (var_location:QI brightness (clobber (const_int 0 [0]))) "../System/lcd_backlight.c":318:4 -1
+     (nil))
+(debug_insn 117 116 118 6 (debug_marker) "../System/lcd_backlight.c":322:4 -1
+     (nil))
+(debug_insn 118 117 119 6 (debug_marker:BLK) "../System/lcd_backlight.c":197:9 -1
+     (nil))
+(debug_insn 119 118 123 6 (debug_marker) "../System/lcd_backlight.c":207:2 -1
+     (nil))
+(insn 123 119 124 6 (set (reg/f:SI 164 [ LCD_backlight.GetCompare ])
+        (mem/f/c:SI (plus:SI (reg/f:SI 167)
+                (const_int 12 [0xc])) [1 LCD_backlight.GetCompare+0 S4 A32])) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem/f/c:SI (plus:SI (reg/f:SI 167)
+                (const_int 12 [0xc])) [1 LCD_backlight.GetCompare+0 S4 A32])
+        (expr_list:REG_EQUAL (mem/f/c:SI (const:SI (plus:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+                        (const_int 12 [0xc]))) [1 LCD_backlight.GetCompare+0 S4 A32])
+            (nil))))
+(insn 124 123 125 6 (set (reg:SI 0 r0)
+        (mem/f/c:SI (reg/f:SI 167) [3 LCD_backlight.timer+0 S4 A32])) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 125 124 171 6 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (reg/f:SI 164 [ LCD_backlight.GetCompare ]) [0 *_34 S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":207:9 991 {*call_value_reg_thumb2}
+     (expr_list:REG_DEAD (reg/f:SI 164 [ LCD_backlight.GetCompare ])
+        (expr_list:REG_CALL_DECL (nil)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(insn 171 125 127 6 (set (reg:SI 174)
+        (reg:SI 0 r0)) "../System/lcd_backlight.c":207:9 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+(debug_insn 127 171 128 6 (var_location:QI compare_value (subreg:QI (reg:SI 174) 0)) "../System/lcd_backlight.c":322:20 -1
+     (nil))
+(debug_insn 128 127 131 6 (debug_marker) "../System/lcd_backlight.c":323:4 -1
+     (nil))
+(insn 131 128 162 6 (set (reg:SI 1 r1)
+        (zero_extend:SI (subreg:QI (reg:SI 174) 0))) "../System/lcd_backlight.c":323:4 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_DEAD (reg:SI 174)
+        (nil)))
+(insn 162 131 133 6 (set (reg:SI 0 r0)
+        (reg/f:SI 170)) "../System/lcd_backlight.c":323:4 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 133 162 134 6 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000005b49b00 printf>) [0 __builtin_printf S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":323:4 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000005b49b00 printf>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 134 133 138 6 (debug_marker) "../System/lcd_backlight.c":326:4 -1
+     (nil))
+(insn 138 134 163 6 (set (reg/v:SI 117 [ val ])
+        (plus:SI (reg/v:SI 117 [ val ])
+            (const_int -1 [0xffffffffffffffff]))) "../System/lcd_backlight.c":315:33 7 {*arm_addsi3}
+     (nil))
+(insn 163 138 136 6 (set (reg:SI 0 r0)
+        (const_int 10 [0xa])) "../System/lcd_backlight.c":326:4 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 136 163 137 6 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>) [0 HAL_Delay S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":326:4 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 137 136 139 6 (debug_marker) "../System/lcd_backlight.c":315:30 -1
+     (nil))
+(debug_insn 139 137 140 6 (var_location:SI val (reg/v:SI 117 [ val ])) -1
+     (nil))
+(debug_insn 140 139 142 6 (debug_marker) "../System/lcd_backlight.c":315:20 -1
+     (nil))
+(insn 142 140 143 6 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 117 [ val ])
+            (const_int -1 [0xffffffffffffffff]))) "../System/lcd_backlight.c":315:3 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 143 142 144 6 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 141)
+            (pc))) "../System/lcd_backlight.c":315:3 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 1062895956 (nil)))
+ -> 141)
+(note 144 143 145 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 145 144 169 7 (debug_marker) "../System/lcd_backlight.c":330:3 -1
+     (nil))
+(insn 169 145 147 7 (set (reg:SI 0 r0)
+        (const_int 1000 [0x3e8])) "../System/lcd_backlight.c":330:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 147 169 148 7 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>) [0 HAL_Delay S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd_backlight.c":330:3 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006c19e00 HAL_Delay>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))
+(debug_insn 148 147 172 7 (debug_marker) "../System/lcd_backlight.c":291:7 -1
+     (nil))
+(jump_insn 172 148 173 7 (set (pc)
+        (label_ref 149)) "../System/lcd_backlight.c":295:3 284 {*arm_jump}
+     (nil)
+ -> 149)
+(barrier 173 172 0)

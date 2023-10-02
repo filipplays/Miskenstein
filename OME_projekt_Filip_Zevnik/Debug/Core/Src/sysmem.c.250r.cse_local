@@ -1,0 +1,328 @@
+
+;; Function _sbrk (_sbrk, funcdef_no=0, decl_uid=5911, cgraph_uid=1, symbol_order=1)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 8 n_edges 9 count 8 (    1)
+
+
+_sbrk
+
+Dataflow summary:
+def_info->table_size = 0, use_info->table_size = 55
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={3d,4u} r1={2d} r2={2d} r3={2d} r7={1d,7u} r12={2d} r13={1d,8u} r14={2d} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={3d,2u} r101={1d} r102={1d,7u} r103={1d,6u} r104={1d} r105={1d} r106={1d} r116={1d,2u} r117={1d,1u} r119={1d,2u} r120={3d,3u} r121={1d,1u} r122={1d,1u} r123={1d,1u} r124={1d} r126={1d,1u} r127={1d,1u} r130={1d,4u} 
+;;    total ref usage 173{122d,51u,0e} in 41{40 regular + 1 call} insns.
+
+( )->[0]->( 2 )
+;; bb 0 artificial_defs: { d-1(0){ }d-1(1){ }d-1(2){ }d-1(3){ }d-1(7){ }d-1(13){ }d-1(14){ }d-1(16){ }d-1(17){ }d-1(18){ }d-1(19){ }d-1(20){ }d-1(21){ }d-1(22){ }d-1(23){ }d-1(24){ }d-1(25){ }d-1(26){ }d-1(27){ }d-1(28){ }d-1(29){ }d-1(30){ }d-1(31){ }d-1(102){ }d-1(103){ }}
+;; bb 0 artificial_uses: { }
+;; lr  in  	
+;; lr  use 	
+;; lr  def 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;; live  in  	
+;; live  gen 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;; live  kill	
+;; lr  out 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  out 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+
+( 0 )->[2]->( 3 4 )
+;; bb 2 artificial_defs: { }
+;; bb 2 artificial_uses: { u0(7){ }u1(13){ }u2(102){ }u3(103){ }}
+;; lr  in  	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  use 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  def 	 100 [cc] 119 120 121 122 123 124 130
+;; live  in  	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  gen 	 100 [cc] 119 120 121 122 123 124 130
+;; live  kill	
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 119 120 121 130
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 119 120 121 124 130
+
+( 2 )->[3]->( 4 )
+;; bb 3 artificial_defs: { }
+;; bb 3 artificial_uses: { u11(7){ }u12(13){ }u13(102){ }u14(103){ }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 119 121 130
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 130
+;; lr  def 	 120 126
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 119 121 124 130
+;; live  gen 	 120 126
+;; live  kill	
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 119 120 121 130
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 119 120 121 130
+
+( 3 2 )->[4]->( 5 6 )
+;; bb 4 artificial_defs: { }
+;; bb 4 artificial_uses: { u19(7){ }u20(13){ }u21(102){ }u22(103){ }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 119 120 121 130
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 119 120 121
+;; lr  def 	 100 [cc] 116
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 119 120 121 130
+;; live  gen 	 100 [cc] 116
+;; live  kill	
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 116 120 130
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 116 120 130
+
+( 4 )->[5]->( 7 )
+;; bb 5 artificial_defs: { }
+;; bb 5 artificial_uses: { u28(7){ }u29(13){ }u30(102){ }u31(103){ }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  def 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0] 117 120 127
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  gen 	 0 [r0] 117 120 127
+;; live  kill	 12 [ip] 14 [lr]
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 120
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 120
+
+( 4 )->[6]->( 7 )
+;; bb 6 artificial_defs: { }
+;; bb 6 artificial_uses: { u36(7){ }u37(13){ }u38(102){ }u39(103){ }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 116 120 130
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 116 130
+;; lr  def 	
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 116 120 130
+;; live  gen 	
+;; live  kill	
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 120
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 120
+
+( 6 5 )->[7]->( 1 )
+;; bb 7 artificial_defs: { }
+;; bb 7 artificial_uses: { u42(7){ }u43(13){ }u44(102){ }u45(103){ }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 120
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 120
+;; lr  def 	 0 [r0]
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 120
+;; live  gen 	 0 [r0]
+;; live  kill	
+;; lr  out 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  out 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+
+( 7 )->[1]->( )
+;; bb 1 artificial_defs: { }
+;; bb 1 artificial_uses: { u48(0){ }u49(7){ }u50(13){ }u51(102){ }}
+;; lr  in  	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;; lr  use 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;; lr  def 	
+;; live  in  	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;; live  gen 	
+;; live  kill	
+;; lr  out 	
+;; live  out 	
+
+Finding needed instructions:
+  Adding insn 23 to worklist
+  Adding insn 28 to worklist
+  Adding insn 35 to worklist
+  Adding insn 41 to worklist
+  Adding insn 38 to worklist
+  Adding insn 51 to worklist
+  Adding insn 59 to worklist
+Finished finding needed instructions:
+processing block 7 lr out =  0 [r0] 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+  Adding insn 58 to worklist
+processing block 5 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp] 120
+  Adding insn 5 to worklist
+  Adding insn 40 to worklist
+  Adding insn 39 to worklist
+processing block 6 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp] 120
+processing block 4 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp] 116 120 130
+  Adding insn 34 to worklist
+  Adding insn 33 to worklist
+processing block 3 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp] 119 120 121 130
+  Adding insn 4 to worklist
+  Adding insn 27 to worklist
+processing block 2 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp] 119 120 121 130
+  Adding insn 22 to worklist
+  Adding insn 21 to worklist
+  Adding insn 20 to worklist
+  Adding insn 16 to worklist
+  Adding insn 15 to worklist
+  Adding insn 14 to worklist
+  Adding insn 2 to worklist
+DCE: Deleting insn 86
+deleting insn with uid = 86.
+df_worklist_dataflow_doublequeue: n_basic_blocks 8 n_edges 9 count 8 (    1)
+df_worklist_dataflow_doublequeue: n_basic_blocks 8 n_edges 9 count 8 (    1)
+;; Following path with 17 sets: 2 
+;; Following path with 4 sets: 3 
+deferring rescan insn with uid = 4.
+;; Following path with 5 sets: 4 
+;; Following path with 5 sets: 6 
+;; Following path with 9 sets: 5 
+;; Following path with 2 sets: 7 
+starting the processing of deferred insns
+rescanning insn with uid = 4.
+ending the processing of deferred insns
+
+
+_sbrk
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={3d,4u} r1={2d} r2={2d} r3={2d} r7={1d,7u} r12={2d} r13={1d,8u} r14={2d} r15={1d} r16={2d} r17={2d} r18={2d} r19={2d} r20={2d} r21={2d} r22={2d} r23={2d} r24={2d} r25={2d} r26={2d} r27={2d} r28={2d} r29={2d} r30={2d} r31={2d} r48={1d} r49={1d} r50={1d} r51={1d} r52={1d} r53={1d} r54={1d} r55={1d} r56={1d} r57={1d} r58={1d} r59={1d} r60={1d} r61={1d} r62={1d} r63={1d} r64={1d} r65={1d} r66={1d} r67={1d} r68={1d} r69={1d} r70={1d} r71={1d} r72={1d} r73={1d} r74={1d} r75={1d} r76={1d} r77={1d} r78={1d} r79={1d} r80={1d} r81={1d} r82={1d} r83={1d} r84={1d} r85={1d} r86={1d} r87={1d} r88={1d} r89={1d} r90={1d} r91={1d} r92={1d} r93={1d} r94={1d} r95={1d} r96={1d} r97={1d} r98={1d} r99={1d} r100={3d,2u} r101={1d} r102={1d,7u} r103={1d,6u} r104={1d} r105={1d} r106={1d} r116={1d,2u} r117={1d,1u} r119={1d,2u} r120={3d,3u} r121={1d,1u} r122={1d,1u} r123={1d,1u} r126={1d,2u} r127={1d,1u} r130={1d,3u} 
+;;    total ref usage 172{121d,51u,0e} in 40{39 regular + 1 call} insns.
+(note 6 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 6 3 2 (set (reg/v:SI 121 [ incr ])
+        (reg:SI 0 r0 [ incr ])) "../Core/Src/sysmem.c":54:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [ incr ])
+        (nil)))
+(note 3 2 8 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 8 3 9 2 (debug_marker) "../Core/Src/sysmem.c":55:3 -1
+     (nil))
+(debug_insn 9 8 10 2 (debug_marker) "../Core/Src/sysmem.c":56:3 -1
+     (nil))
+(debug_insn 10 9 11 2 (debug_marker) "../Core/Src/sysmem.c":57:3 -1
+     (nil))
+(debug_insn 11 10 12 2 (debug_marker) "../Core/Src/sysmem.c":58:3 -1
+     (nil))
+(debug_insn 12 11 13 2 (var_location:SI stack_limit (minus:SI (symbol_ref:SI ("_estack") [flags 0xc0]  <var_decl 0000000002864a20 _estack>)
+        (symbol_ref:SI ("_Min_Stack_Size") [flags 0xc0]  <var_decl 0000000002864ab0 _Min_Stack_Size>))) "../Core/Src/sysmem.c":58:18 -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker) "../Core/Src/sysmem.c":59:3 -1
+     (nil))
+(insn 14 13 15 2 (set (reg/f:SI 122)
+        (symbol_ref:SI ("_estack") [flags 0xc0]  <var_decl 0000000002864a20 _estack>)) "../Core/Src/sysmem.c":58:18 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 15 14 16 2 (set (reg/f:SI 123)
+        (symbol_ref:SI ("_Min_Stack_Size") [flags 0xc0]  <var_decl 0000000002864ab0 _Min_Stack_Size>)) "../Core/Src/sysmem.c":58:18 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 16 15 17 2 (set (reg/v/f:SI 119 [ max_heap ])
+        (minus:SI (reg/f:SI 122)
+            (reg/f:SI 123))) "../Core/Src/sysmem.c":58:18 45 {*arm_subsi3_insn}
+     (expr_list:REG_DEAD (reg/f:SI 123)
+        (expr_list:REG_DEAD (reg/f:SI 122)
+            (expr_list:REG_EQUAL (minus:SI (symbol_ref:SI ("_estack") [flags 0xc0]  <var_decl 0000000002864a20 _estack>)
+                    (symbol_ref:SI ("_Min_Stack_Size") [flags 0xc0]  <var_decl 0000000002864ab0 _Min_Stack_Size>))
+                (nil)))))
+(debug_insn 17 16 18 2 (var_location:SI max_heap (reg/v/f:SI 119 [ max_heap ])) "../Core/Src/sysmem.c":59:18 -1
+     (nil))
+(debug_insn 18 17 19 2 (debug_marker) "../Core/Src/sysmem.c":60:3 -1
+     (nil))
+(debug_insn 19 18 20 2 (debug_marker) "../Core/Src/sysmem.c":63:3 -1
+     (nil))
+(insn 20 19 21 2 (set (reg/f:SI 130)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../Core/Src/sysmem.c":63:12 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 21 20 22 2 (set (reg/f:SI 120 [ <retval> ])
+        (mem/f/c:SI (reg/f:SI 130) [1 __sbrk_heap_end+0 S4 A32])) "../Core/Src/sysmem.c":63:12 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (mem/f/c:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]) [1 __sbrk_heap_end+0 S4 A32])
+        (nil)))
+(insn 22 21 23 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/f:SI 120 [ <retval> ])
+            (const_int 0 [0]))) "../Core/Src/sysmem.c":63:6 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 23 22 24 2 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 29)
+            (pc))) "../Core/Src/sysmem.c":63:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 751619284 (nil)))
+ -> 29)
+(note 24 23 25 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 25 24 27 3 (debug_marker) "../Core/Src/sysmem.c":65:5 -1
+     (nil))
+(insn 27 25 28 3 (set (reg/f:SI 126)
+        (symbol_ref:SI ("_end") [flags 0xc0]  <var_decl 0000000002864990 _end>)) "../Core/Src/sysmem.c":65:21 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 28 27 4 3 (set (mem/f/c:SI (reg/f:SI 130) [1 __sbrk_heap_end+0 S4 A32])
+        (reg/f:SI 126)) "../Core/Src/sysmem.c":65:21 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 126)
+        (nil)))
+(insn 4 28 29 3 (set (reg/f:SI 120 [ <retval> ])
+        (reg/f:SI 126)) "../Core/Src/sysmem.c":65:21 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (symbol_ref:SI ("_end") [flags 0xc0]  <var_decl 0000000002864990 _end>)
+        (nil)))
+(code_label 29 4 30 4 2 (nil) [1 uses])
+(note 30 29 31 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 31 30 32 4 (debug_marker) "../Core/Src/sysmem.c":69:3 -1
+     (nil))
+(debug_insn 32 31 33 4 (var_location:SI D#1 (mem/f/c:SI (symbol_ref:SI ("__sbrk_heap_end") [flags 0x82]  <var_decl 0000000002864900 __sbrk_heap_end>) [1 __sbrk_heap_end+0 S4 A32])) "../Core/Src/sysmem.c":69:23 -1
+     (nil))
+(insn 33 32 34 4 (set (reg/f:SI 116 [ _6 ])
+        (plus:SI (reg/f:SI 120 [ <retval> ])
+            (reg/v:SI 121 [ incr ]))) "../Core/Src/sysmem.c":69:23 7 {*arm_addsi3}
+     (expr_list:REG_DEAD (reg/v:SI 121 [ incr ])
+        (nil)))
+(insn 34 33 35 4 (set (reg:CC 100 cc)
+        (compare:CC (reg/f:SI 116 [ _6 ])
+            (reg/v/f:SI 119 [ max_heap ]))) "../Core/Src/sysmem.c":69:6 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg/v/f:SI 119 [ max_heap ])
+        (nil)))
+(jump_insn 35 34 36 4 (set (pc)
+        (if_then_else (leu (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 45)
+            (pc))) "../Core/Src/sysmem.c":69:6 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 856416484 (nil)))
+ -> 45)
+(note 36 35 37 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 37 36 38 5 (debug_marker) "../Core/Src/sysmem.c":71:5 -1
+     (nil))
+(call_insn 38 37 39 5 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000005e25700 __errno>) [0 __errno S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../Core/Src/sysmem.c":71:5 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("__errno") [flags 0x41]  <function_decl 0000000005e25700 __errno>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (nil)))
+(insn 39 38 40 5 (set (reg/f:SI 117 [ _7 ])
+        (reg:SI 0 r0)) "../Core/Src/sysmem.c":71:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+(insn 40 39 41 5 (set (reg:SI 127)
+        (const_int 12 [0xc])) "../Core/Src/sysmem.c":71:11 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 41 40 42 5 (set (mem:SI (reg/f:SI 117 [ _7 ]) [2 *_7+0 S4 A32])
+        (reg:SI 127)) "../Core/Src/sysmem.c":71:11 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 127)
+        (expr_list:REG_DEAD (reg/f:SI 117 [ _7 ])
+            (nil))))
+(debug_insn 42 41 5 5 (debug_marker) "../Core/Src/sysmem.c":72:5 -1
+     (nil))
+(insn 5 42 45 5 (set (reg/f:SI 120 [ <retval> ])
+        (const_int -1 [0xffffffffffffffff])) "../Core/Src/sysmem.c":72:12 728 {*thumb2_movsi_vfp}
+     (nil))
+      ; pc falls through to BB 7
+(code_label 45 5 46 6 3 (nil) [1 uses])
+(note 46 45 47 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 47 46 48 6 (debug_marker) "../Core/Src/sysmem.c":75:3 -1
+     (nil))
+(debug_insn 48 47 49 6 (var_location:SI prev_heap_end (debug_expr:SI D#1)) "../Core/Src/sysmem.c":75:17 -1
+     (nil))
+(debug_insn 49 48 51 6 (debug_marker) "../Core/Src/sysmem.c":76:3 -1
+     (nil))
+(insn 51 49 52 6 (set (mem/f/c:SI (reg/f:SI 130) [1 __sbrk_heap_end+0 S4 A32])
+        (reg/f:SI 116 [ _6 ])) "../Core/Src/sysmem.c":76:19 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 130)
+        (expr_list:REG_DEAD (reg/f:SI 116 [ _6 ])
+            (nil))))
+(debug_insn 52 51 57 6 (debug_marker) "../Core/Src/sysmem.c":78:3 -1
+     (nil))
+(code_label 57 52 60 7 1 (nil) [0 uses])
+(note 60 57 58 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(insn 58 60 59 7 (set (reg/i:SI 0 r0)
+        (reg/f:SI 120 [ <retval> ])) "../Core/Src/sysmem.c":79:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 120 [ <retval> ])
+        (nil)))
+(insn 59 58 0 7 (use (reg/i:SI 0 r0)) "../Core/Src/sysmem.c":79:1 -1
+     (nil))

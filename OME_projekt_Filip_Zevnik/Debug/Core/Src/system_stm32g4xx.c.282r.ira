@@ -1,0 +1,994 @@
+
+;; Function SystemInit (SystemInit, funcdef_no=329, decl_uid=6654, cgraph_uid=333, symbol_order=335)
+
+Starting decreasing number of live ranges...
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Reg 115 uninteresting
+Reg 113 uninteresting
+Reg 114 uninteresting
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+init_insns for 115: (insn_list:REG_DEP_TRUE 6 (nil))
+
+Pass 1 for finding pseudo/allocno costs
+
+    r115: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r114: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r113: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+
+  a0(r115,l0) costs: LO_REGS:0,0 HI_REGS:2000,2000 CALLER_SAVE_REGS:2000,2000 EVEN_REG:2000,2000 GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:45000,45000 VFP_LO_REGS:45000,45000 ALL_REGS:45000,45000 MEM:30000,30000
+  a1(r114,l0) costs: LO_REGS:0,0 HI_REGS:2000,2000 CALLER_SAVE_REGS:2000,2000 EVEN_REG:2000,2000 GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:20000,20000
+  a2(r113,l0) costs: LO_REGS:0,0 HI_REGS:2000,2000 CALLER_SAVE_REGS:2000,2000 EVEN_REG:2000,2000 GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:20000,20000
+
+   Insn 10(l0): point = 0
+   Insn 8(l0): point = 2
+   Insn 7(l0): point = 4
+   Insn 6(l0): point = 6
+ a0(r115): [1..6]
+ a1(r114): [1..2]
+ a2(r113): [3..4]
+Compressing live ranges: from 9 to 4 - 44%
+Ranges after the compression:
+ a0(r115): [0..3]
+ a1(r114): [0..1]
+ a2(r113): [2..3]
++++Allocating 24 bytes for conflict table (uncompressed size 24)
+;; a0(r115,l0) conflicts: a1(r114,l0) a2(r113,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a1(r114,l0) conflicts: a0(r115,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a2(r113,l0) conflicts: a0(r115,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+
+  cp0:a1(r114)<->a2(r113)@125:shuffle
+  regions=1, blocks=3, points=4
+    allocnos=3 (big 0), copies=1, conflicts=0, ranges=3
+
+**** Allocnos coloring:
+
+
+  Loop 0 (parent -1, header bb2, depth 0)
+    bbs: 2
+    all: 0r115 1r114 2r113
+    modified regnos: 113 114 115
+    border:
+    Pressure: GENERAL_REGS=2
+    Hard reg set forest:
+      0:( 0-12 14 16-47)@0
+        1:( 0-12 14)@140000
+      Allocno a0r115 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a1r114 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a2r113 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Forming thread by copy 0:a1r114-a2r113 (freq=125):
+        Result (freq=4000): a1r114(2000) a2r113(2000)
+      Pushing a0(r115,l0)(cost 0)
+      Pushing a2(r113,l0)(cost 0)
+      Pushing a1(r114,l0)(cost 0)
+      Popping a1(r114,l0)  -- assign reg 3
+      Popping a2(r113,l0)  -- assign reg 3
+      Popping a0(r115,l0)  -- assign reg 2
+Disposition:
+    2:r113 l0     3    1:r114 l0     3    0:r115 l0     2
+New iteration of spill/restore move
++++Costs: overall 0, reg 0, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+SystemInit
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r7={1d,2u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r102={1d,2u} r103={1d,1u} r113={1d,1u} r114={1d,1u} r115={1d,2u} 
+;;    total ref usage 39{28d,11u,0e} in 5{5 regular + 0 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../Core/Src/system_stm32g4xx.c":183:5 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 115)
+        (const_int -536810240 [0xffffffffe000ed00])) "../Core/Src/system_stm32g4xx.c":183:16 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int -536810240 [0xffffffffe000ed00])
+        (nil)))
+(insn 7 6 8 2 (set (reg:SI 113 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 115)
+                (const_int 136 [0x88])) [1 MEM[(struct SCB_Type *)3758157056B].CPACR+0 S4 A64])) "../Core/Src/system_stm32g4xx.c":183:16 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 8 7 10 2 (set (reg:SI 114 [ _2 ])
+        (ior:SI (reg:SI 113 [ _1 ])
+            (const_int 15728640 [0xf00000]))) "../Core/Src/system_stm32g4xx.c":183:16 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 113 [ _1 ])
+        (nil)))
+(insn 10 8 14 2 (set (mem/v:SI (plus:SI (reg/f:SI 115)
+                (const_int 136 [0x88])) [1 MEM[(struct SCB_Type *)3758157056B].CPACR+0 S4 A64])
+        (reg:SI 114 [ _2 ])) "../Core/Src/system_stm32g4xx.c":183:16 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 115)
+        (expr_list:REG_DEAD (reg:SI 114 [ _2 ])
+            (nil))))
+(note 14 10 0 NOTE_INSN_DELETED)
+
+;; Function SystemCoreClockUpdate (SystemCoreClockUpdate, funcdef_no=330, decl_uid=6656, cgraph_uid=334, symbol_order=336)
+
+Starting decreasing number of live ranges...
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9 10 11 12
+;; 2 succs { 3 10 }
+;; 3 succs { 4 6 }
+;; 4 succs { 5 11 }
+;; 5 succs { 12 }
+;; 6 succs { 7 8 }
+;; 7 succs { 9 }
+;; 8 succs { 9 }
+;; 9 succs { 12 }
+;; 10 succs { 12 }
+;; 11 succs { 12 }
+;; 12 succs { 1 }
+Adding REG_EQUIV to insn 93 for source of insn 94
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+Reg 138 uninteresting
+Reg 113 uninteresting
+Reg 114 uninteresting
+Reg 115: local to bb 6 def dominates all uses has unique first use
+Reg 116: local to bb 6 def dominates all uses has unique first use
+Reg 144: local to bb 6 def dominates all uses has unique first use
+Reg 143 uninteresting
+Reg 145 uninteresting
+Reg 147 uninteresting
+Reg 149: local to bb 9 def dominates all uses has unique first use
+Reg 119: local to bb 9 def dominates all uses has unique first use
+Reg 122: local to bb 9 def dominates all uses has unique first use
+Reg 152: local to bb 9 def dominates all uses has unique first use
+Reg 155 uninteresting
+Reg 156: local to bb 9 def dominates all uses has unique first use
+Reg 153: local to bb 9 def dominates all uses has unique first use
+Reg 157 uninteresting
+Reg 158: local to bb 12 def dominates all uses has unique first use
+Reg 160: local to bb 12 def dominates all uses has unique first use
+Reg 126 uninteresting
+Reg 163 uninteresting
+Ignoring reg 164, has equiv memory
+Found def insn 29 for 115 to be not moveable
+Found def insn 33 for 116 to be not moveable
+Found def insn 64 for 119 to be not moveable
+Found def insn 68 for 122 to be not moveable
+Examining insn 39, def for 144
+  all ok
+Ignoring reg 149 with equiv init insn
+Examining insn 72, def for 152
+  all ok
+Examining insn 73, def for 153
+  all ok
+Examining insn 76, def for 156
+  all ok
+Ignoring reg 158 with equiv init insn
+Ignoring reg 160 with equiv init insn
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9 10 11 12
+;; 2 succs { 3 10 }
+;; 3 succs { 4 6 }
+;; 4 succs { 5 11 }
+;; 5 succs { 12 }
+;; 6 succs { 7 8 }
+;; 7 succs { 9 }
+;; 8 succs { 9 }
+;; 9 succs { 12 }
+;; 10 succs { 12 }
+;; 11 succs { 12 }
+;; 12 succs { 1 }
+Building IRA IR
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+init_insns for 138: (insn_list:REG_DEP_TRUE 9 (nil))
+init_insns for 145: (insn_list:REG_DEP_TRUE 44 (nil))
+init_insns for 147: (insn_list:REG_DEP_TRUE 54 (nil))
+init_insns for 149: (insn_list:REG_DEP_TRUE 63 (nil))
+init_insns for 158: (insn_list:REG_DEP_TRUE 84 (nil))
+init_insns for 160: (insn_list:REG_DEP_TRUE 89 (nil))
+init_insns for 164: (insn_list:REG_DEP_TRUE 94 (nil))
+
+Pass 1 for finding pseudo/allocno costs
+
+    r165: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r164: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r163: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r162: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r160: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r158: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r157: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r156: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r155: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r153: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r152: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r149: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r147: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r145: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r144: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r143: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r138: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r137: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r133: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r131: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r126: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r122: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r119: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r116: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r115: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r114: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r113: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+
+  a0(r165,l0) costs: LO_REGS:0,0 HI_REGS:2166,2166 CALLER_SAVE_REGS:2166,2166 EVEN_REG:2166,2166 GENERAL_REGS:2166,2166 VFP_D0_D7_REGS:34995,34995 VFP_LO_REGS:34995,34995 ALL_REGS:34995,34995 MEM:23330,23330
+  a1(r164,l0) costs: LO_REGS:0,0 HI_REGS:2000,2000 CALLER_SAVE_REGS:2000,2000 EVEN_REG:2000,2000 GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:20000,20000
+  a2(r163,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:20000,20000
+  a3(r137,l0) costs: LO_REGS:0,0 HI_REGS:1666,1666 CALLER_SAVE_REGS:1666,1666 EVEN_REG:1666,1666 GENERAL_REGS:1666,1666 VFP_D0_D7_REGS:31245,31245 VFP_LO_REGS:31245,31245 ALL_REGS:31245,31245 MEM:20830,20830
+  a4(r162,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:20000,20000
+  a5(r160,l0) costs: LO_REGS:0,0 HI_REGS:2000,2000 CALLER_SAVE_REGS:2000,2000 EVEN_REG:2000,2000 GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:20000,20000
+  a6(r126,l0) costs: LO_REGS:0,0 HI_REGS:2000,2000 CALLER_SAVE_REGS:2000,2000 EVEN_REG:2000,2000 GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:20000,20000
+  a7(r158,l0) costs: LO_REGS:0,0 HI_REGS:2000,2000 CALLER_SAVE_REGS:2000,2000 EVEN_REG:2000,2000 GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:20000,20000
+  a8(r157,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:7500,7500 VFP_LO_REGS:7500,7500 ALL_REGS:7500,7500 MEM:5000,5000
+  a9(r153,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:7500,7500 VFP_LO_REGS:7500,7500 ALL_REGS:7500,7500 MEM:5000,5000
+  a10(r156,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:7500,7500 VFP_LO_REGS:7500,7500 ALL_REGS:7500,7500 MEM:5000,5000
+  a11(r152,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:7500,7500 VFP_LO_REGS:7500,7500 ALL_REGS:7500,7500 MEM:5000,5000
+  a12(r131,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:7500,7500 VFP_LO_REGS:7500,7500 ALL_REGS:7500,7500 MEM:5000,5000
+  a13(r155,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:7500,7500 VFP_LO_REGS:7500,7500 ALL_REGS:7500,7500 MEM:5000,5000
+  a14(r122,l0) costs: LO_REGS:0,0 HI_REGS:500,500 CALLER_SAVE_REGS:500,500 EVEN_REG:500,500 GENERAL_REGS:500,500 VFP_D0_D7_REGS:7500,7500 VFP_LO_REGS:7500,7500 ALL_REGS:7500,7500 MEM:5000,5000
+  a15(r119,l0) costs: LO_REGS:0,0 HI_REGS:500,500 CALLER_SAVE_REGS:500,500 EVEN_REG:500,500 GENERAL_REGS:500,500 VFP_D0_D7_REGS:7500,7500 VFP_LO_REGS:7500,7500 ALL_REGS:7500,7500 MEM:5000,5000
+  a16(r149,l0) costs: LO_REGS:0,0 HI_REGS:500,500 CALLER_SAVE_REGS:500,500 EVEN_REG:500,500 GENERAL_REGS:500,500 VFP_D0_D7_REGS:11250,11250 VFP_LO_REGS:11250,11250 ALL_REGS:11250,11250 MEM:7500,7500
+  a17(r133,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:7500,7500 VFP_LO_REGS:7500,7500 ALL_REGS:7500,7500 MEM:5000,5000
+  a18(r147,l0) costs: LO_REGS:0,0 HI_REGS:330,330 CALLER_SAVE_REGS:330,330 EVEN_REG:330,330 GENERAL_REGS:330,330 VFP_D0_D7_REGS:4950,4950 VFP_LO_REGS:4950,4950 ALL_REGS:4950,4950 MEM:3300,3300
+  a19(r145,l0) costs: LO_REGS:0,0 HI_REGS:170,170 CALLER_SAVE_REGS:170,170 EVEN_REG:170,170 GENERAL_REGS:170,170 VFP_D0_D7_REGS:2550,2550 VFP_LO_REGS:2550,2550 ALL_REGS:2550,2550 MEM:1700,1700
+  a20(r144,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:7500,7500 VFP_LO_REGS:7500,7500 ALL_REGS:7500,7500 MEM:5000,5000
+  a21(r143,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:7500,7500 VFP_LO_REGS:7500,7500 ALL_REGS:7500,7500 MEM:5000,5000
+  a22(r116,l0) costs: LO_REGS:0,0 HI_REGS:500,500 CALLER_SAVE_REGS:500,500 EVEN_REG:500,500 GENERAL_REGS:500,500 VFP_D0_D7_REGS:7500,7500 VFP_LO_REGS:7500,7500 ALL_REGS:7500,7500 MEM:5000,5000
+  a23(r115,l0) costs: LO_REGS:0,0 HI_REGS:500,500 CALLER_SAVE_REGS:500,500 EVEN_REG:500,500 GENERAL_REGS:500,500 VFP_D0_D7_REGS:7500,7500 VFP_LO_REGS:7500,7500 ALL_REGS:7500,7500 MEM:5000,5000
+  a24(r138,l0) costs: LO_REGS:0,0 HI_REGS:2000,2000 CALLER_SAVE_REGS:2000,2000 EVEN_REG:2000,2000 GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:37500,37500 VFP_LO_REGS:37500,37500 ALL_REGS:37500,37500 MEM:25000,25000
+  a25(r114,l0) costs: GENERAL_REGS:0,0 VFP_D0_D7_REGS:60000,60000 VFP_LO_REGS:60000,60000 ALL_REGS:60000,60000 MEM:40000,40000
+  a26(r113,l0) costs: LO_REGS:0,0 HI_REGS:2000,2000 CALLER_SAVE_REGS:2000,2000 EVEN_REG:2000,2000 GENERAL_REGS:2000,2000 VFP_D0_D7_REGS:30000,30000 VFP_LO_REGS:30000,30000 ALL_REGS:30000,30000 MEM:20000,20000
+
+   Insn 94(l0): point = 0
+   Insn 93(l0): point = 2
+   Insn 92(l0): point = 4
+   Insn 91(l0): point = 6
+   Insn 85(l0): point = 8
+   Insn 89(l0): point = 10
+   Insn 84(l0): point = 12
+   Insn 110(l0): point = 15
+   Insn 4(l0): point = 17
+   Insn 118(l0): point = 20
+   Insn 109(l0): point = 22
+   Insn 3(l0): point = 24
+   Insn 116(l0): point = 27
+   Insn 78(l0): point = 29
+   Insn 77(l0): point = 31
+   Insn 73(l0): point = 33
+   Insn 76(l0): point = 35
+   Insn 75(l0): point = 37
+   Insn 72(l0): point = 39
+   Insn 68(l0): point = 41
+   Insn 64(l0): point = 43
+   Insn 108(l0): point = 45
+   Insn 63(l0): point = 47
+   Insn 55(l0): point = 50
+   Insn 54(l0): point = 52
+   Insn 114(l0): point = 55
+   Insn 45(l0): point = 57
+   Insn 44(l0): point = 59
+   Insn 41(l0): point = 62
+   Insn 40(l0): point = 64
+   Insn 36(l0): point = 66
+   Insn 35(l0): point = 68
+   Insn 39(l0): point = 70
+   Insn 33(l0): point = 72
+   Insn 29(l0): point = 74
+   Insn 112(l0): point = 77
+   Insn 22(l0): point = 79
+   Insn 21(l0): point = 81
+   Insn 19(l0): point = 84
+   Insn 18(l0): point = 86
+   Insn 16(l0): point = 89
+   Insn 15(l0): point = 91
+   Insn 13(l0): point = 94
+   Insn 12(l0): point = 96
+   Insn 11(l0): point = 98
+   Insn 10(l0): point = 100
+   Insn 9(l0): point = 102
+ a0(r165): [77..81] [27..45] [20..22] [1..15]
+ a1(r164): [1..2]
+ a2(r163): [3..4]
+ a3(r137): [77..79] [27..29] [20..24] [3..17]
+ a4(r162): [5..6]
+ a5(r160): [5..10]
+ a6(r126): [7..8]
+ a7(r158): [9..12]
+ a8(r157): [30..31]
+ a9(r153): [30..33]
+ a10(r156): [32..35]
+ a11(r152): [34..39]
+ a12(r131): [55..57] [34..50]
+ a13(r155): [36..37]
+ a14(r122): [38..41]
+ a15(r119): [40..43]
+ a16(r149): [42..47]
+ a17(r133): [58..66] [51..54]
+ a18(r147): [51..52]
+ a19(r145): [58..59]
+ a20(r144): [65..70]
+ a21(r143): [67..68]
+ a22(r116): [69..72]
+ a23(r115): [71..74]
+ a24(r138): [89..102] [73..76]
+ a25(r114): [87..98]
+ a26(r113): [99..100]
+Compressing live ranges: from 105 to 50 - 47%
+Ranges after the compression:
+ a0(r165): [44..45] [0..27]
+ a1(r164): [0..1]
+ a2(r163): [2..3]
+ a3(r137): [44..45] [2..13]
+ a4(r162): [4..5]
+ a5(r160): [4..9]
+ a6(r126): [6..7]
+ a7(r158): [8..9]
+ a8(r157): [14..15]
+ a9(r153): [14..17]
+ a10(r156): [16..19]
+ a11(r152): [18..23]
+ a12(r131): [30..31] [18..27]
+ a13(r155): [20..21]
+ a14(r122): [22..25]
+ a15(r119): [24..27]
+ a16(r149): [26..27]
+ a17(r133): [32..35] [28..29]
+ a18(r147): [28..29]
+ a19(r145): [32..33]
+ a20(r144): [34..39]
+ a21(r143): [36..37]
+ a22(r116): [38..41]
+ a23(r115): [40..43]
+ a24(r138): [46..49] [42..43]
+ a25(r114): [46..47]
+ a26(r113): [48..49]
++++Allocating 216 bytes for conflict table (uncompressed size 216)
+;; a0(r165,l0) conflicts: a1(r164,l0) a2(r163,l0) a3(r137,l0) a4(r162,l0) a5(r160,l0) a6(r126,l0) a7(r158,l0) a8(r157,l0) a9(r153,l0) a10(r156,l0) a11(r152,l0) a12(r131,l0) a13(r155,l0) a14(r122,l0) a15(r119,l0) a16(r149,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a1(r164,l0) conflicts: a0(r165,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a2(r163,l0) conflicts: a0(r165,l0) a3(r137,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a3(r137,l0) conflicts: a0(r165,l0) a2(r163,l0) a4(r162,l0) a5(r160,l0) a6(r126,l0) a7(r158,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a4(r162,l0) conflicts: a0(r165,l0) a3(r137,l0) a5(r160,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a5(r160,l0) conflicts: a0(r165,l0) a3(r137,l0) a4(r162,l0) a6(r126,l0) a7(r158,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a6(r126,l0) conflicts: a0(r165,l0) a3(r137,l0) a5(r160,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a7(r158,l0) conflicts: a0(r165,l0) a3(r137,l0) a5(r160,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a8(r157,l0) conflicts: a0(r165,l0) a9(r153,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a9(r153,l0) conflicts: a0(r165,l0) a8(r157,l0) a10(r156,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a10(r156,l0) conflicts: a0(r165,l0) a9(r153,l0) a11(r152,l0) a12(r131,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a11(r152,l0) conflicts: a0(r165,l0) a10(r156,l0) a12(r131,l0) a13(r155,l0) a14(r122,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a12(r131,l0) conflicts: a0(r165,l0) a10(r156,l0) a11(r152,l0) a13(r155,l0) a14(r122,l0) a15(r119,l0) a16(r149,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a13(r155,l0) conflicts: a0(r165,l0) a11(r152,l0) a12(r131,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a14(r122,l0) conflicts: a0(r165,l0) a11(r152,l0) a12(r131,l0) a15(r119,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a15(r119,l0) conflicts: a0(r165,l0) a12(r131,l0) a14(r122,l0) a16(r149,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a16(r149,l0) conflicts: a0(r165,l0) a12(r131,l0) a15(r119,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a17(r133,l0) conflicts: a18(r147,l0) a19(r145,l0) a20(r144,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a18(r147,l0) conflicts: a17(r133,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a19(r145,l0) conflicts: a17(r133,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a20(r144,l0) conflicts: a17(r133,l0) a21(r143,l0) a22(r116,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a21(r143,l0) conflicts: a20(r144,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a22(r116,l0) conflicts: a20(r144,l0) a23(r115,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a23(r115,l0) conflicts: a22(r116,l0) a24(r138,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a24(r138,l0) conflicts: a23(r115,l0) a25(r114,l0) a26(r113,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a25(r114,l0) conflicts: a24(r138,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+;; a26(r113,l0) conflicts: a24(r138,l0)
+;;     total conflict hard regs:
+;;     conflict hard regs:
+
+
+  cp0:a4(r162)<->a6(r126)@125:shuffle
+  cp1:a1(r164)<->a3(r137)@125:shuffle
+  cp2:a1(r164)<->a2(r163)@125:shuffle
+  cp3:a11(r152)<->a15(r119)@31:shuffle
+  cp4:a13(r155)<->a14(r122)@31:shuffle
+  cp5:a10(r156)<->a13(r155)@31:shuffle
+  cp6:a9(r153)<->a11(r152)@31:shuffle
+  cp7:a9(r153)<->a12(r131)@31:shuffle
+  cp8:a8(r157)<->a10(r156)@31:shuffle
+  cp9:a3(r137)<->a9(r153)@31:shuffle
+  cp10:a3(r137)<->a8(r157)@31:shuffle
+  cp11:a12(r131)<->a18(r147)@20:shuffle
+  cp12:a12(r131)<->a17(r133)@30:shuffle
+  cp13:a12(r131)<->a19(r145)@10:shuffle
+  cp14:a20(r144)<->a23(r115)@31:shuffle
+  cp15:a21(r143)<->a22(r116)@31:shuffle
+  cp16:a17(r133)<->a21(r143)@31:shuffle
+  cp17:a25(r114)<->a26(r113)@125:shuffle
+  regions=1, blocks=13, points=50
+    allocnos=27 (big 0), copies=18, conflicts=0, ranges=32
+
+**** Allocnos coloring:
+
+
+  Loop 0 (parent -1, header bb2, depth 0)
+    bbs: 12 11 10 9 8 7 6 5 4 3 2
+    all: 0r165 1r164 2r163 3r137 4r162 5r160 6r126 7r158 8r157 9r153 10r156 11r152 12r131 13r155 14r122 15r119 16r149 17r133 18r147 19r145 20r144 21r143 22r116 23r115 24r138 25r114 26r113
+    modified regnos: 113 114 115 116 119 122 126 131 133 137 138 143 144 145 147 149 152 153 155 156 157 158 160 162 163 164 165
+    border:
+    Pressure: GENERAL_REGS=4
+    Hard reg set forest:
+      0:( 0-12 14 16-47)@0
+        1:( 0-12 14)@653320
+      Allocno a0r165 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a1r164 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a2r163 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a3r137 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a4r162 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a5r160 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a6r126 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a7r158 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a8r157 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a9r153 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a10r156 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a11r152 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a12r131 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a13r155 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a14r122 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a15r119 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a16r149 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a17r133 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a18r147 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a19r145 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a20r144 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a21r143 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a22r116 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a23r115 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a24r138 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a25r114 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Allocno a26r113 of GENERAL_REGS(14) has 14 avail. regs  0-12 14, node:  0-12 14 (confl regs =  13 15-106)
+      Forming thread by copy 0:a4r162-a6r126 (freq=125):
+        Result (freq=4000): a4r162(2000) a6r126(2000)
+      Forming thread by copy 1:a1r164-a3r137 (freq=125):
+        Result (freq=4083): a1r164(2000) a3r137(2083)
+      Forming thread by copy 17:a25r114-a26r113 (freq=125):
+        Result (freq=6000): a25r114(4000) a26r113(2000)
+      Forming thread by copy 3:a11r152-a15r119 (freq=31):
+        Result (freq=1000): a11r152(500) a15r119(500)
+      Forming thread by copy 4:a13r155-a14r122 (freq=31):
+        Result (freq=1000): a13r155(500) a14r122(500)
+      Forming thread by copy 5:a10r156-a13r155 (freq=31):
+        Result (freq=1500): a10r156(500) a13r155(500) a14r122(500)
+      Forming thread by copy 6:a9r153-a11r152 (freq=31):
+        Result (freq=1500): a9r153(500) a11r152(500) a15r119(500)
+      Forming thread by copy 8:a8r157-a10r156 (freq=31):
+        Result (freq=2000): a8r157(500) a10r156(500) a13r155(500) a14r122(500)
+      Forming thread by copy 9:a3r137-a9r153 (freq=31):
+        Result (freq=5583): a1r164(2000) a9r153(500) a11r152(500) a15r119(500) a3r137(2083)
+      Forming thread by copy 14:a20r144-a23r115 (freq=31):
+        Result (freq=1000): a20r144(500) a23r115(500)
+      Forming thread by copy 15:a21r143-a22r116 (freq=31):
+        Result (freq=1000): a21r143(500) a22r116(500)
+      Forming thread by copy 16:a17r133-a21r143 (freq=31):
+        Result (freq=1500): a17r133(500) a21r143(500) a22r116(500)
+      Forming thread by copy 12:a12r131-a17r133 (freq=30):
+        Result (freq=2000): a12r131(500) a17r133(500) a21r143(500) a22r116(500)
+      Pushing a19(r145,l0)(cost 0)
+      Pushing a18(r147,l0)(cost 0)
+      Pushing a16(r149,l0)(cost 0)
+      Pushing a23(r115,l0)(cost 0)
+      Pushing a20(r144,l0)(cost 0)
+      Pushing a22(r116,l0)(cost 0)
+      Pushing a21(r143,l0)(cost 0)
+      Pushing a17(r133,l0)(cost 0)
+      Pushing a12(r131,l0)(cost 0)
+      Pushing a14(r122,l0)(cost 0)
+        Making a0(r165,l0) colorable
+      Pushing a13(r155,l0)(cost 0)
+      Pushing a10(r156,l0)(cost 0)
+      Pushing a8(r157,l0)(cost 0)
+      Pushing a7(r158,l0)(cost 0)
+      Pushing a5(r160,l0)(cost 0)
+      Pushing a2(r163,l0)(cost 0)
+      Pushing a0(r165,l0)(cost 23330)
+      Pushing a24(r138,l0)(cost 0)
+      Pushing a6(r126,l0)(cost 0)
+      Pushing a4(r162,l0)(cost 0)
+      Pushing a15(r119,l0)(cost 0)
+      Pushing a11(r152,l0)(cost 0)
+      Pushing a9(r153,l0)(cost 0)
+      Pushing a1(r164,l0)(cost 0)
+      Pushing a3(r137,l0)(cost 0)
+      Pushing a26(r113,l0)(cost 0)
+      Pushing a25(r114,l0)(cost 0)
+      Popping a25(r114,l0)  -- assign reg 3
+      Popping a26(r113,l0)  -- assign reg 3
+      Popping a3(r137,l0)  -- assign reg 3
+      Popping a1(r164,l0)  -- assign reg 3
+      Popping a9(r153,l0)  -- assign reg 3
+      Popping a11(r152,l0)  -- assign reg 3
+      Popping a15(r119,l0)  -- assign reg 3
+      Popping a4(r162,l0)  -- assign reg 2
+      Popping a6(r126,l0)  -- assign reg 2
+      Popping a24(r138,l0)  -- assign reg 2
+      Popping a0(r165,l0)  -- assign reg 1
+      Popping a2(r163,l0)  -- assign reg 2
+      Popping a5(r160,l0)  -- assign reg 0
+      Popping a7(r158,l0)  -- assign reg 2
+      Popping a8(r157,l0)  -- assign reg 2
+      Popping a10(r156,l0)  -- assign reg 2
+      Popping a13(r155,l0)  -- assign reg 2
+      Popping a14(r122,l0)  -- assign reg 2
+      Popping a12(r131,l0)  -- assign reg 0
+      Popping a17(r133,l0)  -- assign reg 3
+      Popping a21(r143,l0)  -- assign reg 3
+      Popping a22(r116,l0)  -- assign reg 3
+      Popping a20(r144,l0)  -- assign reg 2
+      Popping a23(r115,l0)  -- assign reg 1
+      Popping a16(r149,l0)  -- assign reg 2
+      Popping a18(r147,l0)  -- assign reg 0
+      Popping a19(r145,l0)  -- assign reg 0
+Disposition:
+   26:r113 l0     3   25:r114 l0     3   23:r115 l0     1   22:r116 l0     3
+   15:r119 l0     3   14:r122 l0     2    6:r126 l0     2   12:r131 l0     0
+   17:r133 l0     3    3:r137 l0     3   24:r138 l0     2   21:r143 l0     3
+   20:r144 l0     2   19:r145 l0     0   18:r147 l0     0   16:r149 l0     2
+   11:r152 l0     3    9:r153 l0     3   13:r155 l0     2   10:r156 l0     2
+    8:r157 l0     2    7:r158 l0     2    5:r160 l0     0    4:r162 l0     2
+    2:r163 l0     2    1:r164 l0     3    0:r165 l0     1
+New iteration of spill/restore move
++++Costs: overall 0, reg 0, mem 0, ld 0, st 0, move 0
++++       move loops 0, new jumps 0
+
+
+SystemCoreClockUpdate
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 100 [cc]
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r7={1d,12u} r13={1d,12u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={4d,4u} r102={1d,12u} r103={1d,11u} r113={1d,1u} r114={1d,3u} r115={1d,2u} r116={1d,1u} r119={1d,2u} r122={1d,2u} r126={1d,2u} r131={2d,5u} r133={1d,3u,2e} r137={4d,1u} r138={1d,3u} r143={1d,1u} r144={1d,1u} r145={1d,1u} r147={1d,1u} r149={1d,2u} r152={1d,1u} r153={1d,1u} r155={1d,1u} r156={1d,1u} r157={1d,1u} r158={1d,1u} r160={1d,1u} r162={1d,1u,1e} r163={1d,1u} r164={1d,1u} r165={4d,2u,1e} 
+;;    total ref usage 161{63d,94u,4e} in 69{69 regular + 0 call} insns.
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 5 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 2 8 2 (debug_marker) "../Core/Src/system_stm32g4xx.c":230:3 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "../Core/Src/system_stm32g4xx.c":233:3 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/f:SI 138)
+        (const_int 1073876992 [0x40021000])) "../Core/Src/system_stm32g4xx.c":233:14 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073876992 [0x40021000])
+        (nil)))
+(insn 10 9 11 2 (set (reg:SI 113 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 138)
+                (const_int 8 [0x8])) [1 MEM[(struct RCC_TypeDef *)1073876992B].CFGR+0 S4 A64])) "../Core/Src/system_stm32g4xx.c":233:14 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 114 [ _2 ])
+        (and:SI (reg:SI 113 [ _1 ])
+            (const_int 12 [0xc]))) "../Core/Src/system_stm32g4xx.c":233:21 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 113 [ _1 ])
+        (nil)))
+(insn 12 11 13 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 114 [ _2 ])
+            (const_int 8 [0x8]))) "../Core/Src/system_stm32g4xx.c":233:3 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 13 12 14 2 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 101)
+            (pc))) "../Core/Src/system_stm32g4xx.c":233:3 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 268435462 (nil)))
+ -> 101)
+(note 14 13 15 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 15 14 16 3 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 114 [ _2 ])
+            (const_int 12 [0xc]))) "../Core/Src/system_stm32g4xx.c":233:3 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 16 15 17 3 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 25)
+            (pc))) "../Core/Src/system_stm32g4xx.c":233:3 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 357913950 (nil)))
+ -> 25)
+(note 17 16 18 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 4 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 114 [ _2 ])
+            (const_int 4 [0x4]))) "../Core/Src/system_stm32g4xx.c":233:3 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 114 [ _2 ])
+        (nil)))
+(jump_insn 19 18 20 4 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 105)
+            (pc))) "../Core/Src/system_stm32g4xx.c":233:3 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 357913950 (nil)))
+ -> 105)
+(note 20 19 21 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 21 20 22 5 (set (reg/f:SI 165)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../Core/Src/system_stm32g4xx.c":269:19 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(insn 22 21 112 5 (set (reg:SI 137 [ pretmp_36 ])
+        (mem/c:SI (reg/f:SI 165) [1 SystemCoreClock+0 S4 A32])) "../Core/Src/system_stm32g4xx.c":269:19 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (mem/c:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]) [1 SystemCoreClock+0 S4 A32])
+        (nil)))
+(jump_insn 112 22 113 5 (set (pc)
+        (label_ref 81)) 284 {*arm_jump}
+     (nil)
+ -> 81)
+(barrier 113 112 25)
+(code_label 25 113 26 6 7 (nil) [1 uses])
+(note 26 25 34 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(note 34 26 27 6 NOTE_INSN_DELETED)
+(debug_insn 27 34 29 6 (debug_marker) "../Core/Src/system_stm32g4xx.c":247:7 -1
+     (nil))
+(insn 29 27 30 6 (set (reg:SI 115 [ _3 ])
+        (mem/v:SI (plus:SI (reg/f:SI 138)
+                (const_int 12 [0xc])) [1 MEM[(struct RCC_TypeDef *)1073876992B].PLLCFGR+0 S4 A32])) "../Core/Src/system_stm32g4xx.c":247:23 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 30 29 31 6 (var_location:SI pllsource (and:SI (reg:SI 115 [ _3 ])
+        (const_int 3 [0x3]))) "../Core/Src/system_stm32g4xx.c":247:17 -1
+     (nil))
+(debug_insn 31 30 33 6 (debug_marker) "../Core/Src/system_stm32g4xx.c":248:7 -1
+     (nil))
+(insn 33 31 39 6 (set (reg:SI 116 [ _4 ])
+        (mem/v:SI (plus:SI (reg/f:SI 138)
+                (const_int 12 [0xc])) [1 MEM[(struct RCC_TypeDef *)1073876992B].PLLCFGR+0 S4 A32])) "../Core/Src/system_stm32g4xx.c":248:19 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 138)
+        (nil)))
+(insn 39 33 35 6 (set (reg:SI 144 [ pllsource ])
+        (and:SI (reg:SI 115 [ _3 ])
+            (const_int 3 [0x3]))) "../Core/Src/system_stm32g4xx.c":247:17 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 115 [ _3 ])
+        (nil)))
+(insn 35 39 36 6 (set (reg:SI 143)
+        (zero_extract:SI (reg:SI 116 [ _4 ])
+            (const_int 4 [0x4])
+            (const_int 4 [0x4]))) "../Core/Src/system_stm32g4xx.c":248:49 161 {extzv_t2}
+     (expr_list:REG_DEAD (reg:SI 116 [ _4 ])
+        (nil)))
+(insn 36 35 37 6 (set (reg/v:SI 133 [ pllm ])
+        (plus:SI (reg:SI 143)
+            (const_int 1 [0x1]))) "../Core/Src/system_stm32g4xx.c":248:12 7 {*arm_addsi3}
+     (expr_list:REG_DEAD (reg:SI 143)
+        (nil)))
+(debug_insn 37 36 38 6 (var_location:SI pllm (reg/v:SI 133 [ pllm ])) "../Core/Src/system_stm32g4xx.c":248:12 -1
+     (nil))
+(debug_insn 38 37 40 6 (debug_marker) "../Core/Src/system_stm32g4xx.c":249:7 -1
+     (nil))
+(insn 40 38 41 6 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 144 [ pllsource ])
+            (const_int 2 [0x2]))) "../Core/Src/system_stm32g4xx.c":249:10 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 144 [ pllsource ])
+        (nil)))
+(jump_insn 41 40 42 6 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 51)
+            (pc))) "../Core/Src/system_stm32g4xx.c":249:10 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 708669604 (nil)))
+ -> 51)
+(note 42 41 43 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 43 42 44 7 (debug_marker) "../Core/Src/system_stm32g4xx.c":251:9 -1
+     (nil))
+(insn 44 43 45 7 (set (reg:SI 145)
+        (const_int 16000000 [0xf42400])) "../Core/Src/system_stm32g4xx.c":251:16 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 16000000 [0xf42400])
+        (nil)))
+(insn 45 44 48 7 (set (reg/v:SI 131 [ pllvco ])
+        (udiv:SI (reg:SI 145)
+            (reg/v:SI 133 [ pllm ]))) "../Core/Src/system_stm32g4xx.c":251:16 163 {udivsi3}
+     (expr_list:REG_DEAD (reg:SI 145)
+        (expr_list:REG_DEAD (reg/v:SI 133 [ pllm ])
+            (expr_list:REG_EQUAL (udiv:SI (const_int 16000000 [0xf42400])
+                    (reg/v:SI 133 [ pllm ]))
+                (nil)))))
+(debug_insn 48 45 114 7 (var_location:SI pllvco (reg/v:SI 131 [ pllvco ])) "../Core/Src/system_stm32g4xx.c":251:16 -1
+     (nil))
+(jump_insn 114 48 115 7 (set (pc)
+        (label_ref 59)) 284 {*arm_jump}
+     (nil)
+ -> 59)
+(barrier 115 114 51)
+(code_label 51 115 52 8 8 (nil) [1 uses])
+(note 52 51 53 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 53 52 54 8 (debug_marker) "../Core/Src/system_stm32g4xx.c":255:9 -1
+     (nil))
+(insn 54 53 55 8 (set (reg:SI 147)
+        (const_int 8000000 [0x7a1200])) "../Core/Src/system_stm32g4xx.c":255:16 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 8000000 [0x7a1200])
+        (nil)))
+(insn 55 54 58 8 (set (reg/v:SI 131 [ pllvco ])
+        (udiv:SI (reg:SI 147)
+            (reg/v:SI 133 [ pllm ]))) "../Core/Src/system_stm32g4xx.c":255:16 163 {udivsi3}
+     (expr_list:REG_DEAD (reg:SI 147)
+        (expr_list:REG_DEAD (reg/v:SI 133 [ pllm ])
+            (expr_list:REG_EQUAL (udiv:SI (const_int 8000000 [0x7a1200])
+                    (reg/v:SI 133 [ pllm ]))
+                (nil)))))
+(debug_insn 58 55 59 8 (var_location:SI pllvco (reg/v:SI 131 [ pllvco ])) "../Core/Src/system_stm32g4xx.c":255:16 -1
+     (nil))
+(code_label 59 58 60 9 9 (nil) [1 uses])
+(note 60 59 71 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(note 71 60 74 9 NOTE_INSN_DELETED)
+(note 74 71 61 9 NOTE_INSN_DELETED)
+(debug_insn 61 74 62 9 (var_location:SI pllvco (reg/v:SI 131 [ pllvco ])) -1
+     (nil))
+(debug_insn 62 61 63 9 (debug_marker) "../Core/Src/system_stm32g4xx.c":257:7 -1
+     (nil))
+(insn 63 62 108 9 (set (reg/f:SI 149)
+        (const_int 1073876992 [0x40021000])) "../Core/Src/system_stm32g4xx.c":257:30 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073876992 [0x40021000])
+        (nil)))
+(insn 108 63 64 9 (set (reg/f:SI 165)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(insn 64 108 65 9 (set (reg:SI 119 [ _7 ])
+        (mem/v:SI (plus:SI (reg/f:SI 149)
+                (const_int 12 [0xc])) [1 MEM[(struct RCC_TypeDef *)1073876992B].PLLCFGR+0 S4 A32])) "../Core/Src/system_stm32g4xx.c":257:30 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 65 64 66 9 (var_location:SI pllvco (mult:SI (and:SI (lshiftrt:SI (reg:SI 119 [ _7 ])
+                (const_int 8 [0x8]))
+            (const_int 127 [0x7f]))
+        (reg/v:SI 131 [ pllvco ]))) "../Core/Src/system_stm32g4xx.c":257:14 -1
+     (nil))
+(debug_insn 66 65 68 9 (debug_marker) "../Core/Src/system_stm32g4xx.c":258:7 -1
+     (nil))
+(insn 68 66 69 9 (set (reg:SI 122 [ _10 ])
+        (mem/v:SI (plus:SI (reg/f:SI 149)
+                (const_int 12 [0xc])) [1 MEM[(struct RCC_TypeDef *)1073876992B].PLLCFGR+0 S4 A32])) "../Core/Src/system_stm32g4xx.c":258:20 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 149)
+        (nil)))
+(debug_insn 69 68 70 9 (var_location:SI pllr (ashift:SI (plus:SI (and:SI (lshiftrt:SI (reg:SI 122 [ _10 ])
+                    (const_int 25 [0x19]))
+                (const_int 3 [0x3]))
+            (const_int 1 [0x1]))
+        (const_int 1 [0x1]))) "../Core/Src/system_stm32g4xx.c":258:12 -1
+     (nil))
+(debug_insn 70 69 72 9 (debug_marker) "../Core/Src/system_stm32g4xx.c":259:7 -1
+     (nil))
+(insn 72 70 75 9 (set (reg:SI 152)
+        (zero_extract:SI (reg:SI 119 [ _7 ])
+            (const_int 7 [0x7])
+            (const_int 8 [0x8]))) "../Core/Src/system_stm32g4xx.c":257:60 161 {extzv_t2}
+     (expr_list:REG_DEAD (reg:SI 119 [ _7 ])
+        (nil)))
+(insn 75 72 76 9 (set (reg:SI 155)
+        (zero_extract:SI (reg:SI 122 [ _10 ])
+            (const_int 2 [0x2])
+            (const_int 25 [0x19]))) "../Core/Src/system_stm32g4xx.c":258:50 161 {extzv_t2}
+     (expr_list:REG_DEAD (reg:SI 122 [ _10 ])
+        (nil)))
+(insn 76 75 73 9 (set (reg:SI 156)
+        (plus:SI (reg:SI 155)
+            (const_int 1 [0x1]))) "../Core/Src/system_stm32g4xx.c":258:57 7 {*arm_addsi3}
+     (expr_list:REG_DEAD (reg:SI 155)
+        (nil)))
+(insn 73 76 77 9 (set (reg:SI 153 [ pllvco ])
+        (mult:SI (reg/v:SI 131 [ pllvco ])
+            (reg:SI 152))) "../Core/Src/system_stm32g4xx.c":257:14 56 {*mul}
+     (expr_list:REG_DEAD (reg:SI 152)
+        (expr_list:REG_DEAD (reg/v:SI 131 [ pllvco ])
+            (nil))))
+(insn 77 73 78 9 (set (reg:SI 157 [ pllr ])
+        (ashift:SI (reg:SI 156)
+            (const_int 1 [0x1]))) "../Core/Src/system_stm32g4xx.c":258:12 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 156)
+        (nil)))
+(insn 78 77 80 9 (set (reg:SI 137 [ pretmp_36 ])
+        (udiv:SI (reg:SI 153 [ pllvco ])
+            (reg:SI 157 [ pllr ]))) "../Core/Src/system_stm32g4xx.c":259:31 163 {udivsi3}
+     (expr_list:REG_DEAD (reg:SI 157 [ pllr ])
+        (expr_list:REG_DEAD (reg:SI 153 [ pllvco ])
+            (nil))))
+(debug_insn 80 78 116 9 (debug_marker) "../Core/Src/system_stm32g4xx.c":260:7 -1
+     (nil))
+(jump_insn 116 80 117 9 (set (pc)
+        (label_ref 81)) "../Core/Src/system_stm32g4xx.c":260:7 284 {*arm_jump}
+     (nil)
+ -> 81)
+(barrier 117 116 101)
+(code_label 101 117 100 10 10 (nil) [1 uses])
+(note 100 101 3 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 3 100 109 10 (set (reg:SI 137 [ pretmp_36 ])
+        (const_int 8000000 [0x7a1200])) "../Core/Src/system_stm32g4xx.c":233:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 109 3 118 10 (set (reg/f:SI 165)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(jump_insn 118 109 119 10 (set (pc)
+        (label_ref 81)) 284 {*arm_jump}
+     (nil)
+ -> 81)
+(barrier 119 118 105)
+(code_label 105 119 104 11 11 (nil) [1 uses])
+(note 104 105 4 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 4 104 110 11 (set (reg:SI 137 [ pretmp_36 ])
+        (const_int 16000000 [0xf42400])) "../Core/Src/system_stm32g4xx.c":233:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 110 4 81 11 (set (reg/f:SI 165)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])
+        (nil)))
+(code_label 81 110 82 12 6 (nil) [3 uses])
+(note 82 81 90 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(note 90 82 83 12 NOTE_INSN_DELETED)
+(debug_insn 83 90 84 12 (debug_marker) "../Core/Src/system_stm32g4xx.c":267:3 -1
+     (nil))
+(insn 84 83 89 12 (set (reg/f:SI 158)
+        (const_int 1073876992 [0x40021000])) "../Core/Src/system_stm32g4xx.c":267:28 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (const_int 1073876992 [0x40021000])
+        (nil)))
+(insn 89 84 85 12 (set (reg/f:SI 160)
+        (symbol_ref:SI ("*.LANCHOR1") [flags 0x182])) "../Core/Src/system_stm32g4xx.c":267:22 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (symbol_ref:SI ("*.LANCHOR1") [flags 0x182])
+        (nil)))
+(insn 85 89 95 12 (set (reg:SI 126 [ _15 ])
+        (mem/v:SI (plus:SI (reg/f:SI 158)
+                (const_int 8 [0x8])) [1 MEM[(struct RCC_TypeDef *)1073876992B].CFGR+0 S4 A64])) "../Core/Src/system_stm32g4xx.c":267:28 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 158)
+        (nil)))
+(debug_insn 95 85 86 12 (var_location:SI D#1 (lshiftrt:SI (reg:SI 126 [ _15 ])
+        (const_int 4 [0x4]))) "../Core/Src/system_stm32g4xx.c":270:1 -1
+     (nil))
+(debug_insn 86 95 87 12 (var_location:SI tmp (zero_extend:SI (mem/u:QI (plus:SI (and:SI (debug_expr:SI D#1)
+                    (const_int 15 [0xf]))
+                (symbol_ref:SI ("AHBPrescTable") [flags 0x82]  <var_decl 0000000005f27cf0 AHBPrescTable>)) [0 AHBPrescTable[_17]+0 S1 A8]))) "../Core/Src/system_stm32g4xx.c":267:7 -1
+     (nil))
+(debug_insn 87 86 91 12 (debug_marker) "../Core/Src/system_stm32g4xx.c":269:3 -1
+     (nil))
+(insn 91 87 92 12 (set (reg:SI 162)
+        (zero_extract:SI (reg:SI 126 [ _15 ])
+            (const_int 4 [0x4])
+            (const_int 4 [0x4]))) "../Core/Src/system_stm32g4xx.c":267:52 161 {extzv_t2}
+     (expr_list:REG_DEAD (reg:SI 126 [ _15 ])
+        (nil)))
+(insn 92 91 93 12 (set (reg:SI 163 [ tmp ])
+        (zero_extend:SI (mem/u:QI (plus:SI (reg/f:SI 160)
+                    (reg:SI 162)) [0 AHBPrescTable[_17]+0 S1 A8]))) "../Core/Src/system_stm32g4xx.c":267:7 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_DEAD (reg:SI 162)
+        (expr_list:REG_DEAD (reg/f:SI 160)
+            (expr_list:REG_EQUAL (zero_extend:SI (mem/u:QI (plus:SI (reg:SI 162)
+                            (symbol_ref:SI ("*.LANCHOR1") [flags 0x182])) [0 AHBPrescTable[_17]+0 S1 A8]))
+                (nil)))))
+(insn 93 92 94 12 (set (reg:SI 164)
+        (lshiftrt:SI (reg:SI 137 [ pretmp_36 ])
+            (reg:SI 163 [ tmp ]))) "../Core/Src/system_stm32g4xx.c":269:19 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 163 [ tmp ])
+        (expr_list:REG_DEAD (reg:SI 137 [ pretmp_36 ])
+            (expr_list:REG_EQUIV (mem/c:SI (reg/f:SI 165) [1 SystemCoreClock+0 S4 A32])
+                (nil)))))
+(insn 94 93 127 12 (set (mem/c:SI (reg/f:SI 165) [1 SystemCoreClock+0 S4 A32])
+        (reg:SI 164)) "../Core/Src/system_stm32g4xx.c":269:19 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 165)
+        (expr_list:REG_DEAD (reg:SI 164)
+            (nil))))
+(note 127 94 0 NOTE_INSN_DELETED)

@@ -1,0 +1,312 @@
+
+;; Function SystemInit (SystemInit, funcdef_no=329, decl_uid=6654, cgraph_uid=333, symbol_order=335)
+
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../Core/Src/system_stm32g4xx.c":183:5 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 115)
+        (const_int -536810240 [0xffffffffe000ed00])) "../Core/Src/system_stm32g4xx.c":183:16 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 113 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 115)
+                (const_int 136 [0x88])) [1 MEM[(struct SCB_Type *)3758157056B].CPACR+0 S4 A64])) "../Core/Src/system_stm32g4xx.c":183:16 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 8 7 9 2 (set (reg:SI 114 [ _2 ])
+        (ior:SI (reg:SI 113 [ _1 ])
+            (const_int 15728640 [0xf00000]))) "../Core/Src/system_stm32g4xx.c":183:16 106 {*iorsi3_insn}
+     (nil))
+(insn 9 8 10 2 (set (reg/f:SI 116)
+        (const_int -536810240 [0xffffffffe000ed00])) "../Core/Src/system_stm32g4xx.c":183:16 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 10 9 0 2 (set (mem/v:SI (plus:SI (reg/f:SI 116)
+                (const_int 136 [0x88])) [1 MEM[(struct SCB_Type *)3758157056B].CPACR+0 S4 A64])
+        (reg:SI 114 [ _2 ])) "../Core/Src/system_stm32g4xx.c":183:16 728 {*thumb2_movsi_vfp}
+     (nil))
+
+;; Function SystemCoreClockUpdate (SystemCoreClockUpdate, funcdef_no=330, decl_uid=6656, cgraph_uid=334, symbol_order=336)
+
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 5 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 2 8 2 (debug_marker) "../Core/Src/system_stm32g4xx.c":230:3 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "../Core/Src/system_stm32g4xx.c":233:3 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/f:SI 138)
+        (const_int 1073876992 [0x40021000])) "../Core/Src/system_stm32g4xx.c":233:14 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 113 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 138)
+                (const_int 8 [0x8])) [1 MEM[(struct RCC_TypeDef *)1073876992B].CFGR+0 S4 A64])) "../Core/Src/system_stm32g4xx.c":233:14 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 114 [ _2 ])
+        (and:SI (reg:SI 113 [ _1 ])
+            (const_int 12 [0xc]))) "../Core/Src/system_stm32g4xx.c":233:21 90 {*arm_andsi3_insn}
+     (nil))
+(insn 12 11 13 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 114 [ _2 ])
+            (const_int 8 [0x8]))) "../Core/Src/system_stm32g4xx.c":233:3 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 13 12 14 2 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 101)
+            (pc))) "../Core/Src/system_stm32g4xx.c":233:3 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 268435462 (nil))
+ -> 101)
+(note 14 13 15 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 15 14 16 4 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 114 [ _2 ])
+            (const_int 12 [0xc]))) "../Core/Src/system_stm32g4xx.c":233:3 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 16 15 17 4 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 25)
+            (pc))) "../Core/Src/system_stm32g4xx.c":233:3 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 357913950 (nil))
+ -> 25)
+(note 17 16 18 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 5 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 114 [ _2 ])
+            (const_int 4 [0x4]))) "../Core/Src/system_stm32g4xx.c":233:3 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 19 18 20 5 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 105)
+            (pc))) "../Core/Src/system_stm32g4xx.c":233:3 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 357913950 (nil))
+ -> 105)
+(note 20 19 21 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(insn 21 20 22 6 (set (reg/f:SI 139)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../Core/Src/system_stm32g4xx.c":269:19 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 22 21 23 6 (set (reg:SI 137 [ pretmp_36 ])
+        (mem/c:SI (reg/f:SI 139) [1 SystemCoreClock+0 S4 A32])) "../Core/Src/system_stm32g4xx.c":269:19 728 {*thumb2_movsi_vfp}
+     (nil))
+(jump_insn 23 22 24 6 (set (pc)
+        (label_ref 81)) "../Core/Src/system_stm32g4xx.c":269:19 284 {*arm_jump}
+     (nil)
+ -> 81)
+(barrier 24 23 25)
+(code_label 25 24 26 7 7 (nil) [1 uses])
+(note 26 25 27 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 27 26 28 7 (debug_marker) "../Core/Src/system_stm32g4xx.c":247:7 -1
+     (nil))
+(insn 28 27 29 7 (set (reg/f:SI 140)
+        (const_int 1073876992 [0x40021000])) "../Core/Src/system_stm32g4xx.c":247:23 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 29 28 30 7 (set (reg:SI 115 [ _3 ])
+        (mem/v:SI (plus:SI (reg/f:SI 140)
+                (const_int 12 [0xc])) [1 MEM[(struct RCC_TypeDef *)1073876992B].PLLCFGR+0 S4 A32])) "../Core/Src/system_stm32g4xx.c":247:23 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 30 29 31 7 (var_location:SI pllsource (and:SI (reg:SI 115 [ _3 ])
+        (const_int 3 [0x3]))) "../Core/Src/system_stm32g4xx.c":247:17 -1
+     (nil))
+(debug_insn 31 30 32 7 (debug_marker) "../Core/Src/system_stm32g4xx.c":248:7 -1
+     (nil))
+(insn 32 31 33 7 (set (reg/f:SI 141)
+        (const_int 1073876992 [0x40021000])) "../Core/Src/system_stm32g4xx.c":248:19 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 33 32 34 7 (set (reg:SI 116 [ _4 ])
+        (mem/v:SI (plus:SI (reg/f:SI 141)
+                (const_int 12 [0xc])) [1 MEM[(struct RCC_TypeDef *)1073876992B].PLLCFGR+0 S4 A32])) "../Core/Src/system_stm32g4xx.c":248:19 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 34 33 35 7 (set (reg:SI 142)
+        (lshiftrt:SI (reg:SI 116 [ _4 ])
+            (const_int 4 [0x4]))) "../Core/Src/system_stm32g4xx.c":248:49 147 {*arm_shiftsi3}
+     (nil))
+(insn 35 34 36 7 (set (reg:SI 143)
+        (and:SI (reg:SI 142)
+            (const_int 15 [0xf]))) "../Core/Src/system_stm32g4xx.c":248:49 90 {*arm_andsi3_insn}
+     (nil))
+(insn 36 35 37 7 (set (reg/v:SI 133 [ pllm ])
+        (plus:SI (reg:SI 143)
+            (const_int 1 [0x1]))) "../Core/Src/system_stm32g4xx.c":248:12 7 {*arm_addsi3}
+     (nil))
+(debug_insn 37 36 38 7 (var_location:SI pllm (reg/v:SI 133 [ pllm ])) "../Core/Src/system_stm32g4xx.c":248:12 -1
+     (nil))
+(debug_insn 38 37 39 7 (debug_marker) "../Core/Src/system_stm32g4xx.c":249:7 -1
+     (nil))
+(insn 39 38 40 7 (set (reg:SI 144 [ pllsource ])
+        (and:SI (reg:SI 115 [ _3 ])
+            (const_int 3 [0x3]))) "../Core/Src/system_stm32g4xx.c":247:17 90 {*arm_andsi3_insn}
+     (nil))
+(insn 40 39 41 7 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 144 [ pllsource ])
+            (const_int 2 [0x2]))) "../Core/Src/system_stm32g4xx.c":249:10 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 41 40 42 7 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 51)
+            (pc))) "../Core/Src/system_stm32g4xx.c":249:10 273 {arm_cond_branch}
+     (int_list:REG_BR_PROB 708669604 (nil))
+ -> 51)
+(note 42 41 43 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 43 42 44 8 (debug_marker) "../Core/Src/system_stm32g4xx.c":251:9 -1
+     (nil))
+(insn 44 43 45 8 (set (reg:SI 145)
+        (const_int 16000000 [0xf42400])) "../Core/Src/system_stm32g4xx.c":251:16 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 45 44 48 8 (set (reg/v:SI 131 [ pllvco ])
+        (udiv:SI (reg:SI 145)
+            (reg/v:SI 133 [ pllm ]))) "../Core/Src/system_stm32g4xx.c":251:16 163 {udivsi3}
+     (nil))
+(debug_insn 48 45 49 8 (var_location:SI pllvco (reg/v:SI 131 [ pllvco ])) "../Core/Src/system_stm32g4xx.c":251:16 -1
+     (nil))
+(jump_insn 49 48 50 8 (set (pc)
+        (label_ref 59)) 284 {*arm_jump}
+     (nil)
+ -> 59)
+(barrier 50 49 51)
+(code_label 51 50 52 9 8 (nil) [1 uses])
+(note 52 51 53 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 53 52 54 9 (debug_marker) "../Core/Src/system_stm32g4xx.c":255:9 -1
+     (nil))
+(insn 54 53 55 9 (set (reg:SI 147)
+        (const_int 8000000 [0x7a1200])) "../Core/Src/system_stm32g4xx.c":255:16 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 55 54 58 9 (set (reg/v:SI 131 [ pllvco ])
+        (udiv:SI (reg:SI 147)
+            (reg/v:SI 133 [ pllm ]))) "../Core/Src/system_stm32g4xx.c":255:16 163 {udivsi3}
+     (nil))
+(debug_insn 58 55 59 9 (var_location:SI pllvco (reg/v:SI 131 [ pllvco ])) "../Core/Src/system_stm32g4xx.c":255:16 -1
+     (nil))
+(code_label 59 58 60 10 9 (nil) [1 uses])
+(note 60 59 61 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 61 60 62 10 (var_location:SI pllvco (reg/v:SI 131 [ pllvco ])) -1
+     (nil))
+(debug_insn 62 61 63 10 (debug_marker) "../Core/Src/system_stm32g4xx.c":257:7 -1
+     (nil))
+(insn 63 62 64 10 (set (reg/f:SI 149)
+        (const_int 1073876992 [0x40021000])) "../Core/Src/system_stm32g4xx.c":257:30 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 64 63 65 10 (set (reg:SI 119 [ _7 ])
+        (mem/v:SI (plus:SI (reg/f:SI 149)
+                (const_int 12 [0xc])) [1 MEM[(struct RCC_TypeDef *)1073876992B].PLLCFGR+0 S4 A32])) "../Core/Src/system_stm32g4xx.c":257:30 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 65 64 66 10 (var_location:SI pllvco (mult:SI (and:SI (lshiftrt:SI (reg:SI 119 [ _7 ])
+                (const_int 8 [0x8]))
+            (const_int 127 [0x7f]))
+        (reg/v:SI 131 [ pllvco ]))) "../Core/Src/system_stm32g4xx.c":257:14 -1
+     (nil))
+(debug_insn 66 65 67 10 (debug_marker) "../Core/Src/system_stm32g4xx.c":258:7 -1
+     (nil))
+(insn 67 66 68 10 (set (reg/f:SI 150)
+        (const_int 1073876992 [0x40021000])) "../Core/Src/system_stm32g4xx.c":258:20 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 68 67 69 10 (set (reg:SI 122 [ _10 ])
+        (mem/v:SI (plus:SI (reg/f:SI 150)
+                (const_int 12 [0xc])) [1 MEM[(struct RCC_TypeDef *)1073876992B].PLLCFGR+0 S4 A32])) "../Core/Src/system_stm32g4xx.c":258:20 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 69 68 70 10 (var_location:SI pllr (ashift:SI (plus:SI (and:SI (lshiftrt:SI (reg:SI 122 [ _10 ])
+                    (const_int 25 [0x19]))
+                (const_int 3 [0x3]))
+            (const_int 1 [0x1]))
+        (const_int 1 [0x1]))) "../Core/Src/system_stm32g4xx.c":258:12 -1
+     (nil))
+(debug_insn 70 69 71 10 (debug_marker) "../Core/Src/system_stm32g4xx.c":259:7 -1
+     (nil))
+(insn 71 70 72 10 (set (reg:SI 151)
+        (lshiftrt:SI (reg:SI 119 [ _7 ])
+            (const_int 8 [0x8]))) "../Core/Src/system_stm32g4xx.c":257:60 147 {*arm_shiftsi3}
+     (nil))
+(insn 72 71 73 10 (set (reg:SI 152)
+        (and:SI (reg:SI 151)
+            (const_int 127 [0x7f]))) "../Core/Src/system_stm32g4xx.c":257:60 90 {*arm_andsi3_insn}
+     (nil))
+(insn 73 72 74 10 (set (reg:SI 153 [ pllvco ])
+        (mult:SI (reg/v:SI 131 [ pllvco ])
+            (reg:SI 152))) "../Core/Src/system_stm32g4xx.c":257:14 56 {*mul}
+     (nil))
+(insn 74 73 75 10 (set (reg:SI 154)
+        (lshiftrt:SI (reg:SI 122 [ _10 ])
+            (const_int 25 [0x19]))) "../Core/Src/system_stm32g4xx.c":258:50 147 {*arm_shiftsi3}
+     (nil))
+(insn 75 74 76 10 (set (reg:SI 155)
+        (and:SI (reg:SI 154)
+            (const_int 3 [0x3]))) "../Core/Src/system_stm32g4xx.c":258:50 90 {*arm_andsi3_insn}
+     (nil))
+(insn 76 75 77 10 (set (reg:SI 156)
+        (plus:SI (reg:SI 155)
+            (const_int 1 [0x1]))) "../Core/Src/system_stm32g4xx.c":258:57 7 {*arm_addsi3}
+     (nil))
+(insn 77 76 78 10 (set (reg:SI 157 [ pllr ])
+        (ashift:SI (reg:SI 156)
+            (const_int 1 [0x1]))) "../Core/Src/system_stm32g4xx.c":258:12 147 {*arm_shiftsi3}
+     (nil))
+(insn 78 77 80 10 (set (reg:SI 137 [ pretmp_36 ])
+        (udiv:SI (reg:SI 153 [ pllvco ])
+            (reg:SI 157 [ pllr ]))) "../Core/Src/system_stm32g4xx.c":259:31 163 {udivsi3}
+     (nil))
+(debug_insn 80 78 98 10 (debug_marker) "../Core/Src/system_stm32g4xx.c":260:7 -1
+     (nil))
+(jump_insn 98 80 99 10 (set (pc)
+        (label_ref 81)) "../Core/Src/system_stm32g4xx.c":260:7 284 {*arm_jump}
+     (nil)
+ -> 81)
+(barrier 99 98 101)
+(code_label 101 99 100 11 10 (nil) [1 uses])
+(note 100 101 3 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 3 100 102 11 (set (reg:SI 137 [ pretmp_36 ])
+        (const_int 8000000 [0x7a1200])) "../Core/Src/system_stm32g4xx.c":233:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(jump_insn 102 3 103 11 (set (pc)
+        (label_ref 81)) 284 {*arm_jump}
+     (nil)
+ -> 81)
+(barrier 103 102 105)
+(code_label 105 103 104 12 11 (nil) [1 uses])
+(note 104 105 4 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(insn 4 104 81 12 (set (reg:SI 137 [ pretmp_36 ])
+        (const_int 16000000 [0xf42400])) "../Core/Src/system_stm32g4xx.c":233:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(code_label 81 4 82 13 6 (nil) [3 uses])
+(note 82 81 83 13 [bb 13] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 83 82 84 13 (debug_marker) "../Core/Src/system_stm32g4xx.c":267:3 -1
+     (nil))
+(insn 84 83 85 13 (set (reg/f:SI 158)
+        (const_int 1073876992 [0x40021000])) "../Core/Src/system_stm32g4xx.c":267:28 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 85 84 95 13 (set (reg:SI 126 [ _15 ])
+        (mem/v:SI (plus:SI (reg/f:SI 158)
+                (const_int 8 [0x8])) [1 MEM[(struct RCC_TypeDef *)1073876992B].CFGR+0 S4 A64])) "../Core/Src/system_stm32g4xx.c":267:28 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 95 85 86 13 (var_location:SI D#1 (lshiftrt:SI (reg:SI 126 [ _15 ])
+        (const_int 4 [0x4]))) "../Core/Src/system_stm32g4xx.c":270:1 -1
+     (nil))
+(debug_insn 86 95 87 13 (var_location:SI tmp (zero_extend:SI (mem/u:QI (plus:SI (and:SI (debug_expr:SI D#1)
+                    (const_int 15 [0xf]))
+                (symbol_ref:SI ("AHBPrescTable") [flags 0x82]  <var_decl 0000000005f27cf0 AHBPrescTable>)) [0 AHBPrescTable[_17]+0 S1 A8]))) "../Core/Src/system_stm32g4xx.c":267:7 -1
+     (nil))
+(debug_insn 87 86 88 13 (debug_marker) "../Core/Src/system_stm32g4xx.c":269:3 -1
+     (nil))
+(insn 88 87 89 13 (set (reg/f:SI 159)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../Core/Src/system_stm32g4xx.c":269:19 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 89 88 90 13 (set (reg/f:SI 160)
+        (symbol_ref:SI ("*.LANCHOR1") [flags 0x182])) "../Core/Src/system_stm32g4xx.c":267:22 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 90 89 91 13 (set (reg:SI 161)
+        (lshiftrt:SI (reg:SI 126 [ _15 ])
+            (const_int 4 [0x4]))) "../Core/Src/system_stm32g4xx.c":267:52 147 {*arm_shiftsi3}
+     (nil))
+(insn 91 90 92 13 (set (reg:SI 162)
+        (and:SI (reg:SI 161)
+            (const_int 15 [0xf]))) "../Core/Src/system_stm32g4xx.c":267:52 90 {*arm_andsi3_insn}
+     (nil))
+(insn 92 91 93 13 (set (reg:SI 163 [ tmp ])
+        (zero_extend:SI (mem/u:QI (plus:SI (reg/f:SI 160)
+                    (reg:SI 162)) [0 AHBPrescTable[_17]+0 S1 A8]))) "../Core/Src/system_stm32g4xx.c":267:7 1006 {thumb2_zero_extendqisi2_v6}
+     (nil))
+(insn 93 92 94 13 (set (reg:SI 164)
+        (lshiftrt:SI (reg:SI 137 [ pretmp_36 ])
+            (reg:SI 163 [ tmp ]))) "../Core/Src/system_stm32g4xx.c":269:19 147 {*arm_shiftsi3}
+     (nil))
+(insn 94 93 0 13 (set (mem/c:SI (reg/f:SI 159) [1 SystemCoreClock+0 S4 A32])
+        (reg:SI 164)) "../Core/Src/system_stm32g4xx.c":269:19 728 {*thumb2_movsi_vfp}
+     (nil))

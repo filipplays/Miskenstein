@@ -1,0 +1,759 @@
+
+;; Function _HW_FillFrame_ (_HW_FillFrame_, funcdef_no=869, decl_uid=12915, cgraph_uid=873, symbol_order=879)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; Following path with 9 sets: 2 
+;; Following path with 6 sets: 4 
+;; Following path with 3 sets: 3 
+;; Following path with 5 sets: 5 
+;; Following path with 6 sets: 7 
+;; Following path with 3 sets: 6 
+;; Following path with 48 sets: 8 
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+_HW_FillFrame_
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 0 [r0] 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={8d,7u} r1={6d,3u} r2={5d,2u} r3={5d,2u} r7={1d,8u} r12={6d} r13={1d,11u} r14={4d} r15={3d} r16={4d} r17={4d} r18={4d} r19={4d} r20={4d} r21={4d} r22={4d} r23={4d} r24={4d} r25={4d} r26={4d} r27={4d} r28={4d} r29={4d} r30={4d} r31={4d} r48={3d} r49={3d} r50={3d} r51={3d} r52={3d} r53={3d} r54={3d} r55={3d} r56={3d} r57={3d} r58={3d} r59={3d} r60={3d} r61={3d} r62={3d} r63={3d} r64={3d} r65={3d} r66={3d} r67={3d} r68={3d} r69={3d} r70={3d} r71={3d} r72={3d} r73={3d} r74={3d} r75={3d} r76={3d} r77={3d} r78={3d} r79={3d} r80={3d} r81={3d} r82={3d} r83={3d} r84={3d} r85={3d} r86={3d} r87={3d} r88={3d} r89={3d} r90={3d} r91={3d} r92={3d} r93={3d} r94={3d} r95={3d} r96={3d} r97={3d} r98={3d} r99={3d} r100={6d,2u} r101={3d} r102={1d,8u} r103={1d,8u,1e} r104={3d} r105={3d} r106={3d} r118={2d,6u} r119={2d,6u} r120={1d,2u} r121={1d,2u} r122={1d,2u} r124={2d,6u} r125={2d,6u} r126={1d,5u} r127={1d,5u} r128={1d,2u} r129={1d,1u} 
+;;    total ref usage 389{294d,94u,1e} in 73{70 regular + 3 call} insns.
+(note 10 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(insn 2 10 3 2 (set (reg/v:SI 124 [ x1 ])
+        (reg:SI 0 r0 [ x1 ])) "../System/lcd.c":176:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0 [ x1 ])
+        (nil)))
+(insn 3 2 4 2 (set (reg/v:SI 125 [ y1 ])
+        (reg:SI 1 r1 [ y1 ])) "../System/lcd.c":176:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 1 r1 [ y1 ])
+        (nil)))
+(insn 4 3 5 2 (set (reg/v:SI 126 [ x2 ])
+        (reg:SI 2 r2 [ x2 ])) "../System/lcd.c":176:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 2 r2 [ x2 ])
+        (nil)))
+(insn 5 4 6 2 (set (reg/v:SI 127 [ y2 ])
+        (reg:SI 3 r3 [ y2 ])) "../System/lcd.c":176:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 3 r3 [ y2 ])
+        (nil)))
+(insn 6 5 7 2 (set (reg/v:SI 128 [ c ])
+        (mem/c:SI (reg/f:SI 103 afp) [2 c+0 S4 A64])) "../System/lcd.c":176:1 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUIV (mem/c:SI (reg/f:SI 103 afp) [2 c+0 S4 A64])
+        (nil)))
+(note 7 6 12 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 12 7 13 2 (debug_marker) "../System/lcd.c":177:2 -1
+     (nil))
+(debug_insn 13 12 14 2 (debug_marker) "../System/lcd.c":178:2 -1
+     (nil))
+(insn 14 13 15 2 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 126 [ x2 ])
+            (reg/v:SI 124 [ x1 ]))) "../System/lcd.c":178:5 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 15 14 16 2 (set (pc)
+        (if_then_else (le (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 22)
+            (pc))) "../System/lcd.c":178:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 22)
+(note 16 15 17 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 17 16 18 3 (debug_marker) "../System/lcd.c":178:15 -1
+     (nil))
+(insn 18 17 19 3 (set (reg/v:SI 118 [ w ])
+        (minus:SI (reg/v:SI 126 [ x2 ])
+            (reg/v:SI 124 [ x1 ]))) "../System/lcd.c":178:17 45 {*arm_subsi3_insn}
+     (expr_list:REG_DEAD (reg/v:SI 126 [ x2 ])
+        (nil)))
+(debug_insn 19 18 22 3 (var_location:SI w (reg/v:SI 118 [ w ])) "../System/lcd.c":178:17 -1
+     (nil))
+      ; pc falls through to BB 5
+(code_label 22 19 23 4 5 (nil) [1 uses])
+(note 23 22 24 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 24 23 25 4 (debug_marker) "../System/lcd.c":181:3 -1
+     (nil))
+(insn 25 24 26 4 (set (reg/v:SI 118 [ w ])
+        (minus:SI (reg/v:SI 124 [ x1 ])
+            (reg/v:SI 126 [ x2 ]))) "../System/lcd.c":181:5 45 {*arm_subsi3_insn}
+     (expr_list:REG_DEAD (reg/v:SI 124 [ x1 ])
+        (nil)))
+(debug_insn 26 25 27 4 (var_location:SI w (reg/v:SI 118 [ w ])) "../System/lcd.c":181:5 -1
+     (nil))
+(debug_insn 27 26 28 4 (debug_marker) "../System/lcd.c":182:3 -1
+     (nil))
+(debug_insn 28 27 8 4 (var_location:SI x1 (reg/v:SI 126 [ x2 ])) "../System/lcd.c":182:6 -1
+     (nil))
+(insn 8 28 29 4 (set (reg/v:SI 124 [ x1 ])
+        (reg/v:SI 126 [ x2 ])) "../System/lcd.c":181:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 126 [ x2 ])
+        (nil)))
+(code_label 29 8 30 5 6 (nil) [0 uses])
+(note 30 29 31 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 31 30 32 5 (var_location:SI w (reg/v:SI 118 [ w ])) -1
+     (nil))
+(debug_insn 32 31 33 5 (var_location:SI x1 (reg/v:SI 124 [ x1 ])) -1
+     (nil))
+(debug_insn 33 32 34 5 (debug_marker) "../System/lcd.c":184:2 -1
+     (nil))
+(insn 34 33 35 5 (set (reg:CC 100 cc)
+        (compare:CC (reg/v:SI 127 [ y2 ])
+            (reg/v:SI 125 [ y1 ]))) "../System/lcd.c":184:5 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 35 34 36 5 (set (pc)
+        (if_then_else (le (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 42)
+            (pc))) "../System/lcd.c":184:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 536870916 (nil)))
+ -> 42)
+(note 36 35 37 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 37 36 38 6 (debug_marker) "../System/lcd.c":184:15 -1
+     (nil))
+(insn 38 37 39 6 (set (reg/v:SI 119 [ h ])
+        (minus:SI (reg/v:SI 127 [ y2 ])
+            (reg/v:SI 125 [ y1 ]))) "../System/lcd.c":184:17 45 {*arm_subsi3_insn}
+     (expr_list:REG_DEAD (reg/v:SI 127 [ y2 ])
+        (nil)))
+(debug_insn 39 38 42 6 (var_location:SI h (reg/v:SI 119 [ h ])) "../System/lcd.c":184:17 -1
+     (nil))
+      ; pc falls through to BB 8
+(code_label 42 39 43 7 7 (nil) [1 uses])
+(note 43 42 44 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 44 43 45 7 (debug_marker) "../System/lcd.c":187:3 -1
+     (nil))
+(insn 45 44 46 7 (set (reg/v:SI 119 [ h ])
+        (minus:SI (reg/v:SI 125 [ y1 ])
+            (reg/v:SI 127 [ y2 ]))) "../System/lcd.c":187:5 45 {*arm_subsi3_insn}
+     (expr_list:REG_DEAD (reg/v:SI 125 [ y1 ])
+        (nil)))
+(debug_insn 46 45 47 7 (var_location:SI h (reg/v:SI 119 [ h ])) "../System/lcd.c":187:5 -1
+     (nil))
+(debug_insn 47 46 48 7 (debug_marker) "../System/lcd.c":188:3 -1
+     (nil))
+(debug_insn 48 47 9 7 (var_location:SI y1 (reg/v:SI 127 [ y2 ])) "../System/lcd.c":188:6 -1
+     (nil))
+(insn 9 48 49 7 (set (reg/v:SI 125 [ y1 ])
+        (reg/v:SI 127 [ y2 ])) "../System/lcd.c":187:5 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 127 [ y2 ])
+        (nil)))
+(code_label 49 9 50 8 8 (nil) [0 uses])
+(note 50 49 51 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 51 50 52 8 (var_location:SI h (reg/v:SI 119 [ h ])) -1
+     (nil))
+(debug_insn 52 51 53 8 (var_location:SI y1 (reg/v:SI 125 [ y1 ])) -1
+     (nil))
+(debug_insn 53 52 56 8 (debug_marker) "../System/lcd.c":191:2 -1
+     (nil))
+(debug_insn 56 53 57 8 (var_location:SI x (reg/v:SI 124 [ x1 ])) "../System/lcd.c":191:2 -1
+     (nil))
+(debug_insn 57 56 58 8 (var_location:SI y (reg/v:SI 125 [ y1 ])) "../System/lcd.c":191:2 -1
+     (nil))
+(debug_insn 58 57 59 8 (var_location:SI w (reg/v:SI 118 [ w ])) "../System/lcd.c":191:2 -1
+     (nil))
+(debug_insn 59 58 60 8 (var_location:SI h (reg/v:SI 119 [ h ])) "../System/lcd.c":191:2 -1
+     (nil))
+(debug_insn 60 59 61 8 (var_location:HI c (subreg:HI (reg/v:SI 128 [ c ]) 0)) "../System/lcd.c":191:2 -1
+     (nil))
+(debug_insn 61 60 62 8 (debug_marker:BLK) "../System/lcd.c":69:6 -1
+     (nil))
+(debug_insn 62 61 63 8 (debug_marker) "../System/lcd.c":71:2 -1
+     (nil))
+(insn 63 62 64 8 (set (reg:SI 0 r0)
+        (const_int 2 [0x2])) "../System/lcd.c":71:25 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 64 63 65 8 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("ILI9341_GetParam") [flags 0x41]  <function_decl 0000000006c72f00 ILI9341_GetParam>) [0 ILI9341_GetParam S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":71:25 291 {*call_value_symbol}
+     (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_GetParam") [flags 0x41]  <function_decl 0000000006c72f00 ILI9341_GetParam>)
+        (nil))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:QI (use (reg:SI 0 r0))
+            (nil))))
+(insn 65 64 66 8 (set (reg/v:SI 120 [ max_count ])
+        (reg:SI 0 r0)) "../System/lcd.c":71:25 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+(debug_insn 66 65 67 8 (var_location:SI max_count (reg/v:SI 120 [ max_count ])) "../System/lcd.c":71:25 -1
+     (nil))
+(debug_insn 67 66 68 8 (debug_marker) "../System/lcd.c":72:2 -1
+     (nil))
+(insn 68 67 69 8 (set (reg/v:SI 121 [ pixel_count ])
+        (mult:SI (reg/v:SI 119 [ h ])
+            (reg/v:SI 118 [ w ]))) "../System/lcd.c":72:11 56 {*mul}
+     (nil))
+(debug_insn 69 68 70 8 (var_location:SI pixel_count (reg/v:SI 121 [ pixel_count ])) "../System/lcd.c":72:11 -1
+     (nil))
+(debug_insn 70 69 71 8 (debug_marker) "../System/lcd.c":74:2 -1
+     (nil))
+(insn 71 70 72 8 (parallel [
+            (set (reg/v:SI 122 [ pixel_count ])
+                (umin:SI (reg/v:SI 120 [ max_count ])
+                    (reg/v:SI 121 [ pixel_count ])))
+            (clobber (reg:CC 100 cc))
+        ]) 973 {*thumb2_uminsi3}
+     (expr_list:REG_DEAD (reg/v:SI 121 [ pixel_count ])
+        (expr_list:REG_DEAD (reg/v:SI 120 [ max_count ])
+            (expr_list:REG_UNUSED (reg:CC 100 cc)
+                (nil)))))
+(debug_insn 72 71 73 8 (var_location:SI pixel_count (reg/v:SI 122 [ pixel_count ])) -1
+     (nil))
+(debug_insn 73 72 74 8 (debug_marker) "../System/lcd.c":78:2 -1
+     (nil))
+(insn 74 73 75 8 (set (reg:SI 3 r3)
+        (reg/v:SI 119 [ h ])) "../System/lcd.c":78:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 119 [ h ])
+        (nil)))
+(insn 75 74 76 8 (set (reg:SI 2 r2)
+        (reg/v:SI 118 [ w ])) "../System/lcd.c":78:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 118 [ w ])
+        (nil)))
+(insn 76 75 77 8 (set (reg:SI 1 r1)
+        (reg/v:SI 125 [ y1 ])) "../System/lcd.c":78:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 125 [ y1 ])
+        (nil)))
+(insn 77 76 78 8 (set (reg:SI 0 r0)
+        (reg/v:SI 124 [ x1 ])) "../System/lcd.c":78:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 124 [ x1 ])
+        (nil)))
+(call_insn 78 77 79 8 (parallel [
+            (call (mem:SI (symbol_ref:SI ("ILI9341_SetDisplayWindow") [flags 0x41]  <function_decl 0000000006c72600 ILI9341_SetDisplayWindow>) [0 ILI9341_SetDisplayWindow S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":78:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 3 r3)
+        (expr_list:REG_DEAD (reg:SI 2 r2)
+            (expr_list:REG_DEAD (reg:SI 1 r1)
+                (expr_list:REG_DEAD (reg:SI 0 r0)
+                    (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_SetDisplayWindow") [flags 0x41]  <function_decl 0000000006c72600 ILI9341_SetDisplayWindow>)
+                        (nil))))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (expr_list:SI (use (reg:SI 2 r2))
+                    (expr_list:SI (use (reg:SI 3 r3))
+                        (nil)))))))
+(debug_insn 79 78 80 8 (debug_marker) "../System/lcd.c":79:2 -1
+     (nil))
+(insn 80 79 81 8 (set (reg:SI 129 [ c ])
+        (zero_extend:SI (subreg:HI (reg/v:SI 128 [ c ]) 0))) "../System/lcd.c":79:2 1005 {*thumb2_zero_extendhisi2_v6}
+     (expr_list:REG_DEAD (reg/v:SI 128 [ c ])
+        (nil)))
+(insn 81 80 82 8 (set (reg:SI 1 r1)
+        (reg/v:SI 122 [ pixel_count ])) "../System/lcd.c":79:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/v:SI 122 [ pixel_count ])
+        (nil)))
+(insn 82 81 83 8 (set (reg:SI 0 r0)
+        (reg:SI 129 [ c ])) "../System/lcd.c":79:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 129 [ c ])
+        (nil)))
+(call_insn 83 82 84 8 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("ILI9341_SendRepeatedData") [flags 0x41]  <function_decl 0000000006c72300 ILI9341_SendRepeatedData>) [0 ILI9341_SendRepeatedData S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":79:2 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_SendRepeatedData") [flags 0x41]  <function_decl 0000000006c72300 ILI9341_SendRepeatedData>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:HI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 84 83 85 8 (var_location:SI x (clobber (const_int 0 [0]))) "../System/lcd.c":191:2 -1
+     (nil))
+(debug_insn 85 84 86 8 (var_location:SI y (clobber (const_int 0 [0]))) "../System/lcd.c":191:2 -1
+     (nil))
+(debug_insn 86 85 87 8 (var_location:SI w (clobber (const_int 0 [0]))) "../System/lcd.c":191:2 -1
+     (nil))
+(debug_insn 87 86 88 8 (var_location:SI h (clobber (const_int 0 [0]))) "../System/lcd.c":191:2 -1
+     (nil))
+(debug_insn 88 87 89 8 (var_location:HI c (clobber (const_int 0 [0]))) "../System/lcd.c":191:2 -1
+     (nil))
+(debug_insn 89 88 90 8 (var_location:SI pixel_count (clobber (const_int 0 [0]))) "../System/lcd.c":191:2 -1
+     (nil))
+(debug_insn 90 89 91 8 (var_location:SI max_count (clobber (const_int 0 [0]))) "../System/lcd.c":191:2 -1
+     (nil))
+(debug_insn 91 90 96 8 (debug_marker) "../System/lcd.c":193:2 -1
+     (nil))
+(insn 96 91 97 8 (set (reg/i:SI 0 r0)
+        (const_int 0 [0])) "../System/lcd.c":194:1 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 97 96 0 8 (use (reg/i:SI 0 r0)) "../System/lcd.c":194:1 -1
+     (nil))
+
+;; Function LCD_demo_simple (LCD_demo_simple, funcdef_no=867, decl_uid=11879, cgraph_uid=871, symbol_order=877)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+;; Following path with 17 sets: 2 
+deferring rescan insn with uid = 14.
+;; Following path with 13 sets: 3 
+starting the processing of deferred insns
+rescanning insn with uid = 14.
+ending the processing of deferred insns
+
+
+LCD_demo_simple
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={5d,2u} r1={5d,3u} r2={4d,1u} r3={4d,1u} r7={1d,4u} r12={4d} r13={1d,6u} r14={3d} r15={2d} r16={3d} r17={3d} r18={3d} r19={3d} r20={3d} r21={3d} r22={3d} r23={3d} r24={3d} r25={3d} r26={3d} r27={3d} r28={3d} r29={3d} r30={3d} r31={3d} r48={2d} r49={2d} r50={2d} r51={2d} r52={2d} r53={2d} r54={2d} r55={2d} r56={2d} r57={2d} r58={2d} r59={2d} r60={2d} r61={2d} r62={2d} r63={2d} r64={2d} r65={2d} r66={2d} r67={2d} r68={2d} r69={2d} r70={2d} r71={2d} r72={2d} r73={2d} r74={2d} r75={2d} r76={2d} r77={2d} r78={2d} r79={2d} r80={2d} r81={2d} r82={2d} r83={2d} r84={2d} r85={2d} r86={2d} r87={2d} r88={2d} r89={2d} r90={2d} r91={2d} r92={2d} r93={2d} r94={2d} r95={2d} r96={2d} r97={2d} r98={2d} r99={2d} r100={3d,1u} r101={2d} r102={1d,6u,1e} r103={1d,3u} r104={2d} r105={2d} r106={2d} r113={2d,2u} r115={1d,1u} r117={1d,1u} 
+;;    total ref usage 230{198d,31u,1e} in 26{24 regular + 2 call} insns.
+(note 4 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 4 6 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 6 2 7 2 (debug_marker) "../System/lcd.c":138:2 -1
+     (nil))
+(insn 7 6 9 2 (set (reg:SI 115)
+        (const_int 63488 [0xf800])) "../System/lcd.c":138:11 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 9 7 10 2 (set (mem/c:HI (plus:SI (reg/f:SI 102 sfp)
+                (const_int -2 [0xfffffffffffffffe])) [1 color+0 S2 A16])
+        (subreg:HI (reg:SI 115) 0)) "../System/lcd.c":138:11 724 {*thumb2_movhi_vfp}
+     (expr_list:REG_DEAD (reg:SI 115)
+        (nil)))
+(debug_insn 10 9 11 2 (debug_marker) "../System/lcd.c":142:2 -1
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 3 r3)
+        (const_int 240 [0xf0])) "../System/lcd.c":142:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 12 11 13 2 (set (reg:SI 2 r2)
+        (const_int 320 [0x140])) "../System/lcd.c":142:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 13 12 14 2 (set (reg:SI 1 r1)
+        (const_int 0 [0])) "../System/lcd.c":142:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 14 13 15 2 (set (reg:SI 0 r0)
+        (reg:SI 1 r1)) "../System/lcd.c":142:2 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (const_int 0 [0])
+        (nil)))
+(call_insn 15 14 16 2 (parallel [
+            (call (mem:SI (symbol_ref:SI ("ILI9341_SetDisplayWindow") [flags 0x41]  <function_decl 0000000006c72600 ILI9341_SetDisplayWindow>) [0 ILI9341_SetDisplayWindow S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":142:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 3 r3)
+        (expr_list:REG_DEAD (reg:SI 2 r2)
+            (expr_list:REG_DEAD (reg:SI 1 r1)
+                (expr_list:REG_DEAD (reg:SI 0 r0)
+                    (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_SetDisplayWindow") [flags 0x41]  <function_decl 0000000006c72600 ILI9341_SetDisplayWindow>)
+                        (nil))))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (expr_list:SI (use (reg:SI 2 r2))
+                    (expr_list:SI (use (reg:SI 3 r3))
+                        (nil)))))))
+(debug_insn 16 15 17 2 (debug_marker) "../System/lcd.c":145:2 -1
+     (nil))
+(debug_insn 17 16 18 2 (debug_marker) "../System/lcd.c":145:7 -1
+     (nil))
+(debug_insn 18 17 19 2 (var_location:SI i (const_int 0 [0])) -1
+     (nil))
+(debug_insn 19 18 3 2 (debug_marker) "../System/lcd.c":145:21 -1
+     (nil))
+(insn 3 19 38 2 (set (reg:SI 113 [ ivtmp_1 ])
+        (const_int 76800 [0x12c00])) "../System/lcd.c":142:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 38 3 31 2 (set (reg/f:SI 117)
+        (plus:SI (reg/f:SI 102 sfp)
+            (const_int -2 [0xfffffffffffffffe]))) 7 {*arm_addsi3}
+     (nil))
+(code_label 31 38 20 3 21 (nil) [1 uses])
+(note 20 31 21 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 21 20 22 3 (var_location:SI i (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 22 21 24 3 (debug_marker) "../System/lcd.c":148:3 -1
+     (nil))
+(insn 24 22 25 3 (set (reg:SI 1 r1)
+        (const_int 1 [0x1])) "../System/lcd.c":148:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 25 24 26 3 (set (reg:SI 0 r0)
+        (reg/f:SI 117)) "../System/lcd.c":148:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (plus:SI (reg/f:SI 102 sfp)
+            (const_int -2 [0xfffffffffffffffe]))
+        (nil)))
+(call_insn 26 25 27 3 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("ILI9341_SendData") [flags 0x41]  <function_decl 0000000006c72200 ILI9341_SendData>) [0 ILI9341_SendData S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":148:3 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("ILI9341_SendData") [flags 0x41]  <function_decl 0000000006c72200 ILI9341_SendData>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 27 26 28 3 (debug_marker) "../System/lcd.c":145:32 -1
+     (nil))
+(debug_insn 28 27 29 3 (var_location:SI i (clobber (const_int 0 [0]))) -1
+     (nil))
+(debug_insn 29 28 30 3 (debug_marker) "../System/lcd.c":145:21 -1
+     (nil))
+(insn 30 29 32 3 (set (reg:SI 113 [ ivtmp_1 ])
+        (plus:SI (reg:SI 113 [ ivtmp_1 ])
+            (const_int -1 [0xffffffffffffffff]))) "../System/lcd.c":145:2 7 {*arm_addsi3}
+     (nil))
+(insn 32 30 33 3 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 113 [ ivtmp_1 ])
+            (const_int 0 [0]))) "../System/lcd.c":145:2 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 33 32 34 3 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 31)
+            (pc))) "../System/lcd.c":145:2 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 1062895956 (nil)))
+ -> 31)
+(note 34 33 0 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+
+;; Function LCD_TCH_demo (LCD_TCH_demo, funcdef_no=872, decl_uid=11885, cgraph_uid=876, symbol_order=882)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 5 n_edges 5 count 5 (    1)
+
+
+LCD_TCH_demo
+
+Dataflow summary:
+def_info->table_size = 0, use_info->table_size = 58
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={11d,6u} r1={10d,4u} r2={7d,1u} r3={7d,1u} r7={1d,4u} r12={10d} r13={1d,9u} r14={6d} r15={5d} r16={6d} r17={6d} r18={6d} r19={6d} r20={6d} r21={6d} r22={6d} r23={6d} r24={6d} r25={6d} r26={6d} r27={6d} r28={6d} r29={6d} r30={6d} r31={6d} r48={5d} r49={5d} r50={5d} r51={5d} r52={5d} r53={5d} r54={5d} r55={5d} r56={5d} r57={5d} r58={5d} r59={5d} r60={5d} r61={5d} r62={5d} r63={5d} r64={5d} r65={5d} r66={5d} r67={5d} r68={5d} r69={5d} r70={5d} r71={5d} r72={5d} r73={5d} r74={5d} r75={5d} r76={5d} r77={5d} r78={5d} r79={5d} r80={5d} r81={5d} r82={5d} r83={5d} r84={5d} r85={5d} r86={5d} r87={5d} r88={5d} r89={5d} r90={5d} r91={5d} r92={5d} r93={5d} r94={5d} r95={5d} r96={5d} r97={5d} r98={5d} r99={5d} r100={6d,1u} r101={5d} r102={1d,12u,2e} r103={1d,3u} r104={5d} r105={5d} r106={5d} r123={1d,2u} r126={1d,1u} r127={1d,1u} r128={1d,1u} r129={1d,1u} r130={1d,1u} r131={1d,1u} r133={1d,1u} 
+;;    total ref usage 502{450d,50u,2e} in 34{29 regular + 5 call} insns.
+
+( )->[0]->( 2 )
+;; bb 0 artificial_defs: { d-1(0){ }d-1(1){ }d-1(2){ }d-1(3){ }d-1(7){ }d-1(13){ }d-1(14){ }d-1(16){ }d-1(17){ }d-1(18){ }d-1(19){ }d-1(20){ }d-1(21){ }d-1(22){ }d-1(23){ }d-1(24){ }d-1(25){ }d-1(26){ }d-1(27){ }d-1(28){ }d-1(29){ }d-1(30){ }d-1(31){ }d-1(102){ }d-1(103){ }}
+;; bb 0 artificial_uses: { }
+;; lr  in  	
+;; lr  use 	
+;; lr  def 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;; live  in  	
+;; live  gen 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;; live  kill	
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+
+( 0 )->[2]->( 4 5 )
+;; bb 2 artificial_defs: { }
+;; bb 2 artificial_uses: { u0(7){ }u1(13){ }u2(102){ }u3(103){ }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  def 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0] 123 126 127 128
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  gen 	 0 [r0] 1 [r1] 100 [cc] 123 126 127 128
+;; live  kill	 12 [ip] 14 [lr]
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+
+( 2 )->[4]->( 5 )
+;; bb 4 artificial_defs: { }
+;; bb 4 artificial_uses: { u24(7){ }u25(13){ }u26(102){ }u27(103){ }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  def 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0] 129 130 131 133
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  gen 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 129 130 131 133
+;; live  kill	 12 [ip] 14 [lr]
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+
+( 4 2 )->[5]->( 1 )
+;; bb 5 artificial_defs: { }
+;; bb 5 artificial_uses: { u49(7){ }u50(13){ }u51(102){ }u52(103){ }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  def 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  gen 	 0 [r0]
+;; live  kill	 12 [ip] 14 [lr]
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+
+( 5 )->[1]->( )
+;; bb 1 artificial_defs: { }
+;; bb 1 artificial_uses: { u55(7){ }u56(13){ }u57(102){ }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp]
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp]
+;; lr  def 	
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp]
+;; live  gen 	
+;; live  kill	
+;; lr  out 	
+;; live  out 	
+
+Finding needed instructions:
+  Adding insn 21 to worklist
+  Adding insn 17 to worklist
+  Adding insn 11 to worklist
+  Adding insn 8 to worklist
+  Adding insn 42 to worklist
+  Adding insn 36 to worklist
+  Adding insn 30 to worklist
+  Adding insn 47 to worklist
+Finished finding needed instructions:
+processing block 5 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+  Adding insn 46 to worklist
+processing block 4 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+  Adding insn 41 to worklist
+  Adding insn 40 to worklist
+  Adding insn 38 to worklist
+  Adding insn 35 to worklist
+  Adding insn 34 to worklist
+  Adding insn 32 to worklist
+  Adding insn 29 to worklist
+  Adding insn 28 to worklist
+  Adding insn 27 to worklist
+  Adding insn 26 to worklist
+  Adding insn 25 to worklist
+  Adding insn 24 to worklist
+processing block 2 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+  Adding insn 20 to worklist
+  Adding insn 18 to worklist
+  Adding insn 16 to worklist
+  Adding insn 15 to worklist
+  Adding insn 14 to worklist
+  Adding insn 13 to worklist
+  Adding insn 6 to worklist
+df_worklist_dataflow_doublequeue: n_basic_blocks 5 n_edges 5 count 5 (    1)
+;; Following path with 15 sets: 2 
+;; Following path with 24 sets: 4 
+;; Following path with 5 sets: 5 
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+LCD_TCH_demo
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 13 [sp] 14 [lr] 100 [cc]
+;;  ref usage 	r0={11d,6u} r1={10d,4u} r2={7d,1u} r3={7d,1u} r7={1d,4u} r12={10d} r13={1d,9u} r14={6d} r15={5d} r16={6d} r17={6d} r18={6d} r19={6d} r20={6d} r21={6d} r22={6d} r23={6d} r24={6d} r25={6d} r26={6d} r27={6d} r28={6d} r29={6d} r30={6d} r31={6d} r48={5d} r49={5d} r50={5d} r51={5d} r52={5d} r53={5d} r54={5d} r55={5d} r56={5d} r57={5d} r58={5d} r59={5d} r60={5d} r61={5d} r62={5d} r63={5d} r64={5d} r65={5d} r66={5d} r67={5d} r68={5d} r69={5d} r70={5d} r71={5d} r72={5d} r73={5d} r74={5d} r75={5d} r76={5d} r77={5d} r78={5d} r79={5d} r80={5d} r81={5d} r82={5d} r83={5d} r84={5d} r85={5d} r86={5d} r87={5d} r88={5d} r89={5d} r90={5d} r91={5d} r92={5d} r93={5d} r94={5d} r95={5d} r96={5d} r97={5d} r98={5d} r99={5d} r100={6d,1u} r101={5d} r102={1d,12u,2e} r103={1d,3u} r104={5d} r105={5d} r106={5d} r123={1d,2u} r126={1d,1u} r127={1d,1u} r128={1d,1u} r129={1d,1u} r130={1d,1u} r131={1d,1u} r133={1d,1u} 
+;;    total ref usage 502{450d,50u,2e} in 34{29 regular + 5 call} insns.
+(note 3 0 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../System/lcd.c":277:2 -1
+     (nil))
+(insn 6 5 8 2 (set (reg:SI 123)
+        (const_int 0 [0])) "../System/lcd.c":277:11 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 8 6 11 2 (set (mem/c:HI (plus:SI (reg/f:SI 102 sfp)
+                (const_int -4 [0xfffffffffffffffc])) [1 x+0 S2 A32])
+        (subreg:HI (reg:SI 123) 0)) "../System/lcd.c":277:11 724 {*thumb2_movhi_vfp}
+     (nil))
+(insn 11 8 12 2 (set (mem/c:HI (plus:SI (reg/f:SI 102 sfp)
+                (const_int -2 [0xfffffffffffffffe])) [1 y+0 S2 A16])
+        (subreg:HI (reg:SI 123) 0)) "../System/lcd.c":277:18 724 {*thumb2_movhi_vfp}
+     (expr_list:REG_DEAD (reg:SI 123)
+        (nil)))
+(debug_insn 12 11 13 2 (debug_marker) "../System/lcd.c":282:2 -1
+     (nil))
+(insn 13 12 14 2 (set (reg/f:SI 126)
+        (plus:SI (reg/f:SI 102 sfp)
+            (const_int -2 [0xfffffffffffffffe]))) "../System/lcd.c":282:7 7 {*arm_addsi3}
+     (nil))
+(insn 14 13 15 2 (set (reg/f:SI 127)
+        (plus:SI (reg/f:SI 102 sfp)
+            (const_int -4 [0xfffffffffffffffc]))) "../System/lcd.c":282:7 7 {*arm_addsi3}
+     (nil))
+(insn 15 14 16 2 (set (reg:SI 1 r1)
+        (reg/f:SI 126)) "../System/lcd.c":282:7 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 126)
+        (expr_list:REG_EQUAL (plus:SI (reg/f:SI 102 sfp)
+                (const_int -2 [0xfffffffffffffffe]))
+            (nil))))
+(insn 16 15 17 2 (set (reg:SI 0 r0)
+        (reg/f:SI 127)) "../System/lcd.c":282:7 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 127)
+        (expr_list:REG_EQUAL (plus:SI (reg/f:SI 102 sfp)
+                (const_int -4 [0xfffffffffffffffc]))
+            (nil))))
+(call_insn 17 16 18 2 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("XPT2046_touch_get_coordinates_if_pressed") [flags 0x41]  <function_decl 0000000006e76700 XPT2046_touch_get_coordinates_if_pressed>) [0 XPT2046_touch_get_coordinates_if_pressed S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":282:7 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("XPT2046_touch_get_coordinates_if_pressed") [flags 0x41]  <function_decl 0000000006e76700 XPT2046_touch_get_coordinates_if_pressed>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(insn 18 17 20 2 (set (reg:SI 128)
+        (reg:SI 0 r0)) "../System/lcd.c":282:7 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (nil)))
+(insn 20 18 21 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 128)
+            (const_int 0 [0]))) "../System/lcd.c":282:5 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 128)
+        (nil)))
+(jump_insn 21 20 22 2 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 43)
+            (pc))) "../System/lcd.c":282:5 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 719407028 (nil)))
+ -> 43)
+(note 22 21 23 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 23 22 24 4 (debug_marker) "../System/lcd.c":286:3 -1
+     (nil))
+(insn 24 23 25 4 (set (reg:SI 129 [ y ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 102 sfp)
+                    (const_int -2 [0xfffffffffffffffe])) [1 y+0 S2 A16]))) "../System/lcd.c":286:3 1005 {*thumb2_zero_extendhisi2_v6}
+     (nil))
+(insn 25 24 26 4 (set (reg:SI 130 [ x ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 102 sfp)
+                    (const_int -4 [0xfffffffffffffffc])) [1 x+0 S2 A32]))) "../System/lcd.c":286:3 1005 {*thumb2_zero_extendhisi2_v6}
+     (nil))
+(insn 26 25 27 4 (set (reg:SI 3 r3)
+        (const_int 2016 [0x7e0])) "../System/lcd.c":286:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 27 26 28 4 (set (reg:SI 2 r2)
+        (const_int 2 [0x2])) "../System/lcd.c":286:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 28 27 29 4 (set (reg:SI 1 r1)
+        (reg:SI 129 [ y ])) "../System/lcd.c":286:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 129 [ y ])
+        (nil)))
+(insn 29 28 30 4 (set (reg:SI 0 r0)
+        (reg:SI 130 [ x ])) "../System/lcd.c":286:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 130 [ x ])
+        (nil)))
+(call_insn 30 29 31 4 (parallel [
+            (call (mem:SI (symbol_ref:SI ("UG_FillCircle") [flags 0x41]  <function_decl 0000000006cb1800 UG_FillCircle>) [0 UG_FillCircle S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":286:3 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 3 r3)
+        (expr_list:REG_DEAD (reg:SI 2 r2)
+            (expr_list:REG_DEAD (reg:SI 1 r1)
+                (expr_list:REG_DEAD (reg:SI 0 r0)
+                    (expr_list:REG_CALL_DECL (symbol_ref:SI ("UG_FillCircle") [flags 0x41]  <function_decl 0000000006cb1800 UG_FillCircle>)
+                        (nil))))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (expr_list:SI (use (reg:SI 2 r2))
+                    (expr_list:SI (use (reg:SI 3 r3))
+                        (nil)))))))
+(debug_insn 31 30 32 4 (debug_marker) "../System/lcd.c":289:3 -1
+     (nil))
+(insn 32 31 34 4 (set (reg:SI 131 [ x ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 102 sfp)
+                    (const_int -4 [0xfffffffffffffffc])) [1 x+0 S2 A32]))) "../System/lcd.c":289:3 1005 {*thumb2_zero_extendhisi2_v6}
+     (nil))
+(insn 34 32 35 4 (set (reg:SI 1 r1)
+        (reg:SI 131 [ x ])) "../System/lcd.c":289:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 131 [ x ])
+        (nil)))
+(insn 35 34 36 4 (set (reg:SI 0 r0)
+        (symbol_ref/v/f:SI ("*.LC7") [flags 0x82]  <var_decl 0000000007275ea0 *.LC7>)) "../System/lcd.c":289:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 36 35 37 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000005aa0b00 printf>) [0 __builtin_printf S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":289:3 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000005aa0b00 printf>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(debug_insn 37 36 38 4 (debug_marker) "../System/lcd.c":290:3 -1
+     (nil))
+(insn 38 37 40 4 (set (reg:SI 133 [ y ])
+        (zero_extend:SI (mem/c:HI (plus:SI (reg/f:SI 102 sfp)
+                    (const_int -2 [0xfffffffffffffffe])) [1 y+0 S2 A16]))) "../System/lcd.c":290:3 1005 {*thumb2_zero_extendhisi2_v6}
+     (nil))
+(insn 40 38 41 4 (set (reg:SI 1 r1)
+        (reg:SI 133 [ y ])) "../System/lcd.c":290:3 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg:SI 133 [ y ])
+        (nil)))
+(insn 41 40 42 4 (set (reg:SI 0 r0)
+        (symbol_ref/v/f:SI ("*.LC8") [flags 0x82]  <var_decl 0000000007275f30 *.LC8>)) "../System/lcd.c":290:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 42 41 43 4 (parallel [
+            (set (reg:SI 0 r0)
+                (call (mem:SI (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000005aa0b00 printf>) [0 __builtin_printf S4 A32])
+                    (const_int 0 [0])))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":290:3 291 {*call_value_symbol}
+     (expr_list:REG_DEAD (reg:SI 1 r1)
+        (expr_list:REG_UNUSED (reg:SI 0 r0)
+            (expr_list:REG_CALL_DECL (symbol_ref:SI ("printf") [flags 0x41]  <function_decl 0000000005aa0b00 printf>)
+                (nil))))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (expr_list:SI (use (reg:SI 1 r1))
+                (nil)))))
+(code_label 43 42 44 5 33 (nil) [1 uses])
+(note 44 43 45 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 45 44 46 5 (debug_marker) "../System/lcd.c":296:2 -1
+     (nil))
+(insn 46 45 47 5 (set (reg:SI 0 r0)
+        (const_int 30 [0x1e])) "../System/lcd.c":296:2 728 {*thumb2_movsi_vfp}
+     (nil))
+(call_insn 47 46 0 5 (parallel [
+            (call (mem:SI (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006b59e00 HAL_Delay>) [0 HAL_Delay S4 A32])
+                (const_int 0 [0]))
+            (use (const_int 0 [0]))
+            (clobber (reg:SI 14 lr))
+        ]) "../System/lcd.c":296:2 290 {*call_symbol}
+     (expr_list:REG_DEAD (reg:SI 0 r0)
+        (expr_list:REG_CALL_DECL (symbol_ref:SI ("HAL_Delay") [flags 0x41]  <function_decl 0000000006b59e00 HAL_Delay>)
+            (nil)))
+    (expr_list (clobber (reg:SI 12 ip))
+        (expr_list:SI (use (reg:SI 0 r0))
+            (nil))))

@@ -1,0 +1,953 @@
+
+;; Function SystemInit (SystemInit, funcdef_no=329, decl_uid=6654, cgraph_uid=333, symbol_order=335)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+
+Pass 0 for finding pseudo/allocno costs
+
+
+  r115 costs: LO_REGS:0 HI_REGS:2000 CALLER_SAVE_REGS:2000 EVEN_REG:2000 GENERAL_REGS:2000 VFP_D0_D7_REGS:44000 VFP_LO_REGS:44000 ALL_REGS:44000 MEM:25000
+  r114 costs: LO_REGS:0 HI_REGS:2000 CALLER_SAVE_REGS:2000 EVEN_REG:2000 GENERAL_REGS:2000 VFP_D0_D7_REGS:30000 VFP_LO_REGS:30000 ALL_REGS:30000 MEM:20000
+  r113 costs: LO_REGS:0 HI_REGS:2000 CALLER_SAVE_REGS:2000 EVEN_REG:2000 GENERAL_REGS:2000 VFP_D0_D7_REGS:30000 VFP_LO_REGS:30000 ALL_REGS:30000 MEM:20000
+
+
+Pass 1 for finding pseudo/allocno costs
+
+    r116: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r115: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r114: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r113: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r112: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r111: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r110: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r109: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r108: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r107: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+
+  r115 costs: LO_REGS:0 HI_REGS:2000 CALLER_SAVE_REGS:2000 EVEN_REG:2000 GENERAL_REGS:2000 VFP_D0_D7_REGS:45000 VFP_LO_REGS:45000 ALL_REGS:45000 MEM:30000
+  r114 costs: LO_REGS:0 HI_REGS:2000 CALLER_SAVE_REGS:2000 EVEN_REG:2000 GENERAL_REGS:2000 VFP_D0_D7_REGS:30000 VFP_LO_REGS:30000 ALL_REGS:30000 MEM:20000
+  r113 costs: LO_REGS:0 HI_REGS:2000 CALLER_SAVE_REGS:2000 EVEN_REG:2000 GENERAL_REGS:2000 VFP_D0_D7_REGS:30000 VFP_LO_REGS:30000 ALL_REGS:30000 MEM:20000
+
+;;   ======================================================
+;;   -- basic block 2 from 5 to 10 -- before reload
+;;   ======================================================
+
+;;	  0--> b  0: i   5 debug_marker                            :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  0--> b  0: i   6 r115=0xffffffffe000ed00                 :cortex_m4_a,cortex_m4_b:GENERAL_REGS+1(1)VFP_LO_REGS+0(0)
+;;	  2--> b  0: i   7 r113=[r115+0x88]                        :cortex_m4_a,cortex_m4_b:GENERAL_REGS+1(1)VFP_LO_REGS+0(0)
+;;	  4--> b  0: i   8 r114=r113|0xf00000                      :cortex_m4_ex:GENERAL_REGS+1(0)VFP_LO_REGS+0(0)
+;;	  5--> b  0: i  10 [r115+0x88]=r114                        :cortex_m4_a:GENERAL_REGS+0(-2)VFP_LO_REGS+0(0)
+;;	Ready list (final):  
+;;   total time = 5
+;;   new head = 5
+;;   new tail = 10
+
+
+;; Procedure interblock/speculative motions == 0/0 
+
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+SystemInit
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r7={1d,2u} r13={1d,2u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r102={1d,2u} r103={1d,1u} r113={1d,1u} r114={1d,1u} r115={1d,2u} 
+;;    total ref usage 39{28d,11u,0e} in 5{5 regular + 0 call} insns.
+(note 1 0 3 NOTE_INSN_DELETED)
+(note 3 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 3 5 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 5 2 6 2 (debug_marker) "../Core/Src/system_stm32g4xx.c":183:5 -1
+     (nil))
+(insn 6 5 7 2 (set (reg/f:SI 115)
+        (const_int -536810240 [0xffffffffe000ed00])) "../Core/Src/system_stm32g4xx.c":183:16 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 7 6 8 2 (set (reg:SI 113 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 115)
+                (const_int 136 [0x88])) [1 MEM[(struct SCB_Type *)3758157056B].CPACR+0 S4 A64])) "../Core/Src/system_stm32g4xx.c":183:16 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 8 7 10 2 (set (reg:SI 114 [ _2 ])
+        (ior:SI (reg:SI 113 [ _1 ])
+            (const_int 15728640 [0xf00000]))) "../Core/Src/system_stm32g4xx.c":183:16 106 {*iorsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 113 [ _1 ])
+        (nil)))
+(insn 10 8 14 2 (set (mem/v:SI (plus:SI (reg/f:SI 115)
+                (const_int 136 [0x88])) [1 MEM[(struct SCB_Type *)3758157056B].CPACR+0 S4 A64])
+        (reg:SI 114 [ _2 ])) "../Core/Src/system_stm32g4xx.c":183:16 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 115)
+        (expr_list:REG_DEAD (reg:SI 114 [ _2 ])
+            (nil))))
+(note 14 10 0 NOTE_INSN_DELETED)
+
+;; Function SystemCoreClockUpdate (SystemCoreClockUpdate, funcdef_no=330, decl_uid=6656, cgraph_uid=334, symbol_order=336)
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+df_analyze called
+df_worklist_dataflow_doublequeue: n_basic_blocks 13 n_edges 16 count 13 (    1)
+
+
+SystemCoreClockUpdate
+
+Dataflow summary:
+def_info->table_size = 67, use_info->table_size = 101
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 100 [cc]
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r7={1d,12u} r13={1d,12u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={4d,4u} r102={1d,12u} r103={1d,11u} r113={1d,1u} r114={1d,3u} r115={1d,2u} r116={1d,1u} r119={1d,2u} r122={1d,2u} r126={1d,2u} r131={2d,5u} r133={1d,3u,2e} r137={4d,1u} r138={1d,3u} r143={1d,1u} r144={1d,1u} r145={1d,1u} r147={1d,1u} r149={1d,2u} r152={1d,1u} r153={1d,1u} r155={1d,1u} r156={1d,1u} r157={1d,1u} r158={1d,1u} r160={1d,1u} r162={1d,1u,1e} r163={1d,1u} r164={1d,1u} r165={4d,2u} 
+;;    total ref usage 160{63d,94u,3e} in 69{69 regular + 0 call} insns.
+
+( )->[0]->( 2 )
+;; bb 0 artificial_defs: { d0(0){ }d1(1){ }d2(2){ }d3(3){ }d4(7){ }d5(13){ }d6(14){ }d7(16){ }d8(17){ }d9(18){ }d10(19){ }d11(20){ }d12(21){ }d13(22){ }d14(23){ }d15(24){ }d16(25){ }d17(26){ }d18(27){ }d19(28){ }d20(29){ }d21(30){ }d22(31){ }d27(102){ }d28(103){ }}
+;; bb 0 artificial_uses: { }
+;; lr  in  	
+;; lr  use 	
+;; lr  def 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;; live  in  	
+;; live  gen 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;; live  kill	
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+
+( 0 )->[2]->( 3 10 )
+;; bb 2 artificial_defs: { }
+;; bb 2 artificial_uses: { u0(7){ }u1(13){ }u2(102){ }u3(103){ }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  def 	 100 [cc] 113 114 138
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  gen 	 100 [cc] 113 114 138
+;; live  kill	
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 114 138
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 114 138
+
+( 2 )->[3]->( 4 6 )
+;; bb 3 artificial_defs: { }
+;; bb 3 artificial_uses: { u8(7){ }u9(13){ }u10(102){ }u11(103){ }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 114 138
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 114
+;; lr  def 	 100 [cc]
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 114 138
+;; live  gen 	 100 [cc]
+;; live  kill	
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 114 138
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 114 138
+
+( 3 )->[4]->( 5 11 )
+;; bb 4 artificial_defs: { }
+;; bb 4 artificial_uses: { u14(7){ }u15(13){ }u16(102){ }u17(103){ }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 114
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 114
+;; lr  def 	 100 [cc]
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 114
+;; live  gen 	 100 [cc]
+;; live  kill	
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+
+( 4 )->[5]->( 12 )
+;; bb 5 artificial_defs: { }
+;; bb 5 artificial_uses: { u20(7){ }u21(13){ }u22(102){ }u23(103){ }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  def 	 137 165
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  gen 	 137 165
+;; live  kill	
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 137 165
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 137 165
+
+( 3 )->[6]->( 7 8 )
+;; bb 6 artificial_defs: { }
+;; bb 6 artificial_uses: { u25(7){ }u26(13){ }u27(102){ }u28(103){ }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 138
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 138
+;; lr  def 	 100 [cc] 115 116 133 143 144
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 138
+;; live  gen 	 100 [cc] 115 116 133 143 144
+;; live  kill	
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 133
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 133
+
+( 6 )->[7]->( 9 )
+;; bb 7 artificial_defs: { }
+;; bb 7 artificial_uses: { u39(7){ }u40(13){ }u41(102){ }u42(103){ }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 133
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 133
+;; lr  def 	 131 145
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 133
+;; live  gen 	 131 145
+;; live  kill	
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 131
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 131
+
+( 6 )->[8]->( 9 )
+;; bb 8 artificial_defs: { }
+;; bb 8 artificial_uses: { u47(7){ }u48(13){ }u49(102){ }u50(103){ }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 133
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 133
+;; lr  def 	 131 147
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 133
+;; live  gen 	 131 147
+;; live  kill	
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 131
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 131
+
+( 8 7 )->[9]->( 12 )
+;; bb 9 artificial_defs: { }
+;; bb 9 artificial_uses: { u55(7){ }u56(13){ }u57(102){ }u58(103){ }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 131
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 131
+;; lr  def 	 119 122 137 149 152 153 155 156 157 165
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 131
+;; live  gen 	 119 122 137 149 152 153 155 156 157 165
+;; live  kill	
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 137 165
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 137 165
+
+( 2 )->[10]->( 12 )
+;; bb 10 artificial_defs: { }
+;; bb 10 artificial_uses: { u75(7){ }u76(13){ }u77(102){ }u78(103){ }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  def 	 137 165
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  gen 	 137 165
+;; live  kill	
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 137 165
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 137 165
+
+( 4 )->[11]->( 12 )
+;; bb 11 artificial_defs: { }
+;; bb 11 artificial_uses: { u79(7){ }u80(13){ }u81(102){ }u82(103){ }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; lr  def 	 137 165
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  gen 	 137 165
+;; live  kill	
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 137 165
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 137 165
+
+( 5 9 11 10 )->[12]->( 1 )
+;; bb 12 artificial_defs: { }
+;; bb 12 artificial_uses: { u83(7){ }u84(13){ }u85(102){ }u86(103){ }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 137 165
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 137 165
+;; lr  def 	 126 158 160 162 163 164
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp] 103 [afp] 137 165
+;; live  gen 	 126 158 160 162 163 164
+;; live  kill	
+;; lr  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;; live  out 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+
+( 12 )->[1]->( )
+;; bb 1 artificial_defs: { }
+;; bb 1 artificial_uses: { u98(7){ }u99(13){ }u100(102){ }}
+;; lr  in  	 7 [r7] 13 [sp] 102 [sfp]
+;; lr  use 	 7 [r7] 13 [sp] 102 [sfp]
+;; lr  def 	
+;; live  in  	 7 [r7] 13 [sp] 102 [sfp]
+;; live  gen 	
+;; live  kill	
+;; lr  out 	
+;; live  out 	
+
+Finding needed instructions:
+  Adding insn 13 to worklist
+  Adding insn 10 to worklist
+  Adding insn 16 to worklist
+  Adding insn 19 to worklist
+  Adding insn 112 to worklist
+  Adding insn 41 to worklist
+  Adding insn 33 to worklist
+  Adding insn 29 to worklist
+  Adding insn 114 to worklist
+  Adding insn 116 to worklist
+  Adding insn 68 to worklist
+  Adding insn 64 to worklist
+  Adding insn 118 to worklist
+  Adding insn 94 to worklist
+  Adding insn 85 to worklist
+Finished finding needed instructions:
+processing block 12 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+  Adding insn 93 to worklist
+  Adding insn 92 to worklist
+  Adding insn 91 to worklist
+  Adding insn 89 to worklist
+  Adding insn 84 to worklist
+processing block 5 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp] 137 165
+  Adding insn 22 to worklist
+  Adding insn 21 to worklist
+processing block 11 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp] 137 165
+  Adding insn 110 to worklist
+  Adding insn 4 to worklist
+processing block 4 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+  Adding insn 18 to worklist
+processing block 9 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp] 137 165
+  Adding insn 108 to worklist
+  Adding insn 78 to worklist
+  Adding insn 77 to worklist
+  Adding insn 76 to worklist
+  Adding insn 75 to worklist
+  Adding insn 73 to worklist
+  Adding insn 72 to worklist
+  Adding insn 63 to worklist
+processing block 7 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp] 131
+  Adding insn 45 to worklist
+  Adding insn 44 to worklist
+processing block 8 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp] 131
+  Adding insn 55 to worklist
+  Adding insn 54 to worklist
+processing block 6 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp] 133
+  Adding insn 40 to worklist
+  Adding insn 39 to worklist
+  Adding insn 36 to worklist
+  Adding insn 35 to worklist
+processing block 3 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp] 114 138
+  Adding insn 15 to worklist
+processing block 10 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp] 137 165
+  Adding insn 109 to worklist
+  Adding insn 3 to worklist
+processing block 2 lr out =  7 [r7] 13 [sp] 102 [sfp] 103 [afp] 114 138
+  Adding insn 12 to worklist
+  Adding insn 11 to worklist
+  Adding insn 9 to worklist
+df_worklist_dataflow_doublequeue: n_basic_blocks 13 n_edges 16 count 13 (    1)
+
+Pass 0 for finding pseudo/allocno costs
+
+
+  r165 costs: LO_REGS:0 HI_REGS:2166 CALLER_SAVE_REGS:2166 EVEN_REG:2166 GENERAL_REGS:2166 VFP_D0_D7_REGS:33912 VFP_LO_REGS:33912 ALL_REGS:33912 MEM:17915
+  r164 costs: LO_REGS:0 HI_REGS:2000 CALLER_SAVE_REGS:2000 EVEN_REG:2000 GENERAL_REGS:2000 VFP_D0_D7_REGS:30000 VFP_LO_REGS:30000 ALL_REGS:30000 MEM:20000
+  r163 costs: LO_REGS:0 HI_REGS:0 CALLER_SAVE_REGS:0 EVEN_REG:0 GENERAL_REGS:0 VFP_D0_D7_REGS:30000 VFP_LO_REGS:30000 ALL_REGS:30000 MEM:20000
+  r162 costs: LO_REGS:0 HI_REGS:0 CALLER_SAVE_REGS:0 EVEN_REG:0 GENERAL_REGS:0 VFP_D0_D7_REGS:30000 VFP_LO_REGS:30000 ALL_REGS:30000 MEM:20000
+  r160 costs: LO_REGS:0 HI_REGS:2000 CALLER_SAVE_REGS:2000 EVEN_REG:2000 GENERAL_REGS:2000 VFP_D0_D7_REGS:29000 VFP_LO_REGS:29000 ALL_REGS:29000 MEM:15000
+  r158 costs: LO_REGS:0 HI_REGS:2000 CALLER_SAVE_REGS:2000 EVEN_REG:2000 GENERAL_REGS:2000 VFP_D0_D7_REGS:29000 VFP_LO_REGS:29000 ALL_REGS:29000 MEM:15000
+  r157 costs: LO_REGS:0 HI_REGS:0 CALLER_SAVE_REGS:0 EVEN_REG:0 GENERAL_REGS:0 VFP_D0_D7_REGS:7500 VFP_LO_REGS:7500 ALL_REGS:7500 MEM:5000
+  r156 costs: LO_REGS:0 HI_REGS:0 CALLER_SAVE_REGS:0 EVEN_REG:0 GENERAL_REGS:0 VFP_D0_D7_REGS:7500 VFP_LO_REGS:7500 ALL_REGS:7500 MEM:5000
+  r155 costs: LO_REGS:0 HI_REGS:0 CALLER_SAVE_REGS:0 EVEN_REG:0 GENERAL_REGS:0 VFP_D0_D7_REGS:7500 VFP_LO_REGS:7500 ALL_REGS:7500 MEM:5000
+  r153 costs: LO_REGS:0 HI_REGS:0 CALLER_SAVE_REGS:0 EVEN_REG:0 GENERAL_REGS:0 VFP_D0_D7_REGS:7500 VFP_LO_REGS:7500 ALL_REGS:7500 MEM:5000
+  r152 costs: LO_REGS:0 HI_REGS:0 CALLER_SAVE_REGS:0 EVEN_REG:0 GENERAL_REGS:0 VFP_D0_D7_REGS:7500 VFP_LO_REGS:7500 ALL_REGS:7500 MEM:5000
+  r149 costs: LO_REGS:0 HI_REGS:500 CALLER_SAVE_REGS:500 EVEN_REG:500 GENERAL_REGS:500 VFP_D0_D7_REGS:11000 VFP_LO_REGS:11000 ALL_REGS:11000 MEM:6250
+  r147 costs: LO_REGS:0 HI_REGS:330 CALLER_SAVE_REGS:330 EVEN_REG:330 GENERAL_REGS:330 VFP_D0_D7_REGS:4785 VFP_LO_REGS:4785 ALL_REGS:4785 MEM:2475
+  r145 costs: LO_REGS:0 HI_REGS:170 CALLER_SAVE_REGS:170 EVEN_REG:170 GENERAL_REGS:170 VFP_D0_D7_REGS:2465 VFP_LO_REGS:2465 ALL_REGS:2465 MEM:1275
+  r144 costs: LO_REGS:0 HI_REGS:0 CALLER_SAVE_REGS:0 EVEN_REG:0 GENERAL_REGS:0 VFP_D0_D7_REGS:7500 VFP_LO_REGS:7500 ALL_REGS:7500 MEM:5000
+  r143 costs: LO_REGS:0 HI_REGS:0 CALLER_SAVE_REGS:0 EVEN_REG:0 GENERAL_REGS:0 VFP_D0_D7_REGS:7500 VFP_LO_REGS:7500 ALL_REGS:7500 MEM:5000
+  r138 costs: LO_REGS:0 HI_REGS:2000 CALLER_SAVE_REGS:2000 EVEN_REG:2000 GENERAL_REGS:2000 VFP_D0_D7_REGS:36500 VFP_LO_REGS:36500 ALL_REGS:36500 MEM:20000
+  r137 costs: LO_REGS:0 HI_REGS:1666 CALLER_SAVE_REGS:1666 EVEN_REG:1666 GENERAL_REGS:1666 VFP_D0_D7_REGS:30662 VFP_LO_REGS:30662 ALL_REGS:30662 MEM:17915
+  r133 costs: LO_REGS:0 HI_REGS:0 CALLER_SAVE_REGS:0 EVEN_REG:0 GENERAL_REGS:0 VFP_D0_D7_REGS:7500 VFP_LO_REGS:7500 ALL_REGS:7500 MEM:5000
+  r131 costs: LO_REGS:0 HI_REGS:0 CALLER_SAVE_REGS:0 EVEN_REG:0 GENERAL_REGS:0 VFP_D0_D7_REGS:7500 VFP_LO_REGS:7500 ALL_REGS:7500 MEM:5000
+  r126 costs: LO_REGS:0 HI_REGS:2000 CALLER_SAVE_REGS:2000 EVEN_REG:2000 GENERAL_REGS:2000 VFP_D0_D7_REGS:30000 VFP_LO_REGS:30000 ALL_REGS:30000 MEM:20000
+  r122 costs: LO_REGS:0 HI_REGS:500 CALLER_SAVE_REGS:500 EVEN_REG:500 GENERAL_REGS:500 VFP_D0_D7_REGS:7500 VFP_LO_REGS:7500 ALL_REGS:7500 MEM:5000
+  r119 costs: LO_REGS:0 HI_REGS:500 CALLER_SAVE_REGS:500 EVEN_REG:500 GENERAL_REGS:500 VFP_D0_D7_REGS:7500 VFP_LO_REGS:7500 ALL_REGS:7500 MEM:5000
+  r116 costs: LO_REGS:0 HI_REGS:500 CALLER_SAVE_REGS:500 EVEN_REG:500 GENERAL_REGS:500 VFP_D0_D7_REGS:7500 VFP_LO_REGS:7500 ALL_REGS:7500 MEM:5000
+  r115 costs: LO_REGS:0 HI_REGS:500 CALLER_SAVE_REGS:500 EVEN_REG:500 GENERAL_REGS:500 VFP_D0_D7_REGS:7500 VFP_LO_REGS:7500 ALL_REGS:7500 MEM:5000
+  r114 costs: LO_REGS:0 HI_REGS:0 CALLER_SAVE_REGS:0 EVEN_REG:0 GENERAL_REGS:0 VFP_D0_D7_REGS:60000 VFP_LO_REGS:60000 ALL_REGS:60000 MEM:40000
+  r113 costs: LO_REGS:0 HI_REGS:2000 CALLER_SAVE_REGS:2000 EVEN_REG:2000 GENERAL_REGS:2000 VFP_D0_D7_REGS:30000 VFP_LO_REGS:30000 ALL_REGS:30000 MEM:20000
+
+
+Pass 1 for finding pseudo/allocno costs
+
+    r165: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r164: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r163: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r162: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r161: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r160: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r159: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r158: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r157: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r156: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r155: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r154: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r153: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r152: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r151: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r150: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r149: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r148: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r147: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r146: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r145: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r144: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r143: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r142: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r141: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r140: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r139: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r138: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r137: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r136: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r135: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r134: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r133: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r132: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r131: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r130: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r129: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r128: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r127: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r126: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r125: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r124: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r123: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r122: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r121: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r120: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r119: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r118: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r117: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r116: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r115: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r114: preferred GENERAL_REGS, alternative NO_REGS, allocno GENERAL_REGS
+    r113: preferred LO_REGS, alternative GENERAL_REGS, allocno GENERAL_REGS
+    r112: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r111: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r110: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r109: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r108: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+    r107: preferred ALL_REGS, alternative NO_REGS, allocno ALL_REGS
+
+  r165 costs: LO_REGS:0 HI_REGS:2166 CALLER_SAVE_REGS:2166 EVEN_REG:2166 GENERAL_REGS:2166 VFP_D0_D7_REGS:34995 VFP_LO_REGS:34995 ALL_REGS:34995 MEM:23330
+  r164 costs: LO_REGS:0 HI_REGS:2000 CALLER_SAVE_REGS:2000 EVEN_REG:2000 GENERAL_REGS:2000 VFP_D0_D7_REGS:30000 VFP_LO_REGS:30000 ALL_REGS:30000 MEM:20000
+  r163 costs: GENERAL_REGS:0 VFP_D0_D7_REGS:30000 VFP_LO_REGS:30000 ALL_REGS:30000 MEM:20000
+  r162 costs: GENERAL_REGS:0 VFP_D0_D7_REGS:30000 VFP_LO_REGS:30000 ALL_REGS:30000 MEM:20000
+  r160 costs: LO_REGS:0 HI_REGS:2000 CALLER_SAVE_REGS:2000 EVEN_REG:2000 GENERAL_REGS:2000 VFP_D0_D7_REGS:30000 VFP_LO_REGS:30000 ALL_REGS:30000 MEM:20000
+  r158 costs: LO_REGS:0 HI_REGS:2000 CALLER_SAVE_REGS:2000 EVEN_REG:2000 GENERAL_REGS:2000 VFP_D0_D7_REGS:30000 VFP_LO_REGS:30000 ALL_REGS:30000 MEM:20000
+  r157 costs: GENERAL_REGS:0 VFP_D0_D7_REGS:7500 VFP_LO_REGS:7500 ALL_REGS:7500 MEM:5000
+  r156 costs: GENERAL_REGS:0 VFP_D0_D7_REGS:7500 VFP_LO_REGS:7500 ALL_REGS:7500 MEM:5000
+  r155 costs: GENERAL_REGS:0 VFP_D0_D7_REGS:7500 VFP_LO_REGS:7500 ALL_REGS:7500 MEM:5000
+  r153 costs: GENERAL_REGS:0 VFP_D0_D7_REGS:7500 VFP_LO_REGS:7500 ALL_REGS:7500 MEM:5000
+  r152 costs: GENERAL_REGS:0 VFP_D0_D7_REGS:7500 VFP_LO_REGS:7500 ALL_REGS:7500 MEM:5000
+  r149 costs: LO_REGS:0 HI_REGS:500 CALLER_SAVE_REGS:500 EVEN_REG:500 GENERAL_REGS:500 VFP_D0_D7_REGS:11250 VFP_LO_REGS:11250 ALL_REGS:11250 MEM:7500
+  r147 costs: LO_REGS:0 HI_REGS:330 CALLER_SAVE_REGS:330 EVEN_REG:330 GENERAL_REGS:330 VFP_D0_D7_REGS:4950 VFP_LO_REGS:4950 ALL_REGS:4950 MEM:3300
+  r145 costs: LO_REGS:0 HI_REGS:170 CALLER_SAVE_REGS:170 EVEN_REG:170 GENERAL_REGS:170 VFP_D0_D7_REGS:2550 VFP_LO_REGS:2550 ALL_REGS:2550 MEM:1700
+  r144 costs: GENERAL_REGS:0 VFP_D0_D7_REGS:7500 VFP_LO_REGS:7500 ALL_REGS:7500 MEM:5000
+  r143 costs: GENERAL_REGS:0 VFP_D0_D7_REGS:7500 VFP_LO_REGS:7500 ALL_REGS:7500 MEM:5000
+  r138 costs: LO_REGS:0 HI_REGS:2000 CALLER_SAVE_REGS:2000 EVEN_REG:2000 GENERAL_REGS:2000 VFP_D0_D7_REGS:37500 VFP_LO_REGS:37500 ALL_REGS:37500 MEM:25000
+  r137 costs: LO_REGS:0 HI_REGS:1666 CALLER_SAVE_REGS:1666 EVEN_REG:1666 GENERAL_REGS:1666 VFP_D0_D7_REGS:31245 VFP_LO_REGS:31245 ALL_REGS:31245 MEM:20830
+  r133 costs: GENERAL_REGS:0 VFP_D0_D7_REGS:7500 VFP_LO_REGS:7500 ALL_REGS:7500 MEM:5000
+  r131 costs: GENERAL_REGS:0 VFP_D0_D7_REGS:7500 VFP_LO_REGS:7500 ALL_REGS:7500 MEM:5000
+  r126 costs: LO_REGS:0 HI_REGS:2000 CALLER_SAVE_REGS:2000 EVEN_REG:2000 GENERAL_REGS:2000 VFP_D0_D7_REGS:30000 VFP_LO_REGS:30000 ALL_REGS:30000 MEM:20000
+  r122 costs: LO_REGS:0 HI_REGS:500 CALLER_SAVE_REGS:500 EVEN_REG:500 GENERAL_REGS:500 VFP_D0_D7_REGS:7500 VFP_LO_REGS:7500 ALL_REGS:7500 MEM:5000
+  r119 costs: LO_REGS:0 HI_REGS:500 CALLER_SAVE_REGS:500 EVEN_REG:500 GENERAL_REGS:500 VFP_D0_D7_REGS:7500 VFP_LO_REGS:7500 ALL_REGS:7500 MEM:5000
+  r116 costs: LO_REGS:0 HI_REGS:500 CALLER_SAVE_REGS:500 EVEN_REG:500 GENERAL_REGS:500 VFP_D0_D7_REGS:7500 VFP_LO_REGS:7500 ALL_REGS:7500 MEM:5000
+  r115 costs: LO_REGS:0 HI_REGS:500 CALLER_SAVE_REGS:500 EVEN_REG:500 GENERAL_REGS:500 VFP_D0_D7_REGS:7500 VFP_LO_REGS:7500 ALL_REGS:7500 MEM:5000
+  r114 costs: GENERAL_REGS:0 VFP_D0_D7_REGS:60000 VFP_LO_REGS:60000 ALL_REGS:60000 MEM:40000
+  r113 costs: LO_REGS:0 HI_REGS:2000 CALLER_SAVE_REGS:2000 EVEN_REG:2000 GENERAL_REGS:2000 VFP_D0_D7_REGS:30000 VFP_LO_REGS:30000 ALL_REGS:30000 MEM:20000
+
+;;   ======================================================
+;;   -- basic block 2 from 7 to 13 -- before reload
+;;   ======================================================
+
+;;	  0--> b  0: i   7 debug_marker                            :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  0--> b  0: i   8 debug_marker                            :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  0--> b  0: i   9 r138=0x40021000                         :cortex_m4_a,cortex_m4_b:GENERAL_REGS+1(1)VFP_LO_REGS+0(0)
+;;	  2--> b  0: i  10 r113=[r138+0x8]                         :cortex_m4_a,cortex_m4_b:GENERAL_REGS+1(1)VFP_LO_REGS+0(0)
+;;	  4--> b  0: i  11 r114=r113&0xc                           :cortex_m4_ex:GENERAL_REGS+1(0)VFP_LO_REGS+0(0)
+;;	  5--> b  0: i  12 cc=cmp(r114,0x8)                        :cortex_m4_ex:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  6--> b  0: i  13 pc={(cc==0)?L101:pc}                    :cortex_m4_ex*3:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	Ready list (final):  
+;;   total time = 6
+;;   new head = 7
+;;   new tail = 13
+
+;;   ======================================================
+;;   -- basic block 3 from 15 to 16 -- before reload
+;;   ======================================================
+
+;;	  0--> b  0: i  15 cc=cmp(r114,0xc)                        :cortex_m4_ex:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  1--> b  0: i  16 pc={(cc==0)?L25:pc}                     :cortex_m4_ex*3:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	Ready list (final):  
+;;   total time = 1
+;;   new head = 15
+;;   new tail = 16
+
+;;   ======================================================
+;;   -- basic block 4 from 18 to 19 -- before reload
+;;   ======================================================
+
+;;	  0--> b  0: i  18 cc=cmp(r114,0x4)                        :cortex_m4_ex:GENERAL_REGS+0(-1)VFP_LO_REGS+0(0)
+;;	  1--> b  0: i  19 pc={(cc==0)?L105:pc}                    :cortex_m4_ex*3:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	Ready list (final):  
+;;   total time = 1
+;;   new head = 18
+;;   new tail = 19
+
+;;   ======================================================
+;;   -- basic block 5 from 21 to 112 -- before reload
+;;   ======================================================
+
+;;	  0--> b  0: i  21 r165=`*.LANCHOR0'                       :cortex_m4_a,cortex_m4_b:GENERAL_REGS+1(1)VFP_LO_REGS+0(0)
+;;	  2--> b  0: i  22 r137=[r165]                             :cortex_m4_a,cortex_m4_b:GENERAL_REGS+1(1)VFP_LO_REGS+0(0)
+;;	  3--> b  0: i 112 pc=L81                                  :cortex_m4_ex*3:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	Ready list (final):  
+;;   total time = 3
+;;   new head = 21
+;;   new tail = 112
+
+;;   ======================================================
+;;   -- basic block 6 from 27 to 41 -- before reload
+;;   ======================================================
+
+;;	  0--> b  0: i  27 debug_marker                            :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  0--> b  0: i  29 r115=[r138+0xc]                         :cortex_m4_a,cortex_m4_b:GENERAL_REGS+1(1)VFP_LO_REGS+0(0)
+;;	  0--> b  0: i  30 loc r115&0x3                            :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  0--> b  0: i  31 debug_marker                            :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  1--> b  0: i  33 r116=[r138+0xc]                         :cortex_m4_a,cortex_m4_b:GENERAL_REGS+1(0)VFP_LO_REGS+0(0)
+;;	  2--> b  0: i  39 r144=r115&0x3                           :cortex_m4_ex:GENERAL_REGS+1(0)VFP_LO_REGS+0(0)
+;;	  3--> b  0: i  35 r143=zxt(r116,0x4,0x4)                  :cortex_m4_ex:@GENERAL_REGS+1(0)@VFP_LO_REGS+0(0)
+;;	  4--> b  0: i  36 r133=r143+0x1                           :cortex_m4_ex:GENERAL_REGS+1(0)VFP_LO_REGS+0(0)
+;;	  4--> b  0: i  37 loc r133                                :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  4--> b  0: i  38 debug_marker                            :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  5--> b  0: i  40 cc=cmp(r144,0x2)                        :cortex_m4_ex:GENERAL_REGS+0(-1)VFP_LO_REGS+0(0)
+;;	  6--> b  0: i  41 pc={(cc!=0)?L51:pc}                     :cortex_m4_ex*3:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	Ready list (final):  
+;;   total time = 6
+;;   new head = 27
+;;   new tail = 41
+
+;;   ======================================================
+;;   -- basic block 7 from 43 to 114 -- before reload
+;;   ======================================================
+
+;;	  0--> b  0: i  43 debug_marker                            :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  0--> b  0: i  44 r145=0xf42400                           :cortex_m4_a,cortex_m4_b:GENERAL_REGS+1(1)VFP_LO_REGS+0(0)
+;;	  1--> b  0: i  45 r131=udiv(r145,r133)                    :nothing:GENERAL_REGS+1(-1)VFP_LO_REGS+0(0)
+;;	  1--> b  0: i  48 loc r131                                :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  2--> b  0: i 114 pc=L59                                  :cortex_m4_ex*3:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	Ready list (final):  
+;;   total time = 2
+;;   new head = 43
+;;   new tail = 114
+
+;;   ======================================================
+;;   -- basic block 8 from 53 to 58 -- before reload
+;;   ======================================================
+
+;;	  0--> b  0: i  53 debug_marker                            :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  0--> b  0: i  54 r147=0x7a1200                           :cortex_m4_a,cortex_m4_b:GENERAL_REGS+1(1)VFP_LO_REGS+0(0)
+;;	  1--> b  0: i  55 r131=udiv(r147,r133)                    :nothing:GENERAL_REGS+1(-1)VFP_LO_REGS+0(0)
+;;	  1--> b  0: i  58 loc r131                                :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	Ready list (final):  
+;;   total time = 1
+;;   new head = 53
+;;   new tail = 58
+
+;;   ======================================================
+;;   -- basic block 9 from 61 to 116 -- before reload
+;;   ======================================================
+
+;;	  0--> b  0: i  61 loc r131                                :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  0--> b  0: i  62 debug_marker                            :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  0--> b  0: i  63 r149=0x40021000                         :cortex_m4_a,cortex_m4_b:GENERAL_REGS+1(1)VFP_LO_REGS+0(0)
+;;	  1--> b  0: i 108 r165=`*.LANCHOR0'                       :cortex_m4_a,cortex_m4_b:GENERAL_REGS+1(1)VFP_LO_REGS+0(0)
+;;	  2--> b  0: i  64 r119=[r149+0xc]                         :cortex_m4_a,cortex_m4_b:@GENERAL_REGS+1(1)@VFP_LO_REGS+0(0)
+;;	  2--> b  0: i  65 loc r119 0>>0x8&0x7f*r131               :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  2--> b  0: i  66 debug_marker                            :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  3--> b  0: i  68 r122=[r149+0xc]                         :cortex_m4_a,cortex_m4_b:GENERAL_REGS+1(0)VFP_LO_REGS+0(0)
+;;	  3--> b  0: i  69 loc r122 0>>0x19&0x3+0x1<<0x1           :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  3--> b  0: i  70 debug_marker                            :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  4--> b  0: i  72 r152=zxt(r119,0x7,0x8)                  :cortex_m4_ex:GENERAL_REGS+1(0)VFP_LO_REGS+0(0)
+;;	  5--> b  0: i  75 r155=zxt(r122,0x2,0x19)                 :cortex_m4_ex:GENERAL_REGS+1(0)VFP_LO_REGS+0(0)
+;;	  6--> b  0: i  76 r156=r155+0x1                           :cortex_m4_ex:GENERAL_REGS+1(0)VFP_LO_REGS+0(0)
+;;	  7--> b  0: i  73 r153=r131*r152                          :cortex_m4_ex:@GENERAL_REGS+1(-1)@VFP_LO_REGS+0(0)
+;;	  8--> b  0: i  77 r157=r156<<0x1                          :cortex_m4_ex:GENERAL_REGS+1(0)VFP_LO_REGS+0(0)
+;;	  9--> b  0: i  78 r137=udiv(r153,r157)                    :nothing:GENERAL_REGS+1(-1)VFP_LO_REGS+0(0)
+;;	  9--> b  0: i  80 debug_marker                            :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	 10--> b  0: i 116 pc=L81                                  :cortex_m4_ex*3:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	Ready list (final):  
+;;   total time = 10
+;;   new head = 61
+;;   new tail = 116
+
+;;   ======================================================
+;;   -- basic block 10 from 3 to 118 -- before reload
+;;   ======================================================
+
+;;	  0--> b  0: i   3 r137=0x7a1200                           :cortex_m4_a,cortex_m4_b:GENERAL_REGS+1(1)VFP_LO_REGS+0(0)
+;;	  1--> b  0: i 109 r165=`*.LANCHOR0'                       :cortex_m4_a,cortex_m4_b:GENERAL_REGS+1(1)VFP_LO_REGS+0(0)
+;;	  2--> b  0: i 118 pc=L81                                  :cortex_m4_ex*3:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	Ready list (final):  
+;;   total time = 2
+;;   new head = 3
+;;   new tail = 118
+
+;;   ======================================================
+;;   -- basic block 11 from 4 to 110 -- before reload
+;;   ======================================================
+
+;;	  0--> b  0: i   4 r137=0xf42400                           :cortex_m4_a,cortex_m4_b:GENERAL_REGS+1(1)VFP_LO_REGS+0(0)
+;;	  1--> b  0: i 110 r165=`*.LANCHOR0'                       :cortex_m4_a,cortex_m4_b:GENERAL_REGS+1(1)VFP_LO_REGS+0(0)
+;;	Ready list (final):  
+;;   total time = 1
+;;   new head = 4
+;;   new tail = 110
+
+;;   ======================================================
+;;   -- basic block 12 from 83 to 94 -- before reload
+;;   ======================================================
+
+;;	  0--> b  0: i  83 debug_marker                            :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  0--> b  0: i  84 r158=0x40021000                         :cortex_m4_a,cortex_m4_b:GENERAL_REGS+1(1)VFP_LO_REGS+0(0)
+;;	  1--> b  0: i  89 r160=`*.LANCHOR1'                       :cortex_m4_a,cortex_m4_b:GENERAL_REGS+1(1)VFP_LO_REGS+0(0)
+;;	  2--> b  0: i  85 r126=[r158+0x8]                         :cortex_m4_a,cortex_m4_b:@GENERAL_REGS+1(0)@VFP_LO_REGS+0(0)
+;;	  2--> b  0: i  95 loc r126 0>>0x4                         :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  2--> b  0: i  86 loc zxn([D#1&0xf+`AHBPrescTable'])      :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  2--> b  0: i  87 debug_marker                            :nothing:GENERAL_REGS+0(0)VFP_LO_REGS+0(0)
+;;	  4--> b  0: i  91 r162=zxt(r126,0x4,0x4)                  :cortex_m4_ex:GENERAL_REGS+1(0)VFP_LO_REGS+0(0)
+;;	  6--> b  0: i  92 r163=zxn([r160+r162])                   :cortex_m4_a,cortex_m4_b:GENERAL_REGS+1(-1)VFP_LO_REGS+0(0)
+;;	  8--> b  0: i  93 r164=r137 0>>r163                       :cortex_m4_ex:GENERAL_REGS+1(-1)VFP_LO_REGS+0(0)
+;;	  9--> b  0: i  94 [r165]=r164                             :cortex_m4_a:GENERAL_REGS+0(-2)VFP_LO_REGS+0(0)
+;;	Ready list (final):  
+;;   total time = 9
+;;   new head = 83
+;;   new tail = 94
+
+
+;; Procedure interblock/speculative motions == 0/0 
+
+
+starting the processing of deferred insns
+ending the processing of deferred insns
+
+
+SystemCoreClockUpdate
+
+Dataflow summary:
+;;  fully invalidated by EH 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 12 [ip] 14 [lr] 15 [pc] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 48 [d16] 49 [?16] 50 [d17] 51 [?17] 52 [d18] 53 [?18] 54 [d19] 55 [?19] 56 [d20] 57 [?20] 58 [d21] 59 [?21] 60 [d22] 61 [?22] 62 [d23] 63 [?23] 64 [d24] 65 [?24] 66 [d25] 67 [?25] 68 [d26] 69 [?26] 70 [d27] 71 [?27] 72 [d28] 73 [?28] 74 [d29] 75 [?29] 76 [d30] 77 [?30] 78 [d31] 79 [?31] 80 [wr0] 81 [wr1] 82 [wr2] 83 [wr3] 84 [wr4] 85 [wr5] 86 [wr6] 87 [wr7] 88 [wr8] 89 [wr9] 90 [wr10] 91 [wr11] 92 [wr12] 93 [wr13] 94 [wr14] 95 [wr15] 96 [wcgr0] 97 [wcgr1] 98 [wcgr2] 99 [wcgr3] 100 [cc] 101 [vfpcc] 104 [apsrq] 105 [apsrge] 106 [p0]
+;;  hardware regs used 	 13 [sp] 102 [sfp] 103 [afp]
+;;  regular block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  eh block artificial uses 	 7 [r7] 13 [sp] 102 [sfp] 103 [afp]
+;;  entry block defs 	 0 [r0] 1 [r1] 2 [r2] 3 [r3] 7 [r7] 13 [sp] 14 [lr] 16 [s0] 17 [s1] 18 [s2] 19 [s3] 20 [s4] 21 [s5] 22 [s6] 23 [s7] 24 [s8] 25 [s9] 26 [s10] 27 [s11] 28 [s12] 29 [s13] 30 [s14] 31 [s15] 102 [sfp] 103 [afp]
+;;  exit block uses 	 7 [r7] 13 [sp] 102 [sfp]
+;;  regs ever live 	 100 [cc]
+;;  ref usage 	r0={1d} r1={1d} r2={1d} r3={1d} r7={1d,12u} r13={1d,12u} r14={1d} r16={1d} r17={1d} r18={1d} r19={1d} r20={1d} r21={1d} r22={1d} r23={1d} r24={1d} r25={1d} r26={1d} r27={1d} r28={1d} r29={1d} r30={1d} r31={1d} r100={4d,4u} r102={1d,12u} r103={1d,11u} r113={1d,1u} r114={1d,3u} r115={1d,2u} r116={1d,1u} r119={1d,2u} r122={1d,2u} r126={1d,2u} r131={2d,5u} r133={1d,3u,2e} r137={4d,1u} r138={1d,3u} r143={1d,1u} r144={1d,1u} r145={1d,1u} r147={1d,1u} r149={1d,2u} r152={1d,1u} r153={1d,1u} r155={1d,1u} r156={1d,1u} r157={1d,1u} r158={1d,1u} r160={1d,1u} r162={1d,1u,1e} r163={1d,1u} r164={1d,1u} r165={4d,2u} 
+;;    total ref usage 160{63d,94u,3e} in 69{69 regular + 0 call} insns.
+(note 1 0 5 NOTE_INSN_DELETED)
+(note 5 1 2 2 [bb 2] NOTE_INSN_BASIC_BLOCK)
+(note 2 5 7 2 NOTE_INSN_FUNCTION_BEG)
+(debug_insn 7 2 8 2 (debug_marker) "../Core/Src/system_stm32g4xx.c":230:3 -1
+     (nil))
+(debug_insn 8 7 9 2 (debug_marker) "../Core/Src/system_stm32g4xx.c":233:3 -1
+     (nil))
+(insn 9 8 10 2 (set (reg/f:SI 138)
+        (const_int 1073876992 [0x40021000])) "../Core/Src/system_stm32g4xx.c":233:14 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 10 9 11 2 (set (reg:SI 113 [ _1 ])
+        (mem/v:SI (plus:SI (reg/f:SI 138)
+                (const_int 8 [0x8])) [1 MEM[(struct RCC_TypeDef *)1073876992B].CFGR+0 S4 A64])) "../Core/Src/system_stm32g4xx.c":233:14 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 11 10 12 2 (set (reg:SI 114 [ _2 ])
+        (and:SI (reg:SI 113 [ _1 ])
+            (const_int 12 [0xc]))) "../Core/Src/system_stm32g4xx.c":233:21 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 113 [ _1 ])
+        (nil)))
+(insn 12 11 13 2 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 114 [ _2 ])
+            (const_int 8 [0x8]))) "../Core/Src/system_stm32g4xx.c":233:3 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 13 12 14 2 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 101)
+            (pc))) "../Core/Src/system_stm32g4xx.c":233:3 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 268435462 (nil)))
+ -> 101)
+(note 14 13 15 3 [bb 3] NOTE_INSN_BASIC_BLOCK)
+(insn 15 14 16 3 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 114 [ _2 ])
+            (const_int 12 [0xc]))) "../Core/Src/system_stm32g4xx.c":233:3 268 {*arm_cmpsi_insn}
+     (nil))
+(jump_insn 16 15 17 3 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 25)
+            (pc))) "../Core/Src/system_stm32g4xx.c":233:3 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 357913950 (nil)))
+ -> 25)
+(note 17 16 18 4 [bb 4] NOTE_INSN_BASIC_BLOCK)
+(insn 18 17 19 4 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 114 [ _2 ])
+            (const_int 4 [0x4]))) "../Core/Src/system_stm32g4xx.c":233:3 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 114 [ _2 ])
+        (nil)))
+(jump_insn 19 18 20 4 (set (pc)
+        (if_then_else (eq (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref:SI 105)
+            (pc))) "../Core/Src/system_stm32g4xx.c":233:3 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 357913950 (nil)))
+ -> 105)
+(note 20 19 21 5 [bb 5] NOTE_INSN_BASIC_BLOCK)
+(insn 21 20 22 5 (set (reg/f:SI 165)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) "../Core/Src/system_stm32g4xx.c":269:19 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 22 21 112 5 (set (reg:SI 137 [ pretmp_36 ])
+        (mem/c:SI (reg/f:SI 165) [1 SystemCoreClock+0 S4 A32])) "../Core/Src/system_stm32g4xx.c":269:19 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_EQUAL (mem/c:SI (symbol_ref:SI ("*.LANCHOR0") [flags 0x182]) [1 SystemCoreClock+0 S4 A32])
+        (nil)))
+(jump_insn 112 22 113 5 (set (pc)
+        (label_ref 81)) 284 {*arm_jump}
+     (nil)
+ -> 81)
+(barrier 113 112 25)
+(code_label 25 113 26 6 7 (nil) [1 uses])
+(note 26 25 34 6 [bb 6] NOTE_INSN_BASIC_BLOCK)
+(note 34 26 27 6 NOTE_INSN_DELETED)
+(debug_insn 27 34 29 6 (debug_marker) "../Core/Src/system_stm32g4xx.c":247:7 -1
+     (nil))
+(insn 29 27 30 6 (set (reg:SI 115 [ _3 ])
+        (mem/v:SI (plus:SI (reg/f:SI 138)
+                (const_int 12 [0xc])) [1 MEM[(struct RCC_TypeDef *)1073876992B].PLLCFGR+0 S4 A32])) "../Core/Src/system_stm32g4xx.c":247:23 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 30 29 31 6 (var_location:SI pllsource (and:SI (reg:SI 115 [ _3 ])
+        (const_int 3 [0x3]))) "../Core/Src/system_stm32g4xx.c":247:17 -1
+     (nil))
+(debug_insn 31 30 33 6 (debug_marker) "../Core/Src/system_stm32g4xx.c":248:7 -1
+     (nil))
+(insn 33 31 39 6 (set (reg:SI 116 [ _4 ])
+        (mem/v:SI (plus:SI (reg/f:SI 138)
+                (const_int 12 [0xc])) [1 MEM[(struct RCC_TypeDef *)1073876992B].PLLCFGR+0 S4 A32])) "../Core/Src/system_stm32g4xx.c":248:19 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 138)
+        (nil)))
+(insn 39 33 35 6 (set (reg:SI 144 [ pllsource ])
+        (and:SI (reg:SI 115 [ _3 ])
+            (const_int 3 [0x3]))) "../Core/Src/system_stm32g4xx.c":247:17 90 {*arm_andsi3_insn}
+     (expr_list:REG_DEAD (reg:SI 115 [ _3 ])
+        (nil)))
+(insn 35 39 36 6 (set (reg:SI 143)
+        (zero_extract:SI (reg:SI 116 [ _4 ])
+            (const_int 4 [0x4])
+            (const_int 4 [0x4]))) "../Core/Src/system_stm32g4xx.c":248:49 161 {extzv_t2}
+     (expr_list:REG_DEAD (reg:SI 116 [ _4 ])
+        (nil)))
+(insn 36 35 37 6 (set (reg/v:SI 133 [ pllm ])
+        (plus:SI (reg:SI 143)
+            (const_int 1 [0x1]))) "../Core/Src/system_stm32g4xx.c":248:12 7 {*arm_addsi3}
+     (expr_list:REG_DEAD (reg:SI 143)
+        (nil)))
+(debug_insn 37 36 38 6 (var_location:SI pllm (reg/v:SI 133 [ pllm ])) "../Core/Src/system_stm32g4xx.c":248:12 -1
+     (nil))
+(debug_insn 38 37 40 6 (debug_marker) "../Core/Src/system_stm32g4xx.c":249:7 -1
+     (nil))
+(insn 40 38 41 6 (set (reg:CC 100 cc)
+        (compare:CC (reg:SI 144 [ pllsource ])
+            (const_int 2 [0x2]))) "../Core/Src/system_stm32g4xx.c":249:10 268 {*arm_cmpsi_insn}
+     (expr_list:REG_DEAD (reg:SI 144 [ pllsource ])
+        (nil)))
+(jump_insn 41 40 42 6 (set (pc)
+        (if_then_else (ne (reg:CC 100 cc)
+                (const_int 0 [0]))
+            (label_ref 51)
+            (pc))) "../Core/Src/system_stm32g4xx.c":249:10 273 {arm_cond_branch}
+     (expr_list:REG_DEAD (reg:CC 100 cc)
+        (int_list:REG_BR_PROB 708669604 (nil)))
+ -> 51)
+(note 42 41 43 7 [bb 7] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 43 42 44 7 (debug_marker) "../Core/Src/system_stm32g4xx.c":251:9 -1
+     (nil))
+(insn 44 43 45 7 (set (reg:SI 145)
+        (const_int 16000000 [0xf42400])) "../Core/Src/system_stm32g4xx.c":251:16 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 45 44 48 7 (set (reg/v:SI 131 [ pllvco ])
+        (udiv:SI (reg:SI 145)
+            (reg/v:SI 133 [ pllm ]))) "../Core/Src/system_stm32g4xx.c":251:16 163 {udivsi3}
+     (expr_list:REG_DEAD (reg:SI 145)
+        (expr_list:REG_DEAD (reg/v:SI 133 [ pllm ])
+            (expr_list:REG_EQUAL (udiv:SI (const_int 16000000 [0xf42400])
+                    (reg/v:SI 133 [ pllm ]))
+                (nil)))))
+(debug_insn 48 45 114 7 (var_location:SI pllvco (reg/v:SI 131 [ pllvco ])) "../Core/Src/system_stm32g4xx.c":251:16 -1
+     (nil))
+(jump_insn 114 48 115 7 (set (pc)
+        (label_ref 59)) 284 {*arm_jump}
+     (nil)
+ -> 59)
+(barrier 115 114 51)
+(code_label 51 115 52 8 8 (nil) [1 uses])
+(note 52 51 53 8 [bb 8] NOTE_INSN_BASIC_BLOCK)
+(debug_insn 53 52 54 8 (debug_marker) "../Core/Src/system_stm32g4xx.c":255:9 -1
+     (nil))
+(insn 54 53 55 8 (set (reg:SI 147)
+        (const_int 8000000 [0x7a1200])) "../Core/Src/system_stm32g4xx.c":255:16 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 55 54 58 8 (set (reg/v:SI 131 [ pllvco ])
+        (udiv:SI (reg:SI 147)
+            (reg/v:SI 133 [ pllm ]))) "../Core/Src/system_stm32g4xx.c":255:16 163 {udivsi3}
+     (expr_list:REG_DEAD (reg:SI 147)
+        (expr_list:REG_DEAD (reg/v:SI 133 [ pllm ])
+            (expr_list:REG_EQUAL (udiv:SI (const_int 8000000 [0x7a1200])
+                    (reg/v:SI 133 [ pllm ]))
+                (nil)))))
+(debug_insn 58 55 59 8 (var_location:SI pllvco (reg/v:SI 131 [ pllvco ])) "../Core/Src/system_stm32g4xx.c":255:16 -1
+     (nil))
+(code_label 59 58 60 9 9 (nil) [1 uses])
+(note 60 59 71 9 [bb 9] NOTE_INSN_BASIC_BLOCK)
+(note 71 60 74 9 NOTE_INSN_DELETED)
+(note 74 71 61 9 NOTE_INSN_DELETED)
+(debug_insn 61 74 62 9 (var_location:SI pllvco (reg/v:SI 131 [ pllvco ])) -1
+     (nil))
+(debug_insn 62 61 63 9 (debug_marker) "../Core/Src/system_stm32g4xx.c":257:7 -1
+     (nil))
+(insn 63 62 108 9 (set (reg/f:SI 149)
+        (const_int 1073876992 [0x40021000])) "../Core/Src/system_stm32g4xx.c":257:30 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 108 63 64 9 (set (reg/f:SI 165)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 64 108 65 9 (set (reg:SI 119 [ _7 ])
+        (mem/v:SI (plus:SI (reg/f:SI 149)
+                (const_int 12 [0xc])) [1 MEM[(struct RCC_TypeDef *)1073876992B].PLLCFGR+0 S4 A32])) "../Core/Src/system_stm32g4xx.c":257:30 728 {*thumb2_movsi_vfp}
+     (nil))
+(debug_insn 65 64 66 9 (var_location:SI pllvco (mult:SI (and:SI (lshiftrt:SI (reg:SI 119 [ _7 ])
+                (const_int 8 [0x8]))
+            (const_int 127 [0x7f]))
+        (reg/v:SI 131 [ pllvco ]))) "../Core/Src/system_stm32g4xx.c":257:14 -1
+     (nil))
+(debug_insn 66 65 68 9 (debug_marker) "../Core/Src/system_stm32g4xx.c":258:7 -1
+     (nil))
+(insn 68 66 69 9 (set (reg:SI 122 [ _10 ])
+        (mem/v:SI (plus:SI (reg/f:SI 149)
+                (const_int 12 [0xc])) [1 MEM[(struct RCC_TypeDef *)1073876992B].PLLCFGR+0 S4 A32])) "../Core/Src/system_stm32g4xx.c":258:20 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 149)
+        (nil)))
+(debug_insn 69 68 70 9 (var_location:SI pllr (ashift:SI (plus:SI (and:SI (lshiftrt:SI (reg:SI 122 [ _10 ])
+                    (const_int 25 [0x19]))
+                (const_int 3 [0x3]))
+            (const_int 1 [0x1]))
+        (const_int 1 [0x1]))) "../Core/Src/system_stm32g4xx.c":258:12 -1
+     (nil))
+(debug_insn 70 69 72 9 (debug_marker) "../Core/Src/system_stm32g4xx.c":259:7 -1
+     (nil))
+(insn 72 70 75 9 (set (reg:SI 152)
+        (zero_extract:SI (reg:SI 119 [ _7 ])
+            (const_int 7 [0x7])
+            (const_int 8 [0x8]))) "../Core/Src/system_stm32g4xx.c":257:60 161 {extzv_t2}
+     (expr_list:REG_DEAD (reg:SI 119 [ _7 ])
+        (nil)))
+(insn 75 72 76 9 (set (reg:SI 155)
+        (zero_extract:SI (reg:SI 122 [ _10 ])
+            (const_int 2 [0x2])
+            (const_int 25 [0x19]))) "../Core/Src/system_stm32g4xx.c":258:50 161 {extzv_t2}
+     (expr_list:REG_DEAD (reg:SI 122 [ _10 ])
+        (nil)))
+(insn 76 75 73 9 (set (reg:SI 156)
+        (plus:SI (reg:SI 155)
+            (const_int 1 [0x1]))) "../Core/Src/system_stm32g4xx.c":258:57 7 {*arm_addsi3}
+     (expr_list:REG_DEAD (reg:SI 155)
+        (nil)))
+(insn 73 76 77 9 (set (reg:SI 153 [ pllvco ])
+        (mult:SI (reg/v:SI 131 [ pllvco ])
+            (reg:SI 152))) "../Core/Src/system_stm32g4xx.c":257:14 56 {*mul}
+     (expr_list:REG_DEAD (reg:SI 152)
+        (expr_list:REG_DEAD (reg/v:SI 131 [ pllvco ])
+            (nil))))
+(insn 77 73 78 9 (set (reg:SI 157 [ pllr ])
+        (ashift:SI (reg:SI 156)
+            (const_int 1 [0x1]))) "../Core/Src/system_stm32g4xx.c":258:12 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 156)
+        (nil)))
+(insn 78 77 80 9 (set (reg:SI 137 [ pretmp_36 ])
+        (udiv:SI (reg:SI 153 [ pllvco ])
+            (reg:SI 157 [ pllr ]))) "../Core/Src/system_stm32g4xx.c":259:31 163 {udivsi3}
+     (expr_list:REG_DEAD (reg:SI 157 [ pllr ])
+        (expr_list:REG_DEAD (reg:SI 153 [ pllvco ])
+            (nil))))
+(debug_insn 80 78 116 9 (debug_marker) "../Core/Src/system_stm32g4xx.c":260:7 -1
+     (nil))
+(jump_insn 116 80 117 9 (set (pc)
+        (label_ref 81)) "../Core/Src/system_stm32g4xx.c":260:7 284 {*arm_jump}
+     (nil)
+ -> 81)
+(barrier 117 116 101)
+(code_label 101 117 100 10 10 (nil) [1 uses])
+(note 100 101 3 10 [bb 10] NOTE_INSN_BASIC_BLOCK)
+(insn 3 100 109 10 (set (reg:SI 137 [ pretmp_36 ])
+        (const_int 8000000 [0x7a1200])) "../Core/Src/system_stm32g4xx.c":233:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 109 3 118 10 (set (reg/f:SI 165)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) 728 {*thumb2_movsi_vfp}
+     (nil))
+(jump_insn 118 109 119 10 (set (pc)
+        (label_ref 81)) 284 {*arm_jump}
+     (nil)
+ -> 81)
+(barrier 119 118 105)
+(code_label 105 119 104 11 11 (nil) [1 uses])
+(note 104 105 4 11 [bb 11] NOTE_INSN_BASIC_BLOCK)
+(insn 4 104 110 11 (set (reg:SI 137 [ pretmp_36 ])
+        (const_int 16000000 [0xf42400])) "../Core/Src/system_stm32g4xx.c":233:3 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 110 4 81 11 (set (reg/f:SI 165)
+        (symbol_ref:SI ("*.LANCHOR0") [flags 0x182])) 728 {*thumb2_movsi_vfp}
+     (nil))
+(code_label 81 110 82 12 6 (nil) [3 uses])
+(note 82 81 90 12 [bb 12] NOTE_INSN_BASIC_BLOCK)
+(note 90 82 83 12 NOTE_INSN_DELETED)
+(debug_insn 83 90 84 12 (debug_marker) "../Core/Src/system_stm32g4xx.c":267:3 -1
+     (nil))
+(insn 84 83 89 12 (set (reg/f:SI 158)
+        (const_int 1073876992 [0x40021000])) "../Core/Src/system_stm32g4xx.c":267:28 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 89 84 85 12 (set (reg/f:SI 160)
+        (symbol_ref:SI ("*.LANCHOR1") [flags 0x182])) "../Core/Src/system_stm32g4xx.c":267:22 728 {*thumb2_movsi_vfp}
+     (nil))
+(insn 85 89 95 12 (set (reg:SI 126 [ _15 ])
+        (mem/v:SI (plus:SI (reg/f:SI 158)
+                (const_int 8 [0x8])) [1 MEM[(struct RCC_TypeDef *)1073876992B].CFGR+0 S4 A64])) "../Core/Src/system_stm32g4xx.c":267:28 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 158)
+        (nil)))
+(debug_insn 95 85 86 12 (var_location:SI D#1 (lshiftrt:SI (reg:SI 126 [ _15 ])
+        (const_int 4 [0x4]))) "../Core/Src/system_stm32g4xx.c":270:1 -1
+     (nil))
+(debug_insn 86 95 87 12 (var_location:SI tmp (zero_extend:SI (mem/u:QI (plus:SI (and:SI (debug_expr:SI D#1)
+                    (const_int 15 [0xf]))
+                (symbol_ref:SI ("AHBPrescTable") [flags 0x82]  <var_decl 0000000005f27cf0 AHBPrescTable>)) [0 AHBPrescTable[_17]+0 S1 A8]))) "../Core/Src/system_stm32g4xx.c":267:7 -1
+     (nil))
+(debug_insn 87 86 91 12 (debug_marker) "../Core/Src/system_stm32g4xx.c":269:3 -1
+     (nil))
+(insn 91 87 92 12 (set (reg:SI 162)
+        (zero_extract:SI (reg:SI 126 [ _15 ])
+            (const_int 4 [0x4])
+            (const_int 4 [0x4]))) "../Core/Src/system_stm32g4xx.c":267:52 161 {extzv_t2}
+     (expr_list:REG_DEAD (reg:SI 126 [ _15 ])
+        (nil)))
+(insn 92 91 93 12 (set (reg:SI 163 [ tmp ])
+        (zero_extend:SI (mem/u:QI (plus:SI (reg/f:SI 160)
+                    (reg:SI 162)) [0 AHBPrescTable[_17]+0 S1 A8]))) "../Core/Src/system_stm32g4xx.c":267:7 1006 {thumb2_zero_extendqisi2_v6}
+     (expr_list:REG_DEAD (reg:SI 162)
+        (expr_list:REG_DEAD (reg/f:SI 160)
+            (expr_list:REG_EQUAL (zero_extend:SI (mem/u:QI (plus:SI (reg:SI 162)
+                            (symbol_ref:SI ("*.LANCHOR1") [flags 0x182])) [0 AHBPrescTable[_17]+0 S1 A8]))
+                (nil)))))
+(insn 93 92 94 12 (set (reg:SI 164)
+        (lshiftrt:SI (reg:SI 137 [ pretmp_36 ])
+            (reg:SI 163 [ tmp ]))) "../Core/Src/system_stm32g4xx.c":269:19 147 {*arm_shiftsi3}
+     (expr_list:REG_DEAD (reg:SI 163 [ tmp ])
+        (expr_list:REG_DEAD (reg:SI 137 [ pretmp_36 ])
+            (nil))))
+(insn 94 93 127 12 (set (mem/c:SI (reg/f:SI 165) [1 SystemCoreClock+0 S4 A32])
+        (reg:SI 164)) "../Core/Src/system_stm32g4xx.c":269:19 728 {*thumb2_movsi_vfp}
+     (expr_list:REG_DEAD (reg/f:SI 165)
+        (expr_list:REG_DEAD (reg:SI 164)
+            (nil))))
+(note 127 94 0 NOTE_INSN_DELETED)
